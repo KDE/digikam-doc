@@ -10,41 +10,79 @@
 
 .. _plugins_settings:
 
-:ref:`Plugins Settings <setup_application>`
-===========================================
+Plugins Settings
+================
 
-The **Plugins** options for digiKam are set from :menuselection:`Settings --> Configure digiKam... --> Plugins page`. This view lists of plugins available for different parts of the program:
+The **Plugins** options for digiKam are configured via :menuselection:`Settings --> Configure digiKam... --> Plugins`. This page lists all available plugins for different parts of the application. Double-clicking a plugin entry opens a dialog with detailed information about the selected tool.
 
-    - Generic: tools shared between the Album View, Light Table and Image Editor. These tools are also available in Showfoto.
+.. _plugins_settings_generic:
 
-    .. figure:: images/setup_plugins_generic.webp
-        :alt:
-        :align: center
+Generic Plugins
+---------------
 
-        The Generic Plugins Setup Page
+These tools are shared across the **Album View**, **Light Table**, and **Image Editor**.
+They are also available in **Showfoto**. Access these plugins via the **Tools** tab in the right sidebar, under the **Post-Processing**, **Import**, and **Export** sections.
 
-    - Image Editor: specific tools used for editing items. These tools are also available in Showfoto.
+.. figure:: images/setup_plugins_generic.webp
+   :alt: Generic Plugins Setup Page
+   :align: center
 
-    .. figure:: images/setup_plugins_editor.webp
-        :alt:
-        :align: center
+   The Generic Plugins Setup Page
 
-        The Image Editor Plugins Setup Page
+.. _plugins_settings_imageeditor:
 
-    - Batch Queue Manager: specific digiKam tools for batch processing of items.
+Image Editor Plugins
+---------------------
 
-    .. figure:: images/setup_plugins_batch.webp
-        :alt:
-        :align: center
+These tools are specifically designed for editing images. They are also available in **Showfoto**. Access these plugins via the **Tools** tab in the right sidebar, under the **Transform**, **Decorate**, **Effects**, **Enhance**, and **Colors** sections.
 
-        The Batch Queue Manager Plugins Setup Page
+.. figure:: images/setup_plugins_editor.webp
+   :alt: Image Editor Plugins Setup Page
+   :align: center
 
-    - Image Loaders: tools used to load items into memory. These tools are also available in Showfoto.
+   The Image Editor Plugins Setup Page
 
-    .. figure:: images/setup_plugins_loaders.webp
-        :alt:
-        :align: center
+.. _plugins_settings_batchqueuemanager:
 
-        The Image Loaders Plugins Setup Page
+Batch Queue Manager Plugins
+----------------------------
 
-If you double-click on a plugin entry in a list, you will open a dialog showing details about the tool.
+These tools are dedicated to batch processing in digiKam. Access them via the **Base Tools** tab in the **Control Panel** (available on the right or bottom side of the interface). Use these tools to assign tasks to your current batch queue.
+
+.. figure:: images/setup_plugins_batch.webp
+   :alt: Batch Queue Manager Plugins Setup Page
+   :align: center
+
+   The Batch Queue Manager Plugins Setup Page
+
+.. _plugins_settings_loader:
+
+Image Loaders
+-------------
+
+Image loaders are essential modules responsible for loading image data into memory.
+They are used throughout digiKam whenever image processing is required.
+
+**Native Loaders**
+   The following formats are supported natively, listed by priority of usage:
+
+   - **JPEG**: Standard format for lossy compression.
+   - **JPEG-2000**: Advanced compression standard supporting both lossy and lossless modes.
+   - **PNG**: Portable Network Graphics, a lossless format widely used for web and software applications.
+   - **TIFF**: Tagged Image File Format, commonly used for high-quality, lossless images.
+   - **PGF**: Progressive Graphics File, optimized for lossless compression.
+   - **HEIF**: High Efficiency Image Format, offering improved compression over JPEG.
+
+**Qt Framework Loaders**
+   digiKam leverages the `Qt framework <https://doc.qt.io/qt-6/qtimageformats-index.html>`_ and its extended support via the `KImageFormats <https://invent.kde.org/frameworks/kimageformats>`_ component from the KDE frameworks.
+   These loaders provide compatibility with additional native formats.
+
+**ImageMagick Support**
+   As a fallback, **ImageMagick** is used to support a wide range of `exotic and legacy formats <https://imagemagick.org/script/formats.php>`_.
+   This ensures compatibility with less common file types not covered by native or Qt-based loaders.
+
+.. figure:: images/setup_plugins_loaders.webp
+   :alt: Image Loaders Plugins Setup Page
+   :align: center
+
+   The Image Loaders Plugins Setup Page
