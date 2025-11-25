@@ -15,7 +15,7 @@ Plugins Settings
 
 The **Plugins** options for digiKam are configured via :menuselection:`Settings --> Configure digiKam... --> Plugins`. This page lists all available plugins for different parts of the application. Double-clicking a plugin entry opens a dialog with detailed information about the selected tool.
 
-.. _plugins_settings_generic:
+.. _plugins_generic:
 
 Generic Plugins
 ---------------
@@ -29,7 +29,7 @@ They are also available in **Showfoto**. Access these plugins via the **Tools** 
 
    The Generic Plugins Setup Page
 
-.. _plugins_settings_imageeditor:
+.. _plugins_editor:
 
 Image Editor Plugins
 ---------------------
@@ -42,7 +42,7 @@ These tools are specifically designed for editing images. They are also availabl
 
    The Image Editor Plugins Setup Page
 
-.. _plugins_settings_batchqueuemanager:
+.. _plugins_queuemanager:
 
 Batch Queue Manager Plugins
 ----------------------------
@@ -55,7 +55,7 @@ These tools are dedicated to batch processing in digiKam. Access them via the **
 
    The Batch Queue Manager Plugins Setup Page
 
-.. _plugins_settings_loader:
+.. _plugins_loaders:
 
 Image Loaders
 -------------
