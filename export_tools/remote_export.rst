@@ -110,9 +110,6 @@ KDE's KIO-Slaves allow you to access local and remote resources seamlessly from 
 .. warning::
    Protocols like ``ftp://`` are **not secure**. Prefer ``sftp://`` or ``fish://`` for sensitive transfers.
 
-.. tip::
-   To see the full list of available KIO-Slaves on your system, open **KInfoCenter** (run ``kinfocenter``) and check the **Protocols** tab.
-
 How to use this tool
 --------------------
 
