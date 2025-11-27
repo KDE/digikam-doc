@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-17 08:55+0000\n"
+"POT-Creation-Date: 2025-11-26 01:54+0000\n"
 "PO-Revision-Date: 2024-04-21 04:52\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -29,57 +29,159 @@ msgid ""
 msgstr ""
 
 #: ../../setup_application/plugins_settings.rst:14
-msgid ":ref:`Plugins Settings <setup_application>`"
+msgid "Plugins Settings"
 msgstr ""
 
 #: ../../setup_application/plugins_settings.rst:16
 msgid ""
-"The **Plugins** options for digiKam are set from :menuselection:`Settings --"
-"> Configure digiKam... --> Plugins page`. This view lists of plugins "
-"available for different parts of the program:"
+"The **Plugins** options for digiKam are configured via :menuselection:"
+"`Settings --> Configure digiKam... --> Plugins`. This page lists all "
+"available plugins for different parts of the application. Double-clicking a "
+"plugin entry opens a dialog with detailed information about the selected "
+"tool."
 msgstr ""
 
-#: ../../setup_application/plugins_settings.rst:18
+#: ../../setup_application/plugins_settings.rst:21
+msgid "Generic Plugins"
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:23
 msgid ""
-"Generic: tools shared between the Album View, Light Table and Image Editor. "
-"These tools are also available in Showfoto."
+"These tools are shared across the **Album View**, **Light Table**, and "
+"**Image Editor**. They are also available in **Showfoto**. Access these "
+"plugins via the **Tools** tab in the right sidebar, under the **Post-"
+"Processing**, **Import**, and **Export** sections."
 msgstr ""
 
-#: ../../setup_application/plugins_settings.rst:24
+#: ../../setup_application/plugins_settings.rst:30
+msgid "Generic Plugins Setup Page"
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:30
 msgid "The Generic Plugins Setup Page"
 msgstr ""
 
-#: ../../setup_application/plugins_settings.rst:26
-msgid ""
-"Image Editor: specific tools used for editing items. These tools are also "
-"available in Showfoto."
+#: ../../setup_application/plugins_settings.rst:35
+msgid "Image Editor Plugins"
 msgstr ""
 
-#: ../../setup_application/plugins_settings.rst:32
+#: ../../setup_application/plugins_settings.rst:37
+msgid ""
+"These tools are specifically designed for editing images. They are also "
+"available in **Showfoto**. Access these plugins via the **Tools** tab in the "
+"right sidebar, under the **Transform**, **Decorate**, **Effects**, "
+"**Enhance**, and **Colors** sections."
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:43
+msgid "Image Editor Plugins Setup Page"
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:43
 msgid "The Image Editor Plugins Setup Page"
 msgstr ""
 
-#: ../../setup_application/plugins_settings.rst:34
-msgid ""
-"Batch Queue Manager: specific digiKam tools for batch processing of items."
-msgstr ""
-
-#: ../../setup_application/plugins_settings.rst:40
-msgid "The Batch Queue Manager Plugins Setup Page"
-msgstr ""
-
-#: ../../setup_application/plugins_settings.rst:42
-msgid ""
-"Image Loaders: tools used to load items into memory. These tools are also "
-"available in Showfoto."
-msgstr ""
-
 #: ../../setup_application/plugins_settings.rst:48
-msgid "The Image Loaders Plugins Setup Page"
+msgid "Batch Queue Manager Plugins"
 msgstr ""
 
 #: ../../setup_application/plugins_settings.rst:50
 msgid ""
-"If you double-click on a plugin entry in a list, you will open a dialog "
-"showing details about the tool."
+"These tools are dedicated to batch processing in digiKam. Access them via "
+"the **Base Tools** tab in the **Control Panel** (available on the right or "
+"bottom side of the interface). Use these tools to assign tasks to your "
+"current batch queue."
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:56
+msgid "Batch Queue Manager Plugins Setup Page"
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:56
+msgid "The Batch Queue Manager Plugins Setup Page"
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:61
+msgid "Image Loaders"
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:63
+msgid ""
+"Image loaders are essential modules responsible for loading image data into "
+"memory. They are used throughout digiKam whenever image processing is "
+"required."
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:67
+msgid ""
+"The following formats are supported natively, listed by priority of usage:"
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:69
+msgid "**JPEG**: Standard format for lossy compression."
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:70
+msgid ""
+"**JPEG-2000**: Advanced compression standard supporting both lossy and "
+"lossless modes."
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:71
+msgid ""
+"**PNG**: Portable Network Graphics, a lossless format widely used for web "
+"and software applications."
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:72
+msgid ""
+"**TIFF**: Tagged Image File Format, commonly used for high-quality, lossless "
+"images."
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:73
+msgid "**PGF**: Progressive Graphics File, optimized for lossless compression."
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:74
+msgid "**Native Loaders**"
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:74
+msgid ""
+"**HEIF**: High Efficiency Image Format, offering improved compression over "
+"JPEG."
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:77
+msgid ""
+"digiKam leverages the `Qt framework <https://doc.qt.io/qt-6/qtimageformats-"
+"index.html>`_ and its extended support via the `KImageFormats <https://"
+"invent.kde.org/frameworks/kimageformats>`_ component from the KDE "
+"frameworks. These loaders provide compatibility with additional native "
+"formats."
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:78
+msgid "**Qt Framework Loaders**"
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:81
+msgid ""
+"As a fallback, **ImageMagick** is used to support a wide range of `exotic "
+"and legacy formats <https://imagemagick.org/script/formats.php>`_. This "
+"ensures compatibility with less common file types not covered by native or "
+"Qt-based loaders."
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:82
+msgid "**ImageMagick Support**"
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:88
+msgid "Image Loaders Plugins Setup Page"
+msgstr ""
+
+#: ../../setup_application/plugins_settings.rst:88
+msgid "The Image Loaders Plugins Setup Page"
 msgstr ""
