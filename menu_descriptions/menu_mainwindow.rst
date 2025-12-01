@@ -323,9 +323,9 @@ The View Menu
         - Modification Date: Compare by date modified by the computer.
         - File Size: Compare by file size in bytes.
         - Format: Compare by type-mime in alphabetical order.
-        - Rating: Compare by Rating enumerate values.
-        - Pick Label: Compare by Pick Label enumerate values.
-        - Color Label: Compare by Color Label enumerate values.
+        - Rating: Compare by Rating order.
+        - Pick Label: Compare by Pick Label order.
+        - Color Label: Compare by Color Label order.
         - Image Size: Compare by pixels number.
         - Orientation: Compare by Exif Rotation flag.
         - Aspect Ratio: Compare by aspect ratio computed as ((width / height) * 100000).
