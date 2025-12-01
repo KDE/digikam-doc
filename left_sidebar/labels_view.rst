@@ -46,7 +46,7 @@ Using the image above as an example, digiKam will display all images Rated 3 OR 
 .. tip::
     The **Rating** and **Color** Labels can be used to sort items from your collection during your asset management workflow. See :ref:`this section <rating_ranking>` for details.
 
-The **Color** Labels can be renamed from the label tree-view by a mouse double-click on the string. By default, the color labels use the color name as description, but you can customize the string as you want for your workflow. The customized named will be visble in icon-view item tooltips, **Captions** and **Filters** tabs from right sidebar, **Advanced Search** dialog, and the virtual albums selection from the post-processing tools.
+The **Color** Labels can be renamed from the label tree-view by a mouse double-click on the string. By default, the color labels use the color name as description, but you can customize the string as you want for your workflow. The customized named will be visible in icon-view item tooltips, **Captions** and **Filters** tabs from right sidebar, **Advanced Search** dialog, and the virtual albums selection from the post-processing tools.
 
 .. _labels_assignment:
 
