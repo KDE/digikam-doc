@@ -219,23 +219,23 @@ The View Menu
 
 .. _menu_mainviewpreview:
 
-:menuselection:`View --> Preview Image` :kbd:`F3`
+:menuselection:`View --> Preview` :kbd:`F3`
 
     Shows additionally a :ref:`Preview <viewing_photograph>` in the **Image View**.
 
-    The preview has **Back** and **Forward** buttons at the top left corner to navigate through all the images currently shown.
+    The preview has **Back** and **Forward** buttons at the top left corner to navigate through all the items currently shown.
 
 .. _menu_mainviewmap:
 
 :menuselection:`View --> Map`
 
-    Shows images on a map.
+    Shows items on a map.
 
 .. _menu_mainviewtable:
 
 :menuselection:`View --> Table`
 
-    Shows images in a table where you can choose by right clicking on the title bar which information you want to be displayed.
+    Shows items in a table where you can choose by right clicking on the title bar which information you want to be displayed.
 
     By default you have these four items also on the main toolbar.
 
@@ -247,11 +247,11 @@ The View Menu
 
 :menuselection:`View --> Slideshow --> All` :kbd:`F9`
 
-    Start Slide-Show of all images in current window.
+    Start Slide-Show of all items in current window.
 
 :menuselection:`View --> Slideshow --> Selection` :kbd:`Alt+F9`
 
-    Start Slide-Show on selected images.
+    Start Slide-Show on selected items.
 
 :menuselection:`View --> Slideshow --> With All Sub-Albums` :kbd:`Shift+F9`
 
@@ -267,9 +267,9 @@ The View Menu
 
 .. _menu_mainopenglviewer:
 
-:menuselection:`View --> OpenGL Image Viewer`
+:menuselection:`View --> OpenGL Viewer`
 
-    Tool to display images using OpenGL compatible device.
+    Tool to display items using OpenGL compatible device.
 
     See the dedicated :ref:`OpenGL Viewer <opengl_viewer>` for more information.
 
@@ -303,11 +303,11 @@ The View Menu
 
 :menuselection:`View --> Fit to Window` :kbd:`Ctrl+Alt+E`
 
-    Will size the image it fits snug into the window.
+    Will size the item it fits snug into the window.
 
 :menuselection:`View --> Zoom to 100%` :kbd:`Ctrl+,`
 
-    Will show the image full size (meaning 1 image pixel is mapped exactly to 1 screen pixel) in preview mode.
+    Will show the item full size (meaning 1 item pixel is mapped exactly to 1 screen pixel) in preview mode.
 
 :menuselection:`View --> Sort Albums`
 
@@ -317,28 +317,33 @@ The View Menu
 
     Sort all images in current Album by:
 
-        - Name.
-        - Path.
-        - Creation Date.
-        - Modification Date.
-        - File Size.
-        - Rating.
-        - Image Size.
-        - Aspect Ratio.
-        - Face Type.
-        - Similarity (only in the Similarity Search View).
-        - Manual and Name.
-        - Manual and Date.
+        - Name: Compare by file name in alphabetical order.
+        - Path: Compare by file path in alphabetical order.
+        - Creation Date: Compare by camera creation date.
+        - Modification Date: Compare by date modified by the computer.
+        - File Size: Compare by file size in bytes.
+        - Format: Compare by type-mime in alphabetical order.
+        - Rating: Compare by Rating enumerate values.
+        - Pick Label: Compare by Pick Label enumerate values.
+        - Color Label: Compare by Color Label enumerate values.
+        - Image Size: Compare by pixels number.
+        - Orientation: Compare by Exif Rotation flag.
+        - Aspect Ratio: Compare by aspect ratio computed as ((width / height) * 100000).
+        - GPS Position: Compare by GPS location properties. If an image lacks GPS coordinates it is placed after images with GPS data. If both images lack GPS data, they are treated as equal. The primary sort is by latitude, followed by longitude if latitudes are equal.
+        - Face Type: Compare by counting the number of unconfirmed faces.
+        - Similarity: Compare by similarity results (only available in the Similarity Search View).
+        - Manual and Name: Compare by the manual sorting order and the file name.
+        - Manual and Date: Compare by the manual sorting order and the creation date.
 
 :menuselection:`View --> Image Sorting Order`
 
     Select whether images should be sorted in ascending or descending order.
 
-:menuselection:`View --> Group Images`
+:menuselection:`View --> Separate Items`
 
-    Select whether images should be shown un-grouped (Flat List) or grouped by album or by format.
+    Select whether images should be shown un-grouped (Flat List), or grouped by album, by format, by faces, by month, and by day.
 
-:menuselection:`View --> Group Sorting Order`
+:menuselection:`View --> Separate Items Order`
 
     Select whether groups should be sorted in ascending or descending order.
 
