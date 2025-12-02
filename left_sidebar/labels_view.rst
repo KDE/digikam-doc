@@ -44,9 +44,22 @@ You may select more than one label by :kbd:`Ctrl+left` click. The selected label
 Using the image above as an example, digiKam will display all images Rated 3 OR 4 stars, AND with a Pick label of Pending OR Accepted. A color label was not selected, so all color labels are included in the search, including images with no color label assigned.
 
 .. tip::
+
     The **Rating** and **Color** Labels can be used to sort items from your collection during your asset management workflow. See :ref:`this section <rating_ranking>` for details.
 
-The **Color** Labels can be renamed from the label tree-view by a mouse double-click on the string. By default, the color labels use the color name as description, but you can customize the string as you want for your workflow. The customized named will be visible in icon-view item tooltips, **Captions** and **Filters** tabs from right sidebar, **Advanced Search** dialog, and the virtual albums selection from the post-processing tools.
+You can rename **Color Labels** directly in the label tree-view by **double-clicking** the label text.
+
+By default, each color label uses the color name as its description. However, you can customize this text to better fit your workflow.
+
+The customized label name will appear in:
+- **Icon-view item tooltips**.
+- The **Captions** and **Filters** tabs of the right sidebar.
+- The **Advanced Search** dialog.
+- The virtual album selection in post-processing tools.
+
+.. note::
+
+   Color label names are limited to **32 characters**.
 
 .. _labels_assignment:
 
