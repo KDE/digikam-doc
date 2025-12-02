@@ -21,8 +21,11 @@ Label Selection
 ---------------
 
 The Labels View allows you to select photographs by the **Rating**, **Pick** and **Color** Labels assigned to the image.
+
     - **Ratings** are displayed by stars.
+
     - **Picks** are displayed by flags.
+
     - **Colors** are displayed by colored line under the image.
 
 .. figure:: images/left_sidebar_labels_view.webp
@@ -52,10 +55,14 @@ You can rename **Color Labels** directly in the label tree-view by **double-clic
 By default, each color label uses the color name as its description. However, you can customize this text to better fit your workflow.
 
 The customized label name will appear in:
-- **Icon-view item tooltips**.
-- The **Captions** and **Filters** tabs of the right sidebar.
-- The **Advanced Search** dialog.
-- The virtual album selection in post-processing tools.
+
+    - **Icon-view item tooltips**.
+
+    - The **Captions** and **Filters** tabs of the right sidebar.
+
+    - The **Advanced Search** dialog.
+
+    - The virtual album selection in post-processing tools.
 
 .. note::
 
@@ -143,6 +150,7 @@ Quality Engine:
 ~~~~~~~~~~~~~~~
 
     - **Detect Aesthetic Contents**: Uses the deep-learning neural network to assess the aesthetic quality of images.
+
     - **Detect by Basic Factors**: Uses basic factors such as blur, noise, and exposure to assess image quality.
 
 **Detect Aesthetic Contents** uses an artificial intelligence engine based on `this model <https://expertphotography.com/aesthetic-photography/>`_ to predict an aesthetic score. As deep-learning is an end-to-end solution, it doesn’t require hyper-parameter settings, which makes this approach far easier to use.
@@ -157,6 +165,7 @@ Work on all processor cores
 The Image Quality Scan can be a time-consuming task depending on the size of your library and filtering selected in **Search-in**. It is recommended to use all processor cores.  This will make the process run faster, but it can potentially make other processes run slower and make your computer feel unresponsive while images are being processed. You can uncheck **Work on all processor cores** if your machine is slow and you want to perform other tasks while the scan is running.
 
 .. tip::
+
    Because of technical limitations on Windows, multi-core support for MySQL/MariaDB databases does not perform well. For better performance, we recommend using a SQLite database instead.
 
 Basic Factors Tab
