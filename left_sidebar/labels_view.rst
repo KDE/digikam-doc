@@ -54,6 +54,12 @@ You can rename **Color Labels** directly in the label tree-view by **double-clic
 
 By default, each color label uses the color name as its description. However, you can customize this text to better fit your workflow.
 
+.. figure:: images/left_sidebar_labels_color_renaming.webp
+    :alt:
+    :align: center
+
+    The digiKam Color Labels Can Be Renamed
+
 The customized label name will appear in:
 
     - **Icon-view item tooltips**.
@@ -67,6 +73,7 @@ The customized label name will appear in:
 .. note::
 
    Color label names are limited to **32 characters**.
+   To reset a color label name to the default value, just clear the string and valid.
 
 .. _labels_assignment:
 
