@@ -21,8 +21,6 @@ The **Queue Settings** area in the bottom left of the Batch Queue Manager is use
 
     With the Workflow feature, you can store your preferred queue settings for later use. See :ref:`this section <bqm_workflow>` of the manual for details.
 
-.. _queue_settings_target:
-
 Target
 ------
 
@@ -33,8 +31,6 @@ This tab allows you to select the album where the target or result files will be
     :align: center
 
     The Batch Queue Manager Queue Settings View to Customize Target Album to Store Processed Items
-
-.. _queue_settings_rename:
 
 File Renaming
 -------------
@@ -48,8 +44,6 @@ The settings for file renaming are exactly the same as in the **Advanced Rename*
     :align: center
 
     The Batch Queue Manager Queue Settings View to Customize the File Rename Rules
-
-.. _queue_settings_behavior:
 
 Behavior
 --------
@@ -74,8 +68,6 @@ The **Work on all Processor Cores** option allows digiKam to use multiple CPU co
 
     The Batch Queue Manager Queue Settings View to Customize the Behavior
 
-.. _queue_settings_raw:
-
 RAW Decoding
 ------------
 
@@ -88,8 +80,6 @@ The **RAW Import** portion of the :ref:`Image Editor Settings <setup_rawdefault>
     :align: center
 
     The Batch Queue Manager Queue Settings View to Customize the RAW Decoding
-
-.. _queue_settings_save:
 
 Saving Images
 -------------
