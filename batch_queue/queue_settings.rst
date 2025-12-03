@@ -21,6 +21,8 @@ The **Queue Settings** area in the bottom left of the Batch Queue Manager is use
 
     With the Workflow feature, you can store your preferred queue settings for later use. See :ref:`this section <bqm_workflow>` of the manual for details.
 
+.. _queue_settings_target:
+
 Target
 ------
 
@@ -31,6 +33,8 @@ This tab allows you to select the album where the target or result files will be
     :align: center
 
     The Batch Queue Manager Queue Settings View to Customize Target Album to Store Processed Items
+
+.. _queue_settings_rename:
 
 File Renaming
 -------------
@@ -45,6 +49,8 @@ The settings for file renaming are exactly the same as in the **Advanced Rename*
 
     The Batch Queue Manager Queue Settings View to Customize the File Rename Rules
 
+.. _queue_settings_behavior:
+
 Behavior
 --------
 
@@ -56,13 +62,19 @@ The **Target File Exists** setting allows you to customize the behavior when the
 
 The **Save Image as a Newly Created Branch** setting will use **Image Versioning** to name target files. This is the same behavior as when files are exported from **Image Editor** when the versioning feature is enabled.
 
-The **Work on all Processor Cores** setting will use more than one core to process items in parallel from the same queue.
+The **Work on all Processor Cores** option allows digiKam to use multiple CPU cores to process items in the queue simultaneously. Parallel processing can significantly speed up batch operations, especially when handling large numbers of images or resource-intensive tools. However, using all available cores may impact the performance of other applications and make your system feel less responsive during processing. If your machine is slow or if you need to run other tasks while the batch queue is active, you can disable this option to reduce system load.
+
+.. tip::
+
+   Because of technical limitations on Windows, multi-core support for MySQL/MariaDB databases does not perform well. For better performance, we recommend using a SQLite database instead.
 
 .. figure:: images/bqm_queue_settings_behavior.webp
     :alt:
     :align: center
 
     The Batch Queue Manager Queue Settings View to Customize the Behavior
+
+.. _queue_settings_raw:
 
 RAW Decoding
 ------------
@@ -76,6 +88,8 @@ The **RAW Import** portion of the :ref:`Image Editor Settings <setup_rawdefault>
     :align: center
 
     The Batch Queue Manager Queue Settings View to Customize the RAW Decoding
+
+.. _queue_settings_save:
 
 Saving Images
 -------------

@@ -144,7 +144,7 @@ Scan Mode:
 Assign labels:
 ~~~~~~~~~~~~~~
 
-    - Select which pick labels to assign to images. This is useful for letting digiKam automatically reject images that do not meet your quality standards, but still allow you to manually assign the other labels. Un-checking all three options renders the Image Quality Scanner functionally useless.
+    Select which pick labels to assign to images. This is useful for letting digiKam automatically reject images that do not meet your quality standards, but still allow you to manually assign the other labels. Un-checking all three options renders the Image Quality Scanner functionally useless.
 
 Quality Engine:
 ~~~~~~~~~~~~~~~
