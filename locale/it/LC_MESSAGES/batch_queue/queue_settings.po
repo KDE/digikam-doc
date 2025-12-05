@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-17 08:55+0000\n"
+"POT-Creation-Date: 2025-12-04 01:59+0000\n"
 "PO-Revision-Date: 2024-12-14 19:09+0100\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -180,23 +180,34 @@ msgstr ""
 
 #: ../../batch_queue/queue_settings.rst:59
 msgid ""
-"The **Work on all Processor Cores** setting will use more than one core to "
-"process items in parallel from the same queue."
+"The **Work on all Processor Cores** option allows digiKam to use multiple "
+"CPU cores to process items in the queue simultaneously. Parallel processing "
+"can significantly speed up batch operations, especially when handling large "
+"numbers of images or resource-intensive tools. However, using all available "
+"cores may impact the performance of other applications and make your system "
+"feel less responsive during processing. If your machine is slow or if you "
+"need to run other tasks while the batch queue is active, you can disable "
+"this option to reduce system load."
 msgstr ""
-"L'impostazione **Lavora con tutti i core del processore** userà più di un "
-"core per elaborare gli elementi in parallelo dalla stessa coda."
 
-#: ../../batch_queue/queue_settings.rst:65
+#: ../../batch_queue/queue_settings.rst:63
+msgid ""
+"Because of technical limitations on Windows, multi-core support for MySQL/"
+"MariaDB databases does not perform well. For better performance, we "
+"recommend using a SQLite database instead."
+msgstr ""
+
+#: ../../batch_queue/queue_settings.rst:69
 msgid "The Batch Queue Manager Queue Settings View to Customize the Behavior"
 msgstr ""
 "La vista delle impostazioni del gestore elaborazione in serie per "
 "personalizzare il comportamento"
 
-#: ../../batch_queue/queue_settings.rst:68
+#: ../../batch_queue/queue_settings.rst:72
 msgid "RAW Decoding"
 msgstr "Decodifica dei file RAW"
 
-#: ../../batch_queue/queue_settings.rst:70
+#: ../../batch_queue/queue_settings.rst:74
 msgid ""
 "This tab allows you to customize the RAW Import settings for the Batch Queue "
 "Manager. Typically these settings are used when RAW files are present in a "
@@ -212,7 +223,7 @@ msgstr ""
 "l'opzione **Comportamento/Caricamento dei file RAW** è abilitata in "
 "**Decodifica RAW**."
 
-#: ../../batch_queue/queue_settings.rst:72
+#: ../../batch_queue/queue_settings.rst:76
 msgid ""
 "The **RAW Import** portion of the :ref:`Image Editor Settings "
 "<setup_rawdefault>` section provides a detailed description of these "
@@ -222,18 +233,18 @@ msgstr ""
 "dell'Editor delle immagini <setup_rawdefault>` fornisce una descrizione "
 "dettagliata di queste impostazioni."
 
-#: ../../batch_queue/queue_settings.rst:78
+#: ../../batch_queue/queue_settings.rst:82
 msgid ""
 "The Batch Queue Manager Queue Settings View to Customize the RAW Decoding"
 msgstr ""
 "La vista delle impostazioni del gestore elaborazione in serie per "
 "personalizzare la decodifica RAW"
 
-#: ../../batch_queue/queue_settings.rst:81
+#: ../../batch_queue/queue_settings.rst:85
 msgid "Saving Images"
 msgstr "Salvataggio delle immagini"
 
-#: ../../batch_queue/queue_settings.rst:83
+#: ../../batch_queue/queue_settings.rst:87
 msgid ""
 "This tab allows you to customize the settings used while saving the image. "
 "It is not uncommon for a queue to process files without exporting the "
@@ -255,7 +266,7 @@ msgstr ""
 "impostazioni degli strumenti saranno utilizzate per controllare il processo "
 "di esportazione."
 
-#: ../../batch_queue/queue_settings.rst:85
+#: ../../batch_queue/queue_settings.rst:89
 msgid ""
 "All the details of these settings is described in the **Save Images** "
 "portion of the :ref:`Image Editor Settings <saveimage_settings>` section of "
@@ -265,12 +276,19 @@ msgstr ""
 "immagini** del capitolo :ref:`Impostazioni dell'Editor delle immagini "
 "<saveimage_settings>` di questo manuale."
 
-#: ../../batch_queue/queue_settings.rst:91
+#: ../../batch_queue/queue_settings.rst:95
 msgid ""
 "The Batch Queue Manager Queue Settings View to Customize the File Saving"
 msgstr ""
 "La vista delle impostazioni del gestore elaborazione in serie per "
 "personalizzare il salvataggio dei file"
+
+#~ msgid ""
+#~ "The **Work on all Processor Cores** setting will use more than one core "
+#~ "to process items in parallel from the same queue."
+#~ msgstr ""
+#~ "L'impostazione **Lavora con tutti i core del processore** userà più di un "
+#~ "core per elaborare gli elementi in parallelo dalla stessa coda."
 
 #~ msgid "Queue Settings"
 #~ msgstr "Impostazioni delle code"

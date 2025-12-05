@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-17 08:55+0000\n"
+"POT-Creation-Date: 2025-12-04 01:59+0000\n"
 "PO-Revision-Date: 2024-12-07 14:17+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -176,23 +176,34 @@ msgstr ""
 
 #: ../../batch_queue/queue_settings.rst:59
 msgid ""
-"The **Work on all Processor Cores** setting will use more than one core to "
-"process items in parallel from the same queue."
+"The **Work on all Processor Cores** option allows digiKam to use multiple "
+"CPU cores to process items in the queue simultaneously. Parallel processing "
+"can significantly speed up batch operations, especially when handling large "
+"numbers of images or resource-intensive tools. However, using all available "
+"cores may impact the performance of other applications and make your system "
+"feel less responsive during processing. If your machine is slow or if you "
+"need to run other tasks while the batch queue is active, you can disable "
+"this option to reduce system load."
 msgstr ""
-"De instelling **Werk op alle processorkernen** zal meer dan één kern "
-"gebruiken om items uit dezelfde wachtrij parallel te verwerken."
 
-#: ../../batch_queue/queue_settings.rst:65
+#: ../../batch_queue/queue_settings.rst:63
+msgid ""
+"Because of technical limitations on Windows, multi-core support for MySQL/"
+"MariaDB databases does not perform well. For better performance, we "
+"recommend using a SQLite database instead."
+msgstr ""
+
+#: ../../batch_queue/queue_settings.rst:69
 msgid "The Batch Queue Manager Queue Settings View to Customize the Behavior"
 msgstr ""
 "De instellingenweergave van de takenwachtrijbeheerder voor aanpassen van het "
 "gedrag"
 
-#: ../../batch_queue/queue_settings.rst:68
+#: ../../batch_queue/queue_settings.rst:72
 msgid "RAW Decoding"
 msgstr "RAW-decodering"
 
-#: ../../batch_queue/queue_settings.rst:70
+#: ../../batch_queue/queue_settings.rst:74
 msgid ""
 "This tab allows you to customize the RAW Import settings for the Batch Queue "
 "Manager. Typically these settings are used when RAW files are present in a "
@@ -208,7 +219,7 @@ msgstr ""
 "wordt alleen gebruikt als **Gedrag/RAW-bestanden laden** is gezet op **RAW "
 "decoderen**."
 
-#: ../../batch_queue/queue_settings.rst:72
+#: ../../batch_queue/queue_settings.rst:76
 msgid ""
 "The **RAW Import** portion of the :ref:`Image Editor Settings "
 "<setup_rawdefault>` section provides a detailed description of these "
@@ -218,18 +229,18 @@ msgstr ""
 "de afbeeldingsbewerker <setup_rawdefault>` levert een gedetailleerde "
 "beschrijving van deze instellingen."
 
-#: ../../batch_queue/queue_settings.rst:78
+#: ../../batch_queue/queue_settings.rst:82
 msgid ""
 "The Batch Queue Manager Queue Settings View to Customize the RAW Decoding"
 msgstr ""
 "De instellingenweergave van de takenwachtrijbeheerder voor aanpassen van RAW "
 "decoderen"
 
-#: ../../batch_queue/queue_settings.rst:81
+#: ../../batch_queue/queue_settings.rst:85
 msgid "Saving Images"
 msgstr "Afbeeldingen opslaan"
 
-#: ../../batch_queue/queue_settings.rst:83
+#: ../../batch_queue/queue_settings.rst:87
 msgid ""
 "This tab allows you to customize the settings used while saving the image. "
 "It is not uncommon for a queue to process files without exporting the "
@@ -251,7 +262,7 @@ msgstr ""
 "alle gevallen worden deze hulpmiddelinstellingen gebruikt om het proces van "
 "exporteren te besturen."
 
-#: ../../batch_queue/queue_settings.rst:85
+#: ../../batch_queue/queue_settings.rst:89
 msgid ""
 "All the details of these settings is described in the **Save Images** "
 "portion of the :ref:`Image Editor Settings <saveimage_settings>` section of "
@@ -261,12 +272,19 @@ msgstr ""
 "**Afbeeldingen opslaan** uit de sectie :ref:`Instellingen van de "
 "afbeeldingsbewerker <saveimage_settings>` van deze handleiding."
 
-#: ../../batch_queue/queue_settings.rst:91
+#: ../../batch_queue/queue_settings.rst:95
 msgid ""
 "The Batch Queue Manager Queue Settings View to Customize the File Saving"
 msgstr ""
 "De instellingenweergave van de takenwachtrijbeheerder voor aanpassen van "
 "opslaan van bestanden"
+
+#~ msgid ""
+#~ "The **Work on all Processor Cores** setting will use more than one core "
+#~ "to process items in parallel from the same queue."
+#~ msgstr ""
+#~ "De instelling **Werk op alle processorkernen** zal meer dan één kern "
+#~ "gebruiken om items uit dezelfde wachtrij parallel te verwerken."
 
 #~ msgid "Queue Settings"
 #~ msgstr "Instellingen voor wachtrijen"
