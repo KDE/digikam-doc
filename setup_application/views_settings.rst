@@ -51,7 +51,7 @@ An example of an icon-view item is given below:
 
 .. tip::
 
-    For technical and design reasons, the Icon-View only displays a minimal set of information under thumbnails. However, digiKam offers a practical workaround, the Table View where thumbnails are organized in rows, and columns can be fully customized to show any metadata stored in the digiKam database 
+    For technical and design reasons, the **Icon-View** only displays a minimal set of information under thumbnails. However, digiKam offers a practical workaround, the **Table-View**, where thumbnails are organized in rows, and columns can be fully customized to show any metadata stored in the digiKam database 
 
 .. _thumbnails_action:
 
