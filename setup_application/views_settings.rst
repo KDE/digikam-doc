@@ -40,7 +40,6 @@ The **Show rotation overlay buttons** option shows overlay buttons over the imag
 
 The **Show fullscreen overlay button** option shows an overlay button over the image thumbnail to open it in fullscreen mode.
 
-
 An example of an icon-view item is given below:
 
 .. figure:: images/setup_album_iconview_item.webp
@@ -49,6 +48,10 @@ An example of an icon-view item is given below:
     :align: center
 
     An Icon-View Item Example **Using Large Thumbnail Size** Option
+
+.. tip::
+
+    For technical and design reasons, the Icon-View only displays a minimal set of information under thumbnails. However, digiKam offers a practical workaround, the Table View where thumbnails are organized in rows, and columns can be fully customized to show any metadata stored in the digiKam database 
 
 .. _thumbnails_action:
 
