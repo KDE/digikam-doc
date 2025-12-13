@@ -355,4 +355,5 @@ Occasionally, you may encounter special cases where the recommended face detecti
 
 - **Portraits**: When shooting portraits from the shoulder up, especially with modern high-resolution cameras over 40 megapixels, face recognition may not detect the face or may tag multiple areas of a single face. Setting the **Detection Accuracy** to 8, and setting the **Face size** to **Extra Large** will detect only the face, and eliminate false positive tag regions.
 
+- **Low Quality**: digiKam intentionally filters out faces that are too small, blurry, and of poor quality. This ensures that only high-quality samples are used to train the face recognition engine, improving accuracy and reliability. To optimize face recognition, use only high-quality images with clear, well-defined faces for training. Avoid including small, blurry, or low-resolution images in your workflow.
 
