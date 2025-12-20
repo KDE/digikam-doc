@@ -128,7 +128,7 @@ The renaming pattern can be customized with the **Renaming Options** collection 
 
 .. note::
 
-    The advanced rename used patterns are saved in the digiKam configuration file and will be restored between sessions for a future usage.
+    The advanced rename last used patterns are saved in the digiKam configuration file and will be restored between sessions for a future usage.
 
 .. figure:: images/mainwindow_advanced_rename_number.webp
     :alt:
