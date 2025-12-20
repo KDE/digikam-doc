@@ -126,6 +126,10 @@ You can change the filename for a photograph by clicking with the right mouse bu
 
 The renaming pattern can be customized with the **Renaming Options** collection on the bottom which contains the original file name, file extension, owner and group, directory, a dialog for defining a sequence number, and a dialog for adding date and time information, either based on a fixed date or based on the time information written by the camera into the image file. Each option appended to the renaming pattern can be customized with the **Modifier** button on the right side of the renaming pattern editor.
 
+.. note::
+
+    The advanced rename used patterns are saved in the digiKam configuration file and will be restored between sessions for a future usage.
+
 .. figure:: images/mainwindow_advanced_rename_number.webp
     :alt:
     :align: center
