@@ -82,7 +82,7 @@ Examples
 Proof of Concept
 ~~~~~~~~~~~~~~~~
 
-This first example shown below does nothing special. It prints on the console the input/output file names and item properties passed from the Batch Queue Manager to the script, and copies the input file to the output file (this stage is required to prevent the Batch Queue Manager from returning an error because the target file does not exist). The script returns the value from the file copy command, which is parsed by the Batch Queue Manager for each item in the workflow.
+This first example shown below does nothing special. It prints on the console the input/output file names and item properties passed from the Batch Queue Manager to the script, and copies the input file to the output file (this stage is required to prevent the Batch Queue Manager from returning an error because the target file does not exist). The script returns the value from the file copy command, which is parsed by the Batch Queue Manager for each item in the workflow. See below the **Bash** version of the script:
 
 .. code-block:: bash
 
@@ -98,6 +98,25 @@ This first example shown below does nothing special. It prints on the console th
 
     cp $INPUT $OUTPUT
     exit $?
+
+See below the **Windows Shell** version of the script. The output is redirected and concatened to the *C:\temp\digikam.txt*:
+
+.. code-block:: shell
+
+    set infile=$INPUT
+    set outfile=$OUTPUT
+
+    echo INPUT FILE: %infile%  >>C:\temp\digikam.txt
+    echo OUTPUT FILE:  %outfile% >>C:\temp\digikam.txt
+
+    echo TITLE: %TITLE%  >>C:\temp\digikam.txt
+    echo COMMENT: %COMMENT%  >>C:\temp\digikam.txt
+    echo COLORLABEL: %COLORLABEL%  >>C:\temp\digikam.txt
+    echo PICKLABEL: %PICKLABEL% >>C:\temp\digikam.txt
+    echo RATING: %RATING% >>C:\temp\digikam.txt
+    echo TAGSPATH: %TAGSPATH% >>C:\temp\digikam.txt
+
+    copy %infile% %outfile%
 
 If you have started digiKam from a terminal and enabled the debug traces on :ref:`Setting/Miscellaneous/System dialog page <system_settings>`, you will see something like this:
 
