@@ -1,13 +1,13 @@
 # Copyright (C) licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise
 # This file is distributed under the same license as the Digikam Manual package.
 #
-# SPDX-FileCopyrightText: 2025 Marcus Gama <marcus.gama@gmail.com>
+# SPDX-FileCopyrightText: 2025, 2026 Marcus Gama <marcus.gama@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-26 01:55+0000\n"
-"PO-Revision-Date: 2025-12-04 07:10-0300\n"
+"PO-Revision-Date: 2026-01-02 16:58-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.08.3\n"
+"X-Generator: Lokalize 25.12.0\n"
 
 #: ../../batch_queue/queue_settings.rst:-1
 msgid "digiKam Batch Queue Manager Queue Settings"
@@ -68,7 +68,7 @@ msgstr ""
 
 #: ../../batch_queue/queue_settings.rst:25
 msgid "Target"
-msgstr "Alvo"
+msgstr "Destino"
 
 #: ../../batch_queue/queue_settings.rst:27
 msgid ""
@@ -78,11 +78,11 @@ msgid ""
 "you to filter the album tree-view, a handy feature if you have a huge "
 "collection."
 msgstr ""
-"Esta aba permite selecionar o álbum onde os arquivos de destino ou de "
-"resultado serão armazenados. Há duas opções: o mesmo álbum onde os arquivos "
-"originais estão armazenados ou outro álbum. O campo de busca na parte "
-"inferior permite filtrar a visualização em árvore do álbum, um recurso útil "
-"se você tiver uma coleção enorme."
+"Esta aba permite selecionar o álbum onde os arquivos de destino ou de saída "
+"serão armazenados. Há duas opções: o mesmo álbum onde os arquivos originais "
+"estão armazenados ou outro álbum. O campo de busca na parte inferior permite "
+"filtrar a visualização em árvore dos álbuns, um recurso útil se você tiver "
+"uma coleção enorme."
 
 #: ../../batch_queue/queue_settings.rst:33
 msgid ""
@@ -145,10 +145,11 @@ msgid ""
 "This last option is very fast compared to RAW decoding."
 msgstr ""
 "A configuração de **Carregamento dos arquivos RAW** define como os arquivos "
-"RAW serão processados: selecione **Decodificação RAW** para processar com a "
-"reconstrução de cor padrão (veja abaixo) ou selecione **Visualização "
-"embutida** para processar com uma visualização embutida. Esta última opção é "
-"muito mais rápida em comparação com a decodificação RAW."
+"RAW serão processados: selecione **Efetuar a reconstrução de cor do RAW** "
+"para processar com a reconstrução de cor padrão (veja abaixo) ou selecione "
+"**Extrair a visualização embutida** para processar com uma visualização "
+"embutida. Esta última opção é muito mais rápida em comparação com a "
+"reconstrução de cor do RAW."
 
 #: ../../batch_queue/queue_settings.rst:55
 msgid ""
@@ -176,7 +177,7 @@ msgstr ""
 "A configuração **Salvar imagem como uma versão recém criada** usará o "
 "**Controle de versão de imagem** para nomear os arquivos de destino. Este é "
 "o mesmo comportamento de quando os arquivos são exportados do **Editor de "
-"Imagens** quando o recurso de controle de versão está habilitado."
+"Imagem** quando o recurso de controle de versão está habilitado."
 
 #: ../../batch_queue/queue_settings.rst:59
 msgid ""
@@ -189,16 +190,15 @@ msgid ""
 "need to run other tasks while the batch queue is active, you can disable "
 "this option to reduce system load."
 msgstr ""
-"A opção **Trabalhar em todos os núcleos do processador** permite que o "
-"digiKam use vários núcleos de CPU para processar itens na fila "
-"simultaneamente. O processamento paralelo pode acelerar significativamente "
-"as operações em lote, especialmente ao lidar com um grande número de imagens "
-"ou ferramentas que consomem muitos recursos. No entanto, usar todos os "
-"núcleos disponíveis pode afetar o desempenho de outros aplicativos e fazer "
-"com que seu sistema pareça menos responsivo durante o processamento. Se sua "
-"máquina for lenta ou se você precisar executar outras tarefas enquanto a "
-"fila de lotes estiver ativa, você pode desativar esta opção para reduzir a "
-"carga do sistema."
+"A opção **Usar todos os processadores** permite que o digiKam use vários "
+"núcleos de CPU para processar itens na fila simultaneamente. O processamento "
+"paralelo pode acelerar significativamente as operações em lote, "
+"especialmente ao lidar com um grande número de imagens ou ferramentas que "
+"consomem muitos recursos. No entanto, usar todos os núcleos disponíveis pode "
+"afetar o desempenho de outros aplicativos e fazer com que seu sistema pareça "
+"menos responsivo durante o processamento. Se sua máquina for lenta ou se "
+"você precisar executar outras tarefas enquanto a fila de lotes estiver "
+"ativa, você pode desativar esta opção para reduzir a carga do sistema."
 
 #: ../../batch_queue/queue_settings.rst:63
 msgid ""
@@ -213,7 +213,7 @@ msgstr ""
 #: ../../batch_queue/queue_settings.rst:69
 msgid "The Batch Queue Manager Queue Settings View to Customize the Behavior"
 msgstr ""
-"Vista da configurações de fila do gerenciador de processamento em lote para "
+"Vista das configurações de fila do gerenciador de processamento em lote para "
 "personalizar o comportamento"
 
 #: ../../batch_queue/queue_settings.rst:72
@@ -233,7 +233,8 @@ msgstr ""
 "usadas quando há arquivos RAW em uma fila. Os arquivos RAW precisam ser "
 "decodificados e carregados na memória em um espaço de cor RGB antes do "
 "processamento em lote. Esta configuração só é usada se **Carregamento de "
-"arquivos RAW/Comportamento** estiver definido como **Decodificação RAW**."
+"arquivos RAW/Comportamento** estiver definido como **Efetuar a reconstrução "
+"de cor do RAW**."
 
 #: ../../batch_queue/queue_settings.rst:76
 msgid ""
@@ -241,7 +242,7 @@ msgid ""
 "<setup_rawdefault>` section provides a detailed description of these "
 "settings."
 msgstr ""
-"A parte sobre a **Importação RAW** da seção :ref:`Configurações do Editor de "
+"O texto sobre a **Importação RAW** da seção :ref:`Configurações do Editor de "
 "Imagem <setup_rawdefault>` fornece uma descrição detalhada dessas "
 "configurações."
 
@@ -283,7 +284,7 @@ msgid ""
 "portion of the :ref:`Image Editor Settings <saveimage_settings>` section of "
 "this manual."
 msgstr ""
-"Todos os detalhes dessas configurações são descritos na parte **Salvar "
+"Todos os detalhes dessas configurações são descritos no texto sobre **Salvar "
 "imagens** da seção :ref:`Configurações do Editor de Imagem "
 "<saveimage_settings>` deste manual."
 
