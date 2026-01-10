@@ -300,7 +300,7 @@ This section allows you to adjust special low-level configurations used by digiK
 
 - **Use the video texture conversion**: this option must be used to reduce CPU usage when video frames are rendered by using GPU-based conversion with the FFmpeg backend. Disable this option if video media decoding errors occur.
 
-- **Decoding backend to render video**: this option chooses the backend used to render video media with the **Qt6 version** of application. Supported backends are:
+- **Decoding backend to render media**: this option chooses the backend used to render video and audio media with the **Qt6 version** of application. Supported backends are:
 
     - **FFmpeg**: the default and recommended backend available on all platforms. `FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ always includes all necessary codecs to play media.
     - **GStreamer**: the alternative backend available **under Linux**. `GStreamer <https://en.wikipedia.org/wiki/GStreamer>`_ can require the installation of 3rd-party codecs on the system to work properly.
