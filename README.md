@@ -449,13 +449,21 @@ you can show a translated version of this documentation by selecting a language 
 
 Sphinx allows to generate PDF using Latex engine in background, but this converter as several limitations, as the non support of WEBP format used for screenshots and screen-casts.
 
-An alternative is to install [Calibre](https://calibre-ebook.com/) and to convert the EPUB target to PDF like this:
+Note: unlike EPUB, PDF is only for print purpose. During conversion video screen-casts will be converted as still images, and all Internet links will be dropped.
+
+### Using Calibre
+
+Install [Calibre](https://calibre-ebook.com/) and to convert the EPUB target to PDF like this:
 
 `ebook-convert build/epub/DigikamManual.epub build/epub/DigikamManual.pdf`
 
 The PDF file is generated in `build/epub`. Open the file `DigikamManual.pdf` in your preferred PDF reader.
 
-Note: unlike EPUB, PDF is only for print purpose. During conversion video screen-casts will be converted as still images, and all Internet links will be dropped.
+### Using PanDoc
+
+Another tool to convert EPUB to PDF is [PanDoc](https://pandoc.org/) with the [weasyprint](https://weasyprint.org/) engine. Install both on your computer and convert EPUB target to PDF like this:
+
+`pandoc --pdf-engine=weasyprint build/epub/DigikamManual.epub -o build/epub/DigikamManual.pdf`
 
 ## Rationale
 
