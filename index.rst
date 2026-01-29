@@ -814,7 +814,7 @@ Export Tools
 
     .. container:: tile no-descr
 
-        :ref:`remote_export`
+        :ref:`file_transfer`
 
     .. container:: tile no-descr
 
@@ -935,18 +935,6 @@ Menu Descriptions
    :hidden:
 
    menu_descriptions
-
-#########################
-Context Menu Descriptions
-#########################
-
-.. container:: toctile
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-
-   context_menus
 
 ###################
 Credits and License

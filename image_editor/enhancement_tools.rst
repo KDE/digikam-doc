@@ -273,7 +273,7 @@ The **Local Contrast** tool uses a Low Dynamic Range `Tonemapping <https://en.wi
     The Image Editor Local Contrast Tool
 
 Using the Local Contrast Tool
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Open the photo you want in the Image editor and choose :menuselection:`Enhance --> Local Contrast`.
 
@@ -286,7 +286,7 @@ Using the Local Contrast Tool
 3. To preview the result, hit the **Try** button. Once you are satisfied with the result, press **OK** to apply the process to the photo.
 
 Tips for Best Results
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
 - **Start with Low Values**: Begin with low values for both Power and Blur, then gradually increase them to see the effect.
 

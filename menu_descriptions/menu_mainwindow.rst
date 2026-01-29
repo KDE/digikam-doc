@@ -580,7 +580,7 @@ The Export Menu
 
     Tool to upload files to another computer using network.
 
-    See :ref:`Remote Storage Export Tool <remote_export>` for more information.
+    See :ref:`Remote Storage Export Tool <file_transfer>` for more information.
 
 .. _menu_mainsettings:
 

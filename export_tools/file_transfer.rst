@@ -10,8 +10,8 @@
 
 .. _file_transfer:
 
-:ref:`Export To Remote Computer <export_tools>`
-===============================================
+:ref:`Export To Remote Computer <file_transfer>`
+================================================
 
 .. contents::
 
