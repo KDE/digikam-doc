@@ -29,3 +29,4 @@ This section explain how to use the digiKam menu.
    menu_descriptions/menu_lighttable.rst
    menu_descriptions/menu_importtool.rst
    menu_descriptions/menu_showfoto.rst
+   menu_descriptions/context_menus.rst

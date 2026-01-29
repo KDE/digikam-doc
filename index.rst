@@ -930,6 +930,10 @@ Menu Descriptions
 
         :ref:`menu_showfoto`
 
+    .. container:: tile no-descr
+
+        :ref:`context_menus`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
