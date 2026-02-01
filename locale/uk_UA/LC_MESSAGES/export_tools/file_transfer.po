@@ -1,0 +1,464 @@
+# Copyright (C) licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise
+# This file is distributed under the same license as the Digikam Manual package.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2023, 2024, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: Digikam Manual 8.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-30 02:21+0000\n"
+"PO-Revision-Date: 2025-11-08 19:50+0200\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 23.04.3\n"
+
+#: ../../export_tools/file_transfer.rst:-1
+msgid "digiKam Export to Remote Computer"
+msgstr "Експорт на віддалений комп'ютер у digiKam"
+
+#: ../../export_tools/file_transfer.rst:-1
+msgid ""
+"digiKam, documentation, user manual, photo management, open source, free, "
+"learn, easy, remote, computer, export"
+msgstr ""
+"digiKam, документація, підручник користувача, керування фотографій, "
+"відкритий код, вільний, навчання, простий, віддалений комп'ютер, експорт"
+
+#: ../../export_tools/file_transfer.rst:14
+#, fuzzy
+#| msgid ":ref:`Export To Remote Computer <export_tools>`"
+msgid ":ref:`Export To Remote Computer <file_transfer>`"
+msgstr ":ref:`Експортувати на віддалений комп'ютер <export_tools>`"
+
+#: ../../export_tools/file_transfer.rst:16
+msgid "Contents"
+msgstr "Зміст"
+
+#: ../../export_tools/file_transfer.rst:19
+msgid "Introduction"
+msgstr "Вступ"
+
+#: ../../export_tools/file_transfer.rst:21
+msgid ""
+"This tool allows you to upload files from your collections to a remote "
+"computer using a network. It is available from the :menuselection:`Export --"
+"> Export to remote storage` :kbd:`Ctrl+Alt+Shift+K` menu entry or the "
+"corresponding icon in the **Tools** tab in the Right Sidebar. The tool uses "
+"the KDE KIO-slaves in the background to communicate with the remote target."
+msgstr ""
+"За допомогою цього інструмента можна вивантажувати файли з ваших збірок на "
+"віддалений комп'ютер за допомогою мережі. Доступ до інструмента можна "
+"отримати за допомогою пункту меню :menuselection:`Експорт --> Експортувати "
+"до віддаленого сховища` :kbd:`Ctrl+Alt+Shift+K` або відповідної піктограми "
+"на вкладці **Інструменти** правої бічної панелі. За лаштунками для обміну "
+"даними з віддаленими комп'ютерами використано допоміжні засоби KIO KDE."
+
+#: ../../export_tools/file_transfer.rst:27
+msgid "The Export to Remote Computer Dialog"
+msgstr "Вікно експортування на віддалений комп'ютер"
+
+#: ../../export_tools/file_transfer.rst:32
+msgid "KIO-Slaves Protocols"
+msgstr "Протоколи допоміжних KIO"
+
+#: ../../export_tools/file_transfer.rst:34
+msgid ""
+"KDE's KIO-Slaves allow you to access local and remote resources seamlessly "
+"from applications like digiKam. Below is a list of the most commonly used "
+"KIO-Slaves protocols for file export and remote access:"
+msgstr ""
+"Допоміжні засоби KIO KDE надають вам змогу отримувати безпосередній доступ "
+"до локальних і віддалених ресурсів з програм, подібних до digiKam. Нижче "
+"наведено список найпоширеніших протоколів допоміжних засобів KIO для "
+"експортування файлів та віддаленого доступу:"
+
+#: ../../export_tools/file_transfer.rst:40
+msgid "Protocol"
+msgstr "Протокол"
+
+#: ../../export_tools/file_transfer.rst:41
+msgid "Description"
+msgstr "Опис"
+
+#: ../../export_tools/file_transfer.rst:42
+msgid "Example"
+msgstr "Приклад"
+
+#: ../../export_tools/file_transfer.rst:43
+msgid "``file://``"
+msgstr "``file://``"
+
+#: ../../export_tools/file_transfer.rst:44
+msgid "Access local files and directories."
+msgstr "Доступ до локальних файлів і каталогів."
+
+#: ../../export_tools/file_transfer.rst:45
+msgid "``file:///home/user/folder/``"
+msgstr "``file:///home/користувач/тека/``"
+
+#: ../../export_tools/file_transfer.rst:46
+msgid "``ftp://``"
+msgstr "``ftp://``"
+
+#: ../../export_tools/file_transfer.rst:47
+msgid "Access files on an FTP server (unencrypted)."
+msgstr "Доступ до файлів на сервері FTP (без шифрування)."
+
+#: ../../export_tools/file_transfer.rst:48
+msgid "``ftp://user:password@server.com/folder/``"
+msgstr "``ftp://користувач:пароль@сервер.com/тека/``"
+
+#: ../../export_tools/file_transfer.rst:49
+msgid "``sftp://``"
+msgstr "``sftp://``"
+
+#: ../../export_tools/file_transfer.rst:50
+msgid "Securely access files via SFTP (SSH)."
+msgstr "Безпечний доступ до файлів за допомогою SFTP (SSH)."
+
+#: ../../export_tools/file_transfer.rst:51
+msgid "``sftp://user@server.com/path/``"
+msgstr "``sftp://користувач@сервер.com/шлях/``"
+
+#: ../../export_tools/file_transfer.rst:52
+msgid "``fish://``"
+msgstr "``fish://``"
+
+#: ../../export_tools/file_transfer.rst:53
+msgid "Access files over SSH (alternative to SFTP)."
+msgstr "Доступ до файлів за допомогою SSH (альтернатива SFTP)."
+
+#: ../../export_tools/file_transfer.rst:54
+msgid "``fish://user@server.com/path/``"
+msgstr "``fish://користувач@сервер.com/шлях/``"
+
+#: ../../export_tools/file_transfer.rst:55
+msgid "``smb://``"
+msgstr "``smb://``"
+
+#: ../../export_tools/file_transfer.rst:56
+msgid "Access Windows/Samba network shares."
+msgstr "Доступ до спільних мережевих ресурсів Windows/Samba."
+
+#: ../../export_tools/file_transfer.rst:57
+msgid "``smb://server/share/``"
+msgstr "``smb://сервер/ресурс/``"
+
+#: ../../export_tools/file_transfer.rst:58
+msgid "``nfs://``"
+msgstr "``nfs://``"
+
+#: ../../export_tools/file_transfer.rst:59
+msgid "Access files on an NFS share."
+msgstr "Доступ до файлів на спільному ресурсі NFS."
+
+#: ../../export_tools/file_transfer.rst:60
+msgid "``nfs://server/path/``"
+msgstr "``nfs://сервер/шлях/``"
+
+#: ../../export_tools/file_transfer.rst:61
+msgid "``http://``"
+msgstr "``http://``"
+
+#: ../../export_tools/file_transfer.rst:62
+msgid "Access web resources (read-only)."
+msgstr "Доступ до інтернет-ресурсів (лише читання)."
+
+#: ../../export_tools/file_transfer.rst:63
+msgid "``http://example.com/file.txt``"
+msgstr "``http://приклад.com/файл.txt``"
+
+#: ../../export_tools/file_transfer.rst:64
+msgid "``https://``"
+msgstr "``https://``"
+
+#: ../../export_tools/file_transfer.rst:65
+msgid "Securely access web resources."
+msgstr "Захищений доступ до інтернет-ресурсів."
+
+#: ../../export_tools/file_transfer.rst:66
+msgid "``https://example.com/file.txt``"
+msgstr "``https://приклад.com/файл.txt``"
+
+#: ../../export_tools/file_transfer.rst:67
+msgid "``webdav://``"
+msgstr "``webdav://``"
+
+#: ../../export_tools/file_transfer.rst:68
+msgid "Access files on a WebDAV server."
+msgstr "Доступ до файлів на сервері WebDAV."
+
+#: ../../export_tools/file_transfer.rst:69
+msgid "``webdav://server.com/path/``"
+msgstr "``webdav://сервер.com/шлях/``"
+
+#: ../../export_tools/file_transfer.rst:70
+msgid "``webdavs://``"
+msgstr "``webdavs://``"
+
+#: ../../export_tools/file_transfer.rst:71
+msgid "Securely access files on a WebDAV server (HTTPS)."
+msgstr "Захищений доступ до файлів на сервері WebDAV (HTTPS)."
+
+#: ../../export_tools/file_transfer.rst:72
+msgid "``webdavs://server.com/path/``"
+msgstr "``webdavs://сервер.com/шлях/``"
+
+#: ../../export_tools/file_transfer.rst:73
+msgid "``remote://``"
+msgstr "``remote://``"
+
+#: ../../export_tools/file_transfer.rst:74
+msgid "Manage saved network connections (SSH, FTP, etc.)."
+msgstr "Керування збереженими з'єднаннями мережі (SSH, FTP тощо)."
+
+#: ../../export_tools/file_transfer.rst:75
+msgid "``remote:/`` (then select a saved connection)"
+msgstr "``remote:/`` (з наступним вибором збереженого з'єднання)"
+
+#: ../../export_tools/file_transfer.rst:76
+msgid "``man://``"
+msgstr "``man://``"
+
+#: ../../export_tools/file_transfer.rst:77
+msgid "Access system manual pages."
+msgstr "Доступ до сторінок підручника системи."
+
+#: ../../export_tools/file_transfer.rst:78
+msgid "``man:/ls``"
+msgstr "``man:/ls``"
+
+#: ../../export_tools/file_transfer.rst:79
+msgid "``info://``"
+msgstr "``info://``"
+
+#: ../../export_tools/file_transfer.rst:80
+msgid "Access GNU info documentation."
+msgstr "Доступ до документації GNU info."
+
+#: ../../export_tools/file_transfer.rst:81
+msgid "``info:/bash``"
+msgstr "``info:/bash``"
+
+#: ../../export_tools/file_transfer.rst:82
+msgid "``tar://``"
+msgstr "``tar://``"
+
+#: ../../export_tools/file_transfer.rst:83
+msgid "Browse the contents of a tar archive."
+msgstr "Навігація вмістом архіву tar."
+
+#: ../../export_tools/file_transfer.rst:84
+msgid "``tar:///path/to/file.tar``"
+msgstr "``tar:///шлях/до/файла.tar``"
+
+#: ../../export_tools/file_transfer.rst:85
+msgid "``zip://``"
+msgstr "``zip://``"
+
+#: ../../export_tools/file_transfer.rst:86
+msgid "Browse the contents of a zip archive."
+msgstr "Навігація вмістом архіву zip."
+
+#: ../../export_tools/file_transfer.rst:87
+msgid "``zip:///path/to/file.zip``"
+msgstr "``zip:///шлях/до/файла.zip``"
+
+#: ../../export_tools/file_transfer.rst:88
+msgid "``audiocd://``"
+msgstr "``audiocd://``"
+
+#: ../../export_tools/file_transfer.rst:89
+msgid "Access audio tracks from a CD."
+msgstr "Доступ до звукових доріжок на компакт-диску."
+
+#: ../../export_tools/file_transfer.rst:90
+msgid "``audiocd:/?track=1``"
+msgstr "``audiocd:/?track=1``"
+
+#: ../../export_tools/file_transfer.rst:91
+msgid "``system://``"
+msgstr "``system://``"
+
+#: ../../export_tools/file_transfer.rst:92
+msgid "Access system information."
+msgstr "Доступ до відомостей щодо системи."
+
+#: ../../export_tools/file_transfer.rst:93
+msgid "``system:/``"
+msgstr "``system:/``"
+
+#: ../../export_tools/file_transfer.rst:94
+msgid "``trash://``"
+msgstr "``trash://``"
+
+#: ../../export_tools/file_transfer.rst:95
+msgid "Access the trash bin."
+msgstr "Доступ до теки смітника."
+
+#: ../../export_tools/file_transfer.rst:96
+msgid "``trash:/``"
+msgstr "``trash:/``"
+
+#: ../../export_tools/file_transfer.rst:97
+msgid "``network://``"
+msgstr "``network://``"
+
+#: ../../export_tools/file_transfer.rst:98
+msgid "Browse network resources (Samba, FTP, etc.)."
+msgstr "Навігація ресурсами мережі (Samba, FTP тощо)."
+
+#: ../../export_tools/file_transfer.rst:99
+msgid "``network:/``"
+msgstr "``network:/``"
+
+#: ../../export_tools/file_transfer.rst:100
+msgid "``fonts://``"
+msgstr "``fonts://``"
+
+#: ../../export_tools/file_transfer.rst:101
+msgid "Access installed fonts."
+msgstr "Доступ до списку встановлених шрифтів."
+
+#: ../../export_tools/file_transfer.rst:102
+msgid "``fonts:/``"
+msgstr "``fonts:/``"
+
+#: ../../export_tools/file_transfer.rst:103
+msgid "``applications://``"
+msgstr "``applications://``"
+
+#: ../../export_tools/file_transfer.rst:104
+msgid "Access installed applications."
+msgstr "Доступ до списку встановлених програм."
+
+#: ../../export_tools/file_transfer.rst:105
+msgid "``applications:/``"
+msgstr "``applications:/``"
+
+#: ../../export_tools/file_transfer.rst:106
+msgid "``settings://``"
+msgstr "``settings://``"
+
+#: ../../export_tools/file_transfer.rst:107
+msgid "Access system settings."
+msgstr "Доступ до параметрів системи."
+
+#: ../../export_tools/file_transfer.rst:108
+msgid "``settings:/``"
+msgstr "``settings:/``"
+
+#: ../../export_tools/file_transfer.rst:111
+msgid ""
+"Protocols like ``ftp://`` are **not secure**. Prefer ``sftp://`` or ``fish://"
+"`` for sensitive transfers."
+msgstr ""
+"Протоколи, подібні до ``ftp://`` **не захищено**. Слід надавати перевагу "
+"``sftp://`` або ``fish://`` для передавання конфіденційних даних."
+
+#: ../../export_tools/file_transfer.rst:114
+msgid "How to use this tool"
+msgstr "Як користуватися цим інструментом"
+
+#: ../../export_tools/file_transfer.rst:116
+msgid ""
+"In this dialog, to be connected to the remote device, you can use a protocol "
+"in the **Target Location** url field such as:"
+msgstr ""
+"У цьому діалоговому вікні, щоб встановити з'єднання з віддаленим пристроєм, "
+"ви можете скористатися у полі адреси **Розташування призначення** якимось із "
+"протоколів, наприклад:"
+
+#: ../../export_tools/file_transfer.rst:118
+msgid ""
+"**fish://user_name@remote_computer**: connect to the *remote_computer* with "
+"*user_name* using SSH protocol (Secure SHell)."
+msgstr ""
+"**fish://користувач@віддалений_комп'ютер**: з'єднатися із "
+"*віддаленим_комп'ютером* з використанням імені *користувача* за допомогою "
+"протоколу SSH (Secure SHell)."
+
+#: ../../export_tools/file_transfer.rst:119
+msgid ""
+"**ftp://user_name@remote_computer**: connect to the *remote_computer* with "
+"*user_name* using FTP protocol (File Transfer Protocol)."
+msgstr ""
+"**ftp://користувач@віддалений_комп'ютер**: з'єднатися із "
+"*віддаленим_комп'ютером* з використанням імені *користувача* за допомогою "
+"протоколу FTP (File Transfer Protocol)."
+
+#: ../../export_tools/file_transfer.rst:121
+msgid ""
+"An alternative will be to use the native desktop url selector by pressing "
+"the **Select Export Location** button. A dialog will appear where you can "
+"see and select remote devices in the network section of the dialog:"
+msgstr ""
+"Альтернативою є використання природного засобу вибору адреси стільничного "
+"середовища. Для цього достатньо натиснути кнопку **Вибрати місце "
+"експортування**. У відповідь має бути відкрито вікно, у якому ви побачите "
+"список виявлених віддалених пристроїв у розділі мережі:"
+
+#: ../../export_tools/file_transfer.rst:127
+msgid "The Export to Remote Computer Url Selector Dialog Under Linux."
+msgstr ""
+"Вікно вибору адреси інструмента експортування на віддалений комп'ютер у "
+"Linux."
+
+#: ../../export_tools/file_transfer.rst:131
+msgid ""
+"The native url selector dialog is only available if you turn on the right "
+"option in :menuselection:`Settings --> Configure digiKam... --> "
+"Miscellaneous page --> Appearance tab` as described in the :ref:`appearance "
+"settings <appearance_settings>` section of this manual."
+msgstr ""
+"Природним вікном вибору адреси можна скористатися, лише якщо ви виберете "
+"належний варіант за шляхом :menuselection:`Параметри --> Налаштувати "
+"digiKam... --> сторінка «Різне» --> вкладка «Вигляд»`, як це описано у "
+"розділі щодо :ref:`параметрів вигляду <appearance_settings>` цього "
+"підручника."
+
+#: ../../export_tools/file_transfer.rst:133
+msgid ""
+"By default, the tool proposes to export the currently selected items from "
+"the icon-view. The **+** Photos button can be used to append more items to "
+"the list."
+msgstr ""
+"Типово, інструмент запропонує експортувати поточні позначені записи з панелі "
+"перегляду піктограм. Кнопку **+** на фотографіях можна використати для "
+"додавання записів до списку."
+
+#: ../../export_tools/file_transfer.rst:135
+msgid ""
+"Once you have selected the right target to upload the files, press the "
+"**Start Export** button to process the files. You can abort the operation by "
+"pressing the **Close** button."
+msgstr ""
+"Коли належну адресу для вивантаження файлів буде вибрано, натисніть кнопку "
+"**Почати експортування** для обробки файлів. Ви можете перервати дію "
+"натисканням кнопки **Закрити**."
+
+#~ msgid ""
+#~ "To see the full list of available KIO-Slaves on your system, open "
+#~ "**KInfoCenter** (run ``kinfocenter``) and check the **Protocols** tab."
+#~ msgstr ""
+#~ "Щоб ознайомитися із повним списком доступних допоміжних засобів KIO у "
+#~ "вашій системі, відкрийте **KInfoCenter** (команда ``kinfocenter``) і "
+#~ "перейдіть на вкладку **Протоколи**."
+
+#~| msgid ""
+#~| "Protocols such as **fish** (ssh), **ftp**, **smb**, etc, can be used to "
+#~| "connect to the **Target Location** url. For example:"
+#~ msgid ""
+#~ "In this dialog, you can use protocols such as **fish://** (ssh), **ftp://"
+#~ "**, **sftp://**, **smb://**, **network://**, **webdav://**etc, to connect "
+#~ "to the remote computer. For example,"
+#~ msgstr ""
+#~ "У цьому вікні ви можете використовувати протоколи, зокрема **fish://** "
+#~ "(ssh), **ftp://**, **sftp://**, **smb://**, **network://**, **webdav://** "
+#~ "тощо, для встановлення з'єднання із віддаленим комп'ютером. Приклад:"

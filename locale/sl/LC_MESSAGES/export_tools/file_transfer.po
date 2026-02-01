@@ -1,0 +1,454 @@
+# Copyright (C) licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise
+# This file is distributed under the same license as the Digikam Manual package.
+#
+# SPDX-FileCopyrightText: 2023, 2024 Matjaž Jeran <matjaz.jeran@amis.net>
+msgid ""
+msgstr ""
+"Project-Id-Version: Digikam Manual 8.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-30 02:21+0000\n"
+"PO-Revision-Date: 2025-11-09 20:52+0100\n"
+"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+"X-Generator: Poedit 3.8\n"
+
+#: ../../export_tools/file_transfer.rst:-1
+msgid "digiKam Export to Remote Computer"
+msgstr "digiKam izvoz v oddaljeni računalnik"
+
+#: ../../export_tools/file_transfer.rst:-1
+msgid ""
+"digiKam, documentation, user manual, photo management, open source, free, "
+"learn, easy, remote, computer, export"
+msgstr ""
+"digiKam, dokumentacija, uporabniški priročnik, upravljanje fotografij, "
+"odprta koda, prosto, učenje, enostavno, oddaljeno, računalnik, izvoz"
+
+#: ../../export_tools/file_transfer.rst:14
+#, fuzzy
+#| msgid ":ref:`Export To Remote Computer <export_tools>`"
+msgid ":ref:`Export To Remote Computer <file_transfer>`"
+msgstr ":ref:`Izvoz v oddaljeni računalnik <export_tools>`"
+
+#: ../../export_tools/file_transfer.rst:16
+msgid "Contents"
+msgstr "Vsebina"
+
+#: ../../export_tools/file_transfer.rst:19
+msgid "Introduction"
+msgstr "Uvod"
+
+#: ../../export_tools/file_transfer.rst:21
+msgid ""
+"This tool allows you to upload files from your collections to a remote "
+"computer using a network. It is available from the :menuselection:`Export --"
+"> Export to remote storage` :kbd:`Ctrl+Alt+Shift+K` menu entry or the "
+"corresponding icon in the **Tools** tab in the Right Sidebar. The tool uses "
+"the KDE KIO-slaves in the background to communicate with the remote target."
+msgstr ""
+"To orodje vam omogoča nalaganje datotek iz vaših zbirk na oddaljeni "
+"računalnik prek omrežja. Na voljo je v meniju :menuselection:`Izvozi --> "
+"Izvozi v oddaljeno shrambo` :kbd:`Ctrl+Alt+Shift+K` ali prek ustrezne ikone "
+"na zavihku **Orodja** v desni stranski vrstici. Orodje uporablja KDE KIO-"
+"slave v ozadju za komunikacijo z oddaljenim ciljem ."
+
+#: ../../export_tools/file_transfer.rst:27
+msgid "The Export to Remote Computer Dialog"
+msgstr "Pogovorno okno Izvoz v oddaljeni računalnik"
+
+#: ../../export_tools/file_transfer.rst:32
+msgid "KIO-Slaves Protocols"
+msgstr "Protokoli KIO-Slaves"
+
+#: ../../export_tools/file_transfer.rst:34
+msgid ""
+"KDE's KIO-Slaves allow you to access local and remote resources seamlessly "
+"from applications like digiKam. Below is a list of the most commonly used "
+"KIO-Slaves protocols for file export and remote access:"
+msgstr ""
+"KDE KIO-Slaves vam omogočajo nemoten dostop do lokalnih in oddaljenih virov "
+"iz aplikacij, kot je digiKam. Spodaj je seznam najpogosteje uporabljenih "
+"protokolov KIO-Slaves za izvoz datotek in oddaljeni dostop:"
+
+#: ../../export_tools/file_transfer.rst:40
+msgid "Protocol"
+msgstr "Protokol"
+
+#: ../../export_tools/file_transfer.rst:41
+msgid "Description"
+msgstr "Opis"
+
+#: ../../export_tools/file_transfer.rst:42
+msgid "Example"
+msgstr "Primer"
+
+#: ../../export_tools/file_transfer.rst:43
+msgid "``file://``"
+msgstr "``file://``"
+
+#: ../../export_tools/file_transfer.rst:44
+msgid "Access local files and directories."
+msgstr "Dostop do lokalnih datotek in imenikov."
+
+#: ../../export_tools/file_transfer.rst:45
+msgid "``file:///home/user/folder/``"
+msgstr "``file:///home/user/folder/``"
+
+#: ../../export_tools/file_transfer.rst:46
+msgid "``ftp://``"
+msgstr "``ftp://``"
+
+#: ../../export_tools/file_transfer.rst:47
+msgid "Access files on an FTP server (unencrypted)."
+msgstr "Dostop do datotek na strežniku FTP (nešifrirano)."
+
+#: ../../export_tools/file_transfer.rst:48
+msgid "``ftp://user:password@server.com/folder/``"
+msgstr "``ftp://user:password@server.com/folder/``"
+
+#: ../../export_tools/file_transfer.rst:49
+msgid "``sftp://``"
+msgstr "``sftp://``"
+
+#: ../../export_tools/file_transfer.rst:50
+msgid "Securely access files via SFTP (SSH)."
+msgstr "Varen dostop do datotek prek SFTP (SSH)."
+
+#: ../../export_tools/file_transfer.rst:51
+msgid "``sftp://user@server.com/path/``"
+msgstr "``sftp://user@server.com/path/``"
+
+#: ../../export_tools/file_transfer.rst:52
+msgid "``fish://``"
+msgstr "``fish://``"
+
+#: ../../export_tools/file_transfer.rst:53
+msgid "Access files over SSH (alternative to SFTP)."
+msgstr "Dostop do datotek prek SSH (alternativa SFTP)."
+
+#: ../../export_tools/file_transfer.rst:54
+msgid "``fish://user@server.com/path/``"
+msgstr "``fish://user@server.com/path/``"
+
+#: ../../export_tools/file_transfer.rst:55
+msgid "``smb://``"
+msgstr "``smb://``"
+
+#: ../../export_tools/file_transfer.rst:56
+msgid "Access Windows/Samba network shares."
+msgstr "Dostop do omrežnih skupnih rab Windows/Samba."
+
+#: ../../export_tools/file_transfer.rst:57
+msgid "``smb://server/share/``"
+msgstr "``smb://server/share/``"
+
+#: ../../export_tools/file_transfer.rst:58
+msgid "``nfs://``"
+msgstr "``nfs://``"
+
+#: ../../export_tools/file_transfer.rst:59
+msgid "Access files on an NFS share."
+msgstr "Dostop do datotek v skupni rabi NFS."
+
+#: ../../export_tools/file_transfer.rst:60
+msgid "``nfs://server/path/``"
+msgstr "``nfs://server/path/``"
+
+#: ../../export_tools/file_transfer.rst:61
+msgid "``http://``"
+msgstr "``http://``"
+
+#: ../../export_tools/file_transfer.rst:62
+msgid "Access web resources (read-only)."
+msgstr "Dostop do spletnih virov (samo za branje)."
+
+#: ../../export_tools/file_transfer.rst:63
+msgid "``http://example.com/file.txt``"
+msgstr "``http://example.com/file.txt``"
+
+#: ../../export_tools/file_transfer.rst:64
+msgid "``https://``"
+msgstr "``https://``"
+
+#: ../../export_tools/file_transfer.rst:65
+msgid "Securely access web resources."
+msgstr "Varen dostop do spletnih virov."
+
+#: ../../export_tools/file_transfer.rst:66
+msgid "``https://example.com/file.txt``"
+msgstr "``https://example.com/file.txt``"
+
+#: ../../export_tools/file_transfer.rst:67
+msgid "``webdav://``"
+msgstr "``webdav://``"
+
+#: ../../export_tools/file_transfer.rst:68
+msgid "Access files on a WebDAV server."
+msgstr "Dostop do datotek na strežniku WebDAV."
+
+#: ../../export_tools/file_transfer.rst:69
+msgid "``webdav://server.com/path/``"
+msgstr "``webdav://server.com/path/``"
+
+#: ../../export_tools/file_transfer.rst:70
+msgid "``webdavs://``"
+msgstr "``webdavs://``"
+
+#: ../../export_tools/file_transfer.rst:71
+msgid "Securely access files on a WebDAV server (HTTPS)."
+msgstr "Varen dostop do datotek na strežniku WebDAV (HTTPS)."
+
+#: ../../export_tools/file_transfer.rst:72
+msgid "``webdavs://server.com/path/``"
+msgstr "``webdavs://server.com/path/``"
+
+#: ../../export_tools/file_transfer.rst:73
+msgid "``remote://``"
+msgstr "``remote://``"
+
+#: ../../export_tools/file_transfer.rst:74
+msgid "Manage saved network connections (SSH, FTP, etc.)."
+msgstr "Upravlja shranjene omrežne povezave (SSH, FTP itd.)."
+
+#: ../../export_tools/file_transfer.rst:75
+msgid "``remote:/`` (then select a saved connection)"
+msgstr "``remote:/`` (nato izberite shranjeno povezavo)"
+
+#: ../../export_tools/file_transfer.rst:76
+msgid "``man://``"
+msgstr "``man://``"
+
+#: ../../export_tools/file_transfer.rst:77
+msgid "Access system manual pages."
+msgstr "Dostop do strani man priročnika sistema."
+
+#: ../../export_tools/file_transfer.rst:78
+msgid "``man:/ls``"
+msgstr "``man:/ls``"
+
+#: ../../export_tools/file_transfer.rst:79
+msgid "``info://``"
+msgstr "``info://``"
+
+#: ../../export_tools/file_transfer.rst:80
+msgid "Access GNU info documentation."
+msgstr "Dostop do dokumentacije GNU info."
+
+#: ../../export_tools/file_transfer.rst:81
+msgid "``info:/bash``"
+msgstr "``info:/bash``"
+
+#: ../../export_tools/file_transfer.rst:82
+msgid "``tar://``"
+msgstr "``tar://``"
+
+#: ../../export_tools/file_transfer.rst:83
+msgid "Browse the contents of a tar archive."
+msgstr "Prebrskajte vsebino arhiva tar."
+
+#: ../../export_tools/file_transfer.rst:84
+msgid "``tar:///path/to/file.tar``"
+msgstr "``tar:///path/to/file.tar``"
+
+#: ../../export_tools/file_transfer.rst:85
+msgid "``zip://``"
+msgstr "``zip://``"
+
+#: ../../export_tools/file_transfer.rst:86
+msgid "Browse the contents of a zip archive."
+msgstr "Prebrskajte vsebino arhiva zip."
+
+#: ../../export_tools/file_transfer.rst:87
+msgid "``zip:///path/to/file.zip``"
+msgstr "``zip:///path/to/file.zip``"
+
+#: ../../export_tools/file_transfer.rst:88
+msgid "``audiocd://``"
+msgstr "``audiocd://``"
+
+#: ../../export_tools/file_transfer.rst:89
+msgid "Access audio tracks from a CD."
+msgstr "Dostop do zvočnih posnetkov s CD-ja."
+
+#: ../../export_tools/file_transfer.rst:90
+msgid "``audiocd:/?track=1``"
+msgstr "``audiocd:/?track=1``"
+
+#: ../../export_tools/file_transfer.rst:91
+msgid "``system://``"
+msgstr "``system://``"
+
+#: ../../export_tools/file_transfer.rst:92
+msgid "Access system information."
+msgstr "Dostop do sistemskih informacij."
+
+#: ../../export_tools/file_transfer.rst:93
+msgid "``system:/``"
+msgstr "``system:/``"
+
+#: ../../export_tools/file_transfer.rst:94
+msgid "``trash://``"
+msgstr "``trash://``"
+
+#: ../../export_tools/file_transfer.rst:95
+msgid "Access the trash bin."
+msgstr "Dostop do koša za smeti."
+
+#: ../../export_tools/file_transfer.rst:96
+msgid "``trash:/``"
+msgstr "``trash:/``"
+
+#: ../../export_tools/file_transfer.rst:97
+msgid "``network://``"
+msgstr "``network://``"
+
+#: ../../export_tools/file_transfer.rst:98
+msgid "Browse network resources (Samba, FTP, etc.)."
+msgstr "Brskanje po omrežnih virih (Samba, FTP itd.)."
+
+#: ../../export_tools/file_transfer.rst:99
+msgid "``network:/``"
+msgstr "``network:/``"
+
+#: ../../export_tools/file_transfer.rst:100
+msgid "``fonts://``"
+msgstr "``fonts://``"
+
+#: ../../export_tools/file_transfer.rst:101
+msgid "Access installed fonts."
+msgstr "Dostop do nameščenih pisav."
+
+#: ../../export_tools/file_transfer.rst:102
+msgid "``fonts:/``"
+msgstr "``fonts:/``"
+
+#: ../../export_tools/file_transfer.rst:103
+msgid "``applications://``"
+msgstr "``applications://``"
+
+#: ../../export_tools/file_transfer.rst:104
+msgid "Access installed applications."
+msgstr "Dostop do nameščenih aplikacij."
+
+#: ../../export_tools/file_transfer.rst:105
+msgid "``applications:/``"
+msgstr "``applications:/``"
+
+#: ../../export_tools/file_transfer.rst:106
+msgid "``settings://``"
+msgstr "``settings://``"
+
+#: ../../export_tools/file_transfer.rst:107
+msgid "Access system settings."
+msgstr "Dostop do sistemskih nastavitev."
+
+#: ../../export_tools/file_transfer.rst:108
+msgid "``settings:/``"
+msgstr "``settings:/``"
+
+#: ../../export_tools/file_transfer.rst:111
+msgid ""
+"Protocols like ``ftp://`` are **not secure**. Prefer ``sftp://`` or ``fish://"
+"`` for sensitive transfers."
+msgstr ""
+"Protokoli, kot je ``ftp://``, **niso varni**. Za občutljive prenose raje "
+"uporabite ``sftp://`` ali ``fish://``."
+
+#: ../../export_tools/file_transfer.rst:114
+msgid "How to use this tool"
+msgstr "Kako uporabljati to orodje"
+
+#: ../../export_tools/file_transfer.rst:116
+msgid ""
+"In this dialog, to be connected to the remote device, you can use a protocol "
+"in the **Target Location** url field such as:"
+msgstr ""
+"V tem pogovornem oknu lahko za povezavo z oddaljeno napravo v polju URL "
+"**Ciljna lokacija** uporabite protokol, na primer:"
+
+#: ../../export_tools/file_transfer.rst:118
+msgid ""
+"**fish://user_name@remote_computer**: connect to the *remote_computer* with "
+"*user_name* using SSH protocol (Secure SHell)."
+msgstr ""
+"**fish://uporabniško_ime@oddaljeni_računalnik**: povežite se z "
+"*oddaljenim_računalnikom* z *uporabniškim_imenom* s pomočjo protokola SSH "
+"(Secure SHell)."
+
+#: ../../export_tools/file_transfer.rst:119
+msgid ""
+"**ftp://user_name@remote_computer**: connect to the *remote_computer* with "
+"*user_name* using FTP protocol (File Transfer Protocol)."
+msgstr ""
+"**ftp://uporabniško_ime@oddaljeni_računalnik**: povežite se z "
+"*oddaljenim_računalnikom* z *uporabniškim_imenom* s pomočjo FTP protokola "
+"(File Transfer Protocol)."
+
+#: ../../export_tools/file_transfer.rst:121
+msgid ""
+"An alternative will be to use the native desktop url selector by pressing "
+"the **Select Export Location** button. A dialog will appear where you can "
+"see and select remote devices in the network section of the dialog:"
+msgstr ""
+"Druga možnost je uporaba izvornega izbirnika URL-jev na namizju s pritiskom "
+"na gumb **Izberi lokacijo za izvoz**. Prikazalo se bo pogovorno okno, kjer "
+"si lahko v omrežnem razdelku pogovornega okna ogledate in izberete oddaljene "
+"naprave:"
+
+#: ../../export_tools/file_transfer.rst:127
+msgid "The Export to Remote Computer Url Selector Dialog Under Linux."
+msgstr ""
+"Pogovorno okno za izbiro URL-jev izvoza v oddaljeni računalnik pod Linuxom."
+
+#: ../../export_tools/file_transfer.rst:131
+msgid ""
+"The native url selector dialog is only available if you turn on the right "
+"option in :menuselection:`Settings --> Configure digiKam... --> "
+"Miscellaneous page --> Appearance tab` as described in the :ref:`appearance "
+"settings <appearance_settings>` section of this manual."
+msgstr ""
+"Pogovorno okno izvornega izbirnika URL-jev je na voljo le, če vklopite pravo "
+"možnost v :menuselection:`Nastavitve --> Konfiguriraj digiKam... --> Stran "
+"Razno --> Zavihek Videz`, kot je opisano v :ref:`nastavitvah videza "
+"<appearance_settings>` v tem priročniku."
+
+#: ../../export_tools/file_transfer.rst:133
+msgid ""
+"By default, the tool proposes to export the currently selected items from "
+"the icon-view. The **+** Photos button can be used to append more items to "
+"the list."
+msgstr ""
+"Orodje privzeto predlaga izvoz trenutno izbranih elementov iz pogleda ikon. "
+"Gumb **+** Fotografije lahko uporabite za dodajanje več elementov na seznam."
+
+#: ../../export_tools/file_transfer.rst:135
+msgid ""
+"Once you have selected the right target to upload the files, press the "
+"**Start Export** button to process the files. You can abort the operation by "
+"pressing the **Close** button."
+msgstr ""
+"Ko izberete pravi cilj za nalaganje datotek, pritisnite gumb **Začni izvoz** "
+"za obdelavo datotek. Operacijo lahko prekinete s pritiskom gumba **Zapri**."
+
+#~ msgid ""
+#~ "To see the full list of available KIO-Slaves on your system, open "
+#~ "**KInfoCenter** (run ``kinfocenter``) and check the **Protocols** tab."
+#~ msgstr ""
+#~ "Če si želite ogledati celoten seznam razpoložljivih KIO-slaves v vašem "
+#~ "sistemu, odprite **KInfoCenter** (zaženite ``kinfocenter``) in preverite "
+#~ "zavihek **Protokoli**."
+
+#~ msgid ""
+#~ "In this dialog, you can use protocols such as **fish://** (ssh), **ftp://"
+#~ "**, **sftp://**, **smb://**, **network://**, **webdav://**etc, to connect "
+#~ "to the remote computer. For example,"
+#~ msgstr ""
+#~ "V tem pogovornem oknu lahko za povezavo z oddaljenim računalnikom "
+#~ "uporabite protokole, kot so **fish://** (ssh), **ftp://**, **sftp://**, "
+#~ "**smb://**, **network://**, **webdav://** itd. Na primer,"
