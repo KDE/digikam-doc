@@ -9,7 +9,7 @@
 # Description: Script to generate a video of the git activity.
 #              Dependencies: gource and ffmpeg.
 #              Arguments: the git user name (if null, whole team is displayed).
-#              Exemple: ./gitactivity.sh Maik Qualmann
+#              Example: ./gitactivity.sh Maik Qualmann
 #
 # Copyright (C) 2011-2026 by Gilles Caulier <caulier dot gilles at gmail dot com>
 #
