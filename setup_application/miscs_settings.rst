@@ -294,6 +294,13 @@ This section allows you to adjust special low-level configurations used by digiK
 
         The OpenCL DNN Compatibility Dialog Running Under macOS Silicon Computer
 
+    .. note::
+
+        For the NVidia GPU users (as for example the 2070 Super or the GeForce RTX 3060 Ti cards), under Windows, before to run the tests, you need to do extra steps to perform the checks sucessfuly:
+        1. Install the `CUDA Toolkit <https://developer.nvidia.com/cuda/toolkit>`_.
+        2. Install the `CUDA DNN <https://developer.nvidia.com/cudnn`_.
+        3. Set the **OPENCV_OPENCL_DEVICE** to **NVIDIA:GPU:0** as system environment variable in the Windows control panel.
+
 - **Download Required Binary Data**: this button loads the deep-learning model files used with the face management, image quality scanning, and auto-tags features. Only use it if you bypassed :ref:`this stage at the first-run <firstrun_downloads>` of the application.
 
 - **Use the video hardware acceleration**: this option must be used only with compatible hardware GPU devices with the FFmpeg backend. Disable this option if video media decoding errors occur.
