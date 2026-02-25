@@ -298,9 +298,9 @@ This section allows you to adjust special low-level configurations used by digiK
 
         **For NVIDIA GPU users** (e.g., GeForce RTX 2070 Super, RTX 3060 Ti, etc.), additional steps are required under Windows to ensure successful GPU detection by OpenCV's AI backend:
 
-        1. Install the **NVIDIA CUDA Toolkit** from the [official NVIDIA website](https://developer.nvidia.com/cuda/toolkit).
+        1. Install the **NVIDIA CUDA Toolkit** from the `official NVIDIA website <https://developer.nvidia.com/cuda/toolkit>`_.
 
-        2. Install the **cuDNN Library** from the [official NVIDIA website](https://developer.nvidia.com/cudnn).
+        2. Install the **cuDNN Library** from the `official NVIDIA website <https://developer.nvidia.com/cudnn>`_.
 
         3. Set the **`OPENCV_OPENCL_DEVICE`** system environment variable to **`NVIDIA:GPU:0`** via the Windows Control Panel.
 
