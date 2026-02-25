@@ -296,10 +296,15 @@ This section allows you to adjust special low-level configurations used by digiK
 
     .. note::
 
-        For the NVidia GPU users (as for example the 2070 Super or the GeForce RTX 3060 Ti cards), under Windows, before to run the tests, you need to do extra steps to perform the checks sucessfuly:
-        1. Install the `CUDA Toolkit <https://developer.nvidia.com/cuda/toolkit>`_.
-        2. Install the `CUDA DNN <https://developer.nvidia.com/cudnn`_.
-        3. Set the **OPENCV_OPENCL_DEVICE** to **NVIDIA:GPU:0** as system environment variable in the Windows control panel.
+        **For NVIDIA GPU users** (e.g., GeForce RTX 2070 Super, RTX 3060 Ti, etc.), additional steps are required under Windows to ensure successful GPU detection by OpenCV's AI backend:
+
+        1. Install the **NVIDIA CUDA Toolkit** from the [official NVIDIA website](https://developer.nvidia.com/cuda/toolkit).
+
+        2. Install the **cuDNN Library** from the [official NVIDIA website](https://developer.nvidia.com/cudnn).
+
+        3. Set the **`OPENCV_OPENCL_DEVICE`** system environment variable to **`NVIDIA:GPU:0`** via the Windows Control Panel.
+
+        After completing these steps, restart digiKam and rerun the compatibility test in the *Setup > Miscellaneous > System* dialog.
 
 - **Download Required Binary Data**: this button loads the deep-learning model files used with the face management, image quality scanning, and auto-tags features. Only use it if you bypassed :ref:`this stage at the first-run <firstrun_downloads>` of the application.
 
