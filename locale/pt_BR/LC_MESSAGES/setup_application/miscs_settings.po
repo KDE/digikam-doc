@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-11 02:00+0000\n"
+"POT-Creation-Date: 2026-02-25 02:04+0000\n"
 "PO-Revision-Date: 2026-01-14 12:58-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -892,7 +892,38 @@ msgstr ""
 "Caixa de diálogo de compatibilidade do OpenCL DNN em execução no computador "
 "macOS Silicon"
 
-#: ../../setup_application/miscs_settings.rst:297
+#: ../../setup_application/miscs_settings.rst:299
+msgid ""
+"**For NVIDIA GPU users** (e.g., GeForce RTX 2070 Super, RTX 3060 Ti, etc.), "
+"additional steps are required under Windows to ensure successful GPU "
+"detection by OpenCV's AI backend:"
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:301
+msgid ""
+"Install the **NVIDIA CUDA Toolkit** from the [official NVIDIA website]"
+"(https://developer.nvidia.com/cuda/toolkit)."
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:303
+msgid ""
+"Install the **cuDNN Library** from the [official NVIDIA website](https://"
+"developer.nvidia.com/cudnn)."
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:305
+msgid ""
+"Set the **`OPENCV_OPENCL_DEVICE`** system environment variable to **`NVIDIA:"
+"GPU:0`** via the Windows Control Panel."
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:307
+msgid ""
+"After completing these steps, restart digiKam and rerun the compatibility "
+"test in the *Setup > Miscellaneous > System* dialog."
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:309
 msgid ""
 "**Download Required Binary Data**: this button loads the deep-learning model "
 "files used with the face management, image quality scanning, and auto-tags "
@@ -905,7 +936,7 @@ msgstr ""
 "somente se você tiver ignorado :ref:`esta etapa na primeira execução "
 "<firstrun_downloads>` do aplicativo."
 
-#: ../../setup_application/miscs_settings.rst:299
+#: ../../setup_application/miscs_settings.rst:311
 msgid ""
 "**Use the video hardware acceleration**: this option must be used only with "
 "compatible hardware GPU devices with the FFmpeg backend. Disable this option "
@@ -915,7 +946,7 @@ msgstr ""
 "apenas com GPUs compatíveis com o backend FFmpeg. Desative esta opção se "
 "ocorrerem erros de decodificação de mídia de vídeo."
 
-#: ../../setup_application/miscs_settings.rst:301
+#: ../../setup_application/miscs_settings.rst:313
 msgid ""
 "**Use the video texture conversion**: this option must be used to reduce CPU "
 "usage when video frames are rendered by using GPU-based conversion with the "
@@ -926,7 +957,7 @@ msgstr ""
 "conversão baseada em GPU com o backend FFmpeg. Desative esta opção se "
 "ocorrerem erros de decodificação de mídia de vídeo."
 
-#: ../../setup_application/miscs_settings.rst:303
+#: ../../setup_application/miscs_settings.rst:315
 msgid ""
 "**Decoding backend to render media**: this option chooses the backend used "
 "to render video and audio media with the **Qt6 version** of application. "
@@ -936,7 +967,7 @@ msgstr ""
 "backend usado para renderizar mídia de vídeo e áudio com a **versão Qt6** do "
 "aplicativo. Os backends suportados são:"
 
-#: ../../setup_application/miscs_settings.rst:305
+#: ../../setup_application/miscs_settings.rst:317
 msgid ""
 "**FFmpeg**: the default and recommended backend available on all platforms. "
 "`FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ always includes all "
@@ -946,7 +977,7 @@ msgstr ""
 "plataformas. `FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ sempre inclui "
 "todos os codecs necessários para reproduzir mídia."
 
-#: ../../setup_application/miscs_settings.rst:306
+#: ../../setup_application/miscs_settings.rst:318
 msgid ""
 "**GStreamer**: the alternative backend available **under Linux**. `GStreamer "
 "<https://en.wikipedia.org/wiki/GStreamer>`_ can require the installation of "
@@ -956,7 +987,7 @@ msgstr ""
 "<https://en.wikipedia.org/wiki/GStreamer>`_ pode exigir a instalação de "
 "codecs de terceiros no sistema para funcionar corretamente."
 
-#: ../../setup_application/miscs_settings.rst:307
+#: ../../setup_application/miscs_settings.rst:319
 msgid ""
 "**WMF**: Windows Media Foundation is the alternative backend available "
 "**under Windows**. `WMF <https://en.wikipedia.org/wiki/Media_Foundation>`_ "
@@ -968,7 +999,7 @@ msgstr ""
 "exigir a instalação de codecs de terceiros no sistema para funcionar "
 "corretamente."
 
-#: ../../setup_application/miscs_settings.rst:308
+#: ../../setup_application/miscs_settings.rst:320
 msgid ""
 "**AVFoundation**: the alternative backend available **under macOS**. "
 "`AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ can require the "
@@ -978,7 +1009,7 @@ msgstr ""
 "`AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ pode exigir a "
 "instalação de codecs de terceiros no sistema para funcionar corretamente."
 
-#: ../../setup_application/miscs_settings.rst:312
+#: ../../setup_application/miscs_settings.rst:324
 msgid ""
 "To prevent washed out color issues when playing HDR video taken from modern "
 "devices, by experience better results can be obtained using an alternative "
@@ -988,7 +1019,7 @@ msgstr ""
 "em dispositivos modernos, por experiência, é possível obter melhores "
 "resultados usando um backend alternativo."
 
-#: ../../setup_application/miscs_settings.rst:314
+#: ../../setup_application/miscs_settings.rst:326
 msgid ""
 "**Enable internal debug logging**: this option turns on the debug traces on "
 "the console used to investigate errors. Under Linux and macOS, just start "
@@ -1006,11 +1037,11 @@ msgstr ""
 "as mensagens. As configurações padrão do DebugView são suficientes para "
 "capturar os rastros do aplicativo."
 
-#: ../../setup_application/miscs_settings.rst:320
+#: ../../setup_application/miscs_settings.rst:332
 msgid "digiKam Running Under Windows With DebugView"
 msgstr "digiKam rodando no Windows com DebugView"
 
-#: ../../setup_application/miscs_settings.rst:322
+#: ../../setup_application/miscs_settings.rst:334
 msgid ""
 "**Network Proxy Server Settings**: use this group the options to setup the "
 "`proxy server <https://en.wikipedia.org/wiki/Proxy_server>`_ settings for "
@@ -1023,15 +1054,15 @@ msgstr ""
 "necessário para acessar a internet. As opções de proxy disponíveis estão "
 "listadas abaixo:"
 
-#: ../../setup_application/miscs_settings.rst:324
+#: ../../setup_application/miscs_settings.rst:336
 msgid "**Proxy**: the address of the Proxy server on the network."
 msgstr "**Proxy**: o endereço do servidor proxy na rede."
 
-#: ../../setup_application/miscs_settings.rst:325
+#: ../../setup_application/miscs_settings.rst:337
 msgid "**Port**: the Proxy server port on the network."
 msgstr "**Porta**: a porta do servidor proxy na rede."
 
-#: ../../setup_application/miscs_settings.rst:326
+#: ../../setup_application/miscs_settings.rst:338
 msgid ""
 "**Proxy type**: the Proxy type available on the network. Two protocols are "
 "supported: **Http** or **Socks5**."
@@ -1039,7 +1070,7 @@ msgstr ""
 "**Tipo de proxy**: o tipo de proxy disponível na rede. Dois protocolos são "
 "suportados: **Http** ou **Socks5**."
 
-#: ../../setup_application/miscs_settings.rst:327
+#: ../../setup_application/miscs_settings.rst:339
 msgid ""
 "**Requires Authentication**: turn on this option if the connection to the "
 "Proxy server needs a **Username** and a **Password**."
@@ -1047,7 +1078,7 @@ msgstr ""
 "**Requer autenticação**: ative esta opção se a conexão com o servidor proxy "
 "precisar de um **Nome de usuário** e uma **Senha**."
 
-#: ../../setup_application/miscs_settings.rst:328
+#: ../../setup_application/miscs_settings.rst:340
 msgid ""
 "**Username**: the name to use to be logged on the Proxy server over the "
 "network."
@@ -1055,7 +1086,7 @@ msgstr ""
 "**Nome de usuário**: o nome a ser usado para fazer login no servidor proxy "
 "pela rede."
 
-#: ../../setup_application/miscs_settings.rst:329
+#: ../../setup_application/miscs_settings.rst:341
 msgid ""
 "**Password**: the password to use to be logged on the Proxy server over the "
 "network."
