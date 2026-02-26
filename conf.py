@@ -24,7 +24,7 @@ import subprocess
 
 project = 'Digikam Manual'
 description = 'The Official digiKam Documentation'
-copyright = 'licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise'
+copyright = 'Licensed under the terms of the <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">GNU Free Documentation License 1.2+</a> unless stated otherwise'
 author = 'digiKam Community'
 
 # The full version, including alpha/beta/rc tags
