@@ -99,7 +99,7 @@ This first example shown below does nothing special. It prints on the console th
     cp $INPUT $OUTPUT
     exit $?
 
-See below the **Windows Shell** version of the script. The output is redirected and concatened to the *C:\temp\digikam.txt*:
+See below the **Windows Shell** version of the script. The output is redirected and concatenated to the *C:\temp\digikam.txt*:
 
 .. code-block:: shell
 
