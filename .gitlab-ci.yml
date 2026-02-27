@@ -10,8 +10,8 @@ include:
       - /gitlab-templates/website-sphinx-app-docs.yml
 variables:
     EPUB_NAME: DigikamManual
-    # 'sl' language is not included yet as CI build report plenty of formating errors.
-    WEBSITE_LANGUAGES: ca cs de en es fi fr it ja lt nl pt_BR pt_PT sk sv uk_UA zh_CN
+    # NOTE: 'sl' and 'sv' languages are not included as CI build report plenty of formating errors.
+    WEBSITE_LANGUAGES: ca cs de en es fi fr it ja lt nl pt_BR pt_PT sk uk_UA zh_CN
 
 run_tests:
   stage: test
