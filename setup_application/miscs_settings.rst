@@ -306,6 +306,8 @@ This section allows you to adjust special low-level configurations used by digiK
 
         After completing these steps, restart digiKam and rerun the compatibility test in the *Setup > Miscellaneous > System* dialog.
 
+        **For Intel Core CPU including GPU users** (eg. Intel Iris Xe), you need the last drivers updated to current stable versions and just set the **`OPENCV_OPENCL_DEVICE`** system environment variable to **`INTEL:GPU:0`** via the Windows Control Panel..
+
 - **Download Required Binary Data**: this button loads the deep-learning model files used with the face management, image quality scanning, and auto-tags features. Only use it if you bypassed :ref:`this stage at the first-run <firstrun_downloads>` of the application.
 
 - **Use the video hardware acceleration**: this option must be used only with compatible hardware GPU devices with the FFmpeg backend. Disable this option if video media decoding errors occur.
