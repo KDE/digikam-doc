@@ -296,7 +296,7 @@ This section allows you to adjust special low-level configurations used by digiK
 
     .. note::
 
-        **For NVIDIA GPU users** (e.g., GeForce RTX 2070 Super, RTX 3060 Ti, etc.), additional steps are required under Windows to ensure successful GPU detection by OpenCV's AI backend. The NVIDIA `Cuda SDKs <https://en.wikipedia.org/wiki/CUDA>_` must be installed on your system:
+        **For NVIDIA GPU users** (e.g., GeForce RTX 2070 Super, RTX 3060 Ti, etc.), additional steps are required under Windows to ensure successful GPU detection by OpenCV's AI backend. The NVIDIA `Cuda SDKs <https://en.wikipedia.org/wiki/CUDA>`_ must be installed on your system:
 
         1. Install the **NVIDIA CUDA Toolkit** from the `official NVIDIA website <https://developer.nvidia.com/cuda/toolkit>`_. Select a **Custom** installation and choose only the components **CUDA/Runtime/Libraries/OPENCL** and **CUDA/Runtime/Libraries/CUBLAS**.
 
