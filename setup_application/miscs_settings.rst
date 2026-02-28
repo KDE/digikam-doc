@@ -308,6 +308,8 @@ This section allows you to adjust special low-level configurations used by digiK
 
         **For Intel Core CPU including GPU users** (eg. Intel Iris Xe), you need the last drivers updated to current stable versions and just set the **`OPENCV_OPENCL_DEVICE`** system environment variable to **`INTEL:GPU:0`** via the Windows Control Panel..
 
+        **For AMD GPU users**, you need the `OpenVX extension for OpenCV <https://rocm.docs.amd.com/projects/MIVisionX/en/docs-6.1.0/amd_openvx_extensions/amd_opencv/README.html>`_ and set the **`OPENCV_OPENCL_DEVICE`** system environment variable to **`AMD:GPU:0`** via the Windows Control Panel..
+
 - **Download Required Binary Data**: this button loads the deep-learning model files used with the face management, image quality scanning, and auto-tags features. Only use it if you bypassed :ref:`this stage at the first-run <firstrun_downloads>` of the application.
 
 - **Use the video hardware acceleration**: this option must be used only with compatible hardware GPU devices with the FFmpeg backend. Disable this option if video media decoding errors occur.
