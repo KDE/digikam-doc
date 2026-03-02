@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-27 02:08+0000\n"
+"POT-Creation-Date: 2026-03-01 02:05+0000\n"
 "PO-Revision-Date: 2026-02-27 10:34+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -876,11 +876,17 @@ msgstr ""
 "Silicon Computer"
 
 #: ../../setup_application/miscs_settings.rst:299
+#, fuzzy
+#| msgid ""
+#| "**For NVIDIA GPU users** (e.g., GeForce RTX 2070 Super, RTX 3060 Ti, "
+#| "etc.), additional steps are required under Windows to ensure successful "
+#| "GPU detection by OpenCV's AI backend. The NVIDIA `Cuda SDKs <https://en."
+#| "wikipedia.org/wiki/CUDA>_` must be installed on your system:"
 msgid ""
 "**For NVIDIA GPU users** (e.g., GeForce RTX 2070 Super, RTX 3060 Ti, etc.), "
 "additional steps are required under Windows to ensure successful GPU "
 "detection by OpenCV's AI backend. The NVIDIA `Cuda SDKs <https://en."
-"wikipedia.org/wiki/CUDA>_` must be installed on your system:"
+"wikipedia.org/wiki/CUDA>`_ must be installed on your system:"
 msgstr ""
 "**Za uporabnike grafičnih kartic NVIDIA** (npr. GeForce RTX 2070 Super, RTX "
 "3060 Ti itd.) so v sistemu Windows potrebni dodatni koraki, da se zagotovi "
@@ -928,6 +934,22 @@ msgstr ""
 
 #: ../../setup_application/miscs_settings.rst:309
 msgid ""
+"**For Intel Core CPU including GPU users** (eg. Intel Iris Xe), you need the "
+"last drivers updated to current stable versions and just set the "
+"**`OPENCV_OPENCL_DEVICE`** system environment variable to **`INTEL:GPU:0`** "
+"via the Windows Control Panel.."
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:311
+msgid ""
+"**For AMD GPU users**, you need the `OpenVX extension for OpenCV <https://"
+"rocm.docs.amd.com/projects/MIVisionX/en/docs-6.1.0/amd_openvx_extensions/"
+"amd_opencv/README.html>`_ and set the **`OPENCV_OPENCL_DEVICE`** system "
+"environment variable to **`AMD:GPU:0`** via the Windows Control Panel.."
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:313
+msgid ""
 "**Download Required Binary Data**: this button loads the deep-learning model "
 "files used with the face management, image quality scanning, and auto-tags "
 "features. Only use it if you bypassed :ref:`this stage at the first-run "
@@ -938,7 +960,7 @@ msgstr ""
 "kakovosti slike in funkcije samodejnega označevanja. Uporabite ga le, če ste "
 "to stopnjo preskočili pri prvem zagonu aplikacije <firstrun_downloads>."
 
-#: ../../setup_application/miscs_settings.rst:311
+#: ../../setup_application/miscs_settings.rst:315
 msgid ""
 "**Use the video hardware acceleration**: this option must be used only with "
 "compatible hardware GPU devices with the FFmpeg backend. Disable this option "
@@ -948,7 +970,7 @@ msgstr ""
 "združljivo strojno opremo GPE z zaledjem FFmpeg. Onemogočite to možnost, če "
 "pride do napak pri dekodiranju video medijev."
 
-#: ../../setup_application/miscs_settings.rst:313
+#: ../../setup_application/miscs_settings.rst:317
 msgid ""
 "**Use the video texture conversion**: this option must be used to reduce CPU "
 "usage when video frames are rendered by using GPU-based conversion with the "
@@ -959,7 +981,7 @@ msgstr ""
 "podlagi GPE z zaledjem FFmpeg. Onemogočite to možnost, če pride do napak pri "
 "dekodiranju video medijev."
 
-#: ../../setup_application/miscs_settings.rst:315
+#: ../../setup_application/miscs_settings.rst:319
 msgid ""
 "**Decoding backend to render media**: this option chooses the backend used "
 "to render video and audio media with the **Qt6 version** of application. "
@@ -969,7 +991,7 @@ msgstr ""
 "se uporablja za upodabljanje video in avdio medijev z **različico Qt6** "
 "aplikacije. Podprta zaledja so:"
 
-#: ../../setup_application/miscs_settings.rst:317
+#: ../../setup_application/miscs_settings.rst:321
 msgid ""
 "**FFmpeg**: the default and recommended backend available on all platforms. "
 "`FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ always includes all "
@@ -979,7 +1001,7 @@ msgstr ""
 "platformah. `FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ vedno vključuje "
 "vse potrebne kodeke za predvajanje medijev."
 
-#: ../../setup_application/miscs_settings.rst:318
+#: ../../setup_application/miscs_settings.rst:322
 msgid ""
 "**GStreamer**: the alternative backend available **under Linux**. `GStreamer "
 "<https://en.wikipedia.org/wiki/GStreamer>`_ can require the installation of "
@@ -989,7 +1011,7 @@ msgstr ""
 "`GStreamer <https://en.wikipedia.org/wiki/GStreamer>`_ lahko za pravilno "
 "delovanje zahteva namestitev kodekov drugih proizvajalcev v sistem."
 
-#: ../../setup_application/miscs_settings.rst:319
+#: ../../setup_application/miscs_settings.rst:323
 msgid ""
 "**WMF**: Windows Media Foundation is the alternative backend available "
 "**under Windows**. `WMF <https://en.wikipedia.org/wiki/Media_Foundation>`_ "
@@ -1001,7 +1023,7 @@ msgstr ""
 "Media_Foundation>`_ lahko za pravilno delovanje zahteva namestitev kodekov "
 "drugih proizvajalcev v sistem."
 
-#: ../../setup_application/miscs_settings.rst:320
+#: ../../setup_application/miscs_settings.rst:324
 msgid ""
 "**AVFoundation**: the alternative backend available **under macOS**. "
 "`AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ can require the "
@@ -1011,7 +1033,7 @@ msgstr ""
 "`AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ lahko za "
 "pravilno delovanje zahteva namestitev kodekov drugih proizvajalcev v sistem."
 
-#: ../../setup_application/miscs_settings.rst:324
+#: ../../setup_application/miscs_settings.rst:328
 msgid ""
 "To prevent washed out color issues when playing HDR video taken from modern "
 "devices, by experience better results can be obtained using an alternative "
@@ -1021,7 +1043,7 @@ msgstr ""
 "posnetih iz sodobnih naprav, lahko po izkušnjah boljše rezultate dosežemo z "
 "alternativnim ozadjem."
 
-#: ../../setup_application/miscs_settings.rst:326
+#: ../../setup_application/miscs_settings.rst:330
 msgid ""
 "**Enable internal debug logging**: this option turns on the debug traces on "
 "the console used to investigate errors. Under Linux and macOS, just start "
@@ -1039,11 +1061,11 @@ msgstr ""
 "downloads/debugview>`_ za prikaz sporočil. Privzete nastavitve iz DebugView "
 "zadostujejo za zajemanje sledi iz aplikacije."
 
-#: ../../setup_application/miscs_settings.rst:332
+#: ../../setup_application/miscs_settings.rst:336
 msgid "digiKam Running Under Windows With DebugView"
 msgstr "digiKam, ki deluje v sistemu Windows z DebugView"
 
-#: ../../setup_application/miscs_settings.rst:334
+#: ../../setup_application/miscs_settings.rst:338
 msgid ""
 "**Network Proxy Server Settings**: use this group the options to setup the "
 "`proxy server <https://en.wikipedia.org/wiki/Proxy_server>`_ settings for "
@@ -1056,15 +1078,15 @@ msgstr ""
 "za dostop do interneta ni potreben posrednik. Razpoložljive možnosti "
 "posrednika so navedene spodaj:"
 
-#: ../../setup_application/miscs_settings.rst:336
+#: ../../setup_application/miscs_settings.rst:340
 msgid "**Proxy**: the address of the Proxy server on the network."
 msgstr "**Proxy**: naslov posrednega strežnika v omrežju."
 
-#: ../../setup_application/miscs_settings.rst:337
+#: ../../setup_application/miscs_settings.rst:341
 msgid "**Port**: the Proxy server port on the network."
 msgstr "**Vrata**: vrata posredniškega strežnika v omrežju."
 
-#: ../../setup_application/miscs_settings.rst:338
+#: ../../setup_application/miscs_settings.rst:342
 msgid ""
 "**Proxy type**: the Proxy type available on the network. Two protocols are "
 "supported: **Http** or **Socks5**."
@@ -1072,7 +1094,7 @@ msgstr ""
 "**Vrsta posrednika**: vrsta posrednika, ki je na voljo v omrežju. Podprta "
 "sta dva protokola: **Http** ali **Socks5**."
 
-#: ../../setup_application/miscs_settings.rst:339
+#: ../../setup_application/miscs_settings.rst:343
 msgid ""
 "**Requires Authentication**: turn on this option if the connection to the "
 "Proxy server needs a **Username** and a **Password**."
@@ -1080,7 +1102,7 @@ msgstr ""
 "**Zahteva avtentikacijo*: vklopite to možnost, če povezava s posredniškim "
 "strežnikom potrebuje **Uporabniško ime** in **Geslo**."
 
-#: ../../setup_application/miscs_settings.rst:340
+#: ../../setup_application/miscs_settings.rst:344
 msgid ""
 "**Username**: the name to use to be logged on the Proxy server over the "
 "network."
@@ -1088,7 +1110,7 @@ msgstr ""
 "**Uporabniško ime**: ime, ki se uporablja za prijavo na posredniški strežnik "
 "prek omrežja."
 
-#: ../../setup_application/miscs_settings.rst:341
+#: ../../setup_application/miscs_settings.rst:345
 msgid ""
 "**Password**: the password to use to be logged on the Proxy server over the "
 "network."

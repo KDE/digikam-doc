@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-27 02:08+0000\n"
+"POT-Creation-Date: 2026-03-01 02:05+0000\n"
 "PO-Revision-Date: 2026-02-27 11:50+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -892,11 +892,17 @@ msgid ""
 msgstr "Вікно сумісності DNN OpenCL на комп'ютері macOS Silicon"
 
 #: ../../setup_application/miscs_settings.rst:299
+#, fuzzy
+#| msgid ""
+#| "**For NVIDIA GPU users** (e.g., GeForce RTX 2070 Super, RTX 3060 Ti, "
+#| "etc.), additional steps are required under Windows to ensure successful "
+#| "GPU detection by OpenCV's AI backend. The NVIDIA `Cuda SDKs <https://en."
+#| "wikipedia.org/wiki/CUDA>_` must be installed on your system:"
 msgid ""
 "**For NVIDIA GPU users** (e.g., GeForce RTX 2070 Super, RTX 3060 Ti, etc.), "
 "additional steps are required under Windows to ensure successful GPU "
 "detection by OpenCV's AI backend. The NVIDIA `Cuda SDKs <https://en."
-"wikipedia.org/wiki/CUDA>_` must be installed on your system:"
+"wikipedia.org/wiki/CUDA>`_ must be installed on your system:"
 msgstr ""
 "**Користувачам графічних процесорів NVIDIA** (наприклад GeForce RTX 2070 "
 "Super, RTX 3060 Ti тощо) слід виконати додаткові кроки у Windows щоб модуль "
@@ -943,6 +949,22 @@ msgstr ""
 
 #: ../../setup_application/miscs_settings.rst:309
 msgid ""
+"**For Intel Core CPU including GPU users** (eg. Intel Iris Xe), you need the "
+"last drivers updated to current stable versions and just set the "
+"**`OPENCV_OPENCL_DEVICE`** system environment variable to **`INTEL:GPU:0`** "
+"via the Windows Control Panel.."
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:311
+msgid ""
+"**For AMD GPU users**, you need the `OpenVX extension for OpenCV <https://"
+"rocm.docs.amd.com/projects/MIVisionX/en/docs-6.1.0/amd_openvx_extensions/"
+"amd_opencv/README.html>`_ and set the **`OPENCV_OPENCL_DEVICE`** system "
+"environment variable to **`AMD:GPU:0`** via the Windows Control Panel.."
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:313
+msgid ""
 "**Download Required Binary Data**: this button loads the deep-learning model "
 "files used with the face management, image quality scanning, and auto-tags "
 "features. Only use it if you bypassed :ref:`this stage at the first-run "
@@ -954,7 +976,7 @@ msgstr ""
 "встановлення міток. Користуйтеся цим, лише якщо ви пропустили :ref:`цей крок "
 "під час першого запуску <firstrun_downloads>` програми."
 
-#: ../../setup_application/miscs_settings.rst:311
+#: ../../setup_application/miscs_settings.rst:315
 msgid ""
 "**Use the video hardware acceleration**: this option must be used only with "
 "compatible hardware GPU devices with the FFmpeg backend. Disable this option "
@@ -964,7 +986,7 @@ msgstr ""
 "лише із сумісними пристроями графічних процесорів із модулем обробки FFmpeg. "
 "Його слід вимкнути, якщо виникають проблеми із декодуванням відеоданих."
 
-#: ../../setup_application/miscs_settings.rst:313
+#: ../../setup_application/miscs_settings.rst:317
 msgid ""
 "**Use the video texture conversion**: this option must be used to reduce CPU "
 "usage when video frames are rendered by using GPU-based conversion with the "
@@ -976,7 +998,7 @@ msgstr ""
 "процесора за допомогою модуля обробки FFmpeg. Його слід вимкнути, якщо "
 "виникають проблеми із декодуванням відеоданих."
 
-#: ../../setup_application/miscs_settings.rst:315
+#: ../../setup_application/miscs_settings.rst:319
 msgid ""
 "**Decoding backend to render media**: this option chooses the backend used "
 "to render video and audio media with the **Qt6 version** of application. "
@@ -986,7 +1008,7 @@ msgstr ""
 "вибрати модуль, який використовуватиметься для обробки відео і звукових "
 "даних у **версії Qt6** програми. Підтримувані модулі:"
 
-#: ../../setup_application/miscs_settings.rst:317
+#: ../../setup_application/miscs_settings.rst:321
 msgid ""
 "**FFmpeg**: the default and recommended backend available on all platforms. "
 "`FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ always includes all "
@@ -996,7 +1018,7 @@ msgstr ""
 "платформах. `FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ завжди включає "
 "усі потрібні кодеки для відтворення мультимедійних даних."
 
-#: ../../setup_application/miscs_settings.rst:318
+#: ../../setup_application/miscs_settings.rst:322
 msgid ""
 "**GStreamer**: the alternative backend available **under Linux**. `GStreamer "
 "<https://en.wikipedia.org/wiki/GStreamer>`_ can require the installation of "
@@ -1006,7 +1028,7 @@ msgstr ""
 "<https://en.wikipedia.org/wiki/GStreamer>`_ може потребувати встановлення у "
 "системі сторонніх кодеків для належної роботи."
 
-#: ../../setup_application/miscs_settings.rst:319
+#: ../../setup_application/miscs_settings.rst:323
 msgid ""
 "**WMF**: Windows Media Foundation is the alternative backend available "
 "**under Windows**. `WMF <https://en.wikipedia.org/wiki/Media_Foundation>`_ "
@@ -1017,7 +1039,7 @@ msgstr ""
 "Windows**. `WMF <https://en.wikipedia.org/wiki/Media_Foundation>`_ може "
 "потребувати встановлення у системі сторонніх кодеків для належної роботи."
 
-#: ../../setup_application/miscs_settings.rst:320
+#: ../../setup_application/miscs_settings.rst:324
 msgid ""
 "**AVFoundation**: the alternative backend available **under macOS**. "
 "`AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ can require the "
@@ -1027,7 +1049,7 @@ msgstr ""
 "`AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ може "
 "потребувати встановлення у системі сторонніх кодеків для належної роботи."
 
-#: ../../setup_application/miscs_settings.rst:324
+#: ../../setup_application/miscs_settings.rst:328
 msgid ""
 "To prevent washed out color issues when playing HDR video taken from modern "
 "devices, by experience better results can be obtained using an alternative "
@@ -1037,7 +1059,7 @@ msgstr ""
 "динамічного діапазону, яке знято на сучасний пристрій, як показує досвід, "
 "кращі результати можна отримати за допомогою альтернативного модуля обробки."
 
-#: ../../setup_application/miscs_settings.rst:326
+#: ../../setup_application/miscs_settings.rst:330
 msgid ""
 "**Enable internal debug logging**: this option turns on the debug traces on "
 "the console used to investigate errors. Under Linux and macOS, just start "
@@ -1055,11 +1077,11 @@ msgstr ""
 "debugview>`_ для показу повідомлень. Типових параметрів DebugView достатньо "
 "для захоплення трасування з програми."
 
-#: ../../setup_application/miscs_settings.rst:332
+#: ../../setup_application/miscs_settings.rst:336
 msgid "digiKam Running Under Windows With DebugView"
 msgstr "digiKam запущено у Windows з DebugView"
 
-#: ../../setup_application/miscs_settings.rst:334
+#: ../../setup_application/miscs_settings.rst:338
 msgid ""
 "**Network Proxy Server Settings**: use this group the options to setup the "
 "`proxy server <https://en.wikipedia.org/wiki/Proxy_server>`_ settings for "
@@ -1072,15 +1094,15 @@ msgstr ""
 "сервер для доступу до інтернету не потрібен. Нижче наведено доступні пункти "
 "для проксі-сервера:"
 
-#: ../../setup_application/miscs_settings.rst:336
+#: ../../setup_application/miscs_settings.rst:340
 msgid "**Proxy**: the address of the Proxy server on the network."
 msgstr "**Проксі-сервер**: адреса проксі-сервера мережі."
 
-#: ../../setup_application/miscs_settings.rst:337
+#: ../../setup_application/miscs_settings.rst:341
 msgid "**Port**: the Proxy server port on the network."
 msgstr "**Порт**: порт проксі-сервера мережі."
 
-#: ../../setup_application/miscs_settings.rst:338
+#: ../../setup_application/miscs_settings.rst:342
 msgid ""
 "**Proxy type**: the Proxy type available on the network. Two protocols are "
 "supported: **Http** or **Socks5**."
@@ -1088,7 +1110,7 @@ msgstr ""
 "**Тип проксі-сервера**: тип доступного у мережі проксі-сервера. Передбачено "
 "підтримку двох протоколів: **HTTP** і **Socks5**."
 
-#: ../../setup_application/miscs_settings.rst:339
+#: ../../setup_application/miscs_settings.rst:343
 msgid ""
 "**Requires Authentication**: turn on this option if the connection to the "
 "Proxy server needs a **Username** and a **Password**."
@@ -1096,7 +1118,7 @@ msgstr ""
 "**Потрібне розпізнавання**: позначте цей пункт, якщо для з'єднання із проксі-"
 "сервером потрібен **Користувач** і **Пароль**."
 
-#: ../../setup_application/miscs_settings.rst:340
+#: ../../setup_application/miscs_settings.rst:344
 msgid ""
 "**Username**: the name to use to be logged on the Proxy server over the "
 "network."
@@ -1104,7 +1126,7 @@ msgstr ""
 "**Користувач**: ім'я, яке слід використати для реєстрації на проксі-сервері "
 "у мережі."
 
-#: ../../setup_application/miscs_settings.rst:341
+#: ../../setup_application/miscs_settings.rst:345
 msgid ""
 "**Password**: the password to use to be logged on the Proxy server over the "
 "network."

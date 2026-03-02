@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-27 02:08+0000\n"
+"POT-Creation-Date: 2026-03-01 02:05+0000\n"
 "PO-Revision-Date: 2026-02-27 17:29+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -910,11 +910,17 @@ msgstr ""
 
 # skip-rule: t-acc_obe, k-Super
 #: ../../setup_application/miscs_settings.rst:299
+#, fuzzy
+#| msgid ""
+#| "**For NVIDIA GPU users** (e.g., GeForce RTX 2070 Super, RTX 3060 Ti, "
+#| "etc.), additional steps are required under Windows to ensure successful "
+#| "GPU detection by OpenCV's AI backend. The NVIDIA `Cuda SDKs <https://en."
+#| "wikipedia.org/wiki/CUDA>_` must be installed on your system:"
 msgid ""
 "**For NVIDIA GPU users** (e.g., GeForce RTX 2070 Super, RTX 3060 Ti, etc.), "
 "additional steps are required under Windows to ensure successful GPU "
 "detection by OpenCV's AI backend. The NVIDIA `Cuda SDKs <https://en."
-"wikipedia.org/wiki/CUDA>_` must be installed on your system:"
+"wikipedia.org/wiki/CUDA>`_ must be installed on your system:"
 msgstr ""
 "**Per als usuaris de GPU NVIDIA** (p. ex., GeForce RTX 2070 Super, RTX 3060 "
 "Ti, etc.), cal fer passos addicionals al Windows per a assegurar la detecció "
@@ -965,6 +971,22 @@ msgstr ""
 
 #: ../../setup_application/miscs_settings.rst:309
 msgid ""
+"**For Intel Core CPU including GPU users** (eg. Intel Iris Xe), you need the "
+"last drivers updated to current stable versions and just set the "
+"**`OPENCV_OPENCL_DEVICE`** system environment variable to **`INTEL:GPU:0`** "
+"via the Windows Control Panel.."
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:311
+msgid ""
+"**For AMD GPU users**, you need the `OpenVX extension for OpenCV <https://"
+"rocm.docs.amd.com/projects/MIVisionX/en/docs-6.1.0/amd_openvx_extensions/"
+"amd_opencv/README.html>`_ and set the **`OPENCV_OPENCL_DEVICE`** system "
+"environment variable to **`AMD:GPU:0`** via the Windows Control Panel.."
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:313
+msgid ""
 "**Download Required Binary Data**: this button loads the deep-learning model "
 "files used with the face management, image quality scanning, and auto-tags "
 "features. Only use it if you bypassed :ref:`this stage at the first-run "
@@ -976,7 +998,7 @@ msgstr ""
 "només si heu passat per alt :ref:`aquesta etapa en la primera execució "
 "<firstrun_downloads>` de l'aplicació."
 
-#: ../../setup_application/miscs_settings.rst:311
+#: ../../setup_application/miscs_settings.rst:315
 msgid ""
 "**Use the video hardware acceleration**: this option must be used only with "
 "compatible hardware GPU devices with the FFmpeg backend. Disable this option "
@@ -987,7 +1009,7 @@ msgstr ""
 "aquesta opció si apareixen errors de descodificació dels elements multimèdia "
 "de vídeo."
 
-#: ../../setup_application/miscs_settings.rst:313
+#: ../../setup_application/miscs_settings.rst:317
 msgid ""
 "**Use the video texture conversion**: this option must be used to reduce CPU "
 "usage when video frames are rendered by using GPU-based conversion with the "
@@ -999,7 +1021,7 @@ msgstr ""
 "aquesta opció si apareixen errors de descodificació dels elements multimèdia "
 "de vídeo."
 
-#: ../../setup_application/miscs_settings.rst:315
+#: ../../setup_application/miscs_settings.rst:319
 msgid ""
 "**Decoding backend to render media**: this option chooses the backend used "
 "to render video and audio media with the **Qt6 version** of application. "
@@ -1010,7 +1032,7 @@ msgstr ""
 "vídeo i àudio amb la **versió Qt6** de l'aplicació. Els dorsals admesos són:"
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:317
+#: ../../setup_application/miscs_settings.rst:321
 msgid ""
 "**FFmpeg**: the default and recommended backend available on all platforms. "
 "`FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ always includes all "
@@ -1021,7 +1043,7 @@ msgstr ""
 "tots els còdecs necessaris per a reproduir elements multimèdia."
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:318
+#: ../../setup_application/miscs_settings.rst:322
 msgid ""
 "**GStreamer**: the alternative backend available **under Linux**. `GStreamer "
 "<https://en.wikipedia.org/wiki/GStreamer>`_ can require the installation of "
@@ -1032,7 +1054,7 @@ msgstr ""
 "instal·lació de còdecs de tercers al sistema perquè funcioni correctament."
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:319
+#: ../../setup_application/miscs_settings.rst:323
 msgid ""
 "**WMF**: Windows Media Foundation is the alternative backend available "
 "**under Windows**. `WMF <https://en.wikipedia.org/wiki/Media_Foundation>`_ "
@@ -1045,7 +1067,7 @@ msgstr ""
 "correctament."
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:320
+#: ../../setup_application/miscs_settings.rst:324
 msgid ""
 "**AVFoundation**: the alternative backend available **under macOS**. "
 "`AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ can require the "
@@ -1056,7 +1078,7 @@ msgstr ""
 "la instal·lació de còdecs de tercers en el sistema perquè funcioni "
 "correctament."
 
-#: ../../setup_application/miscs_settings.rst:324
+#: ../../setup_application/miscs_settings.rst:328
 msgid ""
 "To prevent washed out color issues when playing HDR video taken from modern "
 "devices, by experience better results can be obtained using an alternative "
@@ -1067,7 +1089,7 @@ msgstr ""
 "utilitzant un dorsal alternatiu."
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:326
+#: ../../setup_application/miscs_settings.rst:330
 msgid ""
 "**Enable internal debug logging**: this option turns on the debug traces on "
 "the console used to investigate errors. Under Linux and macOS, just start "
@@ -1086,12 +1108,12 @@ msgstr ""
 "predeterminada del DebugView és suficient per a capturar les traces de "
 "l'aplicació."
 
-#: ../../setup_application/miscs_settings.rst:332
+#: ../../setup_application/miscs_settings.rst:336
 msgid "digiKam Running Under Windows With DebugView"
 msgstr "El digiKam s'executa sota Windows amb el DebugView"
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:334
+#: ../../setup_application/miscs_settings.rst:338
 msgid ""
 "**Network Proxy Server Settings**: use this group the options to setup the "
 "`proxy server <https://en.wikipedia.org/wiki/Proxy_server>`_ settings for "
@@ -1104,16 +1126,16 @@ msgstr ""
 "buit si no es requereix cap servidor intermediari per a accedir a Internet. "
 "Les opcions disponibles del servidor intermediari es llisten a continuació:"
 
-#: ../../setup_application/miscs_settings.rst:336
+#: ../../setup_application/miscs_settings.rst:340
 msgid "**Proxy**: the address of the Proxy server on the network."
 msgstr ""
 "**Servidor intermediari**: l'adreça del servidor intermediari a la xarxa."
 
-#: ../../setup_application/miscs_settings.rst:337
+#: ../../setup_application/miscs_settings.rst:341
 msgid "**Port**: the Proxy server port on the network."
 msgstr "**Port**: el port del servidor intermediari a la xarxa."
 
-#: ../../setup_application/miscs_settings.rst:338
+#: ../../setup_application/miscs_settings.rst:342
 msgid ""
 "**Proxy type**: the Proxy type available on the network. Two protocols are "
 "supported: **Http** or **Socks5**."
@@ -1121,7 +1143,7 @@ msgstr ""
 "**Tipus de servidor intermediari**: el tipus de servidor intermediari "
 "disponible a la xarxa. S'admeten dos protocols: **Http** o **Socks5**."
 
-#: ../../setup_application/miscs_settings.rst:339
+#: ../../setup_application/miscs_settings.rst:343
 msgid ""
 "**Requires Authentication**: turn on this option if the connection to the "
 "Proxy server needs a **Username** and a **Password**."
@@ -1129,7 +1151,7 @@ msgstr ""
 "**Requereix autenticació**: activeu aquesta opció si la connexió amb el "
 "servidor intermediari necessita un **Nom d'usuari** i una **Contrasenya**."
 
-#: ../../setup_application/miscs_settings.rst:340
+#: ../../setup_application/miscs_settings.rst:344
 msgid ""
 "**Username**: the name to use to be logged on the Proxy server over the "
 "network."
@@ -1137,7 +1159,7 @@ msgstr ""
 "**Nom d'usuari**: el nom que s'ha d'utilitzar per a registrar-se al servidor "
 "intermediari a través de la xarxa."
 
-#: ../../setup_application/miscs_settings.rst:341
+#: ../../setup_application/miscs_settings.rst:345
 msgid ""
 "**Password**: the password to use to be logged on the Proxy server over the "
 "network."
