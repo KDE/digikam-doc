@@ -44,3 +44,7 @@ Assuming you use the control tags as shown in the above screenshot, select the i
     The digiKam Geolocation Editor Reverse Geocoding Tags Hierarchy Populated
 
 The green tags represent the search result of the selected public reverse geocoding service and are already assigned to the image(s). To save these tags to the image file and the digiKam database click **Apply**. The tags will appear as regular tags in your tag tree, which is viewable here or in the tag trees of the Left or Right Sidebar. Of course you can still edit the tags like any other tag in the Tag Manager or in the Left or Right Sidebar, but you can't edit the tags from within the Geolocation Editor.
+
+.. warning::
+
+    The reverse geocoding feature relies on a free external service. The number of requests is limited per day. If too many requests are sent, the remote server may reject further connections to protect itself from overload.
