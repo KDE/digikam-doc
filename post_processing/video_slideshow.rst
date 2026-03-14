@@ -15,6 +15,10 @@
 
 The Video Slideshow tool allows creation of a movie from a list of photos. The generated file can be played on a video player or a TV screen. Images are presented one by one with visual effects if you need them. This tool can also be used to create a time-lapse animation from shots taken with an intervalometer.
 
+.. note::
+
+    The Video Slideshow tool relies on `FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ in the background to encode media (codec and format). The tool lists the codecs and formats supported by FFmpeg. Grayed-out entries indicate codecs and formats that are not supported by the FFmpeg installation on your computer.
+
 Select the images that you want to encode as video and go to :menuselection:`Tools --> Create video slideshow` a wizard dialog will open up as below.
 
 .. figure:: images/video_slideshow_01.webp
@@ -26,6 +30,8 @@ Select the images that you want to encode as video and go to :menuselection:`Too
 This page allows you to select the contents to export using one of two methods, either from the current items selection, or from a list of albums. With the **Albums** selection mode you can generate a video slideshow from album contents. Just check the respective albums displayed in the hierarchical list. Use the next three tabs **Tags**, **Searches**, and **Labels** to refine your selection using tags, labels, or previous search results in digiKam.
 
 If you use the **Images** selection mode only the previous selection of items from the Icon-View will be processed and listed on this page as a flat list.
+
+This page also checks for the presence of the **FFmpeg** program installed on your computer.
 
 .. figure:: images/video_slideshow_02.webp
     :alt:
@@ -43,7 +49,7 @@ Press the **Next** button to display all the video settings used to encode the s
 
     - **Video bit Rate**: This is the bandwidth used to encode video. A low value means poor quality, and a high value means good quality. Be aware that high-bit-rate video will require more space on your disk.
 
-    - **Video Codec**: This is the standard video encoding method to make the media.
+    - **Video Codec**: This is the standard video encoding method to make the media. Entries grayed-out in this list are not supported by the version of FFmpeg installed on your computer.
 
     - **Effect While Displaying Image**: Select the visual effects to apply on an image while **Number of Frames by Image**.
 
@@ -59,7 +65,7 @@ The tool on the bottom of this view calculates the delay for each image on the s
 
 Pressing on the **Next** button will display all the media container settings to host the encoded contents. The parameters are:
 
-    - **Media Container Format**: The file format container to host video media.
+    - **Media Container Format**: The file format container to host video media. Entries grayed-out in this list are not supported by the version of FFmpeg installed on your computer.
 
     - **Destination folder**: The directory on disk to store the video file.
 
