@@ -278,9 +278,15 @@ This section allows you to adjust special low-level configurations used by digiK
 
     The digiKam System Configuration Page
 
+Screen Rendering (Qt5 only)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 - **Use high DPI scaling from the screen factor**: this option will scale coordinates in a device-independent manner according to the display scale factors provided by the operating system. It scales the graphical interface elements (buttons, text, etc.) in accordance with the Desktop settings. The digiKam graphical interface elements are therefore displayed larger by this factor and therefore should appear just as large as the graphical interface elements used in the native system. This option is only available with the **Qt5 version** of digiKam.
 
 - **Use pixmaps with high DPI resolution**: this option sizes the pixmaps used internally by digiKam into a device-independent layout geometry, and activates high-resolution icons. If this option is disabled on a high-DPI display, the elements in digiKam may look very blurry when viewed at high resolutions. This option is also recommended for use when using multiple screens with different resolutions. This option is only available with the **Qt5 version** of digiKam.
+
+Face Management
+~~~~~~~~~~~~~~~
 
 - **Use the software OpenGL rendering**: this option will disable the GPU hardware accelerations and switch to a software-emulation for all calls to OpenGL.
 
@@ -312,6 +318,9 @@ This section allows you to adjust special low-level configurations used by digiK
 
 - **Download Required Binary Data**: this button loads the deep-learning model files used with the face management, image quality scanning, and auto-tags features. Only use it if you bypassed :ref:`this stage at the first-run <firstrun_downloads>` of the application.
 
+Video Rendering
+~~~~~~~~~~~~~~~
+
 - **Use the video hardware acceleration**: this option must be used only with compatible hardware GPU devices with the FFmpeg backend. Disable this option if video media decoding errors occur.
 
 - **Use the video texture conversion**: this option must be used to reduce CPU usage when video frames are rendered by using GPU-based conversion with the FFmpeg backend. Disable this option if video media decoding errors occur.
@@ -327,6 +336,9 @@ This section allows you to adjust special low-level configurations used by digiK
 
     To prevent washed out color issues when playing HDR video taken from modern devices, by experience better results can be obtained using an alternative backend.
 
+Debug Statements
+~~~~~~~~~~~~~~~~
+
 - **Enable internal debug logging**: this option turns on the debug traces on the console used to investigate errors. Under Linux and macOS, just start the application from a console to show the messages. Under Windows, you need an extra Microsoft application named `DebugView <https://learn.microsoft.com/sysinternals/downloads/debugview>`_ to display the messages. The default settings from DebugView are enough to capture the traces from the application.
 
 .. figure:: images/setup_miscs_system_debugview.webp
@@ -334,6 +346,9 @@ This section allows you to adjust special low-level configurations used by digiK
     :align: center
 
     digiKam Running Under Windows With DebugView
+
+Network Proxy
+~~~~~~~~~~~~~
 
 - **Network Proxy Server Settings**: use this group the options to setup the `proxy server <https://en.wikipedia.org/wiki/Proxy_server>`_ settings for your local network. Leave empty if no proxy is required to access the Internet. Available Proxy options are listed below:
 
