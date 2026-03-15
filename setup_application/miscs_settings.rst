@@ -296,19 +296,19 @@ This section allows you to adjust special low-level configurations used by digiK
 
     .. note::
 
-        **For NVIDIA GPU users** (e.g., GeForce RTX 2070 Super, RTX 3060 Ti, etc.), additional steps are required under Windows to ensure successful GPU detection by OpenCV's AI backend. The NVIDIA `Cuda SDKs <https://en.wikipedia.org/wiki/CUDA>`_ must be installed on your system:
+        **For NVIDIA GPU users** (e.g., GeForce RTX 2070 Super, RTX 3060 Ti, etc.), additional steps are required to ensure successful GPU detection by OpenCV's AI backend. The NVIDIA `Cuda SDKs <https://en.wikipedia.org/wiki/CUDA>`_ must be installed on your system:
 
         1. Install the **NVIDIA CUDA Toolkit** from the `official NVIDIA website <https://developer.nvidia.com/cuda/toolkit>`_. Select a **Custom** installation and choose only the components **CUDA/Runtime/Libraries/OPENCL** and **CUDA/Runtime/Libraries/CUBLAS**.
 
         2. Install the **cuDNN Library** from the `official NVIDIA website <https://developer.nvidia.com/cudnn>`_. Select a **Custom** installation and choose only **cuDNN for CUDA/Runtime**.
 
-        3. Set the **`OPENCV_OPENCL_DEVICE`** system environment variable to **`NVIDIA:GPU:0`** via the Windows Control Panel.
+        3. Set the **`OPENCV_OPENCL_DEVICE`** system environment variable to **`NVIDIA:GPU:0`**. Under Windows, this can be done with the `System Control Panel <https://www.computerhope.com/issues/ch000549.htm>`_.
 
         After completing these steps, restart digiKam and rerun the compatibility test in the *Setup > Miscellaneous > System* dialog.
 
-        **For Intel Core CPU including GPU users** (eg. Intel Iris Xe), you need the last drivers updated to current stable versions and just set the **`OPENCV_OPENCL_DEVICE`** system environment variable to **`INTEL:GPU:0`** via the Windows Control Panel..
+        **For Intel Core CPU including GPU users** (eg. Intel Iris Xe), you need the last drivers updated to current stable versions and just set the **`OPENCV_OPENCL_DEVICE`** system environment variable to **`INTEL:GPU:0`**. Under Windows, this can be done with the `System Control Panel <https://www.computerhope.com/issues/ch000549.htm>`_.
 
-        **For AMD GPU users**, you need the `OpenVX extension for OpenCV <https://rocm.docs.amd.com/projects/MIVisionX/en/docs-6.1.0/amd_openvx_extensions/amd_opencv/README.html>`_ and set the **`OPENCV_OPENCL_DEVICE`** system environment variable to **`AMD:GPU:0`** via the Windows Control Panel..
+        **For AMD GPU users**, you need the `ROCm software layer <https://rocm.docs.amd.com/projects/radeon-ryzen/en/latest/index.html>`_ and set the **`OPENCV_OPENCL_DEVICE`** system environment variable to **`:GPU:0`**. Under Windows, this can be done with the `System Control Panel <https://www.computerhope.com/issues/ch000549.htm>`_.
 
 - **Download Required Binary Data**: this button loads the deep-learning model files used with the face management, image quality scanning, and auto-tags features. Only use it if you bypassed :ref:`this stage at the first-run <firstrun_downloads>` of the application.
 
