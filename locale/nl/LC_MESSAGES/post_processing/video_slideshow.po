@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-04 02:01+0000\n"
+"POT-Creation-Date: 2026-03-15 02:02+0000\n"
 "PO-Revision-Date: 2024-12-26 17:46+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -48,7 +48,16 @@ msgstr ""
 "gebruikt worden om een time-lapse animatie uit opnamen genomen met een "
 "intervalometer te maken."
 
-#: ../../post_processing/video_slideshow.rst:18
+#: ../../post_processing/video_slideshow.rst:20
+msgid ""
+"The Video Slideshow tool relies on `FFmpeg <https://en.wikipedia.org/wiki/"
+"FFmpeg>`_ in the background to encode media (codec and format). The tool "
+"lists the codecs and formats supported by FFmpeg. Grayed-out entries "
+"indicate codecs and formats that are not supported by the FFmpeg "
+"installation on your computer."
+msgstr ""
+
+#: ../../post_processing/video_slideshow.rst:22
 msgid ""
 "Select the images that you want to encode as video and go to :menuselection:"
 "`Tools --> Create video slideshow` a wizard dialog will open up as below."
@@ -57,11 +66,11 @@ msgstr ""
 "`Hulpmiddelen --> Video-diapresentatie maken` en de dialoog van de assistent "
 "zal worden geopend."
 
-#: ../../post_processing/video_slideshow.rst:24
+#: ../../post_processing/video_slideshow.rst:28
 msgid "The Video Slideshow Wizard Welcome Page"
 msgstr "De Welkomstpagina van de assistent voor video-diapresentatie"
 
-#: ../../post_processing/video_slideshow.rst:26
+#: ../../post_processing/video_slideshow.rst:30
 msgid ""
 "This page allows you to select the contents to export using one of two "
 "methods, either from the current items selection, or from a list of albums. "
@@ -79,7 +88,7 @@ msgstr ""
 "**Zoekopdrachten** en **Labels** om uw selectie te verfijnen met tags, "
 "labels of eerdere zoekresultaten in digiKam."
 
-#: ../../post_processing/video_slideshow.rst:28
+#: ../../post_processing/video_slideshow.rst:32
 msgid ""
 "If you use the **Images** selection mode only the previous selection of "
 "items from the Icon-View will be processed and listed on this page as a flat "
@@ -90,12 +99,18 @@ msgstr ""
 "pagina als een platte lijst getoond worden."
 
 #: ../../post_processing/video_slideshow.rst:34
+msgid ""
+"This page also checks for the presence of the **FFmpeg** program installed "
+"on your computer."
+msgstr ""
+
+#: ../../post_processing/video_slideshow.rst:40
 msgid "The Video Slideshow Wizard Images Selection Page"
 msgstr ""
 "De selectiepagina voor afbeeldingen van de assistent voor video-"
 "diapresentatie"
 
-#: ../../post_processing/video_slideshow.rst:36
+#: ../../post_processing/video_slideshow.rst:42
 msgid ""
 "Press the **Next** button to display all the video settings used to encode "
 "the slideshow. The parameters are:"
@@ -103,7 +118,7 @@ msgstr ""
 "Drukken op de knop **Volgende** zal alle video-instellingen tonen gebruikt "
 "om de diapresentatie te coderen. De parameters zijn:"
 
-#: ../../post_processing/video_slideshow.rst:38
+#: ../../post_processing/video_slideshow.rst:44
 msgid ""
 "**Number of Frames by Image**: The number of frames generated of one image "
 "to encode in the video stream. This defines the time of one image will be "
@@ -116,7 +131,7 @@ msgstr ""
 "tijdens tonen van afbeeldingen** instelt, zal deze getoond worden met dit "
 "aantal frames."
 
-#: ../../post_processing/video_slideshow.rst:40
+#: ../../post_processing/video_slideshow.rst:46
 msgid ""
 "**Video Standard**: This is the video norm to use while encoding media, as "
 "**PAL - 25 FPS** or **NTSC - 29 FPS** (FPS: Frame Per Seconds)."
@@ -124,7 +139,7 @@ msgstr ""
 "**Videostandaard**: dit is de te gebruiken videonorm bij codering van media, "
 "zoals **PAL - 25 FPS** of **NTSC - 29 FPS** (FPS: frames per seconde)."
 
-#: ../../post_processing/video_slideshow.rst:42
+#: ../../post_processing/video_slideshow.rst:48
 msgid ""
 "**Video Type**: This is the video resolution to use while encoding media. "
 "Images are resized accordingly. Take care that high resolution will require "
@@ -135,7 +150,7 @@ msgstr ""
 "omdat hoge resolutie meer hulpbronnen vereist voor coderen en meer ruimte op "
 "uw schijf gebruikt."
 
-#: ../../post_processing/video_slideshow.rst:44
+#: ../../post_processing/video_slideshow.rst:50
 msgid ""
 "**Video bit Rate**: This is the bandwidth used to encode video. A low value "
 "means poor quality, and a high value means good quality. Be aware that high-"
@@ -146,15 +161,20 @@ msgstr ""
 "betekent goede kwaliteit. Wees ervan bewust dat hoge snelheid meer ruimte op "
 "uw schijf vereist."
 
-#: ../../post_processing/video_slideshow.rst:46
+#: ../../post_processing/video_slideshow.rst:52
+#, fuzzy
+#| msgid ""
+#| "**Video Codec**: This is the standard video encoding method to make the "
+#| "media."
 msgid ""
 "**Video Codec**: This is the standard video encoding method to make the "
-"media."
+"media. Entries grayed-out in this list are not supported by the version of "
+"FFmpeg installed on your computer."
 msgstr ""
 "**Video-codec**: dit is de standaard video coderingsmethode om het medium te "
 "maken."
 
-#: ../../post_processing/video_slideshow.rst:48
+#: ../../post_processing/video_slideshow.rst:54
 msgid ""
 "**Effect While Displaying Image**: Select the visual effects to apply on an "
 "image while **Number of Frames by Image**."
@@ -162,7 +182,7 @@ msgstr ""
 "**Effect tijdens het tonen van de afbeelding**: selecteer de visuele toe te "
 "passen effecten op een afbeelding tijdens **Aantal frames per afbeelding**."
 
-#: ../../post_processing/video_slideshow.rst:50
+#: ../../post_processing/video_slideshow.rst:56
 msgid ""
 "**Transition Between Images**: Select the visual effect to apply as a "
 "transition outside the **Number of Frames by Image**."
@@ -170,7 +190,7 @@ msgstr ""
 "**Overgang tussen afbeeldingen**: selecteer het visuele toe te passen effect "
 "als een overgang buiten het **Aantal frames per afbeelding**."
 
-#: ../../post_processing/video_slideshow.rst:52
+#: ../../post_processing/video_slideshow.rst:58
 msgid ""
 "The tool on the bottom of this view calculates the delay for each image on "
 "the screen including applied visual effects, and the total duration of the "
@@ -180,12 +200,12 @@ msgstr ""
 "afbeelding op het scherm inclusief toegepaste visuele effecten en de totale "
 "duur van de diapresentatie."
 
-#: ../../post_processing/video_slideshow.rst:58
+#: ../../post_processing/video_slideshow.rst:64
 msgid "The Video Slideshow Wizard Video Settings Page"
 msgstr ""
 "De instellingenpagina voor video van de assistent voor video-diapresentatie"
 
-#: ../../post_processing/video_slideshow.rst:60
+#: ../../post_processing/video_slideshow.rst:66
 msgid ""
 "Pressing on the **Next** button will display all the media container "
 "settings to host the encoded contents. The parameters are:"
@@ -193,18 +213,18 @@ msgstr ""
 "Op de knop **Volgende** drukken zal alle instellingen van de media-container "
 "tonen om de gecodeerde inhoud op te slaan. De parameters zijn:"
 
-#: ../../post_processing/video_slideshow.rst:62
+#: ../../post_processing/video_slideshow.rst:68
 msgid ""
-"**Media Container Format**: The file format container to host video media."
+"**Media Container Format**: The file format container to host video media. "
+"Entries grayed-out in this list are not supported by the version of FFmpeg "
+"installed on your computer."
 msgstr ""
-"**Formaat van mediacontainer**: het bestandsformaat van de container voor "
-"het opslaan van het videomedium."
 
-#: ../../post_processing/video_slideshow.rst:64
+#: ../../post_processing/video_slideshow.rst:70
 msgid "**Destination folder**: The directory on disk to store the video file."
 msgstr "**Doelmap**: de map op de schijf om het videobestand op te slaan."
 
-#: ../../post_processing/video_slideshow.rst:66
+#: ../../post_processing/video_slideshow.rst:72
 msgid ""
 "**If Target File Exists**: Allows you to overwrite the video file if it "
 "already exists in the directory."
@@ -212,7 +232,7 @@ msgstr ""
 "**Als doelbestand bestaat**: biedt u het overschrijven van het videobestand "
 "als het al bestaat in de map."
 
-#: ../../post_processing/video_slideshow.rst:68
+#: ../../post_processing/video_slideshow.rst:74
 msgid ""
 "**Open in Player**: Allows you to open the video with the digiKam internal "
 "player or the default desktop application after it has been rendered."
@@ -220,12 +240,12 @@ msgstr ""
 "**In speler openen**: biedt u het openen van de video met de interne speler "
 "van digiKam of de standaard bureaubladtoepassing nadat deze is gerenderd."
 
-#: ../../post_processing/video_slideshow.rst:74
+#: ../../post_processing/video_slideshow.rst:80
 msgid "The Video Slideshow Wizard Output Settings Page"
 msgstr ""
 "De instellingenpagina voor uitvoer van de assistent voor video-diapresentatie"
 
-#: ../../post_processing/video_slideshow.rst:76
+#: ../../post_processing/video_slideshow.rst:82
 msgid ""
 "Pressing on the **Next** button will start the video encoding. This stage "
 "can take a while depending on the number of items to process and the delay "
@@ -235,22 +255,28 @@ msgstr ""
 "kan even duren afhankelijk van het aantal te verwerken items en de gebruikte "
 "vertraging voor elke afbeelding om de video te genereren."
 
-#: ../../post_processing/video_slideshow.rst:82
+#: ../../post_processing/video_slideshow.rst:88
 msgid "The Video Slideshow Wizard Generating Output File"
 msgstr ""
 "Het uitvoerbestand genereren van de assistent voor video-diapresentatie"
 
-#: ../../post_processing/video_slideshow.rst:84
+#: ../../post_processing/video_slideshow.rst:90
 msgid ""
 "Finally, when encoding is done, a preview of the video file is displayed."
 msgstr ""
 "tenslotte, wanneer de codering is gedaan, wordt een voorbeeld van het "
 "videobestand getoond."
 
-#: ../../post_processing/video_slideshow.rst:90
+#: ../../post_processing/video_slideshow.rst:96
 msgid "The Video Slideshow Preview Displayed in digiKam Internal Player"
 msgstr ""
 "Het voorbeeld van de video-diapresentatie in de interne speler van digiKam"
+
+#~ msgid ""
+#~ "**Media Container Format**: The file format container to host video media."
+#~ msgstr ""
+#~ "**Formaat van mediacontainer**: het bestandsformaat van de container voor "
+#~ "het opslaan van het videomedium."
 
 #~ msgid "Video Slideshow"
 #~ msgstr "Diashow met video's"

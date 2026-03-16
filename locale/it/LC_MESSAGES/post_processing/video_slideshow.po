@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-04 02:01+0000\n"
+"POT-Creation-Date: 2026-03-15 02:02+0000\n"
 "PO-Revision-Date: 2025-02-06 20:11+0100\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -48,7 +48,16 @@ msgstr ""
 "strumento può essere anche utilizzato per creare un'animazione time-lapse da "
 "scatti eseguiti con un intervallometro."
 
-#: ../../post_processing/video_slideshow.rst:18
+#: ../../post_processing/video_slideshow.rst:20
+msgid ""
+"The Video Slideshow tool relies on `FFmpeg <https://en.wikipedia.org/wiki/"
+"FFmpeg>`_ in the background to encode media (codec and format). The tool "
+"lists the codecs and formats supported by FFmpeg. Grayed-out entries "
+"indicate codecs and formats that are not supported by the FFmpeg "
+"installation on your computer."
+msgstr ""
+
+#: ../../post_processing/video_slideshow.rst:22
 msgid ""
 "Select the images that you want to encode as video and go to :menuselection:"
 "`Tools --> Create video slideshow` a wizard dialog will open up as below."
@@ -57,11 +66,11 @@ msgstr ""
 "`Strumenti --> Crea presentazione video`, si aprirà la finestra della "
 "procedura guidata come quella sotto riportata."
 
-#: ../../post_processing/video_slideshow.rst:24
+#: ../../post_processing/video_slideshow.rst:28
 msgid "The Video Slideshow Wizard Welcome Page"
 msgstr "La pagina iniziale della procedura guidata della presentazione video"
 
-#: ../../post_processing/video_slideshow.rst:26
+#: ../../post_processing/video_slideshow.rst:30
 msgid ""
 "This page allows you to select the contents to export using one of two "
 "methods, either from the current items selection, or from a list of albums. "
@@ -79,7 +88,7 @@ msgstr ""
 "**Ricerche** ed **Etichette** per raffinare, di conseguenza, la selezione in "
 "digiKam."
 
-#: ../../post_processing/video_slideshow.rst:28
+#: ../../post_processing/video_slideshow.rst:32
 msgid ""
 "If you use the **Images** selection mode only the previous selection of "
 "items from the Icon-View will be processed and listed on this page as a flat "
@@ -90,12 +99,18 @@ msgstr ""
 "icone come elenco semplice."
 
 #: ../../post_processing/video_slideshow.rst:34
+msgid ""
+"This page also checks for the presence of the **FFmpeg** program installed "
+"on your computer."
+msgstr ""
+
+#: ../../post_processing/video_slideshow.rst:40
 msgid "The Video Slideshow Wizard Images Selection Page"
 msgstr ""
 "La pagina di selezione delle immagini della procedura guidata della "
 "presentazione video"
 
-#: ../../post_processing/video_slideshow.rst:36
+#: ../../post_processing/video_slideshow.rst:42
 msgid ""
 "Press the **Next** button to display all the video settings used to encode "
 "the slideshow. The parameters are:"
@@ -103,7 +118,7 @@ msgstr ""
 "Fai clic sul pulsante **Successivo** per visualizzare tutte le impostazioni "
 "video utilizzate per codificare la presentazione. I parametri sono:"
 
-#: ../../post_processing/video_slideshow.rst:38
+#: ../../post_processing/video_slideshow.rst:44
 msgid ""
 "**Number of Frames by Image**: The number of frames generated of one image "
 "to encode in the video stream. This defines the time of one image will be "
@@ -116,7 +131,7 @@ msgstr ""
 "**Effetto durante la visualizzazione delle immagini**, tale effetto sarà "
 "reso con questo numero di fotogrammi."
 
-#: ../../post_processing/video_slideshow.rst:40
+#: ../../post_processing/video_slideshow.rst:46
 msgid ""
 "**Video Standard**: This is the video norm to use while encoding media, as "
 "**PAL - 25 FPS** or **NTSC - 29 FPS** (FPS: Frame Per Seconds)."
@@ -125,7 +140,7 @@ msgstr ""
 "multimediale, come **PAL - 25 FPS** o **NTSC - 29 FPS** (FPS: fotogrammi per "
 "secondo)."
 
-#: ../../post_processing/video_slideshow.rst:42
+#: ../../post_processing/video_slideshow.rst:48
 msgid ""
 "**Video Type**: This is the video resolution to use while encoding media. "
 "Images are resized accordingly. Take care that high resolution will require "
@@ -136,7 +151,7 @@ msgstr ""
 "presente che l'alta risoluzione richiede più risorse da codificare e usa più "
 "spazio su disco."
 
-#: ../../post_processing/video_slideshow.rst:44
+#: ../../post_processing/video_slideshow.rst:50
 msgid ""
 "**Video bit Rate**: This is the bandwidth used to encode video. A low value "
 "means poor quality, and a high value means good quality. Be aware that high-"
@@ -147,15 +162,20 @@ msgstr ""
 "indica una buona. Fai attenzione che una velocità del video alta richiederà "
 "più spazio su disco."
 
-#: ../../post_processing/video_slideshow.rst:46
+#: ../../post_processing/video_slideshow.rst:52
+#, fuzzy
+#| msgid ""
+#| "**Video Codec**: This is the standard video encoding method to make the "
+#| "media."
 msgid ""
 "**Video Codec**: This is the standard video encoding method to make the "
-"media."
+"media. Entries grayed-out in this list are not supported by the version of "
+"FFmpeg installed on your computer."
 msgstr ""
 "**Codec video**: è il metodo di codifica video standard per creare il "
 "contenuto multimediale."
 
-#: ../../post_processing/video_slideshow.rst:48
+#: ../../post_processing/video_slideshow.rst:54
 msgid ""
 "**Effect While Displaying Image**: Select the visual effects to apply on an "
 "image while **Number of Frames by Image**."
@@ -164,7 +184,7 @@ msgstr ""
 "visivi da applicare su un'immagine durante l'esecuzione di **Numero di "
 "fotogrammi per immagine**."
 
-#: ../../post_processing/video_slideshow.rst:50
+#: ../../post_processing/video_slideshow.rst:56
 msgid ""
 "**Transition Between Images**: Select the visual effect to apply as a "
 "transition outside the **Number of Frames by Image**."
@@ -172,7 +192,7 @@ msgstr ""
 "**Transizione tra le immagini**: seleziona l'effetto visivo da applicare "
 "come transizione esterna a **Numero di fotogrammi per immagine**."
 
-#: ../../post_processing/video_slideshow.rst:52
+#: ../../post_processing/video_slideshow.rst:58
 msgid ""
 "The tool on the bottom of this view calculates the delay for each image on "
 "the screen including applied visual effects, and the total duration of the "
@@ -182,13 +202,13 @@ msgstr ""
 "ciascuna immagine sullo schermo, inclusi gli effetti visivi applicati, e la "
 "durata totale della presentazione."
 
-#: ../../post_processing/video_slideshow.rst:58
+#: ../../post_processing/video_slideshow.rst:64
 msgid "The Video Slideshow Wizard Video Settings Page"
 msgstr ""
 "La pagina delle impostazioni video della procedura guidata della "
 "presentazione video"
 
-#: ../../post_processing/video_slideshow.rst:60
+#: ../../post_processing/video_slideshow.rst:66
 msgid ""
 "Pressing on the **Next** button will display all the media container "
 "settings to host the encoded contents. The parameters are:"
@@ -197,20 +217,20 @@ msgstr ""
 "impostazioni del contenitore multimediale che ospiterà i contenuti "
 "codificati. I parametri sono:"
 
-#: ../../post_processing/video_slideshow.rst:62
+#: ../../post_processing/video_slideshow.rst:68
 msgid ""
-"**Media Container Format**: The file format container to host video media."
+"**Media Container Format**: The file format container to host video media. "
+"Entries grayed-out in this list are not supported by the version of FFmpeg "
+"installed on your computer."
 msgstr ""
-"**Formato del contenitore multimediale**: il contenitore del formato di file "
-"che ospita il video multimediale."
 
-#: ../../post_processing/video_slideshow.rst:64
+#: ../../post_processing/video_slideshow.rst:70
 msgid "**Destination folder**: The directory on disk to store the video file."
 msgstr ""
 "**Cartella di destinazione**: la cartella sul disco in cui sarà memorizzato "
 "il file video."
 
-#: ../../post_processing/video_slideshow.rst:66
+#: ../../post_processing/video_slideshow.rst:72
 msgid ""
 "**If Target File Exists**: Allows you to overwrite the video file if it "
 "already exists in the directory."
@@ -218,7 +238,7 @@ msgstr ""
 "**Se il file di destinazione esiste già**: ti permette di sovrascrivere il "
 "file video se già presente in tale cartella."
 
-#: ../../post_processing/video_slideshow.rst:68
+#: ../../post_processing/video_slideshow.rst:74
 msgid ""
 "**Open in Player**: Allows you to open the video with the digiKam internal "
 "player or the default desktop application after it has been rendered."
@@ -227,13 +247,13 @@ msgstr ""
 "interno di digiKam o con l'applicazione desktop predefinita, dopo averne "
 "eseguito la resa."
 
-#: ../../post_processing/video_slideshow.rst:74
+#: ../../post_processing/video_slideshow.rst:80
 msgid "The Video Slideshow Wizard Output Settings Page"
 msgstr ""
 "La pagina delle impostazioni del risultato della procedura guidata della "
 "presentazione video"
 
-#: ../../post_processing/video_slideshow.rst:76
+#: ../../post_processing/video_slideshow.rst:82
 msgid ""
 "Pressing on the **Next** button will start the video encoding. This stage "
 "can take a while depending on the number of items to process and the delay "
@@ -244,24 +264,30 @@ msgstr ""
 "immagine utilizzato per generare il video, questa fase potrà impiegarci "
 "diverso tempo."
 
-#: ../../post_processing/video_slideshow.rst:82
+#: ../../post_processing/video_slideshow.rst:88
 msgid "The Video Slideshow Wizard Generating Output File"
 msgstr ""
 "La procedura guidata della presentazione video che genera il file del "
 "risultato"
 
-#: ../../post_processing/video_slideshow.rst:84
+#: ../../post_processing/video_slideshow.rst:90
 msgid ""
 "Finally, when encoding is done, a preview of the video file is displayed."
 msgstr ""
 "Per finire, quando la codifica è terminata, viene visualizzata un'anteprima "
 "del file video."
 
-#: ../../post_processing/video_slideshow.rst:90
+#: ../../post_processing/video_slideshow.rst:96
 msgid "The Video Slideshow Preview Displayed in digiKam Internal Player"
 msgstr ""
 "L'anteprima della presentazione video visualizzata nel riproduttore interno "
 "di digiKam"
+
+#~ msgid ""
+#~ "**Media Container Format**: The file format container to host video media."
+#~ msgstr ""
+#~ "**Formato del contenitore multimediale**: il contenitore del formato di "
+#~ "file che ospita il video multimediale."
 
 #~ msgid "Video Slideshow"
 #~ msgstr "Presentazione video"

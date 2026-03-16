@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-04 02:01+0000\n"
+"POT-Creation-Date: 2026-03-15 02:02+0000\n"
 "PO-Revision-Date: 2024-12-30 11:42+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -50,7 +50,16 @@ msgstr ""
 "для створення уповільненої анімації на основі знімків, створених за "
 "допомогою інтервалометра."
 
-#: ../../post_processing/video_slideshow.rst:18
+#: ../../post_processing/video_slideshow.rst:20
+msgid ""
+"The Video Slideshow tool relies on `FFmpeg <https://en.wikipedia.org/wiki/"
+"FFmpeg>`_ in the background to encode media (codec and format). The tool "
+"lists the codecs and formats supported by FFmpeg. Grayed-out entries "
+"indicate codecs and formats that are not supported by the FFmpeg "
+"installation on your computer."
+msgstr ""
+
+#: ../../post_processing/video_slideshow.rst:22
 msgid ""
 "Select the images that you want to encode as video and go to :menuselection:"
 "`Tools --> Create video slideshow` a wizard dialog will open up as below."
@@ -59,11 +68,11 @@ msgstr ""
 "пунктом меню :menuselection:`Інструменти --> Створити відеопоказ слайдів`. У "
 "відповідь буде відкрито вікно майстра."
 
-#: ../../post_processing/video_slideshow.rst:24
+#: ../../post_processing/video_slideshow.rst:28
 msgid "The Video Slideshow Wizard Welcome Page"
 msgstr "Сторінка вітання майстра показу відеослайдів"
 
-#: ../../post_processing/video_slideshow.rst:26
+#: ../../post_processing/video_slideshow.rst:30
 msgid ""
 "This page allows you to select the contents to export using one of two "
 "methods, either from the current items selection, or from a list of albums. "
@@ -81,7 +90,7 @@ msgstr ""
 "**Пошуки** і **Позначки** ви можете звузити вибір за допомогою міток, "
 "позначок та попередніх результатів пошуку у digiKam."
 
-#: ../../post_processing/video_slideshow.rst:28
+#: ../../post_processing/video_slideshow.rst:32
 msgid ""
 "If you use the **Images** selection mode only the previous selection of "
 "items from the Icon-View will be processed and listed on this page as a flat "
@@ -92,10 +101,16 @@ msgstr ""
 "перегляду піктограм записи."
 
 #: ../../post_processing/video_slideshow.rst:34
+msgid ""
+"This page also checks for the presence of the **FFmpeg** program installed "
+"on your computer."
+msgstr ""
+
+#: ../../post_processing/video_slideshow.rst:40
 msgid "The Video Slideshow Wizard Images Selection Page"
 msgstr "Сторінка вибору зображень майстра показу відеослайдів"
 
-#: ../../post_processing/video_slideshow.rst:36
+#: ../../post_processing/video_slideshow.rst:42
 msgid ""
 "Press the **Next** button to display all the video settings used to encode "
 "the slideshow. The parameters are:"
@@ -103,7 +118,7 @@ msgstr ""
 "У відповідь на натискання кнопки **Далі** буде показано усі параметри для "
 "кодування відеопоказу слайдів. Нижче наведено опис цих параметрів:"
 
-#: ../../post_processing/video_slideshow.rst:38
+#: ../../post_processing/video_slideshow.rst:44
 msgid ""
 "**Number of Frames by Image**: The number of frames generated of one image "
 "to encode in the video stream. This defines the time of one image will be "
@@ -116,7 +131,7 @@ msgstr ""
 "позначите пункт **Ефекти під час показу зображень**, ефект оброблятиметься з "
 "цією кількістю кадрів."
 
-#: ../../post_processing/video_slideshow.rst:40
+#: ../../post_processing/video_slideshow.rst:46
 msgid ""
 "**Video Standard**: This is the video norm to use while encoding media, as "
 "**PAL - 25 FPS** or **NTSC - 29 FPS** (FPS: Frame Per Seconds)."
@@ -125,7 +140,7 @@ msgstr ""
 "мультимедійних даних, зокрема **PAL - 25 кд/с** або **NTSC - 29 кд/с** (кд/с "
 "— кадри за секунду)."
 
-#: ../../post_processing/video_slideshow.rst:42
+#: ../../post_processing/video_slideshow.rst:48
 msgid ""
 "**Video Type**: This is the video resolution to use while encoding media. "
 "Images are resized accordingly. Take care that high resolution will require "
@@ -136,7 +151,7 @@ msgstr ""
 "на те, що вища роздільна здатність потребуватиме більше ресурсів для "
 "кодування і більше місця на диску."
 
-#: ../../post_processing/video_slideshow.rst:44
+#: ../../post_processing/video_slideshow.rst:50
 msgid ""
 "**Video bit Rate**: This is the bandwidth used to encode video. A low value "
 "means poor quality, and a high value means good quality. Be aware that high-"
@@ -147,15 +162,20 @@ msgstr ""
 "Зауважте, що вищі значення потребуватимуть більше місця для зберігання даних "
 "на диску."
 
-#: ../../post_processing/video_slideshow.rst:46
+#: ../../post_processing/video_slideshow.rst:52
+#, fuzzy
+#| msgid ""
+#| "**Video Codec**: This is the standard video encoding method to make the "
+#| "media."
 msgid ""
 "**Video Codec**: This is the standard video encoding method to make the "
-"media."
+"media. Entries grayed-out in this list are not supported by the version of "
+"FFmpeg installed on your computer."
 msgstr ""
 "**Відеокодек**: це стандартний спосіб кодування відео для створення "
 "мультимедійних даних."
 
-#: ../../post_processing/video_slideshow.rst:48
+#: ../../post_processing/video_slideshow.rst:54
 msgid ""
 "**Effect While Displaying Image**: Select the visual effects to apply on an "
 "image while **Number of Frames by Image**."
@@ -164,7 +184,7 @@ msgstr ""
 "які слід застосувати до зображення протягом періоду, який визначається "
 "параметром **Кількість кадрів на зображення**."
 
-#: ../../post_processing/video_slideshow.rst:50
+#: ../../post_processing/video_slideshow.rst:56
 msgid ""
 "**Transition Between Images**: Select the visual effect to apply as a "
 "transition outside the **Number of Frames by Image**."
@@ -173,7 +193,7 @@ msgstr ""
 "візуальний ефект, який слід застосувати як перехід між періодами **Кількість "
 "кадрів на зображення**."
 
-#: ../../post_processing/video_slideshow.rst:52
+#: ../../post_processing/video_slideshow.rst:58
 msgid ""
 "The tool on the bottom of this view calculates the delay for each image on "
 "the screen including applied visual effects, and the total duration of the "
@@ -183,11 +203,11 @@ msgstr ""
 "кожного зображення на екрані, разом із застосованим візуальним ефектом, та "
 "загальну тривалість показу слайдів."
 
-#: ../../post_processing/video_slideshow.rst:58
+#: ../../post_processing/video_slideshow.rst:64
 msgid "The Video Slideshow Wizard Video Settings Page"
 msgstr "Сторінка параметрів відео майстра показу відеослайдів"
 
-#: ../../post_processing/video_slideshow.rst:60
+#: ../../post_processing/video_slideshow.rst:66
 msgid ""
 "Pressing on the **Next** button will display all the media container "
 "settings to host the encoded contents. The parameters are:"
@@ -196,19 +216,19 @@ msgstr ""
 "контейнера мультимедійних даних, який міститиме закодовані дані. Нижче "
 "наведено опис цих параметрів:"
 
-#: ../../post_processing/video_slideshow.rst:62
+#: ../../post_processing/video_slideshow.rst:68
 msgid ""
-"**Media Container Format**: The file format container to host video media."
+"**Media Container Format**: The file format container to host video media. "
+"Entries grayed-out in this list are not supported by the version of FFmpeg "
+"installed on your computer."
 msgstr ""
-"**Формат контейнера даних**: формат файла контейнера, у якому "
-"зберігатимуться мультимедійні дані."
 
-#: ../../post_processing/video_slideshow.rst:64
+#: ../../post_processing/video_slideshow.rst:70
 msgid "**Destination folder**: The directory on disk to store the video file."
 msgstr ""
 "**Тека призначення**: каталог на диску, до якого буде збережено відеофайл."
 
-#: ../../post_processing/video_slideshow.rst:66
+#: ../../post_processing/video_slideshow.rst:72
 msgid ""
 "**If Target File Exists**: Allows you to overwrite the video file if it "
 "already exists in the directory."
@@ -216,7 +236,7 @@ msgstr ""
 "**Якщо файли призначення існують**: дозволяє або не дозволяє програмі "
 "перезаписати відеофайл, якщо він вже існує у каталозі призначення."
 
-#: ../../post_processing/video_slideshow.rst:68
+#: ../../post_processing/video_slideshow.rst:74
 msgid ""
 "**Open in Player**: Allows you to open the video with the digiKam internal "
 "player or the default desktop application after it has been rendered."
@@ -225,11 +245,11 @@ msgstr ""
 "слайдів після кодування у вбудованому програвачі digiKam або у типовій "
 "програмі стільничного середовища."
 
-#: ../../post_processing/video_slideshow.rst:74
+#: ../../post_processing/video_slideshow.rst:80
 msgid "The Video Slideshow Wizard Output Settings Page"
 msgstr "Сторінка параметрі виведення даних майстра показу відеослайдів"
 
-#: ../../post_processing/video_slideshow.rst:76
+#: ../../post_processing/video_slideshow.rst:82
 msgid ""
 "Pressing on the **Next** button will start the video encoding. This stage "
 "can take a while depending on the number of items to process and the delay "
@@ -240,21 +260,27 @@ msgstr ""
 "для обробки та затримки, яку буде використано для кожного зображення для "
 "створення відео."
 
-#: ../../post_processing/video_slideshow.rst:82
+#: ../../post_processing/video_slideshow.rst:88
 msgid "The Video Slideshow Wizard Generating Output File"
 msgstr "Сторінка створення файла результатів майстра показу відеослайдів"
 
-#: ../../post_processing/video_slideshow.rst:84
+#: ../../post_processing/video_slideshow.rst:90
 msgid ""
 "Finally, when encoding is done, a preview of the video file is displayed."
 msgstr ""
 "Нарешті, коли кодування буде завершено, програма покаже попередній перегляд "
 "відеофайла."
 
-#: ../../post_processing/video_slideshow.rst:90
+#: ../../post_processing/video_slideshow.rst:96
 msgid "The Video Slideshow Preview Displayed in digiKam Internal Player"
 msgstr ""
 "Попередній перегляд відеопоказу слайдів у вбудованому програвачі digiKam"
+
+#~ msgid ""
+#~ "**Media Container Format**: The file format container to host video media."
+#~ msgstr ""
+#~ "**Формат контейнера даних**: формат файла контейнера, у якому "
+#~ "зберігатимуться мультимедійні дані."
 
 #~ msgid "Video Slideshow"
 #~ msgstr "Відеопоказ слайдів"
