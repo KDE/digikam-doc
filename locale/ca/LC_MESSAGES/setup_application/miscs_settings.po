@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-04 02:01+0000\n"
+"POT-Creation-Date: 2026-03-16 01:59+0000\n"
 "PO-Revision-Date: 2026-03-01 14:08+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -816,7 +816,11 @@ msgstr ""
 msgid "The digiKam System Configuration Page"
 msgstr "La pàgina de configuració del sistema en el digiKam"
 
-#: ../../setup_application/miscs_settings.rst:281
+#: ../../setup_application/miscs_settings.rst:282
+msgid "Screen Rendering (Qt5 only)"
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:284
 msgid ""
 "**Use high DPI scaling from the screen factor**: this option will scale "
 "coordinates in a device-independent manner according to the display scale "
@@ -836,7 +840,7 @@ msgstr ""
 "veuran tan grans com els elements de la interfície gràfica del sistema "
 "natiu. Aquesta opció només és disponible a la **versió Qt5** del digiKam."
 
-#: ../../setup_application/miscs_settings.rst:283
+#: ../../setup_application/miscs_settings.rst:286
 msgid ""
 "**Use pixmaps with high DPI resolution**: this option sizes the pixmaps used "
 "internally by digiKam into a device-independent layout geometry, and "
@@ -855,7 +859,11 @@ msgstr ""
 "amb resolucions diferents. Aquesta opció només és disponible a la **versió "
 "Qt5** del digiKam."
 
-#: ../../setup_application/miscs_settings.rst:285
+#: ../../setup_application/miscs_settings.rst:289
+msgid "Face Management"
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:291
 msgid ""
 "**Use the software OpenGL rendering**: this option will disable the GPU "
 "hardware accelerations and switch to a software-emulation for all calls to "
@@ -865,7 +873,7 @@ msgstr ""
 "desactivarà les acceleracions de maquinari de la GPU i canviarà a una "
 "emulació de programari a totes les crides a l'OpenGL."
 
-#: ../../setup_application/miscs_settings.rst:287
+#: ../../setup_application/miscs_settings.rst:293
 msgid ""
 "**Use the OpenCL hardware acceleration**: this option will enable the GPU "
 "hardware accelerations with the face management, image quality scanning, and "
@@ -884,7 +892,7 @@ msgstr ""
 "Informació dels components` i vegeu la :ref:`secció OpenCV "
 "<help_componentsinfo>` en el diàleg."
 
-#: ../../setup_application/miscs_settings.rst:289
+#: ../../setup_application/miscs_settings.rst:295
 msgid ""
 "**Use the OpenCL hardware acceleration for AI Models**: this option will "
 "enable the GPU hardware accelerations with the Artificial Intelligence data "
@@ -901,7 +909,7 @@ msgstr ""
 "permet iniciar una seqüència de comprovacions per a informar si el maquinari "
 "admet aquestes característiques."
 
-#: ../../setup_application/miscs_settings.rst:295
+#: ../../setup_application/miscs_settings.rst:301
 msgid ""
 "The OpenCL DNN Compatibility Dialog Running Under macOS Silicon Computer"
 msgstr ""
@@ -909,12 +917,18 @@ msgstr ""
 "Silicon"
 
 # skip-rule: t-acc_obe, k-Super
-#: ../../setup_application/miscs_settings.rst:299
+#: ../../setup_application/miscs_settings.rst:305
+#, fuzzy
+#| msgid ""
+#| "**For NVIDIA GPU users** (e.g., GeForce RTX 2070 Super, RTX 3060 Ti, "
+#| "etc.), additional steps are required under Windows to ensure successful "
+#| "GPU detection by OpenCV's AI backend. The NVIDIA `Cuda SDKs <https://en."
+#| "wikipedia.org/wiki/CUDA>`_ must be installed on your system:"
 msgid ""
 "**For NVIDIA GPU users** (e.g., GeForce RTX 2070 Super, RTX 3060 Ti, etc.), "
-"additional steps are required under Windows to ensure successful GPU "
-"detection by OpenCV's AI backend. The NVIDIA `Cuda SDKs <https://en."
-"wikipedia.org/wiki/CUDA>`_ must be installed on your system:"
+"additional steps are required to ensure successful GPU detection by OpenCV's "
+"AI backend. The NVIDIA `Cuda SDKs <https://en.wikipedia.org/wiki/CUDA>`_ "
+"must be installed on your system:"
 msgstr ""
 "**Per als usuaris de GPU NVIDIA** (p. ex., GeForce RTX 2070 Super, RTX 3060 "
 "Ti, etc.), cal fer passos addicionals al Windows per a assegurar la detecció "
@@ -922,7 +936,7 @@ msgstr ""
 "en.wikipedia.org/wiki/CUDA>`_ de NVIDIA estigui instal·lat en el sistema:"
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:301
+#: ../../setup_application/miscs_settings.rst:307
 msgid ""
 "Install the **NVIDIA CUDA Toolkit** from the `official NVIDIA website "
 "<https://developer.nvidia.com/cuda/toolkit>`_. Select a **Custom** "
@@ -935,7 +949,7 @@ msgstr ""
 "OPENCL** i **CUDA/Runtime/Libraries/CUBLAS**."
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:303
+#: ../../setup_application/miscs_settings.rst:309
 msgid ""
 "Install the **cuDNN Library** from the `official NVIDIA website <https://"
 "developer.nvidia.com/cudnn>`_. Select a **Custom** installation and choose "
@@ -946,15 +960,20 @@ msgstr ""
 "**personalitzada** i trieu només **cuDNN per a CUDA/Runtime**."
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:305
+#: ../../setup_application/miscs_settings.rst:311
+#, fuzzy
+#| msgid ""
+#| "Set the **`OPENCV_OPENCL_DEVICE`** system environment variable to "
+#| "**`NVIDIA:GPU:0`** via the Windows Control Panel."
 msgid ""
 "Set the **`OPENCV_OPENCL_DEVICE`** system environment variable to **`NVIDIA:"
-"GPU:0`** via the Windows Control Panel."
+"GPU:0`**. Under Windows, this can be done with the `System Control Panel "
+"<https://www.computerhope.com/issues/ch000549.htm>`_."
 msgstr ""
 "Definiu la variable d'entorn del sistema **`OPENCV_OPENCL_DEVICE`** a "
 "**`NVIDIA:GPU:0`** des del plafó de control del Windows."
 
-#: ../../setup_application/miscs_settings.rst:307
+#: ../../setup_application/miscs_settings.rst:313
 msgid ""
 "After completing these steps, restart digiKam and rerun the compatibility "
 "test in the *Setup > Miscellaneous > System* dialog."
@@ -964,12 +983,19 @@ msgstr ""
 "Sistema*."
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:309
+#: ../../setup_application/miscs_settings.rst:315
+#, fuzzy
+#| msgid ""
+#| "**For Intel Core CPU including GPU users** (eg. Intel Iris Xe), you need "
+#| "the last drivers updated to current stable versions and just set the "
+#| "**`OPENCV_OPENCL_DEVICE`** system environment variable to **`INTEL:"
+#| "GPU:0`** via the Windows Control Panel.."
 msgid ""
 "**For Intel Core CPU including GPU users** (eg. Intel Iris Xe), you need the "
 "last drivers updated to current stable versions and just set the "
-"**`OPENCV_OPENCL_DEVICE`** system environment variable to **`INTEL:GPU:0`** "
-"via the Windows Control Panel.."
+"**`OPENCV_OPENCL_DEVICE`** system environment variable to **`INTEL:GPU:0`**. "
+"Under Windows, this can be done with the `System Control Panel <https://www."
+"computerhope.com/issues/ch000549.htm>`_."
 msgstr ""
 "**Per a usuaris de CPU Intel Core, incloent-hi GPU** (p. ex., Intel Iris "
 "Xe), cal els últims controladors actualitzats a les versions estables "
@@ -978,12 +1004,19 @@ msgstr ""
 "control del Windows."
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:311
+#: ../../setup_application/miscs_settings.rst:317
+#, fuzzy
+#| msgid ""
+#| "**For AMD GPU users**, you need the `OpenVX extension for OpenCV <https://"
+#| "rocm.docs.amd.com/projects/MIVisionX/en/docs-6.1.0/amd_openvx_extensions/"
+#| "amd_opencv/README.html>`_ and set the **`OPENCV_OPENCL_DEVICE`** system "
+#| "environment variable to **`AMD:GPU:0`** via the Windows Control Panel.."
 msgid ""
-"**For AMD GPU users**, you need the `OpenVX extension for OpenCV <https://"
-"rocm.docs.amd.com/projects/MIVisionX/en/docs-6.1.0/amd_openvx_extensions/"
-"amd_opencv/README.html>`_ and set the **`OPENCV_OPENCL_DEVICE`** system "
-"environment variable to **`AMD:GPU:0`** via the Windows Control Panel.."
+"**For AMD GPU users** (eg. Radeon 6700/6800), you need the `ROCm software "
+"layer <https://rocm.docs.amd.com/projects/radeon-ryzen/en/latest/index."
+"html>`_ and set the **`OPENCV_OPENCL_DEVICE`** system environment variable "
+"to **`:GPU:0`**. Under Windows, this can be done with the `System Control "
+"Panel <https://www.computerhope.com/issues/ch000549.htm>`_."
 msgstr ""
 "**Per als usuaris de les GPU d'AMD**, cal la `OpenVX extension for OpenCV "
 "<https://rocm.docs.amd.com/projects/MIVisionX/en/docs-6.1.0/"
@@ -991,7 +1024,7 @@ msgstr ""
 "d'entorn del sistema **`OPENCV_OPENCL_DEVICE`** a **`AMD:GPU:0`** mitjançant "
 "el plafó de control del Windows."
 
-#: ../../setup_application/miscs_settings.rst:313
+#: ../../setup_application/miscs_settings.rst:319
 msgid ""
 "**Download Required Binary Data**: this button loads the deep-learning model "
 "files used with the face management, image quality scanning, and auto-tags "
@@ -1004,7 +1037,11 @@ msgstr ""
 "només si heu passat per alt :ref:`aquesta etapa en la primera execució "
 "<firstrun_downloads>` de l'aplicació."
 
-#: ../../setup_application/miscs_settings.rst:315
+#: ../../setup_application/miscs_settings.rst:322
+msgid "Video Rendering"
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:324
 msgid ""
 "**Use the video hardware acceleration**: this option must be used only with "
 "compatible hardware GPU devices with the FFmpeg backend. Disable this option "
@@ -1015,7 +1052,7 @@ msgstr ""
 "aquesta opció si apareixen errors de descodificació dels elements multimèdia "
 "de vídeo."
 
-#: ../../setup_application/miscs_settings.rst:317
+#: ../../setup_application/miscs_settings.rst:326
 msgid ""
 "**Use the video texture conversion**: this option must be used to reduce CPU "
 "usage when video frames are rendered by using GPU-based conversion with the "
@@ -1027,7 +1064,7 @@ msgstr ""
 "aquesta opció si apareixen errors de descodificació dels elements multimèdia "
 "de vídeo."
 
-#: ../../setup_application/miscs_settings.rst:319
+#: ../../setup_application/miscs_settings.rst:328
 msgid ""
 "**Decoding backend to render media**: this option chooses the backend used "
 "to render video and audio media with the **Qt6 version** of application. "
@@ -1038,7 +1075,7 @@ msgstr ""
 "vídeo i àudio amb la **versió Qt6** de l'aplicació. Els dorsals admesos són:"
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:321
+#: ../../setup_application/miscs_settings.rst:330
 msgid ""
 "**FFmpeg**: the default and recommended backend available on all platforms. "
 "`FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ always includes all "
@@ -1049,7 +1086,7 @@ msgstr ""
 "tots els còdecs necessaris per a reproduir elements multimèdia."
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:322
+#: ../../setup_application/miscs_settings.rst:331
 msgid ""
 "**GStreamer**: the alternative backend available **under Linux**. `GStreamer "
 "<https://en.wikipedia.org/wiki/GStreamer>`_ can require the installation of "
@@ -1060,7 +1097,7 @@ msgstr ""
 "instal·lació de còdecs de tercers al sistema perquè funcioni correctament."
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:323
+#: ../../setup_application/miscs_settings.rst:332
 msgid ""
 "**WMF**: Windows Media Foundation is the alternative backend available "
 "**under Windows**. `WMF <https://en.wikipedia.org/wiki/Media_Foundation>`_ "
@@ -1073,7 +1110,7 @@ msgstr ""
 "correctament."
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:324
+#: ../../setup_application/miscs_settings.rst:333
 msgid ""
 "**AVFoundation**: the alternative backend available **under macOS**. "
 "`AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ can require the "
@@ -1084,7 +1121,7 @@ msgstr ""
 "la instal·lació de còdecs de tercers en el sistema perquè funcioni "
 "correctament."
 
-#: ../../setup_application/miscs_settings.rst:328
+#: ../../setup_application/miscs_settings.rst:337
 msgid ""
 "To prevent washed out color issues when playing HDR video taken from modern "
 "devices, by experience better results can be obtained using an alternative "
@@ -1094,8 +1131,12 @@ msgstr ""
 "gravats amb dispositius moderns, es poden obtenir millors resultats "
 "utilitzant un dorsal alternatiu."
 
+#: ../../setup_application/miscs_settings.rst:340
+msgid "Debug Statements"
+msgstr ""
+
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:330
+#: ../../setup_application/miscs_settings.rst:342
 msgid ""
 "**Enable internal debug logging**: this option turns on the debug traces on "
 "the console used to investigate errors. Under Linux and macOS, just start "
@@ -1114,12 +1155,16 @@ msgstr ""
 "predeterminada del DebugView és suficient per a capturar les traces de "
 "l'aplicació."
 
-#: ../../setup_application/miscs_settings.rst:336
+#: ../../setup_application/miscs_settings.rst:348
 msgid "digiKam Running Under Windows With DebugView"
 msgstr "El digiKam s'executa sota Windows amb el DebugView"
 
+#: ../../setup_application/miscs_settings.rst:351
+msgid "Network Proxy"
+msgstr ""
+
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:338
+#: ../../setup_application/miscs_settings.rst:353
 msgid ""
 "**Network Proxy Server Settings**: use this group the options to setup the "
 "`proxy server <https://en.wikipedia.org/wiki/Proxy_server>`_ settings for "
@@ -1132,16 +1177,16 @@ msgstr ""
 "buit si no es requereix cap servidor intermediari per a accedir a Internet. "
 "Les opcions disponibles del servidor intermediari es llisten a continuació:"
 
-#: ../../setup_application/miscs_settings.rst:340
+#: ../../setup_application/miscs_settings.rst:355
 msgid "**Proxy**: the address of the Proxy server on the network."
 msgstr ""
 "**Servidor intermediari**: l'adreça del servidor intermediari a la xarxa."
 
-#: ../../setup_application/miscs_settings.rst:341
+#: ../../setup_application/miscs_settings.rst:356
 msgid "**Port**: the Proxy server port on the network."
 msgstr "**Port**: el port del servidor intermediari a la xarxa."
 
-#: ../../setup_application/miscs_settings.rst:342
+#: ../../setup_application/miscs_settings.rst:357
 msgid ""
 "**Proxy type**: the Proxy type available on the network. Two protocols are "
 "supported: **Http** or **Socks5**."
@@ -1149,7 +1194,7 @@ msgstr ""
 "**Tipus de servidor intermediari**: el tipus de servidor intermediari "
 "disponible a la xarxa. S'admeten dos protocols: **Http** o **Socks5**."
 
-#: ../../setup_application/miscs_settings.rst:343
+#: ../../setup_application/miscs_settings.rst:358
 msgid ""
 "**Requires Authentication**: turn on this option if the connection to the "
 "Proxy server needs a **Username** and a **Password**."
@@ -1157,7 +1202,7 @@ msgstr ""
 "**Requereix autenticació**: activeu aquesta opció si la connexió amb el "
 "servidor intermediari necessita un **Nom d'usuari** i una **Contrasenya**."
 
-#: ../../setup_application/miscs_settings.rst:344
+#: ../../setup_application/miscs_settings.rst:359
 msgid ""
 "**Username**: the name to use to be logged on the Proxy server over the "
 "network."
@@ -1165,7 +1210,7 @@ msgstr ""
 "**Nom d'usuari**: el nom que s'ha d'utilitzar per a registrar-se al servidor "
 "intermediari a través de la xarxa."
 
-#: ../../setup_application/miscs_settings.rst:345
+#: ../../setup_application/miscs_settings.rst:360
 msgid ""
 "**Password**: the password to use to be logged on the Proxy server over the "
 "network."

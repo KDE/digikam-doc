@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-04 02:01+0000\n"
+"POT-Creation-Date: 2026-03-16 01:59+0000\n"
 "PO-Revision-Date: 2026-03-01 08:14+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -784,7 +784,11 @@ msgstr ""
 msgid "The digiKam System Configuration Page"
 msgstr "Stran s konfiguracijo sistema digiKam"
 
-#: ../../setup_application/miscs_settings.rst:281
+#: ../../setup_application/miscs_settings.rst:282
+msgid "Screen Rendering (Qt5 only)"
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:284
 msgid ""
 "**Use high DPI scaling from the screen factor**: this option will scale "
 "coordinates in a device-independent manner according to the display scale "
@@ -804,7 +808,7 @@ msgstr ""
 "vmesnika, uporabljeni v izvornem sistemu. Ta možnost je na voljo samo z "
 "**Qt5 različico** digiKama."
 
-#: ../../setup_application/miscs_settings.rst:283
+#: ../../setup_application/miscs_settings.rst:286
 msgid ""
 "**Use pixmaps with high DPI resolution**: this option sizes the pixmaps used "
 "internally by digiKam into a device-independent layout geometry, and "
@@ -823,7 +827,11 @@ msgstr ""
 "različnimi ločljivostmi. Ta možnost je na voljo samo z **Qt5 različico** "
 "digiKama."
 
-#: ../../setup_application/miscs_settings.rst:285
+#: ../../setup_application/miscs_settings.rst:289
+msgid "Face Management"
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:291
 msgid ""
 "**Use the software OpenGL rendering**: this option will disable the GPU "
 "hardware accelerations and switch to a software-emulation for all calls to "
@@ -833,7 +841,7 @@ msgstr ""
 "strojne pospeške GPE in preklopila na programsko emulacijo za vse klice "
 "OpenGL."
 
-#: ../../setup_application/miscs_settings.rst:287
+#: ../../setup_application/miscs_settings.rst:293
 msgid ""
 "**Use the OpenCL hardware acceleration**: this option will enable the GPU "
 "hardware accelerations with the face management, image quality scanning, and "
@@ -851,7 +859,7 @@ msgstr ""
 "menuselection:`Pomoč --> Informacije o komponentah` in poglejte razdelek :"
 "ref:`OpenCV <help_componentsinfo>` v pogovornem oknu."
 
-#: ../../setup_application/miscs_settings.rst:289
+#: ../../setup_application/miscs_settings.rst:295
 msgid ""
 "**Use the OpenCL hardware acceleration for AI Models**: this option will "
 "enable the GPU hardware accelerations with the Artificial Intelligence data "
@@ -868,19 +876,25 @@ msgstr ""
 "inteligenco** omogoča začetek zaporedja preverjanj, s katerimi se ugotovi, "
 "ali vaša strojna oprema podpira te zmožnosti."
 
-#: ../../setup_application/miscs_settings.rst:295
+#: ../../setup_application/miscs_settings.rst:301
 msgid ""
 "The OpenCL DNN Compatibility Dialog Running Under macOS Silicon Computer"
 msgstr ""
 "Pogovorno okno za združljivost OpenCL DNN, ki se izvaja v sistemu macOS "
 "Silicon Computer"
 
-#: ../../setup_application/miscs_settings.rst:299
+#: ../../setup_application/miscs_settings.rst:305
+#, fuzzy
+#| msgid ""
+#| "**For NVIDIA GPU users** (e.g., GeForce RTX 2070 Super, RTX 3060 Ti, "
+#| "etc.), additional steps are required under Windows to ensure successful "
+#| "GPU detection by OpenCV's AI backend. The NVIDIA `Cuda SDKs <https://en."
+#| "wikipedia.org/wiki/CUDA>`_ must be installed on your system:"
 msgid ""
 "**For NVIDIA GPU users** (e.g., GeForce RTX 2070 Super, RTX 3060 Ti, etc.), "
-"additional steps are required under Windows to ensure successful GPU "
-"detection by OpenCV's AI backend. The NVIDIA `Cuda SDKs <https://en."
-"wikipedia.org/wiki/CUDA>`_ must be installed on your system:"
+"additional steps are required to ensure successful GPU detection by OpenCV's "
+"AI backend. The NVIDIA `Cuda SDKs <https://en.wikipedia.org/wiki/CUDA>`_ "
+"must be installed on your system:"
 msgstr ""
 "**Za uporabnike grafičnih kartic NVIDIA** (npr. GeForce RTX 2070 Super, RTX "
 "3060 Ti itd.) so v sistemu Windows potrebni dodatni koraki, da se zagotovi "
@@ -888,7 +902,7 @@ msgstr ""
 "inteligence OpenCV. V sistemu morajo biti nameščeni NVIDIA `Cuda SDKs "
 "<https://en.wikipedia.org/wiki/CUDA>_`:"
 
-#: ../../setup_application/miscs_settings.rst:301
+#: ../../setup_application/miscs_settings.rst:307
 msgid ""
 "Install the **NVIDIA CUDA Toolkit** from the `official NVIDIA website "
 "<https://developer.nvidia.com/cuda/toolkit>`_. Select a **Custom** "
@@ -900,7 +914,7 @@ msgstr ""
 "meri in izberite samo komponente **CUDA/Runtime/Libraries/OPENCL** in **CUDA/"
 "Runtime/Libraries/CUBLAS**."
 
-#: ../../setup_application/miscs_settings.rst:303
+#: ../../setup_application/miscs_settings.rst:309
 msgid ""
 "Install the **cuDNN Library** from the `official NVIDIA website <https://"
 "developer.nvidia.com/cudnn>`_. Select a **Custom** installation and choose "
@@ -910,15 +924,20 @@ msgstr ""
 "developer.nvidia.com/cudnn>`_. Izberite namestitev po meri in izberite samo "
 "**cuDNN za CUDA/Runtime**."
 
-#: ../../setup_application/miscs_settings.rst:305
+#: ../../setup_application/miscs_settings.rst:311
+#, fuzzy
+#| msgid ""
+#| "Set the **`OPENCV_OPENCL_DEVICE`** system environment variable to "
+#| "**`NVIDIA:GPU:0`** via the Windows Control Panel."
 msgid ""
 "Set the **`OPENCV_OPENCL_DEVICE`** system environment variable to **`NVIDIA:"
-"GPU:0`** via the Windows Control Panel."
+"GPU:0`**. Under Windows, this can be done with the `System Control Panel "
+"<https://www.computerhope.com/issues/ch000549.htm>`_."
 msgstr ""
 "V nadzorni plošči sistema Windows nastavite okoljsko spremenljivko "
 "**`OPENCV_OPENCL_DEVICE`** na **`NVIDIA:GPU:0`**."
 
-#: ../../setup_application/miscs_settings.rst:307
+#: ../../setup_application/miscs_settings.rst:313
 msgid ""
 "After completing these steps, restart digiKam and rerun the compatibility "
 "test in the *Setup > Miscellaneous > System* dialog."
@@ -926,12 +945,19 @@ msgstr ""
 "Ko končate te korake, znova zaženite digiKam in ponovno zaženite test "
 "združljivosti v pogovornem oknu *Nastavitev > Razno > Sistem*."
 
-#: ../../setup_application/miscs_settings.rst:309
+#: ../../setup_application/miscs_settings.rst:315
+#, fuzzy
+#| msgid ""
+#| "**For Intel Core CPU including GPU users** (eg. Intel Iris Xe), you need "
+#| "the last drivers updated to current stable versions and just set the "
+#| "**`OPENCV_OPENCL_DEVICE`** system environment variable to **`INTEL:"
+#| "GPU:0`** via the Windows Control Panel.."
 msgid ""
 "**For Intel Core CPU including GPU users** (eg. Intel Iris Xe), you need the "
 "last drivers updated to current stable versions and just set the "
-"**`OPENCV_OPENCL_DEVICE`** system environment variable to **`INTEL:GPU:0`** "
-"via the Windows Control Panel.."
+"**`OPENCV_OPENCL_DEVICE`** system environment variable to **`INTEL:GPU:0`**. "
+"Under Windows, this can be done with the `System Control Panel <https://www."
+"computerhope.com/issues/ch000549.htm>`_."
 msgstr ""
 "**Za uporabnike procesorjev Intel Core, vključno z grafičnimi procesorji** "
 "(npr. Intel Iris Xe), morate imeti najnovejše gonilnike posodobljene na "
@@ -939,12 +965,19 @@ msgstr ""
 "**`OPENCV_OPENCL_DEVICE`** na **`INTEL:GPU:0`** prek nadzorne plošče sistema "
 "Windows."
 
-#: ../../setup_application/miscs_settings.rst:311
+#: ../../setup_application/miscs_settings.rst:317
+#, fuzzy
+#| msgid ""
+#| "**For AMD GPU users**, you need the `OpenVX extension for OpenCV <https://"
+#| "rocm.docs.amd.com/projects/MIVisionX/en/docs-6.1.0/amd_openvx_extensions/"
+#| "amd_opencv/README.html>`_ and set the **`OPENCV_OPENCL_DEVICE`** system "
+#| "environment variable to **`AMD:GPU:0`** via the Windows Control Panel.."
 msgid ""
-"**For AMD GPU users**, you need the `OpenVX extension for OpenCV <https://"
-"rocm.docs.amd.com/projects/MIVisionX/en/docs-6.1.0/amd_openvx_extensions/"
-"amd_opencv/README.html>`_ and set the **`OPENCV_OPENCL_DEVICE`** system "
-"environment variable to **`AMD:GPU:0`** via the Windows Control Panel.."
+"**For AMD GPU users** (eg. Radeon 6700/6800), you need the `ROCm software "
+"layer <https://rocm.docs.amd.com/projects/radeon-ryzen/en/latest/index."
+"html>`_ and set the **`OPENCV_OPENCL_DEVICE`** system environment variable "
+"to **`:GPU:0`**. Under Windows, this can be done with the `System Control "
+"Panel <https://www.computerhope.com/issues/ch000549.htm>`_."
 msgstr ""
 "**Za uporabnike grafičnih procesorjev AMD** potrebujete razširitev `OpenVX "
 "za OpenCV <https://rocm.docs.amd.com/projects/MIVisionX/en/docs-6.1.0/"
@@ -952,7 +985,7 @@ msgstr ""
 "okoljsko spremenljivko **`OPENCV_OPENCL_DEVICE`** na **`AMD:GPU:0`** prek "
 "nadzorne plošče sistema Windows."
 
-#: ../../setup_application/miscs_settings.rst:313
+#: ../../setup_application/miscs_settings.rst:319
 msgid ""
 "**Download Required Binary Data**: this button loads the deep-learning model "
 "files used with the face management, image quality scanning, and auto-tags "
@@ -964,7 +997,11 @@ msgstr ""
 "kakovosti slike in funkcije samodejnega označevanja. Uporabite ga le, če ste "
 "to stopnjo preskočili pri prvem zagonu aplikacije <firstrun_downloads>."
 
-#: ../../setup_application/miscs_settings.rst:315
+#: ../../setup_application/miscs_settings.rst:322
+msgid "Video Rendering"
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:324
 msgid ""
 "**Use the video hardware acceleration**: this option must be used only with "
 "compatible hardware GPU devices with the FFmpeg backend. Disable this option "
@@ -974,7 +1011,7 @@ msgstr ""
 "združljivo strojno opremo GPE z zaledjem FFmpeg. Onemogočite to možnost, če "
 "pride do napak pri dekodiranju video medijev."
 
-#: ../../setup_application/miscs_settings.rst:317
+#: ../../setup_application/miscs_settings.rst:326
 msgid ""
 "**Use the video texture conversion**: this option must be used to reduce CPU "
 "usage when video frames are rendered by using GPU-based conversion with the "
@@ -985,7 +1022,7 @@ msgstr ""
 "podlagi GPE z zaledjem FFmpeg. Onemogočite to možnost, če pride do napak pri "
 "dekodiranju video medijev."
 
-#: ../../setup_application/miscs_settings.rst:319
+#: ../../setup_application/miscs_settings.rst:328
 msgid ""
 "**Decoding backend to render media**: this option chooses the backend used "
 "to render video and audio media with the **Qt6 version** of application. "
@@ -995,7 +1032,7 @@ msgstr ""
 "se uporablja za upodabljanje video in avdio medijev z **različico Qt6** "
 "aplikacije. Podprta zaledja so:"
 
-#: ../../setup_application/miscs_settings.rst:321
+#: ../../setup_application/miscs_settings.rst:330
 msgid ""
 "**FFmpeg**: the default and recommended backend available on all platforms. "
 "`FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ always includes all "
@@ -1005,7 +1042,7 @@ msgstr ""
 "platformah. `FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ vedno vključuje "
 "vse potrebne kodeke za predvajanje medijev."
 
-#: ../../setup_application/miscs_settings.rst:322
+#: ../../setup_application/miscs_settings.rst:331
 msgid ""
 "**GStreamer**: the alternative backend available **under Linux**. `GStreamer "
 "<https://en.wikipedia.org/wiki/GStreamer>`_ can require the installation of "
@@ -1015,7 +1052,7 @@ msgstr ""
 "`GStreamer <https://en.wikipedia.org/wiki/GStreamer>`_ lahko za pravilno "
 "delovanje zahteva namestitev kodekov drugih proizvajalcev v sistem."
 
-#: ../../setup_application/miscs_settings.rst:323
+#: ../../setup_application/miscs_settings.rst:332
 msgid ""
 "**WMF**: Windows Media Foundation is the alternative backend available "
 "**under Windows**. `WMF <https://en.wikipedia.org/wiki/Media_Foundation>`_ "
@@ -1027,7 +1064,7 @@ msgstr ""
 "Media_Foundation>`_ lahko za pravilno delovanje zahteva namestitev kodekov "
 "drugih proizvajalcev v sistem."
 
-#: ../../setup_application/miscs_settings.rst:324
+#: ../../setup_application/miscs_settings.rst:333
 msgid ""
 "**AVFoundation**: the alternative backend available **under macOS**. "
 "`AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ can require the "
@@ -1037,7 +1074,7 @@ msgstr ""
 "`AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ lahko za "
 "pravilno delovanje zahteva namestitev kodekov drugih proizvajalcev v sistem."
 
-#: ../../setup_application/miscs_settings.rst:328
+#: ../../setup_application/miscs_settings.rst:337
 msgid ""
 "To prevent washed out color issues when playing HDR video taken from modern "
 "devices, by experience better results can be obtained using an alternative "
@@ -1047,7 +1084,11 @@ msgstr ""
 "posnetih iz sodobnih naprav, lahko po izkušnjah boljše rezultate dosežemo z "
 "alternativnim ozadjem."
 
-#: ../../setup_application/miscs_settings.rst:330
+#: ../../setup_application/miscs_settings.rst:340
+msgid "Debug Statements"
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:342
 msgid ""
 "**Enable internal debug logging**: this option turns on the debug traces on "
 "the console used to investigate errors. Under Linux and macOS, just start "
@@ -1065,11 +1106,15 @@ msgstr ""
 "downloads/debugview>`_ za prikaz sporočil. Privzete nastavitve iz DebugView "
 "zadostujejo za zajemanje sledi iz aplikacije."
 
-#: ../../setup_application/miscs_settings.rst:336
+#: ../../setup_application/miscs_settings.rst:348
 msgid "digiKam Running Under Windows With DebugView"
 msgstr "digiKam, ki deluje v sistemu Windows z DebugView"
 
-#: ../../setup_application/miscs_settings.rst:338
+#: ../../setup_application/miscs_settings.rst:351
+msgid "Network Proxy"
+msgstr ""
+
+#: ../../setup_application/miscs_settings.rst:353
 msgid ""
 "**Network Proxy Server Settings**: use this group the options to setup the "
 "`proxy server <https://en.wikipedia.org/wiki/Proxy_server>`_ settings for "
@@ -1082,15 +1127,15 @@ msgstr ""
 "za dostop do interneta ni potreben posrednik. Razpoložljive možnosti "
 "posrednika so navedene spodaj:"
 
-#: ../../setup_application/miscs_settings.rst:340
+#: ../../setup_application/miscs_settings.rst:355
 msgid "**Proxy**: the address of the Proxy server on the network."
 msgstr "**Proxy**: naslov posrednega strežnika v omrežju."
 
-#: ../../setup_application/miscs_settings.rst:341
+#: ../../setup_application/miscs_settings.rst:356
 msgid "**Port**: the Proxy server port on the network."
 msgstr "**Vrata**: vrata posredniškega strežnika v omrežju."
 
-#: ../../setup_application/miscs_settings.rst:342
+#: ../../setup_application/miscs_settings.rst:357
 msgid ""
 "**Proxy type**: the Proxy type available on the network. Two protocols are "
 "supported: **Http** or **Socks5**."
@@ -1098,7 +1143,7 @@ msgstr ""
 "**Vrsta posrednika**: vrsta posrednika, ki je na voljo v omrežju. Podprta "
 "sta dva protokola: **Http** ali **Socks5**."
 
-#: ../../setup_application/miscs_settings.rst:343
+#: ../../setup_application/miscs_settings.rst:358
 msgid ""
 "**Requires Authentication**: turn on this option if the connection to the "
 "Proxy server needs a **Username** and a **Password**."
@@ -1106,7 +1151,7 @@ msgstr ""
 "**Zahteva avtentikacijo*: vklopite to možnost, če povezava s posredniškim "
 "strežnikom potrebuje **Uporabniško ime** in **Geslo**."
 
-#: ../../setup_application/miscs_settings.rst:344
+#: ../../setup_application/miscs_settings.rst:359
 msgid ""
 "**Username**: the name to use to be logged on the Proxy server over the "
 "network."
@@ -1114,7 +1159,7 @@ msgstr ""
 "**Uporabniško ime**: ime, ki se uporablja za prijavo na posredniški strežnik "
 "prek omrežja."
 
-#: ../../setup_application/miscs_settings.rst:345
+#: ../../setup_application/miscs_settings.rst:360
 msgid ""
 "**Password**: the password to use to be logged on the Proxy server over the "
 "network."
