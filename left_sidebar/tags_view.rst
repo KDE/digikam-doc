@@ -172,6 +172,8 @@ The toolbar at the top of the Tag Manager offers:
 
         - **Wipe all Tags from Database only**.
 
+        - **Export tags to a file om selected tag** and **Import tags from a file to selected tag** allows to import or export tag hierarchies to and from text files, supporting the `Controlled Vocabulary Keyword Catalogue <https://www.controlledvocabulary.com/products/index.html>`_ format. This functionality simplifies the management and sharing of complex tag structures across different platforms, programs, and workflows.
+
 The **Tag Manager** window consists of three parts, the **Quick Access List** to the left, the **Tags** tree (or parts of it) in the middle and the **Tag Properties** to the right that shows the properties for the selected tag.
 
 The Quick Access List allows you to display only a certain node (and its sub-nodes) in the tag tree window. Select a tag in the tag tree and click on **Add to List** button. The tag will appear in the Quick Access List. If you select the tag there, the tag tree will show only the selected node which can still be expanded to see the sub-nodes. Note that the entering text into the search field will also limit the tag tree to only display those tags that contain the string in the search field.
