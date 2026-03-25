@@ -53,6 +53,10 @@ The **Timestamp updated** group allows you to define the target entries to updat
     - **IPTC: created**: will change the image created timestamp from IPTC.
     - **File last modified**: will change the last modified timestamp from file system.
 
+.. note::
+
+    Even if you have activated the checkbox to **Update only existing timestamps**, you must still select which timestamps (Exif, XMP, etc.) should be updated. This only prevents the creation of selected, non-existent timestamps.
+
 .. figure:: images/time_adjust.webp
     :alt:
     :align: center
