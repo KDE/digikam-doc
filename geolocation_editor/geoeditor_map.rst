@@ -131,7 +131,7 @@ The map's context menu, selected by right clicking on the map, contains other it
     - **Remove Last Measure Point** remove the last measure point to be added.
     - **Remove Measure Points** removes all measure points.
 
-Additional information on the map view is available from the `Marble handbook <https://docs.kde.org/trunk5/en/marble/marble/index.html>`_.
+Additional information on the map view is available from the `Marble handbook <https://docs.kde.org/trunk_kf6/en/marble/marble/index.html>`_.
 
 Note that you can change the layout from one map to two maps, beside or above each other via the little drop-down menu at the bottom of the Geolocation Editor.
 

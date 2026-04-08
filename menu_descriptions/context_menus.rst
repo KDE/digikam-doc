@@ -205,7 +205,7 @@ The map's context menu, selected by right clicking on the map, contains other it
     * :menuselection:`Remove Last Measure Point` - remove the last measure point to be added.
     * :menuselection:`Remove Measure Points` - removes all measure points.
 
-Additional information on the map view is available from the `Marble handbook <https://docs.kde.org/trunk5/en/marble/marble/index.html>`_.
+Additional information on the map view is available from the `Marble handbook <https://docs.kde.org/trunk_kf6/en/marble/marble/index.html>`_.
 
 
 Item List
