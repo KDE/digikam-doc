@@ -278,17 +278,17 @@ This section allows you to adjust special low-level configurations used by digiK
 
     The digiKam System Configuration Page
 
-Screen Rendering (Qt5 only)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Screen Rendering
+~~~~~~~~~~~~~~~~
 
 - **Use high DPI scaling from the screen factor**: this option will scale coordinates in a device-independent manner according to the display scale factors provided by the operating system. It scales the graphical interface elements (buttons, text, etc.) in accordance with the Desktop settings. The digiKam graphical interface elements are therefore displayed larger by this factor and therefore should appear just as large as the graphical interface elements used in the native system. This option is only available with the **Qt5 version** of digiKam.
 
 - **Use pixmaps with high DPI resolution**: this option sizes the pixmaps used internally by digiKam into a device-independent layout geometry, and activates high-resolution icons. If this option is disabled on a high-DPI display, the elements in digiKam may look very blurry when viewed at high resolutions. This option is also recommended for use when using multiple screens with different resolutions. This option is only available with the **Qt5 version** of digiKam.
 
+- **Use the software OpenGL rendering**: this option will disable the GPU hardware accelerations and switch to a software-emulation for all calls to OpenGL.
+
 Face Management
 ~~~~~~~~~~~~~~~
-
-- **Use the software OpenGL rendering**: this option will disable the GPU hardware accelerations and switch to a software-emulation for all calls to OpenGL.
 
 - **Use the OpenCL hardware acceleration**: this option will enable the GPU hardware accelerations with the face management, image quality scanning, and auto-tags features. This option affects the `OpenCV <https://opencv.org/>`_ engine used in the background for intensive computation on images. To see the details about OpenCV hardware support, go to the :menuselection:`Help --> Components Information` menu item, and look at the :ref:`OpenCV section <help_componentsinfo>` in the dialog.
 
