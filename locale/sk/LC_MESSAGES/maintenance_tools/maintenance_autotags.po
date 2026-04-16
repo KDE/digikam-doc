@@ -1,16 +1,16 @@
 # Slovak translations for Digikam Manual package.
 # Copyright (C) Licensed under the terms of the <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">GNU Free Documentation License 1.2+</a> unless stated otherwise
 # This file is distributed under the same license as the Digikam Manual package.
-# Automatically generated, 2026.
+# Roman Paholík <wizzardsk@gmail.com>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 9.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-04 02:01+0000\n"
-"PO-Revision-Date: 2026-03-04 02:01+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-04-14 17:15+0200\n"
+"Last-Translator: Roman Paholík <wizzardsk@gmail.com>\n"
+"Language-Team: Slovak <kde-sk@linux.sk>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,21 +19,23 @@ msgstr ""
 
 #: ../../maintenance_tools/maintenance_autotags.rst:-1
 msgid "digiKam Maintenance Tool to Sort Image by Quality"
-msgstr ""
+msgstr "Nástroj údržby digiKam na triedenie obrázkov podľa kvality"
 
 #: ../../maintenance_tools/maintenance_autotags.rst:-1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, quality, pick-label, deep-learning"
 msgstr ""
+"digiKam, dokumentácia, používateľská príručka, správa fotografií, open "
+"source, zadarmo, učiť sa, jednoduché, kvalita, pick-label, hlboké učenie"
 
 #: ../../maintenance_tools/maintenance_autotags.rst:14
 msgid ":ref:`Auto-Tags Assignment <maintenance_tools>`"
-msgstr ""
+msgstr ":ref:`Automatické priradenie značiek <maintenance_tools>`"
 
 #: ../../maintenance_tools/maintenance_autotags.rst:20
 msgid "The digiKam Maintenance Options for Auto-Tag Assignment"
-msgstr ""
+msgstr "Možnosti údržby digiKam pre automatické priradenie značiek"
 
 #: ../../maintenance_tools/maintenance_autotags.rst:22
 msgid ""
@@ -45,6 +47,13 @@ msgid ""
 "will be under the **auto** tag in the Tags view to distinguish them from "
 "tags that have been manually assigned."
 msgstr ""
+"**Automatické priradenie značiek** skenuje obrázky vo vašej zbierke pomocou "
+"neurónovej siete, ktorá bola natrénovaná na identifikáciu bežných objektov. "
+"Objekty identifikované neurónovou sieťou sa potom použijú na označenie "
+"každého obrázka. Po dokončení skenovania môžete prehľadávať svoju databázu "
+"pre obrázky obsahujúce vtáka, loptu alebo auto. Značky generované procesom "
+"**Automatického priradenia značiek** budú pod značkou **auto** v Zobrazení "
+"značiek, aby sa odlíšili od ručne priradených značiek."
 
 #: ../../maintenance_tools/maintenance_autotags.rst:24
 msgid ""
@@ -52,12 +61,18 @@ msgid ""
 "Scan** button. For more information about **Auto-tags** options see the :ref:"
 "`Tags View  <tags_view>` section of this manual."
 msgstr ""
+"Tento proces je tiež prístupný v zobrazení **Značky** cez tlačidlo "
+"**Automatické skenovanie značiek**. Ďalšie informácie o možnostiach "
+"**Automatických značiek** nájdete v časti :ref:`Zobrazenie značiek "
+"<tags_view>` tejto príručky."
 
 #: ../../maintenance_tools/maintenance_autotags.rst:26
 msgid ""
 "For Auto-tagging, there are 4 settings the user can adjust to control how "
 "digiKam detects and tags objects in an image."
 msgstr ""
+"Pre automatické označovanie existujú 4 nastavenia, ktoré môže používateľ "
+"upraviť, aby ovládal, ako digiKam detekuje a označuje objekty na obrázku."
 
 #: ../../maintenance_tools/maintenance_autotags.rst:28
 msgid ""
@@ -66,6 +81,10 @@ msgid ""
 "tag is assigned to images that have been auto-tagged. The **auto** tag is "
 "not assigned to images that have been manually tagged."
 msgstr ""
+"**Režim skenovania**: Režim skenovania určuje, či digiKam bude skenovať "
+"všetky obrázky, alebo len obrázky, ktoré nemajú priradenú značku **auto**. "
+"Značka **auto** je priradená k obrázkom, ktoré boli automaticky označené. "
+"Značka **auto** nie je priradená k obrázkom, ktoré boli ručne označené."
 
 #: ../../maintenance_tools/maintenance_autotags.rst:29
 msgid ""
@@ -77,6 +96,14 @@ msgid ""
 "is useful if you want to run multiple scans with different settings and "
 "combine the results."
 msgstr ""
+"**Režim automatického označovania**: Pri aplikovaní automatických značiek si "
+"môžete vybrať medzi **Aktualizovať** a **Nahradiť existujúce**. "
+"**Aktualizovať** pridá všetky nové automatické značky k existujúcim značkám "
+"na obrázku. **Nahradiť existujúce** odstráni všetky existujúce automatické "
+"značky a nahradí ich značkami detekovanými pri aktuálnom skenovaní. Žiadne "
+"značky, ktoré nie sú pod značkou **auto**, nebudú ovplyvnené. Toto "
+"nastavenie je užitočné, ak chcete spustiť viacero skenovaní s rôznymi "
+"nastaveniami a skombinovať výsledky."
 
 #: ../../maintenance_tools/maintenance_autotags.rst:30
 msgid ""
@@ -90,6 +117,15 @@ msgid ""
 "processors. Both YOLOv11 models are trained to detect 80 different objects "
 "based on the COCO dataset."
 msgstr ""
+"**Model detekcie**: Model detekcie je neurónová sieť používaná na detekciu "
+"objektov na obrázku. Predvolený model je **EfficientNet B7**. Model "
+"**EfficientNet B7** je model všeobecného použitia, ktorý dokáže detekovať 1 "
+"000 rôznych objektov a scén. Model **YOLOv11-Nano** je rýchlejší a využíva "
+"menej pamäte ako model **EfficientNet B7**. Model **YOLOv11-Nano** sa "
+"odporúča pre používateľov s obmedzenou pamäťou alebo pomalšími procesormi a "
+"**YOLOv11-XLarge** sa odporúča pre používateľov s väčšou pamäťou a "
+"rýchlejšími procesormi. Oba modely YOLOv11 sú natrénované na detekciu 80 "
+"rôznych objektov na základe datasetu COCO."
 
 #: ../../maintenance_tools/maintenance_autotags.rst:31
 msgid ""
@@ -97,9 +133,14 @@ msgid ""
 "but it will also increase the number of incorrectly identified objects "
 "(false positives). The default setting of 7 is recommended for normal use."
 msgstr ""
+"**Presnosť**: Nižšie nastavenia presnosti môžu detekovať viac objektov na "
+"obrázku, ale tiež zvýšia počet nesprávne identifikovaných objektov "
+"(falošných pozitív). Pre bežné použitie sa odporúča predvolené nastavenie 7."
 
 #: ../../maintenance_tools/maintenance_autotags.rst:33
 msgid ""
 "While the auto-tag assignment process is underway, a progress indicator is "
 "displayed in the bottom right corner of the main window."
 msgstr ""
+"Kým prebieha proces automatického priradenia značiek, v pravom dolnom rohu "
+"hlavného okna sa zobrazuje indikátor priebehu."

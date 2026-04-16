@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: docs_digikam_org_getting_started___database_intro\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-04 02:01+0000\n"
-"PO-Revision-Date: 2023-03-19 10:16+0100\n"
-"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
+"PO-Revision-Date: 2026-04-14 17:15+0200\n"
+"Last-Translator: Roman Paholík <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
@@ -17,17 +17,19 @@ msgstr ""
 
 #: ../../getting_started/database_intro.rst:-1
 msgid "How to quickly start digiKam photo management program"
-msgstr ""
+msgstr "Ako rýchlo spustiť program na správu fotografií digiKam"
 
 #: ../../getting_started/database_intro.rst:-1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, database, intro"
 msgstr ""
+"digiKam, dokumentácia, používateľská príručka, správa fotografií, open "
+"source, zadarmo, učiť sa, jednoduché, databáza, úvod"
 
 #: ../../getting_started/database_intro.rst:14
 msgid ":ref:`Database <getting_started>`"
-msgstr ""
+msgstr ":ref:`Databáza <getting_started>`"
 
 #: ../../getting_started/database_intro.rst:16
 msgid "Contents"
@@ -45,6 +47,12 @@ msgid ""
 "drastically reduces the cost of data entry, storage and retrieval. "
 "Additionally, any user can access the data using a query language."
 msgstr ""
+"Databázy sa používajú na ukladanie údajov. Rovnako ako iné programy na "
+"správu fotografií, aj digiKam využíva svoju databázu, aby sa predišlo "
+"duplicite údajov, znížila sa nadbytočnosť údajov, umožnilo rýchle "
+"vyhľadávanie a zaručila integrita údajov. Používanie databázy tiež výrazne "
+"znižuje náklady na zadávanie, ukladanie a vyhľadávanie údajov. Okrem toho "
+"môže každý používateľ pristupovať k údajom pomocou dotazovacieho jazyka."
 
 #: ../../getting_started/database_intro.rst:23
 msgid ""
@@ -52,44 +60,59 @@ msgid ""
 "recognition data, image metadata, file paths, settings and others) in four "
 "databases:"
 msgstr ""
+"digiKam ukladá údaje (vrátane albumov, koreňov albumov, značiek, miniatúr, "
+"údajov na rozpoznávanie tvárí, metadát obrázkov, ciest k súborom, nastavení "
+"a ďalších) do štyroch databáz:"
 
 #: ../../getting_started/database_intro.rst:25
 msgid ""
 "Core database for all collection properties: hosts all albums, images and "
 "search data."
 msgstr ""
+"Hlavná databáza pre všetky vlastnosti zbierky: obsahuje všetky albumy, "
+"obrázky a vyhľadávacie údaje."
 
 #: ../../getting_started/database_intro.rst:27
 msgid ""
 "Thumbnail database for compressed thumbnails: hosts image thumbs using "
 "wavelet compressed images (**PGF** format)."
 msgstr ""
+"Databáza miniatúr pre komprimované miniatúry: obsahuje miniatúry obrázkov vo "
+"wavelet komprimovanom formáte (**PGF**)."
 
 #: ../../getting_started/database_intro.rst:29
 msgid "Similarity database for image fingerprints to enable fuzzy search."
 msgstr ""
+"Databáza podobnosti pre odtlačky obrázkov umožňujúca vyhľadávanie podobných "
+"snímok."
 
 #: ../../getting_started/database_intro.rst:31
 msgid ""
 "Face database for storing face recognition metadata: hosts face histograms "
 "for face recognition."
 msgstr ""
+"Databáza tvárí na ukladanie metadát rozpoznávania tvárí: obsahuje histogramy "
+"tvárí pre rozpoznávanie tvárí."
 
 #: ../../getting_started/database_intro.rst:37
 msgid ""
 "Example of digiKam remote MySQL configuration hosted on a NAS from the local "
 "network"
 msgstr ""
+"Príklad konfigurácie vzdialeného MySQL pre digiKam umiestneného na NAS v "
+"lokálnej sieti"
 
 #: ../../getting_started/database_intro.rst:39
 msgid ""
 "Details on database settings can be found in the :ref:`Database Setup "
 "section <database_settings>`."
 msgstr ""
+"Podrobnosti o nastaveniach databázy nájdete v časti :ref:`Nastavenie "
+"databázy <database_settings>`."
 
 #: ../../getting_started/database_intro.rst:42
 msgid "Migrating From Other Software"
-msgstr ""
+msgstr "Migrácia z iného softvéru"
 
 #: ../../getting_started/database_intro.rst:44
 msgid ""
@@ -99,6 +122,11 @@ msgid ""
 "databases, it can read XMP sidecar files, which is a standardized and well-"
 "documented file format."
 msgstr ""
+"Databázu digiKam možno naplniť z vlastností súborov spravovaných iným "
+"programom tak, že tento program zapíše všetky metadáta do postranných "
+"súborov XMP. digiKam síce nedokáže analyzovať proprietárne databázy s "
+"uzavretým zdrojovým kódom, ale dokáže čítať postranné súbory XMP, čo je "
+"štandardizovaný a dobre zdokumentovaný formát súborov."
 
 #: ../../getting_started/database_intro.rst:46
 msgid ""
@@ -107,6 +135,10 @@ msgid ""
 "handle special cases while importing and exporting metadata to and from 3rd-"
 "party software."
 msgstr ""
+"Prečítajte si časť :ref:`Nastavenie metadát <metadata_settings>`, kde sa "
+"dozviete, ako používať postranné súbory XMP s digiKam. Panel Rozšírené "
+"ponúka správu profilov na riešenie špeciálnych prípadov pri importovaní a "
+"exportovaní metadát do softvéru tretích strán a z neho."
 
 #: ../../getting_started/database_intro.rst:48
 msgid ""
@@ -115,12 +147,17 @@ msgid ""
 "contents will be parsed and the database will be populated with the "
 "information found in the XMP sidecar files."
 msgstr ""
+"Pri čistej inštalácii digiKam môžete vytvoriť novú koreňovú zbierku v "
+"adresári, kde ukladáte obrázky spravované iným softvérom. Obsah sa analyzuje "
+"a databáza sa naplní informáciami nájdenými v postranných súboroch XMP."
 
 #: ../../getting_started/database_intro.rst:50
 msgid ""
 "After the items are read (this can take a while), you will be able to see "
 "all tags, labels and comments in the digiKam item properties."
 msgstr ""
+"Po načítaní položiek (čo môže chvíľu trvať) budete môcť vidieť všetky "
+"značky, menovky a komentáre vo vlastnostiach položiek digiKam."
 
 #~ msgid "Database"
 #~ msgstr "Databáza"
