@@ -126,7 +126,7 @@ The list of detection samples below comes from a huge collection of photos scann
 
 Screenshots **02** and **11** were selected to highlight an important feature: the algorithm can detect animal faces. This is not a false positive, unless you specifically want to see only human faces in your collection.
 
-Screenshot **10** is an incorrect (false positive) result, demonstrating that the algorithm sometimes identify details in an image that resemble a face but are not actually faces. This is where the Remove button comes in handy. It removes the face tag from the photograph, and if it is the only face tag remaining, the photograph will disappear from the scan results.
+Screenshot **10** is an incorrect (false positive) result, demonstrating that the algorithm sometimes identify details in an image that resemble a face but are not actually faces. This is where the **Remove** button comes in handy. It removes the face tag from the photograph, and if it is the only face tag remaining, the photograph will disappear from the scan results.
 
 Screenshots **01**, **03**, **05**, **08**, **09**, and **12** may be considered non-faces or can be filtered out by increasing the **detection accuracy** setting in the face management **Settings** view. However, these examples demonstrate the algorithm’s ability to detect faces even in challenging conditions.
 

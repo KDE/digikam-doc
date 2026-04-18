@@ -59,13 +59,13 @@ The earth view is a topographical map of our beautiful home planet. Optional map
 
 Clicking on the navigation control's arrow buttons rotates the globe to move the map frame north/south or east/west. You can also move the map frame by using the keyboard arrow keys, or by clicking and dragging on the map. Navigating via click and drag is a particular easy and precise way to adjust the map frame.
 
-Zoom in and out by moving the navigation control's vertical slider up and down, by clicking on the navigation control's + and - buttons, by using the Zoom in |zoom_in| and Zoom out |zoom_out| buttons just below the map, by scrolling the mouse wheel, or by using the :kbd:`+` and :kbd:`-` keys on the keyboard.
+Zoom in and out by moving the navigation control's vertical slider up and down, by clicking on the navigation control's **+** and **-** buttons, by using the Zoom in |zoom_in| and Zoom out |zoom_out| buttons just below the map, by scrolling the mouse wheel, or by using the :kbd:`+` and :kbd:`-` keys on the keyboard.
 
 The map can be rotated from its center by click and dragging on the map while holding down the right mouse button.
 
 Depending on the map's resolution, zooming in will provide you with more detail. Smaller cities will appear and using the topographic map you might notice that coastlines are provided as vector graphics.
 
-In case you should get lost you can always reset the viewing angle and zoom level back to the point where we started off: Just press the Home button (or the Home button on your keyboard). To set the home location to the current position (center of the map) select the Bookmarks → Set Home Location menu item.
+In case you should get lost you can always reset the viewing angle and zoom level back to the point where we started off: Just press the **Home** button (or the :kbd:`Home` key). To set the home location to the current position (center of the map) select the :menuselection:`Bookmarks --> Set Home Location` menu item.
 
 The meaning of “GPS”, as well as the detailed descriptions of the functions and buttons that apply to all three geolocation maps, are described in the :ref:`Geolocation Editor <geolocation_editor>` chapter of this manual. This applies to the context menu on the map and the first line of buttons under the map except for the last three on the right, which are related to filtering and selecting images based on location.
 
@@ -83,4 +83,4 @@ The action of the **Remove the current filter** |remove_filter| button should be
 
 The **Show Non Geolocated Items** button displays all images without GPS data in the Image Area. If this applies to many images from your collections it might be a good idea to also use the **Filters** tab of the Right Sidebar and/or the sorting and grouping functions in the **View** menu.
 
-In the box below you can enter a name for your geo filter. It will be added to the list view below for future reference once you click the save button to the right of it, it acts as a live geo folder. The search field at the bottom searches in the Searches list above.
+In the box below you can enter a name for your geo filter. It will be added to the list view below for future reference once you click the **Save** button to the right of it, it acts as a live geo folder. The search field at the bottom searches in the **Searches** list above.

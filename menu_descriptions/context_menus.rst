@@ -220,7 +220,7 @@ Item List
     * :menuselection:`Remove speed`
     * :menuselection:`Lookup missing altitude values`
     * :menuselection:`Bookmarks --> Edit Bookmarks`
-    * :menuselection:`Bookmarks --> Add Bookmark...`
+    * :menuselection:`Bookmarks --> Add Bookmark`
     * :menuselection:`Bookmarks --> Home`
 
 Sidebar: Reverse Geocoding Tag List

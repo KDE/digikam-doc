@@ -93,7 +93,7 @@ Moving or Copying Photographs
 Between Albums
 ~~~~~~~~~~~~~~
 
-Simply drag a photograph and drop it on the destination Album to move or copy it from one Album to another. A menu will appear that gives you the option to **Move** or **Copy** the photograph. You can move or copy multiple photographs the same way, just select all the photographs that you want to move and drag them on to the destination Album.
+Simply drag a photograph and drop it on the destination Album to move or copy it from one Album to another. A menu will appear that gives you the option to **Move Here** or **Copy Here** the photograph. You can move or copy multiple photographs the same way, just select all the photographs that you want to move and drag them on to the destination Album.
 
 With Other Applications
 ~~~~~~~~~~~~~~~~~~~~~~~
