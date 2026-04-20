@@ -12,22 +12,24 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.12.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: ../../batch_queue/custom_script.rst:-1
 msgid "digiKam Custom Script from Batch Queue Manager"
-msgstr ""
+msgstr "Vlastný skript digiKam z Batch Queue Manager"
 
 #: ../../batch_queue/custom_script.rst:-1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, batch, custom, script"
 msgstr ""
+"digiKam, dokumentácia, používateľský manuál, správa fotié, open source, "
+"zadarmo, učiť sa, jednoduché, dávka, vlastný, skript"
 
 #: ../../batch_queue/custom_script.rst:14
 msgid ":ref:`Custom Script <batch_queue>`"
-msgstr ""
+msgstr ":ref:`Vlastný skript <batch_queue>`"
 
 #: ../../batch_queue/custom_script.rst:16
 msgid "Contents"
@@ -44,6 +46,10 @@ msgid ""
 "tools such as `ImageMagick <https://imagemagick.org/>`_ or `ExifTool "
 "<https://en.wikipedia.org/wiki/ExifTool>`_."
 msgstr ""
+"Batch Queue Manager vám umožňuje prispôsobiť **Pracovný postup** pridávaním "
+"nástroja **Vlastný skript** na spustenie skriptu na spracovanie vašich "
+"obrázkov externými nástrojmi, ako sú `ImageMagick <https://imagemagick.org/"
+">`_ alebo `ExifTool <https://en.wikipedia.org/wiki/ExifTool>`_."
 
 #: ../../batch_queue/custom_script.rst:23
 msgid ""
@@ -54,14 +60,21 @@ msgid ""
 "entirely within the plugin. These scripts can include a set of environment "
 "variables that specify filenames and few types of metadata."
 msgstr ""
+"Nástroj nazvaný **Vlastný skript** je dostupný z kategórie **Vlastné "
+"nástroje** zoznamu **Základné nástroje**. Nástroj je navrhnutý na "
+"vykonávanie zdrojového kódu shell skriptu, ktorý môže volať jeden alebo viac "
+"programov príkazového riadku pre každú položku vo fronte. Shell skript píše "
+"používateľ v celku v rámci zásuvného modulu. Tieto skripty môžu obsahovať "
+"sadu premenných prostredia, ktoré špecifikujú názvy súborov a niekoré typy "
+"metadát."
 
 #: ../../batch_queue/custom_script.rst:29
 msgid "The Batch Queue Manager Including a Custom Script in a Workflow"
-msgstr ""
+msgstr "Batch Queue Manager vrátane vlastného skriptu v pracovnom postupe"
 
 #: ../../batch_queue/custom_script.rst:31
 msgid "The tool provides these options:"
-msgstr ""
+msgstr "Nástroj poskytuje tieto možnosti:"
 
 #: ../../batch_queue/custom_script.rst:33
 msgid ""
@@ -70,6 +83,11 @@ msgid ""
 "**PNG**, or **TIFF**. Please note that JPEG is a lossy compression format, "
 "only supports 8-bit color depth, and does not support transparency."
 msgstr ""
+"**Typ výstupného obrázka**: špecifikuje očakávaný formát obrázka na výstupe "
+"vašho skriptu. Predvolená hodnota je **Rovnaký ako vstup**, ale môžete "
+"nastaviť **JPEG**, **PNG** alebo **TIFF**. Upozorňujeme, že JPEG je strátový "
+"formát kompresie, podporuje iba 8-bitovú hĺbku farieb a nepodporuje "
+"priehľadnosť."
 
 #: ../../batch_queue/custom_script.rst:35
 msgid ""
@@ -79,6 +97,11 @@ msgid ""
 "script <https://en.wikipedia.org/wiki/Batch_file>`_ is supported under "
 "**Windows**."
 msgstr ""
+"**Shell skript**: toto textové pole je miestom, kde zadávate zdrojový kód "
+"vašho shell skriptu. `Bash skript <https://en.wikipedia.org/wiki/"
+"Bash_(Unix_shell)>`_ je podporovaný pod **Linux** a **macOS**. `Dávkový "
+"skript <https://en.wikipedia.org/wiki/Batch_file>`_ je podporovaný pod "
+"**Windows**."
 
 #: ../../batch_queue/custom_script.rst:37
 msgid ""
@@ -86,18 +109,26 @@ msgid ""
 "will replace all occurrences of keywords in the shell script at run time "
 "before script execution. Note that the keywords are case sensitive."
 msgstr ""
+"Kľúčové slová, ktoré môžete použiť v kóde skriptu, sú uvedené nižšie. "
+"Nástroj nahradi všetky výskyty kľúčových slóv v shell skripte za behu pred "
+"vykonávaním skriptu. Poznamenajme, že kľúčové slová rozlišujú veľké a malé "
+"písmená."
 
 #: ../../batch_queue/custom_script.rst:39
 msgid ""
 "**$INPUT** is replaced by the workflow input filename (with special "
 "characters escaped)."
 msgstr ""
+"**$INPUT** je nahradený názvom vstupného súboru pracovného postupu (so "
+"špeciálnymi znakmi s ošetrenými)."
 
 #: ../../batch_queue/custom_script.rst:41
 msgid ""
 "**$OUTPUT** is replaced by the workflow output filename (with special "
 "characters escaped)."
 msgstr ""
+"**$OUTPUT** je nahradený názvom výstupného súboru pracovného postupu (so "
+"špeciálnymi znakmi ošetrenými)."
 
 #: ../../batch_queue/custom_script.rst:45
 msgid ""
@@ -106,40 +137,48 @@ msgid ""
 "$INPUT** to **$OUTPUT** with the appropriate command for the operating "
 "system, before making any changes to **$OUTPUT**."
 msgstr ""
+"Na **$OUTPUT** sa vždy očakáva nový súbor. Skripty, ktoré nevytvárajú nový "
+"súbor (napr. zmena metadát pomocou ExifTool), musia najprv skopírovať **"
+"$INPUT** do **$OUTPUT** vhodnym príkazom pre daný operáčny systém, pred "
+"akymikovek zmenami v **$OUTPUT**."
 
 #: ../../batch_queue/custom_script.rst:47
 msgid "The environment variables that you can use in your shell script are:"
-msgstr ""
+msgstr "Premenné prostredia, ktoré môžete použiť vo vašom shell skripte, sú:"
 
 #: ../../batch_queue/custom_script.rst:49
 msgid "**TITLE**: to use the digiKam **Title** item property."
-msgstr ""
+msgstr "**TITLE**: na použitie vlastnosti položky **Názov** v digiKam."
 
 #: ../../batch_queue/custom_script.rst:51
 msgid "**COMMENTS**: to use the digiKam **Caption** item property."
-msgstr ""
+msgstr "**COMMENTS**: na použitie vlastnosti položky **Titulok** v digiKam."
 
 #: ../../batch_queue/custom_script.rst:53
 msgid "**COLORLABEL**: to use the digiKam **Color Label** item property."
 msgstr ""
+"**COLORLABEL**: na použitie vlastnosti položky **Farebná nálepka** v digiKam."
 
 #: ../../batch_queue/custom_script.rst:55
 msgid "**PICKLABEL**: to use the digiKam **Pick Label** item property."
 msgstr ""
+"**PICKLABEL**: na použitie vlastnosti položky **Nálepka výberu** v digiKam."
 
 #: ../../batch_queue/custom_script.rst:57
 msgid "**RATING**: to use the digiKam **Rating** item property."
-msgstr ""
+msgstr "**RATING**: na použitie vlastnosti položky **Hodnotenie** v digiKam."
 
 #: ../../batch_queue/custom_script.rst:59
 msgid "**TAGSPATH**: to use the digiKam **Tags** item property."
-msgstr ""
+msgstr "**TAGSPATH**: na použitie vlastnosti položky **Značky** v digiKam."
 
 #: ../../batch_queue/custom_script.rst:61
 msgid ""
 "All of these properties are set based on the image properties stored in the "
 "digiKam database."
 msgstr ""
+"Všetky tieto vlastnosti sú nastavené na základe vlastností obrázka uložených "
+"v databáze digiKam."
 
 #: ../../batch_queue/custom_script.rst:65
 msgid ""
@@ -147,6 +186,9 @@ msgid ""
 "with **$** as a prefix for variable names (for example **$INPUT**). The "
 "interpreter used to run the script is **/bin/bash**."
 msgstr ""
+"V Linux a macOS je možné pristupovať k premennym prostredia v skripte "
+"pomocou **$** ako prefixu názvov premennych (napríklad **$INPUT**). "
+"Interpretér používaný na spustenie skriptu je **/bin/bash**."
 
 #: ../../batch_queue/custom_script.rst:67
 msgid ""
@@ -154,10 +196,13 @@ msgid ""
 "%** as a prefix and suffix of variable names (for example **%INPUT%**). The "
 "interpreter used to run the script is **cmd.exe**."
 msgstr ""
+"V Windows je možné pristupovať k premennym prostredia v skripte pomocou **"
+"%** ako prefixu a suffixu názvov premennych (napríklad **%INPUT%**). "
+"Interpretér používaný na spustenie skriptu je **cmd.exe**."
 
 #: ../../batch_queue/custom_script.rst:71
 msgid "Return Value"
-msgstr ""
+msgstr "Návratová hodnota"
 
 #: ../../batch_queue/custom_script.rst:73
 msgid ""
@@ -165,6 +210,9 @@ msgid ""
 "or an integer in the range 1-255 for an error. Use **exit < error_code >** "
 "to pass the return value back to the workflow."
 msgstr ""
+"Podľa konvencie, **Bash skript** v Linux a macOS vráti 0 pri úspechu alebo "
+"celé číslo v rozsahu 1–255 pre chybu. Použite **exit < error_code >** na "
+"odovzdanie návratovej hodnoty späť do pracovného postupu."
 
 #: ../../batch_queue/custom_script.rst:75
 msgid ""
@@ -173,6 +221,10 @@ msgid ""
 "possible. Use **EXIT /B < error_code >** to pass the return value to the "
 "workflow."
 msgstr ""
+"V Windows **Dávkový skript** vráti 0 pri úspechu a inú hodnotu pre chybu, "
+"ale hodnota je znamienkove celé číslo, takže je možná záporná hodnota. "
+"Použite **EXIT /B < error_code >** na odovzdanie návratovej hodnoty do "
+"pracovného postupu."
 
 #: ../../batch_queue/custom_script.rst:77
 msgid ""
@@ -180,6 +232,9 @@ msgid ""
 "is returned, the workflow will continue as expected, otherwise the workflow "
 "is interrupted and the Batch Queue Manager stops processing."
 msgstr ""
+"Batch Queue Manager spracúva hodnotu vrátenú vaším skriptom. Ak je vrátená "
+"nula, pracovný postup bude pokračovať očakávane, inak sa pracovný postup "
+"preruší a Batch Queue Manager zastaví spracovanie."
 
 #: ../../batch_queue/custom_script.rst:80
 msgid "Examples"
@@ -187,7 +242,7 @@ msgstr "Príklady"
 
 #: ../../batch_queue/custom_script.rst:83
 msgid "Proof of Concept"
-msgstr ""
+msgstr "Doklad konceptu"
 
 #: ../../batch_queue/custom_script.rst:85
 msgid ""
@@ -200,12 +255,21 @@ msgid ""
 "Queue Manager for each item in the workflow. See below the **Bash** version "
 "of the script:"
 msgstr ""
+"Tento prvý príklad uvedený nižšie nerobí nič špeciálne. Vytlačí na konzolu "
+"názvy vstupných/výstupných súborov a vlastnosti položky odovzdané z Batch "
+"Queue Manager do skriptu a skopíruje vstupný súbor do výstupného súboru "
+"(táto fáza je požadovaná, aby sa zabránilo Batch Queue Manager vrátiť chybu, "
+"pretože cieľový súbor neexistuje). Skript vráti hodnotu z príkazu "
+"kopírovania súboru, ktorú analyzuje Batch Queue Manager pre každú položku v "
+"pracovnom postupe. Pozrite nižšie verziu **Bash** skriptu:"
 
 #: ../../batch_queue/custom_script.rst:102
 msgid ""
 "See below the **Windows Shell** version of the script. The output is "
 "redirected and concatenated to the *C:\\temp\\digikam.txt*:"
 msgstr ""
+"Pozrite nižšie verziu skriptu pre **Windows Shell**. Výstup je presmerovaný "
+"a konkatenovaný do *C:\\temp\\digikam.txt*:"
 
 #: ../../batch_queue/custom_script.rst:121
 msgid ""
@@ -213,49 +277,57 @@ msgid ""
 "ref:`Setting/Miscellaneous/System dialog page <system_settings>`, you will "
 "see something like this:"
 msgstr ""
+"Ak ste spustili digiKam z terminálu a povolili ladiacie stopy v :ref:"
+"`Nastavenia/Rôzne/Systémová stránka dialógu <system_settings>`, uvidíte "
+"niečo takého:"
 
 #: ../../batch_queue/custom_script.rst:135
 msgid "The digiKam information taken from the database are:"
-msgstr ""
+msgstr "Informácie digiKam prevzaté z databázy sú:"
 
 #: ../../batch_queue/custom_script.rst:137
 msgid "Item processed is **/mnt/data/Images/SALAGOU/DSC08833.JPG**."
-msgstr ""
+msgstr "Spracovávaná položka je **/mnt/data/Images/SALAGOU/DSC08833.JPG**."
 
 #: ../../batch_queue/custom_script.rst:138
 msgid ""
 "Target filename is **/mnt/data/Images/SALAGOU/BatchTool-EpEjEz-9e1c7a12."
 "digikamtempfile.JPG** (a temporary file generated by Batch Queue Manager)."
 msgstr ""
+"Názov cieľového súboru je **/mnt/data/Images/SALAGOU/BatchTool-"
+"EpEjEz-9e1c7a12.digikamtempfile.JPG** (dočasný súbor generovaný Batch Queue "
+"Manager)."
 
 #: ../../batch_queue/custom_script.rst:139
 msgid "Item Title is **Salagou Trip**."
-msgstr ""
+msgstr "Názov položky je **Salagou Trip**."
 
 #: ../../batch_queue/custom_script.rst:140
 msgid "Item Comment is null."
-msgstr ""
+msgstr "Komentár položky je prázdny."
 
 #: ../../batch_queue/custom_script.rst:141
 msgid "Item Color Label is **5** (Green)."
-msgstr ""
+msgstr "Farebná nálepka položky je **5** (Zelená)."
 
 #: ../../batch_queue/custom_script.rst:142
 msgid "Item Pick Label is **3** (Accepted)."
-msgstr ""
+msgstr "Nálepka výberu položky je **3** (Prijatá)."
 
 #: ../../batch_queue/custom_script.rst:143
 msgid "Item Rating is **3 stars**."
-msgstr ""
+msgstr "Hodnotenie položky je **3 hviezdiky**."
 
 #: ../../batch_queue/custom_script.rst:144
 msgid ""
 "Item Tags are **Places**, **Places/France**, **Places/France/Salagou Lake**."
 msgstr ""
+"Značky položky sú **Miesta**, **Miesta/Francúzsko**, **Miesta/Francúzsko/"
+"Jazero Salagou**."
 
 #: ../../batch_queue/custom_script.rst:147
 msgid "Add a Watermark with ImageMagick"
-msgstr ""
+msgstr "Pridávanie vodoznaku pomocou ImageMagick"
 
 #: ../../batch_queue/custom_script.rst:149
 msgid ""
@@ -263,6 +335,9 @@ msgid ""
 "command line tool to add visible watermarks by superimposing a multiline "
 "text field over each image in the Queue."
 msgstr ""
+"Druhý príklad nižšie je zložitejší a používa nástroj príkazového riadku "
+"**ImageMagick** na pridávanie viditelných vodnoznakou superpozíciou "
+"vêcliadiakového textového poľa nad každý obrázok vo fronte."
 
 #: ../../batch_queue/custom_script.rst:168
 msgid ""
@@ -270,11 +345,14 @@ msgid ""
 "Workflow. Bash uses the last called method as the returned value from the "
 "script, here the ImageMagick command line tool **convert**."
 msgstr ""
+"V tomto príklade neexistuje explicitné volanie **exit** na vrátenie hodnoty "
+"do pracovného postupu. Bash používa poslednú volanu metódu ako návratovú "
+"hodnotu zo skriptu, tu nástroj príkazového riadku ImageMagick **convert**."
 
 #: ../../batch_queue/custom_script.rst:170
 msgid "This give a result like below."
-msgstr ""
+msgstr "Toto dáva výsledok ako nižšie."
 
 #: ../../batch_queue/custom_script.rst:176
 msgid "The result of the Script Using ImageMagick to Apply a Watermark"
-msgstr ""
+msgstr "Výsledok skriptu používajúceho ImageMagick na aplikáciu vodoznaku"

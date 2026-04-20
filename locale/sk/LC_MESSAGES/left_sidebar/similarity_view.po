@@ -19,25 +19,28 @@ msgstr ""
 
 #: ../../left_sidebar/similarity_view.rst:-1
 msgid "digiKam Main Window Similarity View"
-msgstr ""
+msgstr "Zobrazenie podobnosti v hlavnom okne digiKam"
 
 #: ../../left_sidebar/similarity_view.rst:-1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, similarity, search, duplicates, sketch"
 msgstr ""
+"digiKam, dokumentácia, používateľská príručka, správa fotografií, open "
+"source, zadarmo, naučiť sa, jednoducho, podobnosť, vyhľadávanie, duplikáty, "
+"náčrt"
 
 #: ../../left_sidebar/similarity_view.rst:14
 msgid ":ref:`Similarity View <left_sidebar>`"
-msgstr ""
+msgstr ":ref:`Zobrazenie podobnosti <left_sidebar>`"
 
 #: ../../left_sidebar/similarity_view.rst:16
 msgid "Contents"
-msgstr ""
+msgstr "Obsah"
 
 #: ../../left_sidebar/similarity_view.rst:19
 msgid "Overview"
-msgstr ""
+msgstr "Prehľad"
 
 #: ../../left_sidebar/similarity_view.rst:21
 msgid ""
@@ -45,6 +48,9 @@ msgid ""
 "filed it, you might want to perform a *Similarity* search on your "
 "collections."
 msgstr ""
+"Ak ste stratili obrázok, pretože si nepamätáte jeho názov ani kde ste ho "
+"uložili, možno budete chcieť vykonať vyhľadávanie *Podobnosti* vo svojich "
+"kolekciách."
 
 #: ../../left_sidebar/similarity_view.rst:23
 msgid ""
@@ -56,6 +62,13 @@ msgid ""
 "methodology is the core engine for three features in the Similarity View "
 "named find **Duplicates**, find similar **Image**, and find by **Sketch**."
 msgstr ""
+"digiKam charakterizuje každý obrázok odtlačkom (alebo podpisom), ktorý je "
+"interne reprezentovaný ako dlhé číslo. Tieto odtlačky sú vypočítané tak, že "
+"čím menší je číselný rozdiel medzi odtlačkami dvoch obrázkov, tým viac sa "
+"tieto dva obrázky navzájom podobajú. Porovnanie týchto odtlačkov teda "
+"umožňuje nájsť podobné obrázky. Táto metodológia je jadrovým motorom pre tri "
+"funkcie v Zobrazení podobnosti: nájsť **Duplikáty**, nájsť podobný "
+"**Obrázok** a nájsť podľa **Náčrtu**."
 
 #: ../../left_sidebar/similarity_view.rst:27
 msgid ""
@@ -64,10 +77,14 @@ msgid ""
 "uploads/2015/08/jacobs-1995.pdf>`_ to compute fingerprints for every image "
 "in the database. These calculations are done in the background."
 msgstr ""
+"digiKam používa algoritmy Wavelets/Haar založené na `publikácii Fast Multi-"
+"Resolution Image Querying <https://grail.cs.washington.edu/wp-content/"
+"uploads/2015/08/jacobs-1995.pdf>`_ na výpočet odtlačkov pre každý obrázok v "
+"databáze. Tieto výpočty sa vykonávajú na pozadí."
 
 #: ../../left_sidebar/similarity_view.rst:32
 msgid "Find Duplicates"
-msgstr ""
+msgstr "Nájsť duplikáty"
 
 #: ../../left_sidebar/similarity_view.rst:34
 msgid ""
@@ -78,6 +95,11 @@ msgid ""
 "collection and slow storage devices. If you have already scanned your images "
 "for fingerprints, then you should skip this step."
 msgstr ""
+"Pred tým, ako digiKam nájde duplikáty, musia byť vypočítané odtlačky "
+"obrázkov v kolekciách. Tento proces môžete spustiť tlačidlom **Aktualizovať "
+"odtlačky**, ktoré iniciuje úplné prebudovanie databázy odtlačkov obrázkov. "
+"Ak máte veľkú kolekciu a pomalé úložné zariadenia, môže to trvať niekoľko "
+"hodín. Ak ste už skenovali obrázky na odtlačky, tento krok preskočte."
 
 #: ../../left_sidebar/similarity_view.rst:38
 msgid ""
@@ -87,6 +109,11 @@ msgid ""
 "for changed or new items, which is the default behavior. Scanning for "
 "changed or new items is naturally the faster option."
 msgstr ""
+"Operácie s odtlačkami môžete tiež vykonať pomocou :menuselection:`Nástroje --"
+"> Údržba` a vybratím možnosti **Prebudovať odtlačky**. Voliteľne môžete "
+"zvoliť, či chcete prebudovať celú databázu alebo len skenovať databázu na "
+"zmenené alebo nové položky, čo je predvolené správanie. Skenovanie na "
+"zmenené alebo nové položky je prirodzene rýchlejšia možnosť."
 
 #: ../../left_sidebar/similarity_view.rst:40
 msgid ""
@@ -97,6 +124,13 @@ msgid ""
 "check-boxes perform global searches in the database. Otherwise use the drop-"
 "down menu to specify which **Albums** and/or **Tags** to search."
 msgstr ""
+"Po vypočítaní odtlačkov môžete použiť **Nájsť duplikáty**, ale výpočet bude "
+"trvať dlho, pretože musí porovnať každý obrázok s každým iným obrázkom. "
+"Preto je často lepšie obmedziť vyhľadávanie na určité **Albumy** a/alebo "
+"**Značky**. Zaškrtávacie políčka **Všetky albumy** a **Všetky značky** "
+"vykonávajú globálne vyhľadávanie v databáze. V opačnom prípade použite "
+"rozbaľovaciu ponuku na určenie, ktoré **Albumy** a/alebo **Značky** sa majú "
+"prehľadávať."
 
 #: ../../left_sidebar/similarity_view.rst:42
 msgid ""
@@ -108,42 +142,61 @@ msgid ""
 "duplicate images, how does it identify which is the reference image that "
 "should be maintained, and which are the duplicates?"
 msgstr ""
+"Základným výsledkom operácie **Nájsť duplikáty** je zoznam referenčných "
+"obrázkov, ktoré by sa mali považovať za originály, a počet obrázkov "
+"nájdených ako duplikáty referenčného obrázka. Operácia **Odstrániť "
+"duplikáty** by potom odstránila duplicitné obrázky bez narušenia "
+"referenčných obrázkov. Ale keď digiKam identifikuje skupinu duplicitných "
+"obrázkov, ako určí, ktorý je referenčný obrázok, ktorý sa má zachovať, a "
+"ktoré sú duplikáty?"
 
 #: ../../left_sidebar/similarity_view.rst:44
 msgid ""
 "The **Reference Image Selection Method** setting allows selection of how the "
 "reference image is determined."
 msgstr ""
+"Nastavenie **Metóda výberu referenčného obrázka** umožňuje vybrať, ako sa "
+"určuje referenčný obrázok."
 
 #: ../../left_sidebar/similarity_view.rst:46
 msgid ""
 "**Older or Larger** is the method used prior to version 8.1.0. The reference "
 "image is the duplicate that is older or larger than the others"
 msgstr ""
+"**Starší alebo väčší** je metóda použitá pred verziou 8.1.0. Referenčný "
+"obrázok je duplikát, ktorý je starší alebo väčší ako ostatné"
 
 #: ../../left_sidebar/similarity_view.rst:47
 msgid ""
 "**Prefer selected folder as reference** means that the reference image is "
 "chosen from the selected album or albums"
 msgstr ""
+"**Uprednostniť vybraný priečinok ako referenciu** znamená, že referenčný "
+"obrázok sa vyberá z vybraného albumu alebo albumov"
 
 #: ../../left_sidebar/similarity_view.rst:48
 msgid ""
 "**Prefer other than selected folder as reference** means that the reference "
 "image is chosen from an album that has not been selected"
 msgstr ""
+"**Uprednostniť iný ako vybraný priečinok ako referenciu** znamená, že "
+"referenčný obrázok sa vyberá z albumu, ktorý nebol vybraný"
 
 #: ../../left_sidebar/similarity_view.rst:49
 msgid ""
 "**Prefer Newer Creation Date** means that the reference image is the "
 "duplicate that has the newest creation date"
 msgstr ""
+"**Uprednostniť novší dátum vytvorenia** znamená, že referenčný obrázok je "
+"duplikát, ktorý má najnovší dátum vytvorenia"
 
 #: ../../left_sidebar/similarity_view.rst:50
 msgid ""
 "**Prefer Newer Modification Date**  means that the reference image is the "
 "duplicate that has the newest modification date"
 msgstr ""
+"**Uprednostniť novší dátum úpravy** znamená, že referenčný obrázok je "
+"duplikát, ktorý má najnovší dátum úpravy"
 
 #: ../../left_sidebar/similarity_view.rst:56
 msgid ""
@@ -151,42 +204,57 @@ msgid ""
 "file not in the potential Duplicates folder. The results are displayed in "
 "Icon-View"
 msgstr ""
+"Nástroj Nájsť duplikáty prehľadáva celú kolekciu albumov, pričom referenčný "
+"súbor nie je v priečinku potenciálnych duplikátov. Výsledky sú zobrazené v "
+"Pohľade s ikonami"
 
 #: ../../left_sidebar/similarity_view.rst:58
 msgid ""
 "The **Restrict to** setting limits the albums or tags used in the reference "
 "image selection. Possible options are listed below:"
 msgstr ""
+"Nastavenie **Obmedziť na** obmedzuje albumy alebo značky použité pri výbere "
+"referenčného obrázka. Možné možnosti sú uvedené nižšie:"
 
 #: ../../left_sidebar/similarity_view.rst:60
 msgid ""
 "**One of** means that the reference images are either from the selected "
 "albums or have the selected tags."
 msgstr ""
+"**Jeden z** znamená, že referenčné obrázky sú buď z vybraných albumov, alebo "
+"majú vybrané značky."
 
 #: ../../left_sidebar/similarity_view.rst:61
 msgid ""
 "**Both** means that the reference images are from the selected albums and "
 "have the selected tags."
 msgstr ""
+"**Obe** znamená, že referenčné obrázky sú z vybraných albumov a majú vybrané "
+"značky."
 
 #: ../../left_sidebar/similarity_view.rst:62
 msgid ""
 "**Albums but not tags** means that reference images must be in the selected "
 "albums but not have the selected tags."
 msgstr ""
+"**Albumy, ale nie značky** znamená, že referenčné obrázky musia byť vo "
+"vybraných albumoch, ale nesmú mať vybrané značky."
 
 #: ../../left_sidebar/similarity_view.rst:63
 msgid ""
 "**Tags but not albums** means that reference images must have the selected "
 "tags but not be in the selected albums."
 msgstr ""
+"**Značky, ale nie albumy** znamená, že referenčné obrázky musia mať vybrané "
+"značky, ale nesmú byť vo vybraných albumoch."
 
 #: ../../left_sidebar/similarity_view.rst:64
 msgid ""
 "**Only selected tab** means that only the selected tab applies to the "
 "reference image selection."
 msgstr ""
+"**Iba vybraná karta** znamená, že na výber referenčného obrázka sa vzťahuje "
+"iba vybraná karta."
 
 #: ../../left_sidebar/similarity_view.rst:66
 msgid ""
@@ -196,27 +264,37 @@ msgid ""
 "bit below 100 % you can keep things like exact copies, images from series "
 "shots, etc. out of the search results."
 msgstr ""
+"Pomocou **Rozsahu podobnosti** môžete výsledky vyhľadávania zúžiť alebo "
+"rozšíriť. Podobnosť 100 % poskytuje presné zhody. Nižšie hodnoty naznačujú "
+"klesajúcu podobnosť. Upozorňujeme, že znížením horného prahu mierne pod 100 "
+"% môžete z výsledkov vyhľadávania vylúčiť napríklad presné kópie, obrázky zo "
+"sériových záberov atď."
 
 #: ../../left_sidebar/similarity_view.rst:68
 msgid ""
 "The **Restriction** setting can be used to further restrict searches with "
 "respect to the specified folder. Possible options are listed below:"
 msgstr ""
+"Nastavenie **Obmedzenie** možno použiť na ďalšie obmedzenie vyhľadávaní "
+"vzhľadom na zadaný priečinok. Možné možnosti sú uvedené nižšie:"
 
 #: ../../left_sidebar/similarity_view.rst:70
 msgid "**None** means to search across all collections"
-msgstr ""
+msgstr "**Žiadne** znamená vyhľadávanie vo všetkých kolekciách"
 
 #: ../../left_sidebar/similarity_view.rst:71
 msgid ""
 "**Restrict to reference album** means to only search in the selected album"
 msgstr ""
+"**Obmedziť na referenčný album** znamená vyhľadávanie iba vo vybranom albume"
 
 #: ../../left_sidebar/similarity_view.rst:72
 msgid ""
 "**Exclude reference album** means to search in all albums excluding the "
 "selected album"
 msgstr ""
+"**Vylúčiť referenčný album** znamená vyhľadávanie vo všetkých albumoch s "
+"výnimkou vybraného albumu"
 
 #: ../../left_sidebar/similarity_view.rst:74
 msgid ""
@@ -231,12 +309,24 @@ msgid ""
 "and **Reference albums** columns are the properties of the **Reference "
 "images**."
 msgstr ""
+"Výsledky vyhľadávania sa zobrazujú v zozname duplikátov v blízkosti hornej "
+"časti ľavého postranného panela. Prvý stĺpec zobrazuje **Referenčné "
+"obrázky** (Ref.) ako miniatúru pre každý jednotlivý výsledok. Stĺpec "
+"**Položky** vám hovorí, koľko obrázkov patrí ku každému výsledku vrátane "
+"**Referenčného obrázka**. Posledný stĺpec zobrazuje **Priemernú podobnosť**, "
+"ktorá vám dáva predstavu o stupni podobnosti každej sady duplicitných "
+"obrázkov. Referenčný obrázok so svojimi 100 % nie je zahrnutý v tomto "
+"priemere. Upozorňujeme, že výsledky možno zoradiť kliknutím na jedno z "
+"hlavičiek stĺpcov. Stĺpce **Referenčné dátumy** a **Referenčné albumy** sú "
+"vlastnosti **Referenčných obrázkov**."
 
 #: ../../left_sidebar/similarity_view.rst:80
 msgid ""
 "Find Duplicates Tool Searching in Whole Tags Collection and Displaying "
 "Results in Table-View"
 msgstr ""
+"Nástroj Nájsť duplikáty prehľadáva celú kolekciu značiek a zobrazuje "
+"výsledky v Tabuľkovom pohľade"
 
 #: ../../left_sidebar/similarity_view.rst:82
 msgid ""
@@ -248,16 +338,25 @@ msgid ""
 "images. Clicking repeatedly on the header will toggle between ascending and "
 "descending order."
 msgstr ""
+"Individuálne hodnoty podobnosti pre každú položku možno získať v režime "
+"**Tabuľkový pohľad** (tlačidlo **Tabuľka** na hlavnom paneli nástrojov). "
+"Kliknite pravým tlačidlom myši na jednu z hlavičiek stĺpcov a vyberte "
+"**Podobnosť** z **Vlastností položky** na zobrazenie stĺpca podobnosti. "
+"Kliknutím na hlavičku tohto stĺpca zoradíte výsledky podľa podobnosti, "
+"zoskupené podľa referenčných obrázkov. Opakovaným kliknutím na hlavičku sa "
+"prepína medzi vzostupným a zostupným poradím."
 
 #: ../../left_sidebar/similarity_view.rst:84
 msgid ""
 "**Remove Duplicates** allows you to delete all duplicate images of the "
 "current selected item from the **Duplicates** list."
 msgstr ""
+"**Odstrániť duplikáty** umožňuje odstrániť všetky duplicitné obrázky "
+"aktuálne vybranej položky zo zoznamu **Duplikáty**."
 
 #: ../../left_sidebar/similarity_view.rst:90
 msgid "Find Similar Image"
-msgstr ""
+msgstr "Nájsť podobný obrázok"
 
 #: ../../left_sidebar/similarity_view.rst:92
 msgid ""
@@ -269,12 +368,21 @@ msgid ""
 "Finally, you can use **Find Similar...** entry from the context menu of a "
 "thumbnail in any other Icon-View."
 msgstr ""
+"Tento nástroj poskytuje zónu drag and drop vľavo hore, kde môžete umiestniť "
+"akýkoľvek obrázok na nájdenie podobných obrázkov v databáze. Obrázok môžete "
+"potiahnuť odkiaľkoľvek, dokonca aj mimo digiKam. Môžete tiež potiahnuť a "
+"podržať obrázok z **Pohľadu s ikonami** albumu nad ikonu vyhľadávania "
+"**Podobnosti** v **Ľavom postrannom paneli**. Tým sa otvorí dialóg a obrázok "
+"tam pustíte. Nakoniec môžete použiť položku **Nájsť podobné...** z "
+"kontextovej ponuky miniatúry v akomkoľvek inom Pohľade s ikonami."
 
 #: ../../left_sidebar/similarity_view.rst:98
 msgid ""
 "Screencast of Drag and Drop item from Album Icon-View to Find Similar using "
 "Left Sidebar"
 msgstr ""
+"Screencast pretiahnutia a pustenia položky z Pohľadu s ikonami albumu na "
+"Nájsť podobné pomocou ľavého postranného panela"
 
 #: ../../left_sidebar/similarity_view.rst:100
 msgid ""
@@ -282,12 +390,17 @@ msgid ""
 "**Albums** or the whole collection. You can narrow down or enlarge the "
 "resulting selection with the **Similarity range** here as well."
 msgstr ""
+"Rovnako ako pri **Nájsť duplikáty**, môžete vyhľadávanie obmedziť na sadu "
+"**Albumov** alebo celú kolekciu. Výslednú selekciu môžete tu tiež zúžiť "
+"alebo rozšíriť pomocou **Rozsahu podobnosti**."
 
 #: ../../left_sidebar/similarity_view.rst:102
 msgid ""
 "The **Search in**, **Save**, and **Restore** previous searches features work "
 "the same as in the **Find Duplicates** tool."
 msgstr ""
+"Funkcie **Hľadať v**, **Uložiť** a **Obnoviť** predchádzajúce vyhľadávania "
+"fungujú rovnako ako v nástroji **Nájsť duplikáty**."
 
 #: ../../left_sidebar/similarity_view.rst:104
 msgid ""
@@ -299,14 +412,21 @@ msgid ""
 "field which can help you to find a particular search. To **Restore** a "
 "result, just click on one item from the list."
 msgstr ""
+"Po vykonaní **Vyhľadávaní** možno budete chcieť uložiť výsledky. Do poľa "
+"nižšie môžete zadať názov vyhľadávania a stlačiť tlačidlo **Uložiť**. V "
+"zozname **Vyhľadávania** nižšie nájdete uložené vyhľadávania. Kliknutím na "
+"lištu názvu tohto zoznamu sa prepína poradie radenia medzi vzostupným a "
+"zostupným. Na spodku nájdete adaptívne pole vyhľadávania, ktoré vám môže "
+"pomôcť nájsť konkrétne vyhľadávanie. Na **Obnovenie** výsledku stačí kliknúť "
+"na jednu položku zo zoznamu."
 
 #: ../../left_sidebar/similarity_view.rst:111
 msgid "Searching Similar Items For a Single Image"
-msgstr ""
+msgstr "Vyhľadávanie podobných položiek pre jeden obrázok"
 
 #: ../../left_sidebar/similarity_view.rst:116
 msgid "Find by Sketch"
-msgstr ""
+msgstr "Nájsť podľa náčrtu"
 
 #: ../../left_sidebar/similarity_view.rst:118
 msgid ""
@@ -314,6 +434,9 @@ msgid ""
 "and digiKam will find corresponding images. You will find the same means to "
 "save your search as in the **Image** tab."
 msgstr ""
+"Tento nástroj je editor farebného náčrtu od ruky. Môžete nakresliť rýchly "
+"náčrt a digiKam nájde zodpovedajúce obrázky. Nájdete rovnaké prostriedky na "
+"uloženie vyhľadávania ako na karte **Obrázok**."
 
 #: ../../left_sidebar/similarity_view.rst:120
 msgid ""
@@ -325,13 +448,22 @@ msgid ""
 "set to a value between 1-50 items. As you sketch on the area you will see "
 "that the similarity search related images appears on the right hand side."
 msgstr ""
+"Na ľavej strane digiKam prejdite na kartu **Náčrt**. Toto zobrazenie má "
+"oblasť kreslenia a niektoré nastavenia nižšie na nastavenie ceruzky a "
+"nástrojov histórie. Vyberte farbu, ktorú môže váš obrázok obsahovať, môžete "
+"zmeniť veľkosť pera v rozsahu 1-10 a môžete tiež zvoliť počet obrázkov, "
+"ktoré chcete zobraziť počas vyhľadávania fuzzy, to možno nastaviť na hodnotu "
+"medzi 1-50 položkami. Pri skicovaní v oblasti uvidíte, že sa na pravej "
+"strane zobrazia obrázky súvisiace s vyhľadávaním podobnosti."
 
 #: ../../left_sidebar/similarity_view.rst:122
 msgid ""
 "The **Search in**, **Save**, and **Restore** previous searches features "
 "works the same as in the  **Find Duplicates** tool."
 msgstr ""
+"Funkcie **Hľadať v**, **Uložiť** a **Obnoviť** predchádzajúce vyhľadávania "
+"fungujú rovnako ako v nástroji **Nájsť duplikáty**."
 
 #: ../../left_sidebar/similarity_view.rst:128
 msgid "Searching Items by Drawing a Sketch"
-msgstr ""
+msgstr "Vyhľadávanie položiek kreslením náčrtu"

@@ -17,7 +17,7 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:-1
 msgid "digiKam Database Settings"
-msgstr ""
+msgstr "Nastavenia databázy digiKam"
 
 #: ../../setup_application/database_settings.rst:-1
 msgid ""
@@ -25,10 +25,13 @@ msgid ""
 "learn, easy, database, setup, mysql, mariadb, sqlite, migration, local, "
 "remote, server"
 msgstr ""
+"digiKam, dokumentácia, používateľská príručka, správa fotografií, open "
+"source, zadarmo, naučiť sa, jednoduché, databáza, nastavenie, mysql, "
+"mariadb, sqlite, migrácia, lokálne, vzdialené, server"
 
 #: ../../setup_application/database_settings.rst:14
 msgid ":ref:`Database Settings <setup_application>`"
-msgstr ""
+msgstr ":ref:`Nastavenia databázy <setup_application>`"
 
 #: ../../setup_application/database_settings.rst:16
 msgid "Contents"
@@ -39,16 +42,20 @@ msgid ""
 "The **Database** options for digiKam are set from :menuselection:`Settings --"
 "> Configure digiKam... --> Database page`."
 msgstr ""
+"Možnosti **Databázy** pre digiKam sa nastavujú z :menuselection:`Nastavenia "
+"--> Konfigurovať digiKam... --> Stránka databázy`."
 
 #: ../../setup_application/database_settings.rst:22
 msgid ""
 "For an introduction to internal data storage, please refer to the :ref:"
 "`Database <database_intro>` section of the Getting Started chapter."
 msgstr ""
+"Úvod do interného ukladania dát nájdete v časti :ref:`Databáza "
+"<database_intro>` kapitoly Začíname."
 
 #: ../../setup_application/database_settings.rst:29
 msgid "The SQLite Database"
-msgstr ""
+msgstr "Databáza SQLite"
 
 #: ../../setup_application/database_settings.rst:31
 msgid ""
@@ -62,12 +69,24 @@ msgid ""
 "requires no configuration or maintenance. It keeps things simple. SQLite "
 "\"just works\"."
 msgstr ""
+"SQLite <https://sqlite.org/>`_ je relačný systém správy databáz, napísaný v "
+"programovacej knižnici C. SQLite nie je priamo porovnateľný s databázovými "
+"enginmi klient/server SQL, ako sú MySQL, Oracle alebo PostgreSQL. Je to skôr "
+"SQL databázový engine, ktorý je vložený do koncového programu. SQLite číta a "
+"zapisuje priamo do bežných diskových súborov. SQLite je takmer vždy "
+"najlepším riešením pre lokálne úložisko zariadenia s nízkou súbežnosťou "
+"zápisu a menej ako terabajtom obsahu. SQLite je rýchly a spoľahlivý a "
+"nevyžaduje žiadnu konfiguráciu ani údržbu. Veci zjednodušuje. SQLite "
+"„jednoducho funguje“."
 
 #: ../../setup_application/database_settings.rst:33
 msgid ""
 "By default, digiKam uses SQLite as its back-end for storing important "
 "metadata and thumbnails. digiKam stores information into four SQLite files:"
 msgstr ""
+"V predvolenom nastavení digiKam používa SQLite ako back-end na ukladanie "
+"dôležitých metadát a miniatúr. digiKam ukladá informácie do štyroch súborov "
+"SQLite:"
 
 #: ../../setup_application/database_settings.rst:36
 msgid "Database"
@@ -83,7 +102,7 @@ msgstr "Jadro"
 
 #: ../../setup_application/database_settings.rst:38
 msgid ":file:`digikam4.db`"
-msgstr ""
+msgstr ":file:`digikam4.db`"
 
 #: ../../setup_application/database_settings.rst:39
 msgid "**Thumbs**"
@@ -91,7 +110,7 @@ msgstr "Miniatúry"
 
 #: ../../setup_application/database_settings.rst:39
 msgid ":file:`thumbnails-digikam.db`"
-msgstr ""
+msgstr ":file:`thumbnails-digikam.db`"
 
 #: ../../setup_application/database_settings.rst:40
 msgid "**Similarity**"
@@ -99,7 +118,7 @@ msgstr "Podobnosť"
 
 #: ../../setup_application/database_settings.rst:40
 msgid ":file:`similarity.db`"
-msgstr ""
+msgstr ":file:`similarity.db`"
 
 #: ../../setup_application/database_settings.rst:41
 msgid "**Faces**"
@@ -107,7 +126,7 @@ msgstr "Tváre"
 
 #: ../../setup_application/database_settings.rst:41
 msgid ":file:`recognition.db`"
-msgstr ""
+msgstr ":file:`recognition.db`"
 
 #: ../../setup_application/database_settings.rst:44
 msgid ""
@@ -117,6 +136,11 @@ msgid ""
 "`Database Cleaning <maintenance_database>` section of the Maintenance Tools "
 "chapter for details."
 msgstr ""
+"Ak chcete, aby vaša aplikácia bežala rýchlo a plynulo, mali by ste "
+"pravidelne kontrolovať a optimalizovať svoje databázy: vyberte :"
+"menuselection:`Nástroje --> Údržba...` a potom **Vykonať čistenie "
+"databázy**. Podrobnosti nájdete v časti :ref:`Čistenie databázy "
+"<maintenance_database>` kapitoly Nástroje údržby."
 
 #: ../../setup_application/database_settings.rst:47
 msgid ""
@@ -126,6 +150,11 @@ msgid ""
 "apt install sqlitebrowser`. Then you can switch to the directory where the "
 "digiKam databases are stored in order to visualize the database contents."
 msgstr ""
+"`SQLite Browser <https://sqlitebrowser.org/>`_ je vysokokvalitný a ľahko "
+"použiteľný vizuálny nástroj na správu databázových objektov, ktorý vrelo "
+"odporúčame. Pre Ubuntu a jeho odvodeniny ho možno nainštalovať pomocou `sudo "
+"apt install sqlitebrowser`. Potom môžete prejsť do adresára, kde sú uložené "
+"databázy digiKam, aby ste vizualizovali obsah databázy."
 
 #: ../../setup_application/database_settings.rst:51
 msgid ""
@@ -135,6 +164,11 @@ msgid ""
 "cannot be used here. For performance and technical reasons, SQLite cannot "
 "use media from the network."
 msgstr ""
+"Pre najlepší výkon ukladajte databázy digiKam na najrýchlejší hardvér "
+"(napríklad SSD alebo NVMe) s dostatkom voľného miesta. Je to obzvlášť "
+"dôležité pre databázu miniatúr. Vzdialený súborový systém, ako je NFS, tu "
+"nie je možné použiť. Z výkonnostných a technických dôvodov SQLite nemôže "
+"používať médiá zo siete."
 
 #: ../../setup_application/database_settings.rst:53
 msgid ""
@@ -142,10 +176,13 @@ msgid ""
 "added to digiKam. (By default, if you add your “Pictures” collection, the "
 "database files will be present in the :file:`~/Pictures` folder)."
 msgstr ""
+"Súbory databázy SQLite sa nachádzajú v priečinku *kolékie*, ktorý ste "
+"pridali do digiKam. (V predvolenom nastavení, ak pridať kolekciu „Obrázky“, "
+"databázové súbory budú prítomné v priečinku :file:`~/Pictures`)."
 
 #: ../../setup_application/database_settings.rst:59
 msgid "The digiKam SQLite Configuration Page"
-msgstr ""
+msgstr "Stránka konfigurácie SQLite v digiKam"
 
 #: ../../setup_application/database_settings.rst:63
 msgid ""
@@ -153,14 +190,16 @@ msgid ""
 "turn on with large databases to optimize transactions and improve "
 "performance."
 msgstr ""
+"Režim SQLite **WAL** je veľmi dôležitá možnosť, ktorú odporúčame zapnúť pri "
+"veľkých databázach na optimalizáciu transakcií a zlepšenie výkonu."
 
 #: ../../setup_application/database_settings.rst:68
 msgid "The MySQL Database"
-msgstr ""
+msgstr "Databáza MySQL"
 
 #: ../../setup_application/database_settings.rst:73
 msgid "MySQL Versus SQLite"
-msgstr ""
+msgstr "MySQL verzus SQLite"
 
 #: ../../setup_application/database_settings.rst:75
 msgid ""
@@ -171,6 +210,12 @@ msgid ""
 "currently works on almost all system platforms (Linux, Microsoft Windows, OS "
 "X, SunOS …)."
 msgstr ""
+"`MySQL <https://en.wikipedia.org/wiki/MySQL>`_ je open-source relačný systém "
+"správy databáz, napísaný v jazykoch C a C++. Pôvodný vývoj MySQL od Michaela "
+"Wideniusa a Davida Axmarka sa začal v roku 1994. Spoločnosť Sun Microsystems "
+"získala MySQL v roku 2008, ktorú neskôr v roku 2010 získal Oracle. MySQL v "
+"súčasnosti funguje na takmer všetkých systémových platformách (Linux, "
+"Microsoft Windows, OS X, SunOS …)."
 
 #: ../../setup_application/database_settings.rst:77
 msgid ""
@@ -179,30 +224,35 @@ msgid ""
 "MySQL team, MariaDB actively works with outside developers to deliver the "
 "most featureful, stable, and sanely licensed open SQL server in the industry."
 msgstr ""
+"`MariaDB <https://en.wikipedia.org/wiki/MariaDB>`_ server je komunitne "
+"vyvíjaná vetva servera MySQL. Projekt MariaDB, ktorý spustili kľúčoví "
+"členovia pôvodného tímu MySQL, aktívne spolupracuje s externými vývojármi s "
+"cieľom dodať najpokročilejší, najstabilnejší a rozumne licencovaný open SQL "
+"server v odvetví."
 
 #: ../../setup_application/database_settings.rst:79
 msgid "MariaDB use has overtaken MySQL for a few basic reasons:"
-msgstr ""
+msgstr "Používanie MariaDB prekonalo MySQL z niekoľkých základných dôvodov:"
 
 #: ../../setup_application/database_settings.rst:81
 msgid "MariaDB development is more open and vibrant."
-msgstr ""
+msgstr "Vývoj MariaDB je otvorenejší a živší."
 
 #: ../../setup_application/database_settings.rst:83
 msgid "More cutting edge features."
-msgstr ""
+msgstr "Viac špičkových funkcií."
 
 #: ../../setup_application/database_settings.rst:85
 msgid "More storage engines."
-msgstr ""
+msgstr "Viac úložných enginov."
 
 #: ../../setup_application/database_settings.rst:87
 msgid "Better performance."
-msgstr ""
+msgstr "Lepší výkon."
 
 #: ../../setup_application/database_settings.rst:89
 msgid "Compatible and easy to migrate."
-msgstr ""
+msgstr "Kompatibilné a ľahko migrovateľné."
 
 #: ../../setup_application/database_settings.rst:91
 msgid ""
@@ -213,6 +263,12 @@ msgid ""
 "100,000 items**. With such large collections, SQLite introduces latency "
 "which slows down the application."
 msgstr ""
+"digiKam tiež poskytuje podporu pre populárny databázový engine MySQL. "
+"Samozrejme, môžete sa čudovať, prečo by ste chceli prejsť na MySQL, keď "
+"SQLite už dobre spravuje dáta? MySQL ponúka mnoho výhod pre ukladanie dát "
+"digiKam, najmä keď kolékie obsahujú **viac ako 100 000 položiek**. Pri "
+"takýchto veľkých kolékiách SQLite zavádza latenciu, ktorá spomaľuje "
+"aplikáciu."
 
 #: ../../setup_application/database_settings.rst:95
 msgid ""
@@ -221,6 +277,10 @@ msgid ""
 "MySQL and more stable. See `this page <https://www.sqlite.org/wal.html>`_ "
 "for technical details."
 msgstr ""
+"S povolenou možnosťou **WAL** možno SQLite ľahko použiť pre viac ako 100 000 "
+"položiek, najmä s úložiskom SSD alebo NVMe. Môže byť dokonca rýchlejší ako "
+"MySQL a stabilnejší. Technické podrobnosti nájdete na `tejto stránke "
+"<https://www.sqlite.org/wal.html>`_."
 
 #: ../../setup_application/database_settings.rst:97
 msgid ""
@@ -232,6 +292,13 @@ msgid ""
 "collections. You can also use MySQL tools to backup and analyze digiKam’s "
 "data."
 msgstr ""
+"Používanie MySQL ako back-endu databázy digiKam vám umožňuje ukladať dáta na "
+"lokálnych aj vzdialených serveroch. MySQL Internal možno použiť na "
+"nahradenie lokálneho úložiska SQLite a MySQL Server možno použiť na médiách "
+"uložených na vzdialenom serveri. Týmto spôsobom môžete používať viacero "
+"inštalácií digiKam (napríklad na notebooku a počítači) na prístup k vašim "
+"fotokolékiám a ich správu. Môžete tiež použiť nástroje MySQL na zálohovanie "
+"a analýzu dát digiKam."
 
 #: ../../setup_application/database_settings.rst:99
 msgid ""
@@ -239,22 +306,29 @@ msgid ""
 "Configure digiKam...` and then under **Database** section, select a database "
 "from the drop down list."
 msgstr ""
+"Ak chcete prepnúť z databázy SQLite na MySQL, prejdite na :menuselection:"
+"`Nastavenia --> Konfigurovať digiKam...` a potom v časti **Databáza** "
+"vyberte databázu z rozbaľovacieho zoznamu."
 
 #: ../../setup_application/database_settings.rst:101
 msgid ""
 "**MySQL Internal**: This allows to run an internal database server on your "
 "system. digiKam uses Unix socket for the connection."
 msgstr ""
+"**MySQL Internal**: Umožňuje spustiť interný databázový server vo vašom "
+"systéme. digiKam používa na pripojenie Unix soket."
 
 #: ../../setup_application/database_settings.rst:103
 msgid ""
 "**MySQL Server**: Use this if your data is on a remote server and you’re on "
 "a different machine trying to access the collection."
 msgstr ""
+"**MySQL Server**: Použite toto, ak sú vaše dáta na vzdialenom serveri a vy "
+"sa pokúšate pristupovať ku kolékcii z iného počítača."
 
 #: ../../setup_application/database_settings.rst:108
 msgid "The MySQL Internal Server"
-msgstr ""
+msgstr "Interný server MySQL"
 
 #: ../../setup_application/database_settings.rst:110
 msgid ""
@@ -265,12 +339,20 @@ msgid ""
 "clear, this isn’t an actual server, or a public network. Instead, it is a "
 "server that runs only while the application is running."
 msgstr ""
+"digiKam má tendenciu spomaľovať pri používaní veľkej kolékcie (veľkosť "
+"**väčšia ako 100 000 položiek**) uloženej na pevnom disku (HDD – nie SSD "
+"alebo NVMe zariadeniach) s databázou SQLite. Aby sa predišlo oneskoreniu a "
+"zachovala efektívnosť, digiKam poskytuje možnosť používania **MySQL "
+"Internal**. Je potrebné poznamenať, že nejde o skutočný server ani verejnú "
+"sieť. Je to server, ktorý beží iba počas chodu aplikácie."
 
 #: ../../setup_application/database_settings.rst:112
 msgid ""
 "Internal server creates a separate database that can be accessed (only while "
 "application is running) using the command:"
 msgstr ""
+"Interný server vytvára samostatnú databázu, ku ktorej možno pristupovať (iba "
+"počas chodu aplikácie) pomocou príkazu:"
 
 #: ../../setup_application/database_settings.rst:118
 msgid ""
@@ -279,14 +361,18 @@ msgid ""
 "configure their locations in the configuration dialog. digiKam will try to "
 "find these binaries automatically if they’re installed on your system."
 msgstr ""
+"Interný server používa tri binárne nástroje MySQL: :file:"
+"`mysql_install_db`, :file:`mysqladmin` a :file:`mysqld`. Ich umiestnenia "
+"môžete nakonfigurovať v konfiguračnom dialógu. digiKam sa pokusí nájsť tieto "
+"binárne súbory automaticky, ak sú nainštalované vo vašom systéme."
 
 #: ../../setup_application/database_settings.rst:124
 msgid "The digiKam MySQL Internal Configuration Page"
-msgstr ""
+msgstr "Stránka konfigurácie MySQL Internal v digiKam"
 
 #: ../../setup_application/database_settings.rst:129
 msgid "The MySQL Remote Server"
-msgstr ""
+msgstr "Vzdialený server MySQL"
 
 #: ../../setup_application/database_settings.rst:131
 msgid ""
@@ -295,6 +381,11 @@ msgid ""
 "well. (Could be installed easily using `this link <https://www.cherryservers."
 "com/blog/how-to-install-and-start-using-mariadb-on-ubuntu-20-04>`_.)"
 msgstr ""
+"Na používanie digiKam so vzdialeným MySQL je samozrejme potrebný prístup k "
+"serveru MySQL. Prípadne môžete nainštalovať MariaDB, ktorá tento účel dobre "
+"plní. (Možno ľahko nainštalovať pomocou `tohto odkazu <https://www."
+"cherryservers.com/blog/how-to-install-and-start-using-mariadb-on-"
+"ubuntu-20-04>`_.)"
 
 #: ../../setup_application/database_settings.rst:133
 msgid ""
@@ -302,6 +393,9 @@ msgid ""
 "and a digiKam database already set up. Run the commands in MySQL server, "
 "after replacing *password* with the correct one."
 msgstr ""
+"Postupujte podľa pokynov nižšie, ak nemáte vyhradený používateľský účet a "
+"databázu digiKam už nastavenú. Spustite príkazy na serveri MySQL po "
+"nahradení *password* správnym heslom."
 
 #: ../../setup_application/database_settings.rst:137
 msgid ""
@@ -309,12 +403,17 @@ msgid ""
 "fill in the database name correctly in Core, Thumbs, Similarity, and Face "
 "database names from the dialog box shown below."
 msgstr ""
+"Môžete vybrať ľubovoľný názov databázy. (Tu je to *digikam*). Len "
+"nezabudnite správne vyplniť názov databázy v poliach názvov databáz Core, "
+"Thumbs, Similarity a Face v dialógovom okne nižšie."
 
 #: ../../setup_application/database_settings.rst:149
 msgid ""
 "If you have an enormous collection, it's recommended to start the MySQL "
 "server with `mysql --max_allowed_packet = 128M`"
 msgstr ""
+"Ak máte obrovskú kolekciu, odporúča sa spustiť server MySQL s `mysql --"
+"max_allowed_packet = 128M`"
 
 #: ../../setup_application/database_settings.rst:153
 msgid ""
@@ -322,6 +421,9 @@ msgid ""
 "execute this additional command in the mysql prompt to enable the creation "
 "of MySQL triggers."
 msgstr ""
+"Ak máte problémy so serverom MySQL na systéme Linux založenom na Ubuntu, "
+"vykonajte tento dodatočný príkaz v príkazovom riadku mysql, aby ste umožnili "
+"vytváranie spúšťačov MySQL."
 
 #: ../../setup_application/database_settings.rst:159
 msgid ""
@@ -329,10 +431,13 @@ msgid ""
 "and then under the **Database** section, select MySQL Server from the drop "
 "down list."
 msgstr ""
+"Teraz v digiKam prejdite na :menuselection:`Nastavenia --> Konfigurovať "
+"digiKam...` a potom v časti **Databáza** vyberte MySQL Server z "
+"rozbaľovacieho zoznamu."
 
 #: ../../setup_application/database_settings.rst:165
 msgid "The digiKam Remote Mysql Configuration Page"
-msgstr ""
+msgstr "Stránka konfigurácie vzdialeného MySQL v digiKam"
 
 #: ../../setup_application/database_settings.rst:167
 msgid ""
@@ -340,12 +445,16 @@ msgid ""
 "specify the correct port in the **Host Port** field (the default port is "
 "3306)."
 msgstr ""
+"Zadajte IP adresu vášho servera MySQL do poľa **Názov hostiteľa** a zadajte "
+"správny port do poľa **Port hostiteľa** (predvolený port je 3306)."
 
 #: ../../setup_application/database_settings.rst:169
 msgid ""
 "Set the **Core Db Name** field to the name of the first database that is "
 "used to store photo metadata."
 msgstr ""
+"Nastavte pole **Názov jadrovej DB** na názov prvej databázy, ktorá sa "
+"používa na ukladanie metadát fotografií."
 
 #: ../../setup_application/database_settings.rst:171
 msgid ""
@@ -356,6 +465,11 @@ msgid ""
 "can decrease the application performances and introduce time latency with "
 "large collections."
 msgstr ""
+"Nastavte pole **Názov DB miniatúr** na názov druhej databázy, ktorá sa "
+"používa na ukladanie miniatúr komprimovaných vlnkami. Cesta na ukladanie dát "
+"miniatúr môže byť uložená lokálne, aby sa predišlo obrovskej výmene dát "
+"medzi serverom a počítačom s aplikáciou. Ukladanie miniatúr vzdialene môže "
+"znížiť výkon aplikácie a zaviesť časovú latenciu pri veľkých kolekciách."
 
 #: ../../setup_application/database_settings.rst:173
 msgid ""
@@ -363,18 +477,25 @@ msgid ""
 "is used to store the similarity finger-prints produced by the fuzzy search "
 "engine."
 msgstr ""
+"Nastavte pole **Názov DB podobnosti** na názov tretej databázy, ktorá sa "
+"používa na ukladanie odtlačkov podobnosti vytvorených vyhľadávacím enginom "
+"fuzzy."
 
 #: ../../setup_application/database_settings.rst:175
 msgid ""
 "Set the **Face Db Name** field to the name of the last database that is used "
 "to store the face histograms for facial recognition."
 msgstr ""
+"Nastavte pole **Názov DB tvárí** na názov poslednej databázy, ktorá sa "
+"používa na ukladanie histogramov tvárí pre rozpoznávanie tvárí."
 
 #: ../../setup_application/database_settings.rst:177
 msgid ""
 "To safely connect to the remote server, enter your MySQL identification "
 "using the **User** and **Password** fields."
 msgstr ""
+"Ak sa chcete bezpečne pripojiť k vzdialenému serveru, zadajte svoje "
+"identifikačné údaje MySQL pomocou polí **Používateľ** a **Heslo**."
 
 #: ../../setup_application/database_settings.rst:179
 msgid ""
@@ -385,12 +506,20 @@ msgid ""
 "your photos. This can take a while if you have a lot of items to register in "
 "the database."
 msgstr ""
+"Ak chcete skontrolovať, či pripojenie k databáze funguje správne, stlačte "
+"tlačidlo **Skontrolovať pripojenie**. Ak všetko funguje tak, ako má, "
+"prepnite do časti **Kolékcie** a pridať adresáre obsahujúce vaše fotografie. "
+"Stlačte **OK** a počkajte, kým digiKam naplí databázy dátami z vašich "
+"fotografii. Môže to chvíľu trvať, ak máte v databáze veľa položiek na "
+"zaregistrovanie."
 
 #: ../../setup_application/database_settings.rst:181
 msgid ""
 "There are some tips and recommendation to obtain the best results with a "
 "remote MySQL database server."
 msgstr ""
+"Existuje niekoľko tipov a odporúčaní na dosiahnutie najlepších výsledkov so "
+"vzdialeným databázovým serverom MySQL."
 
 #: ../../setup_application/database_settings.rst:183
 msgid ""
@@ -399,6 +528,10 @@ msgid ""
 "performances. For example, the problem has been reproducible using Wifi "
 "connections. Switching to Ethernet to solve the problem."
 msgstr ""
+"S pomalou sieťou digiKam často zamŕza, najmä keď album obsahuje mnoho "
+"položiek **(>1 000)**. Tento problém závisí od výkonu siete. Napríklad "
+"problém bol reprodukovateľný pri používaní pripojení Wifi. Na vyriešenie "
+"problému prejdite na Ethernet."
 
 #: ../../setup_application/database_settings.rst:185
 msgid ""
@@ -407,6 +540,9 @@ msgid ""
 "using MySQL, you could also change your settings in :file:`my.ini` or :file:"
 "`~/.my.cnf` files."
 msgstr ""
+"Ak máte tiež obrovskú kolékciu, mali by ste spustiť server MySQL s `mysql --"
+"max_allowed_packet = 128M`. Ak dobre ovládate MySQL, môžete tiež zmeniť "
+"nastavenia v súboroch :file:`my.ini` alebo :file:`~/.my.cnf`."
 
 #: ../../setup_application/database_settings.rst:189
 msgid ""
@@ -414,16 +550,21 @@ msgid ""
 "computer used to run digiKam to prevent problems with the common values "
 "saved in the tables of the database."
 msgstr ""
+"Locale používané na serveri MySQL musí byť rovnaké ako locale z počítača "
+"používaného na spustenie digiKam, aby sa predišlo problémom so spoločnými "
+"hodnotami uloženými v tabuľkách databázy."
 
 #: ../../setup_application/database_settings.rst:192
 msgid "Database Type Criteria"
-msgstr ""
+msgstr "Kritériá typu databázy"
 
 #: ../../setup_application/database_settings.rst:194
 msgid ""
 "See the summary below to choose the right database type depending on your "
 "use case."
 msgstr ""
+"Pozrite si súhrn nižšie a vyberte správny typ databázy v závislosti od vášho "
+"prípadu použitia."
 
 #: ../../setup_application/database_settings.rst:197
 msgid "Storage"
@@ -439,13 +580,13 @@ msgstr "Položky"
 
 #: ../../setup_application/database_settings.rst:197
 msgid "Remarks"
-msgstr ""
+msgstr "Poznámky"
 
 #: ../../setup_application/database_settings.rst:199
 #: ../../setup_application/database_settings.rst:200
 #: ../../setup_application/database_settings.rst:213
 msgid "HDD"
-msgstr ""
+msgstr "HDD"
 
 #: ../../setup_application/database_settings.rst:199
 #: ../../setup_application/database_settings.rst:201
@@ -462,7 +603,7 @@ msgstr "K"
 
 #: ../../setup_application/database_settings.rst:199
 msgid "**Warning: WAL is mandatory.**"
-msgstr ""
+msgstr "**Upozornenie: WAL je povinné.**"
 
 #: ../../setup_application/database_settings.rst:200
 #: ../../setup_application/database_settings.rst:202
@@ -481,17 +622,17 @@ msgstr "K"
 #: ../../setup_application/database_settings.rst:202
 #: ../../setup_application/database_settings.rst:216
 msgid "SSD"
-msgstr ""
+msgstr "SSD"
 
 #: ../../setup_application/database_settings.rst:201
 #: ../../setup_application/database_settings.rst:203
 msgid "WAL is optional."
-msgstr ""
+msgstr "WAL je voliteľné."
 
 #: ../../setup_application/database_settings.rst:203
 #: ../../setup_application/database_settings.rst:204
 msgid "NVME"
-msgstr ""
+msgstr "NVME"
 
 #: ../../setup_application/database_settings.rst:205
 #: ../../setup_application/database_settings.rst:206
@@ -501,25 +642,28 @@ msgstr "Vymeniteľné"
 
 #: ../../setup_application/database_settings.rst:205
 msgid "**Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**"
-msgstr ""
+msgstr "**Upozornenie: WAL je povinné. Minimum USB 3.1 s diskom NVMe.**"
 
 #: ../../setup_application/database_settings.rst:206
 msgid "**Warning: USB 3.1 minimum with NVMe drive.**"
-msgstr ""
+msgstr "**Upozornenie: Minimum USB 3.1 s diskom NVMe.**"
 
 #: ../../setup_application/database_settings.rst:207
 #: ../../setup_application/database_settings.rst:208
 #: ../../setup_application/database_settings.rst:225
 msgid "Network FS"
-msgstr ""
+msgstr "Sieťový FS"
 
 #: ../../setup_application/database_settings.rst:207
 msgid "**Prohibited: SQLite databases must be stored on local file system.**"
 msgstr ""
+"**Zakázané: Databázy SQLite musia byť uložené na lokálnom súborovom systéme."
+"**"
 
 #: ../../setup_application/database_settings.rst:208
 msgid "**Prohibited: MySQL databases must be stored on local file system.**"
 msgstr ""
+"**Zakázané: Databázy MySQL musia byť uložené na lokálnom súborovom systéme.**"
 
 #: ../../setup_application/database_settings.rst:209
 #: ../../setup_application/database_settings.rst:228
@@ -533,6 +677,7 @@ msgstr "Server MySQL"
 #: ../../setup_application/database_settings.rst:209
 msgid "MariaDB server is supported. Gigabit Ethernet or higher is recommended."
 msgstr ""
+"Server MariaDB je podporovaný. Odporúča sa gigabitový Ethernet alebo vyšší."
 
 #: ../../setup_application/database_settings.rst:215
 msgid "Hard Disk Drive."
@@ -540,41 +685,43 @@ msgstr "Pevný disk"
 
 #: ../../setup_application/database_settings.rst:218
 msgid "Solid State Drive."
-msgstr ""
+msgstr "Solid State Drive."
 
 #: ../../setup_application/database_settings.rst:219
 msgid "NVMe"
-msgstr ""
+msgstr "NVMe"
 
 #: ../../setup_application/database_settings.rst:221
 msgid "Non-Volatile Memory."
-msgstr ""
+msgstr "Nevolatilná pamäť."
 
 #: ../../setup_application/database_settings.rst:224
 msgid "External USB HDD/SSD/NVMe drive."
-msgstr ""
+msgstr "Externý USB HDD/SSD/NVMe disk."
 
 #: ../../setup_application/database_settings.rst:227
 msgid "Network File System mounted locally."
-msgstr ""
+msgstr "Sieťový súborový systém pripojený lokálne."
 
 #: ../../setup_application/database_settings.rst:230
 msgid "Network server as NAS (Network Attached Storage)."
-msgstr ""
+msgstr "Sieťový server ako NAS (Network Attached Storage)."
 
 #: ../../setup_application/database_settings.rst:231
 msgid "WAL"
-msgstr ""
+msgstr "WAL"
 
 #: ../../setup_application/database_settings.rst:233
 msgid "Write-Ahead Lock (SQLite database only)."
-msgstr ""
+msgstr "Write-Ahead Lock (iba databáza SQLite)."
 
 #: ../../setup_application/database_settings.rst:237
 msgid ""
 "Refer the :ref:`Digital Asset Management <storage_deterioration>` chapter "
 "for more details about media and data protection."
 msgstr ""
+"Ďalšie podrobnosti o ochrane médií a dát nájdete v kapitole :ref:`Správa "
+"digitálnych aktív <storage_deterioration>`."
 
 #: ../../setup_application/database_settings.rst:239
 msgid ""
@@ -582,6 +729,9 @@ msgid ""
 "for more details about how to configure your collections depending on your "
 "storage policy."
 msgstr ""
+"Pozrite si tiež kapitolu :ref:`Nastavenia kolekcií <collections_settings>`, "
+"kde nájdete ďalšie podrobnosti o tom, ako konfigurovať kolekcie v závislosti "
+"od vašich zásad ukladania."
 
 #: ../../setup_application/database_settings.rst:243
 msgid ""
@@ -591,6 +741,11 @@ msgid ""
 "resolve paths), and the same digiKam version everywhere to prevent conflicts "
 "with the database schema."
 msgstr ""
+"Ak zdieľate rovnaké **Vymeniteľné** médium pre hostiteľské databázy a/alebo "
+"kolekcie medzi rôznymi počítačmi, musíte mať všade rovnaký druh operačného "
+"systému, rovnaké cesty pripojenia (na rozlíšenie ciest použite symbolické "
+"odkazy) a všade rovnakú verziu digiKam, aby sa predišlo konfliktom so "
+"schémou databázy."
 
 #: ../../setup_application/database_settings.rst:245
 msgid ""
@@ -599,6 +754,10 @@ msgid ""
 "database schema. Computers running different instantiations of digiKam "
 "cannot access a common database and collection at the same time."
 msgstr ""
+"Ak používate spoločný **Vzdialený** server na hosťovanie *databáz a "
+"kolekcií*, musíte všade používať rovnakú verziu digiKam, aby sa predišlo "
+"konfliktom so schémou databázy. Počítače spúšťajúce rôzne inštancie digiKam "
+"nemôžu súčasne pristupovať k spoločnej databáze a kolekcii."
 
 #: ../../setup_application/database_settings.rst:247
 msgid ""
@@ -609,6 +768,11 @@ msgid ""
 "to file metadata, if you have turned this option on from the **Metadata "
 "Setup** page."
 msgstr ""
+"Ak používate spoločný **Vzdialený** server na hosťovanie kolekcií, pričom "
+"databázy sú uložené na jednotlivých počítačoch, potom možno použiť rôzne "
+"verzie digiKam a relácie digiKam môžu bežať súčasne, pričom pristupujú k "
+"spoločným kolekciám. Budete však musieť dbať na súbežné prístupy k metadátam "
+"súborov, ak ste túto možnosť zapli na stránke **Nastavenie metadát**."
 
 #: ../../setup_application/database_settings.rst:252
 msgid "Database Migration"
@@ -621,16 +785,22 @@ msgid ""
 "you move all your data from a SQLite database into a MySQL database, or vice "
 "versa."
 msgstr ""
+"digiKam prichádza s exkluzívnym nástrojom s názvom **Migrácia databázy**, "
+"ktorý umožňuje používateľom migrovať ich dáta. Napríklad migračný nástroj "
+"vám môže pomôcť presunúť všetky vaše dáta z databázy SQLite do databázy "
+"MySQL alebo naopak."
 
 #: ../../setup_application/database_settings.rst:256
 msgid ""
 "To migrate to another database, go to :menuselection:`Settings --> Database "
 "Migration...`. A dialog box appears:"
 msgstr ""
+"Ak chcete migrovať na inú databázu, prejdite na :menuselection:`Nastavenia --"
+"> Migrácia databázy...`. Zobrazí sa dialógové okno:"
 
 #: ../../setup_application/database_settings.rst:262
 msgid "The digiKam Database Migration Tool"
-msgstr ""
+msgstr "Nástroj migrácie databázy digiKam"
 
 #: ../../setup_application/database_settings.rst:264
 msgid ""
@@ -638,6 +808,10 @@ msgid ""
 "click on **Migrate** button to convert the database from SQLite to MySQL (or "
 "vice versa). Depending on the database size, this operation can take a while."
 msgstr ""
+"Teraz vyberte príslušné typy databáz, na ktoré chcete konvertovať. Nakoniec "
+"kliknite na tlačidlo **Migrovať** a konvertujte databázu z SQLite na MySQL "
+"(alebo naopak). V závislosti od veľkosti databázy môže táto operácia chvíľu "
+"trvať."
 
 #: ../../setup_application/database_settings.rst:268
 msgid ""
@@ -648,10 +822,15 @@ msgid ""
 "scratch, and the **Face** database includes the option **Rebuild the "
 "Training Data**."
 msgstr ""
+"Týmto konverzným procesom bude migrovaná iba databáza **Core** digiKam. "
+"Všetky ostatné databázy je potrebné znovu vybudovať pomocou post-spracovania "
+"s :ref:`Nástrojmi údržby <maintenance_tools>`. Databázy **Thumbs** a "
+"**Similarity** bude potrebné vytvoriť od začiatku a databáza **Face** "
+"obsahuje možnosť **Znovu vybudovať tréningové dáta**."
 
 #: ../../setup_application/database_settings.rst:273
 msgid "Database Backup Recommendation"
-msgstr ""
+msgstr "Odporúčanie zálohovania databázy"
 
 #: ../../setup_application/database_settings.rst:275
 msgid ""
@@ -659,6 +838,9 @@ msgid ""
 "network can help against device failures. A NAS or an external drive can "
 "also be used for backup."
 msgstr ""
+"Z bezpečnostných dôvodov môže plánovanie zálohovania databázy pomocou "
+"crontab cez sieť pomôcť pri zlyhaniach zariadení. Na zálohovanie možno "
+"použiť aj NAS alebo externý disk."
 
 #: ../../setup_application/database_settings.rst:277
 msgid ""
@@ -668,6 +850,11 @@ msgid ""
 "is the most important file. **Thumbnails**, **Similarity** and **Face "
 "Recognition** databases can always be regenerated from scratch."
 msgstr ""
+"Každú databázu možno premenovať na iný, jedinečný názov. To umožňuje "
+"používateľom zálohovať iba to, čo je potrebné. Napríklad premenovaním "
+"databázy **Core** na *digiKam_Core* vám umožní zálohovať iba túto databázu, "
+"ktorá je najdôležitejším súborom. Databázy **Thumbnails**, **Similarity** a "
+"**Face Recognition** možno vždy znovu vygenerovať od začiatku."
 
 #: ../../setup_application/database_settings.rst:279
 msgid ""
@@ -675,6 +862,9 @@ msgid ""
 "explain how to maintain the database contents and how to synchronize the "
 "collections with information in the databases (and vice versa)."
 msgstr ""
+"Kapitola o :ref:`Nástrojoch údržby <maintenance_tools>` digiKam vysvetlí, "
+"ako udržiavať obsah databázy a ako synchronizovať kolekcie s informáciami v "
+"databázach (a naopak)."
 
 #: ../../setup_application/database_settings.rst:284
 msgid "Database Statistics"
@@ -687,16 +877,22 @@ msgid ""
 "format), tags etc. this also includes the **Database Backend** (QSQLITE or "
 "QMYSQL) and the **Database Path** (where your collection is located)."
 msgstr ""
+"digiKam poskytuje jedinečný nástroj na zobrazenie štatistík z vašich "
+"kolekcií. Zahŕňa počet obrázkov, videí (vrátane individuálneho počtu podľa "
+"formátu obrázka), štítky atď. Zahŕňa tiež **Back-end databázy** (QSQLITE "
+"alebo QMYSQL) a **Cestu k databáze** (kde sa nachádza vaša kolekcia)."
 
 #: ../../setup_application/database_settings.rst:288
 msgid ""
 "You can view your statistics by going to :menuselection:`Help --> Database "
 "Statistics...`. A dialog box like this will appear:"
 msgstr ""
+"Štatistiky si môžete pozrieť tak, že prejdete na :menuselection:`Pomocník --"
+"> Štatistiky databázy...`. Zobrazí sa dialógové okno ako toto:"
 
 #: ../../setup_application/database_settings.rst:295
 msgid "The digiKam Database Statistics Dialog"
-msgstr ""
+msgstr "Dialóg štatistík databázy digiKam"
 
 #~ msgid "SDD"
 #~ msgstr "SDD"
