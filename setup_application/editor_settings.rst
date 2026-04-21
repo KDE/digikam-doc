@@ -130,6 +130,10 @@ In the early versions of digiKam the Image Editor was just a viewer for photogra
 
         Screencast of RAW Import Tool Pre-Processing a Digital Negative in DarkTable
 
+    .. note::
+
+        Darktable need to support `LUA script <https://en.wikipedia.org/wiki/Lua>`_. digiKam uses `LUA <https://docs.darktable.org/lua/stable/>`_ to pass to Darktable all the RAW post process setting.
+
 .. _setup_rawdefault:
 
 RAW Default Settings
