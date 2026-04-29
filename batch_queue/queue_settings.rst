@@ -52,7 +52,7 @@ This tab allows you to customize certain behaviors that control queue processing
 
 The **RAW Files Loading** setting configures how any RAW files will be processed: select **RAW Decoding** to process with standard demosaicing (see below), or select **Embedded Preview** to process with an embedded preview. This last option is very fast compared to RAW decoding.
 
-The **Target File Exists** setting allows you to customize the behavior when the target file already exists. You can **Store as a different name**, **Overwrite automatically** to overwrite the target file, or **Skip automatically** to skip overwriting the target file. No matter what option is selected, the Batch Queue Manager will not ask you about this behavior while running.
+The **If Target File Exists** setting allows you to customize the behavior when the target file already exists. You can **Store as a different name**, **Overwrite automatically** to overwrite the target file, or **Skip automatically** to skip overwriting the target file. No matter what option is selected, the Batch Queue Manager will not ask you about this behavior while running.
 
 The **Save Image as a Newly Created Branch** setting will use **Image Versioning** to name target files. This is the same behavior as when files are exported from **Image Editor** when the versioning feature is enabled.
 

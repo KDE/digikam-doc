@@ -35,7 +35,7 @@ For RAW files, you must add a format conversion tool to the end of Assigned Tool
 
     If you choose **JPEG**, or **TIFF**, or **PNG** as the **Save Format** then the metadata included in the RAW file will be included in the target files as Exif information.
 
-When you have finished setting up the queue, click the **Process** button to start the conversion. If you want to abort image conversion, press the **Abort** button.
+When you have finished setting up the queue, click the **Run** button to start the conversion. If you want to abort image conversion, press the **Stop** button.
 
 .. figure:: images/bqm_raw_converter.webp
     :alt:

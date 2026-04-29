@@ -27,7 +27,7 @@ The Batch Queue Manager window displays the list of **Queues** to process on the
 
 .. tip::
 
-    If you want to process the items from an album and all sub-albums in a queue, just turn on the option to display sub-albums in the Album-View using the :menuselection:`View --> Include Album-Sub Tree` menu entry, select the corresponding items, and then add them to the Batch Queue Manager.
+    If you want to process the items from an album and all sub-albums in a queue, just turn on the option to display sub-albums in the Album-View using the :menuselection:`View --> Include Album Sub-Tree` menu entry, select the corresponding items, and then add them to the Batch Queue Manager.
 
 The list of **Assigned Tools** to apply to each item in the queue is shown in the top middle of the window. Each tool in this list is applied sequentially from top to bottom. You can drag tools within this list to rearrange the order as needed. It's highly recommended that you export to a new format at the end of this list in order to preserve the best image quality.
 

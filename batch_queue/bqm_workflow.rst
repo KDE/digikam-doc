@@ -35,13 +35,13 @@ Workflows allow easy reproduction of the tools and settings used for batch proce
 
     The Batch Queue Manager Workflow Stores all Settings to Apply to a Queue
 
-To create a new Workflow, select tools from the **Base Tools** tab and drag and drop items to the **Assigned Tools** list to create a tool sequence. Adjust the tool settings as needed. Then right click on the tool list to bring up the context menu, and select the **Create Workflow** option. A dialog will appear to enter the workflow **Title** and **Description** properties. Press **OK** to append the new item to the **Workflow** tab.
+To create a new Workflow, select tools from the **Base Tools** tab and drag and drop items to the **Assigned Tools** list to create a tool sequence. Adjust the tool settings as needed. Then right click on the tool list to bring up the context menu, and select the **New Workflow** option. A dialog will appear to enter the workflow **Title** and **Description** properties. Press **OK** to append the new item to the **Workflow** tab.
 
 .. figure:: images/bqm_workflow_create_dialog.webp
     :alt:
     :align: center
 
-    The Batch Queue Manager Workflow Create Dialog
+    The Batch Queue Manager New Workflow Dialog
 
 To apply a workflow to a new Queue, select the new Queue, then double click over an item in the **Workflow** tab, or drag and drop the item from the **Workflow** tab to **Assigned Tools**. The Workflow will be assigned to the current Queue and will be ready to run.
 
