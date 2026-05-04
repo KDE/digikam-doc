@@ -22,7 +22,7 @@ This tool uploads photos to, and imports photos from, the `Google Photo <https:/
 
 **Google Photos** is a photo sharing service that automatically analyzes photos, identifying various visual features and subjects. Users can search for anything in photos including faces and group similar ones together.
 
-The tool can be used to download files from the remote Google Photo server to the image collections on your computer using the Internet. Use the :menuselection:`Import --> Import from Google Photo` :kbd:`Alt+Shift+P` menu entry to access to this tool, or use the icon from the **Tools** tab in the Right Sidebar.
+The tool can be used to download files from the remote Google Photo server to the image collections on your computer using the Internet. Use the :menuselection:`Import --> Import from Google Photo...` :kbd:`Alt+Shift+P` menu entry to access to this tool, or use the icon from the **Tools** tab in the Right Sidebar.
 
 Login to your Account
 ---------------------

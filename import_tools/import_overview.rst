@@ -31,10 +31,10 @@ The Import Interface helps you to get photographs into a digiKam Album, whether 
 
     Select one of the card readers from the submenu.
 
-:menuselection:`Import --> Add Images...` :kbd:`Ctrl+Alt+I`
+:menuselection:`Import --> Add Images...` :kbd:`Alt+Shift+I`
 
     Select a source folder from the dialog that opens.
 
-:menuselection:`Import --> Import from Scanner`
+:menuselection:`Import --> Import from Scanner...`
 
     Tool to communicate with a digital scanner to import images.

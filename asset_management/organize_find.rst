@@ -126,7 +126,7 @@ Specifically, digiKam provides **automatic tagging** features based on deep-lear
 
         digiKam Maintenance Tool is The Best Way to Auto-tag items by :ref:`Quality <maintenance_quality>` or for :ref:`Faces <maintenance_faces>`
 
-These kinds of tools require extra data model files to run, which can be installed during digiKam's first run, or from :menuselection:`Settings --> Configure --> System --> Download Required Binary Data...`.
+These kinds of tools require extra data model files to run, which can be installed during digiKam's first run, or from :menuselection:`Settings --> Configure digiKam... --> Miscellaneous page` and under **Download required binary data:** option push **Open Download Dialog...** button.
 
 
 .. _rating_ranking:
@@ -145,7 +145,7 @@ One such rating system might be:
     - 0 stars: Unrated: Images have not been rated.
     - 1 star : OK. Photo has flaws, but valuable enough to keep.
     - 2 stars: Good. Photo good enough for small prints, composition is OK.
-    - 3 stars: Very Good. Photo good enough for large prints, good composition and lighting
+    - 3 stars: Very Good. Photo good enough for large prints, good composition and lighting.
     - 4 stars: Excellent. Photo 100% sharp, great composition and lighting. A real keeper.
     - 5 stars: Perfect. Professional level photo.
 

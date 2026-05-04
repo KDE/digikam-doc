@@ -26,7 +26,7 @@ Alternatively, you should embed authorship and **copyleft** information into you
 
     - Copyleft licensing often gives every person who receives a copy of a work permission to reproduce, adapt or distribute the work as long as any resulting copies or adaptations are also bound by the same copyleft licensing scheme. A widely used copyleft license is the GNU General Public License. Similar licenses are available through Creative Commons - called Share-alike.
 
-Adding authorship, ownership, and copyright (or copyleft) tags couldn't be more simple with digiKam: you can setup a default identity in :menuselection:`Settings --> Templates` that is used to automatically tag any images digiKam imports.
+Adding authorship, ownership, and copyright (or copyleft) tags couldn't be more simple with digiKam: you can setup a default identity in :menuselection:`Settings --> Configure digiKam... --> Templates page` that is used to automatically tag any images digiKam imports.
 
 
 .. figure:: images/dam_template_metadata.webp
@@ -39,7 +39,7 @@ The fields that should be supplied to digiKam's Templates setup page include:
 
 **Author Names** (synonymous with Creator and By-line): This field should contain your name, or the name of the people who created the photograph. If it is not appropriate to add the name of the photographer (for example, if the identity of the photographer needs to be protected), the name of a company or organization can be used. Once saved, this field should not be changed by anyone. This field supports the use of semi-colons as a separator.
 
-**Author Position** (synonymous with By-line title): Linked to Author. This field should contain the job title or position of the photographer. Examples might include titles such as: Staff Photographer, Freelance Photographer, or Independent Commercial Photographer. Since this is a qualifier for the Author field, the Author field must also be filled out.
+**Authors' Positions** (synonymous with By-line title): Linked to Author. This field should contain the job title or position of the photographer. Examples might include titles such as: Staff Photographer, Freelance Photographer, or Independent Commercial Photographer. Since this is a qualifier for the Author field, the Author field must also be filled out.
 
 **Credit** (synonymous to Provider): Use the Provider field to identify who is providing the photograph. This does not necessarily have to be the author. If a photographer is working for a news agency such as Reuters or the Associated Press, these organizations could be listed here as they are 'providing' the image for use by others. If the image is a stock photograph, then the group (agency) involved in supplying the image should be listed here.
 

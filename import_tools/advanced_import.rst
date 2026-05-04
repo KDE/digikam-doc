@@ -121,11 +121,11 @@ DNG Convert Options
 
 Checking **Convert RAW images to DNG** in this section enables the automatic conversion of imported RAW files into DNG files. Several options can be selected for that conversion.
 
-- **Embed original file**: Embeds the original RAW file into the DNG container.
+- **Embed Original File**: Embeds the original RAW file into the DNG container.
 
 - **Lossless Compression**: Enables lossless compression. The difference between lossy and lossless compression is said to be practically indistinguishable with DNG.
 
-- **JPEG preview**: Choose whether you want a medium or full size JPEG preview to be embedded into the DNG container, or none at all.
+- **JPEG Preview**: Choose whether you want a medium or full size JPEG preview to be embedded into the DNG container, or none at all.
 
 Reasons for converting to DNG files are provided in :ref:`this section <dng_converter>` of the manual. To learn more about the Digital Negative (DNG) format, use the link `DNG container <https://en.wikipedia.org/wiki/Digital_Negative>`_.
 
