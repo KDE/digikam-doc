@@ -39,7 +39,7 @@ To delete geolocation data you must un-check the relevant checkbox and click the
 GPS Correlator
 --------------
 
-In order to correlate your images with geographic data you need to have GPS tracking information available as a XML file in gpx format (`gpsbabel <https://www.gpsbabel.org/>`_ can download and convert tracking data from a GPS device for you). The idea is to keep a carry a small GPS device with you that us running and recording your position while you take your pictures. Once you are done, download the pictures and the GPS track file, and run the correlator to find the image file timestamps in the GPS track file, and tag the pictures with the correct locations.
+The GPS Correlator will correlate the picture time recorded in the camera image file with a coordinate file created by a GPS device.  In order to do this, the camera must have an accurate time setting and GPS tracking information must be available as a XML file in GPX format. The idea is to carry a small GPS device with you that is continuously running and recording your position while you take your pictures. Once you are done, download the pictures and the GPS track file (converting to GPX if necessary), run the correlator to find the image file timestamps in the GPX track file, and tag the pictures with the correct locations.  There are many options for creating GPX files, with one useful example of a conversion utility being `gpsbabel <https://www.gpsbabel.org/>`_ which can download and convert tracking data from a GPS device.
 
 .. figure:: images/geoeditor_correlate.webp
     :alt:
