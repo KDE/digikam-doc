@@ -1,13 +1,13 @@
 # Copyright (C) licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise
 # This file is distributed under the same license as the Digikam Manual package.
 #
-# SPDX-FileCopyrightText: 2024, 2025 Stefan Asserhäll <stefan.asserhall@gmail.com>
+# SPDX-FileCopyrightText: 2024-2026 Stefan Asserhäll <stefan.asserhall@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-08 02:04+0000\n"
-"PO-Revision-Date: 2025-08-17 16:03+0200\n"
+"PO-Revision-Date: 2026-07-26 14:17+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.08.0\n"
+"X-Generator: Lokalize 26.04.3\n"
 
 #: ../../batch_queue/queue_settings.rst:-1
 msgid "digiKam Batch Queue Manager Queue Settings"
@@ -148,14 +148,6 @@ msgstr ""
 "bilder."
 
 #: ../../batch_queue/queue_settings.rst:55
-#, fuzzy
-#| msgid ""
-#| "The **Target File Exists** setting allows you to customize the behavior "
-#| "when the target file already exists. You can **Store as a different "
-#| "name**, **Overwrite automatically** to overwrite the target file, or "
-#| "**Skip automatically** to skip overwriting the target file. No matter "
-#| "what option is selected, the Batch Queue Manager will not ask you about "
-#| "this behavior while running."
 msgid ""
 "The **If Target File Exists** setting allows you to customize the behavior "
 "when the target file already exists. You can **Store as a different name**, "
@@ -164,7 +156,7 @@ msgid ""
 "is selected, the Batch Queue Manager will not ask you about this behavior "
 "while running."
 msgstr ""
-"Inställningen **Resultatfilen finns** gör det möjligt att ställa in "
+"Inställningen **Om resultatfilen finns** gör det möjligt att ställa in "
 "beteendet när resultatfilen redan finns. Man kan använda **Lagra med ett "
 "annat namn**, **Skriv över automatiskt** för att skriva över resultatfilen "
 "eller **Hoppa över automatiskt** för att hoppa över att resultatfilen skrivs "
@@ -193,6 +185,14 @@ msgid ""
 "need to run other tasks while the batch queue is active, you can disable "
 "this option to reduce system load."
 msgstr ""
+"Alternativet **Använd alla processorkärnor** låter digiKam använda flera "
+"processorkärnor för att bearbeta objekt i kön samtidigt. Parallell "
+"bearbetning kan avsevärt snabba upp bakgrundsoperationer, särskilt vid "
+"hantering av ett stort antal bilder eller resurskrävande verktyg. Att "
+"använda alla tillgängliga kärnor kan dock påverka prestandan för andra "
+"program och göra att systemet känns mindre responsivt under bearbetning. Om "
+"datorn är långsam eller om andra uppgifter behöver köras medan bakgrundskön "
+"är aktiv  kan alternativet inaktiveras för att minska systembelastningen."
 
 #: ../../batch_queue/queue_settings.rst:63
 msgid ""
@@ -200,6 +200,9 @@ msgid ""
 "MariaDB databases does not perform well. For better performance, we "
 "recommend using a SQLite database instead."
 msgstr ""
+"På grund av tekniska begränsningar i Windows fungerar inte stöd för flera "
+"kärnor med MySQL/MariaDB-databaser bra. För bättre prestanda rekommenderar "
+"vi att en SQLite-databas används istället."
 
 #: ../../batch_queue/queue_settings.rst:69
 msgid "The Batch Queue Manager Queue Settings View to Customize the Behavior"
