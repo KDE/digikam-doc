@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-08 02:04+0000\n"
-"PO-Revision-Date: 2026-07-26 14:58+0200\n"
+"PO-Revision-Date: 2026-08-08 16:00+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -22,6 +22,8 @@ msgid ""
 "digiKam Export to Local Storage tool: copy or link files, adjust properties, "
 "and manage metadata."
 msgstr ""
+"Verktyget Exportera till lokal lagring i digiKam: kopiera eller länka filer, "
+"justera egenskaper och hantera metadata."
 
 #: ../../export_tools/local_export.rst:-1
 msgid ""
@@ -50,6 +52,12 @@ msgid ""
 "`Ctrl+Alt+Shift+L`) or the corresponding icon in the **Tools** tab of the "
 "Right Sidebar."
 msgstr ""
+"Verktyget låter dig kopiera eller länka filer från samlingar i digiKam till "
+"en annan plats på datorn (vanligtvis utanför samlingarna). Man kan också "
+"ändra filegenskaper under exportprocessen. Man kommer åt verktyget via "
+"menyalternativet :menuselection:`Exportera --> Exportera till lokal lagring` "
+"(:kbd:`Ctrl+Alt+Shift+L`) eller motsvarande ikon i fliken **Verktyg** i den "
+"högra sidoraden."
 
 #: ../../export_tools/local_export.rst:23
 msgid "Export to Local Storage dialog in digiKam"
@@ -67,6 +75,7 @@ msgstr "Översikt av exportdialogrutan"
 msgid ""
 "The **Export to Local Storage** dialog is divided into two main sections:"
 msgstr ""
+"Dialogrutan **Exportera till lokal lagring** är uppdelad i två huvuddelar:"
 
 #: ../../export_tools/local_export.rst:30
 msgid ""
@@ -74,12 +83,17 @@ msgid ""
 "the tool includes the currently selected items from the icon-view. Use the **"
 "+** button to add more items to the list."
 msgstr ""
+"**Vänster panel**: Visar en lista över filer som markerats för export. "
+"Normalt inkluderar verktyget de objekt som för närvarande är markerade från "
+"ikonvyn. Använd knappen **+** för att lägga till fler objekt i listan."
 
 #: ../../export_tools/local_export.rst:32
 msgid ""
 "**Right Panel**: Configure the export settings, including the target "
 "location and file behavior."
 msgstr ""
+"**Höger panel**: Anpassa exportinställningarna, inklusive målplats och "
+"filernas beteende."
 
 #: ../../export_tools/local_export.rst:35
 msgid "Target Location"
@@ -89,13 +103,15 @@ msgstr "Målplats"
 msgid ""
 "Use the **Target location** text field to specify the destination folder for "
 "your files."
-msgstr ""
+msgstr "Använd textfältet **Målplats** för att ange målkatalogen för filerna."
 
 #: ../../export_tools/local_export.rst:39
 msgid ""
 "Click the **Browse** button to open a file selection dialog and navigate to "
 "your desired directory."
 msgstr ""
+"Klicka på knappen **Bläddra** för att öppna en filvalsdialogruta och "
+"navigera till önskad katalog."
 
 #: ../../export_tools/local_export.rst:45
 msgid "Export to Local Storage Path Selector Dialog"
@@ -122,6 +138,8 @@ msgid ""
 "**Create symlinks**: Adds absolute symbolic links to the original files, "
 "avoiding data duplication."
 msgstr ""
+"**Skapa symboliska länkar**: Lägger till absoluta symboliska länkar till "
+"originalfilerna, vilket undviker dataduplicering."
 
 #: ../../export_tools/local_export.rst:56
 msgid ""
@@ -164,14 +182,16 @@ msgid ""
 "Enable this option to convert files to another format (JPEG or PNG) and "
 "resize them before exporting:"
 msgstr ""
+"Aktivera det här alternativet för att konvertera filer till ett annat format "
+"(JPEG eller PNG) och ändra storlek på dem innan export:"
 
 #: ../../export_tools/local_export.rst:69
 msgid "**Image format**: Select the desired output format."
-msgstr ""
+msgstr "**Bildformat**: Välj det önskade utdataformatet."
 
 #: ../../export_tools/local_export.rst:71
 msgid "**Image quality**: Adjust the compression level for JPEG files."
-msgstr ""
+msgstr "**Bildkvalitet**: Justera komprimeringsnivån för JPEG-filer."
 
 #: ../../export_tools/local_export.rst:73
 msgid ""
@@ -179,16 +199,21 @@ msgid ""
 "is automatically calculated to maintain the aspect ratio. *Leave blank to "
 "preserve the original dimensions.*"
 msgstr ""
+"**Bildlängd**: Ange maximal höjd för de exporterade bilderna. Bredden "
+"beräknas automatiskt för att bibehålla proportionen. *Lämna tomt för att "
+"bevara de ursprungliga måtten.*"
 
 #: ../../export_tools/local_export.rst:75
 msgid ""
 "**Write sidecar metadata to the items**: Embeds metadata from sidecar files "
 "(e.g., XMP) into the exported image."
 msgstr ""
+"**Skriv metadata för associerade filer till objekten**: Inbäddar metadata "
+"från associerade filer (t.ex., XMP) i den exporterade bilden."
 
 #: ../../export_tools/local_export.rst:79
 msgid "The tool does not upscale images; it only reduces their size."
-msgstr ""
+msgstr "Verktyget skalar inte upp bilder, det minskar bara deras storlek."
 
 #: ../../export_tools/local_export.rst:82
 msgid "Remove all Metadata"
@@ -199,6 +224,8 @@ msgid ""
 "Check this option to strip all Exif, IPTC, and XMP metadata from the "
 "exported files. Note that the image data itself remains unchanged."
 msgstr ""
+"Markera alternativet för att ta bort all Exif-, IPTC- och XMP-metadata från "
+"de exporterade filerna. Observera att själva bilddata förblir oförändrad."
 
 #: ../../export_tools/local_export.rst:87
 msgid "Platform-Specific Notes"
@@ -213,6 +240,11 @@ msgid ""
 "exists before starting the export. You can do this using the path selector "
 "dialog."
 msgstr ""
+"**Skapa katalog**: digiKam skapar inte målkataloger automatiskt och frågar "
+"användaren om det behövs. Om man vill exportera innehåll utan att interagera "
+"med datorn under processen (till exempel när man exporterar en stor samling "
+"filer), se till att målsökvägen finns innan exporten startas. Det går att "
+"göra med hjälp av dialogrutan för val av sökväg."
 
 #: ../../export_tools/local_export.rst:95
 msgid "Export to Local Storage Path Prompt Dialog"
@@ -229,12 +261,17 @@ msgid ""
 "privileges or an NTFS-formatted drive. If symlinks fail, use **Copy files** "
 "instead."
 msgstr ""
+"**Symboliska länkar**: På Windows, kan det krävas administratörsbehörighet "
+"eller en NTFS-formaterad enhet för att skapa symboliska länkar. Om "
+"symboliska länkar misslyckas, använd **Kopiera filer** istället."
 
 #: ../../export_tools/local_export.rst:99
 msgid ""
 "**Path format:** On Windows, use forward slashes or double backslashes for "
 "paths (e.g., ``C:\\\\NewFolder`` or ``C:/NewFolder``)."
 msgstr ""
+"**Sökvägsformat:** På Windows, använd snedstreck eller dubbla bakstreck för "
+"sökvägar (e.g., ``C:\\\\NyKatalog`` eller ``C:/NyKatalog``)."
 
 #: ../../export_tools/local_export.rst:102
 msgid "Error Handling"
@@ -247,10 +284,16 @@ msgid ""
 "can create the directory manually while selecting the target path or select "
 "an existing folder."
 msgstr ""
+"Om målkatalogen inte finns, visar digiKam en dialogruta som frågar om den "
+"ska skapas eller processen ska avbrytas. Med hjälp av knappen **Bläddra** "
+"kan man skapa katalogen manuellt samtidigt som man väljer sökvägen till "
+"målkatalogen eller välja en befintlig katalog."
 
 #: ../../export_tools/local_export.rst:106
 msgid "If the export fails, check the target path and permissions, then retry."
 msgstr ""
+"Om exporten misslyckas, kontrollera målsökvägen och behörigheterna och "
+"försök sedan igen."
 
 #~ msgid "digiKam Export to Local Computer"
 #~ msgstr "Exportera till lokal dator i digiKam"

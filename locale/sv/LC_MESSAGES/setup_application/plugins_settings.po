@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-08 02:04+0000\n"
-"PO-Revision-Date: 2026-07-26 14:46+0200\n"
+"PO-Revision-Date: 2026-08-08 15:38+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -41,6 +41,11 @@ msgid ""
 "plugin entry opens a dialog with detailed information about the selected "
 "tool."
 msgstr ""
+"Alternativen för **Insticksprogram** i digiKam anpassas via :menuselection:"
+"`Inställningar --> Anpassa digiKam... --> Insticksprogram`. Sidan listar "
+"alla tillgängliga insticksprogram för olika delar av programmet. Om man "
+"dubbelklickar på en insticksprogrampost öppnas en dialogruta med detaljerad "
+"information om det markerade verktyget."
 
 #: ../../setup_application/plugins_settings.rst:21
 msgid "Generic Plugins"
@@ -53,6 +58,10 @@ msgid ""
 "plugins via the **Tools** tab in the right sidebar, under the **Post-"
 "Processing**, **Import**, and **Export** sections."
 msgstr ""
+"Verktygen delas av **Albumvy**, **Ljusbord** och **Bildeditor**. De är också "
+"tillgängliga i **Showfoto**. Man kommer åt insticksprogrammen via fliken "
+"**Verktyg** i den högra sidoraden, under avsnitten **Efterbehandling**, "
+"**Import** och **Export**."
 
 #: ../../setup_application/plugins_settings.rst:30
 msgid "Generic Plugins Setup Page"
@@ -73,6 +82,10 @@ msgid ""
 "right sidebar, under the **Transform**, **Decorate**, **Effects**, "
 "**Enhance**, and **Colors** sections."
 msgstr ""
+"Verktygen är specifikt utformade för redigering av bilder. De finns även "
+"tillgängliga i **Showfoto**. Man kommer åt insticksprogrammen via fliken "
+"**Verktyg** i den högra sidoraden, under sektionerna **Transformera**, "
+"**Dekorera**, **Effekter**, **Förbättra** och **Färger**."
 
 #: ../../setup_application/plugins_settings.rst:43
 msgid "Image Editor Plugins Setup Page"
@@ -93,6 +106,10 @@ msgid ""
 "bottom side of the interface). Use these tools to assign tasks to your "
 "current batch queue."
 msgstr ""
+"Verktygen är avsedda för bakgrundsbearbetning i digiKam. Man når dem via "
+"fliken **Basverktyg** i **Kontrollpanelen** (tillgänglig till höger eller "
+"längst ner i gränssnittet). Använd verktygen för att tilldela uppgifter till "
+"den nuvarande bakgrundskön."
 
 #: ../../setup_application/plugins_settings.rst:56
 msgid "Batch Queue Manager Plugins Setup Page"
@@ -106,7 +123,7 @@ msgstr ""
 
 #: ../../setup_application/plugins_settings.rst:61
 msgid "Image Loaders"
-msgstr "Bildinläsare"
+msgstr "Bildinläsning"
 
 #: ../../setup_application/plugins_settings.rst:63
 msgid ""
@@ -114,47 +131,58 @@ msgid ""
 "memory. They are used throughout digiKam whenever image processing is "
 "required."
 msgstr ""
+"Bildinläsning är viktiga moduler som ansvarar för att läsa in bilddata i "
+"minnet. De används i hela digiKam så fort bildbehandling behövs."
 
 #: ../../setup_application/plugins_settings.rst:67
 msgid ""
 "The following formats are supported natively, listed by priority of usage:"
-msgstr ""
+msgstr "Följande format stöds inbyggt, listade efter användningsprioritet:"
 
 #: ../../setup_application/plugins_settings.rst:69
 msgid "**JPEG**: Standard format for lossy compression."
-msgstr ""
+msgstr "**JPEG**: Standardformat för förstörande komprimering."
 
 #: ../../setup_application/plugins_settings.rst:70
 msgid ""
 "**JPEG-2000**: Advanced compression standard supporting both lossy and "
 "lossless modes."
 msgstr ""
+"**JPEG-2000**: Avancerad komprimeringsstandard som stöder både förstörande "
+"och förlustfria lägen."
 
 #: ../../setup_application/plugins_settings.rst:71
 msgid ""
 "**PNG**: Portable Network Graphics, a lossless format widely used for web "
 "and software applications."
 msgstr ""
+"**PNG**: Portable Network Graphics, ett förlustfritt format som används "
+"flitigt för webb- och programvarusyften."
 
 #: ../../setup_application/plugins_settings.rst:72
 msgid ""
 "**TIFF**: Tagged Image File Format, commonly used for high-quality, lossless "
 "images."
 msgstr ""
+"**TIFF**: Tagged Image File Format, ofta använt för högkvalitativa, "
+"förlustfria bilder."
 
 #: ../../setup_application/plugins_settings.rst:73
 msgid "**PGF**: Progressive Graphics File, optimized for lossless compression."
 msgstr ""
+"**PGF**: Progressive Graphics File, optimerat för förlustfri komprimering."
 
 #: ../../setup_application/plugins_settings.rst:74
 msgid "**Native Loaders**"
-msgstr "**Inbyggda inläsare**"
+msgstr "**Inbyggd inläsning**"
 
 #: ../../setup_application/plugins_settings.rst:74
 msgid ""
 "**HEIF**: High Efficiency Image Format, offering improved compression over "
 "JPEG."
 msgstr ""
+"**HEIF**: High Efficiency Image Format, erbjuder förbättrad kompression "
+"jämfört med JPEG."
 
 #: ../../setup_application/plugins_settings.rst:77
 msgid ""
@@ -164,6 +192,10 @@ msgid ""
 "frameworks. These loaders provide compatibility with additional native "
 "formats."
 msgstr ""
+"digiKam använder `Qt-ramverket <https://doc.qt.io/qt-6/qtimageformats-index."
+"html>`_ och dess utökade stöd via komponenten `KImageFormats <https://invent."
+"kde.org/frameworks/kimageformats>`_ från KDE-ramverket. Inläsningen ger "
+"kompatibilitet med ytterligare inbyggda format."
 
 #: ../../setup_application/plugins_settings.rst:78
 msgid "**Qt Framework Loaders**"
@@ -176,10 +208,14 @@ msgid ""
 "ensures compatibility with less common file types not covered by native or "
 "Qt-based loaders."
 msgstr ""
+"Som en reservlösning används **ImageMagick** för att stödja ett brett utbud "
+"av `exotiska och äldre format <https://imagemagick.org/script/formats."
+"php>`_. Det säkerställer kompatibilitet med mindre vanliga filtyper som inte "
+"täcks av inbyggd eller Qt-baserad inläsning."
 
 #: ../../setup_application/plugins_settings.rst:82
 msgid "**ImageMagick Support**"
-msgstr ""
+msgstr "**Stöd för ImageMagick**"
 
 #: ../../setup_application/plugins_settings.rst:88
 msgid "Image Loaders Plugins Setup Page"
