@@ -60,7 +60,7 @@ The **Work on all Processor Cores** option allows digiKam to use multiple CPU co
 
 .. tip::
 
-   Because of technical limitations on Windows, multi-core support for MySQL/MariaDB databases does not perform well. For better performance, we recommend using a SQLite database instead.
+   Because of technical limitations on Windows, multi-core support for MariaDB databases does not perform well. For better performance, we recommend using a SQLite database instead.
 
 .. figure:: images/bqm_queue_settings_behavior.webp
     :alt:

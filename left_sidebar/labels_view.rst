@@ -173,7 +173,7 @@ The Image Quality Scan can be a time-consuming task depending on the size of you
 
 .. tip::
 
-   Because of technical limitations on Windows, multi-core support for MySQL/MariaDB databases does not perform well. For better performance, we recommend using a SQLite database instead.
+   Because of technical limitations on Windows, multi-core support for MariaDB databases does not perform well. For better performance, we recommend using a SQLite database instead.
 
 Basic Factors Tab
 -----------------

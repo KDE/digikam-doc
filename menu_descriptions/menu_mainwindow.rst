@@ -639,7 +639,7 @@ The Settings Menu
 
 :menuselection:`Settings --> Database Migration...`
 
-    Launch tool to migrate the digiKam databases from SQLite to MySQL or vice versa.
+    Launch tool to migrate the digiKam databases from SQLite to MariaDB or vice versa.
 
     Find more information about the databases and database migration in the :ref:`digiKam databases <database_settings>` section.
 

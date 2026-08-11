@@ -30,11 +30,11 @@ digiKam stores data (including albums, album roots, tags, thumbnails, face recog
 
     - Face database for storing face recognition metadata: hosts face histograms for face recognition.
 
-.. figure:: images/database_remote_mysql_config.webp
+.. figure:: images/database_remote_mariadb_config.webp
     :alt:
     :align: center
 
-    Example of digiKam remote MySQL configuration hosted on a NAS from the local network
+    Example of digiKam remote MariaDB configuration hosted on a NAS from the local network
 
 Details on database settings can be found in the :ref:`Database Setup section <database_settings>`.
 

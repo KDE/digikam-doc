@@ -344,7 +344,7 @@ Work on all processor cores
 Face detection and face recognition can be time-consuming tasks depending on the size of your library and filtering selected in **Search-in**. It is recommended to use all processor cores.  This will make the process run faster, but it can potentially make other processes run slower and make your computer feel unresponsive while faces are being processed. You can uncheck **Work on all processor cores** if your machine is slow and you want to perform other tasks while the face scan is running.
 
 .. tip::
-   Because of technical limitations on Windows, multi-core support for MySQL/MariaDB databases does not perform well. For better performance, we recommend using a SQLite database instead.
+   Because of technical limitations on Windows, multi-core support for MariaDB databases does not perform well. For better performance, we recommend using a SQLite database instead.
 
 Special Cases
 -------------

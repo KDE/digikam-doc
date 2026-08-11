@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Database Settings
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, database, setup, mysql, mariadb, sqlite, migration, local, remote, server
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, database, setup, mariadb, sqlite, migration, local, remote, server
 
 .. metadata-placeholder
 
@@ -28,7 +28,7 @@ The **Database** options for digiKam are set from :menuselection:`Settings --> C
 The SQLite Database
 -------------------
 
-`SQLite <https://sqlite.org/>`_ is a relational database management system, written in the C programming library. SQLite is not directly comparable to client/server SQL database engines such as MySQL, Oracle or PostgreSQL. Rather, it is an SQL database engine that is embedded in an end program. SQLite reads and writes directly to ordinary disk files. SQLite is almost always the best solution for device-local storage with low write-concurrency and less than a terabyte of content. SQLite is fast and reliable and it requires no configuration or maintenance. It keeps things simple. SQLite "just works".
+`SQLite <https://sqlite.org/>`_ is a relational database management system, written in the C programming library. SQLite is not directly comparable to client/server SQL database engines such as MariaDB or PostgreSQL. Rather, it is an SQL database engine that is embedded in an end program. SQLite reads and writes directly to ordinary disk files. SQLite is almost always the best solution for device-local storage with low write-concurrency and less than a terabyte of content. SQLite is fast and reliable and it requires no configuration or maintenance. It keeps things simple. SQLite "just works".
 
 By default, digiKam uses SQLite as its back-end for storing important metadata and thumbnails. digiKam stores information into four SQLite files:
 
@@ -58,19 +58,17 @@ The SQLite database files can be found in the *collection* folder that you added
 
     The digiKam SQLite Configuration Page
 
-.. _mysql_database:
+.. _mariadb_database:
 
 The **WAL** SQLite mode is a very important option that we recommend you turn on with large databases to optimize transactions and improve performance.
 
-.. index:: single: MySQL
-
-The MySQL Database
-------------------
+The MariaDB Database
+--------------------
 
 .. index:: single: MariaDB
 
-MySQL Versus SQLite
-~~~~~~~~~~~~~~~~~~~
+MariaDB Versus SQLite
+~~~~~~~~~~~~~~~~~~~~~
 
 `MySQL <https://en.wikipedia.org/wiki/MySQL>`_ is an open-source, relational database management system, written in C and C++. Original development of MySQL by Michael Widenius and David Axmark began in 1994. Sun Microsystems acquired MySQL in 2008, which was later acquired by Oracle in 2010. MySQL currently works on almost all system platforms (Linux, Microsoft Windows, OS X, SunOS …).
 
@@ -88,26 +86,26 @@ MariaDB use has overtaken MySQL for a few basic reasons:
 
     - Compatible and easy to migrate.
 
-digiKam also provides support for the popular MySQL database engine. Of course, you might wonder why you’d want to switch to MySQL when SQLite already does a good job of managing the data? MySQL offers many advantages for storing digiKam data, especially when collections include **more than 100,000 items**. With such large collections, SQLite introduces latency which slows down the application.
+digiKam also provides support for the popular MariaDB database engine. Of course, you might wonder why you’d want to switch to MySQL when SQLite already does a good job of managing the data? MySQL offers many advantages for storing digiKam data, especially when collections include **more than 500,000 items**. With such large collections, SQLite can introduces latency which slows down the application.
 
 .. note::
 
-     With **WAL** option enabled, SQLite can be easily used for more than 100,000 items especially with an SSD or NVMe storage. It may be even faster than MySQL and more stable. See `this page <https://www.sqlite.org/wal.html>`_ for technical details.
+     With **WAL** option enabled, SQLite can be easily used for more than 500,000 items especially with an SSD or NVMe storage. It may be even faster than MariaDB and more stable. See `this page <https://www.sqlite.org/wal.html>`_ for technical details.
 
-Using MySQL as digiKam’s database back-end allows you to store the data on local as well as remote servers. MySQL Internal can be used to replace the local SQLite storage, and MySQL Server can be used on media stored on a remote server. This way, you can use multiple digiKam installations (for instance, on your notebook and PC) to access and manage your photo collections. You can also use MySQL tools to backup and analyze digiKam’s data.
+Using MariaDB as digiKam’s database back-end allows you to store the data on local as well as remote servers. MariaDB Internal can be used to replace the local SQLite storage, and MariaDB Server can be used on media stored on a remote server. This way, you can use multiple digiKam installations (for instance, on your notebook and PC) to access and manage your photo collections. You can also use MariaDB tools to backup and analyze digiKam’s data.
 
-To switch from SQLite to MySQL database, go to :menuselection:`Settings --> Configure digiKam...` and then under **Database** section, select a database from the drop down list.
+To switch from SQLite to MariaDB database, go to :menuselection:`Settings --> Configure digiKam...` and then under **Database** section, select a database from the drop down list.
 
-    - **MySQL Internal**: This allows to run an internal database server on your system. digiKam uses Unix socket for the connection.
+    - **MariaDB Internal**: This allows to run an internal database server on your system. digiKam uses Unix socket for the connection.
 
-    - **MySQL Server**: Use this if your data is on a remote server and you’re on a different machine trying to access the collection.
+    - **MariaDB Server**: Use this if your data is on a remote server and you’re on a different machine trying to access the collection.
 
-.. _mysql_internal:
+.. _mariadb_internal:
 
-The MySQL Internal Server
-~~~~~~~~~~~~~~~~~~~~~~~~~
+The MariaDB Internal Server
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-digiKam tends to slow down when using a large collection (size **greater than 100,000 items**) hosted on a hard drive (HDD - not an SSD or NVMe device) with the SQLite database. To avoid the delay and maintain efficiency, digiKam provides the option of using **MySQL Internal**. To be clear, this isn’t an actual server, or a public network. Instead, it is a server that runs only while the application is running.
+digiKam tends to slow down when using a large collection (size **greater than 500,000 items**) hosted on a hard drive (HDD - not an SSD or NVMe device) with the SQLite database. To avoid the delay and maintain efficiency, digiKam provides the option of using **MariaDB Internal**. To be clear, this isn’t an actual server, or a public network. Instead, it is a server that runs only while the application is running.
 
 Internal server creates a separate database that can be accessed (only while application is running) using the command:
 
@@ -115,22 +113,22 @@ Internal server creates a separate database that can be accessed (only while app
 
     mysql --socket=/home/[user_name]/.local/share/digikam/db_misc/mysql.socket digikam
 
-The internal server uses three MySQL Binary Tools: :file:`mysql_install_db`, :file:`mysqladmin`, and :file:`mysqld`. You can configure their locations in the configuration dialog. digiKam will try to find these binaries automatically if they’re installed on your system.
+The internal server uses three MariaDB Binary Tools: :file:`mysql_install_db`, :file:`mysqladmin`, and :file:`mysqld`. You can configure their locations in the configuration dialog. digiKam will try to find these binaries automatically if they’re installed on your system.
 
-.. figure:: images/setup_database_mysqlinternal.webp
+.. figure:: images/setup_database_mariadbinternal.webp
     :alt:
     :align: center
 
-    The digiKam MySQL Internal Configuration Page
+    The digiKam MariaDB Internal Configuration Page
 
-.. _mysql_remote:
+.. _mariadb_remote:
 
-The MySQL Remote Server
-~~~~~~~~~~~~~~~~~~~~~~~
+The MariaDB Remote Server
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Obviously, access to a MySQL server is required to use digiKam with a remote MySQL. Alternatively, you can install MariaDB, which serves the purpose well. (Could be installed easily using `this link <https://www.cherryservers.com/blog/how-to-install-and-start-using-mariadb-on-ubuntu-20-04>`_.)
+Obviously, access to a MariaDB server is required to use digiKam with a remote MariaDB. You can install MariaDB easily using `this link <https://www.cherryservers.com/blog/how-to-install-and-start-using-mariadb-on-ubuntu-20-04>`_.
 
-Follow the instructions below, if you don’t have a dedicated user account and a digiKam database already set up. Run the commands in MySQL server, after replacing *password* with the correct one.
+Follow the instructions below, if you don’t have a dedicated user account and a digiKam database already set up. Run the commands in MariaDB server, after replacing *password* with the correct one.
 
 .. note::
 
@@ -146,25 +144,25 @@ Follow the instructions below, if you don’t have a dedicated user account and 
 
 .. note::
 
-    If you have an enormous collection, it's recommended to start the MySQL server with `mysql --max_allowed_packet = 128M`
+    If you have an enormous collection, it's recommended to start the MariaDB server with `mysql --max_allowed_packet = 128M`
 
 .. tip::
 
-    If you have problems with a MySQL server on a Ubuntu based Linux system, execute this additional command in the mysql prompt to enable the creation of MySQL triggers.
+    If you have problems with a MariaDB server on a Ubuntu based Linux system, execute this additional command in the MariaDB prompt to enable the creation of SQL triggers.
 
     .. code:: sql
 
         SET global log_bin_trust_function_creators=1;
 
-Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` and then under the **Database** section, select MySQL Server from the drop down list.
+Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` and then under the **Database** section, select MariaDB Server from the drop down list.
 
-.. figure:: images/setup_database_remotemysql.webp
+.. figure:: images/setup_database_remotemariadb.webp
     :alt:
     :align: center
 
-    The digiKam Remote Mysql Configuration Page
+    The digiKam Remote MariaDB Configuration Page
 
-Enter the IP address of your MySQL server in the **Host Name** field and specify the correct port in the **Host Port** field (the default port is 3306).
+Enter the IP address of your MariaDB server in the **Host Name** field and specify the correct port in the **Host Port** field (the default port is 3306).
 
 Set the **Core Db Name** field to the name of the first database that is used to store photo metadata.
 
@@ -174,40 +172,40 @@ Set the **Similarity Db Name** field to the name of the third database that is u
 
 Set the **Face Db Name** field to the name of the last database that is used to store the face histograms for facial recognition.
 
-To safely connect to the remote server, enter your MySQL identification using the **User** and **Password** fields.
+To safely connect to the remote server, enter your MariaDB identification using the **User** and **Password** fields.
 
 To check whether the database connection works properly, press the **Check Connection** button. If everything works as it’s supposed to, switch to the **Collections** sections, and add the directories containing your photos. Hit **OK**, and wait till digiKam populates the databases with data from your photos. This can take a while if you have a lot of items to register in the database.
 
-There are some tips and recommendation to obtain the best results with a remote MySQL database server.
+There are some tips and recommendation to obtain the best results with a remote MariaDB database server.
 
 - With a slow network, digiKam hangs a lot of the time, especially when the album contains many items **(>1,000)**. This issue depends on network performances. For example, the problem has been reproducible using Wifi connections. Switching to Ethernet to solve the problem.
 
-- Also, if you have an enormous collection, you should start the MySQL server with `mysql --max_allowed_packet = 128M`. If you’re well acquainted with using MySQL, you could also change your settings in :file:`my.ini` or :file:`~/.my.cnf` files.
+- Also, if you have an enormous collection, you should start the MariaDB server with `mysql --max_allowed_packet = 128M`. If you’re well acquainted with using MariaDB, you could also change your settings in :file:`my.ini` or :file:`~/.my.cnf` files.
 
 .. warning::
 
-    The locale used in the Mysql server must be the same as the locale from the computer used to run digiKam to prevent problems with the common values saved in the tables of the database.
+    The locale used in the MariaDB server must be the same as the locale from the computer used to run digiKam to prevent problems with the common values saved in the tables of the database.
 
 Database Type Criteria
 ----------------------
 
 See the summary below to choose the right database type depending on your use case.
 
-    ============== ============== ========== ====================================================================================
-    Storage        Type           Items      Remarks
-    ============== ============== ========== ====================================================================================
-    HDD            SQLite         < 100K     **Warning: WAL is mandatory.**
-    HDD            MySQL-Internal > 100K
-    SSD            SQLite                    WAL is optional.
-    SSD            MySQL-Internal
-    NVME           SQLite                    WAL is optional.
-    NVME           MySQL-Internal
-    Removable      SQLite         < 100K     **Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**
-    Removable      MySQL-Internal > 100K     **Warning: USB 3.1 minimum with NVMe drive.**
-    Network FS     SQLite                    **Prohibited: SQLite databases must be stored on local file system.**
-    Network FS     MySQL-Internal            **Prohibited: MySQL databases must be stored on local file system.**
-    Remote         MySQL-Server              MariaDB server is supported. Gigabit Ethernet or higher is recommended.
-    ============== ============== ========== ====================================================================================
+    ============== ================ ========== ====================================================================================
+    Storage        Type             Items      Remarks
+    ============== ================ ========== ====================================================================================
+    HDD            SQLite           < 500K     **Warning: WAL is mandatory.**
+    HDD            MariaDB-Internal > 500K
+    SSD            SQLite                      WAL is optional.
+    SSD            MariaDB-Internal
+    NVME           SQLite                      WAL is optional.
+    NVME           MariaDB-Internal
+    Removable      SQLite           < 500K     **Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**
+    Removable      MariaDB-Internal > 500K     **Warning: USB 3.1 minimum with NVMe drive.**
+    Network FS     SQLite                      **Prohibited: SQLite databases must be stored on local file system.**
+    Network FS     MariaDB-Internal            **Prohibited: MariaDB databases must be stored on local file system.**
+    Remote         MariaDB-Server              Gigabit Ethernet or higher is recommended.
+    ============== ================ ========== ====================================================================================
 
 .. glossary::
 
@@ -251,7 +249,7 @@ See the summary below to choose the right database type depending on your use ca
 Database Migration
 ------------------
 
-digiKam comes up with an exclusive tool named **Database Migration**, that allows users to migrate their data. For example, the migration tool can help you move all your data from a SQLite database into a MySQL database, or vice versa.
+digiKam comes up with an exclusive tool named **Database Migration**, that allows users to migrate their data. For example, the migration tool can help you move all your data from a SQLite database into a MariaDB database, or vice versa.
 
 To migrate to another database, go to :menuselection:`Settings --> Database Migration...`. A dialog box appears:
 
@@ -261,7 +259,7 @@ To migrate to another database, go to :menuselection:`Settings --> Database Migr
 
     The digiKam Database Migration Tool
 
-Now choose the appropriate database types you want to convert to. Finally, click on **Migrate** button to convert the database from SQLite to MySQL (or vice versa). Depending on the database size, this operation can take a while.
+Now choose the appropriate database types you want to convert to. Finally, click on **Migrate** button to convert the database from SQLite to MariaDB (or vice versa). Depending on the database size, this operation can take a while.
 
 .. note::
 
