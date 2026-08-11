@@ -94,7 +94,7 @@ digiKam provides support for the popular MariaDB database engine. Of course, you
 
 .. tip::
 
-    If you use a former Mysql database created with an older digiKam version, we hightly recommend to switch to MariaDB. You can migrate to MariaDB following `this tutorial <https://mariadb.com/docs/server/server-management/install-and-upgrade-mariadb/migrating-to-mariadb/moving-from-mysql/mysql-to-mariadb-migration-the-master-guide>_`.
+    If you use a former MySQL database created with an older digiKam version, we hightly recommend to switch to MariaDB. You can migrate to MariaDB following `this tutorial <https://mariadb.com/docs/server/server-management/install-and-upgrade-mariadb/migrating-to-mariadb/moving-from-mysql/mysql-to-mariadb-migration-the-master-guide>_`.
 
 Using MariaDB as digiKam’s database back-end allows you to store the data on local as well as remote servers. MariaDB Internal can be used to replace the local SQLite storage, and MariaDB Server can be used on media stored on a remote server. This way, you can use multiple digiKam installations (for instance, on your notebook and PC) to access and manage your photo collections. You can also use MariaDB tools to backup and analyze digiKam’s data.
 
@@ -115,9 +115,9 @@ Internal server creates a separate database that can be accessed (only while app
 
 .. code-block:: text
 
-    mysql --socket=/home/[user_name]/.local/share/digikam/db_misc/mysql.socket digikam
+    mariadb --socket=/home/[user_name]/.local/share/digikam/db_misc/mysql.socket digikam
 
-The internal server uses three MariaDB Binary Tools: :file:`mysql_install_db`, :file:`mysqladmin`, and :file:`mysqld`. You can configure their locations in the configuration dialog. digiKam will try to find these binaries automatically if they’re installed on your system.
+The internal server uses three MariaDB Binary Tools: :file:`mariadb_install_db`, :file:`mariadbadmin`, and :file:`mariadbd`. You can configure their locations in the configuration dialog. digiKam will try to find these binaries automatically if they’re installed on your system.
 
 .. figure:: images/setup_database_mariadbinternal.webp
     :alt:
@@ -148,7 +148,7 @@ Follow the instructions below, if you don’t have a dedicated user account and 
 
 .. note::
 
-    If you have an enormous collection, it's recommended to start the MariaDB server with `mysql --max_allowed_packet = 128M`
+    If you have an enormous collection, it's recommended to start the MariaDB server with `mariadb --max_allowed_packet = 128M`
 
 .. tip::
 
@@ -184,7 +184,7 @@ There are some tips and recommendation to obtain the best results with a remote 
 
 - With a slow network, digiKam hangs a lot of the time, especially when the album contains many items **(>1,000)**. This issue depends on network performances. For example, the problem has been reproducible using Wifi connections. Switching to Ethernet to solve the problem.
 
-- Also, if you have an enormous collection, you should start the MariaDB server with `mysql --max_allowed_packet = 128M`. If you’re well acquainted with using MariaDB, you could also change your settings in :file:`my.ini` or :file:`~/.my.cnf` files.
+- Also, if you have an enormous collection, you should start the MariaDB server with `mariadb --max_allowed_packet = 128M`. If you’re well acquainted with using MariaDB, you could also change your settings in :file:`my.ini` or :file:`~/.my.cnf` files.
 
 .. warning::
 
