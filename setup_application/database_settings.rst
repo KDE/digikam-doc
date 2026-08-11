@@ -94,7 +94,7 @@ digiKam provides support for the popular MariaDB database engine. Of course, you
 
 .. tip::
 
-    If you use a former MySQL database created with an older digiKam version, we hightly recommend to switch to MariaDB. You can migrate to MariaDB following `this tutorial <https://mariadb.com/docs/server/server-management/install-and-upgrade-mariadb/migrating-to-mariadb/moving-from-mysql/mysql-to-mariadb-migration-the-master-guide>`_.
+    If you use a former MySQL database created with an older digiKam version, we highly recommend to switch to MariaDB. You can migrate to MariaDB following `this tutorial <https://mariadb.com/docs/server/server-management/install-and-upgrade-mariadb/migrating-to-mariadb/moving-from-mysql/mysql-to-mariadb-migration-the-master-guide>`_.
 
 Using MariaDB as digiKam’s database back-end allows you to store the data on local as well as remote servers. MariaDB Internal can be used to replace the local SQLite storage, and MariaDB Server can be used on media stored on a remote server. This way, you can use multiple digiKam installations (for instance, on your notebook and PC) to access and manage your photo collections. You can also use MariaDB tools to backup and analyze digiKam’s data.
 
