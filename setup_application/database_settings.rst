@@ -86,11 +86,15 @@ MariaDB use has overtaken MySQL for a few basic reasons:
 
     - Compatible and easy to migrate.
 
-digiKam also provides support for the popular MariaDB database engine. Of course, you might wonder why you’d want to switch to MySQL when SQLite already does a good job of managing the data? MySQL offers many advantages for storing digiKam data, especially when collections include **more than 500,000 items**. With such large collections, SQLite can introduces latency which slows down the application.
+digiKam provides support for the popular MariaDB database engine. Of course, you might wonder why you’d want to switch to MariaDB when SQLite already does a good job of managing the data? MariaDB offers many advantages for storing digiKam data, especially when collections include **more than 500,000 items**. With such large collections, SQLite can introduces latency which slows down the application.
 
 .. note::
 
-     With **WAL** option enabled, SQLite can be easily used for more than 500,000 items especially with an SSD or NVMe storage. It may be even faster than MariaDB and more stable. See `this page <https://www.sqlite.org/wal.html>`_ for technical details.
+    With **WAL** option enabled, SQLite can be easily used for more than 500,000 items especially with an SSD or NVMe storage. It may be even faster than MariaDB and more stable. See `this page <https://www.sqlite.org/wal.html>`_ for technical details. Long time digiKam users report to manage more than 1M of items without problem with this configuration.
+
+.. tip::
+
+    If you use a former Mysql database created with an older digiKam version, we hightly recommend to switch to MariaDB. You can migrate to MariaDB following `this tutorial <https://mariadb.com/docs/server/server-management/install-and-upgrade-mariadb/migrating-to-mariadb/moving-from-mysql/mysql-to-mariadb-migration-the-master-guide>_`.
 
 Using MariaDB as digiKam’s database back-end allows you to store the data on local as well as remote servers. MariaDB Internal can be used to replace the local SQLite storage, and MariaDB Server can be used on media stored on a remote server. This way, you can use multiple digiKam installations (for instance, on your notebook and PC) to access and manage your photo collections. You can also use MariaDB tools to backup and analyze digiKam’s data.
 
