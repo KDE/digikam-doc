@@ -70,31 +70,28 @@ The MariaDB Database
 MariaDB Versus SQLite
 ~~~~~~~~~~~~~~~~~~~~~
 
-`MySQL <https://en.wikipedia.org/wiki/MySQL>`_ is an open-source, relational database management system, written in C and C++. Original development of MySQL by Michael Widenius and David Axmark began in 1994. Sun Microsystems acquired MySQL in 2008, which was later acquired by Oracle in 2010. MySQL currently works on almost all system platforms (Linux, Microsoft Windows, OS X, SunOS …).
-
 `MariaDB <https://en.wikipedia.org/wiki/MariaDB>`_ server is a community-developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry.
 
 MariaDB use has overtaken MySQL for a few basic reasons:
 
     - MariaDB development is more open and vibrant.
-
     - More cutting edge features.
-
     - More storage engines.
-
     - Better performance.
-
     - Compatible and easy to migrate.
 
-digiKam provides support for the popular MariaDB database engine. Of course, you might wonder why you’d want to switch to MariaDB when SQLite already does a good job of managing the data? MariaDB offers many advantages for storing digiKam data, especially when collections include **more than 500,000 items**. With such large collections, SQLite can introduces latency which slows down the application.
+
+Starting with **digiKam 9.2.0**, **MySQL is no longer supported**. digiKam now exclusively supports **MariaDB** as its relational database management system for users who require a client-server database solution.
+
+digiKam provides support for the popular MariaDB database engine. Of course, you might wonder why you’d want to switch to MariaDB when SQLite already does a good job of managing the data? MariaDB offers many advantages for storing digiKam data, especially when collections include **more than 500,000 items**. With such large collections, SQLite can introduce latency which slows down the application.
 
 .. note::
 
-    With **WAL** option enabled, SQLite can be easily used for more than 500,000 items especially with an SSD or NVMe storage. It may be even faster than MariaDB and more stable. See `this page <https://www.sqlite.org/wal.html>`_ for technical details. Long time digiKam users report to manage more than 1M of items without problem with this configuration.
+    With **WAL** option enabled, SQLite can be easily used for more than 500,000 items, especially with an SSD or NVMe storage. It may even be faster than MariaDB and more stable. See `this page <https://www.sqlite.org/wal.html>`_ for technical details. Long-time digiKam users report managing more than 1M items without problems with this configuration.
 
 .. tip::
 
-    If you use a former MySQL database created with an older digiKam version, we highly recommend to switch to MariaDB. You can migrate to MariaDB following `this tutorial <https://mariadb.com/docs/server/server-management/install-and-upgrade-mariadb/migrating-to-mariadb/moving-from-mysql/mysql-to-mariadb-migration-the-master-guide>`_.
+    If you use a former MySQL database created with an older digiKam version, we highly recommend migrating to MariaDB. You can migrate to MariaDB following `this tutorial <https://mariadb.com/docs/server/server-management/install-and-upgrade-mariadb/migrating-to-mariadb/moving-from-mysql/mysql-to-mariadb-migration-the-master-guide>`_.
 
 Using MariaDB as digiKam’s database back-end allows you to store the data on local as well as remote servers. MariaDB Internal can be used to replace the local SQLite storage, and MariaDB Server can be used on media stored on a remote server. This way, you can use multiple digiKam installations (for instance, on your notebook and PC) to access and manage your photo collections. You can also use MariaDB tools to backup and analyze digiKam’s data.
 
