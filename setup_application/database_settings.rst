@@ -282,7 +282,7 @@ The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will expl
 Database Statistics
 -------------------
 
-digiKam provides a unique tool to show the statistics from your collections. It includes count of images, videos (including individual count by image format), tags etc. this also includes the **Database Backend** (QSQLITE or QMYSQL) and the **Database Path** (where your collection is located).
+digiKam provides a unique tool to show the statistics from your collections. It includes count of images, videos (including individual count by image format), tags etc. this also includes the **Database Backend** (Sqlite or MariaDB) and the **Database Path** (where your collection is located).
 
 You can view your statistics by going to :menuselection:`Help --> Database Statistics...`. A dialog box like this will appear:
 
