@@ -22,6 +22,7 @@ var all_langs = {
     //"et": "Eesti"
     "fi": "Suomeksi",
     "fr": "Fran&ccedil;ais",
+    "he": "&#1506;&#1489;&#1512;&#1497;&#1514;",
     //"id": "Bahasa Indonesia",
     "it": "Italiano",
     "ja": "&#x65E5;&#x672C;&#x8A9E;",
