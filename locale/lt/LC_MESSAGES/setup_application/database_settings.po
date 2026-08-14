@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-08 02:04+0000\n"
+"POT-Creation-Date: 2026-08-13 02:08+0000\n"
 "PO-Revision-Date: 2023-02-09 00:53+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -25,8 +25,8 @@ msgstr ""
 #: ../../setup_application/database_settings.rst:-1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
-"learn, easy, database, setup, mysql, mariadb, sqlite, migration, local, "
-"remote, server"
+"learn, easy, database, setup, mariadb, sqlite, migration, local, remote, "
+"server"
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:14
@@ -57,13 +57,12 @@ msgstr ""
 msgid ""
 "`SQLite <https://sqlite.org/>`_ is a relational database management system, "
 "written in the C programming library. SQLite is not directly comparable to "
-"client/server SQL database engines such as MySQL, Oracle or PostgreSQL. "
-"Rather, it is an SQL database engine that is embedded in an end program. "
-"SQLite reads and writes directly to ordinary disk files. SQLite is almost "
-"always the best solution for device-local storage with low write-concurrency "
-"and less than a terabyte of content. SQLite is fast and reliable and it "
-"requires no configuration or maintenance. It keeps things simple. SQLite "
-"\"just works\"."
+"client/server SQL database engines such as MariaDB or PostgreSQL. Rather, it "
+"is an SQL database engine that is embedded in an end program. SQLite reads "
+"and writes directly to ordinary disk files. SQLite is almost always the best "
+"solution for device-local storage with low write-concurrency and less than a "
+"terabyte of content. SQLite is fast and reliable and it requires no "
+"configuration or maintenance. It keeps things simple. SQLite \"just works\"."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:33
@@ -157,15 +156,15 @@ msgid ""
 "performance."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:68
-msgid "The MySQL Database"
+#: ../../setup_application/database_settings.rst:66
+msgid "The MariaDB Database"
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:71
+msgid "MariaDB Versus SQLite"
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:73
-msgid "MySQL Versus SQLite"
-msgstr ""
-
-#: ../../setup_application/database_settings.rst:75
 msgid ""
 "`MySQL <https://en.wikipedia.org/wiki/MySQL>`_ is an open-source, relational "
 "database management system, written in C and C++. Original development of "
@@ -175,7 +174,7 @@ msgid ""
 "X, SunOS …)."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:77
+#: ../../setup_application/database_settings.rst:75
 msgid ""
 "`MariaDB <https://en.wikipedia.org/wiki/MariaDB>`_ server is a community-"
 "developed fork of MySQL server. Started by core members of the original "
@@ -183,174 +182,184 @@ msgid ""
 "most featureful, stable, and sanely licensed open SQL server in the industry."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:79
+#: ../../setup_application/database_settings.rst:77
 msgid "MariaDB use has overtaken MySQL for a few basic reasons:"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:81
+#: ../../setup_application/database_settings.rst:79
 msgid "MariaDB development is more open and vibrant."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:83
+#: ../../setup_application/database_settings.rst:81
 msgid "More cutting edge features."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:85
+#: ../../setup_application/database_settings.rst:83
 msgid "More storage engines."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:87
+#: ../../setup_application/database_settings.rst:85
 msgid "Better performance."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:89
+#: ../../setup_application/database_settings.rst:87
 msgid "Compatible and easy to migrate."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:91
+#: ../../setup_application/database_settings.rst:89
 msgid ""
-"digiKam also provides support for the popular MySQL database engine. Of "
-"course, you might wonder why you’d want to switch to MySQL when SQLite "
-"already does a good job of managing the data? MySQL offers many advantages "
-"for storing digiKam data, especially when collections include **more than "
-"100,000 items**. With such large collections, SQLite introduces latency "
+"digiKam provides support for the popular MariaDB database engine. Of course, "
+"you might wonder why you’d want to switch to MariaDB when SQLite already "
+"does a good job of managing the data? MariaDB offers many advantages for "
+"storing digiKam data, especially when collections include **more than "
+"500,000 items**. With such large collections, SQLite can introduces latency "
 "which slows down the application."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:95
+#: ../../setup_application/database_settings.rst:93
 msgid ""
-"With **WAL** option enabled, SQLite can be easily used for more than 100,000 "
+"With **WAL** option enabled, SQLite can be easily used for more than 500,000 "
 "items especially with an SSD or NVMe storage. It may be even faster than "
-"MySQL and more stable. See `this page <https://www.sqlite.org/wal.html>`_ "
-"for technical details."
+"MariaDB and more stable. See `this page <https://www.sqlite.org/wal.html>`_ "
+"for technical details. Long time digiKam users report to manage more than 1M "
+"of items without problem with this configuration."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:97
 msgid ""
-"Using MySQL as digiKam’s database back-end allows you to store the data on "
-"local as well as remote servers. MySQL Internal can be used to replace the "
-"local SQLite storage, and MySQL Server can be used on media stored on a "
-"remote server. This way, you can use multiple digiKam installations (for "
-"instance, on your notebook and PC) to access and manage your photo "
-"collections. You can also use MySQL tools to backup and analyze digiKam’s "
-"data."
+"If you use a former MySQL database created with an older digiKam version, we "
+"hightly recommend to switch to MariaDB. You can migrate to MariaDB following "
+"`this tutorial <https://mariadb.com/docs/server/server-management/install-"
+"and-upgrade-mariadb/migrating-to-mariadb/moving-from-mysql/mysql-to-mariadb-"
+"migration-the-master-guide>`_."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:99
 msgid ""
-"To switch from SQLite to MySQL database, go to :menuselection:`Settings --> "
-"Configure digiKam...` and then under **Database** section, select a database "
-"from the drop down list."
+"Using MariaDB as digiKam’s database back-end allows you to store the data on "
+"local as well as remote servers. MariaDB Internal can be used to replace the "
+"local SQLite storage, and MariaDB Server can be used on media stored on a "
+"remote server. This way, you can use multiple digiKam installations (for "
+"instance, on your notebook and PC) to access and manage your photo "
+"collections. You can also use MariaDB tools to backup and analyze digiKam’s "
+"data."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:101
 msgid ""
-"**MySQL Internal**: This allows to run an internal database server on your "
-"system. digiKam uses Unix socket for the connection."
+"To switch from SQLite to MariaDB database, go to :menuselection:`Settings --"
+"> Configure digiKam...` and then under **Database** section, select a "
+"database from the drop down list."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:103
 msgid ""
-"**MySQL Server**: Use this if your data is on a remote server and you’re on "
-"a different machine trying to access the collection."
+"**MariaDB Internal**: This allows to run an internal database server on your "
+"system. digiKam uses Unix socket for the connection."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:108
-msgid "The MySQL Internal Server"
+#: ../../setup_application/database_settings.rst:105
+msgid ""
+"**MariaDB Server**: Use this if your data is on a remote server and you’re "
+"on a different machine trying to access the collection."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:110
+msgid "The MariaDB Internal Server"
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:112
 msgid ""
 "digiKam tends to slow down when using a large collection (size **greater "
-"than 100,000 items**) hosted on a hard drive (HDD - not an SSD or NVMe "
+"than 500,000 items**) hosted on a hard drive (HDD - not an SSD or NVMe "
 "device) with the SQLite database. To avoid the delay and maintain "
-"efficiency, digiKam provides the option of using **MySQL Internal**. To be "
+"efficiency, digiKam provides the option of using **MariaDB Internal**. To be "
 "clear, this isn’t an actual server, or a public network. Instead, it is a "
 "server that runs only while the application is running."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:112
+#: ../../setup_application/database_settings.rst:114
 msgid ""
 "Internal server creates a separate database that can be accessed (only while "
 "application is running) using the command:"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:118
+#: ../../setup_application/database_settings.rst:120
 msgid ""
-"The internal server uses three MySQL Binary Tools: :file:"
-"`mysql_install_db`, :file:`mysqladmin`, and :file:`mysqld`. You can "
+"The internal server uses three MariaDB Binary Tools: :file:"
+"`mariadb_install_db`, :file:`mariadbadmin`, and :file:`mariadbd`. You can "
 "configure their locations in the configuration dialog. digiKam will try to "
 "find these binaries automatically if they’re installed on your system."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:124
-msgid "The digiKam MySQL Internal Configuration Page"
-msgstr ""
-
-#: ../../setup_application/database_settings.rst:129
-msgid "The MySQL Remote Server"
+#: ../../setup_application/database_settings.rst:126
+msgid "The digiKam MariaDB Internal Configuration Page"
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:131
-msgid ""
-"Obviously, access to a MySQL server is required to use digiKam with a remote "
-"MySQL. Alternatively, you can install MariaDB, which serves the purpose "
-"well. (Could be installed easily using `this link <https://www.cherryservers."
-"com/blog/how-to-install-and-start-using-mariadb-on-ubuntu-20-04>`_.)"
+msgid "The MariaDB Remote Server"
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:133
 msgid ""
+"Obviously, access to a MariaDB server is required to use digiKam with a "
+"remote MariaDB. You can install MariaDB easily using `this link <https://www."
+"cherryservers.com/blog/how-to-install-and-start-using-mariadb-on-"
+"ubuntu-20-04>`_."
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:135
+msgid ""
 "Follow the instructions below, if you don’t have a dedicated user account "
-"and a digiKam database already set up. Run the commands in MySQL server, "
+"and a digiKam database already set up. Run the commands in MariaDB server, "
 "after replacing *password* with the correct one."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:137
+#: ../../setup_application/database_settings.rst:139
 msgid ""
 "You can select any database name. (Here it is, *digikam*). Just remember to "
 "fill in the database name correctly in Core, Thumbs, Similarity, and Face "
 "database names from the dialog box shown below."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:149
+#: ../../setup_application/database_settings.rst:151
 msgid ""
-"If you have an enormous collection, it's recommended to start the MySQL "
-"server with `mysql --max_allowed_packet = 128M`"
+"If you have an enormous collection, it's recommended to start the MariaDB "
+"server with `mariadb --max_allowed_packet = 128M`"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:153
+#: ../../setup_application/database_settings.rst:155
 msgid ""
-"If you have problems with a MySQL server on a Ubuntu based Linux system, "
-"execute this additional command in the mysql prompt to enable the creation "
-"of MySQL triggers."
+"If you have problems with a MariaDB server on a Ubuntu based Linux system, "
+"execute this additional command in the MariaDB prompt to enable the creation "
+"of SQL triggers."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:159
+#: ../../setup_application/database_settings.rst:161
 msgid ""
 "Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` "
-"and then under the **Database** section, select MySQL Server from the drop "
+"and then under the **Database** section, select MariaDB Server from the drop "
 "down list."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:165
-msgid "The digiKam Remote Mysql Configuration Page"
+#: ../../setup_application/database_settings.rst:167
+msgid "The digiKam Remote MariaDB Configuration Page"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:167
+#: ../../setup_application/database_settings.rst:169
 msgid ""
-"Enter the IP address of your MySQL server in the **Host Name** field and "
+"Enter the IP address of your MariaDB server in the **Host Name** field and "
 "specify the correct port in the **Host Port** field (the default port is "
 "3306)."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:169
+#: ../../setup_application/database_settings.rst:171
 msgid ""
 "Set the **Core Db Name** field to the name of the first database that is "
 "used to store photo metadata."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:171
+#: ../../setup_application/database_settings.rst:173
 msgid ""
 "Set the **Thumbs Db Name** field to the name of the second database that is "
 "used to store the wavelet-compressed thumbnails. The path to store the "
@@ -360,26 +369,26 @@ msgid ""
 "large collections."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:173
+#: ../../setup_application/database_settings.rst:175
 msgid ""
 "Set the **Similarity Db Name** field to the name of the third database that "
 "is used to store the similarity finger-prints produced by the fuzzy search "
 "engine."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:175
+#: ../../setup_application/database_settings.rst:177
 msgid ""
 "Set the **Face Db Name** field to the name of the last database that is used "
 "to store the face histograms for facial recognition."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:177
+#: ../../setup_application/database_settings.rst:179
 msgid ""
-"To safely connect to the remote server, enter your MySQL identification "
+"To safely connect to the remote server, enter your MariaDB identification "
 "using the **User** and **Password** fields."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:179
+#: ../../setup_application/database_settings.rst:181
 msgid ""
 "To check whether the database connection works properly, press the **Check "
 "Connection** button. If everything works as it’s supposed to, switch to the "
@@ -389,13 +398,13 @@ msgid ""
 "the database."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:181
+#: ../../setup_application/database_settings.rst:183
 msgid ""
 "There are some tips and recommendation to obtain the best results with a "
-"remote MySQL database server."
+"remote MariaDB database server."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:183
+#: ../../setup_application/database_settings.rst:185
 msgid ""
 "With a slow network, digiKam hangs a lot of the time, especially when the "
 "album contains many items **(>1,000)**. This issue depends on network "
@@ -403,190 +412,190 @@ msgid ""
 "connections. Switching to Ethernet to solve the problem."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:185
+#: ../../setup_application/database_settings.rst:187
 msgid ""
-"Also, if you have an enormous collection, you should start the MySQL server "
-"with `mysql --max_allowed_packet = 128M`. If you’re well acquainted with "
-"using MySQL, you could also change your settings in :file:`my.ini` or :file:"
-"`~/.my.cnf` files."
+"Also, if you have an enormous collection, you should start the MariaDB "
+"server with `mariadb --max_allowed_packet = 128M`. If you’re well acquainted "
+"with using MariaDB, you could also change your settings in :file:`my.ini` "
+"or :file:`~/.my.cnf` files."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:189
+#: ../../setup_application/database_settings.rst:191
 msgid ""
-"The locale used in the Mysql server must be the same as the locale from the "
-"computer used to run digiKam to prevent problems with the common values "
+"The locale used in the MariaDB server must be the same as the locale from "
+"the computer used to run digiKam to prevent problems with the common values "
 "saved in the tables of the database."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:192
+#: ../../setup_application/database_settings.rst:194
 msgid "Database Type Criteria"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:194
+#: ../../setup_application/database_settings.rst:196
 msgid ""
 "See the summary below to choose the right database type depending on your "
 "use case."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:197
+#: ../../setup_application/database_settings.rst:199
 msgid "Storage"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:197
+#: ../../setup_application/database_settings.rst:199
 msgid "Type"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:197
+#: ../../setup_application/database_settings.rst:199
 msgid "Items"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:197
+#: ../../setup_application/database_settings.rst:199
 msgid "Remarks"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:199
-#: ../../setup_application/database_settings.rst:200
-#: ../../setup_application/database_settings.rst:213
+#: ../../setup_application/database_settings.rst:201
+#: ../../setup_application/database_settings.rst:202
+#: ../../setup_application/database_settings.rst:215
 msgid "HDD"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:199
 #: ../../setup_application/database_settings.rst:201
 #: ../../setup_application/database_settings.rst:203
 #: ../../setup_application/database_settings.rst:205
 #: ../../setup_application/database_settings.rst:207
+#: ../../setup_application/database_settings.rst:209
 msgid "SQLite"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:199
-#: ../../setup_application/database_settings.rst:205
-msgid "< 100K"
+#: ../../setup_application/database_settings.rst:201
+#: ../../setup_application/database_settings.rst:207
+msgid "< 500K"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:199
+#: ../../setup_application/database_settings.rst:201
 msgid "**Warning: WAL is mandatory.**"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:200
 #: ../../setup_application/database_settings.rst:202
 #: ../../setup_application/database_settings.rst:204
 #: ../../setup_application/database_settings.rst:206
 #: ../../setup_application/database_settings.rst:208
-msgid "MySQL-Internal"
+#: ../../setup_application/database_settings.rst:210
+msgid "MariaDB-Internal"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:200
-#: ../../setup_application/database_settings.rst:206
-msgid "> 100K"
-msgstr ""
-
-#: ../../setup_application/database_settings.rst:201
 #: ../../setup_application/database_settings.rst:202
-#: ../../setup_application/database_settings.rst:216
+#: ../../setup_application/database_settings.rst:208
+msgid "> 500K"
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:203
+#: ../../setup_application/database_settings.rst:204
+#: ../../setup_application/database_settings.rst:218
 msgid "SSD"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:201
 #: ../../setup_application/database_settings.rst:203
+#: ../../setup_application/database_settings.rst:205
 msgid "WAL is optional."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:203
-#: ../../setup_application/database_settings.rst:204
+#: ../../setup_application/database_settings.rst:205
+#: ../../setup_application/database_settings.rst:206
 msgid "NVME"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:205
-#: ../../setup_application/database_settings.rst:206
-#: ../../setup_application/database_settings.rst:222
+#: ../../setup_application/database_settings.rst:207
+#: ../../setup_application/database_settings.rst:208
+#: ../../setup_application/database_settings.rst:224
 msgid "Removable"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:205
+#: ../../setup_application/database_settings.rst:207
 msgid "**Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:206
+#: ../../setup_application/database_settings.rst:208
 msgid "**Warning: USB 3.1 minimum with NVMe drive.**"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:207
-#: ../../setup_application/database_settings.rst:208
-#: ../../setup_application/database_settings.rst:225
+#: ../../setup_application/database_settings.rst:209
+#: ../../setup_application/database_settings.rst:210
+#: ../../setup_application/database_settings.rst:227
 msgid "Network FS"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:207
+#: ../../setup_application/database_settings.rst:209
 msgid "**Prohibited: SQLite databases must be stored on local file system.**"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:208
-msgid "**Prohibited: MySQL databases must be stored on local file system.**"
+#: ../../setup_application/database_settings.rst:210
+msgid "**Prohibited: MariaDB databases must be stored on local file system.**"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:209
-#: ../../setup_application/database_settings.rst:228
+#: ../../setup_application/database_settings.rst:211
+#: ../../setup_application/database_settings.rst:230
 msgid "Remote"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:209
-msgid "MySQL-Server"
+#: ../../setup_application/database_settings.rst:211
+msgid "MariaDB-Server"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:209
-msgid "MariaDB server is supported. Gigabit Ethernet or higher is recommended."
+#: ../../setup_application/database_settings.rst:211
+msgid "Gigabit Ethernet or higher is recommended."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:215
+#: ../../setup_application/database_settings.rst:217
 msgid "Hard Disk Drive."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:218
+#: ../../setup_application/database_settings.rst:220
 msgid "Solid State Drive."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:219
+#: ../../setup_application/database_settings.rst:221
 msgid "NVMe"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:221
+#: ../../setup_application/database_settings.rst:223
 msgid "Non-Volatile Memory."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:224
+#: ../../setup_application/database_settings.rst:226
 msgid "External USB HDD/SSD/NVMe drive."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:227
+#: ../../setup_application/database_settings.rst:229
 msgid "Network File System mounted locally."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:230
+#: ../../setup_application/database_settings.rst:232
 msgid "Network server as NAS (Network Attached Storage)."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:231
+#: ../../setup_application/database_settings.rst:233
 msgid "WAL"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:233
+#: ../../setup_application/database_settings.rst:235
 msgid "Write-Ahead Lock (SQLite database only)."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:237
+#: ../../setup_application/database_settings.rst:239
 msgid ""
 "Refer the :ref:`Digital Asset Management <storage_deterioration>` chapter "
 "for more details about media and data protection."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:239
+#: ../../setup_application/database_settings.rst:241
 msgid ""
 "Also refer to the :ref:`Collection Settings <collections_settings>` chapter "
 "for more details about how to configure your collections depending on your "
 "storage policy."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:243
+#: ../../setup_application/database_settings.rst:245
 msgid ""
 "If you share the same **Removable** media for host databases and/or "
 "collections between different computers, you must have the same kind of "
@@ -595,7 +604,7 @@ msgid ""
 "with the database schema."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:245
+#: ../../setup_application/database_settings.rst:247
 msgid ""
 "If you use a common **Remote** server to host *databases and collections*, "
 "you must use the same digiKam version everywhere to prevent conflicts with "
@@ -603,7 +612,7 @@ msgid ""
 "cannot access a common database and collection at the same time."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:247
+#: ../../setup_application/database_settings.rst:249
 msgid ""
 "If you use a common **Remote** server to host collections, with the "
 "databases stored on individual computers, then different versions of digiKam "
@@ -613,36 +622,37 @@ msgid ""
 "Setup** page."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:252
+#: ../../setup_application/database_settings.rst:254
 msgid "Database Migration"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:254
+#: ../../setup_application/database_settings.rst:256
 msgid ""
 "digiKam comes up with an exclusive tool named **Database Migration**, that "
 "allows users to migrate their data. For example, the migration tool can help "
-"you move all your data from a SQLite database into a MySQL database, or vice "
-"versa."
+"you move all your data from a SQLite database into a MariaDB database, or "
+"vice versa."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:256
+#: ../../setup_application/database_settings.rst:258
 msgid ""
 "To migrate to another database, go to :menuselection:`Settings --> Database "
 "Migration...`. A dialog box appears:"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:262
+#: ../../setup_application/database_settings.rst:264
 msgid "The digiKam Database Migration Tool"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:264
+#: ../../setup_application/database_settings.rst:266
 msgid ""
 "Now choose the appropriate database types you want to convert to. Finally, "
-"click on **Migrate** button to convert the database from SQLite to MySQL (or "
-"vice versa). Depending on the database size, this operation can take a while."
+"click on **Migrate** button to convert the database from SQLite to MariaDB "
+"(or vice versa). Depending on the database size, this operation can take a "
+"while."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:268
+#: ../../setup_application/database_settings.rst:270
 msgid ""
 "Only the digiKam **Core** database will be migrated by this conversion "
 "process. All of the other databases needs to be rebuilt using post-"
@@ -652,18 +662,18 @@ msgid ""
 "Training Data**."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:273
+#: ../../setup_application/database_settings.rst:275
 msgid "Database Backup Recommendation"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:275
+#: ../../setup_application/database_settings.rst:277
 msgid ""
 "For security reasons, planning a database backup using crontab over the "
 "network can help against device failures. A NAS or an external drive can "
 "also be used for backup."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:277
+#: ../../setup_application/database_settings.rst:279
 msgid ""
 "Each database can be renamed with a different, unique name. This allows "
 "users to backup only what is needed. For instance, renaming **Core** "
@@ -672,18 +682,18 @@ msgid ""
 "Recognition** databases can always be regenerated from scratch."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:279
+#: ../../setup_application/database_settings.rst:281
 msgid ""
 "The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will "
 "explain how to maintain the database contents and how to synchronize the "
 "collections with information in the databases (and vice versa)."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:284
+#: ../../setup_application/database_settings.rst:286
 msgid "Database Statistics"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:286
+#: ../../setup_application/database_settings.rst:288
 msgid ""
 "digiKam provides a unique tool to show the statistics from your collections. "
 "It includes count of images, videos (including individual count by image "
@@ -691,12 +701,12 @@ msgid ""
 "QMYSQL) and the **Database Path** (where your collection is located)."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:288
+#: ../../setup_application/database_settings.rst:290
 msgid ""
 "You can view your statistics by going to :menuselection:`Help --> Database "
 "Statistics...`. A dialog box like this will appear:"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:295
+#: ../../setup_application/database_settings.rst:297
 msgid "The digiKam Database Statistics Dialog"
 msgstr ""
