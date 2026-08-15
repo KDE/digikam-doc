@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-13 02:08+0000\n"
-"PO-Revision-Date: 2025-08-25 10:15+0200\n"
+"POT-Creation-Date: 2026-08-14 02:06+0000\n"
+"PO-Revision-Date: 2026-08-13 10:46+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -16,25 +16,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.9\n"
 
 #: ../../setup_application/database_settings.rst:-1
 msgid "digiKam Database Settings"
 msgstr "digiKam nastavitve podatkovne zbirke"
 
 #: ../../setup_application/database_settings.rst:-1
-#, fuzzy
-#| msgid ""
-#| "digiKam, documentation, user manual, photo management, open source, free, "
-#| "learn, easy, database, setup, mysql, mariadb, sqlite, migration, local, "
-#| "remote, server"
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, database, setup, mariadb, sqlite, migration, local, remote, "
 "server"
 msgstr ""
 "digiKam, dokumentacija, uporabniški priročnik, upravljanje fotografij, "
-"odprta koda, prosto, učenje, enostavno, zbirka podatkov, nastavitev, mysql, "
+"odprta koda, prosto, učenje, enostavno, zbirka podatkov, nastavitev,  "
 "mariadb, sqlite, selitev, lokalno, oddaljeno, strežnik"
 
 #: ../../setup_application/database_settings.rst:14
@@ -66,17 +61,6 @@ msgid "The SQLite Database"
 msgstr "Baza podatkov Sqlite"
 
 #: ../../setup_application/database_settings.rst:31
-#, fuzzy
-#| msgid ""
-#| "`SQLite <https://sqlite.org/>`_ is a relational database management "
-#| "system, written in the C programming library. SQLite is not directly "
-#| "comparable to client/server SQL database engines such as MySQL, Oracle or "
-#| "PostgreSQL. Rather, it is an SQL database engine that is embedded in an "
-#| "end program. SQLite reads and writes directly to ordinary disk files. "
-#| "SQLite is almost always the best solution for device-local storage with "
-#| "low write-concurrency and less than a terabyte of content. SQLite is fast "
-#| "and reliable and it requires no configuration or maintenance. It keeps "
-#| "things simple. SQLite \"just works\"."
 msgid ""
 "`SQLite <https://sqlite.org/>`_ is a relational database management system, "
 "written in the C programming library. SQLite is not directly comparable to "
@@ -89,7 +73,7 @@ msgid ""
 msgstr ""
 "`SQLite <https://sqlite.org/>`_ je sistem za upravljanje relacijskih baz "
 "podatkov, napisan v programski knjižnici C. SQLite ni neposredno primerljiv "
-"s strežniki baze podatkov odjemalec/strežnik SQL, kot so MySQL, Oracle ali "
+"s strežniki baze podatkov odjemalec/strežnik SQL, kot so MariaDB ali "
 "PostgreSQL. Namesto tega je mehanizem baze podatkov SQL, ki je vdelan v "
 "končni program. SQLite bere in piše neposredno na navadne diskovne datoteke. "
 "SQLite je skoraj vedno najboljša rešitev za lokalno shranjevanje v napravi z "
@@ -213,16 +197,12 @@ msgstr ""
 "izboljšanje zmogljivosti."
 
 #: ../../setup_application/database_settings.rst:66
-#, fuzzy
-#| msgid "The MySQL Database"
 msgid "The MariaDB Database"
-msgstr "Baza podatkov MySQL"
+msgstr "Baza podatkov MariaDB"
 
 #: ../../setup_application/database_settings.rst:71
-#, fuzzy
-#| msgid "MySQL Versus SQLite"
 msgid "MariaDB Versus SQLite"
-msgstr "MySQL proti SQLite"
+msgstr "MariaDB proti SQLite"
 
 #: ../../setup_application/database_settings.rst:73
 msgid ""
@@ -278,14 +258,6 @@ msgid "Compatible and easy to migrate."
 msgstr "Združljiv in enostaven za selitev."
 
 #: ../../setup_application/database_settings.rst:89
-#, fuzzy
-#| msgid ""
-#| "digiKam also provides support for the popular MySQL database engine. Of "
-#| "course, you might wonder why you’d want to switch to MySQL when SQLite "
-#| "already does a good job of managing the data? MySQL offers many "
-#| "advantages for storing digiKam data, especially when collections include "
-#| "**more than 100,000 items**. With such large collections, SQLite "
-#| "introduces latency which slows down the application."
 msgid ""
 "digiKam provides support for the popular MariaDB database engine. Of course, "
 "you might wonder why you’d want to switch to MariaDB when SQLite already "
@@ -295,18 +267,12 @@ msgid ""
 "which slows down the application."
 msgstr ""
 "digiKam nudi tudi podporo za priljubljeno bazo podatkov MySQL. Seveda se "
-"morda sprašujete, zakaj želite preklopiti na MySQL, ko pa SQLite že dobro "
-"upravlja podatke? MySQL ponuja veliko prednosti pri shranjevanju podatkov "
-"digiKam, zlasti kadar zbirke vključujejo **več kot 100.000 elementov**. S "
+"morda sprašujete, zakaj želite preklopiti na MariaDB, ko pa SQLite že dobro "
+"upravlja podatke? MariaDB ponuja veliko prednosti pri shranjevanju podatkov "
+"digiKam, zlasti kadar zbirke vključujejo **več kot 500.000 elementov**. S "
 "tako velikimi zbirkami SQLite uvaja zakasnitev, ki upočasni aplikacijo."
 
 #: ../../setup_application/database_settings.rst:93
-#, fuzzy
-#| msgid ""
-#| "With **WAL** option enabled, SQLite can be easily used for more than "
-#| "100,000 items especially with an SSD or NVMe storage. It may be even "
-#| "faster than MySQL and more stable. See `this page <https://www.sqlite.org/"
-#| "wal.html>`_ for technical details."
 msgid ""
 "With **WAL** option enabled, SQLite can be easily used for more than 500,000 "
 "items especially with an SSD or NVMe storage. It may be even faster than "
@@ -315,29 +281,33 @@ msgid ""
 "of items without problem with this configuration."
 msgstr ""
 "Z omogočeno možnostjo **WAL** lahko SQLite preprosto uporabite za več kot "
-"100.000 elementov, zlasti s SSD ali NVMe shrambo. Morda je celo hitrejši od "
-"MySQL in bolj stabilen. Oglejte si `to stran <https://www.sqlite.org/wal."
-"html>`_ za tehnične podrobnosti."
+"500.000 elementov, zlasti s SSD ali NVMe shrambo. Morda je celo hitrejši od "
+"MariaDB in bolj stabilen. Oglejte si `to stran <https://www.sqlite.org/wal."
+"html>`_ za tehnične podrobnosti. Dolgoletni uporabniki digiKama poročajo, da "
+"brez težav upravljajo več kot milijon elementov s to konfiguracijo."
 
 #: ../../setup_application/database_settings.rst:97
+#, fuzzy
+#| msgid ""
+#| "If you use a former MySQL database created with an older digiKam version, "
+#| "we hightly recommend to switch to MariaDB. You can migrate to MariaDB "
+#| "following `this tutorial <https://mariadb.com/docs/server/server-"
+#| "management/install-and-upgrade-mariadb/migrating-to-mariadb/moving-from-"
+#| "mysql/mysql-to-mariadb-migration-the-master-guide>`_."
 msgid ""
 "If you use a former MySQL database created with an older digiKam version, we "
-"hightly recommend to switch to MariaDB. You can migrate to MariaDB following "
+"highly recommend to switch to MariaDB. You can migrate to MariaDB following "
 "`this tutorial <https://mariadb.com/docs/server/server-management/install-"
 "and-upgrade-mariadb/migrating-to-mariadb/moving-from-mysql/mysql-to-mariadb-"
 "migration-the-master-guide>`_."
 msgstr ""
+"Če uporabljate prejšnjo podatkovno bazo MySQL, ustvarjeno s starejšo "
+"različico digiKama, vam toplo priporočamo, da preklopite na MariaDB. Na "
+"MariaDB lahko migrirate po `tej vadnici <https://mariadb.com/docs/server/"
+"server-management/install-and-upgrade-mariadb/migrating-to-mariadb/moving-"
+"from-mysql/mysql-to-mariadb-migration-the-master-guide>`_."
 
 #: ../../setup_application/database_settings.rst:99
-#, fuzzy
-#| msgid ""
-#| "Using MySQL as digiKam’s database back-end allows you to store the data "
-#| "on local as well as remote servers. MySQL Internal can be used to replace "
-#| "the local SQLite storage, and MySQL Server can be used on media stored on "
-#| "a remote server. This way, you can use multiple digiKam installations "
-#| "(for instance, on your notebook and PC) to access and manage your photo "
-#| "collections. You can also use MySQL tools to backup and analyze digiKam’s "
-#| "data."
 msgid ""
 "Using MariaDB as digiKam’s database back-end allows you to store the data on "
 "local as well as remote servers. MariaDB Internal can be used to replace the "
@@ -347,69 +317,46 @@ msgid ""
 "collections. You can also use MariaDB tools to backup and analyze digiKam’s "
 "data."
 msgstr ""
-"Uporaba MySQL kot zaledne baze podatkov digiKam vam omogoča shranjevanje "
-"podatkov na lokalnih in oddaljenih strežnikih. MySQL Internal je mogoče "
-"uporabiti za zamenjavo lokalnega pomnilnika SQLite, MySQL Server pa je "
-"mogoče uporabiti na medijih, shranjenih na oddaljenem strežniku. Na ta način "
-"lahko uporabite več namestitev digiKam (na primer na vašem prenosniku in "
-"osebnem računalniku) za dostop in upravljanje vaših zbirk fotografij. Za "
-"varnostno kopiranje in analizo digiKamovih podatkov lahko uporabite tudi "
-"orodja MySQL."
+"Uporaba MariaDB kot zalednega sistema za podatkovno bazo digiKam vam omogoča "
+"shranjevanje podatkov na lokalnih in oddaljenih strežnikih. MariaDB Internal "
+"se lahko uporablja za nadomestitev lokalnega pomnilnika SQLite, MariaDB "
+"Server pa za medije, shranjene na oddaljenem strežniku. Na ta način lahko za "
+"dostop do svojih zbirk fotografij in njihovo upravljanje uporabite več "
+"namestitev digiKam (na primer na prenosnem in namiznem računalniku). Orodja "
+"MariaDB lahko uporabite tudi za varnostno kopiranje in analizo podatkov "
+"digiKama."
 
 #: ../../setup_application/database_settings.rst:101
-#, fuzzy
-#| msgid ""
-#| "To switch from SQLite to MySQL database, go to :menuselection:`Settings --"
-#| "> Configure digiKam...` and then under **Database** section, select a "
-#| "database from the drop down list."
 msgid ""
 "To switch from SQLite to MariaDB database, go to :menuselection:`Settings --"
 "> Configure digiKam...` and then under **Database** section, select a "
 "database from the drop down list."
 msgstr ""
-"Če želite preklopiti iz SQLite v bazo podatkov MySQL, pojdite na :"
-"menuselection:`Nastavi --> Konfiguriraj digiKam...` in nato pod razdelkom "
-"**Podatkovna baza** izberite bazo podatkov s spustnega seznama."
+"Če želite preklopiti iz baze podatkov SQLite v bazo podatkov MariaDB, "
+"pojdite na :menuselection:`Nastavitve --> Konfiguriraj digiKam...` in nato v "
+"razdelku **Baza podatkov** izberite bazo podatkov s spustnega seznama."
 
 #: ../../setup_application/database_settings.rst:103
-#, fuzzy
-#| msgid ""
-#| "**MySQL Internal**: This allows to run an internal database server on "
-#| "your system. digiKam uses Unix socket for the connection."
 msgid ""
 "**MariaDB Internal**: This allows to run an internal database server on your "
 "system. digiKam uses Unix socket for the connection."
 msgstr ""
-"**MySQL Internal**: To omogoča zagon notranjega strežnika baze podatkov na "
+"**MariaDB Internal**: To omogoča zagon notranjega strežnika baze podatkov na "
 "vašem sistemu. digiKam za povezavo uporablja vtičnico Unix."
 
 #: ../../setup_application/database_settings.rst:105
-#, fuzzy
-#| msgid ""
-#| "**MySQL Server**: Use this if your data is on a remote server and you’re "
-#| "on a different machine trying to access the collection."
 msgid ""
 "**MariaDB Server**: Use this if your data is on a remote server and you’re "
 "on a different machine trying to access the collection."
 msgstr ""
-"**MySQL Server**: Uporabite to, če so vaši podatki na oddaljenem strežniku "
+"**MariaDB Server**: Uporabite to, če so vaši podatki na oddaljenem strežniku "
 "in ste na drugem računalniku in poskušate dostopati do zbirke."
 
 #: ../../setup_application/database_settings.rst:110
-#, fuzzy
-#| msgid "The MySQL Internal Server"
 msgid "The MariaDB Internal Server"
-msgstr "Notranji strežnik MySQL"
+msgstr "Notranji strežnik MariaDB"
 
 #: ../../setup_application/database_settings.rst:112
-#, fuzzy
-#| msgid ""
-#| "digiKam tends to slow down when using a large collection (size **greater "
-#| "than 100,000 items**) hosted on a hard drive (HDD - not an SSD or NVMe "
-#| "device) with the SQLite database. To avoid the delay and maintain "
-#| "efficiency, digiKam provides the option of using **MySQL Internal**. To "
-#| "be clear, this isn’t an actual server, or a public network. Instead, it "
-#| "is a server that runs only while the application is running."
 msgid ""
 "digiKam tends to slow down when using a large collection (size **greater "
 "than 500,000 items**) hosted on a hard drive (HDD - not an SSD or NVMe "
@@ -419,11 +366,11 @@ msgid ""
 "server that runs only while the application is running."
 msgstr ""
 "digiKam se ponavadi upočasni, ko uporablja veliko zbirko (velikost **več kot "
-"100.000 elementov**), ki gostuje na trdem disku (HDD - ne na napravi SSD ali "
+"500.000 elementov**), ki gostuje na trdem disku (HDD - ne na napravi SSD ali "
 "NVMe) z bazo podatkov SQLite. Da bi se izognili zamudi in ohranili "
-"učinkovitost, digiKam nudi možnost uporabe **MySQL Internal**. Da bo jasno, "
-"to ni dejanski strežnik ali javno omrežje. Namesto tega je strežnik, ki teče "
-"le med izvajanjem aplikacije."
+"učinkovitost, digiKam nudi možnost uporabe **MariaDB Internal**. Da bo "
+"jasno, to ni dejanski strežnik ali javno omrežje. Namesto tega je strežnik, "
+"ki teče le med izvajanjem aplikacije."
 
 #: ../../setup_application/database_settings.rst:114
 msgid ""
@@ -434,69 +381,47 @@ msgstr ""
 "dostopati (samo med izvajanjem aplikacije) z ukazom:"
 
 #: ../../setup_application/database_settings.rst:120
-#, fuzzy
-#| msgid ""
-#| "The internal server uses three MySQL Binary Tools: :file:"
-#| "`mysql_install_db`, :file:`mysqladmin`, and :file:`mysqld`. You can "
-#| "configure their locations in the configuration dialog. digiKam will try "
-#| "to find these binaries automatically if they’re installed on your system."
 msgid ""
 "The internal server uses three MariaDB Binary Tools: :file:"
 "`mariadb_install_db`, :file:`mariadbadmin`, and :file:`mariadbd`. You can "
 "configure their locations in the configuration dialog. digiKam will try to "
 "find these binaries automatically if they’re installed on your system."
 msgstr ""
-"Notranji strežnik uporablja tri binarna orodja MySQL: :file:"
-"`mysql_install_db`, :file:`mysqladmin` in :file:`mysqld`. Njihove lokacije "
-"lahko konfigurirate v konfiguracijskem pogovornem oknu. digiKam bo poskušal "
-"samodejno najti te binarne datoteke, če so nameščene v vašem sistemu."
+"Notranji strežnik uporablja tri binarna orodja MariaDB: :file:"
+"`mariadb_install_db`, :file:`mariadbadmin` in :file:`mariadbd`. Njihove "
+"lokacije lahko konfigurirate v pogovornem oknu za konfiguracijo. digiKam bo "
+"poskušal samodejno najti te binarne datoteke, če so nameščene v vašem "
+"sistemu."
 
 #: ../../setup_application/database_settings.rst:126
-#, fuzzy
-#| msgid "The digiKam MySQL Internal Configuration Page"
 msgid "The digiKam MariaDB Internal Configuration Page"
-msgstr "digiKam notranja stran konfiguracije MySQL"
+msgstr "digiKam notranja stran konfiguracije MariaDB"
 
 #: ../../setup_application/database_settings.rst:131
-#, fuzzy
-#| msgid "The MySQL Remote Server"
 msgid "The MariaDB Remote Server"
-msgstr "Oddaljeni strežnik MySQL"
+msgstr "Oddaljeni strežnik MariaDB"
 
 #: ../../setup_application/database_settings.rst:133
-#, fuzzy
-#| msgid ""
-#| "Obviously, access to a MySQL server is required to use digiKam with a "
-#| "remote MySQL. Alternatively, you can install MariaDB, which serves the "
-#| "purpose well. (Could be installed easily using `this link <https://www."
-#| "cherryservers.com/blog/how-to-install-and-start-using-mariadb-on-"
-#| "ubuntu-20-04>`_.)"
 msgid ""
 "Obviously, access to a MariaDB server is required to use digiKam with a "
 "remote MariaDB. You can install MariaDB easily using `this link <https://www."
 "cherryservers.com/blog/how-to-install-and-start-using-mariadb-on-"
 "ubuntu-20-04>`_."
 msgstr ""
-"Očitno je za uporabo digiKama z oddaljenim MySQL potreben dostop do "
-"strežnika MySQL. Druga možnost je, da namestite MariaDB, ki dobro služi "
-"namenu. (Lahko ga preprosto namestite s `to povezavo <https://www."
-"cherryservers.com/blog/how-to-install-and-start-using-mariadb-on-"
-"ubuntu-20-04>`_.)"
+"Očitno je za uporabo digiKama z oddaljenim strežnikom MariaDB potreben "
+"dostop do strežnika MariaDB. MariaDB lahko preprosto namestite s pomočjo `te "
+"povezave <https://www.cherryservers.com/blog/how-to-install-and-start-using-"
+"mariadb-on-ubuntu-20-04>`_."
 
 #: ../../setup_application/database_settings.rst:135
-#, fuzzy
-#| msgid ""
-#| "Follow the instructions below, if you don’t have a dedicated user account "
-#| "and a digiKam database already set up. Run the commands in MySQL server, "
-#| "after replacing *password* with the correct one."
 msgid ""
 "Follow the instructions below, if you don’t have a dedicated user account "
 "and a digiKam database already set up. Run the commands in MariaDB server, "
 "after replacing *password* with the correct one."
 msgstr ""
 "Sledite spodnjim navodilom, če še nimate namenskega uporabniškega računa in "
-"baze podatkov digiKam. Zaženite ukaze v strežniku MySQL, potem ko zamenjate "
-"*geslo* s pravilnim."
+"baze podatkov digiKam. Zaženite ukaze v strežniku MariaDB, potem ko "
+"zamenjate *geslo* s pravilnim."
 
 #: ../../setup_application/database_settings.rst:139
 msgid ""
@@ -509,38 +434,24 @@ msgstr ""
 "Thumbs, Similarity in Facev pogovornem oknu, prikazanem spodaj."
 
 #: ../../setup_application/database_settings.rst:151
-#, fuzzy
-#| msgid ""
-#| "If you have an enormous collection, it's recommended to start the MySQL "
-#| "server with `mysql --max_allowed_packet = 128M`"
 msgid ""
 "If you have an enormous collection, it's recommended to start the MariaDB "
 "server with `mariadb --max_allowed_packet = 128M`"
 msgstr ""
-"Če imate ogromno zbirko, priporočamo, da zaženete strežnik MySQL z `mysql --"
-"max_allowed_packet = 128M`"
+"Če imate ogromno zbirko, je priporočljivo, da strežnik MariaDB zaženete z "
+"`mariadb --max_allowed_packet = 128M`."
 
 #: ../../setup_application/database_settings.rst:155
-#, fuzzy
-#| msgid ""
-#| "If you have problems with a MySQL server on a Ubuntu based Linux system, "
-#| "execute this additional command in the mysql prompt to enable the "
-#| "creation of MySQL triggers."
 msgid ""
 "If you have problems with a MariaDB server on a Ubuntu based Linux system, "
 "execute this additional command in the MariaDB prompt to enable the creation "
 "of SQL triggers."
 msgstr ""
-"Če imate težave s strežnikom MySQL v sistemu Linux, ki temelji na Ubuntu, "
-"izvedite ta dodatni ukaz v pozivu mysql, da omogočite ustvarjanje "
-"prožilnikov MySQL."
+"Če imate težave s strežnikom MariaDB v sistemu Linux, ki temelji na Ubuntu, "
+"izvedite ta dodatni ukaz v pozivu MariaDB, da omogočite ustvarjanje "
+"prožilnikov SQL."
 
 #: ../../setup_application/database_settings.rst:161
-#, fuzzy
-#| msgid ""
-#| "Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` "
-#| "and then under the **Database** section, select MySQL Server from the "
-#| "drop down list."
 msgid ""
 "Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` "
 "and then under the **Database** section, select MariaDB Server from the drop "
@@ -548,27 +459,21 @@ msgid ""
 msgstr ""
 "Zdaj v digiKamu pojdite na :menuselection:`Nastavitve --> Konfiguriraj "
 "digiKam...` in nato pod razdelkom **Baza podatkov** na spustnem seznamu "
-"izberite MySQL Server."
+"izberite MariaDB Server."
 
 #: ../../setup_application/database_settings.rst:167
-#, fuzzy
-#| msgid "The digiKam Remote Mysql Configuration Page"
 msgid "The digiKam Remote MariaDB Configuration Page"
-msgstr "digiKam stran za konfiguracijo oddaljenega Mysql"
+msgstr "digiKam stran za konfiguracijo oddaljenega strežnika MariaDB"
 
 #: ../../setup_application/database_settings.rst:169
-#, fuzzy
-#| msgid ""
-#| "Enter the IP address of your MySQL server in the **Host Name** field and "
-#| "specify the correct port in the **Host Port** field (the default port is "
-#| "3306)."
 msgid ""
 "Enter the IP address of your MariaDB server in the **Host Name** field and "
 "specify the correct port in the **Host Port** field (the default port is "
 "3306)."
 msgstr ""
-"V polje **Host Name** vnesite naslov IP vašega strežnika MySQL in v polje "
-"**Host Port** določite pravilna vrata (privzeta vrata so 3306)."
+"Vnesite IP-naslov strežnika MariaDB v polje **Host Name (Ime gostitelja)** "
+"in v polje **Host Port (Vrata gostitelja)** navedite pravilna vrata "
+"(privzeta vrata so 3306)."
 
 #: ../../setup_application/database_settings.rst:171
 msgid ""
@@ -613,16 +518,12 @@ msgstr ""
 "uporablja za shranjevanje obraznih histogramov za prepoznavanje obraza."
 
 #: ../../setup_application/database_settings.rst:179
-#, fuzzy
-#| msgid ""
-#| "To safely connect to the remote server, enter your MySQL identification "
-#| "using the **User** and **Password** fields."
 msgid ""
 "To safely connect to the remote server, enter your MariaDB identification "
 "using the **User** and **Password** fields."
 msgstr ""
-"Za varno povezavo z oddaljenim strežnikom vnesite svojo identifikacijo MySQL "
-"v polji **User** in **Password** ."
+"Za varno povezavo z oddaljenim strežnikom vnesite svojo identifikacijo "
+"MariaDB v polji **User** in **Password** ."
 
 #: ../../setup_application/database_settings.rst:181
 msgid ""
@@ -641,16 +542,12 @@ msgstr ""
 "za registracijo v zbirko podatkov."
 
 #: ../../setup_application/database_settings.rst:183
-#, fuzzy
-#| msgid ""
-#| "There are some tips and recommendation to obtain the best results with a "
-#| "remote MySQL database server."
 msgid ""
 "There are some tips and recommendation to obtain the best results with a "
 "remote MariaDB database server."
 msgstr ""
 "Obstaja nekaj nasvetov in priporočil za doseganje najboljših rezultatov z "
-"oddaljenim strežnikom baze podatkov MySQL."
+"oddaljenim strežnikom baze podatkov MariaDB."
 
 #: ../../setup_application/database_settings.rst:185
 msgid ""
@@ -665,37 +562,26 @@ msgstr ""
 "Ethernet za rešitev težave."
 
 #: ../../setup_application/database_settings.rst:187
-#, fuzzy
-#| msgid ""
-#| "Also, if you have an enormous collection, you should start the MySQL "
-#| "server with `mysql --max_allowed_packet = 128M`. If you’re well "
-#| "acquainted with using MySQL, you could also change your settings in :file:"
-#| "`my.ini` or :file:`~/.my.cnf` files."
 msgid ""
 "Also, if you have an enormous collection, you should start the MariaDB "
 "server with `mariadb --max_allowed_packet = 128M`. If you’re well acquainted "
 "with using MariaDB, you could also change your settings in :file:`my.ini` "
 "or :file:`~/.my.cnf` files."
 msgstr ""
-"Poleg tega, če imate ogromno zbirko, morate zagnati strežnik MySQL z `mysql "
-"--max_allowed_packet = 128M`. Če ste dobro seznanjeni z z uporabo MySQL "
-"lahko spremenite svoje nastavitve tudi v datotekah :file:`my.ini` ali : file:"
-"`~/.my.cnf`."
+"Če imate ogromno zbirko, morate strežnik MariaDB zagnati z `mariadb --"
+"max_allowed_packet = 128M`. Če ste dobro seznanjeni z uporabo MariaDB, lahko "
+"nastavitve spremenite tudi v datotekah :file:`my.ini` ali :file:`~/.my.cnf`."
 
 #: ../../setup_application/database_settings.rst:191
-#, fuzzy
-#| msgid ""
-#| "The locale used in the Mysql server must be the same as the locale from "
-#| "the computer used to run digiKam to prevent problems with the common "
-#| "values saved in the tables of the database."
 msgid ""
 "The locale used in the MariaDB server must be the same as the locale from "
 "the computer used to run digiKam to prevent problems with the common values "
 "saved in the tables of the database."
 msgstr ""
-"Področne nastavitve, uporabljene v strežniku Mysql, morajo biti enake "
-"področnim nastavitvam računalnika, ki se uporablja za izvajanje digiKama, da "
-"preprečite težave s skupnimi vrednostmi, shranjenimi v tabelah baze podatkov."
+"Lokalne nastavitve, uporabljene na strežniku MariaDB, morajo biti enake kot "
+"lokalne nastavitve računalnika, na katerem se izvaja digiKam, da se "
+"preprečijo težave s pogostimi vrednostmi, shranjenimi v tabelah baze "
+"podatkov."
 
 #: ../../setup_application/database_settings.rst:194
 msgid "Database Type Criteria"
@@ -742,7 +628,7 @@ msgstr "SQLite"
 #: ../../setup_application/database_settings.rst:201
 #: ../../setup_application/database_settings.rst:207
 msgid "< 500K"
-msgstr ""
+msgstr "< 500K"
 
 #: ../../setup_application/database_settings.rst:201
 msgid "**Warning: WAL is mandatory.**"
@@ -753,15 +639,13 @@ msgstr "**Opozorilo: WAL je obvezen.**"
 #: ../../setup_application/database_settings.rst:206
 #: ../../setup_application/database_settings.rst:208
 #: ../../setup_application/database_settings.rst:210
-#, fuzzy
-#| msgid "MySQL-Internal"
 msgid "MariaDB-Internal"
-msgstr "MySQL-notranje"
+msgstr "MariaDB-Internal"
 
 #: ../../setup_application/database_settings.rst:202
 #: ../../setup_application/database_settings.rst:208
 msgid "> 500K"
-msgstr ""
+msgstr "> 500K"
 
 #: ../../setup_application/database_settings.rst:203
 #: ../../setup_application/database_settings.rst:204
@@ -806,11 +690,9 @@ msgstr ""
 "datotečnem sistemu.**"
 
 #: ../../setup_application/database_settings.rst:210
-#, fuzzy
-#| msgid "**Prohibited: MySQL databases must be stored on local file system.**"
 msgid "**Prohibited: MariaDB databases must be stored on local file system.**"
 msgstr ""
-"**Prepovedano: baze podatkov MySQL morajo biti shranjene v lokalnem "
+"**Prepovedano: baze podatkov MariaDB morajo biti shranjene v lokalnem "
 "datotečnem sistemu.**"
 
 #: ../../setup_application/database_settings.rst:211
@@ -819,18 +701,12 @@ msgid "Remote"
 msgstr "Oddaljeno"
 
 #: ../../setup_application/database_settings.rst:211
-#, fuzzy
-#| msgid "MySQL-Server"
 msgid "MariaDB-Server"
-msgstr "Server MySQL"
+msgstr "Server MariaDB"
 
 #: ../../setup_application/database_settings.rst:211
-#, fuzzy
-#| msgid ""
-#| "MariaDB server is supported. Gigabit Ethernet or higher is recommended."
 msgid "Gigabit Ethernet or higher is recommended."
-msgstr ""
-"Strežnik MariaDB je podprt. Priporočen je Gigabit Ethernet ali hitrejši."
+msgstr "Priporočen je Gigabit Ethernet ali hitrejši."
 
 #: ../../setup_application/database_settings.rst:217
 msgid "Hard Disk Drive."
@@ -933,22 +809,16 @@ msgid "Database Migration"
 msgstr "Migracija baze podatkov"
 
 #: ../../setup_application/database_settings.rst:256
-#, fuzzy
-#| msgid ""
-#| "digiKam comes up with an exclusive tool named **Database Migration**, "
-#| "that allows users to migrate their data. For example, the migration tool "
-#| "can help you move all your data from a SQLite database into a MySQL "
-#| "database, or vice versa."
 msgid ""
 "digiKam comes up with an exclusive tool named **Database Migration**, that "
 "allows users to migrate their data. For example, the migration tool can help "
 "you move all your data from a SQLite database into a MariaDB database, or "
 "vice versa."
 msgstr ""
-"digiKam ponuja ekskluzivno orodje z imenom **Database Migration**, ki "
-"uporabnikom omogoča selitev svojih podatkov. Na primer, orodje za selitev "
-"vam lahko pomaga premakniti vse vaše podatke iz baze podatkov SQLite v bazo "
-"podatkov MySQL ali obratno."
+"digiKam ponuja ekskluzivno orodje z imenom **Migracija baze podatkov**, ki "
+"uporabnikom omogoča migracijo podatkov. Orodje za migracijo vam lahko na "
+"primer pomaga premakniti vse podatke iz baze podatkov SQLite v bazo podatkov "
+"MariaDB ali obratno."
 
 #: ../../setup_application/database_settings.rst:258
 msgid ""
@@ -963,12 +833,6 @@ msgid "The digiKam Database Migration Tool"
 msgstr "Orodje za selitev baze podatkov digiKam"
 
 #: ../../setup_application/database_settings.rst:266
-#, fuzzy
-#| msgid ""
-#| "Now choose the appropriate database types you want to convert to. "
-#| "Finally, click on **Migrate** button to convert the database from SQLite "
-#| "to MySQL (or vice versa). Depending on the database size, this operation "
-#| "can take a while."
 msgid ""
 "Now choose the appropriate database types you want to convert to. Finally, "
 "click on **Migrate** button to convert the database from SQLite to MariaDB "
@@ -977,7 +841,7 @@ msgid ""
 msgstr ""
 "Zdaj izberite ustrezne vrste podatkovnih baz, v katere želite pretvoriti. Na "
 "koncu kliknite gumb **Preseli**, da pretvorite bazo podatkov iz SQLite v "
-"MySQL (ali obratno). Ta operacija lahko traja nekaj časa, odvisno od "
+"MariaDB (ali obratno). Ta operacija lahko traja nekaj časa, odvisno od "
 "velikosti baze podatkov."
 
 #: ../../setup_application/database_settings.rst:270
