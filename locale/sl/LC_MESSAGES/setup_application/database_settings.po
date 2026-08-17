@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-14 02:06+0000\n"
+"POT-Creation-Date: 2026-08-16 02:03+0000\n"
 "PO-Revision-Date: 2026-08-14 06:54+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -206,22 +206,6 @@ msgstr "MariaDB proti SQLite"
 
 #: ../../setup_application/database_settings.rst:73
 msgid ""
-"`MySQL <https://en.wikipedia.org/wiki/MySQL>`_ is an open-source, relational "
-"database management system, written in C and C++. Original development of "
-"MySQL by Michael Widenius and David Axmark began in 1994. Sun Microsystems "
-"acquired MySQL in 2008, which was later acquired by Oracle in 2010. MySQL "
-"currently works on almost all system platforms (Linux, Microsoft Windows, OS "
-"X, SunOS …)."
-msgstr ""
-"`MySQL <https://en.wikipedia.org/wiki/MySQL>`_ je odprtokodni sistem za "
-"upravljanje relacijskih baz podatkov, napisan v C in C++. Prvotni razvoj "
-"MySQL sta začela Michael Widenius in David Axmark leta 1994. Sun "
-"Microsystems je leta 2008 prevzel MySQL, ki ga je kasneje leta 2010 prevzel "
-"Oracle. MySQL trenutno deluje na skoraj vseh sistemskih platformah (Linux, "
-"Microsoft Windows, OS X, SunOS …) ."
-
-#: ../../setup_application/database_settings.rst:75
-msgid ""
 "`MariaDB <https://en.wikipedia.org/wiki/MariaDB>`_ server is a community-"
 "developed fork of MySQL server. Started by core members of the original "
 "MySQL team, MariaDB actively works with outside developers to deliver the "
@@ -233,37 +217,52 @@ msgstr ""
 "da zagotovi najbolj zmogljiv, stabilen in zdravo licenciran odprti strežnik "
 "SQL v industriji."
 
-#: ../../setup_application/database_settings.rst:77
+#: ../../setup_application/database_settings.rst:75
 msgid "MariaDB use has overtaken MySQL for a few basic reasons:"
 msgstr "Uporaba MariaDB je prehitela MySQL iz nekaj osnovnih razlogov:"
 
-#: ../../setup_application/database_settings.rst:79
+#: ../../setup_application/database_settings.rst:77
 msgid "MariaDB development is more open and vibrant."
 msgstr "Razvoj MariaDB je bolj odprt in živahen."
 
-#: ../../setup_application/database_settings.rst:81
+#: ../../setup_application/database_settings.rst:78
 msgid "More cutting edge features."
 msgstr "Več vrhunskih funkcij."
 
-#: ../../setup_application/database_settings.rst:83
+#: ../../setup_application/database_settings.rst:79
 msgid "More storage engines."
 msgstr "Več mehanizmov za shranjevanje."
 
-#: ../../setup_application/database_settings.rst:85
+#: ../../setup_application/database_settings.rst:80
 msgid "Better performance."
 msgstr "Boljša zmogljivost."
 
-#: ../../setup_application/database_settings.rst:87
+#: ../../setup_application/database_settings.rst:81
 msgid "Compatible and easy to migrate."
 msgstr "Združljiv in enostaven za selitev."
 
-#: ../../setup_application/database_settings.rst:89
+#: ../../setup_application/database_settings.rst:84
+msgid ""
+"Starting with **digiKam 9.2.0**, **MySQL is no longer supported**. digiKam "
+"now exclusively supports **MariaDB** as its relational database management "
+"system for users who require a client-server database solution."
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:86
+#, fuzzy
+#| msgid ""
+#| "digiKam provides support for the popular MariaDB database engine. Of "
+#| "course, you might wonder why you’d want to switch to MariaDB when SQLite "
+#| "already does a good job of managing the data? MariaDB offers many "
+#| "advantages for storing digiKam data, especially when collections include "
+#| "**more than 500,000 items**. With such large collections, SQLite can "
+#| "introduces latency which slows down the application."
 msgid ""
 "digiKam provides support for the popular MariaDB database engine. Of course, "
 "you might wonder why you’d want to switch to MariaDB when SQLite already "
 "does a good job of managing the data? MariaDB offers many advantages for "
 "storing digiKam data, especially when collections include **more than "
-"500,000 items**. With such large collections, SQLite can introduces latency "
+"500,000 items**. With such large collections, SQLite can introduce latency "
 "which slows down the application."
 msgstr ""
 "digiKam nudi tudi podporo za priljubljeno bazo podatkov MySQL. Seveda se "
@@ -272,13 +271,20 @@ msgstr ""
 "digiKam, zlasti kadar zbirke vključujejo **več kot 500.000 elementov**. S "
 "tako velikimi zbirkami SQLite uvaja zakasnitev, ki upočasni aplikacijo."
 
-#: ../../setup_application/database_settings.rst:93
+#: ../../setup_application/database_settings.rst:90
+#, fuzzy
+#| msgid ""
+#| "With **WAL** option enabled, SQLite can be easily used for more than "
+#| "500,000 items especially with an SSD or NVMe storage. It may be even "
+#| "faster than MariaDB and more stable. See `this page <https://www.sqlite."
+#| "org/wal.html>`_ for technical details. Long time digiKam users report to "
+#| "manage more than 1M of items without problem with this configuration."
 msgid ""
 "With **WAL** option enabled, SQLite can be easily used for more than 500,000 "
-"items especially with an SSD or NVMe storage. It may be even faster than "
+"items, especially with an SSD or NVMe storage. It may even be faster than "
 "MariaDB and more stable. See `this page <https://www.sqlite.org/wal.html>`_ "
-"for technical details. Long time digiKam users report to manage more than 1M "
-"of items without problem with this configuration."
+"for technical details. Long-time digiKam users report managing more than 1M "
+"items without problems with this configuration."
 msgstr ""
 "Z omogočeno možnostjo **WAL** lahko SQLite preprosto uporabite za več kot "
 "500.000 elementov, zlasti s SSD ali NVMe shrambo. Morda je celo hitrejši od "
@@ -286,10 +292,17 @@ msgstr ""
 "html>`_ za tehnične podrobnosti. Dolgoletni uporabniki digiKama poročajo, da "
 "brez težav upravljajo več kot milijon elementov s to konfiguracijo."
 
-#: ../../setup_application/database_settings.rst:97
+#: ../../setup_application/database_settings.rst:94
+#, fuzzy
+#| msgid ""
+#| "If you use a former MySQL database created with an older digiKam version, "
+#| "we highly recommend to switch to MariaDB. You can migrate to MariaDB "
+#| "following `this tutorial <https://mariadb.com/docs/server/server-"
+#| "management/install-and-upgrade-mariadb/migrating-to-mariadb/moving-from-"
+#| "mysql/mysql-to-mariadb-migration-the-master-guide>`_."
 msgid ""
 "If you use a former MySQL database created with an older digiKam version, we "
-"highly recommend to switch to MariaDB. You can migrate to MariaDB following "
+"highly recommend migrating to MariaDB. You can migrate to MariaDB following "
 "`this tutorial <https://mariadb.com/docs/server/server-management/install-"
 "and-upgrade-mariadb/migrating-to-mariadb/moving-from-mysql/mysql-to-mariadb-"
 "migration-the-master-guide>`_."
@@ -300,7 +313,7 @@ msgstr ""
 "server-management/install-and-upgrade-mariadb/migrating-to-mariadb/moving-"
 "from-mysql/mysql-to-mariadb-migration-the-master-guide>`_."
 
-#: ../../setup_application/database_settings.rst:99
+#: ../../setup_application/database_settings.rst:96
 msgid ""
 "Using MariaDB as digiKam’s database back-end allows you to store the data on "
 "local as well as remote servers. MariaDB Internal can be used to replace the "
@@ -319,7 +332,7 @@ msgstr ""
 "MariaDB lahko uporabite tudi za varnostno kopiranje in analizo podatkov "
 "digiKama."
 
-#: ../../setup_application/database_settings.rst:101
+#: ../../setup_application/database_settings.rst:98
 msgid ""
 "To switch from SQLite to MariaDB database, go to :menuselection:`Settings --"
 "> Configure digiKam...` and then under **Database** section, select a "
@@ -329,7 +342,7 @@ msgstr ""
 "pojdite na :menuselection:`Nastavitve --> Konfiguriraj digiKam...` in nato v "
 "razdelku **Baza podatkov** izberite bazo podatkov s spustnega seznama."
 
-#: ../../setup_application/database_settings.rst:103
+#: ../../setup_application/database_settings.rst:100
 msgid ""
 "**MariaDB Internal**: This allows to run an internal database server on your "
 "system. digiKam uses Unix socket for the connection."
@@ -337,7 +350,7 @@ msgstr ""
 "**MariaDB Internal**: To omogoča zagon notranjega strežnika baze podatkov na "
 "vašem sistemu. digiKam za povezavo uporablja vtičnico Unix."
 
-#: ../../setup_application/database_settings.rst:105
+#: ../../setup_application/database_settings.rst:102
 msgid ""
 "**MariaDB Server**: Use this if your data is on a remote server and you’re "
 "on a different machine trying to access the collection."
@@ -345,11 +358,11 @@ msgstr ""
 "**MariaDB Server**: Uporabite to, če so vaši podatki na oddaljenem strežniku "
 "in ste na drugem računalniku in poskušate dostopati do zbirke."
 
-#: ../../setup_application/database_settings.rst:110
+#: ../../setup_application/database_settings.rst:107
 msgid "The MariaDB Internal Server"
 msgstr "Notranji strežnik MariaDB"
 
-#: ../../setup_application/database_settings.rst:112
+#: ../../setup_application/database_settings.rst:109
 msgid ""
 "digiKam tends to slow down when using a large collection (size **greater "
 "than 500,000 items**) hosted on a hard drive (HDD - not an SSD or NVMe "
@@ -365,7 +378,7 @@ msgstr ""
 "jasno, to ni dejanski strežnik ali javno omrežje. Namesto tega je strežnik, "
 "ki teče le med izvajanjem aplikacije."
 
-#: ../../setup_application/database_settings.rst:114
+#: ../../setup_application/database_settings.rst:111
 msgid ""
 "Internal server creates a separate database that can be accessed (only while "
 "application is running) using the command:"
@@ -373,7 +386,7 @@ msgstr ""
 "Notranji strežnik ustvari ločeno bazo podatkov, do katere je mogoče "
 "dostopati (samo med izvajanjem aplikacije) z ukazom:"
 
-#: ../../setup_application/database_settings.rst:120
+#: ../../setup_application/database_settings.rst:117
 msgid ""
 "The internal server uses three MariaDB Binary Tools: :file:"
 "`mariadb_install_db`, :file:`mariadbadmin`, and :file:`mariadbd`. You can "
@@ -386,15 +399,15 @@ msgstr ""
 "poskušal samodejno najti te binarne datoteke, če so nameščene v vašem "
 "sistemu."
 
-#: ../../setup_application/database_settings.rst:126
+#: ../../setup_application/database_settings.rst:123
 msgid "The digiKam MariaDB Internal Configuration Page"
 msgstr "digiKam notranja stran konfiguracije MariaDB"
 
-#: ../../setup_application/database_settings.rst:131
+#: ../../setup_application/database_settings.rst:128
 msgid "The MariaDB Remote Server"
 msgstr "Oddaljeni strežnik MariaDB"
 
-#: ../../setup_application/database_settings.rst:133
+#: ../../setup_application/database_settings.rst:130
 msgid ""
 "Obviously, access to a MariaDB server is required to use digiKam with a "
 "remote MariaDB. You can install MariaDB easily using `this link <https://www."
@@ -406,7 +419,7 @@ msgstr ""
 "povezave <https://www.cherryservers.com/blog/how-to-install-and-start-using-"
 "mariadb-on-ubuntu-20-04>`_."
 
-#: ../../setup_application/database_settings.rst:135
+#: ../../setup_application/database_settings.rst:132
 msgid ""
 "Follow the instructions below, if you don’t have a dedicated user account "
 "and a digiKam database already set up. Run the commands in MariaDB server, "
@@ -416,7 +429,7 @@ msgstr ""
 "baze podatkov digiKam. Zaženite ukaze v strežniku MariaDB, potem ko "
 "zamenjate *geslo* s pravilnim."
 
-#: ../../setup_application/database_settings.rst:139
+#: ../../setup_application/database_settings.rst:136
 msgid ""
 "You can select any database name. (Here it is, *digikam*). Just remember to "
 "fill in the database name correctly in Core, Thumbs, Similarity, and Face "
@@ -426,7 +439,7 @@ msgstr ""
 "zapomnite sipravilno izpolniti ime baze podatkov v imenih zbirk Core, "
 "Thumbs, Similarity in Facev pogovornem oknu, prikazanem spodaj."
 
-#: ../../setup_application/database_settings.rst:151
+#: ../../setup_application/database_settings.rst:148
 msgid ""
 "If you have an enormous collection, it's recommended to start the MariaDB "
 "server with `mariadb --max_allowed_packet = 128M`"
@@ -434,7 +447,7 @@ msgstr ""
 "Če imate ogromno zbirko, je priporočljivo, da strežnik MariaDB zaženete z "
 "`mariadb --max_allowed_packet = 128M`."
 
-#: ../../setup_application/database_settings.rst:155
+#: ../../setup_application/database_settings.rst:152
 msgid ""
 "If you have problems with a MariaDB server on a Ubuntu based Linux system, "
 "execute this additional command in the MariaDB prompt to enable the creation "
@@ -444,7 +457,7 @@ msgstr ""
 "izvedite ta dodatni ukaz v pozivu MariaDB, da omogočite ustvarjanje "
 "prožilnikov SQL."
 
-#: ../../setup_application/database_settings.rst:161
+#: ../../setup_application/database_settings.rst:158
 msgid ""
 "Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` "
 "and then under the **Database** section, select MariaDB Server from the drop "
@@ -454,11 +467,11 @@ msgstr ""
 "digiKam...` in nato pod razdelkom **Baza podatkov** na spustnem seznamu "
 "izberite MariaDB Server."
 
-#: ../../setup_application/database_settings.rst:167
+#: ../../setup_application/database_settings.rst:164
 msgid "The digiKam Remote MariaDB Configuration Page"
 msgstr "digiKam stran za konfiguracijo oddaljenega strežnika MariaDB"
 
-#: ../../setup_application/database_settings.rst:169
+#: ../../setup_application/database_settings.rst:166
 msgid ""
 "Enter the IP address of your MariaDB server in the **Host Name** field and "
 "specify the correct port in the **Host Port** field (the default port is "
@@ -468,7 +481,7 @@ msgstr ""
 "in v polje **Host Port (Vrata gostitelja)** navedite pravilna vrata "
 "(privzeta vrata so 3306)."
 
-#: ../../setup_application/database_settings.rst:171
+#: ../../setup_application/database_settings.rst:168
 msgid ""
 "Set the **Core Db Name** field to the name of the first database that is "
 "used to store photo metadata."
@@ -476,7 +489,7 @@ msgstr ""
 "Nastavite polje **Core Db Name** na ime prve zbirke podatkov, ki se "
 "uporablja za shranjevanje metapodatkov fotografij."
 
-#: ../../setup_application/database_settings.rst:173
+#: ../../setup_application/database_settings.rst:170
 msgid ""
 "Set the **Thumbs Db Name** field to the name of the second database that is "
 "used to store the wavelet-compressed thumbnails. The path to store the "
@@ -492,7 +505,7 @@ msgstr ""
 "lahko zmanjša delovanje aplikacije in povzroči časovno zakasnitev pri "
 "velikih zbirkah."
 
-#: ../../setup_application/database_settings.rst:175
+#: ../../setup_application/database_settings.rst:172
 msgid ""
 "Set the **Similarity Db Name** field to the name of the third database that "
 "is used to store the similarity finger-prints produced by the fuzzy search "
@@ -502,7 +515,7 @@ msgstr ""
 "uporablja za shranjevanje prstnih odtisov podobnosti, ki jih ustvari mehki "
 "iskalnik."
 
-#: ../../setup_application/database_settings.rst:177
+#: ../../setup_application/database_settings.rst:174
 msgid ""
 "Set the **Face Db Name** field to the name of the last database that is used "
 "to store the face histograms for facial recognition."
@@ -510,7 +523,7 @@ msgstr ""
 "Nastavite polje **Face Db Name** na ime zadnje zbirke podatkov, ki se "
 "uporablja za shranjevanje obraznih histogramov za prepoznavanje obraza."
 
-#: ../../setup_application/database_settings.rst:179
+#: ../../setup_application/database_settings.rst:176
 msgid ""
 "To safely connect to the remote server, enter your MariaDB identification "
 "using the **User** and **Password** fields."
@@ -518,7 +531,7 @@ msgstr ""
 "Za varno povezavo z oddaljenim strežnikom vnesite svojo identifikacijo "
 "MariaDB v polji **User** in **Password** ."
 
-#: ../../setup_application/database_settings.rst:181
+#: ../../setup_application/database_settings.rst:178
 msgid ""
 "To check whether the database connection works properly, press the **Check "
 "Connection** button. If everything works as it’s supposed to, switch to the "
@@ -534,7 +547,7 @@ msgstr ""
 "podatki iz fotografij. To lahko traja nekaj časa, če imate veliko elementov "
 "za registracijo v zbirko podatkov."
 
-#: ../../setup_application/database_settings.rst:183
+#: ../../setup_application/database_settings.rst:180
 msgid ""
 "There are some tips and recommendation to obtain the best results with a "
 "remote MariaDB database server."
@@ -542,7 +555,7 @@ msgstr ""
 "Obstaja nekaj nasvetov in priporočil za doseganje najboljših rezultatov z "
 "oddaljenim strežnikom baze podatkov MariaDB."
 
-#: ../../setup_application/database_settings.rst:185
+#: ../../setup_application/database_settings.rst:182
 msgid ""
 "With a slow network, digiKam hangs a lot of the time, especially when the "
 "album contains many items **(>1,000)**. This issue depends on network "
@@ -554,7 +567,7 @@ msgstr ""
 "primer, težavo je bilo mogoče ponoviti z uporabo povezav Wifi. Preklop na "
 "Ethernet za rešitev težave."
 
-#: ../../setup_application/database_settings.rst:187
+#: ../../setup_application/database_settings.rst:184
 msgid ""
 "Also, if you have an enormous collection, you should start the MariaDB "
 "server with `mariadb --max_allowed_packet = 128M`. If you’re well acquainted "
@@ -565,7 +578,7 @@ msgstr ""
 "max_allowed_packet = 128M`. Če ste dobro seznanjeni z uporabo MariaDB, lahko "
 "nastavitve spremenite tudi v datotekah :file:`my.ini` ali :file:`~/.my.cnf`."
 
-#: ../../setup_application/database_settings.rst:191
+#: ../../setup_application/database_settings.rst:188
 msgid ""
 "The locale used in the MariaDB server must be the same as the locale from "
 "the computer used to run digiKam to prevent problems with the common values "
@@ -576,11 +589,11 @@ msgstr ""
 "preprečijo težave s pogostimi vrednostmi, shranjenimi v tabelah baze "
 "podatkov."
 
-#: ../../setup_application/database_settings.rst:194
+#: ../../setup_application/database_settings.rst:191
 msgid "Database Type Criteria"
 msgstr "Kriteriji tipa baze podatkov"
 
-#: ../../setup_application/database_settings.rst:196
+#: ../../setup_application/database_settings.rst:193
 msgid ""
 "See the summary below to choose the right database type depending on your "
 "use case."
@@ -588,156 +601,156 @@ msgstr ""
 "Glejte spodnji povzetek, da izberete pravo vrsto baze podatkov glede na "
 "primere uporabe."
 
-#: ../../setup_application/database_settings.rst:199
+#: ../../setup_application/database_settings.rst:196
 msgid "Storage"
 msgstr "Shranjevanje"
 
-#: ../../setup_application/database_settings.rst:199
+#: ../../setup_application/database_settings.rst:196
 msgid "Type"
 msgstr "Vrsta"
 
-#: ../../setup_application/database_settings.rst:199
+#: ../../setup_application/database_settings.rst:196
 msgid "Items"
 msgstr "Predmeti"
 
-#: ../../setup_application/database_settings.rst:199
+#: ../../setup_application/database_settings.rst:196
 msgid "Remarks"
 msgstr "Opombe"
 
-#: ../../setup_application/database_settings.rst:201
-#: ../../setup_application/database_settings.rst:202
-#: ../../setup_application/database_settings.rst:215
+#: ../../setup_application/database_settings.rst:198
+#: ../../setup_application/database_settings.rst:199
+#: ../../setup_application/database_settings.rst:212
 msgid "HDD"
 msgstr "HDD"
 
-#: ../../setup_application/database_settings.rst:201
-#: ../../setup_application/database_settings.rst:203
-#: ../../setup_application/database_settings.rst:205
-#: ../../setup_application/database_settings.rst:207
-#: ../../setup_application/database_settings.rst:209
+#: ../../setup_application/database_settings.rst:198
+#: ../../setup_application/database_settings.rst:200
+#: ../../setup_application/database_settings.rst:202
+#: ../../setup_application/database_settings.rst:204
+#: ../../setup_application/database_settings.rst:206
 msgid "SQLite"
 msgstr "SQLite"
 
-#: ../../setup_application/database_settings.rst:201
-#: ../../setup_application/database_settings.rst:207
+#: ../../setup_application/database_settings.rst:198
+#: ../../setup_application/database_settings.rst:204
 msgid "< 500K"
 msgstr "< 500K"
 
-#: ../../setup_application/database_settings.rst:201
+#: ../../setup_application/database_settings.rst:198
 msgid "**Warning: WAL is mandatory.**"
 msgstr "**Opozorilo: WAL je obvezen.**"
 
-#: ../../setup_application/database_settings.rst:202
-#: ../../setup_application/database_settings.rst:204
-#: ../../setup_application/database_settings.rst:206
-#: ../../setup_application/database_settings.rst:208
-#: ../../setup_application/database_settings.rst:210
+#: ../../setup_application/database_settings.rst:199
+#: ../../setup_application/database_settings.rst:201
+#: ../../setup_application/database_settings.rst:203
+#: ../../setup_application/database_settings.rst:205
+#: ../../setup_application/database_settings.rst:207
 msgid "MariaDB-Internal"
 msgstr "MariaDB-Internal"
 
-#: ../../setup_application/database_settings.rst:202
-#: ../../setup_application/database_settings.rst:208
+#: ../../setup_application/database_settings.rst:199
+#: ../../setup_application/database_settings.rst:205
 msgid "> 500K"
 msgstr "> 500K"
 
-#: ../../setup_application/database_settings.rst:203
-#: ../../setup_application/database_settings.rst:204
-#: ../../setup_application/database_settings.rst:218
+#: ../../setup_application/database_settings.rst:200
+#: ../../setup_application/database_settings.rst:201
+#: ../../setup_application/database_settings.rst:215
 msgid "SSD"
 msgstr "SSD"
 
-#: ../../setup_application/database_settings.rst:203
-#: ../../setup_application/database_settings.rst:205
+#: ../../setup_application/database_settings.rst:200
+#: ../../setup_application/database_settings.rst:202
 msgid "WAL is optional."
 msgstr "WAL ni obvezen."
 
-#: ../../setup_application/database_settings.rst:205
-#: ../../setup_application/database_settings.rst:206
+#: ../../setup_application/database_settings.rst:202
+#: ../../setup_application/database_settings.rst:203
 msgid "NVME"
 msgstr "NVME"
 
-#: ../../setup_application/database_settings.rst:207
-#: ../../setup_application/database_settings.rst:208
-#: ../../setup_application/database_settings.rst:224
+#: ../../setup_application/database_settings.rst:204
+#: ../../setup_application/database_settings.rst:205
+#: ../../setup_application/database_settings.rst:221
 msgid "Removable"
 msgstr "Odstranljivo"
 
-#: ../../setup_application/database_settings.rst:207
+#: ../../setup_application/database_settings.rst:204
 msgid "**Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**"
 msgstr "**Opozorilo: WAL je obvezen. Najmanj USB 3.1 s pogonom NVMe.**"
 
-#: ../../setup_application/database_settings.rst:208
+#: ../../setup_application/database_settings.rst:205
 msgid "**Warning: USB 3.1 minimum with NVMe drive.**"
 msgstr "**Opozorilo: najmanj USB 3.1 s pogonom NVMe.**"
 
-#: ../../setup_application/database_settings.rst:209
-#: ../../setup_application/database_settings.rst:210
-#: ../../setup_application/database_settings.rst:227
+#: ../../setup_application/database_settings.rst:206
+#: ../../setup_application/database_settings.rst:207
+#: ../../setup_application/database_settings.rst:224
 msgid "Network FS"
 msgstr "Omrežni FS"
 
-#: ../../setup_application/database_settings.rst:209
+#: ../../setup_application/database_settings.rst:206
 msgid "**Prohibited: SQLite databases must be stored on local file system.**"
 msgstr ""
 "**Prepovedano: baze podatkov SQLite morajo biti shranjene v lokalnem "
 "datotečnem sistemu.**"
 
-#: ../../setup_application/database_settings.rst:210
+#: ../../setup_application/database_settings.rst:207
 msgid "**Prohibited: MariaDB databases must be stored on local file system.**"
 msgstr ""
 "**Prepovedano: baze podatkov MariaDB morajo biti shranjene v lokalnem "
 "datotečnem sistemu.**"
 
-#: ../../setup_application/database_settings.rst:211
-#: ../../setup_application/database_settings.rst:230
+#: ../../setup_application/database_settings.rst:208
+#: ../../setup_application/database_settings.rst:227
 msgid "Remote"
 msgstr "Oddaljeno"
 
-#: ../../setup_application/database_settings.rst:211
+#: ../../setup_application/database_settings.rst:208
 msgid "MariaDB-Server"
 msgstr "Server MariaDB"
 
-#: ../../setup_application/database_settings.rst:211
+#: ../../setup_application/database_settings.rst:208
 msgid "Gigabit Ethernet or higher is recommended."
 msgstr "Priporočen je Gigabit Ethernet ali hitrejši."
 
-#: ../../setup_application/database_settings.rst:217
+#: ../../setup_application/database_settings.rst:214
 msgid "Hard Disk Drive."
 msgstr "Trdi disk."
 
-#: ../../setup_application/database_settings.rst:220
+#: ../../setup_application/database_settings.rst:217
 msgid "Solid State Drive."
 msgstr "Solid State Drive."
 
-#: ../../setup_application/database_settings.rst:221
+#: ../../setup_application/database_settings.rst:218
 msgid "NVMe"
 msgstr "NVMe"
 
-#: ../../setup_application/database_settings.rst:223
+#: ../../setup_application/database_settings.rst:220
 msgid "Non-Volatile Memory."
 msgstr "Trajni pomnilnik."
 
-#: ../../setup_application/database_settings.rst:226
+#: ../../setup_application/database_settings.rst:223
 msgid "External USB HDD/SSD/NVMe drive."
 msgstr "Zunanji pogon USB HDD/SDD/NVMe."
 
-#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:226
 msgid "Network File System mounted locally."
 msgstr "Omrežni datotečni sistem nameščen lokalno."
 
-#: ../../setup_application/database_settings.rst:232
+#: ../../setup_application/database_settings.rst:229
 msgid "Network server as NAS (Network Attached Storage)."
 msgstr "Omrežni strežnik kot NAS (Network Attached Storage)."
 
-#: ../../setup_application/database_settings.rst:233
+#: ../../setup_application/database_settings.rst:230
 msgid "WAL"
 msgstr "WAL"
 
-#: ../../setup_application/database_settings.rst:235
+#: ../../setup_application/database_settings.rst:232
 msgid "Write-Ahead Lock (SQLite database only)."
 msgstr "Zaklepanje vnaprejšnjega pisanja (samo baza podatkov SQLite)."
 
-#: ../../setup_application/database_settings.rst:239
+#: ../../setup_application/database_settings.rst:236
 msgid ""
 "Refer the :ref:`Digital Asset Management <storage_deterioration>` chapter "
 "for more details about media and data protection."
@@ -745,7 +758,7 @@ msgstr ""
 "Glejte to :ref:`poglavje o digitalnem upravljanju imetij "
 "<storage_deterioration>` za več podrobnosti o zaščiti medijev in podatkov."
 
-#: ../../setup_application/database_settings.rst:241
+#: ../../setup_application/database_settings.rst:238
 msgid ""
 "Also refer to the :ref:`Collection Settings <collections_settings>` chapter "
 "for more details about how to configure your collections depending on your "
@@ -755,7 +768,7 @@ msgstr ""
 "podrobnosti o tem, kako konfigurirati svoje zbirke glede na vašo politiko "
 "shranjevanja."
 
-#: ../../setup_application/database_settings.rst:245
+#: ../../setup_application/database_settings.rst:242
 msgid ""
 "If you share the same **Removable** media for host databases and/or "
 "collections between different computers, you must have the same kind of "
@@ -769,7 +782,7 @@ msgstr ""
 "razrešitev poti) in isto različico digiKama povsod, da preprečite konflikte "
 "s shemo baze podatkov."
 
-#: ../../setup_application/database_settings.rst:247
+#: ../../setup_application/database_settings.rst:244
 msgid ""
 "If you use a common **Remote** server to host *databases and collections*, "
 "you must use the same digiKam version everywhere to prevent conflicts with "
@@ -781,7 +794,7 @@ msgstr ""
 "konflikte s shemo baze podatkov. Računalniki, ki izvajajo različne primerke "
 "digiKama, ne morejo dostopati do skupne podatkovne baze in zbirke hkrati."
 
-#: ../../setup_application/database_settings.rst:249
+#: ../../setup_application/database_settings.rst:246
 msgid ""
 "If you use a common **Remote** server to host collections, with the "
 "databases stored on individual computers, then different versions of digiKam "
@@ -797,11 +810,11 @@ msgstr ""
 "metapodatkov datoteke, če ste vklopili to možnost na strani **Nastavitev "
 "metapodatkov**."
 
-#: ../../setup_application/database_settings.rst:254
+#: ../../setup_application/database_settings.rst:251
 msgid "Database Migration"
 msgstr "Migracija baze podatkov"
 
-#: ../../setup_application/database_settings.rst:256
+#: ../../setup_application/database_settings.rst:253
 msgid ""
 "digiKam comes up with an exclusive tool named **Database Migration**, that "
 "allows users to migrate their data. For example, the migration tool can help "
@@ -813,7 +826,7 @@ msgstr ""
 "primer pomaga premakniti vse podatke iz baze podatkov SQLite v bazo podatkov "
 "MariaDB ali obratno."
 
-#: ../../setup_application/database_settings.rst:258
+#: ../../setup_application/database_settings.rst:255
 msgid ""
 "To migrate to another database, go to :menuselection:`Settings --> Database "
 "Migration...`. A dialog box appears:"
@@ -821,11 +834,11 @@ msgstr ""
 "Za selitev v drugo bazo podatkov pojdite na :menuselection:`Nastavitve --> "
 "Selitev baze podatkov...`. Prikaže se pogovorno okno:"
 
-#: ../../setup_application/database_settings.rst:264
+#: ../../setup_application/database_settings.rst:261
 msgid "The digiKam Database Migration Tool"
 msgstr "Orodje za selitev baze podatkov digiKam"
 
-#: ../../setup_application/database_settings.rst:266
+#: ../../setup_application/database_settings.rst:263
 msgid ""
 "Now choose the appropriate database types you want to convert to. Finally, "
 "click on **Migrate** button to convert the database from SQLite to MariaDB "
@@ -837,7 +850,7 @@ msgstr ""
 "MariaDB (ali obratno). Ta operacija lahko traja nekaj časa, odvisno od "
 "velikosti baze podatkov."
 
-#: ../../setup_application/database_settings.rst:270
+#: ../../setup_application/database_settings.rst:267
 msgid ""
 "Only the digiKam **Core** database will be migrated by this conversion "
 "process. All of the other databases needs to be rebuilt using post-"
@@ -853,11 +866,11 @@ msgstr ""
 "ustvariti od začetka, baza podatkov obrazov **Face** pa vključuje možnost "
 "**Ponovno izgradi učne podatke**."
 
-#: ../../setup_application/database_settings.rst:275
+#: ../../setup_application/database_settings.rst:272
 msgid "Database Backup Recommendation"
 msgstr "Priporočilo za varnostno kopiranje baze podatkov"
 
-#: ../../setup_application/database_settings.rst:277
+#: ../../setup_application/database_settings.rst:274
 msgid ""
 "For security reasons, planning a database backup using crontab over the "
 "network can help against device failures. A NAS or an external drive can "
@@ -867,7 +880,7 @@ msgstr ""
 "programom crontab prek omrežja pomaga pri odpovedi naprave. Za varnostno "
 "kopiranje lahko uporabite tudi NAS ali zunanji pogon."
 
-#: ../../setup_application/database_settings.rst:279
+#: ../../setup_application/database_settings.rst:276
 msgid ""
 "Each database can be renamed with a different, unique name. This allows "
 "users to backup only what is needed. For instance, renaming **Core** "
@@ -882,7 +895,7 @@ msgstr ""
 "najpomembnejša datoteka. Baze podatkov **Thumbnails**, **Similarity** in "
 "**Face Recognition** je mogoče vedno znova ustvariti od začetka iz slik."
 
-#: ../../setup_application/database_settings.rst:281
+#: ../../setup_application/database_settings.rst:278
 msgid ""
 "The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will "
 "explain how to maintain the database contents and how to synchronize the "
@@ -892,16 +905,23 @@ msgstr ""
 "razloženo, kako vzdrževati vsebino baze podatkov in kako sinhronizirati "
 "zbirke z informacijami v bazah podatkov (in obratno)."
 
-#: ../../setup_application/database_settings.rst:286
+#: ../../setup_application/database_settings.rst:283
 msgid "Database Statistics"
 msgstr "Statistika zbirke podatkov"
 
-#: ../../setup_application/database_settings.rst:288
+#: ../../setup_application/database_settings.rst:285
+#, fuzzy
+#| msgid ""
+#| "digiKam provides a unique tool to show the statistics from your "
+#| "collections. It includes count of images, videos (including individual "
+#| "count by image format), tags etc. this also includes the **Database "
+#| "Backend** (QSQLITE or QMYSQL) and the **Database Path** (where your "
+#| "collection is located)."
 msgid ""
 "digiKam provides a unique tool to show the statistics from your collections. "
 "It includes count of images, videos (including individual count by image "
-"format), tags etc. this also includes the **Database Backend** (QSQLITE or "
-"QMYSQL) and the **Database Path** (where your collection is located)."
+"format), tags etc. this also includes the **Database Backend** (Sqlite or "
+"MariaDB) and the **Database Path** (where your collection is located)."
 msgstr ""
 "digiKam nudi edinstveno orodje za prikaz statistike iz vaših zbirk. "
 "Vključuje število slik, videoposnetkov (vključno s posameznim številom glede "
@@ -909,7 +929,7 @@ msgstr ""
 "(QSQLITE ali QMYSQL) in **Pot do baze podatkov** (kjer se nahaja vaša "
 "zbirka)."
 
-#: ../../setup_application/database_settings.rst:290
+#: ../../setup_application/database_settings.rst:287
 msgid ""
 "You can view your statistics by going to :menuselection:`Help --> Database "
 "Statistics...`. A dialog box like this will appear:"
@@ -917,9 +937,24 @@ msgstr ""
 "Statistiko si lahko ogledate tako, da obiščete :menuselection:`Pomoč --> "
 "Statistika podatkovne baze...`. Prikaže se pogovorno okno, kot je to:"
 
-#: ../../setup_application/database_settings.rst:297
+#: ../../setup_application/database_settings.rst:294
 msgid "The digiKam Database Statistics Dialog"
 msgstr "digiKam pogovorno okno statistike baze podatkov"
+
+#~ msgid ""
+#~ "`MySQL <https://en.wikipedia.org/wiki/MySQL>`_ is an open-source, "
+#~ "relational database management system, written in C and C++. Original "
+#~ "development of MySQL by Michael Widenius and David Axmark began in 1994. "
+#~ "Sun Microsystems acquired MySQL in 2008, which was later acquired by "
+#~ "Oracle in 2010. MySQL currently works on almost all system platforms "
+#~ "(Linux, Microsoft Windows, OS X, SunOS …)."
+#~ msgstr ""
+#~ "`MySQL <https://en.wikipedia.org/wiki/MySQL>`_ je odprtokodni sistem za "
+#~ "upravljanje relacijskih baz podatkov, napisan v C in C++. Prvotni razvoj "
+#~ "MySQL sta začela Michael Widenius in David Axmark leta 1994. Sun "
+#~ "Microsystems je leta 2008 prevzel MySQL, ki ga je kasneje leta 2010 "
+#~ "prevzel Oracle. MySQL trenutno deluje na skoraj vseh sistemskih "
+#~ "platformah (Linux, Microsoft Windows, OS X, SunOS …) ."
 
 #~ msgid "< 100K"
 #~ msgstr "< 100K"

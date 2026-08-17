@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-08 02:04+0000\n"
-"PO-Revision-Date: 2026-08-14 21:44+0200\n"
+"PO-Revision-Date: 2026-08-15 21:20+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -28,6 +28,10 @@ msgid ""
 "red, eyes, local, contrast, noise, reduction, hot, pixels, restoration, "
 "vignetting"
 msgstr ""
+"digiKam, dokumentation, användarhandbok, fotohantering, öppen källkod, fri, "
+"lära, enkel, meny, bild, editor, reparation, duplicera, lins, förvrängning, "
+"skärpa, oskärpa, röd, ögon, lokal, kontrast, brus, reduction, heta, "
+"bildpunkter, restaurering, vinjettering"
 
 #: ../../image_editor/enhancement_tools.rst:14
 msgid ":ref:`Enhancement Tools <image_editor>`"
@@ -46,6 +50,8 @@ msgid ""
 "The digiKam **Distortion** tool corrects an image for common lens "
 "distortions."
 msgstr ""
+"Verktyget **Förvrängning** i digiKam korrigerar en bild för vanliga "
+"linsförvrängningar."
 
 #: ../../image_editor/enhancement_tools.rst:25
 msgid ""
@@ -59,6 +65,15 @@ msgid ""
 "visible near the edges. This tool can easily eliminate these distortions "
 "without much visible loss in quality."
 msgstr ""
+"Utåtgående förvrängning är förknippad med vidvinkelobjektiv med kort "
+"brännvidd. Det gör att bilderna ser något sfäriska (böjda utåt) som en "
+"tunna. Man kan märka det när det finns raka linjer nära bildens perifera "
+"sidor. Inåtgående förvrängning är den motsatta defekten och är förknippad "
+"med teleobjektiv, objektiv med lång brännvidd eller undervattensbilder. "
+"Bilderna ser hopklämda (böjda inåt) mot mitten. Inåtgående förvrängning är "
+"ofta mindre märkbar än utåtgående förvrängning men är lika synlig nära "
+"kanterna. Verktyget kan enkelt eliminera förvrängningarna utan någon större "
+"synlig kvalitetsförlust."
 
 #: ../../image_editor/enhancement_tools.rst:29
 msgid ""
@@ -66,15 +81,20 @@ msgid ""
 "not be corrected by this tool. The **Lens Auto Correction** tool corrects "
 "both distortions and chromatic aberrations."
 msgstr ""
+"Verktyget behandlar bara geometriska förvrängningar. Kromatiska avvikelser "
+"korrigeras inte av det här verktyget. Verktyget **Automatisk "
+"linskorrektion** korrigerar både distorsioner och kromatisk aberration."
 
 #: ../../image_editor/enhancement_tools.rst:31
 msgid ""
 "The following figures explain the main types of geometrical distortions:"
 msgstr ""
+"Följande figurer förklarar de viktigaste typerna av geometriska "
+"förvrängningar:"
 
 #: ../../image_editor/enhancement_tools.rst:33
 msgid "(1): Pincushion distortion."
-msgstr ""
+msgstr "(1): Inåtgående förvrängning."
 
 #: ../../image_editor/enhancement_tools.rst:35
 msgid "(2): No distortion."
@@ -82,33 +102,40 @@ msgstr "(2): Ingen förvrängning."
 
 #: ../../image_editor/enhancement_tools.rst:37
 msgid "(3): Barrel distortion."
-msgstr ""
+msgstr "(3): Utåtgående förvrängning."
 
 #: ../../image_editor/enhancement_tools.rst:43
 msgid "The Geometrical Distortion Types"
-msgstr ""
+msgstr "De geometriska förvrängningstyperna"
 
 #: ../../image_editor/enhancement_tools.rst:47
 msgid "The geometrical corrections use 4th-order polynomial coefficients:"
 msgstr ""
+"De geometriska korrigeringarna använder 4:e ordningens polynomkoefficienter:"
 
 #: ../../image_editor/enhancement_tools.rst:49
 msgid ""
 "The 1st-order coefficient changes the size of the image. The tool calls this "
 "**Zoom**."
 msgstr ""
+"Den 1:a ordningens koefficient ändrar bildens storlek. Verktyget kallar det "
+"**Zoom**."
 
 #: ../../image_editor/enhancement_tools.rst:51
 msgid ""
 "The 2nd-order coefficient treats the main geometrical distortion of lenses "
 "and can correct the convex or concave shape of the image."
 msgstr ""
+"Den 2:a ordningens koefficient behandlar den huvudsakliga geometriska "
+"distorsionen hos linser och kan korrigera bildens konvexa eller konkava form."
 
 #: ../../image_editor/enhancement_tools.rst:53
 msgid ""
 "The 3rd-order coefficient has a similar rounding effect but levels off "
 "towards the edges. This correction is not employed in the tool."
 msgstr ""
+"Den 3:e ordningens koefficient har en liknande avrundningseffekt men planas "
+"ut mot kanterna. Den korrigeringen används inte i verktyget."
 
 #: ../../image_editor/enhancement_tools.rst:55
 msgid ""
@@ -116,6 +143,10 @@ msgid ""
 "rounding. Combining it with the 2nd-order correction can almost completely "
 "eliminate the geometrical distortions."
 msgstr ""
+"Den 4:e ordningens koefficient korrigerar de bortre kanterna omvänt jämfört "
+"med andra ordningens avrundning. Genom att kombinera den med andra "
+"ordningens korrigering kan de geometriska distorsionerna nästan helt "
+"elimineras."
 
 #: ../../image_editor/enhancement_tools.rst:61
 msgid "The Image Editor Lens Distortion Tool"
@@ -124,6 +155,8 @@ msgstr "Bildeditorns linsförvrängningsverktyg"
 #: ../../image_editor/enhancement_tools.rst:63
 msgid "Four sliders let you set the distortion correction filter:"
 msgstr ""
+"Fyra skjutreglage gör det möjligt att ställa in filtret för "
+"förvrängningskorrigering:"
 
 #: ../../image_editor/enhancement_tools.rst:65
 msgid ""
@@ -131,6 +164,9 @@ msgid ""
 "values correct barrel distortions, while positive values correct pincushion "
 "distortion."
 msgstr ""
+"**Total**: Värdet bestämmer förvrängningens storlek. Negativa värden "
+"korrigerar utåtgående förvrängning, medan positiva värden korrigerar "
+"inåtgående förvrängning."
 
 #: ../../image_editor/enhancement_tools.rst:67
 msgid ""
@@ -139,12 +175,19 @@ msgid ""
 "most lenses, the **Edge** parameter has the opposite sign of the **Main** "
 "parameter."
 msgstr ""
+"**Kant**: Värdet bestämmer storleken av 4:e ordningens förvrängning. "
+"Kantkontrollen har mer effekt i bildens kanter än i mitten. För de flesta "
+"objektiv har parametern **Kant** motsatt tecken jämfört med parametern "
+"**Total**."
 
 #: ../../image_editor/enhancement_tools.rst:69
 msgid ""
 "**Zoom**: this value rescales the overall image size (1st-order correction). "
 "Negative values zoom out of the image, while positive values zoom in."
 msgstr ""
+"**Zoom**: Värdet skalar om den totala bildstorleken (1:a ordningens "
+"korrigering). Negativa värden zoomar ut bilden, medan positiva värden zoomar "
+"in."
 
 #: ../../image_editor/enhancement_tools.rst:71
 msgid ""
@@ -152,6 +195,9 @@ msgid ""
 "(vignetting). Negative values decrease the brightness image corners, while "
 "positive values increase it."
 msgstr ""
+"**Ljusstyrka**: Kontrollen justerar ljusstyrkan i bildens hörn "
+"(vinjettering). Negativa värden minskar ljusstyrkan i bildens hörn, medan "
+"positiva värden ökar den."
 
 #: ../../image_editor/enhancement_tools.rst:73
 msgid ""
@@ -160,6 +206,10 @@ msgid ""
 "pattern. The values you apply to your image will be saved and tool will "
 "default to the same values the next time it is called."
 msgstr ""
+"För att hjälpa till att välja de bästa filterinställningarna visar verktyget "
+"en miniatyrbild med en förhandsgranskning av den förvrängningskorrigering "
+"som utförs med ett korsat nätmönster. Värdena som använts för bilden sparas "
+"och verktyget använder normalt samma värden nästa gång det anropas."
 
 #: ../../image_editor/enhancement_tools.rst:77
 msgid ""
@@ -169,6 +219,11 @@ msgid ""
 "If you crop the image and then use barrel correction the effect would be "
 "obviously wrong."
 msgstr ""
+"Utåtgående och inåtgående korrigering bör göras innan beskärning eller "
+"storleksändringar (inklusive perspektivkorrigering). Utåtgående och "
+"inåtgående korrigering bör faktiskt vara det allra första steget som utförs "
+"på originalbilden. Om man beskär bilden och sedan använder utåtgående "
+"korrigering blir effekten uppenbart fel."
 
 #: ../../image_editor/enhancement_tools.rst:79
 msgid ""
@@ -179,6 +234,13 @@ msgid ""
 "button to freeze the position of the dashed lines. Now, adjust the barrel/"
 "pincushion correction to align with the guide."
 msgstr ""
+"För att hjälpa till att hitta den bästa korrigeringen tillhandahåller "
+"verktyget en vertikal och horisontell hjälplinje. Flytta muspekaren i "
+"förhandsgranskningen av bilden för att visa hjälplinjen med streckade "
+"linjer. Flytta markören till en viktig plats i bilden, som havsnivån eller "
+"kanten av en byggnad, och tryck på vänster musknapp för att frysa positionen "
+"för de streckade linjerna. Justera nu utåtgående och inåtgående korrigering "
+"så att den stämmer med hjälplinjen."
 
 #: ../../image_editor/enhancement_tools.rst:81
 msgid ""
@@ -187,6 +249,10 @@ msgid ""
 "in the Image Editor menu :menuselection:`Transform --> Crop` or via the zoom "
 "slider of this dialog."
 msgstr ""
+"Att utföra inåtgående korrigering kan skapa en svart kant i bildens hörn. "
+"Man måste beskära hörnen med ett beskärningsverktyg som finns i bildeditorns "
+"meny :menuselection:`Transformera --> Beskär` eller via zoomreglaget i den "
+"här dialogrutan."
 
 #: ../../image_editor/enhancement_tools.rst:83
 msgid ""
@@ -197,6 +263,12 @@ msgid ""
 "distortion. See :ref:`Perspective Adjustment <transform_perspective>` for "
 "more information."
 msgstr ""
+"Utåtgående korrigering räcker för de flesta bilder, men för vissa bilder, "
+"som till exempel fasader av byggnader eller målningar, kan också dra nytta "
+"av perspektivkorrigering för att göra alla vinklar 90 grader. Observera att "
+"när man håller kameran för hand introducerar man nästan alltid någon form av "
+"lätt perspektivförvrängning. Se :ref:`Perspektivkorrigering "
+"<transform_perspective>` för mer information."
 
 #: ../../image_editor/enhancement_tools.rst:89
 msgid "Vignetting Correction"
@@ -214,6 +286,8 @@ msgid ""
 "The digiKam **Vignetting Correction** tool corrects image vignetting, which "
 "is the technical term for under-exposure in the corners."
 msgstr ""
+"Verktyget **Vinjetteringskorrigering** i digiKam korrigerar "
+"bildvinjettering, som är den tekniska termen för underexponering i hörnen."
 
 #: ../../image_editor/enhancement_tools.rst:96
 msgid ""
@@ -223,6 +297,11 @@ msgid ""
 "substantially reducing the light reaching the corners of the sensor. Some "
 "telephoto lenses may also suffer from vignetting."
 msgstr ""
+"Vidvinkelobjektiv, särskilt de som används för fotografering i mellan- och "
+"storformat, belyser ofta inte hela sensorplanet jämnt. Istället "
+"*vinjetterar* de (skuggar) kanterna och hörnen på bilden, vilket avsevärt "
+"minskar ljuset som når sensorns hörn. Vissa teleobjektiv kan också drabbas "
+"av vinjettering."
 
 #: ../../image_editor/enhancement_tools.rst:98
 msgid ""
@@ -235,6 +314,14 @@ msgid ""
 "off-center vignetting which occurs when camera movements are employed for "
 "perspective or plane of focus adjustment."
 msgstr ""
+"Den traditionella lösningen för vinjettering är att sätta dit ett "
+"*centrumfilter* på objektivet. Det är ett neutralt täthetsfilter med maximal "
+"täthet vid objektivets optiska axel, tydligt i periferin, med täthet som "
+"varierar omvänt mot objektivets vinjettering. Ett centrumfilter har många "
+"fördelar: det korrigerar inte bara automatiskt för storformatsbilder, utan "
+"eftersom det är fixerat på objektivets framsida kompenserar det också för "
+"excentrisk vinjettering som uppstår när kamerarörelser används för justering "
+"av perspektiv eller fokuseringsplan."
 
 #: ../../image_editor/enhancement_tools.rst:100
 msgid ""
@@ -245,6 +332,13 @@ msgid ""
 "shutter speed slow enough that hand-holding the camera is impossible, and "
 "motion blur becomes a problem when photographing moving objects."
 msgstr ""
+"Men det finns också nackdelar. Många centrumfilter kräver en justering av "
+"filterfaktor på 1,5 eller 2 bländarsteg, vilket i sin tur kan kräva en "
+"långsam slutartid, särskilt eftersom vidvinkelobjektiv, även med "
+"centrumfilter, bäst används vid bländare på f/16 eller mindre. Den "
+"kombinationen kan göra slutartiden så långsam att det är omöjligt att hålla "
+"kameran för hand, och rörelseoskärpa blir ett problem vid fotografering av "
+"rörliga objekt."
 
 #: ../../image_editor/enhancement_tools.rst:102
 msgid ""
@@ -253,6 +347,10 @@ msgid ""
 "the effect of a center filter by applying an equivalent transform to a raw "
 "image taken without the filter."
 msgstr ""
+"Med det breda exponeringsomfånget hos dagens film och färgdjupet (eller "
+"gråskaledjupet) hos digitalkameror eller filmläsare är det möjligt att "
+"simulera effekten av ett centrumfilter genom att tillämpa en motsvarande "
+"transformation på en obehandlad bild tagen utan filtret."
 
 #: ../../image_editor/enhancement_tools.rst:105
 msgid "Using the vignetting correction tool"
@@ -267,6 +365,8 @@ msgid ""
 "Five sliders give you control over the vignetting correction filter, and "
 "three more over the target image exposure:"
 msgstr ""
+"Fem skjutreglage ger dig kontroll över vinjetteringskorrigeringsfiltret och "
+"tre till över resultatbildens exponering:"
 
 #: ../../image_editor/enhancement_tools.rst:115
 msgid ""
@@ -276,6 +376,11 @@ msgid ""
 "to a factor of 2 reduction in luminosity). Increase the amount to compensate "
 "for a greater degree of vignetting; reduce it for less."
 msgstr ""
+"**Mängd**: Alternativet bestämmer graden av filtrets dämpning av ljusstyrkan "
+"vid dess maximala dämpningspunkt. Standardvärdet är 2,0, vilket motsvarar "
+"ett optiskt filter med en filterfaktor på 1 f-steg (motsvarande en minskning "
+"av ljusstyrkan på 2). Öka värdet för att kompensera för en större grad av "
+"vinjettering; minska det för mindre."
 
 #: ../../image_editor/enhancement_tools.rst:117
 msgid ""
@@ -289,6 +394,15 @@ msgid ""
 "amount of the filter toward the edges; a power of 0.5 causes the amount to "
 "fall as the square root of the distance from the center."
 msgstr ""
+"**Vävning**: Alternativet avgör hastigheten som filterintensiteten minskar "
+"från punkten för maximal dämpning mot kanterna, uttryckt som en "
+"effektfaktor. Standardvärdet 1 ger en linjär minskning av filtreringen med "
+"avståndet från centrum. Effektfaktorer större än 1,0 orsakar en snabbare "
+"minskning (till exempel, potensen 2 gör att värdet minskar som kvadraten av "
+"avståndet från centrum) och gör att filtrets effekt koncentreras nära "
+"centrum. Potenser mindre än 1 sprider ut filtreringen mot kanterna, och "
+"potensen 0,5 gör att värdet minskar som kvadratroten av avståndet från "
+"centrum."
 
 #: ../../image_editor/enhancement_tools.rst:119
 msgid ""
@@ -307,6 +421,19 @@ msgid ""
 "requiring a radius setting greater than 1 to simulate a center filter "
 "covering the entire image circle."
 msgstr ""
+"**Radie**: Alternativet anger radien som en multipel av bildens halva "
+"diagonalmått, där filtermängden minskar till noll (eller, med andra ord, "
+"blir genomskinlig). Standardvärdet 1,0 anger ett filter som är transparent i "
+"hörnen. En specifikation av radien större än 1 utvidgar effekten av "
+"centrumfiltret bortom bildens kanter, medan en radie mindre än ett begränsar "
+"filtrets verkan till ett område mindre än bilden. Vid kompensation för "
+"vinjettering med objektiv som används med storformatskameror och vissa "
+"mellanformatskameror är radiens standardfaktor 1 sällan korrekt. Sådana "
+"objektiv \"täcker\" ofta en bildcirkel som är betydligt större än filmen för "
+"att tillåta att kamerarörelser i förhållande till objektivet styr perspektiv "
+"och fokus, och har följaktligen ett vinjetteringsmönster som sträcker sig "
+"långt bortom filmens kanter, vilket kräver en inställning av radien större "
+"än 1 för att simulera ett centrumfilter som täcker hela bildcirkeln."
 
 #: ../../image_editor/enhancement_tools.rst:121
 msgid ""
@@ -317,6 +444,12 @@ msgid ""
 "negative value for the Y offset will move the filter up, and finally a "
 "positive value will move it down."
 msgstr ""
+"Inställningarna **X-förskjutning** and **Y-förskjutning**: Alternativen "
+"flyttar filtrets mitt horisontellt eller vertikalt mot bildens kant med den "
+"angivna procentandelen. Ett negativt värde på X-förskjutning flyttar filtret "
+"åt vänster medan ett positivt värde flyttar det åt höger. Ett negativt värde "
+"på Y-förskjutning flyttar filtret uppåt, och slutligen flyttar ett positivt "
+"värde det neråt."
 
 #: ../../image_editor/enhancement_tools.rst:123
 msgid ""
@@ -327,6 +460,12 @@ msgid ""
 "you may choose this option. Ticking it will invert the filter, thus "
 "darkening the corners of a photograph."
 msgstr ""
+"**Lägg till vinjettering**: Många fotografier ser platta ut på grund av en "
+"störande bakgrund eller annat kompositionsproblem. Även om man oftast vill "
+"ta bort vinjettering, är det ett faktum att selektiv vinjettering kan "
+"förbättra utseendet på ett fotografi genom att dra blicken till det avsedda "
+"motivet. Som konstnär kan man välja det alternativet. Om man markerar det "
+"inverteras filtret, vilket gör hörnen på ett fotografi mörkare."
 
 #: ../../image_editor/enhancement_tools.rst:125
 msgid ""
@@ -344,6 +483,21 @@ msgid ""
 "needn't precisely compensate for the actual vignetting to create images "
 "which viewers will perceive as uniformly illuminated."
 msgstr ""
+"Det enda sättet att vara säker på vilka inställningar för **Mängd**, "
+"**Vävning** och **Radie** som bäst kompenserar för de verkliga optiska "
+"egenskaperna hos ett givet objektiv är att exponera en jämnt upplyst scen "
+"(till exempel ett grått kort upplyst av diffust ljus) och sedan mäta "
+"eventuell vinjettering i den resulterande bilden (till exempel med "
+"histogrammets positionsstapel för verktyget Justera nivå). Utan sådana "
+"mätningar, eller specifikationer från objektivtillverkaren som anger den "
+"exakta graden av vinjettering vid en eller flera använda bländare, kan man "
+"behöva experimentera med olika inställningar för att hitta de som fungerar "
+"bäst för vart och ett av objektiven. För att hjälpa till med uppgiften "
+"tillhandahåller verktygets dialogruta en miniatyrbildsmaskering återgiven på "
+"bilden. Lyckligtvis är det mänskliga ögats respons logaritmisk, inte linjär "
+"som de flesta digitala bildsensorer, så man behöver inte kompensera exakt "
+"för den faktiska vinjetteringen för att skapa bilder som betraktarna kommer "
+"att uppfatta som jämnt upplysta."
 
 #: ../../image_editor/enhancement_tools.rst:129
 msgid ""
@@ -351,6 +505,9 @@ msgid ""
 "Curve tool from Image Editor available under :menuselection:`Color --> "
 "Adjust Curve` menu entry."
 msgstr ""
+"Om resultatbildens exponering behöver justeras på nytt, använd verktyget "
+"Justera kurva i bildeditorn som finns under menyalternativet :menuselection:"
+"`Färg --> Justera kurva`."
 
 #: ../../image_editor/enhancement_tools.rst:132
 msgid "The vignetting correction tool in action"
@@ -362,6 +519,9 @@ msgid ""
 "original image on the top shows vignetting in the corners, the corrected "
 "image on the bottom much less. The values used for this example are:"
 msgstr ""
+"Här är ett exempel på en vinjetteringskorrigering som införts på en bild. "
+"Originalbilden högst upp visar vinjettering i hörnen, den korrigerade bilden "
+"längst ner har mycket mindre. Värdena som används för exemplet är:"
 
 #: ../../image_editor/enhancement_tools.rst:136
 msgid "Density = 2.6."
@@ -389,12 +549,17 @@ msgid ""
 "such as **Distortion**, **Chromatic aberration**, **Vignetting**, and "
 "**Geometry**, and do so automatically for hundreds of common lenses."
 msgstr ""
+"Verktyget **Automatisk linskorrektion** i digiKam kan korrigera objektivfel "
+"som **förvrängning**, **kromatisk aberration**, **vinjettering** och "
+"**geometri**, och gör det automatiskt för hundratals vanliga objektiv."
 
 #: ../../image_editor/enhancement_tools.rst:156
 msgid ""
 "No lens is optically perfect. Even the most expensive lenses have their own "
 "unique imperfections. This tool corrects for those imperfections."
 msgstr ""
+"Inget objektiv är optiskt perfekt. Även de dyraste objektiven har sina egna "
+"unika defekter. Det här verktyget korrigerar sådana defekter."
 
 #: ../../image_editor/enhancement_tools.rst:162
 msgid "The Lens Auto-Correction Tool from the digiKam Image Editor"
@@ -407,6 +572,11 @@ msgid ""
 "and their characteristics. The tool also uses the **Metadata** from the "
 "image to find-out which lens was used for a particular image."
 msgstr ""
+"Verktyget för automatisk linskorrektion använder objektivdata från "
+"`biblioteket Lensfun <https://lensfun.github.io/>`_, en uppdaterad databas "
+"med hundratals objektiv och deras egenskaper. Verktyget använder också "
+"**metadata** från bilden för att ta reda på vilket objektiv som användes för "
+"en viss bild."
 
 #: ../../image_editor/enhancement_tools.rst:166
 msgid ""
@@ -417,6 +587,12 @@ msgid ""
 "the user is allowed to select a different lens. If no match is found, the "
 "tool displays **(no match found)** in red."
 msgstr ""
+"Om det exakta objektiv som användes för att ta bilden finns tillgängligt i "
+"biblioteket LensFun, visar verktyget **(exakt träff funnen)** i grönt. Om en "
+"exakt träff inte är tillgänglig, väljer verktyget inställningar baserat på "
+"den närmaste träffen och visar **(partiell träff funnen)** i orange. I det "
+"fallet kan användaren välja ett annat objektiv. Om ingen träff hittas, visar "
+"verktyget **(ingen träff funnen)** i rött."
 
 #: ../../image_editor/enhancement_tools.rst:172
 msgid "Metadata with Match in the LensFun Database"
@@ -515,7 +691,7 @@ msgstr ""
 
 #: ../../image_editor/enhancement_tools.rst:222
 msgid "Create the Black Frames"
-msgstr ""
+msgstr "Skapa de svarta bildrutorna"
 
 #: ../../image_editor/enhancement_tools.rst:224
 msgid ""
@@ -545,11 +721,11 @@ msgstr ""
 
 #: ../../image_editor/enhancement_tools.rst:233
 msgid "Using the Hot Pixels Tool"
-msgstr ""
+msgstr "Använda verktyg för heta bildpunkter"
 
 #: ../../image_editor/enhancement_tools.rst:239
 msgid "The Image Editor Hot Pixels Tool"
-msgstr ""
+msgstr "Bildeditorns verktyg för heta bildpunkter"
 
 #: ../../image_editor/enhancement_tools.rst:241
 msgid ""
@@ -645,7 +821,7 @@ msgstr ""
 
 #: ../../image_editor/enhancement_tools.rst:276
 msgid "Using the Local Contrast Tool"
-msgstr ""
+msgstr "Använda det lokala kontrastverktyget"
 
 #: ../../image_editor/enhancement_tools.rst:278
 msgid ""
@@ -681,7 +857,7 @@ msgstr ""
 #: ../../image_editor/enhancement_tools.rst:289
 #: ../../image_editor/enhancement_tools.rst:1130
 msgid "Tips for Best Results"
-msgstr ""
+msgstr "Tips för bästa resultatet"
 
 #: ../../image_editor/enhancement_tools.rst:291
 msgid ""
@@ -790,6 +966,8 @@ msgid ""
 "The digiKam **Noise Reduction** tool is a powerful tool for reducing image "
 "noise."
 msgstr ""
+"Verktyget **Brusreducering** i digiKam är ett kraftfullt verktyg för att "
+"reducera bildbrus."
 
 #: ../../image_editor/enhancement_tools.rst:342
 msgid ""
@@ -809,7 +987,7 @@ msgstr ""
 
 #: ../../image_editor/enhancement_tools.rst:350
 msgid "The Image Editor Noise Reduction Tool"
-msgstr ""
+msgstr "Bildeditorns brusreduceringsverktyg"
 
 #: ../../image_editor/enhancement_tools.rst:352
 msgid ""
@@ -830,7 +1008,7 @@ msgstr ""
 
 #: ../../image_editor/enhancement_tools.rst:356
 msgid "The tool supports the following parameters:"
-msgstr ""
+msgstr "Verktyget stöder följande parametrar:"
 
 #: ../../image_editor/enhancement_tools.rst:358
 msgid ""
@@ -1072,7 +1250,7 @@ msgstr ""
 
 #: ../../image_editor/enhancement_tools.rst:456
 msgid "Select :menuselection:`Enhance --> Red Eye...`."
-msgstr ""
+msgstr "Välj :menuselection:`Förbättra --> Röda ögon...`."
 
 #: ../../image_editor/enhancement_tools.rst:458
 msgid ""
