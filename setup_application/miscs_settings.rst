@@ -316,7 +316,7 @@ Face Management
 
         **For AMD GPU users** (eg. Radeon 6700/6800), you need the `ROCm software layer <https://rocm.docs.amd.com/projects/radeon-ryzen/en/latest/index.html>`_ and set the **`OPENCV_OPENCL_DEVICE`** system environment variable to **`:GPU:0`**. Under Windows, this can be done with the `System Control Panel <https://www.computerhope.com/issues/ch000549.htm>`_.
 
-- **Download Required Binary Data**: this button loads the deep-learning model files used with the face management, image quality scanning, and auto-tags features. Only use it if you bypassed :ref:`this stage at the first-run <firstrun_downloads>` of the application.
+- **Download Required Binary Data**: this button loads the deep-learning model files used with the face management, image quality scanning, and auto-tags features as well as the optional Large Language Model used by :ref:`Natural Language Search <natural_language_search>`. Only use it if you bypassed :ref:`this stage at the first-run <firstrun_downloads>` of the application.
 
 Video Rendering
 ~~~~~~~~~~~~~~~

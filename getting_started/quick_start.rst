@@ -132,5 +132,7 @@ No data is shared over the Internet and no extra Cloud webservice are used in al
    digiKam First Run Dialog to Download Deep-learning Model Files
 
 .. note::
+    In addition to the deep-learning models above, digiKam can download a local **Large Language Model** used by the :ref:`Natural Language Search <natural_language_search>` feature. 
+    This model (Qwen2.5-1.5B-Instruct, about 1.1 GB) lets you search your collection by describing what you want in plain language. It is larger than the other model files and entirely optional: it is offered as a separate item in the downloader, and Natural Language Search is the only feature that uses it. Like every other model, it runs only on your computer and shares no data over the Internet.
 
     A GPU card supporting `OpenCL <https://en.wikipedia.org/wiki/OpenCL>`_ will gain calculation performances with the deep-learning engine used in digiKam. eg. Face Workflow, Auto-Tags, Aesthetic Detection, and AI tools. Compatibility can be checked in the :ref:`Setting/Miscellaneous/System dialog page <system_settings>`.
