@@ -98,3 +98,58 @@ You can open as many additional Search Groups as you need to formulate your quer
 The **Reset** button (next to the **+ Add Search Group** button) removes all additional Search Groups and clears all the fields in the remaining Search Group. It's a good policy to use this button before starting to create a new search, in particular when you leave the Advanced Search Tool with the intention to use the Quick Search for your next query. Otherwise, the search criteria remain active even if you don't see them, which is likely screw up your new search.
 
 The **Try** button carries out the search but leaves the Advanced Search Tool window open. The **OK** button does the same but closes the window. **Remove Group** in the header of the additional Search Groups doesn't need an explanation.
+
+.. _natural_language_search:
+
+Natural Language Search
+-----------------------
+
+DigiKam can turn a plain-language description of what you are looking for into
+an Advanced Search, using a Large Language Model that runs locally on your
+computer.
+
+Instead of opening the Advanced Search Tool and filling in fields by hand, you
+can type a request such as *"landscape photos with red labels"* or *"photos of
+the children from 2023 rated at least 4 stars"*, and digiKam will build the
+corresponding search for you.
+
+.. figure:: images/left_sidebar_nlsearch.webp
+   :alt: The Describe Your Search field in the Advanced Search Tool
+   :align: center
+
+   Describing a search in natural language
+
+To use it, open the :ref:`Advanced Search Tool <advanced_search>` and type your
+request into the **Describe what you want to find** field, then run the search
+as usual.
+
+The Natural Language Search currently understands these properties:
+
+- Tags, People, and Albums
+- Ratings, Pick Labels, and Color Labels
+- Orientation (portrait or landscape)
+- Places (city, country, or sublocation)
+- Date ranges, including relative ones such as *last year*, *last month*, or
+  *this year*
+- Keywords and captions
+- Video properties (duration, frame rate, and bitrate) and file format
+
+A few things worth knowing:
+
+- The model runs **entirely on your computer**. Your queries and your photos
+  are never sent anywhere.
+- The first time you use the feature, digiKam downloads the required model
+  (about 1.1 GB) from KDE's servers. This happens once.
+- If you write your request in another language, tick **Translate my query to
+  English first**, shown just below the search field, and digiKam will
+  translate it before interpreting it.
+- If a request cannot be mapped to a supported property, digiKam tells you
+  rather than running an empty search. And if your request is ambiguous, for
+  example, *landscape* could mean an orientation or a subject - digiKam asks
+  you to clarify, so the search stays accurate.
+
+.. note::
+
+   A few Advanced Search fields are not yet available through Natural Language
+   Search, including camera and EXIF details and geolocation. These can still
+   be searched using the Advanced Search Tool directly.
