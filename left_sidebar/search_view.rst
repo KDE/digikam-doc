@@ -139,7 +139,7 @@ A few things worth knowing:
 - The model runs **entirely on your computer**. Your queries and your photos
   are never sent anywhere.
 - The first time you use the feature, digiKam downloads the required model
-  (about 1.1 GB) from KDE's servers. This happens once. This happens once. See the
+  (about 1.1 GB) from KDE's servers. This happens once. See the
   :ref:`Artificial Intelligence Files Download <firstrun_downloads>` section
   for more about managing the downloaded model files.
 - If you write your request in another language, tick **Translate my query to
