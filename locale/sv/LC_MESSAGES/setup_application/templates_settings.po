@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-08 02:04+0000\n"
-"PO-Revision-Date: 2026-08-08 16:09+0200\n"
+"PO-Revision-Date: 2026-08-22 15:43+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -56,17 +56,21 @@ msgid ""
 "The **Metadata Templates Manager** is meant to create and manage metadata "
 "templates which can be used in:"
 msgstr ""
+"**Hantering av metadatamallar** är avsedd att skapa och hantera "
+"metadatamallar som kan användas med:"
 
 #: ../../setup_application/templates_settings.rst:25
 msgid ""
 "The **Information** tab of the **Captions** view from the Right Sidebar."
-msgstr ""
+msgstr "Fliken **Information** i vyn **Rubriker** från höger sidorad."
 
 #: ../../setup_application/templates_settings.rst:27
 msgid ""
 "The **On the Fly Operations (JPEG only)** section of the **Settings** view "
 "from the Right Sidebar in the :menuselection:`Import --> Cameras` Window."
 msgstr ""
+"Sektionen **Åtgärder i farten (bara JPEG)** i vyn **Inställningar** från "
+"höger sidorad i fönstret :menuselection:`Importera --> Kameror`."
 
 #: ../../setup_application/templates_settings.rst:29
 msgid ""
@@ -77,6 +81,11 @@ msgid ""
 "replacement of IPTC as explained :ref:`in this section <iptc_tags>` of the "
 "manual."
 msgstr ""
+"Målet med mallar är att använda mycket metadata på ett eller flera objekt "
+"samtidigt. Man kan skapa många olika profiler som motsvarar olika aspekter "
+"av arbetsflödet. I samtliga fall lagras informationen i filen som antingen "
+"XMP- eller IPTC-metadata. Kom ihåg att XMP ersätter IPTC, vilket förklaras i "
+"detta avsnitt <iptc_tags> i handboken."
 
 #: ../../setup_application/templates_settings.rst:31
 msgid ""
@@ -92,6 +101,16 @@ msgid ""
 "with the **Add** button. To delete a template, very obviously, you select it "
 "in the list and click the **Remove** button."
 msgstr ""
+"Den övre delen av mallvyn visar en lista över befintliga mallar. Den första "
+"kolumnen visar mallens titel och den andra kolumnen visar namnet på "
+"upphovsmän i fältet \"Upphovsmännens namn\" i mallen. Till höger finns tre "
+"redigeringsknappar, nedanför ett inmatningsfält för mallens titel. För att "
+"skapa en ny mall skriv in en titel i inmatningsfältet och klicka på knappen "
+"**Lägg till**. Den nya mallen visas i listan. För att redigera en befintlig "
+"mall markera den i listan, redigera dess fält (se nästa avsnitt) och klicka "
+"sedan på knappen **Ersätt**. Man kan också skriva in en ny titel på den "
+"redigerade mallen och spara den nya versionen med knappen **Lägg till**. För "
+"att ta bort en mall, markera den i listan och klicka på knappen **Ta bort**."
 
 #: ../../setup_application/templates_settings.rst:35
 msgid ""
@@ -100,18 +119,26 @@ msgid ""
 "**Add** and **Replace** buttons only change the template list stored in "
 "memory."
 msgstr ""
+"Observera att alla ändringar som görs i mallarna bara sparas i mallfilen om "
+"man avslutar inställningsdialogrutan med knappen **Ok**. Knapparna **Lägg "
+"till** och **Ersätt** ändrar bara mallistan som lagras i minnet."
 
 #: ../../setup_application/templates_settings.rst:39
 msgid ""
 "The template file can be found in :file:`~/.local/share/digikam/` for manual "
 "backup or for managing different template sets by means of the file system."
 msgstr ""
+"Mallfilen finns i :file:`~/.local/share/digikam/` för manuell "
+"säkerhetskopiering eller för att hantera olika malluppsättningar med hjälp "
+"av filsystemet."
 
 #: ../../setup_application/templates_settings.rst:41
 msgid ""
 "The rest of the window is divided into four tabs, grouping the metadata "
 "fields into **Rights**, **Location**, **Contact** and **Subjects**."
 msgstr ""
+"Resten av fönstret är indelat i fyra flikar, som grupperar metadatafälten i "
+"**Rättigheter**, **Plats**, **Kontakt** och **Motiv**."
 
 #: ../../setup_application/templates_settings.rst:44
 msgid "Rights Information"
@@ -119,13 +146,15 @@ msgstr "Rättighetsinformation"
 
 #: ../../setup_application/templates_settings.rst:50
 msgid "The digiKam Template Rights Configuration Page"
-msgstr ""
+msgstr "Inställningssidan för mallarnas rättigheter i digiKam"
 
 #: ../../setup_application/templates_settings.rst:52
 msgid ""
 "The **Rights** tab contains the default identity and copyright data. This is "
 "an extract of the IPTC/XMP specifications for these fields:"
 msgstr ""
+"Fliken **Rättigheter** innehåller standarduppgifter om identitet och "
+"upphovsrätt. Här är ett utdrag ur IPTC/XMP-specifikationerna för fälten:"
 
 #: ../../setup_application/templates_settings.rst:54
 msgid ""
@@ -137,6 +166,13 @@ msgid ""
 "by anyone. This field does support the use of semi-colons as a separator. "
 "With IPTC, this field is limited to 32 characters."
 msgstr ""
+"**Upphovsmän** (synonymt med *Skapare och Byline*): Fältet ska innehålla "
+"namnet på personen eller namnen på personerna som skapade fotografiet. Om "
+"det inte är lämpligt att ange fotografens namn (till exempel om fotografens "
+"identitet behöver skyddas) kan namnet på ett företag eller en organisation "
+"också användas. När det har sparats bör fältet inte ändras av någon. Fältet "
+"stöder användning av semikolon som avgränsare. Med IPTC är fältet begränsat "
+"till 32 tecken."
 
 #: ../../setup_application/templates_settings.rst:56
 msgid ""
@@ -147,6 +183,11 @@ msgid ""
 "Author field must also be filled out. With IPTC, this field is limited to 32 "
 "characters."
 msgstr ""
+"**Upphovsmännens befattningar** (synonym till *Byline titel*): Fältet ska "
+"innehålla fotografens jobbtitel eller befattning. Exempel kan vara titlar "
+"som: Fastighetsfotograf, Frilansfotograf eller Oberoende kommersiell "
+"fotograf. Eftersom det är en kvalificering av fältet Upphovsmän måste även "
+"det fältet fyllas i. Med IPTC, är fältet begränsat till 32 tecken."
 
 #: ../../setup_application/templates_settings.rst:58
 msgid ""
@@ -158,6 +199,13 @@ msgid ""
 "photograph, then the group (agency) involved in supplying the image should "
 "be listed here. With IPTC, this field is limited to 32 characters."
 msgstr ""
+"**Erkännanden** (synonym till *Försörjare*): Använd fältet erkännanden för "
+"att identifiera vem som tillhandahåller fotografiet. Det behöver inte "
+"nödvändigtvis vara upphovsmannen. Om en fotograf arbetar åt en nyhetsbyrå "
+"som Reuters eller Associated Press, kan organisationen anges här, eftersom "
+"den \"försörjer\" andra med bilden. Om bilden är lagervara, ska gruppen "
+"(byrån) som är delaktig i att tillhandahålla bilden anges här. Med IPTC är "
+"Fältet begränsat till 32 tecken."
 
 #: ../../setup_application/templates_settings.rst:60
 msgid ""
@@ -181,6 +229,24 @@ msgid ""
 "publication; and (c) name of the author. You may also wish to include the "
 "phrase *all rights reserved*."
 msgstr ""
+"**Copyright**: Fältet Copyright ska innehålla all nödvändig information för "
+"att hävda upphovsrättsligt ägande, och ska identifiera den nuvarande "
+"innehavaren eller innehavarna av fotografiets copyright. Oftast är det "
+"fotografen, men om bilden togs av en anställd eller på uppdrag, ska byrån "
+"eller företaget anges. Använd formen som är tillämplig i ditt land. I "
+"Förenta staterna: (c) {datum för första publicering} innehavarens namn. "
+"Exempelvis *(c) 2005 N.N.* Observera att ordet *copyright* eller "
+"förkortningen *copr* kan användas istället för symbolen (c). I vissa länder "
+"erkänns bara symbolen, och förkortningen fungerar inte. Dessutom måste "
+"symbolen vara en hel cirkel med ett *c* inuti: att använda något som (c) där "
+"parenteserna formar en ofullständig cirkel är inte tillräckligt. För "
+"ytterligare skydd över hela världen, rekommenderas att \"all rights reserved"
+"\" läggs till efter ovanstående information. I Europa använder man: "
+"Copyright {År} {Upphovsrättsinnehavare}, all rights reserved. I Japan ska "
+"följande tre delar ingå i IPTC-kärnans Copyright-fält för att erhålla "
+"maximalt skydd: (a) ordet Copyright, (b) år för första publicering, (c) "
+"upphovsmannens namn. Om man så önskar, kan man lägga till *all rights "
+"reserved*."
 
 #: ../../setup_application/templates_settings.rst:62
 msgid ""
@@ -206,6 +272,8 @@ msgid ""
 "With XMP, you can include more than one copyright string using different "
 "languages. With IPTC, this field is limited to 128 characters."
 msgstr ""
+"Med XMP kan man inkludera mer än en upphovsrättssträng med olika språk. Med "
+"IPTC är fältet begränsat till 128 tecken."
 
 #: ../../setup_application/templates_settings.rst:70
 msgid ""
@@ -214,6 +282,10 @@ msgid ""
 "include more than one right usage terms string using different languages. "
 "This field does not exist with IPTC."
 msgstr ""
+"**Rättigheter och användarvillkor**: Fältet Rättigheter och användarvillkor "
+"ska användas för att ange instruktioner om hur en resurs kan användas "
+"lagligt. Med XMP kan du inkludera mer än en rättighet och användarvillkor "
+"med användning av olika språk. Fältet finns inte i IPTC."
 
 #: ../../setup_application/templates_settings.rst:72
 msgid ""
@@ -228,6 +300,16 @@ msgid ""
 "and from the names listed in the **Copyright Notice**. With IPTC, this field "
 "is limited to 32 characters."
 msgstr ""
+"**Källa**: Källfältet ska användas för att identifiera fotografiets "
+"ursprungliga ägare eller upphovsrättsinnehavare***. Fältets värde ska aldrig "
+"ändras när informationen har skrivits in efter att bilden har skapats. Även "
+"om det ännu inte upprätthålls av de egna rutorna, bör du betrakta det som "
+"ett fält som är \"skrivbart en gång\". Källan kan vara en enskild person, en "
+"byrå, eller en anställd på en byrå. För att förenkla senare sökning, "
+"föreslås att alla snedstreck */* omges av blanktecken. Använd formen "
+"\"fotograf / byrå\" istället för *fotograf/byrå*. Källan kan också skilja "
+"sig från skaparen och från de namn som anges under **Copyright**. Med IPTC "
+"är fältet begränsat till 32 tecken."
 
 #: ../../setup_application/templates_settings.rst:74
 msgid ""
@@ -235,14 +317,17 @@ msgid ""
 "instructions concerning the use of photograph. With IPTC, this field is "
 "limited to 256 characters."
 msgstr ""
+"**Instruktioner**: Instruktionsfältet ska användas för att ange "
+"redaktionella instruktioner rörande fotografiets användning. Med IPTC är "
+"fältet begränsat till 256 tecken."
 
 #: ../../setup_application/templates_settings.rst:77
 msgid "Location Information"
-msgstr ""
+msgstr "Platsinformation"
 
 #: ../../setup_application/templates_settings.rst:83
 msgid "The digiKam Template Location Configuration Page"
-msgstr ""
+msgstr "Inställningssidan för mallarnas platser i digiKam"
 
 #: ../../setup_application/templates_settings.rst:85
 msgid ""
@@ -250,38 +335,49 @@ msgid ""
 "describing the contents. This is an extract of the IPTC/XMP specifications "
 "for these fields:"
 msgstr ""
+"Fliken **Plats** innehåller standarduppgifter om platsen i världen som "
+"beskriver innehållet. Här är ett utdrag ur IPTC/XMP-specifikationerna för "
+"fälten:"
 
 #: ../../setup_application/templates_settings.rst:87
 msgid ""
 "**City**: This field should contain the name of the city where the "
 "photograph was taken. With IPTC, this field is limited to 32 characters."
 msgstr ""
+"**Stad**: Fältet ska innehålla namnet på staden där fotografiet togs. Med "
+"IPTC är fältet begränsat till 32 tecken."
 
 #: ../../setup_application/templates_settings.rst:89
 msgid ""
 "**Sublocation**: This field should contain the sublocation of the city where "
 "the photograph was taken. With IPTC, this field is limited to 32 characters."
 msgstr ""
+"**Delplats**: Fältet ska innehålla namnet på delen av staden där fotografiet "
+"togs. Med IPTC är fältet begränsat till 32 tecken."
 
 #: ../../setup_application/templates_settings.rst:91
 msgid ""
 "**State/Province**: This field should contain the province or state where "
 "the photograph was taken. With IPTC, this field is limited to 32 characters."
 msgstr ""
+"**Delstat/Region**: Fältet ska innehålla region eller delstat där "
+"fotografiet togs. Med IPTC är fältet begränsat till 32 tecken."
 
 #: ../../setup_application/templates_settings.rst:93
 msgid ""
 "**Country**: This field should contain the country where the photograph was "
 "taken. With IPTC, this field is limited to 64 characters."
 msgstr ""
+"**Land**: Fältet ska innehålla landet där fotografiet togs. Med IPTC är "
+"fältet begränsat till 64 tecken."
 
 #: ../../setup_application/templates_settings.rst:96
 msgid "Contact Information"
-msgstr ""
+msgstr "Kontaktinformation"
 
 #: ../../setup_application/templates_settings.rst:102
 msgid "The digiKam Template Contact Configuration Page"
-msgstr ""
+msgstr "Inställningssidan för mallarnas kontakter i digiKam"
 
 #: ../../setup_application/templates_settings.rst:104
 msgid ""
@@ -289,57 +385,65 @@ msgid ""
 "Names** in the **Rights** tab. Since these fields do not exist in IPTC, an "
 "extract of the XMP specifications for these fields is listed below:"
 msgstr ""
+"Uppgifterna under fliken Kontakt hänvisar till (huvud)fotografen under "
+"**Upphovsmännens namn** under fliken **Rättigheter**. Eftersom fälten inte "
+"finns i IPTC listas ett utdrag av XMP-specifikationerna för fälten nedan:"
 
 #: ../../setup_application/templates_settings.rst:106
 msgid ""
 "**Address**: This field should contain the address where the lead author "
 "lives."
-msgstr ""
+msgstr "**Adress**: Fältet ska innehålla adressen där huvudfotografen bor."
 
 #: ../../setup_application/templates_settings.rst:108
 msgid ""
 "**Postal Code**: This field should contain the postal code where the lead "
 "author lives."
 msgstr ""
+"**Postnummer**: Fältet ska innehålla postnumret där huvudfotografen bor."
 
 #: ../../setup_application/templates_settings.rst:110
 msgid ""
 "**City**: This field should contain the city name where the lead author "
 "lives."
 msgstr ""
+"**Stad**: Fältet ska innehålla namnet på staden där huvudfotografen bor."
 
 #: ../../setup_application/templates_settings.rst:112
 msgid ""
 "**Province**: This field should contain the province where the lead author "
 "lives."
-msgstr ""
+msgstr "**Region**: Fältet ska innehålla regionen där huvudfotografen bor."
 
 #: ../../setup_application/templates_settings.rst:114
 msgid ""
 "**Country**: This field should contain the country name where the lead "
 "author lives."
 msgstr ""
+"**Land**: Fältet ska innehålla namnet på landet där huvudfotografen bor."
 
 #: ../../setup_application/templates_settings.rst:116
 msgid ""
 "**Phone**: This field should contain the phone number of the lead author."
-msgstr ""
+msgstr "**Telefon**: Fältet ska innehålla huvudfotografens telefonnummer."
 
 #: ../../setup_application/templates_settings.rst:118
 msgid "**Email**: This field should contain the email of the lead author."
-msgstr ""
+msgstr "**E-post**: Fältet ska innehålla huvudfotografens e-postadress."
 
 #: ../../setup_application/templates_settings.rst:120
 msgid "**URL**: This field should contain the web site URL of the lead author."
 msgstr ""
+"**Webbadress**: Fältet ska innehålla webbadressen för huvudfotografens "
+"webbsida."
 
 #: ../../setup_application/templates_settings.rst:123
 msgid "Subjects Information"
-msgstr ""
+msgstr "Motivinformation"
 
 #: ../../setup_application/templates_settings.rst:129
 msgid "The digiKam Template Subjects Configuration Page"
-msgstr ""
+msgstr "Inställningssidan för mallarnas motiv i digiKam"
 
 #: ../../setup_application/templates_settings.rst:131
 msgid ""
@@ -356,6 +460,18 @@ msgid ""
 "and make additional levels visible by clicking on one of the fields. In the "
 "field right of the diagram you can find the code of the selected subject."
 msgstr ""
+"Under fliken **Motiv** kan man tilldela en eller flera motivkoder enligt "
+"IPTC Photo Metadata Standard i mallen. Om det första alternativet **Använd "
+"standardreferenskod** är markerat kan man välja en kod från "
+"kombinationsmenyn så visas betydelsen för den i fälten under sektionen "
+"**Använd egen definition**. Om man inte vet koden för motivet man vill "
+"tilldela är sättet lite omständligt eftersom det finns 1400 motiv i "
+"standarden. Ett bättre sätt är att leta efter motivet på `denna webbadress "
+"<https://show.newscodes.org/index.html?newscodes=subj&lang=en-"
+"GB&startTo=Show>`_. Där väljer man **Subject Codes** och språk (engelska "
+"rekommenderas) och klickar på *Show*. Man kan bläddra igenom diagrammet och "
+"göra ytterligare nivåer synliga genom att klicka på ett av fälten. I fältet "
+"till höger om diagrammet hittar man koden för det valda motivet."
 
 #: ../../setup_application/templates_settings.rst:133
 msgid ""
@@ -373,6 +489,19 @@ msgid ""
 "the template by clicking the **Add** button at the right side of the "
 "templates list. Don't mix up these two."
 msgstr ""
+"Generellt sett är IPTC motivkoderna rätt omfattande men å andra sidan lite "
+"ofullständiga inom vissa områden, t.ex. under Lifestyle och Leisure/Games "
+"hittar man bara Go, Chess, Bridge och Shogi. Så man kanske vill lägga till "
+"sina egna motiv, även om de alltid förblir privata (eller företags-)motiv. "
+"Ett sätt att göra det i digiKam är att först markera **Använd "
+"standardreferenskod** och välja *10001004* vilket går till *Lifestyle* och "
+"*Leisure/Games/Shogi*, bara för att fortsätta med vårt exempel. Sedan "
+"markerar man **Använd egen definition** och ändrar den sista siffran i "
+"**Referens** till 5 och texten i fältet **Detalj** till exempelvis *Domino*. "
+"Man sparar den egna definitionen i mallen genom att klicka på knappen **Lägg "
+"till** till höger om motivlistan. Sedan skriver man in en malltitel (om det "
+"är en ny mall) och sparar mallen genom att klicka på knappen **Lägg till** "
+"till höger om mallistan. Blanda inte ihop dessa två."
 
 #~ msgid "Templates Settings"
 #~ msgstr "Mallinställningar"

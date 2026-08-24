@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-08 02:04+0000\n"
-"PO-Revision-Date: 2026-08-14 21:45+0200\n"
+"PO-Revision-Date: 2026-08-22 19:34+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -27,7 +27,7 @@ msgid ""
 "learn, easy, JPEG, PNG, TIFF, PGF, RAW"
 msgstr ""
 "digiKam, dokumentation, användarhandbok, fotohantering, öppen källkod, fri, "
-"lära, enkel, JPEG, PNG, TIFF, PGF, Obehandlad"
+"lära, enkel, JPEG, PNG, TIFF, PGF, obehandlat"
 
 #: ../../supported_materials/image_formats.rst:14
 msgid ":ref:`Image Files <supported_materials>`"
@@ -49,6 +49,11 @@ msgid ""
 "way that those libraries have been compiled. On most distributions you will "
 "find that a wide range of image formats are viewable within digiKam."
 msgstr ""
+"digiKam förlitar sig på ett antal bibliotek och supportpaket för att läsa in "
+"och spara bildformat. Vilka bildformat som är tillgängliga beror på "
+"tillgängligheten av biblioteken på systemet och, i vissa fall, på hur "
+"biblioteken har kompilerats. I de flesta distributioner märker man att ett "
+"brett utbud av bildformat är synliga i digiKam."
 
 #: ../../supported_materials/image_formats.rst:23
 msgid ""
@@ -56,6 +61,9 @@ msgid ""
 "definitive list of all of the formats that will be available on your system. "
 "At the very least JPEG, PNG, and TIFF should be available."
 msgstr ""
+"Beroendet av andra bibliotek innebär att det inte är möjligt att ge en "
+"definitiv lista över alla format som finns tillgängliga på systemet. Som "
+"allra minst bör JPEG, PNG och TIFF vara tillgängliga."
 
 #: ../../supported_materials/image_formats.rst:25
 msgid ""
@@ -66,6 +74,12 @@ msgid ""
 "change the list of file extensions that digiKam will accept; see :ref:`this "
 "configuration section <mime_types_settings>` for more details."
 msgstr ""
+"digiKam visar bara filer som är i format som den förstår. Den gör det genom "
+"att titta på filändelsen på filerna och kontrollera det mot en fördefinierad "
+"lista. Om filändelsen finns i listan och lämpligt bibliotek är installerat, "
+"visar digiKam filen i bildvyn. Man kan ändra listan över filändelser som "
+"digiKam accepterar; se :ref:`det här inställningsavsnittet "
+"<mime_types_settings>` för mer information."
 
 #: ../../supported_materials/image_formats.rst:27
 msgid ""
@@ -75,6 +89,11 @@ msgid ""
 "can be found `at the Wikipedia <https://en.wikipedia.org/wiki/"
 "Image_file_formats>`_."
 msgstr ""
+"Nästan alla digitalkameror lagrar fotografier med ett av två format: JPEG "
+"eller obehandlat. Många kameror gör det möjligt att välja vilket av formaten "
+"man vill använda. digiKam stöder båda formaten. En fullständig beskrivning "
+"av formaten finns på Wikipedia <https://sv.wikipedia.org/wiki/"
+"Bildfilformat>`_."
 
 #: ../../supported_materials/image_formats.rst:30
 msgid "Still Image Compression"
@@ -86,6 +105,9 @@ msgid ""
 "digital images. Image compression reduces redundancy in the image data in "
 "order to be able to store or transmit data in an efficient form."
 msgstr ""
+"Bildkomprimering är tillämpningen av datakomprimeringsalgoritmer på digitala "
+"bilder. Bildkomprimering minskar redundans i bilddata för att kunna lagra "
+"eller överföra data på ett effektivt sätt."
 
 #: ../../supported_materials/image_formats.rst:34
 msgid ""
@@ -99,6 +121,16 @@ msgid ""
 "substantial reduction in file size. For example, lossy compression is good "
 "for publishing images on the Internet."
 msgstr ""
+"Bildkomprimering kan vara destruktiv eller förlustfri. Förlustfria "
+"komprimeringsmetoder, särskilt de som används före transformeringar som "
+"beskärning, storleksändring och färgkorrigering, är alltid att föredra för "
+"arkiveringsändamål eftersom de bevarar originaldata. Däremot introducerar "
+"destruktiva komprimeringsmetoder komprimeringsförvrängningar, särskilt när "
+"de används vid låga bithastigheter. Destruktiva metoder är lämpliga för "
+"naturliga bilder som foton i användning där mindre (ibland omärkbar) förlust "
+"av återgivning är acceptabel för att uppnå en betydande minskning av "
+"filstorleken. Till exempel är destruktiv komprimering bra för att publicera "
+"bilder på Internet."
 
 #: ../../supported_materials/image_formats.rst:39
 msgid "JPEG"
@@ -117,6 +149,17 @@ msgid ""
 "e-mail or post them on the Web. Most cameras give you two or three choices "
 "equivalent to good, better, best, although the names vary."
 msgstr ""
+"`Joint Photographic Experts Group <https://en.wikipedia.org/wiki/JPEG>`_ är "
+"ett komprimerat format som byter ut en viss bildkvalitet mot mindre "
+"filstorlekar. Faktum är att de flesta kameror sparar sina bilder med "
+"formatet om man inte anger något annat. En JPEG-bild lagras med destruktiv "
+"komprimering, och man kan variera komprimeringens storlek. Det gör att man "
+"kan välja mellan lägre komprimering och bättre bildkvalitet eller högre "
+"komprimering och sämre kvalitet. Den enda anledningen att välja högre "
+"komprimering är att det skapar mindre filer så att man kan lagra fler "
+"bilder, vilket gör det enklare att skicka dem via e-post eller lägga upp dem "
+"på webben. De flesta kameror ger två eller tre val som motsvarar bra, "
+"bättre, bäst, även om namnen varierar."
 
 #: ../../supported_materials/image_formats.rst:46
 msgid "JPEG 2000"
@@ -130,10 +173,15 @@ msgid ""
 "compared to JPEG. The 2000 version also supports lossless images, additional "
 "metadata tags, and 12-bit color depth."
 msgstr ""
+"`JPEG 2000 <https://en.wikipedia.org/wiki/JPEG_2000>`_ är en förbättring "
+"avsedd att ersätta den äldre JPEG-standarden som introducerades år 2000. Den "
+"ger samma komprimeringsförhållande med bättre (jämnare) resultat jämfört med "
+"JPEG. 2000-versionen stöder även förlustfria bilder, ytterligare metadata "
+"och 12-bitars färgdjup."
 
 #: ../../supported_materials/image_formats.rst:53
 msgid "TIFF"
-msgstr ""
+msgstr "TIFF"
 
 #: ../../supported_materials/image_formats.rst:55
 msgid ""
@@ -147,10 +195,19 @@ msgid ""
 "that there are now 50 or more flavors and not all are recognizable by most "
 "programs."
 msgstr ""
+"`Tagged Image File Format <https://sv.wikipedia.org/wiki/TIFF_(filformat)>`_ "
+"har blivit allmänt accepterat och stöds brett som bildformat. Vanligtvis kan "
+"TIFF lagras av kameran i okomprimerad form eller med hjälp av en förlustfri "
+"komprimeringsalgoritm (Deflate). Det bibehåller högre bildkvalitet men på "
+"bekostnad av mycket större filstorlekar. Vissa kameror tillåter att bilder "
+"sparas med formatet, och det är ett populärt format på grund av att det har "
+"en förlustfri komprimeringsalgoritm. Problemet är att formatet har ändrats "
+"av så många att det nu finns 50 eller fler varianter och inte alla är "
+"igenkännbara av de flesta program."
 
 #: ../../supported_materials/image_formats.rst:60
 msgid "PNG"
-msgstr ""
+msgstr "PNG"
 
 #: ../../supported_materials/image_formats.rst:62
 msgid ""
@@ -165,6 +222,16 @@ msgid ""
 "can convert a batch of images from any supported format to PNG (and other "
 "formats) in one step."
 msgstr ""
+"`Portable Network Graphics <https://sv.wikipedia.org/wiki/PNG>`_ är ett "
+"bildformat som utvecklades på 1990-talet som en patentfri ersättning för det "
+"äldre GIF-bildfilformatet. Det är ett förlustfritt format som TIFF men är "
+"mycket mer kompakt, vilket sparar diskutrymme. Även om det är osannolikt att "
+"kameran stöder PNG, gillar vissa personer att konvertera sina bilder till "
+"PNG så fort de får dem på datorn. Till skillnad från JPEG förlorar PNG-"
+"bilder inte kvalitet varje gång man kodar om dem efter modifiering. digiKam "
+"stöder PNG-bilder fullt ut och Köhantering för bakgrundsbehandling kan "
+"konvertera en grupp bilder från vilket format som helst till PNG (och andra "
+"format) i ett steg."
 
 #: ../../supported_materials/image_formats.rst:64
 msgid ""
@@ -174,10 +241,16 @@ msgid ""
 "on heterogeneous platforms. PNG supports bit depths of 8 and 16 bits / "
 "color / pixel. It's the perfect file format to archive your photographs."
 msgstr ""
+"PNG är utformat för att fungera bra i visningsprogram på nätet, som World "
+"Wide Web, så det är fullt strömningsbart med ett progressivt "
+"visningsalternativ. PNG kan också lagra gamma och kromaticitet för "
+"förbättrad färgmatchning på heterogena plattformar. PNG stöder bitdjup på 8 "
+"och 16 bitar/färg/bildpunkt. Det är det perfekta filformatet för att "
+"arkivera fotografier."
 
 #: ../../supported_materials/image_formats.rst:69
 msgid "PGF"
-msgstr ""
+msgstr "PGF"
 
 #: ../../supported_materials/image_formats.rst:71
 msgid ""
@@ -191,10 +264,20 @@ msgid ""
 "for photo archiving. **digiKam uses this format to store thumbnails in its "
 "internal database**."
 msgstr ""
+"`Progressive Graphics File <https://en.wikipedia.org/wiki/"
+"Progressive_Graphics_File>`_ är ett annat inte så välkänt, men öppet "
+"bildformat. Eftersom det är vågfrontsbaserat möjliggör det förlustfri och "
+"destruktiv datakomprimering. PGF står sig väl i jämförelse med JPEG 2000 men "
+"det utvecklades för hastighet (komprimering/uppackning) snarare än för att "
+"vara bäst på komprimeringsförhållande. Med samma filstorlek ser en PGF-fil "
+"betydligt bättre ut än en JPEG-fil, samtidigt som den förblir mycket bra på "
+"progressiv visning. Därför borde den vara väl lämpad för fotoarkivering. "
+"**digiKam använder formatet för att lagra miniatyrbilder i sin interna "
+"databas**."
 
 #: ../../supported_materials/image_formats.rst:76
 msgid "WEBP"
-msgstr ""
+msgstr "WEBP"
 
 #: ../../supported_materials/image_formats.rst:78
 msgid ""
@@ -206,10 +289,17 @@ msgid ""
 "Google in 2010 and produces files that are smaller than JPEG files for "
 "comparable image quality."
 msgstr ""
+"`Web Photo <https://sv.wikipedia.org/wiki/WebP>`_ är ett öppet bildfilformat "
+"utvecklat av Google, avsett som en ersättning av filformaten JPEG, PNG och "
+"GIF för användning på Internet. Det stöder både destruktiv och förlustfri "
+"komprimering samt animering och alfagenomskinlighet. Det stöder metadata, "
+"men färgdjupet är begränsat till 8 bitar. WebP tillkännagavs först av Google "
+"2010 och producerar filer som är mindre än JPEG-filer med jämförbar "
+"bildkvalitet."
 
 #: ../../supported_materials/image_formats.rst:83
 msgid "HEIF"
-msgstr ""
+msgstr "HEIF"
 
 #: ../../supported_materials/image_formats.rst:85
 msgid ""
@@ -225,10 +315,22 @@ msgid ""
 "bit color depth and metadata. This format was adopted in 2017 to store "
 "images in Apple devices."
 msgstr ""
+"`High Efficiency Image File Format <https://en.wikipedia.org/wiki/"
+"High_Efficiency_Image_File_Format>`_ är ett behållarformat som "
+"introducerades 2015 för lagring av enstaka digitala bilder och "
+"bildsekvenser. Standarden täcker multimediafiler som även kan inkludera "
+"andra medieströmmar, såsom tidbaserad text, ljud och video. HEIF kan lagra "
+"bilder kodade med flera kodningsformat, till exempel både SDR- och HDR-"
+"bilder. HEVC är ett bild- och videokodningsformat och den vanliga "
+"bildkodaren som används med HEIF. HEIF-filer som innehåller HEVC-kodade "
+"bilder är också kända som HEIC-filer. Sådana filer kräver mindre "
+"lagringsutrymme än JPEG av motsvarande kvalitet. HEIF stöder 12-bitars "
+"färgdjup och metadata. Formatet antogs 2017 för att lagra bilder i Apple-"
+"apparater."
 
 #: ../../supported_materials/image_formats.rst:90
 msgid "AVIF"
-msgstr ""
+msgstr "AVIF"
 
 #: ../../supported_materials/image_formats.rst:92
 msgid ""
@@ -242,10 +344,19 @@ msgid ""
 "edges in composites of natural images, text, and graphics. AVIF supports 12-"
 "bit color depth and metadata."
 msgstr ""
+"`AV1 Image File Format <https://en.wikipedia.org/wiki/AVIF>`_ är en öppen, "
+"royaltyfri specifikation av ett bildfilformat som introducerades 2019 för "
+"att lagra bilder eller bildsekvenser komprimerade med AV1 i HEIF-"
+"behållarformatet. Det konkurrerar med HEIC, som använder samma "
+"behållarformat som är byggt på filformatet ISO-basmedia (ISOBMFF) men "
+"använder HEVC för komprimering. AVIF visade bättre komprimeringseffektivitet "
+"än JPEG samt bättre detaljbevarande, färre blockförvrängningar och mindre "
+"färgutsmetning omkring skarpa kanter i sammanställningar av naturliga "
+"bilder, text och grafik. AVIF stöder 12-bitars färgdjup och metadata."
 
 #: ../../supported_materials/image_formats.rst:97
 msgid "JXL"
-msgstr ""
+msgstr "JXL"
 
 #: ../../supported_materials/image_formats.rst:99
 msgid ""
@@ -254,6 +365,10 @@ msgid ""
 "is designed to outperform existing raster formats and thus become their "
 "universal replacement."
 msgstr ""
+"`JPEG XL <https://en.wikipedia.org/wiki/JPEG_XL>`_ är ett royaltyfritt "
+"rastreringsbaserat grafikfilformat som stöder både destruktiv och förlustfri "
+"komprimering. Det är utformat för att överträffa befintliga "
+"rastreringsformat och därmed bli deras universella ersättare."
 
 #: ../../supported_materials/image_formats.rst:101
 msgid ""
@@ -263,6 +378,11 @@ msgid ""
 "was introduced at the end of 2020. JPEG XL support 16-bit color depth and "
 "metadata."
 msgstr ""
+"JPEG XL är särskilt optimerad för responsiva webbmiljöer, så att innehållet "
+"återges bra på en mängd olika enheter. Dessutom innehåller det flera "
+"funktioner som hjälper till vid övergången från det äldre JPEG-formatet. "
+"JPEG XL introducerades i slutet av 2020. JPEG XL stöder 16-bitars färgdjup "
+"och metadata."
 
 #: ../../supported_materials/image_formats.rst:105
 msgid ""
@@ -270,15 +390,21 @@ msgid ""
 "You can see a list of available plugins in the **Plugins/Image Loaders** "
 "section of the Setup or Preferences dialog."
 msgstr ""
+"Stöd för digitala stillbildsformat tillhandahålls av digiKam "
+"inläsningsinsticksprogram. Man kan se en lista över tillgängliga "
+"insticksprogram i sektionen **Insticksprogram/Bildinläsare** i dialogrutan "
+"Anpassa eller Inställningar."
 
 #: ../../supported_materials/image_formats.rst:111
 msgid "The Image Loaders list from digiKam Setup or Preferences dialog"
 msgstr ""
+"Listan över bildinläsare från digiKams dialogrutor Anpassa eller "
+"Inställningar"
 
 #: ../../supported_materials/image_formats.rst:116
 #: ../../supported_materials/image_formats.rst:136
 msgid "RAW"
-msgstr ""
+msgstr "Obehandlat"
 
 #: ../../supported_materials/image_formats.rst:118
 msgid ""
@@ -292,6 +418,16 @@ msgid ""
 "professional photographers use RAW format, because it offers them maximum "
 "flexibility. The downside is that RAW image files can be very large indeed."
 msgstr ""
+"Vissa, vanligtvis dyrare, kameror gör det möjligt att lagra bilder med "
+"obehandlat format. Obehandlat format är egentligen inte en bildstandard "
+"alls. Det är olika för varje kameramärke. Bilder i obehandlat format "
+"innehåller all data som tas direkt från kamerans bildsensor innan "
+"programvaran i kameran utför saker som vitbalans, brusreducering, skärpa "
+"etc. Att lagra fotografier i en kameras obehandlade format gör det möjligt "
+"att ändra inställningar, till exempel vitbalans, efter att fotografiet har "
+"tagits. De flesta professionella fotografer använder obehandlat format "
+"eftersom det ger dem maximal flexibilitet. Nackdelen är att obehandlade "
+"bildfiler kan vara mycket stora."
 
 #: ../../supported_materials/image_formats.rst:120
 msgid ""
@@ -302,6 +438,13 @@ msgid ""
 "TIFF in digiKam using the :ref:`Image Editor <rawprocessing_workflow>` or "
 "the :ref:`Batch Queue Manager <raw_converter>`."
 msgstr ""
+"Om du vill lära dig mer om obehandlade bildformat, besök de mycket "
+"hjälpsamma handledningarna på `Wikipedia <https://sv.wikipedia.org/wiki/"
+"RAW_(bildformat)>`_, och på `Cambridge in Colour <https://www."
+"cambridgeincolour.com/tutorials/RAW-file-format.htm>`_. Man kan konvertera "
+"bilder i obehandlat format till JPEG, PNG eller TIFF i digiKam med hjälp av :"
+"ref:`Bildeditorn <rawprocessing_workflow>` eller :ref:`Köhantering för "
+"bakgrundsbehandling <raw_converter>`."
 
 #: ../../supported_materials/image_formats.rst:122
 msgid ""
@@ -310,160 +453,167 @@ msgid ""
 "in the digiKam core. The table below shows a short list of camera RAW files "
 "supported by digiKam:"
 msgstr ""
+"digiKam stöder inläsning av obehandlad bilddata från över **1000** "
+"obehandlade filformat, baserat på `biblioteket Libraw <https://www.libraw."
+"org/>`_ som ingår i digiKam-kärnan. Tabellen nedan visar en kort lista över "
+"obehandlade kamerafiler som stöds av digiKam:"
 
 #: ../../supported_materials/image_formats.rst:125
 msgid "RAW File Format"
-msgstr ""
+msgstr "Obehandlat filformat"
 
 #: ../../supported_materials/image_formats.rst:125
 msgid "Description"
-msgstr ""
+msgstr "Beskrivning"
 
 #: ../../supported_materials/image_formats.rst:127
 msgid "CRW, CR2, CR3"
-msgstr ""
+msgstr "CRW, CR2, CR3"
 
 #: ../../supported_materials/image_formats.rst:127
 msgid "Canon digital camera RAW file formats"
-msgstr ""
+msgstr "Canon digitalkamera obehandlade filformat"
 
 #: ../../supported_materials/image_formats.rst:128
 msgid "NEF, NRW"
-msgstr ""
+msgstr "NEF, NRW"
 
 #: ../../supported_materials/image_formats.rst:128
 msgid "Nikon digital camera RAW file format"
-msgstr ""
+msgstr "Nikon digitalkamera obehandlat filformat"
 
 #: ../../supported_materials/image_formats.rst:129
 msgid "ORF, ORI"
-msgstr ""
+msgstr "ORF, ORI"
 
 #: ../../supported_materials/image_formats.rst:129
 msgid "Olympus digital camera RAW file format"
-msgstr ""
+msgstr "Olympus digitalkamera obehandlat filformat"
 
 #: ../../supported_materials/image_formats.rst:130
 msgid "RAF"
-msgstr ""
+msgstr "RAF"
 
 #: ../../supported_materials/image_formats.rst:130
 msgid "Fuji digital camera RAW file format"
-msgstr ""
+msgstr "Fuji digitalkamera obehandlat filformat"
 
 #: ../../supported_materials/image_formats.rst:131
 msgid "RWL"
-msgstr ""
+msgstr "RWL"
 
 #: ../../supported_materials/image_formats.rst:131
 msgid "Leica camera RAW file format"
-msgstr ""
+msgstr "Leica kamera obehandlat filformat"
 
 #: ../../supported_materials/image_formats.rst:132
 msgid "PEF, PTX"
-msgstr ""
+msgstr "PEF, PTX"
 
 #: ../../supported_materials/image_formats.rst:132
 msgid "Pentax digital camera RAW file format"
-msgstr ""
+msgstr "Pentax digitalkamera obehandlat filformat"
 
 #: ../../supported_materials/image_formats.rst:133
 msgid "X3F"
-msgstr ""
+msgstr "X3F"
 
 #: ../../supported_materials/image_formats.rst:133
 msgid "Sigma digital camera RAW file format"
-msgstr ""
+msgstr "Sigma digitalkamera obehandlat filformat"
 
 #: ../../supported_materials/image_formats.rst:134
 msgid "DCR, KDC, DC2, K25"
-msgstr ""
+msgstr "DCR, KDC, DC2, K25"
 
 #: ../../supported_materials/image_formats.rst:134
 msgid "Kodak digital camera RAW file format"
-msgstr ""
+msgstr "Kodak digitalkamera obehandlat filformat"
 
 #: ../../supported_materials/image_formats.rst:135
 msgid "SRF, SR2, ARW, MRW, MDC"
-msgstr ""
+msgstr "SRF, SR2, ARW, MRW, MDC"
 
 #: ../../supported_materials/image_formats.rst:135
 msgid "Sony/Minolta digital camera RAW file format"
-msgstr ""
+msgstr "Sony/Minolta digitalkamera obehandlat filformat"
 
 #: ../../supported_materials/image_formats.rst:136
 msgid "Panasonic, Casio, Leica digital camera RAW file format"
-msgstr ""
+msgstr "Panasonic, Casio, Leica digitalkamera obehandlat filformat"
 
 #: ../../supported_materials/image_formats.rst:137
 msgid "DNG (CS1, HDR)"
-msgstr ""
+msgstr "DNG (CS1, HDR)"
 
 #: ../../supported_materials/image_formats.rst:137
 msgid "Adobe RAW file format (Digital Negative), Apple ProRAW"
-msgstr ""
+msgstr "Adobe obehandlat filformat (digitalt negativ), Apple ProRAW"
 
 #: ../../supported_materials/image_formats.rst:138
 msgid "BAY"
-msgstr ""
+msgstr "BAY"
 
 #: ../../supported_materials/image_formats.rst:138
 msgid "Casio RAW (Bayer)"
-msgstr ""
+msgstr "Casio obehandlat (Bayer)"
 
 #: ../../supported_materials/image_formats.rst:139
 msgid "ERF"
-msgstr ""
+msgstr "ERF"
 
 #: ../../supported_materials/image_formats.rst:139
 msgid "Epson digital camera RAW file format"
-msgstr ""
+msgstr "Epson digitalkamera obehandlat filformat"
 
 #: ../../supported_materials/image_formats.rst:140
 msgid "FFF, 3FR"
-msgstr ""
+msgstr "FFF, 3FR"
 
 #: ../../supported_materials/image_formats.rst:140
 msgid "Imacon/Hasselblad RAW format"
-msgstr ""
+msgstr "Imacon/Hasselblad obehandlat format"
 
 #: ../../supported_materials/image_formats.rst:141
 msgid "RW2"
-msgstr ""
+msgstr "RW2"
 
 #: ../../supported_materials/image_formats.rst:141
 msgid "Panasonic RAW file format"
-msgstr ""
+msgstr "Panasonic obehandlat filformat"
 
 #: ../../supported_materials/image_formats.rst:142
 msgid "IIQ, CAP"
-msgstr ""
+msgstr "IIQ, CAP"
 
 #: ../../supported_materials/image_formats.rst:142
 msgid "Phase One digital camera Raw image format"
-msgstr ""
+msgstr "Phase One digitalkamera obehandlat filformat"
 
 #: ../../supported_materials/image_formats.rst:143
 msgid "RDC"
-msgstr ""
+msgstr "RDC"
 
 #: ../../supported_materials/image_formats.rst:143
 msgid "Ricoh RAW format"
-msgstr ""
+msgstr "Ricoh obehandlat format"
 
 #: ../../supported_materials/image_formats.rst:146
 msgid ""
 "If you want to know if your camera RAW file is supported by digiKam, go to :"
 "menuselection:`Help --> Supported RAW Cameras` dialog for details."
 msgstr ""
+"Om du vill veta om din kameras obehandlade fil stöds av digiKam, gå till "
+"dialogrutan :menuselection:`Hjälp --> Kameror med obehandlade bilder som "
+"stöds` för mer information."
 
 #: ../../supported_materials/image_formats.rst:152
 msgid "List of RAW Camera Formats Supported in digiKam"
-msgstr ""
+msgstr "Lista över obehandlade kameraformat som stöds i digiKam"
 
 #: ../../supported_materials/image_formats.rst:157
 msgid "Other Formats"
-msgstr ""
+msgstr "Andra format"
 
 #: ../../supported_materials/image_formats.rst:159
 msgid ""
@@ -471,6 +621,10 @@ msgid ""
 "to support exotic still images when others modules fail to load a file. This "
 "is the case for FITS astro-photo, JBIG, PhotoCD, FLIF, BPG, etc."
 msgstr ""
+"digiKam förlitar sig på `ImageMagick <https://en.wikipedia.org/wiki/"
+"ImageMagick>`_ för att stödja exotiska stillbilder när andra moduler "
+"misslyckas med att läsa in en fil. Det är fallet för FITS astronomiska "
+"foton, JBIG, PhotoCD, FLIF, BPG, etc."
 
 #: ../../supported_materials/image_formats.rst:163
 msgid ""
@@ -478,6 +632,9 @@ msgid ""
 "long time archiving**, from the :ref:`Digital Asset Management section "
 "<dam_fileformats>` of this manual."
 msgstr ""
+"Vi rekommenderar att också läsa kapitlet om **filformat som används för "
+"långtidsarkivering**, i avsnittet :ref:`Hantering av digitala tillgångar "
+"<dam_fileformats>` i handboken."
 
 #~ msgid "Image Files"
 #~ msgstr "Bildfiler"
