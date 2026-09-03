@@ -25,7 +25,8 @@ Select one image that you want to place on your desktop and go to :menuselection
 
 .. note::
 
-    This dialog does not exist under macOS. The layout is always set as **Centered**.
+    - This dialog does not exist under macOS. The layout is always set as **Centered**.
+    - If a RAW file is selected to be set as wallpaper, a JPEG preview is automatically extracted from the current album and used in place of the RAW image.
 
 .. figure:: images/wall_paper.webp
     :alt:
