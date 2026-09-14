@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-08 02:04+0000\n"
-"PO-Revision-Date: 2026-08-08 16:06+0200\n"
+"PO-Revision-Date: 2026-09-13 15:11+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 26.04.3\n"
+"X-Generator: Lokalize 26.08.0\n"
 
 #: ../../batch_queue/custom_script.rst:-1
 msgid "digiKam Custom Script from Batch Queue Manager"
@@ -48,6 +48,10 @@ msgid ""
 "tools such as `ImageMagick <https://imagemagick.org/>`_ or `ExifTool "
 "<https://en.wikipedia.org/wiki/ExifTool>`_."
 msgstr ""
+"Köhantering för bakgrundsbehandling gör det möjligt att anpassa ett **arbetsfl"
+"öde** genom att lägga till verktyget **Eget skript** för att köra ett skript s"
+"om bearbetar bilder med externa verktyg, såsom `ImageMagick <https://imagemagi"
+"ck.org/>`_ eller `ExifTool <https://en.wikipedia.org/wiki/ExifTool>`_."
 
 #: ../../batch_queue/custom_script.rst:23
 msgid ""
@@ -58,10 +62,17 @@ msgid ""
 "entirely within the plugin. These scripts can include a set of environment "
 "variables that specify filenames and few types of metadata."
 msgstr ""
+"Verktyget **Eget skript** finns tillgängligt i kategorin **Egna verktyg** i li"
+"stan **Basverktyg**. Verktyget är utformat för att köra källkoden för ett skal"
+"skript som kan anropa ett eller flera kommandoradsprogram för varje objekt i k"
+"ön. Skalskriptet skrivs av användaren direkt i tillägget. Skripten kan innehål"
+"la miljövariabler som anger filnamn och vissa typer av metadata."
 
 #: ../../batch_queue/custom_script.rst:29
 msgid "The Batch Queue Manager Including a Custom Script in a Workflow"
 msgstr ""
+"Köhantering för bakgrundsbehandling som inkluderar ett eget skript i ett arbet"
+"sflöde"
 
 #: ../../batch_queue/custom_script.rst:31
 msgid "The tool provides these options:"
@@ -74,6 +85,10 @@ msgid ""
 "**PNG**, or **TIFF**. Please note that JPEG is a lossy compression format, "
 "only supports 8-bit color depth, and does not support transparency."
 msgstr ""
+"**Typ av utdatabild**: anger det förväntade bildformatet för skriptets utdata."
+" Standardinställningen är **Samma som indata**, men du kan välja **JPEG**, **P"
+"NG** eller **TIFF**. Observera att JPEG är ett format med destruktiv komprimer"
+"ing, endast stöder 8-bitars färgdjup och inte stöder genomskinlighet."
 
 #: ../../batch_queue/custom_script.rst:35
 msgid ""
@@ -83,6 +98,10 @@ msgid ""
 "script <https://en.wikipedia.org/wiki/Batch_file>`_ is supported under "
 "**Windows**."
 msgstr ""
+"**Skalskript**: det här textfältet anges källkoden för skalskriptet. `Bash-skr"
+"ipt <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ stöds för **Linux** oc"
+"h **macOS**. `Skalskript <https://en.wikipedia.org/wiki/Batch_file>`_ stöds fö"
+"r **Windows**."
 
 #: ../../batch_queue/custom_script.rst:37
 msgid ""
@@ -90,18 +109,25 @@ msgid ""
 "will replace all occurrences of keywords in the shell script at run time "
 "before script execution. Note that the keywords are case sensitive."
 msgstr ""
+"Nyckelord som kan användas i skriptkoden listas nedan. Verktyget ersätter alla"
+" förekomster av nyckelorden i skalskriptet vid körning, innan skriptet exekver"
+"as. Observera att nyckelorden är skiftlägeskänsliga."
 
 #: ../../batch_queue/custom_script.rst:39
 msgid ""
 "**$INPUT** is replaced by the workflow input filename (with special "
 "characters escaped)."
 msgstr ""
+"**$INPUT** ersätts av arbetsflödets indatafilnamn (där specialtecken har citer"
+"ats)."
 
 #: ../../batch_queue/custom_script.rst:41
 msgid ""
 "**$OUTPUT** is replaced by the workflow output filename (with special "
 "characters escaped)."
 msgstr ""
+"**$OUTPUT** ersätts av arbetsflödets utdatafilnamn (där specialtecken har cite"
+"rats)."
 
 #: ../../batch_queue/custom_script.rst:45
 msgid ""
@@ -110,6 +136,10 @@ msgid ""
 "$INPUT** to **$OUTPUT** with the appropriate command for the operating "
 "system, before making any changes to **$OUTPUT**."
 msgstr ""
+"En ny fil förväntas alltid som **$OUTPUT**. Skript som inte skapar en ny fil ("
+"t.ex. vid ändring av metadata med ExifTool) måste först kopiera **$INPUT** til"
+"l **$OUTPUT** med ett kommando som är lämpligt för operativsystemet, innan någ"
+"ra ändringar görs i **$OUTPUT**."
 
 #: ../../batch_queue/custom_script.rst:47
 msgid "The environment variables that you can use in your shell script are:"
@@ -117,33 +147,38 @@ msgstr "Miljövariablerna som kan användas i ditt skalskript är:"
 
 #: ../../batch_queue/custom_script.rst:49
 msgid "**TITLE**: to use the digiKam **Title** item property."
-msgstr ""
+msgstr "**TITLE**: för att använda objektegenskapen **Titel** i digiKam."
 
 #: ../../batch_queue/custom_script.rst:51
 msgid "**COMMENTS**: to use the digiKam **Caption** item property."
-msgstr ""
+msgstr "**COMMENTS**: för att använda objektegenskapen **Rubrik** i digiKam."
 
 #: ../../batch_queue/custom_script.rst:53
 msgid "**COLORLABEL**: to use the digiKam **Color Label** item property."
 msgstr ""
+"**COLORLABEL**: för att använda objektegenskapen **Färgbeteckning** i digiKam."
 
 #: ../../batch_queue/custom_script.rst:55
 msgid "**PICKLABEL**: to use the digiKam **Pick Label** item property."
 msgstr ""
+"**PICKLABEL**: för att använda objektegenskapen **Urvalsbeteckning** i digiKam"
+"."
 
 #: ../../batch_queue/custom_script.rst:57
 msgid "**RATING**: to use the digiKam **Rating** item property."
-msgstr ""
+msgstr "**RATING**: för att använda objektegenskapen **Betyg** i digiKam."
 
 #: ../../batch_queue/custom_script.rst:59
 msgid "**TAGSPATH**: to use the digiKam **Tags** item property."
 msgstr ""
+"**TAGSPATH**: för att använda objektegenskapen **Etiketter** i digiKam."
 
 #: ../../batch_queue/custom_script.rst:61
 msgid ""
 "All of these properties are set based on the image properties stored in the "
 "digiKam database."
 msgstr ""
+"Alla egenskaperna anges utifrån de egenskaper som lagras i digiKams databas."
 
 #: ../../batch_queue/custom_script.rst:65
 msgid ""
@@ -151,6 +186,9 @@ msgid ""
 "with **$** as a prefix for variable names (for example **$INPUT**). The "
 "interpreter used to run the script is **/bin/bash**."
 msgstr ""
+"I Linux och macOS kan miljövariabler nås i skriptet genom att använda **$** so"
+"m prefix för variabelnamnen (till exempel **$INPUT**). Tolken som används för "
+"att köra skriptet är **/bin/bash**."
 
 #: ../../batch_queue/custom_script.rst:67
 msgid ""
@@ -158,6 +196,9 @@ msgid ""
 "%** as a prefix and suffix of variable names (for example **%INPUT%**). The "
 "interpreter used to run the script is **cmd.exe**."
 msgstr ""
+"I Windows kan miljövariabler nås i skriptet genom att använda **%** som prefix"
+" och suffix för variabelnamnen (till exempel **%INPUT%**). Tolken som används "
+"för att köra skriptet är **cmd.exe**."
 
 #: ../../batch_queue/custom_script.rst:71
 msgid "Return Value"
@@ -169,6 +210,9 @@ msgid ""
 "or an integer in the range 1-255 for an error. Use **exit < error_code >** "
 "to pass the return value back to the workflow."
 msgstr ""
+"Enligt praxis returnerar ett **Bash-skript** i Linux och macOS värdet 0 vid ly"
+"ckat resultat, eller ett heltal mellan 1 och 255 vid fel. Använd **exit < erro"
+"r_code >** för att skicka tillbaka returvärdet till arbetsflödet."
 
 #: ../../batch_queue/custom_script.rst:75
 msgid ""
@@ -177,6 +221,10 @@ msgid ""
 "possible. Use **EXIT /B < error_code >** to pass the return value to the "
 "workflow."
 msgstr ""
+"I Windows returnerar ett **skalskript** 0 vid lyckat resultat och ett annat vä"
+"rde vid fel; eftersom värdet är ett heltal med tecken är negativa värden möjli"
+"ga. Använd **EXIT /B < felkod >** för att skicka returvärdet vidare till arbet"
+"sflödet."
 
 #: ../../batch_queue/custom_script.rst:77
 msgid ""
@@ -184,14 +232,17 @@ msgid ""
 "is returned, the workflow will continue as expected, otherwise the workflow "
 "is interrupted and the Batch Queue Manager stops processing."
 msgstr ""
+"Köhantering för bakgrundsbehandling hanterar värdet som returneras av skriptet"
+". Om noll returneras fortsätter arbetsflödet som förväntat, i annat fall avbry"
+"ts arbetsflödet och Köhantering för bakgrundsbehandling slutar bearbeta."
 
 #: ../../batch_queue/custom_script.rst:80
 msgid "Examples"
-msgstr ""
+msgstr "Exempel"
 
 #: ../../batch_queue/custom_script.rst:83
 msgid "Proof of Concept"
-msgstr ""
+msgstr "Konceptvalidering"
 
 #: ../../batch_queue/custom_script.rst:85
 msgid ""
@@ -204,12 +255,22 @@ msgid ""
 "Queue Manager for each item in the workflow. See below the **Bash** version "
 "of the script:"
 msgstr ""
+"Det första exemplet nedan utför ingen särskild åtgärd. Det skriver ut namnen p"
+"å in- och utdatafilerna samt de objektegenskaper som skickats från Köhantering"
+" för bakgrundsbehandling till skriptet i terminalen, och kopierar indatafilen "
+"till utdatafilen (steget krävs för att förhindra att Köhantering för bakgrunds"
+"behandling returnerar ett fel på grund av att resultatfilen saknas). Skriptet "
+"returnerar värdet från filkopieringskommandot, vilket tolkas av Köhantering fö"
+"r bakgrundsbehandling för varje objekt i arbetsflödet. Nedan visas **Bash-vers"
+"ionen** av skriptet:"
 
 #: ../../batch_queue/custom_script.rst:102
 msgid ""
 "See below the **Windows Shell** version of the script. The output is "
 "redirected and concatenated to the *C:\\temp\\digikam.txt*:"
 msgstr ""
+"Se nedan för versionen av skriptet för **Windows skal*. Utdata omdirigeras och"
+" läggs till i *C:\\temp\\digikam.txt*:"
 
 #: ../../batch_queue/custom_script.rst:121
 msgid ""
@@ -217,49 +278,57 @@ msgid ""
 "ref:`Setting/Miscellaneous/System dialog page <system_settings>`, you will "
 "see something like this:"
 msgstr ""
+"Om digiKam har startats från en terminal och felsökningsloggning  har aktivera"
+"ts på dialogrutans sida :ref:`Inställningar/Diverse/System <system_settings>`,"
+" ser man något i stil med:"
 
 #: ../../batch_queue/custom_script.rst:135
 msgid "The digiKam information taken from the database are:"
-msgstr ""
+msgstr "Informationen som hämtats från digiKams databas är:"
 
 #: ../../batch_queue/custom_script.rst:137
 msgid "Item processed is **/mnt/data/Images/SALAGOU/DSC08833.JPG**."
-msgstr ""
+msgstr "Behandlat objekt är **/mnt/data/Images/SALAGOU/DSC08833.JPG**."
 
 #: ../../batch_queue/custom_script.rst:138
 msgid ""
 "Target filename is **/mnt/data/Images/SALAGOU/BatchTool-EpEjEz-9e1c7a12."
 "digikamtempfile.JPG** (a temporary file generated by Batch Queue Manager)."
 msgstr ""
+"Resultatfilnamnet är **/mnt/data/Images/SALAGOU/BatchTool-EpEjEz-9e1c7a12.digi"
+"kamtempfile.JPG** (en tillfällig fil skapad av Köhantering för bakgrundsbehand"
+"ling)."
 
 #: ../../batch_queue/custom_script.rst:139
 msgid "Item Title is **Salagou Trip**."
-msgstr ""
+msgstr "Objekttitel är **Salagou Trip**."
 
 #: ../../batch_queue/custom_script.rst:140
 msgid "Item Comment is null."
-msgstr ""
+msgstr "Objektkommentar är null."
 
 #: ../../batch_queue/custom_script.rst:141
 msgid "Item Color Label is **5** (Green)."
-msgstr ""
+msgstr "Objektets färgbeteckning är **5** (Grön)."
 
 #: ../../batch_queue/custom_script.rst:142
 msgid "Item Pick Label is **3** (Accepted)."
-msgstr ""
+msgstr "Objektets urvalsbeteckning är **3** (Godkänd)."
 
 #: ../../batch_queue/custom_script.rst:143
 msgid "Item Rating is **3 stars**."
-msgstr ""
+msgstr "Objektbetyg är **3 stjärnor**."
 
 #: ../../batch_queue/custom_script.rst:144
 msgid ""
 "Item Tags are **Places**, **Places/France**, **Places/France/Salagou Lake**."
 msgstr ""
+"Objektets etiketter är **Platser**, **Platser/Frankrike**, **Platser/Frankrike"
+"/Salagou Lake**."
 
 #: ../../batch_queue/custom_script.rst:147
 msgid "Add a Watermark with ImageMagick"
-msgstr ""
+msgstr "Lägg till ett vattenstämpel med ImageMagick"
 
 #: ../../batch_queue/custom_script.rst:149
 msgid ""
@@ -267,6 +336,9 @@ msgid ""
 "command line tool to add visible watermarks by superimposing a multiline "
 "text field over each image in the Queue."
 msgstr ""
+"Det andra exemplet nedan är mer komplext och använder kommandoradsverktyget **"
+"ImageMagick** för att lägga till synliga vattenstämplar genom att placera ett "
+"flerradigt textfält ovanpå varje bild i kön."
 
 #: ../../batch_queue/custom_script.rst:168
 msgid ""
@@ -274,14 +346,20 @@ msgid ""
 "Workflow. Bash uses the last called method as the returned value from the "
 "script, here the ImageMagick command line tool **convert**."
 msgstr ""
+"I det här exemplet finns inget uttryckligt anrop till **exit** för att returne"
+"ra ett värde till arbetsflödet. Bash använder resultatet från det senast anrop"
+"ade kommandot som skriptets returvärde, i det här fallet verktyget **convert**"
+" från ImageMagick."
 
 #: ../../batch_queue/custom_script.rst:170
 msgid "This give a result like below."
-msgstr ""
+msgstr "Det ger ett resultat som nedan."
 
 #: ../../batch_queue/custom_script.rst:176
 msgid "The result of the Script Using ImageMagick to Apply a Watermark"
 msgstr ""
+"Resultatet av skriptet som använder ImageMagick för att lägga till en vattenst"
+"ämpel"
 
 #~ msgid "Custom Script"
 #~ msgstr "Eget skript"
