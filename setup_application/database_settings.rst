@@ -108,12 +108,18 @@ The MariaDB Internal Server
 
 digiKam tends to slow down when using a large collection (size **greater than 500,000 items**) hosted on a hard drive (HDD - not an SSD or NVMe device) with the SQLite database. To avoid the delay and maintain efficiency, digiKam provides the option of using **MariaDB Internal**. To be clear, this isn’t an actual server, or a public network. Instead, it is a server that runs only while the application is running.
 
-Internal server creates a separate database that can be accessed (only while application is running) using the command:
+Internal server creates a separate database that can be accessed in Linux (only while application is running) using the command:
 
 .. code-block:: text
 
     mariadb --socket=/home/[user_name]/.local/share/digikam/db_misc/mysql.socket digikam
 
+Or in windows the command (or using HeidiSQL with the following settings):
+
+.. code-block:: text
+
+	mariadb -u root --port 3307
+    
 The internal server uses three MariaDB Binary Tools: :file:`mariadb_install_db`, :file:`mariadbadmin`, and :file:`mariadbd`. You can configure their locations in the configuration dialog. digiKam will try to find these binaries automatically if they’re installed on your system.
 
 .. figure:: images/setup_database_mariadbinternal.webp
