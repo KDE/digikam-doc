@@ -161,6 +161,31 @@ Follow the instructions below, if you don’t have a dedicated user account and 
 
         SET global log_bin_trust_function_creators=1;
 
+.. tip::
+
+    If you want to run MariaDB server in a docker image, you can set the necessary environment variables by opening a shell into the container using
+
+    .. code:: bash
+    
+        docker exec -it mariadbcontainername bash
+
+    and then set the variables required as needed, eg:
+
+    .. code:: bash
+
+        cat > /etc/mysql/mariadb.conf.d/50-digikam.cnf <<EOF
+        [mysqld]
+        max_allowed_packet=128MB
+        log-bin=1
+        log_bin_trust_function_creators=1
+        EOF
+
+    Restart the container and check to see if the variables have been set using
+
+    .. code:: bash
+
+        docker -it mariadbcontainername mariadb-admin variables -u root -p
+
 Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` and then under the **Database** section, select MariaDB Server from the drop down list.
 
 .. figure:: images/setup_database_remotemariadb.webp
