@@ -114,7 +114,7 @@ Internal server creates a separate database that can be accessed in Linux (only 
 
     mariadb --socket=/home/[user_name]/.local/share/digikam/db_misc/mysql.socket digikam
 
-Or in windows the command (or using HeidiSQL with the following settings):
+Or in windows the command (or using `HeidiSQL <https://en.wikipedia.org/wiki/HeidiSQL>`_ with the following settings):
 
 .. code-block:: text
 
@@ -163,7 +163,7 @@ Follow the instructions below, if you don’t have a dedicated user account and 
 
 .. tip::
 
-    If you want to run MariaDB server in a docker image, you can set the necessary environment variables by opening a shell into the container using
+    If you want to run MariaDB server in a `docker <https://en.wikipedia.org/wiki/Docker_(software)>`_ image, you can set the necessary environment variables by opening a shell into the container using
 
     .. code:: bash
     
