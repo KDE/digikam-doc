@@ -198,7 +198,7 @@ Enter the IP address of your MariaDB server in the **Host Name** field and speci
 
 Set the **Core Db Name** field to the name of the first database that is used to store photo metadata.
 
-Set the **Thumbs Db Name** field to the name of the second database that is used to store the wavelet-compressed thumbnails. The path to store the thumbnails data can be stored locally to prevent huge data exchange between the server and the application computer. Storing the thumbnails in remote can decrease the application performances and introduce time latency with large collections.
+Set the **Thumbs Db Name** field to the name of the second database that is used to store the wavelet-compressed thumbnails. The path to store the thumbnails data can be stored locally (in a SQLite database) to prevent huge data exchange between the server and the application computer. Storing the thumbnails in remote can decrease the application performances and introduce time latency with large collections. Changing this value (from the local drive to remote or vice versa) will trigger a full scan of the collection.
 
 Set the **Similarity Db Name** field to the name of the third database that is used to store the similarity finger-prints produced by the fuzzy search engine.
 
@@ -211,6 +211,8 @@ To check whether the database connection works properly, press the **Check Conne
 There are some tips and recommendation to obtain the best results with a remote MariaDB database server.
 
 - With a slow network, digiKam hangs a lot of the time, especially when the album contains many items **(>1,000)**. This issue depends on network performances. For example, the problem has been reproducible using Wifi connections. Switching to Ethernet to solve the problem.
+
+- Storing the thumbnail database on your local drive increases speed significantly, especially with large collections.
 
 - Also, if you have an enormous collection, you should start the MariaDB server with `mariadb --max_allowed_packet = 128M`. If you’re well acquainted with using MariaDB, you could also change your settings in :file:`my.ini` or :file:`~/.my.cnf` files.
 
