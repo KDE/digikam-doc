@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-16 02:03+0000\n"
+"POT-Creation-Date: 2026-09-18 02:02+0000\n"
 "PO-Revision-Date: 2026-08-16 14:50+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -372,14 +372,24 @@ msgstr ""
 "сервер, який працює лише, якщо працює програма."
 
 #: ../../setup_application/database_settings.rst:111
+#, fuzzy
+#| msgid ""
+#| "Internal server creates a separate database that can be accessed (only "
+#| "while application is running) using the command:"
 msgid ""
-"Internal server creates a separate database that can be accessed (only while "
-"application is running) using the command:"
+"Internal server creates a separate database that can be accessed in Linux "
+"(only while application is running) using the command:"
 msgstr ""
 "Внутрішній сервер створює окрему базу даних, доступ до якої (лише протягом "
 "роботи програми) можна отримати за допомогою такої команди:"
 
 #: ../../setup_application/database_settings.rst:117
+msgid ""
+"Or in windows the command (or using `HeidiSQL <https://en.wikipedia.org/wiki/"
+"HeidiSQL>`_ with the following settings):"
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:123
 msgid ""
 "The internal server uses three MariaDB Binary Tools: :file:"
 "`mariadb_install_db`, :file:`mariadbadmin`, and :file:`mariadbd`. You can "
@@ -392,15 +402,15 @@ msgstr ""
 "налаштувань. digiKam намагатиметься автоматично виявити розташування цих "
 "виконуваних файлів, якщо їх встановлено у системі."
 
-#: ../../setup_application/database_settings.rst:123
+#: ../../setup_application/database_settings.rst:129
 msgid "The digiKam MariaDB Internal Configuration Page"
 msgstr "Сторінка внутрішніх налаштувань MariaDB у digiKam"
 
-#: ../../setup_application/database_settings.rst:128
+#: ../../setup_application/database_settings.rst:134
 msgid "The MariaDB Remote Server"
 msgstr "Віддалений сервер MariaDB"
 
-#: ../../setup_application/database_settings.rst:130
+#: ../../setup_application/database_settings.rst:136
 msgid ""
 "Obviously, access to a MariaDB server is required to use digiKam with a "
 "remote MariaDB. You can install MariaDB easily using `this link <https://www."
@@ -412,7 +422,7 @@ msgstr ""
 "скористатися `цим посиланням <https://www.cherryservers.com/blog/how-to-"
 "install-and-start-using-mariadb-on-ubuntu-20-04>`_."
 
-#: ../../setup_application/database_settings.rst:132
+#: ../../setup_application/database_settings.rst:138
 msgid ""
 "Follow the instructions below, if you don’t have a dedicated user account "
 "and a digiKam database already set up. Run the commands in MariaDB server, "
@@ -423,7 +433,7 @@ msgstr ""
 "вже налаштовано. Віддайте такі команди на сервері MariaDB (замінивши "
 "*пароль* на відповідний):"
 
-#: ../../setup_application/database_settings.rst:136
+#: ../../setup_application/database_settings.rst:142
 msgid ""
 "You can select any database name. (Here it is, *digikam*). Just remember to "
 "fill in the database name correctly in Core, Thumbs, Similarity, and Face "
@@ -434,7 +444,7 @@ msgstr ""
 "даних та баз даних мініатюр, подібності і облич у діалоговому вікні, зразок "
 "якого наведено нижче."
 
-#: ../../setup_application/database_settings.rst:148
+#: ../../setup_application/database_settings.rst:154
 msgid ""
 "If you have an enormous collection, it's recommended to start the MariaDB "
 "server with `mariadb --max_allowed_packet = 128M`"
@@ -442,7 +452,7 @@ msgstr ""
 "Якщо у вас величезна збірка зображень, рекомендуємо вам запускати сервер "
 "MariaDB за допомогою такої команди: `mariadb --max_allowed_packet = 128M`"
 
-#: ../../setup_application/database_settings.rst:152
+#: ../../setup_application/database_settings.rst:158
 msgid ""
 "If you have problems with a MariaDB server on a Ubuntu based Linux system, "
 "execute this additional command in the MariaDB prompt to enable the creation "
@@ -452,7 +462,23 @@ msgstr ""
 "системах Linux, скористайтеся додатковою командою у запиті MariaDB, щоб мати "
 "змогу створювати перемикачі MariaDB."
 
-#: ../../setup_application/database_settings.rst:158
+#: ../../setup_application/database_settings.rst:166
+msgid ""
+"If you want to run MariaDB server in a `docker <https://en.wikipedia.org/"
+"wiki/Docker_(software)>`_ image, you can set the necessary environment "
+"variables by opening a shell into the container using"
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:172
+msgid "and then set the variables required as needed, eg:"
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:183
+msgid ""
+"Restart the container and check to see if the variables have been set using"
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:189
 msgid ""
 "Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` "
 "and then under the **Database** section, select MariaDB Server from the drop "
@@ -462,11 +488,11 @@ msgstr ""
 "Налаштувати digiKam...` і у розділі «База даних» виберіть сервер MariaDB у "
 "спадному списку."
 
-#: ../../setup_application/database_settings.rst:164
+#: ../../setup_application/database_settings.rst:195
 msgid "The digiKam Remote MariaDB Configuration Page"
 msgstr "Сторінка налаштувань віддаленого сервера MariaDB у digiKam"
 
-#: ../../setup_application/database_settings.rst:166
+#: ../../setup_application/database_settings.rst:197
 msgid ""
 "Enter the IP address of your MariaDB server in the **Host Name** field and "
 "specify the correct port in the **Host Port** field (the default port is "
@@ -475,7 +501,7 @@ msgstr ""
 "Введіть IP-адресу вашого сервера MariaDB до поля **Назва вузла** і вкажіть "
 "правильний номер порту у полі **Порт вузла** (типовим номером порту є 3306)."
 
-#: ../../setup_application/database_settings.rst:168
+#: ../../setup_application/database_settings.rst:199
 msgid ""
 "Set the **Core Db Name** field to the name of the first database that is "
 "used to store photo metadata."
@@ -483,7 +509,7 @@ msgstr ""
 "У полі **Назва основної бази даних** вкажіть назву першої бази даних, де "
 "зберігатимуться метадані фотографій."
 
-#: ../../setup_application/database_settings.rst:170
+#: ../../setup_application/database_settings.rst:201
 msgid ""
 "Set the **Thumbs Db Name** field to the name of the second database that is "
 "used to store the wavelet-compressed thumbnails. The path to store the "
@@ -500,7 +526,7 @@ msgstr ""
 "зменшити швидкодію програм і призвести до затримок у роботі з об'ємними "
 "збірками."
 
-#: ../../setup_application/database_settings.rst:172
+#: ../../setup_application/database_settings.rst:203
 msgid ""
 "Set the **Similarity Db Name** field to the name of the third database that "
 "is used to store the similarity finger-prints produced by the fuzzy search "
@@ -510,7 +536,7 @@ msgstr ""
 "яка використовуватиметься для зберігання відбитків подібності, створених "
 "рушієм нечіткого пошуку."
 
-#: ../../setup_application/database_settings.rst:174
+#: ../../setup_application/database_settings.rst:205
 msgid ""
 "Set the **Face Db Name** field to the name of the last database that is used "
 "to store the face histograms for facial recognition."
@@ -518,7 +544,7 @@ msgstr ""
 "У полі **Назва бази даних облич** вкажіть назву останньої бази даних, де "
 "зберігатимуться гістограми облич для розпізнавання облич."
 
-#: ../../setup_application/database_settings.rst:176
+#: ../../setup_application/database_settings.rst:207
 msgid ""
 "To safely connect to the remote server, enter your MariaDB identification "
 "using the **User** and **Password** fields."
@@ -527,7 +553,7 @@ msgstr ""
 "параметри розпізнавання MariaDB за допомогою полів **Користувач** і "
 "**Пароль**."
 
-#: ../../setup_application/database_settings.rst:178
+#: ../../setup_application/database_settings.rst:209
 msgid ""
 "To check whether the database connection works properly, press the **Check "
 "Connection** button. If everything works as it’s supposed to, switch to the "
@@ -542,7 +568,7 @@ msgstr ""
 "**Гаразд** і зачекайте, доки digiKam заповнить бази даних даними фотографій. "
 "Заповнення може бути доволі тривалим, якщо у вас багато фотографій."
 
-#: ../../setup_application/database_settings.rst:180
+#: ../../setup_application/database_settings.rst:211
 msgid ""
 "There are some tips and recommendation to obtain the best results with a "
 "remote MariaDB database server."
@@ -550,7 +576,7 @@ msgstr ""
 "Забезпечити найкращі результати у використанні віддаленого сервера баз даних "
 "MariaDB допоможуть наші підказки і рекомендації."
 
-#: ../../setup_application/database_settings.rst:182
+#: ../../setup_application/database_settings.rst:213
 msgid ""
 "With a slow network, digiKam hangs a lot of the time, especially when the "
 "album contains many items **(>1,000)**. This issue depends on network "
@@ -563,7 +589,7 @@ msgstr ""
 "користуватися Wifi, можуть виникнути проблеми. Перехід на Ethernet усуває ці "
 "проблеми."
 
-#: ../../setup_application/database_settings.rst:184
+#: ../../setup_application/database_settings.rst:215
 msgid ""
 "Also, if you have an enormous collection, you should start the MariaDB "
 "server with `mariadb --max_allowed_packet = 128M`. If you’re well acquainted "
@@ -576,7 +602,7 @@ msgstr ""
 "параметри роботи сервера за допомогою файла :file:`my.ini` або :file:`~/.my."
 "cnf`.)"
 
-#: ../../setup_application/database_settings.rst:188
+#: ../../setup_application/database_settings.rst:219
 msgid ""
 "The locale used in the MariaDB server must be the same as the locale from "
 "the computer used to run digiKam to prevent problems with the common values "
@@ -586,11 +612,11 @@ msgstr ""
 "де запущено digiKam, щоб запобігти проблемі зі збереженням подвійних значень "
 "у таблицях бази даних."
 
-#: ../../setup_application/database_settings.rst:191
+#: ../../setup_application/database_settings.rst:222
 msgid "Database Type Criteria"
 msgstr "Параметри бази даних"
 
-#: ../../setup_application/database_settings.rst:193
+#: ../../setup_application/database_settings.rst:224
 msgid ""
 "See the summary below to choose the right database type depending on your "
 "use case."
@@ -598,156 +624,156 @@ msgstr ""
 "Нижче наведено короткі рекомендації щодо правильного типу бази даних, "
 "залежно від умов користування."
 
-#: ../../setup_application/database_settings.rst:196
+#: ../../setup_application/database_settings.rst:227
 msgid "Storage"
 msgstr "Сховище даних"
 
-#: ../../setup_application/database_settings.rst:196
+#: ../../setup_application/database_settings.rst:227
 msgid "Type"
 msgstr "Тип"
 
-#: ../../setup_application/database_settings.rst:196
+#: ../../setup_application/database_settings.rst:227
 msgid "Items"
 msgstr "Записи"
 
-#: ../../setup_application/database_settings.rst:196
+#: ../../setup_application/database_settings.rst:227
 msgid "Remarks"
 msgstr "Помітки"
 
-#: ../../setup_application/database_settings.rst:198
-#: ../../setup_application/database_settings.rst:199
-#: ../../setup_application/database_settings.rst:212
+#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:230
+#: ../../setup_application/database_settings.rst:243
 msgid "HDD"
 msgstr "HDD"
 
-#: ../../setup_application/database_settings.rst:198
-#: ../../setup_application/database_settings.rst:200
-#: ../../setup_application/database_settings.rst:202
-#: ../../setup_application/database_settings.rst:204
-#: ../../setup_application/database_settings.rst:206
+#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:231
+#: ../../setup_application/database_settings.rst:233
+#: ../../setup_application/database_settings.rst:235
+#: ../../setup_application/database_settings.rst:237
 msgid "SQLite"
 msgstr "SQLite"
 
-#: ../../setup_application/database_settings.rst:198
-#: ../../setup_application/database_settings.rst:204
+#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:235
 msgid "< 500K"
 msgstr "< 500 тисяч"
 
-#: ../../setup_application/database_settings.rst:198
+#: ../../setup_application/database_settings.rst:229
 msgid "**Warning: WAL is mandatory.**"
 msgstr "**Попередження: WAL є обов'язковим.**"
 
-#: ../../setup_application/database_settings.rst:199
-#: ../../setup_application/database_settings.rst:201
-#: ../../setup_application/database_settings.rst:203
-#: ../../setup_application/database_settings.rst:205
-#: ../../setup_application/database_settings.rst:207
+#: ../../setup_application/database_settings.rst:230
+#: ../../setup_application/database_settings.rst:232
+#: ../../setup_application/database_settings.rst:234
+#: ../../setup_application/database_settings.rst:236
+#: ../../setup_application/database_settings.rst:238
 msgid "MariaDB-Internal"
 msgstr "Вбудований MariaDB"
 
-#: ../../setup_application/database_settings.rst:199
-#: ../../setup_application/database_settings.rst:205
+#: ../../setup_application/database_settings.rst:230
+#: ../../setup_application/database_settings.rst:236
 msgid "> 500K"
 msgstr "> 500 тисяч"
 
-#: ../../setup_application/database_settings.rst:200
-#: ../../setup_application/database_settings.rst:201
-#: ../../setup_application/database_settings.rst:215
+#: ../../setup_application/database_settings.rst:231
+#: ../../setup_application/database_settings.rst:232
+#: ../../setup_application/database_settings.rst:246
 msgid "SSD"
 msgstr "SSD"
 
-#: ../../setup_application/database_settings.rst:200
-#: ../../setup_application/database_settings.rst:202
+#: ../../setup_application/database_settings.rst:231
+#: ../../setup_application/database_settings.rst:233
 msgid "WAL is optional."
 msgstr "WAL є необов'язковим."
 
-#: ../../setup_application/database_settings.rst:202
-#: ../../setup_application/database_settings.rst:203
+#: ../../setup_application/database_settings.rst:233
+#: ../../setup_application/database_settings.rst:234
 msgid "NVME"
 msgstr "NVME"
 
-#: ../../setup_application/database_settings.rst:204
-#: ../../setup_application/database_settings.rst:205
-#: ../../setup_application/database_settings.rst:221
+#: ../../setup_application/database_settings.rst:235
+#: ../../setup_application/database_settings.rst:236
+#: ../../setup_application/database_settings.rst:252
 msgid "Removable"
 msgstr "Портативне"
 
-#: ../../setup_application/database_settings.rst:204
+#: ../../setup_application/database_settings.rst:235
 msgid "**Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**"
 msgstr "**Попередження: обов'язково WAL. Мінімум USB 3.1 з диском NVMe.**"
 
-#: ../../setup_application/database_settings.rst:205
+#: ../../setup_application/database_settings.rst:236
 msgid "**Warning: USB 3.1 minimum with NVMe drive.**"
 msgstr "**Попередження: мінімум USB 3.1 з диском NVMe.**"
 
-#: ../../setup_application/database_settings.rst:206
-#: ../../setup_application/database_settings.rst:207
-#: ../../setup_application/database_settings.rst:224
+#: ../../setup_application/database_settings.rst:237
+#: ../../setup_application/database_settings.rst:238
+#: ../../setup_application/database_settings.rst:255
 msgid "Network FS"
 msgstr "Мережева ФС"
 
-#: ../../setup_application/database_settings.rst:206
+#: ../../setup_application/database_settings.rst:237
 msgid "**Prohibited: SQLite databases must be stored on local file system.**"
 msgstr ""
 "**Заборонено: бази даних SQLite мають зберігатися у локальній файловій "
 "системі.**"
 
-#: ../../setup_application/database_settings.rst:207
+#: ../../setup_application/database_settings.rst:238
 msgid "**Prohibited: MariaDB databases must be stored on local file system.**"
 msgstr ""
 "**Заборонено: бази даних MariaDB мають зберігатися у локальній файловій "
 "системі.**"
 
-#: ../../setup_application/database_settings.rst:208
-#: ../../setup_application/database_settings.rst:227
+#: ../../setup_application/database_settings.rst:239
+#: ../../setup_application/database_settings.rst:258
 msgid "Remote"
 msgstr "Віддалене"
 
-#: ../../setup_application/database_settings.rst:208
+#: ../../setup_application/database_settings.rst:239
 msgid "MariaDB-Server"
 msgstr "Сервер MariaDB"
 
-#: ../../setup_application/database_settings.rst:208
+#: ../../setup_application/database_settings.rst:239
 msgid "Gigabit Ethernet or higher is recommended."
 msgstr "Рекомендовано користуватися гігабітним Ethernet або ширшим каналом."
 
-#: ../../setup_application/database_settings.rst:214
+#: ../../setup_application/database_settings.rst:245
 msgid "Hard Disk Drive."
 msgstr "Жорсткий диск."
 
-#: ../../setup_application/database_settings.rst:217
+#: ../../setup_application/database_settings.rst:248
 msgid "Solid State Drive."
 msgstr "Твердотільний накопичувач для зберігання даних."
 
-#: ../../setup_application/database_settings.rst:218
+#: ../../setup_application/database_settings.rst:249
 msgid "NVMe"
 msgstr "NVMe"
 
-#: ../../setup_application/database_settings.rst:220
+#: ../../setup_application/database_settings.rst:251
 msgid "Non-Volatile Memory."
 msgstr "Енергонезалежна пам'ять."
 
-#: ../../setup_application/database_settings.rst:223
+#: ../../setup_application/database_settings.rst:254
 msgid "External USB HDD/SSD/NVMe drive."
 msgstr "Зовнішній HDD/SSD/NVMe з інтерфейсом USB."
 
-#: ../../setup_application/database_settings.rst:226
+#: ../../setup_application/database_settings.rst:257
 msgid "Network File System mounted locally."
 msgstr "Мережева файлова система, яку змонтовано локально."
 
-#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:260
 msgid "Network server as NAS (Network Attached Storage)."
 msgstr "Сервер мережі, як NAS (Network Attached Storage)."
 
-#: ../../setup_application/database_settings.rst:230
+#: ../../setup_application/database_settings.rst:261
 msgid "WAL"
 msgstr "WAL"
 
-#: ../../setup_application/database_settings.rst:232
+#: ../../setup_application/database_settings.rst:263
 msgid "Write-Ahead Lock (SQLite database only)."
 msgstr "Write-Ahead Lock («блокування до запису», лише база даних SQLite)."
 
-#: ../../setup_application/database_settings.rst:236
+#: ../../setup_application/database_settings.rst:267
 msgid ""
 "Refer the :ref:`Digital Asset Management <storage_deterioration>` chapter "
 "for more details about media and data protection."
@@ -755,7 +781,7 @@ msgstr ""
 "Докладніші відомості щодо носіїв даних та захисту даних можна знайти у :ref:"
 "`розділі щодо керування цифровою власністю <storage_deterioration>`."
 
-#: ../../setup_application/database_settings.rst:238
+#: ../../setup_application/database_settings.rst:269
 msgid ""
 "Also refer to the :ref:`Collection Settings <collections_settings>` chapter "
 "for more details about how to configure your collections depending on your "
@@ -765,7 +791,7 @@ msgstr ""
 "дізнатися більше про спосіб налаштовування ваших збірок, залежно від правил "
 "зберігання даних."
 
-#: ../../setup_application/database_settings.rst:242
+#: ../../setup_application/database_settings.rst:273
 msgid ""
 "If you share the same **Removable** media for host databases and/or "
 "collections between different computers, you must have the same kind of "
@@ -780,7 +806,7 @@ msgstr ""
 "тією самою версією digiKam усюди, щоб запобігти конфліктам у схемах баз "
 "даних."
 
-#: ../../setup_application/database_settings.rst:244
+#: ../../setup_application/database_settings.rst:275
 msgid ""
 "If you use a common **Remote** server to host *databases and collections*, "
 "you must use the same digiKam version everywhere to prevent conflicts with "
@@ -792,7 +818,7 @@ msgstr ""
 "запобігти конфліктам у схемах баз даних. Не можна використовувати одночасно "
 "різні комп'ютери з digiKam для роботи із базою даних та зі збірками."
 
-#: ../../setup_application/database_settings.rst:246
+#: ../../setup_application/database_settings.rst:277
 msgid ""
 "If you use a common **Remote** server to host collections, with the "
 "databases stored on individual computers, then different versions of digiKam "
@@ -808,11 +834,11 @@ msgstr ""
 "налаштувань метаданих**, слід подбати про усування можливих конфліктів, "
 "пов'язаних із одночасним доступом до одного файла з різних комп'ютерів."
 
-#: ../../setup_application/database_settings.rst:251
+#: ../../setup_application/database_settings.rst:282
 msgid "Database Migration"
 msgstr "Перенесення бази даних"
 
-#: ../../setup_application/database_settings.rst:253
+#: ../../setup_application/database_settings.rst:284
 msgid ""
 "digiKam comes up with an exclusive tool named **Database Migration**, that "
 "allows users to migrate their data. For example, the migration tool can help "
@@ -824,7 +850,7 @@ msgstr ""
 "перенесення може допомогти вам перенести дані з формату SQLite до формату "
 "MariaDB, і навпаки."
 
-#: ../../setup_application/database_settings.rst:255
+#: ../../setup_application/database_settings.rst:286
 msgid ""
 "To migrate to another database, go to :menuselection:`Settings --> Database "
 "Migration...`. A dialog box appears:"
@@ -833,11 +859,11 @@ msgstr ""
 "меню :menuselection:`Параметри --> Перенесення бази даних`. У відповідь буде "
 "відкрито таке діалогове вікно:"
 
-#: ../../setup_application/database_settings.rst:261
+#: ../../setup_application/database_settings.rst:292
 msgid "The digiKam Database Migration Tool"
 msgstr "Засіб перенесення бази даних у digiKam"
 
-#: ../../setup_application/database_settings.rst:263
+#: ../../setup_application/database_settings.rst:294
 msgid ""
 "Now choose the appropriate database types you want to convert to. Finally, "
 "click on **Migrate** button to convert the database from SQLite to MariaDB "
@@ -849,7 +875,7 @@ msgstr ""
 "формату SQLite на формат MariaDB (або навпаки). Тривалість дії залежить від "
 "розміру бази даних."
 
-#: ../../setup_application/database_settings.rst:267
+#: ../../setup_application/database_settings.rst:298
 msgid ""
 "Only the digiKam **Core** database will be migrated by this conversion "
 "process. All of the other databases needs to be rebuilt using post-"
@@ -865,11 +891,11 @@ msgstr ""
 "даних **облич** слід позначити пункт **Вилучити і повторно створити всі "
 "тренувальні дані**."
 
-#: ../../setup_application/database_settings.rst:272
+#: ../../setup_application/database_settings.rst:303
 msgid "Database Backup Recommendation"
 msgstr "Рекомендації щодо резервного копіювання баз даних"
 
-#: ../../setup_application/database_settings.rst:274
+#: ../../setup_application/database_settings.rst:305
 msgid ""
 "For security reasons, planning a database backup using crontab over the "
 "network can help against device failures. A NAS or an external drive can "
@@ -880,7 +906,7 @@ msgstr ""
 "пристрою. Для резервного копіювання можна також скористатися NAS або "
 "зовнішніми диском."
 
-#: ../../setup_application/database_settings.rst:276
+#: ../../setup_application/database_settings.rst:307
 msgid ""
 "Each database can be renamed with a different, unique name. This allows "
 "users to backup only what is needed. For instance, renaming **Core** "
@@ -896,7 +922,7 @@ msgstr ""
 "можна створити на основі початкових зображень, тому їхня втрата не є "
 "критичною."
 
-#: ../../setup_application/database_settings.rst:278
+#: ../../setup_application/database_settings.rst:309
 msgid ""
 "The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will "
 "explain how to maintain the database contents and how to synchronize the "
@@ -906,11 +932,11 @@ msgstr ""
 "пояснення щодо обслуговування вмісту баз даних і синхронізування даних "
 "збірок із базами даних і навпаки."
 
-#: ../../setup_application/database_settings.rst:283
+#: ../../setup_application/database_settings.rst:314
 msgid "Database Statistics"
 msgstr "Статистика бази даних"
 
-#: ../../setup_application/database_settings.rst:285
+#: ../../setup_application/database_settings.rst:316
 msgid ""
 "digiKam provides a unique tool to show the statistics from your collections. "
 "It includes count of images, videos (including individual count by image "
@@ -923,7 +949,7 @@ msgstr ""
 "дані щодо **модуля роботи із базою даних** (Sqlite або MariaDB) та "
 "**розташування файла бази даних** (місця, де зберігаються дані вашої збірки)."
 
-#: ../../setup_application/database_settings.rst:287
+#: ../../setup_application/database_settings.rst:318
 msgid ""
 "You can view your statistics by going to :menuselection:`Help --> Database "
 "Statistics...`. A dialog box like this will appear:"
@@ -932,7 +958,7 @@ msgstr ""
 "пункту меню :menuselection:`Довідка --> Статистика бази даних...`. У "
 "відповідь буде показано приблизно таке діалогове вікно:"
 
-#: ../../setup_application/database_settings.rst:294
+#: ../../setup_application/database_settings.rst:325
 msgid "The digiKam Database Statistics Dialog"
 msgstr "Вікно статистики щодо бази даних у digiKam"
 
