@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-18 02:02+0000\n"
+"POT-Creation-Date: 2026-09-20 02:06+0000\n"
 "PO-Revision-Date: 2026-09-18 12:50+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -525,13 +525,22 @@ msgstr ""
 "dades que s'usarà per a emmagatzemar les metadades de les fotografies."
 
 #: ../../setup_application/database_settings.rst:201
+#, fuzzy
+#| msgid ""
+#| "Set the **Thumbs Db Name** field to the name of the second database that "
+#| "is used to store the wavelet-compressed thumbnails. The path to store the "
+#| "thumbnails data can be stored locally to prevent huge data exchange "
+#| "between the server and the application computer. Storing the thumbnails "
+#| "in remote can decrease the application performances and introduce time "
+#| "latency with large collections."
 msgid ""
 "Set the **Thumbs Db Name** field to the name of the second database that is "
 "used to store the wavelet-compressed thumbnails. The path to store the "
-"thumbnails data can be stored locally to prevent huge data exchange between "
-"the server and the application computer. Storing the thumbnails in remote "
-"can decrease the application performances and introduce time latency with "
-"large collections."
+"thumbnails data can be stored locally (in a SQLite database) to prevent huge "
+"data exchange between the server and the application computer. Storing the "
+"thumbnails in remote can decrease the application performances and introduce "
+"time latency with large collections. Changing this value (from the local "
+"drive to remote or vice versa) will trigger a full scan of the collection."
 msgstr ""
 "Establiu el camp **Nom de la BD de miniatures** al nom de la segona base de "
 "dades que s'utilitza per a emmagatzemar les miniatures comprimides amb "
@@ -607,6 +616,12 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:215
 msgid ""
+"Storing the thumbnail database on your local drive increases speed "
+"significantly, especially with large collections."
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:217
+msgid ""
 "Also, if you have an enormous collection, you should start the MariaDB "
 "server with `mariadb --max_allowed_packet = 128M`. If you’re well acquainted "
 "with using MariaDB, you could also change your settings in :file:`my.ini` "
@@ -617,7 +632,7 @@ msgstr ""
 "amb l'ús de MariaDB, també podreu canviar la vostra configuració en els "
 "fitxers :file:`my.ini` o :file:`~/.my.cnf`."
 
-#: ../../setup_application/database_settings.rst:219
+#: ../../setup_application/database_settings.rst:221
 msgid ""
 "The locale used in the MariaDB server must be the same as the locale from "
 "the computer used to run digiKam to prevent problems with the common values "
@@ -629,12 +644,12 @@ msgstr ""
 "taules de la base de dades."
 
 # skip-rule: common-settings
-#: ../../setup_application/database_settings.rst:222
+#: ../../setup_application/database_settings.rst:224
 msgid "Database Type Criteria"
 msgstr "Criteris sobre el tipus de base de dades"
 
 # skip-rule: ff-resume
-#: ../../setup_application/database_settings.rst:224
+#: ../../setup_application/database_settings.rst:226
 msgid ""
 "See the summary below to choose the right database type depending on your "
 "use case."
@@ -642,156 +657,156 @@ msgstr ""
 "Vegeu el resum a continuació per a triar el tipus de base de dades correcte "
 "depenent del vostre cas d'ús."
 
-#: ../../setup_application/database_settings.rst:227
+#: ../../setup_application/database_settings.rst:229
 msgid "Storage"
 msgstr "Emmagatzematge"
 
-#: ../../setup_application/database_settings.rst:227
+#: ../../setup_application/database_settings.rst:229
 msgid "Type"
 msgstr "Tipus"
 
-#: ../../setup_application/database_settings.rst:227
+#: ../../setup_application/database_settings.rst:229
 msgid "Items"
 msgstr "Elements"
 
-#: ../../setup_application/database_settings.rst:227
+#: ../../setup_application/database_settings.rst:229
 msgid "Remarks"
 msgstr "Observacions"
 
-#: ../../setup_application/database_settings.rst:229
-#: ../../setup_application/database_settings.rst:230
-#: ../../setup_application/database_settings.rst:243
+#: ../../setup_application/database_settings.rst:231
+#: ../../setup_application/database_settings.rst:232
+#: ../../setup_application/database_settings.rst:245
 msgid "HDD"
 msgstr "HDD"
 
-#: ../../setup_application/database_settings.rst:229
 #: ../../setup_application/database_settings.rst:231
 #: ../../setup_application/database_settings.rst:233
 #: ../../setup_application/database_settings.rst:235
 #: ../../setup_application/database_settings.rst:237
+#: ../../setup_application/database_settings.rst:239
 msgid "SQLite"
 msgstr "SQLite"
 
-#: ../../setup_application/database_settings.rst:229
-#: ../../setup_application/database_settings.rst:235
+#: ../../setup_application/database_settings.rst:231
+#: ../../setup_application/database_settings.rst:237
 msgid "< 500K"
 msgstr "< 500K"
 
-#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:231
 msgid "**Warning: WAL is mandatory.**"
 msgstr "**Avís: WAL és obligatori.**"
 
-#: ../../setup_application/database_settings.rst:230
 #: ../../setup_application/database_settings.rst:232
 #: ../../setup_application/database_settings.rst:234
 #: ../../setup_application/database_settings.rst:236
 #: ../../setup_application/database_settings.rst:238
+#: ../../setup_application/database_settings.rst:240
 msgid "MariaDB-Internal"
 msgstr "MariaDB intern"
 
-#: ../../setup_application/database_settings.rst:230
-#: ../../setup_application/database_settings.rst:236
+#: ../../setup_application/database_settings.rst:232
+#: ../../setup_application/database_settings.rst:238
 msgid "> 500K"
 msgstr "> 500K"
 
-#: ../../setup_application/database_settings.rst:231
-#: ../../setup_application/database_settings.rst:232
-#: ../../setup_application/database_settings.rst:246
+#: ../../setup_application/database_settings.rst:233
+#: ../../setup_application/database_settings.rst:234
+#: ../../setup_application/database_settings.rst:248
 msgid "SSD"
 msgstr "SSD"
 
-#: ../../setup_application/database_settings.rst:231
 #: ../../setup_application/database_settings.rst:233
+#: ../../setup_application/database_settings.rst:235
 msgid "WAL is optional."
 msgstr "WAL és opcional."
 
-#: ../../setup_application/database_settings.rst:233
-#: ../../setup_application/database_settings.rst:234
+#: ../../setup_application/database_settings.rst:235
+#: ../../setup_application/database_settings.rst:236
 msgid "NVME"
 msgstr "NVME"
 
-#: ../../setup_application/database_settings.rst:235
-#: ../../setup_application/database_settings.rst:236
-#: ../../setup_application/database_settings.rst:252
+#: ../../setup_application/database_settings.rst:237
+#: ../../setup_application/database_settings.rst:238
+#: ../../setup_application/database_settings.rst:254
 msgid "Removable"
 msgstr "Extraïble"
 
-#: ../../setup_application/database_settings.rst:235
+#: ../../setup_application/database_settings.rst:237
 msgid "**Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**"
 msgstr "**Avís: WAL és obligatori. USB 3.1 mínim amb una unitat NVMe.**"
 
-#: ../../setup_application/database_settings.rst:236
+#: ../../setup_application/database_settings.rst:238
 msgid "**Warning: USB 3.1 minimum with NVMe drive.**"
 msgstr "**Avís: USB 3.1 mínim amb una unitat NVMe.**"
 
-#: ../../setup_application/database_settings.rst:237
-#: ../../setup_application/database_settings.rst:238
-#: ../../setup_application/database_settings.rst:255
+#: ../../setup_application/database_settings.rst:239
+#: ../../setup_application/database_settings.rst:240
+#: ../../setup_application/database_settings.rst:257
 msgid "Network FS"
 msgstr "Sistema de fitxers de xarxa"
 
-#: ../../setup_application/database_settings.rst:237
+#: ../../setup_application/database_settings.rst:239
 msgid "**Prohibited: SQLite databases must be stored on local file system.**"
 msgstr ""
 "**Prohibit: les bases de dades SQLite s'han d'emmagatzemar en un sistema de "
 "fitxers local.**"
 
-#: ../../setup_application/database_settings.rst:238
+#: ../../setup_application/database_settings.rst:240
 msgid "**Prohibited: MariaDB databases must be stored on local file system.**"
 msgstr ""
 "**Prohibit: les bases de dades MariaDB s'han d'emmagatzemar en un sistema de "
 "fitxers local.**"
 
-#: ../../setup_application/database_settings.rst:239
-#: ../../setup_application/database_settings.rst:258
+#: ../../setup_application/database_settings.rst:241
+#: ../../setup_application/database_settings.rst:260
 msgid "Remote"
 msgstr "Remota"
 
-#: ../../setup_application/database_settings.rst:239
+#: ../../setup_application/database_settings.rst:241
 msgid "MariaDB-Server"
 msgstr "Servidor MariaDB"
 
-#: ../../setup_application/database_settings.rst:239
+#: ../../setup_application/database_settings.rst:241
 msgid "Gigabit Ethernet or higher is recommended."
 msgstr "Es recomana Gigabit Ethernet o superior."
 
-#: ../../setup_application/database_settings.rst:245
+#: ../../setup_application/database_settings.rst:247
 msgid "Hard Disk Drive."
 msgstr "Unitat de disc dur."
 
-#: ../../setup_application/database_settings.rst:248
+#: ../../setup_application/database_settings.rst:250
 msgid "Solid State Drive."
 msgstr "Unitat d'estat sòlid."
 
-#: ../../setup_application/database_settings.rst:249
+#: ../../setup_application/database_settings.rst:251
 msgid "NVMe"
 msgstr "NVMe"
 
-#: ../../setup_application/database_settings.rst:251
+#: ../../setup_application/database_settings.rst:253
 msgid "Non-Volatile Memory."
 msgstr "Memòria no volàtil."
 
-#: ../../setup_application/database_settings.rst:254
+#: ../../setup_application/database_settings.rst:256
 msgid "External USB HDD/SSD/NVMe drive."
 msgstr "Unitat externa USB HDD/SDD/NVMe."
 
-#: ../../setup_application/database_settings.rst:257
+#: ../../setup_application/database_settings.rst:259
 msgid "Network File System mounted locally."
 msgstr "Sistema de fitxers de xarxa muntat localment."
 
-#: ../../setup_application/database_settings.rst:260
+#: ../../setup_application/database_settings.rst:262
 msgid "Network server as NAS (Network Attached Storage)."
 msgstr "Servidor de xarxa com a NAS (emmagatzematge connectat a la xarxa)."
 
-#: ../../setup_application/database_settings.rst:261
+#: ../../setup_application/database_settings.rst:263
 msgid "WAL"
 msgstr "WAL"
 
-#: ../../setup_application/database_settings.rst:263
+#: ../../setup_application/database_settings.rst:265
 msgid "Write-Ahead Lock (SQLite database only)."
 msgstr "Bloqueig d'escriptura anticipada (només en la base de dades SQLite)."
 
-#: ../../setup_application/database_settings.rst:267
+#: ../../setup_application/database_settings.rst:269
 msgid ""
 "Refer the :ref:`Digital Asset Management <storage_deterioration>` chapter "
 "for more details about media and data protection."
@@ -800,7 +815,7 @@ msgstr ""
 "a més detalls sobre la protecció d'elements multimèdia i de les dades."
 
 # skip-rule: common-settings
-#: ../../setup_application/database_settings.rst:269
+#: ../../setup_application/database_settings.rst:271
 msgid ""
 "Also refer to the :ref:`Collection Settings <collections_settings>` chapter "
 "for more details about how to configure your collections depending on your "
@@ -810,7 +825,7 @@ msgstr ""
 "<collections_settings>` per a més detalls sobre com configurar les "
 "col·leccions depenent de la vostra política d'emmagatzematge."
 
-#: ../../setup_application/database_settings.rst:273
+#: ../../setup_application/database_settings.rst:275
 msgid ""
 "If you share the same **Removable** media for host databases and/or "
 "collections between different computers, you must have the same kind of "
@@ -825,7 +840,7 @@ msgstr ""
 "del digiKam a tot arreu per a evitar conflictes amb els esquemes de la base "
 "de dades."
 
-#: ../../setup_application/database_settings.rst:275
+#: ../../setup_application/database_settings.rst:277
 msgid ""
 "If you use a common **Remote** server to host *databases and collections*, "
 "you must use the same digiKam version everywhere to prevent conflicts with "
@@ -838,7 +853,7 @@ msgstr ""
 "ordinadors que executin instàncies diferents del digiKam no poden accedir a "
 "una base de dades i una col·lecció comuna utilitzar alhora."
 
-#: ../../setup_application/database_settings.rst:277
+#: ../../setup_application/database_settings.rst:279
 msgid ""
 "If you use a common **Remote** server to host collections, with the "
 "databases stored on individual computers, then different versions of digiKam "
@@ -854,11 +869,11 @@ msgstr ""
 "compte amb els accessos concurrents a les metadades dels fitxers si heu "
 "activat aquesta opció a la pàgina de **Configuració de les metadades**."
 
-#: ../../setup_application/database_settings.rst:282
+#: ../../setup_application/database_settings.rst:284
 msgid "Database Migration"
 msgstr "Migrar a una base de dades"
 
-#: ../../setup_application/database_settings.rst:284
+#: ../../setup_application/database_settings.rst:286
 msgid ""
 "digiKam comes up with an exclusive tool named **Database Migration**, that "
 "allows users to migrate their data. For example, the migration tool can help "
@@ -870,7 +885,7 @@ msgstr ""
 "migració pot ajudar a migrar les vostres dades des de la base de dades "
 "SQLite a una base de dades MariaDB i viceversa."
 
-#: ../../setup_application/database_settings.rst:286
+#: ../../setup_application/database_settings.rst:288
 msgid ""
 "To migrate to another database, go to :menuselection:`Settings --> Database "
 "Migration...`. A dialog box appears:"
@@ -879,11 +894,11 @@ msgstr ""
 "menuselection:`Arranjament --> Migra la base de dades...`, apareixerà un "
 "diàleg:"
 
-#: ../../setup_application/database_settings.rst:292
+#: ../../setup_application/database_settings.rst:294
 msgid "The digiKam Database Migration Tool"
 msgstr "L'eina de migració de bases de dades en el digiKam"
 
-#: ../../setup_application/database_settings.rst:294
+#: ../../setup_application/database_settings.rst:296
 msgid ""
 "Now choose the appropriate database types you want to convert to. Finally, "
 "click on **Migrate** button to convert the database from SQLite to MariaDB "
@@ -895,7 +910,7 @@ msgstr ""
 "des de SQLite a MariaDB (o viceversa). Segons la mida de la base de dades, "
 "aquesta operació pot trigar una mica."
 
-#: ../../setup_application/database_settings.rst:298
+#: ../../setup_application/database_settings.rst:300
 msgid ""
 "Only the digiKam **Core** database will be migrated by this conversion "
 "process. All of the other databases needs to be rebuilt using post-"
@@ -911,11 +926,11 @@ msgstr ""
 "de zero, i la base de dades de **Cares** necessitarà l'opció **Reconstrueix "
 "les dades d'entrenament**."
 
-#: ../../setup_application/database_settings.rst:303
+#: ../../setup_application/database_settings.rst:305
 msgid "Database Backup Recommendation"
 msgstr "Recomanació de crear una còpia de seguretat de la base de dades"
 
-#: ../../setup_application/database_settings.rst:305
+#: ../../setup_application/database_settings.rst:307
 msgid ""
 "For security reasons, planning a database backup using crontab over the "
 "network can help against device failures. A NAS or an external drive can "
@@ -926,7 +941,7 @@ msgstr ""
 "disfuncions del dispositiu. També es pot utilitzar un NAS o una unitat "
 "externa per a fer còpies de seguretat."
 
-#: ../../setup_application/database_settings.rst:307
+#: ../../setup_application/database_settings.rst:309
 msgid ""
 "Each database can be renamed with a different, unique name. This allows "
 "users to backup only what is needed. For instance, renaming **Core** "
@@ -941,7 +956,7 @@ msgstr ""
 "dades de **Miniatures**, **Similitud** i de **Reconeixement facial** sempre "
 "es poden regenerar des de zero."
 
-#: ../../setup_application/database_settings.rst:309
+#: ../../setup_application/database_settings.rst:311
 msgid ""
 "The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will "
 "explain how to maintain the database contents and how to synchronize the "
@@ -952,11 +967,11 @@ msgstr ""
 "sincronitzar les col·leccions amb la informació de les bases de dades (i "
 "viceversa)."
 
-#: ../../setup_application/database_settings.rst:314
+#: ../../setup_application/database_settings.rst:316
 msgid "Database Statistics"
 msgstr "Estadístiques de la base de dades"
 
-#: ../../setup_application/database_settings.rst:316
+#: ../../setup_application/database_settings.rst:318
 msgid ""
 "digiKam provides a unique tool to show the statistics from your collections. "
 "It includes count of images, videos (including individual count by image "
@@ -969,7 +984,7 @@ msgstr ""
 "el **Dorsal de base de dades** (Sqlite o MariaDB) i el **Camí de la base de "
 "dades** (on es troba la vostra col·lecció)."
 
-#: ../../setup_application/database_settings.rst:318
+#: ../../setup_application/database_settings.rst:320
 msgid ""
 "You can view your statistics by going to :menuselection:`Help --> Database "
 "Statistics...`. A dialog box like this will appear:"
@@ -978,7 +993,7 @@ msgstr ""
 "menuselection:`Ajuda --> Estadístiques de la base de dades...`, apareixerà "
 "un diàleg com aquest:"
 
-#: ../../setup_application/database_settings.rst:325
+#: ../../setup_application/database_settings.rst:327
 msgid "The digiKam Database Statistics Dialog"
 msgstr "El diàleg d'estadístiques de la base de dades en el digiKam"
 

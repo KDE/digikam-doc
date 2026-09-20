@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-18 02:02+0000\n"
+"POT-Creation-Date: 2026-09-20 02:06+0000\n"
 "PO-Revision-Date: 2026-09-18 09:51+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -502,13 +502,22 @@ msgstr ""
 "uporablja za shranjevanje metapodatkov fotografij."
 
 #: ../../setup_application/database_settings.rst:201
+#, fuzzy
+#| msgid ""
+#| "Set the **Thumbs Db Name** field to the name of the second database that "
+#| "is used to store the wavelet-compressed thumbnails. The path to store the "
+#| "thumbnails data can be stored locally to prevent huge data exchange "
+#| "between the server and the application computer. Storing the thumbnails "
+#| "in remote can decrease the application performances and introduce time "
+#| "latency with large collections."
 msgid ""
 "Set the **Thumbs Db Name** field to the name of the second database that is "
 "used to store the wavelet-compressed thumbnails. The path to store the "
-"thumbnails data can be stored locally to prevent huge data exchange between "
-"the server and the application computer. Storing the thumbnails in remote "
-"can decrease the application performances and introduce time latency with "
-"large collections."
+"thumbnails data can be stored locally (in a SQLite database) to prevent huge "
+"data exchange between the server and the application computer. Storing the "
+"thumbnails in remote can decrease the application performances and introduce "
+"time latency with large collections. Changing this value (from the local "
+"drive to remote or vice versa) will trigger a full scan of the collection."
 msgstr ""
 "V polje **Thumbs Db Name** vnesite ime druge baze podatkov, ki se uporablja "
 "za shranjevanje z valovčki stisnjenih sličic. Pot do shranjevanja podatkov "
@@ -581,6 +590,12 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:215
 msgid ""
+"Storing the thumbnail database on your local drive increases speed "
+"significantly, especially with large collections."
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:217
+msgid ""
 "Also, if you have an enormous collection, you should start the MariaDB "
 "server with `mariadb --max_allowed_packet = 128M`. If you’re well acquainted "
 "with using MariaDB, you could also change your settings in :file:`my.ini` "
@@ -590,7 +605,7 @@ msgstr ""
 "max_allowed_packet = 128M`. Če ste dobro seznanjeni z uporabo MariaDB, lahko "
 "nastavitve spremenite tudi v datotekah :file:`my.ini` ali :file:`~/.my.cnf`."
 
-#: ../../setup_application/database_settings.rst:219
+#: ../../setup_application/database_settings.rst:221
 msgid ""
 "The locale used in the MariaDB server must be the same as the locale from "
 "the computer used to run digiKam to prevent problems with the common values "
@@ -601,11 +616,11 @@ msgstr ""
 "preprečijo težave s pogostimi vrednostmi, shranjenimi v tabelah baze "
 "podatkov."
 
-#: ../../setup_application/database_settings.rst:222
+#: ../../setup_application/database_settings.rst:224
 msgid "Database Type Criteria"
 msgstr "Kriteriji tipa baze podatkov"
 
-#: ../../setup_application/database_settings.rst:224
+#: ../../setup_application/database_settings.rst:226
 msgid ""
 "See the summary below to choose the right database type depending on your "
 "use case."
@@ -613,156 +628,156 @@ msgstr ""
 "Glejte spodnji povzetek, da izberete pravo vrsto baze podatkov glede na "
 "primere uporabe."
 
-#: ../../setup_application/database_settings.rst:227
+#: ../../setup_application/database_settings.rst:229
 msgid "Storage"
 msgstr "Shranjevanje"
 
-#: ../../setup_application/database_settings.rst:227
+#: ../../setup_application/database_settings.rst:229
 msgid "Type"
 msgstr "Vrsta"
 
-#: ../../setup_application/database_settings.rst:227
+#: ../../setup_application/database_settings.rst:229
 msgid "Items"
 msgstr "Predmeti"
 
-#: ../../setup_application/database_settings.rst:227
+#: ../../setup_application/database_settings.rst:229
 msgid "Remarks"
 msgstr "Opombe"
 
-#: ../../setup_application/database_settings.rst:229
-#: ../../setup_application/database_settings.rst:230
-#: ../../setup_application/database_settings.rst:243
+#: ../../setup_application/database_settings.rst:231
+#: ../../setup_application/database_settings.rst:232
+#: ../../setup_application/database_settings.rst:245
 msgid "HDD"
 msgstr "HDD"
 
-#: ../../setup_application/database_settings.rst:229
 #: ../../setup_application/database_settings.rst:231
 #: ../../setup_application/database_settings.rst:233
 #: ../../setup_application/database_settings.rst:235
 #: ../../setup_application/database_settings.rst:237
+#: ../../setup_application/database_settings.rst:239
 msgid "SQLite"
 msgstr "SQLite"
 
-#: ../../setup_application/database_settings.rst:229
-#: ../../setup_application/database_settings.rst:235
+#: ../../setup_application/database_settings.rst:231
+#: ../../setup_application/database_settings.rst:237
 msgid "< 500K"
 msgstr "< 500K"
 
-#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:231
 msgid "**Warning: WAL is mandatory.**"
 msgstr "**Opozorilo: WAL je obvezen.**"
 
-#: ../../setup_application/database_settings.rst:230
 #: ../../setup_application/database_settings.rst:232
 #: ../../setup_application/database_settings.rst:234
 #: ../../setup_application/database_settings.rst:236
 #: ../../setup_application/database_settings.rst:238
+#: ../../setup_application/database_settings.rst:240
 msgid "MariaDB-Internal"
 msgstr "MariaDB-Internal"
 
-#: ../../setup_application/database_settings.rst:230
-#: ../../setup_application/database_settings.rst:236
+#: ../../setup_application/database_settings.rst:232
+#: ../../setup_application/database_settings.rst:238
 msgid "> 500K"
 msgstr "> 500K"
 
-#: ../../setup_application/database_settings.rst:231
-#: ../../setup_application/database_settings.rst:232
-#: ../../setup_application/database_settings.rst:246
+#: ../../setup_application/database_settings.rst:233
+#: ../../setup_application/database_settings.rst:234
+#: ../../setup_application/database_settings.rst:248
 msgid "SSD"
 msgstr "SSD"
 
-#: ../../setup_application/database_settings.rst:231
 #: ../../setup_application/database_settings.rst:233
+#: ../../setup_application/database_settings.rst:235
 msgid "WAL is optional."
 msgstr "WAL ni obvezen."
 
-#: ../../setup_application/database_settings.rst:233
-#: ../../setup_application/database_settings.rst:234
+#: ../../setup_application/database_settings.rst:235
+#: ../../setup_application/database_settings.rst:236
 msgid "NVME"
 msgstr "NVME"
 
-#: ../../setup_application/database_settings.rst:235
-#: ../../setup_application/database_settings.rst:236
-#: ../../setup_application/database_settings.rst:252
+#: ../../setup_application/database_settings.rst:237
+#: ../../setup_application/database_settings.rst:238
+#: ../../setup_application/database_settings.rst:254
 msgid "Removable"
 msgstr "Odstranljivo"
 
-#: ../../setup_application/database_settings.rst:235
+#: ../../setup_application/database_settings.rst:237
 msgid "**Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**"
 msgstr "**Opozorilo: WAL je obvezen. Najmanj USB 3.1 s pogonom NVMe.**"
 
-#: ../../setup_application/database_settings.rst:236
+#: ../../setup_application/database_settings.rst:238
 msgid "**Warning: USB 3.1 minimum with NVMe drive.**"
 msgstr "**Opozorilo: najmanj USB 3.1 s pogonom NVMe.**"
 
-#: ../../setup_application/database_settings.rst:237
-#: ../../setup_application/database_settings.rst:238
-#: ../../setup_application/database_settings.rst:255
+#: ../../setup_application/database_settings.rst:239
+#: ../../setup_application/database_settings.rst:240
+#: ../../setup_application/database_settings.rst:257
 msgid "Network FS"
 msgstr "Omrežni FS"
 
-#: ../../setup_application/database_settings.rst:237
+#: ../../setup_application/database_settings.rst:239
 msgid "**Prohibited: SQLite databases must be stored on local file system.**"
 msgstr ""
 "**Prepovedano: baze podatkov SQLite morajo biti shranjene v lokalnem "
 "datotečnem sistemu.**"
 
-#: ../../setup_application/database_settings.rst:238
+#: ../../setup_application/database_settings.rst:240
 msgid "**Prohibited: MariaDB databases must be stored on local file system.**"
 msgstr ""
 "**Prepovedano: baze podatkov MariaDB morajo biti shranjene v lokalnem "
 "datotečnem sistemu.**"
 
-#: ../../setup_application/database_settings.rst:239
-#: ../../setup_application/database_settings.rst:258
+#: ../../setup_application/database_settings.rst:241
+#: ../../setup_application/database_settings.rst:260
 msgid "Remote"
 msgstr "Oddaljeno"
 
-#: ../../setup_application/database_settings.rst:239
+#: ../../setup_application/database_settings.rst:241
 msgid "MariaDB-Server"
 msgstr "Server MariaDB"
 
-#: ../../setup_application/database_settings.rst:239
+#: ../../setup_application/database_settings.rst:241
 msgid "Gigabit Ethernet or higher is recommended."
 msgstr "Priporočen je Gigabit Ethernet ali hitrejši."
 
-#: ../../setup_application/database_settings.rst:245
+#: ../../setup_application/database_settings.rst:247
 msgid "Hard Disk Drive."
 msgstr "Trdi disk."
 
-#: ../../setup_application/database_settings.rst:248
+#: ../../setup_application/database_settings.rst:250
 msgid "Solid State Drive."
 msgstr "Solid State Drive."
 
-#: ../../setup_application/database_settings.rst:249
+#: ../../setup_application/database_settings.rst:251
 msgid "NVMe"
 msgstr "NVMe"
 
-#: ../../setup_application/database_settings.rst:251
+#: ../../setup_application/database_settings.rst:253
 msgid "Non-Volatile Memory."
 msgstr "Trajni pomnilnik."
 
-#: ../../setup_application/database_settings.rst:254
+#: ../../setup_application/database_settings.rst:256
 msgid "External USB HDD/SSD/NVMe drive."
 msgstr "Zunanji pogon USB HDD/SDD/NVMe."
 
-#: ../../setup_application/database_settings.rst:257
+#: ../../setup_application/database_settings.rst:259
 msgid "Network File System mounted locally."
 msgstr "Omrežni datotečni sistem nameščen lokalno."
 
-#: ../../setup_application/database_settings.rst:260
+#: ../../setup_application/database_settings.rst:262
 msgid "Network server as NAS (Network Attached Storage)."
 msgstr "Omrežni strežnik kot NAS (Network Attached Storage)."
 
-#: ../../setup_application/database_settings.rst:261
+#: ../../setup_application/database_settings.rst:263
 msgid "WAL"
 msgstr "WAL"
 
-#: ../../setup_application/database_settings.rst:263
+#: ../../setup_application/database_settings.rst:265
 msgid "Write-Ahead Lock (SQLite database only)."
 msgstr "Zaklepanje vnaprejšnjega pisanja (samo baza podatkov SQLite)."
 
-#: ../../setup_application/database_settings.rst:267
+#: ../../setup_application/database_settings.rst:269
 msgid ""
 "Refer the :ref:`Digital Asset Management <storage_deterioration>` chapter "
 "for more details about media and data protection."
@@ -770,7 +785,7 @@ msgstr ""
 "Glejte to :ref:`poglavje o digitalnem upravljanju imetij "
 "<storage_deterioration>` za več podrobnosti o zaščiti medijev in podatkov."
 
-#: ../../setup_application/database_settings.rst:269
+#: ../../setup_application/database_settings.rst:271
 msgid ""
 "Also refer to the :ref:`Collection Settings <collections_settings>` chapter "
 "for more details about how to configure your collections depending on your "
@@ -780,7 +795,7 @@ msgstr ""
 "podrobnosti o tem, kako konfigurirati svoje zbirke glede na vašo politiko "
 "shranjevanja."
 
-#: ../../setup_application/database_settings.rst:273
+#: ../../setup_application/database_settings.rst:275
 msgid ""
 "If you share the same **Removable** media for host databases and/or "
 "collections between different computers, you must have the same kind of "
@@ -794,7 +809,7 @@ msgstr ""
 "razrešitev poti) in isto različico digiKama povsod, da preprečite konflikte "
 "s shemo baze podatkov."
 
-#: ../../setup_application/database_settings.rst:275
+#: ../../setup_application/database_settings.rst:277
 msgid ""
 "If you use a common **Remote** server to host *databases and collections*, "
 "you must use the same digiKam version everywhere to prevent conflicts with "
@@ -806,7 +821,7 @@ msgstr ""
 "konflikte s shemo baze podatkov. Računalniki, ki izvajajo različne primerke "
 "digiKama, ne morejo dostopati do skupne podatkovne baze in zbirke hkrati."
 
-#: ../../setup_application/database_settings.rst:277
+#: ../../setup_application/database_settings.rst:279
 msgid ""
 "If you use a common **Remote** server to host collections, with the "
 "databases stored on individual computers, then different versions of digiKam "
@@ -822,11 +837,11 @@ msgstr ""
 "metapodatkov datoteke, če ste vklopili to možnost na strani **Nastavitev "
 "metapodatkov**."
 
-#: ../../setup_application/database_settings.rst:282
+#: ../../setup_application/database_settings.rst:284
 msgid "Database Migration"
 msgstr "Migracija baze podatkov"
 
-#: ../../setup_application/database_settings.rst:284
+#: ../../setup_application/database_settings.rst:286
 msgid ""
 "digiKam comes up with an exclusive tool named **Database Migration**, that "
 "allows users to migrate their data. For example, the migration tool can help "
@@ -838,7 +853,7 @@ msgstr ""
 "primer pomaga premakniti vse podatke iz baze podatkov SQLite v bazo podatkov "
 "MariaDB ali obratno."
 
-#: ../../setup_application/database_settings.rst:286
+#: ../../setup_application/database_settings.rst:288
 msgid ""
 "To migrate to another database, go to :menuselection:`Settings --> Database "
 "Migration...`. A dialog box appears:"
@@ -846,11 +861,11 @@ msgstr ""
 "Za selitev v drugo bazo podatkov pojdite na :menuselection:`Nastavitve --> "
 "Selitev baze podatkov...`. Prikaže se pogovorno okno:"
 
-#: ../../setup_application/database_settings.rst:292
+#: ../../setup_application/database_settings.rst:294
 msgid "The digiKam Database Migration Tool"
 msgstr "Orodje za selitev baze podatkov digiKam"
 
-#: ../../setup_application/database_settings.rst:294
+#: ../../setup_application/database_settings.rst:296
 msgid ""
 "Now choose the appropriate database types you want to convert to. Finally, "
 "click on **Migrate** button to convert the database from SQLite to MariaDB "
@@ -862,7 +877,7 @@ msgstr ""
 "MariaDB (ali obratno). Ta operacija lahko traja nekaj časa, odvisno od "
 "velikosti baze podatkov."
 
-#: ../../setup_application/database_settings.rst:298
+#: ../../setup_application/database_settings.rst:300
 msgid ""
 "Only the digiKam **Core** database will be migrated by this conversion "
 "process. All of the other databases needs to be rebuilt using post-"
@@ -878,11 +893,11 @@ msgstr ""
 "ustvariti od začetka, baza podatkov obrazov **Face** pa vključuje možnost "
 "**Ponovno izgradi učne podatke**."
 
-#: ../../setup_application/database_settings.rst:303
+#: ../../setup_application/database_settings.rst:305
 msgid "Database Backup Recommendation"
 msgstr "Priporočilo za varnostno kopiranje baze podatkov"
 
-#: ../../setup_application/database_settings.rst:305
+#: ../../setup_application/database_settings.rst:307
 msgid ""
 "For security reasons, planning a database backup using crontab over the "
 "network can help against device failures. A NAS or an external drive can "
@@ -892,7 +907,7 @@ msgstr ""
 "programom crontab prek omrežja pomaga pri odpovedi naprave. Za varnostno "
 "kopiranje lahko uporabite tudi NAS ali zunanji pogon."
 
-#: ../../setup_application/database_settings.rst:307
+#: ../../setup_application/database_settings.rst:309
 msgid ""
 "Each database can be renamed with a different, unique name. This allows "
 "users to backup only what is needed. For instance, renaming **Core** "
@@ -907,7 +922,7 @@ msgstr ""
 "najpomembnejša datoteka. Baze podatkov **Thumbnails**, **Similarity** in "
 "**Face Recognition** je mogoče vedno znova ustvariti od začetka iz slik."
 
-#: ../../setup_application/database_settings.rst:309
+#: ../../setup_application/database_settings.rst:311
 msgid ""
 "The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will "
 "explain how to maintain the database contents and how to synchronize the "
@@ -917,11 +932,11 @@ msgstr ""
 "razloženo, kako vzdrževati vsebino baze podatkov in kako sinhronizirati "
 "zbirke z informacijami v bazah podatkov (in obratno)."
 
-#: ../../setup_application/database_settings.rst:314
+#: ../../setup_application/database_settings.rst:316
 msgid "Database Statistics"
 msgstr "Statistika zbirke podatkov"
 
-#: ../../setup_application/database_settings.rst:316
+#: ../../setup_application/database_settings.rst:318
 msgid ""
 "digiKam provides a unique tool to show the statistics from your collections. "
 "It includes count of images, videos (including individual count by image "
@@ -934,7 +949,7 @@ msgstr ""
 "(Sqlite ali MariaDB) in **Pot do baze podatkov** (kjer se nahaja vaša "
 "zbirka)."
 
-#: ../../setup_application/database_settings.rst:318
+#: ../../setup_application/database_settings.rst:320
 msgid ""
 "You can view your statistics by going to :menuselection:`Help --> Database "
 "Statistics...`. A dialog box like this will appear:"
@@ -942,7 +957,7 @@ msgstr ""
 "Statistiko si lahko ogledate tako, da obiščete :menuselection:`Pomoč --> "
 "Statistika podatkovne baze...`. Prikaže se pogovorno okno, kot je to:"
 
-#: ../../setup_application/database_settings.rst:325
+#: ../../setup_application/database_settings.rst:327
 msgid "The digiKam Database Statistics Dialog"
 msgstr "digiKam pogovorno okno statistike baze podatkov"
 
