@@ -230,6 +230,7 @@ The non-Signed Package
     =============== =========== ============================================================================================================
     digiKam version Qt version  Supported macOS Release
     =============== =========== ============================================================================================================
+    >= 9.2.0        Qt6 only    macOS 11.3  Silicon and Intel (`BigSur <https://en.wikipedia.org/wiki/MacOS_Big_Sur>`_) or newer
     >= 8.5.0        Qt6 and Qt5 macOS 11.3  Silicon and Intel (`BigSur <https://en.wikipedia.org/wiki/MacOS_Big_Sur>`_) or newer
     >= 7.10.0       Qt5 only    macOS 10.15 Intel             (`Catalina <https://en.wikipedia.org/wiki/MacOS_Catalina>`_) or newer
     >= 7.0.0        Qt5 only    macOS 10.13 Intel             (`High Sierra <https://en.wikipedia.org/wiki/MacOS_High_Sierra>`_) or newer
