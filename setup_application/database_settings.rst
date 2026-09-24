@@ -220,6 +220,17 @@ There are some tips and recommendation to obtain the best results with a remote 
 
     The locale used in the MariaDB server must be the same as the locale from the computer used to run digiKam to prevent problems with the common values saved in the tables of the database.
 
+.. tip::
+
+    When you run a connection test with the **Check Connection** button, if you receive a
+    TLS/SSL relevant error message as **SSL is required, but the server does not support it**,
+    try to add `skip-ssl=true` to the **Connection Settings** from the digiKam MariaDB database
+    configuration dialog. This is not a bug in digiKam: the MariaDB connector attempts to
+    establish an SSL connection by default, and this option disables it.
+
+    Alternatively, on the server side, you can set the `use_ssl=false` option in the
+    :file:`my.ini` or :file:`~/.my.cnf` configuration files.
+
 Database Type Criteria
 ----------------------
 
