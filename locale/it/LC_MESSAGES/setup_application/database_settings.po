@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-20 02:06+0000\n"
-"PO-Revision-Date: 2026-08-16 13:17+0200\n"
+"POT-Creation-Date: 2026-09-26 02:19+0000\n"
+"PO-Revision-Date: 2026-09-22 10:50+0200\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 26.04.3\n"
+"X-Generator: Lokalize 26.08.1\n"
 
 #: ../../setup_application/database_settings.rst:-1
 msgid "digiKam Database Settings"
@@ -366,22 +366,20 @@ msgstr ""
 "server che si avvia solo quando l'applicazione è in esecuzione."
 
 #: ../../setup_application/database_settings.rst:111
-#, fuzzy
-#| msgid ""
-#| "Internal server creates a separate database that can be accessed (only "
-#| "while application is running) using the command:"
 msgid ""
 "Internal server creates a separate database that can be accessed in Linux "
 "(only while application is running) using the command:"
 msgstr ""
-"Il server interno crea una banca dati separata cui si può accedere (solo "
-"quando l'applicazione è in esecuzione) utilizzando il comando:"
+"Il server interno crea una banca dati separata cui si può accedere in Linux "
+"(solo quando l'applicazione è in esecuzione) utilizzando il comando:"
 
 #: ../../setup_application/database_settings.rst:117
 msgid ""
 "Or in windows the command (or using `HeidiSQL <https://en.wikipedia.org/wiki/"
 "HeidiSQL>`_ with the following settings):"
 msgstr ""
+"O in Windows, il comando (o utilizzando `HeidiSQL <https://en.wikipedia.org/"
+"wiki/HeidiSQL>`_ con le seguenti impostazioni):"
 
 #: ../../setup_application/database_settings.rst:123
 msgid ""
@@ -461,15 +459,21 @@ msgid ""
 "wiki/Docker_(software)>`_ image, you can set the necessary environment "
 "variables by opening a shell into the container using"
 msgstr ""
+"Se vuoi eseguire il server MariaDB in un'immagine `docker <https://en."
+"wikipedia.org/wiki/Docker_(software)>`_ , puoi impostare le variabili "
+"d'ambiente necessarie aprendo una shell all'interno del contenitore "
+"utilizzando"
 
 #: ../../setup_application/database_settings.rst:172
 msgid "and then set the variables required as needed, eg:"
-msgstr ""
+msgstr "e quindi impostare le variabili richieste come necessario, per es.:"
 
 #: ../../setup_application/database_settings.rst:183
 msgid ""
 "Restart the container and check to see if the variables have been set using"
 msgstr ""
+"Riavvia il contenitore e verifica se le variabili sono state impostate "
+"utilizzando"
 
 #: ../../setup_application/database_settings.rst:189
 msgid ""
@@ -504,14 +508,6 @@ msgstr ""
 "viene utilizzata per memorizzare i metadati delle fotografie."
 
 #: ../../setup_application/database_settings.rst:201
-#, fuzzy
-#| msgid ""
-#| "Set the **Thumbs Db Name** field to the name of the second database that "
-#| "is used to store the wavelet-compressed thumbnails. The path to store the "
-#| "thumbnails data can be stored locally to prevent huge data exchange "
-#| "between the server and the application computer. Storing the thumbnails "
-#| "in remote can decrease the application performances and introduce time "
-#| "latency with large collections."
 msgid ""
 "Set the **Thumbs Db Name** field to the name of the second database that is "
 "used to store the wavelet-compressed thumbnails. The path to store the "
@@ -523,10 +519,11 @@ msgid ""
 msgstr ""
 "Imposta il campo **Nome Bd miniature** al nome della seconda banca dati "
 "utilizzata per memorizzare le miniature compresse con wavelet. Il percorso "
-"per memorizzare i dati delle miniature può essere locale in modo da evitare "
-"scambi pesanti di dati tra il server e il computer utilizzato dal programma. "
-"La memorizzazione delle miniature in remoto può ridurre le prestazioni del "
-"programma e introdurre latenze nel caso di raccolte di grandi dimensioni."
+"per memorizzare i dati delle miniature può essere locale (in una banca dati "
+"SQLite) in modo da evitare scambi pesanti di dati tra il server e il "
+"computer utilizzato dal programma. La memorizzazione delle miniature in "
+"remoto può ridurre le prestazioni del programma e introdurre latenze nel "
+"caso di raccolte di grandi dimensioni."
 
 #: ../../setup_application/database_settings.rst:203
 msgid ""
@@ -595,6 +592,8 @@ msgid ""
 "Storing the thumbnail database on your local drive increases speed "
 "significantly, especially with large collections."
 msgstr ""
+"La memorizzazione della banca dati delle miniature sul tuo disco locale "
+"aumenta molto la velocità, soprattutto con raccolte di grandi dimensioni."
 
 #: ../../setup_application/database_settings.rst:217
 msgid ""
@@ -618,11 +617,27 @@ msgstr ""
 "del computer usato per eseguire digiKam, al fine di impedire che vengano "
 "salvati valori comuni nelle tabelle della banca dati."
 
-#: ../../setup_application/database_settings.rst:224
+#: ../../setup_application/database_settings.rst:225
+msgid ""
+"When you run a connection test with the **Check Connection** button, if you "
+"receive a TLS/SSL relevant error message as **SSL is required, but the "
+"server does not support it**, try to add `skip-ssl=true` to the **Connection "
+"Settings** from the digiKam MariaDB database configuration dialog. This is "
+"not a bug in digiKam: the MariaDB connector attempts to establish an SSL "
+"connection by default, and this option disables it."
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:231
+msgid ""
+"Alternatively, on the server side, you can set the `use_ssl=false` option in "
+"the :file:`my.ini` or :file:`~/.my.cnf` configuration files."
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:235
 msgid "Database Type Criteria"
 msgstr "Criteri per il tipo di database"
 
-#: ../../setup_application/database_settings.rst:226
+#: ../../setup_application/database_settings.rst:237
 msgid ""
 "See the summary below to choose the right database type depending on your "
 "use case."
@@ -630,158 +645,158 @@ msgstr ""
 "Per scegliere il giusto tipo di banca dati, in base al tuo caso d'uso vedi "
 "il riepilogo sotto riportato."
 
-#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:240
 msgid "Storage"
 msgstr "Archiviazione"
 
-#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:240
 msgid "Type"
 msgstr "Tipo"
 
-#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:240
 msgid "Items"
 msgstr "Elementi"
 
-#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:240
 msgid "Remarks"
 msgstr "Commenti"
 
-#: ../../setup_application/database_settings.rst:231
-#: ../../setup_application/database_settings.rst:232
-#: ../../setup_application/database_settings.rst:245
+#: ../../setup_application/database_settings.rst:242
+#: ../../setup_application/database_settings.rst:243
+#: ../../setup_application/database_settings.rst:256
 msgid "HDD"
 msgstr "HDD"
 
-#: ../../setup_application/database_settings.rst:231
-#: ../../setup_application/database_settings.rst:233
-#: ../../setup_application/database_settings.rst:235
-#: ../../setup_application/database_settings.rst:237
-#: ../../setup_application/database_settings.rst:239
+#: ../../setup_application/database_settings.rst:242
+#: ../../setup_application/database_settings.rst:244
+#: ../../setup_application/database_settings.rst:246
+#: ../../setup_application/database_settings.rst:248
+#: ../../setup_application/database_settings.rst:250
 msgid "SQLite"
 msgstr "SQLite"
 
-#: ../../setup_application/database_settings.rst:231
-#: ../../setup_application/database_settings.rst:237
+#: ../../setup_application/database_settings.rst:242
+#: ../../setup_application/database_settings.rst:248
 msgid "< 500K"
 msgstr "< 500K"
 
-#: ../../setup_application/database_settings.rst:231
+#: ../../setup_application/database_settings.rst:242
 msgid "**Warning: WAL is mandatory.**"
 msgstr "**Attenzione: WAL è obbligatorio.**"
 
-#: ../../setup_application/database_settings.rst:232
-#: ../../setup_application/database_settings.rst:234
-#: ../../setup_application/database_settings.rst:236
-#: ../../setup_application/database_settings.rst:238
-#: ../../setup_application/database_settings.rst:240
+#: ../../setup_application/database_settings.rst:243
+#: ../../setup_application/database_settings.rst:245
+#: ../../setup_application/database_settings.rst:247
+#: ../../setup_application/database_settings.rst:249
+#: ../../setup_application/database_settings.rst:251
 msgid "MariaDB-Internal"
 msgstr "MariaDB interno"
 
-#: ../../setup_application/database_settings.rst:232
-#: ../../setup_application/database_settings.rst:238
+#: ../../setup_application/database_settings.rst:243
+#: ../../setup_application/database_settings.rst:249
 msgid "> 500K"
 msgstr "> 500K"
 
-#: ../../setup_application/database_settings.rst:233
-#: ../../setup_application/database_settings.rst:234
-#: ../../setup_application/database_settings.rst:248
+#: ../../setup_application/database_settings.rst:244
+#: ../../setup_application/database_settings.rst:245
+#: ../../setup_application/database_settings.rst:259
 msgid "SSD"
 msgstr "SSD"
 
-#: ../../setup_application/database_settings.rst:233
-#: ../../setup_application/database_settings.rst:235
+#: ../../setup_application/database_settings.rst:244
+#: ../../setup_application/database_settings.rst:246
 msgid "WAL is optional."
 msgstr "WAL è facoltativo."
 
-#: ../../setup_application/database_settings.rst:235
-#: ../../setup_application/database_settings.rst:236
+#: ../../setup_application/database_settings.rst:246
+#: ../../setup_application/database_settings.rst:247
 msgid "NVME"
 msgstr "NVME"
 
-#: ../../setup_application/database_settings.rst:237
-#: ../../setup_application/database_settings.rst:238
-#: ../../setup_application/database_settings.rst:254
+#: ../../setup_application/database_settings.rst:248
+#: ../../setup_application/database_settings.rst:249
+#: ../../setup_application/database_settings.rst:265
 msgid "Removable"
 msgstr "Rimovibile"
 
-#: ../../setup_application/database_settings.rst:237
+#: ../../setup_application/database_settings.rst:248
 msgid "**Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**"
 msgstr ""
 "**Attenzione: WAL è obbligatorio. USB 3.1 è il minimo con un dispositivo "
 "NVMe.**"
 
-#: ../../setup_application/database_settings.rst:238
+#: ../../setup_application/database_settings.rst:249
 msgid "**Warning: USB 3.1 minimum with NVMe drive.**"
 msgstr "**Attenzione: USB 3.1 è il minimo con un dispositivo NVMe.**"
 
-#: ../../setup_application/database_settings.rst:239
-#: ../../setup_application/database_settings.rst:240
-#: ../../setup_application/database_settings.rst:257
+#: ../../setup_application/database_settings.rst:250
+#: ../../setup_application/database_settings.rst:251
+#: ../../setup_application/database_settings.rst:268
 msgid "Network FS"
 msgstr "Rete FS"
 
-#: ../../setup_application/database_settings.rst:239
+#: ../../setup_application/database_settings.rst:250
 msgid "**Prohibited: SQLite databases must be stored on local file system.**"
 msgstr ""
 "**Proibito: le banche dati SQLite devono essere memorizzate in un sistema di "
 "file locale.**"
 
-#: ../../setup_application/database_settings.rst:240
+#: ../../setup_application/database_settings.rst:251
 msgid "**Prohibited: MariaDB databases must be stored on local file system.**"
 msgstr ""
 "**Proibito: le banche dati MariaDB devono essere memorizzate in un sistema "
 "di file locale.**"
 
-#: ../../setup_application/database_settings.rst:241
-#: ../../setup_application/database_settings.rst:260
+#: ../../setup_application/database_settings.rst:252
+#: ../../setup_application/database_settings.rst:271
 msgid "Remote"
 msgstr "Remoto"
 
-#: ../../setup_application/database_settings.rst:241
+#: ../../setup_application/database_settings.rst:252
 msgid "MariaDB-Server"
 msgstr "Server MariaDB"
 
-#: ../../setup_application/database_settings.rst:241
+#: ../../setup_application/database_settings.rst:252
 msgid "Gigabit Ethernet or higher is recommended."
 msgstr "Raccomandata Gigabit Ethernet o superiore."
 
-#: ../../setup_application/database_settings.rst:247
+#: ../../setup_application/database_settings.rst:258
 msgid "Hard Disk Drive."
 msgstr "Disco rigido (HDD)."
 
-#: ../../setup_application/database_settings.rst:250
+#: ../../setup_application/database_settings.rst:261
 msgid "Solid State Drive."
 msgstr "Dispositivo a stato solido."
 
-#: ../../setup_application/database_settings.rst:251
+#: ../../setup_application/database_settings.rst:262
 msgid "NVMe"
 msgstr "NVMe"
 
-#: ../../setup_application/database_settings.rst:253
+#: ../../setup_application/database_settings.rst:264
 msgid "Non-Volatile Memory."
 msgstr "Memoria non volatile."
 
-#: ../../setup_application/database_settings.rst:256
+#: ../../setup_application/database_settings.rst:267
 msgid "External USB HDD/SSD/NVMe drive."
 msgstr "Dispositivo USB HDD/SSD/NVMe esterno."
 
-#: ../../setup_application/database_settings.rst:259
+#: ../../setup_application/database_settings.rst:270
 msgid "Network File System mounted locally."
 msgstr "Network File System montato localmente."
 
-#: ../../setup_application/database_settings.rst:262
+#: ../../setup_application/database_settings.rst:273
 msgid "Network server as NAS (Network Attached Storage)."
 msgstr "Server di rete come NAS (Network Attached Storage)."
 
-#: ../../setup_application/database_settings.rst:263
+#: ../../setup_application/database_settings.rst:274
 msgid "WAL"
 msgstr "WAL"
 
-#: ../../setup_application/database_settings.rst:265
+#: ../../setup_application/database_settings.rst:276
 msgid "Write-Ahead Lock (SQLite database only)."
 msgstr "Write-Ahead Lock (solo banche dati SQLite)."
 
-#: ../../setup_application/database_settings.rst:269
+#: ../../setup_application/database_settings.rst:280
 msgid ""
 "Refer the :ref:`Digital Asset Management <storage_deterioration>` chapter "
 "for more details about media and data protection."
@@ -790,7 +805,7 @@ msgstr ""
 "multimediali, consulta il capitolo :ref:`Gestione dei beni digitali "
 "<storage_deterioration>`."
 
-#: ../../setup_application/database_settings.rst:271
+#: ../../setup_application/database_settings.rst:282
 msgid ""
 "Also refer to the :ref:`Collection Settings <collections_settings>` chapter "
 "for more details about how to configure your collections depending on your "
@@ -800,7 +815,7 @@ msgstr ""
 "politica di conservazione dei dati, consulta anche il capitolo :ref:"
 "`Impostazioni delle raccolte <collections_settings>`."
 
-#: ../../setup_application/database_settings.rst:275
+#: ../../setup_application/database_settings.rst:286
 msgid ""
 "If you share the same **Removable** media for host databases and/or "
 "collections between different computers, you must have the same kind of "
@@ -814,7 +829,7 @@ msgstr ""
 "per risolvere i percorsi) e la stessa versione di digiKam per evitare "
 "conflitti con lo schema delle banche dati."
 
-#: ../../setup_application/database_settings.rst:277
+#: ../../setup_application/database_settings.rst:288
 msgid ""
 "If you use a common **Remote** server to host *databases and collections*, "
 "you must use the same digiKam version everywhere to prevent conflicts with "
@@ -827,7 +842,7 @@ msgstr ""
 "istanze differenti di digiKam non possono accedere contemporaneamente a una "
 "banca dati e una raccolta comune."
 
-#: ../../setup_application/database_settings.rst:279
+#: ../../setup_application/database_settings.rst:290
 msgid ""
 "If you use a common **Remote** server to host collections, with the "
 "databases stored on individual computers, then different versions of digiKam "
@@ -843,11 +858,11 @@ msgstr ""
 "opzione dalla pagina di **configurazione dei metadati**, dovrai prestare "
 "attenzione agli accessi contemporanei ai metadati dei file."
 
-#: ../../setup_application/database_settings.rst:284
+#: ../../setup_application/database_settings.rst:295
 msgid "Database Migration"
 msgstr "Migrazione della banca dati"
 
-#: ../../setup_application/database_settings.rst:286
+#: ../../setup_application/database_settings.rst:297
 msgid ""
 "digiKam comes up with an exclusive tool named **Database Migration**, that "
 "allows users to migrate their data. For example, the migration tool can help "
@@ -859,7 +874,7 @@ msgstr ""
 "lo strumento di migrazione può aiutarti a spostare tutti i tuoi dati da una "
 "banca dati SQLite a una MariaDB, o viceversa."
 
-#: ../../setup_application/database_settings.rst:288
+#: ../../setup_application/database_settings.rst:299
 msgid ""
 "To migrate to another database, go to :menuselection:`Settings --> Database "
 "Migration...`. A dialog box appears:"
@@ -867,11 +882,11 @@ msgstr ""
 "Per migrare a un'altra banca dati, vai al menu :menuselection:`Impostazioni "
 "--> Migrazione della banca dati...`. Comparirà un riquadro di dialogo:"
 
-#: ../../setup_application/database_settings.rst:294
+#: ../../setup_application/database_settings.rst:305
 msgid "The digiKam Database Migration Tool"
 msgstr "Lo strumento di migrazione della banca dati di digiKam"
 
-#: ../../setup_application/database_settings.rst:296
+#: ../../setup_application/database_settings.rst:307
 msgid ""
 "Now choose the appropriate database types you want to convert to. Finally, "
 "click on **Migrate** button to convert the database from SQLite to MariaDB "
@@ -883,7 +898,7 @@ msgstr ""
 "(o viceversa). A seconda della dimensione della banca dati, l'operazione "
 "potrebbe durare diverso tempo."
 
-#: ../../setup_application/database_settings.rst:300
+#: ../../setup_application/database_settings.rst:311
 msgid ""
 "Only the digiKam **Core** database will be migrated by this conversion "
 "process. All of the other databases needs to be rebuilt using post-"
@@ -899,11 +914,11 @@ msgstr ""
 "**Somiglianza** dovranno essere create da zero, mentre la banca dati "
 "**Volti** include l'opzione **Ricostruisci i dati di addestramento**."
 
-#: ../../setup_application/database_settings.rst:305
+#: ../../setup_application/database_settings.rst:316
 msgid "Database Backup Recommendation"
 msgstr "Raccomandazioni sulla copia di sicurezza della banca dati"
 
-#: ../../setup_application/database_settings.rst:307
+#: ../../setup_application/database_settings.rst:318
 msgid ""
 "For security reasons, planning a database backup using crontab over the "
 "network can help against device failures. A NAS or an external drive can "
@@ -914,7 +929,7 @@ msgstr ""
 "delle copie di sicurezza può essere utilizzato anche un NAS o un dispositivo "
 "esterno."
 
-#: ../../setup_application/database_settings.rst:309
+#: ../../setup_application/database_settings.rst:320
 msgid ""
 "Each database can be renamed with a different, unique name. This allows "
 "users to backup only what is needed. For instance, renaming **Core** "
@@ -930,7 +945,7 @@ msgstr ""
 "**Somiglianza** e **Riconoscimento facciale** possono essere sempre "
 "rigenerate da zero."
 
-#: ../../setup_application/database_settings.rst:311
+#: ../../setup_application/database_settings.rst:322
 msgid ""
 "The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will "
 "explain how to maintain the database contents and how to synchronize the "
@@ -941,11 +956,11 @@ msgstr ""
 "dati e come sincronizzare le raccolte con le informazioni nelle banche dati "
 "(e viceversa)."
 
-#: ../../setup_application/database_settings.rst:316
+#: ../../setup_application/database_settings.rst:327
 msgid "Database Statistics"
 msgstr "Statistiche della banca dati"
 
-#: ../../setup_application/database_settings.rst:318
+#: ../../setup_application/database_settings.rst:329
 msgid ""
 "digiKam provides a unique tool to show the statistics from your collections. "
 "It includes count of images, videos (including individual count by image "
@@ -958,7 +973,7 @@ msgstr ""
 "anche il **motore della banca dati** (Sqlite oppure MariaDB) e il **percorso "
 "della banca dati** (dove si trova la tua raccolta)."
 
-#: ../../setup_application/database_settings.rst:320
+#: ../../setup_application/database_settings.rst:331
 msgid ""
 "You can view your statistics by going to :menuselection:`Help --> Database "
 "Statistics...`. A dialog box like this will appear:"
@@ -967,7 +982,7 @@ msgstr ""
 "Statistiche della banca dati...`. Apparirà un riquadro di dialogo tipo "
 "questo:"
 
-#: ../../setup_application/database_settings.rst:327
+#: ../../setup_application/database_settings.rst:338
 msgid "The digiKam Database Statistics Dialog"
 msgstr "La Finestra di dialogo Statistiche della banca dati di digiKam"
 

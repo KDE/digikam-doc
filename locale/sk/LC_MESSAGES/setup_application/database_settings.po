@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: docs_digikam_org_setup_application___database_settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-20 02:06+0000\n"
+"POT-Creation-Date: 2026-09-26 02:19+0000\n"
 "PO-Revision-Date: 2023-03-19 10:26+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -622,11 +622,27 @@ msgstr ""
 "používaného na spustenie digiKam, aby sa predišlo problémom so spoločnými "
 "hodnotami uloženými v tabuľkách databázy."
 
-#: ../../setup_application/database_settings.rst:224
+#: ../../setup_application/database_settings.rst:225
+msgid ""
+"When you run a connection test with the **Check Connection** button, if you "
+"receive a TLS/SSL relevant error message as **SSL is required, but the "
+"server does not support it**, try to add `skip-ssl=true` to the **Connection "
+"Settings** from the digiKam MariaDB database configuration dialog. This is "
+"not a bug in digiKam: the MariaDB connector attempts to establish an SSL "
+"connection by default, and this option disables it."
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:231
+msgid ""
+"Alternatively, on the server side, you can set the `use_ssl=false` option in "
+"the :file:`my.ini` or :file:`~/.my.cnf` configuration files."
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:235
 msgid "Database Type Criteria"
 msgstr "Kritériá typu databázy"
 
-#: ../../setup_application/database_settings.rst:226
+#: ../../setup_application/database_settings.rst:237
 msgid ""
 "See the summary below to choose the right database type depending on your "
 "use case."
@@ -634,156 +650,156 @@ msgstr ""
 "Pozrite si súhrn nižšie a vyberte správny typ databázy v závislosti od vášho "
 "prípadu použitia."
 
-#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:240
 msgid "Storage"
 msgstr "Úložisko"
 
-#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:240
 msgid "Type"
 msgstr "Typ"
 
-#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:240
 msgid "Items"
 msgstr "Položky"
 
-#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:240
 msgid "Remarks"
 msgstr "Poznámky"
 
-#: ../../setup_application/database_settings.rst:231
-#: ../../setup_application/database_settings.rst:232
-#: ../../setup_application/database_settings.rst:245
+#: ../../setup_application/database_settings.rst:242
+#: ../../setup_application/database_settings.rst:243
+#: ../../setup_application/database_settings.rst:256
 msgid "HDD"
 msgstr "HDD"
 
-#: ../../setup_application/database_settings.rst:231
-#: ../../setup_application/database_settings.rst:233
-#: ../../setup_application/database_settings.rst:235
-#: ../../setup_application/database_settings.rst:237
-#: ../../setup_application/database_settings.rst:239
+#: ../../setup_application/database_settings.rst:242
+#: ../../setup_application/database_settings.rst:244
+#: ../../setup_application/database_settings.rst:246
+#: ../../setup_application/database_settings.rst:248
+#: ../../setup_application/database_settings.rst:250
 msgid "SQLite"
 msgstr "SQLite"
 
-#: ../../setup_application/database_settings.rst:231
-#: ../../setup_application/database_settings.rst:237
+#: ../../setup_application/database_settings.rst:242
+#: ../../setup_application/database_settings.rst:248
 msgid "< 500K"
 msgstr "< 500 tis."
 
-#: ../../setup_application/database_settings.rst:231
+#: ../../setup_application/database_settings.rst:242
 msgid "**Warning: WAL is mandatory.**"
 msgstr "**Upozornenie: WAL je povinné.**"
 
-#: ../../setup_application/database_settings.rst:232
-#: ../../setup_application/database_settings.rst:234
-#: ../../setup_application/database_settings.rst:236
-#: ../../setup_application/database_settings.rst:238
-#: ../../setup_application/database_settings.rst:240
+#: ../../setup_application/database_settings.rst:243
+#: ../../setup_application/database_settings.rst:245
+#: ../../setup_application/database_settings.rst:247
+#: ../../setup_application/database_settings.rst:249
+#: ../../setup_application/database_settings.rst:251
 msgid "MariaDB-Internal"
 msgstr "MariaDB-Internal"
 
-#: ../../setup_application/database_settings.rst:232
-#: ../../setup_application/database_settings.rst:238
+#: ../../setup_application/database_settings.rst:243
+#: ../../setup_application/database_settings.rst:249
 msgid "> 500K"
 msgstr "> 500 tis."
 
-#: ../../setup_application/database_settings.rst:233
-#: ../../setup_application/database_settings.rst:234
-#: ../../setup_application/database_settings.rst:248
+#: ../../setup_application/database_settings.rst:244
+#: ../../setup_application/database_settings.rst:245
+#: ../../setup_application/database_settings.rst:259
 msgid "SSD"
 msgstr "SSD"
 
-#: ../../setup_application/database_settings.rst:233
-#: ../../setup_application/database_settings.rst:235
+#: ../../setup_application/database_settings.rst:244
+#: ../../setup_application/database_settings.rst:246
 msgid "WAL is optional."
 msgstr "WAL je voliteľné."
 
-#: ../../setup_application/database_settings.rst:235
-#: ../../setup_application/database_settings.rst:236
+#: ../../setup_application/database_settings.rst:246
+#: ../../setup_application/database_settings.rst:247
 msgid "NVME"
 msgstr "NVME"
 
-#: ../../setup_application/database_settings.rst:237
-#: ../../setup_application/database_settings.rst:238
-#: ../../setup_application/database_settings.rst:254
+#: ../../setup_application/database_settings.rst:248
+#: ../../setup_application/database_settings.rst:249
+#: ../../setup_application/database_settings.rst:265
 msgid "Removable"
 msgstr "Vymeniteľné"
 
-#: ../../setup_application/database_settings.rst:237
+#: ../../setup_application/database_settings.rst:248
 msgid "**Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**"
 msgstr "**Upozornenie: WAL je povinné. Minimum USB 3.1 s diskom NVMe.**"
 
-#: ../../setup_application/database_settings.rst:238
+#: ../../setup_application/database_settings.rst:249
 msgid "**Warning: USB 3.1 minimum with NVMe drive.**"
 msgstr "**Upozornenie: Minimum USB 3.1 s diskom NVMe.**"
 
-#: ../../setup_application/database_settings.rst:239
-#: ../../setup_application/database_settings.rst:240
-#: ../../setup_application/database_settings.rst:257
+#: ../../setup_application/database_settings.rst:250
+#: ../../setup_application/database_settings.rst:251
+#: ../../setup_application/database_settings.rst:268
 msgid "Network FS"
 msgstr "Sieťový FS"
 
-#: ../../setup_application/database_settings.rst:239
+#: ../../setup_application/database_settings.rst:250
 msgid "**Prohibited: SQLite databases must be stored on local file system.**"
 msgstr ""
 "**Zakázané: Databázy SQLite musia byť uložené na lokálnom súborovom systéme."
 "**"
 
-#: ../../setup_application/database_settings.rst:240
+#: ../../setup_application/database_settings.rst:251
 msgid "**Prohibited: MariaDB databases must be stored on local file system.**"
 msgstr ""
 "**Zakázané: Databázy MariaDB musia byť uložené na lokálnom súborovom systéme."
 "**"
 
-#: ../../setup_application/database_settings.rst:241
-#: ../../setup_application/database_settings.rst:260
+#: ../../setup_application/database_settings.rst:252
+#: ../../setup_application/database_settings.rst:271
 msgid "Remote"
 msgstr "Vzdialené"
 
-#: ../../setup_application/database_settings.rst:241
+#: ../../setup_application/database_settings.rst:252
 msgid "MariaDB-Server"
 msgstr "MariaDB-Server"
 
-#: ../../setup_application/database_settings.rst:241
+#: ../../setup_application/database_settings.rst:252
 msgid "Gigabit Ethernet or higher is recommended."
 msgstr "Odporúča sa gigabitový Ethernet alebo vyšší."
 
-#: ../../setup_application/database_settings.rst:247
+#: ../../setup_application/database_settings.rst:258
 msgid "Hard Disk Drive."
 msgstr "Pevný disk"
 
-#: ../../setup_application/database_settings.rst:250
+#: ../../setup_application/database_settings.rst:261
 msgid "Solid State Drive."
 msgstr "Solid State Drive."
 
-#: ../../setup_application/database_settings.rst:251
+#: ../../setup_application/database_settings.rst:262
 msgid "NVMe"
 msgstr "NVMe"
 
-#: ../../setup_application/database_settings.rst:253
+#: ../../setup_application/database_settings.rst:264
 msgid "Non-Volatile Memory."
 msgstr "Nevolatilná pamäť."
 
-#: ../../setup_application/database_settings.rst:256
+#: ../../setup_application/database_settings.rst:267
 msgid "External USB HDD/SSD/NVMe drive."
 msgstr "Externý USB HDD/SSD/NVMe disk."
 
-#: ../../setup_application/database_settings.rst:259
+#: ../../setup_application/database_settings.rst:270
 msgid "Network File System mounted locally."
 msgstr "Sieťový súborový systém pripojený lokálne."
 
-#: ../../setup_application/database_settings.rst:262
+#: ../../setup_application/database_settings.rst:273
 msgid "Network server as NAS (Network Attached Storage)."
 msgstr "Sieťový server ako NAS (Network Attached Storage)."
 
-#: ../../setup_application/database_settings.rst:263
+#: ../../setup_application/database_settings.rst:274
 msgid "WAL"
 msgstr "WAL"
 
-#: ../../setup_application/database_settings.rst:265
+#: ../../setup_application/database_settings.rst:276
 msgid "Write-Ahead Lock (SQLite database only)."
 msgstr "Write-Ahead Lock (iba databáza SQLite)."
 
-#: ../../setup_application/database_settings.rst:269
+#: ../../setup_application/database_settings.rst:280
 msgid ""
 "Refer the :ref:`Digital Asset Management <storage_deterioration>` chapter "
 "for more details about media and data protection."
@@ -791,7 +807,7 @@ msgstr ""
 "Ďalšie podrobnosti o ochrane médií a dát nájdete v kapitole :ref:`Správa "
 "digitálnych aktív <storage_deterioration>`."
 
-#: ../../setup_application/database_settings.rst:271
+#: ../../setup_application/database_settings.rst:282
 msgid ""
 "Also refer to the :ref:`Collection Settings <collections_settings>` chapter "
 "for more details about how to configure your collections depending on your "
@@ -801,7 +817,7 @@ msgstr ""
 "kde nájdete ďalšie podrobnosti o tom, ako konfigurovať kolekcie v závislosti "
 "od vašich zásad ukladania."
 
-#: ../../setup_application/database_settings.rst:275
+#: ../../setup_application/database_settings.rst:286
 msgid ""
 "If you share the same **Removable** media for host databases and/or "
 "collections between different computers, you must have the same kind of "
@@ -815,7 +831,7 @@ msgstr ""
 "odkazy) a všade rovnakú verziu digiKam, aby sa predišlo konfliktom so "
 "schémou databázy."
 
-#: ../../setup_application/database_settings.rst:277
+#: ../../setup_application/database_settings.rst:288
 msgid ""
 "If you use a common **Remote** server to host *databases and collections*, "
 "you must use the same digiKam version everywhere to prevent conflicts with "
@@ -827,7 +843,7 @@ msgstr ""
 "konfliktom so schémou databázy. Počítače spúšťajúce rôzne inštancie digiKam "
 "nemôžu súčasne pristupovať k spoločnej databáze a kolekcii."
 
-#: ../../setup_application/database_settings.rst:279
+#: ../../setup_application/database_settings.rst:290
 msgid ""
 "If you use a common **Remote** server to host collections, with the "
 "databases stored on individual computers, then different versions of digiKam "
@@ -842,11 +858,11 @@ msgstr ""
 "spoločným kolekciám. Budete však musieť dbať na súbežné prístupy k metadátam "
 "súborov, ak ste túto možnosť zapli na stránke **Nastavenie metadát**."
 
-#: ../../setup_application/database_settings.rst:284
+#: ../../setup_application/database_settings.rst:295
 msgid "Database Migration"
 msgstr "Migrácia databázy..."
 
-#: ../../setup_application/database_settings.rst:286
+#: ../../setup_application/database_settings.rst:297
 msgid ""
 "digiKam comes up with an exclusive tool named **Database Migration**, that "
 "allows users to migrate their data. For example, the migration tool can help "
@@ -858,7 +874,7 @@ msgstr ""
 "vám môže pomôcť presunúť všetky vaše dáta z databázy SQLite do databázy "
 "MariaDB alebo naopak."
 
-#: ../../setup_application/database_settings.rst:288
+#: ../../setup_application/database_settings.rst:299
 msgid ""
 "To migrate to another database, go to :menuselection:`Settings --> Database "
 "Migration...`. A dialog box appears:"
@@ -866,11 +882,11 @@ msgstr ""
 "Ak chcete migrovať na inú databázu, prejdite na :menuselection:`Nastavenia --"
 "> Migrácia databázy...`. Zobrazí sa dialógové okno:"
 
-#: ../../setup_application/database_settings.rst:294
+#: ../../setup_application/database_settings.rst:305
 msgid "The digiKam Database Migration Tool"
 msgstr "Nástroj migrácie databázy digiKam"
 
-#: ../../setup_application/database_settings.rst:296
+#: ../../setup_application/database_settings.rst:307
 msgid ""
 "Now choose the appropriate database types you want to convert to. Finally, "
 "click on **Migrate** button to convert the database from SQLite to MariaDB "
@@ -882,7 +898,7 @@ msgstr ""
 "(alebo naopak). V závislosti od veľkosti databázy môže táto operácia chvíľu "
 "trvať."
 
-#: ../../setup_application/database_settings.rst:300
+#: ../../setup_application/database_settings.rst:311
 msgid ""
 "Only the digiKam **Core** database will be migrated by this conversion "
 "process. All of the other databases needs to be rebuilt using post-"
@@ -897,11 +913,11 @@ msgstr ""
 "**Similarity** bude potrebné vytvoriť od začiatku a databáza **Face** "
 "obsahuje možnosť **Znovu vybudovať tréningové dáta**."
 
-#: ../../setup_application/database_settings.rst:305
+#: ../../setup_application/database_settings.rst:316
 msgid "Database Backup Recommendation"
 msgstr "Odporúčanie zálohovania databázy"
 
-#: ../../setup_application/database_settings.rst:307
+#: ../../setup_application/database_settings.rst:318
 msgid ""
 "For security reasons, planning a database backup using crontab over the "
 "network can help against device failures. A NAS or an external drive can "
@@ -911,7 +927,7 @@ msgstr ""
 "crontab cez sieť pomôcť pri zlyhaniach zariadení. Na zálohovanie možno "
 "použiť aj NAS alebo externý disk."
 
-#: ../../setup_application/database_settings.rst:309
+#: ../../setup_application/database_settings.rst:320
 msgid ""
 "Each database can be renamed with a different, unique name. This allows "
 "users to backup only what is needed. For instance, renaming **Core** "
@@ -925,7 +941,7 @@ msgstr ""
 "ktorá je najdôležitejším súborom. Databázy **Thumbnails**, **Similarity** a "
 "**Face Recognition** možno vždy znovu vygenerovať od začiatku."
 
-#: ../../setup_application/database_settings.rst:311
+#: ../../setup_application/database_settings.rst:322
 msgid ""
 "The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will "
 "explain how to maintain the database contents and how to synchronize the "
@@ -935,11 +951,11 @@ msgstr ""
 "ako udržiavať obsah databázy a ako synchronizovať kolekcie s informáciami v "
 "databázach (a naopak)."
 
-#: ../../setup_application/database_settings.rst:316
+#: ../../setup_application/database_settings.rst:327
 msgid "Database Statistics"
 msgstr "Databázová štatistika"
 
-#: ../../setup_application/database_settings.rst:318
+#: ../../setup_application/database_settings.rst:329
 #, fuzzy
 #| msgid ""
 #| "digiKam provides a unique tool to show the statistics from your "
@@ -958,7 +974,7 @@ msgstr ""
 "formátu obrázka), štítky atď. Zahŕňa tiež **Back-end databázy** (QSQLITE "
 "alebo QMYSQL) a **Cestu k databáze** (kde sa nachádza vaša kolekcia)."
 
-#: ../../setup_application/database_settings.rst:320
+#: ../../setup_application/database_settings.rst:331
 msgid ""
 "You can view your statistics by going to :menuselection:`Help --> Database "
 "Statistics...`. A dialog box like this will appear:"
@@ -966,7 +982,7 @@ msgstr ""
 "Štatistiky si môžete pozrieť tak, že prejdete na :menuselection:`Pomocník --"
 "> Štatistiky databázy...`. Zobrazí sa dialógové okno ako toto:"
 
-#: ../../setup_application/database_settings.rst:327
+#: ../../setup_application/database_settings.rst:338
 msgid "The digiKam Database Statistics Dialog"
 msgstr "Dialóg štatistík databázy digiKam"
 

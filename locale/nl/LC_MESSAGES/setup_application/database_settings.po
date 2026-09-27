@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-20 02:06+0000\n"
+"POT-Creation-Date: 2026-09-26 02:19+0000\n"
 "PO-Revision-Date: 2026-09-20 17:21+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -623,11 +623,27 @@ msgstr ""
 "voorkomen met de gemeenschappelijke waarden opgeslagen in de tabellen van de "
 "database."
 
-#: ../../setup_application/database_settings.rst:224
+#: ../../setup_application/database_settings.rst:225
+msgid ""
+"When you run a connection test with the **Check Connection** button, if you "
+"receive a TLS/SSL relevant error message as **SSL is required, but the "
+"server does not support it**, try to add `skip-ssl=true` to the **Connection "
+"Settings** from the digiKam MariaDB database configuration dialog. This is "
+"not a bug in digiKam: the MariaDB connector attempts to establish an SSL "
+"connection by default, and this option disables it."
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:231
+msgid ""
+"Alternatively, on the server side, you can set the `use_ssl=false` option in "
+"the :file:`my.ini` or :file:`~/.my.cnf` configuration files."
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:235
 msgid "Database Type Criteria"
 msgstr "Criteria voor het type database"
 
-#: ../../setup_application/database_settings.rst:226
+#: ../../setup_application/database_settings.rst:237
 msgid ""
 "See the summary below to choose the right database type depending on your "
 "use case."
@@ -635,156 +651,156 @@ msgstr ""
 "Zie het onderstaande overzicht om het juiste type database te kiezen "
 "afhankelijk van uw gebruik."
 
-#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:240
 msgid "Storage"
 msgstr "Opslag"
 
-#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:240
 msgid "Type"
 msgstr "Type"
 
-#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:240
 msgid "Items"
 msgstr "Items"
 
-#: ../../setup_application/database_settings.rst:229
+#: ../../setup_application/database_settings.rst:240
 msgid "Remarks"
 msgstr "Opmerkingen"
 
-#: ../../setup_application/database_settings.rst:231
-#: ../../setup_application/database_settings.rst:232
-#: ../../setup_application/database_settings.rst:245
+#: ../../setup_application/database_settings.rst:242
+#: ../../setup_application/database_settings.rst:243
+#: ../../setup_application/database_settings.rst:256
 msgid "HDD"
 msgstr "HDD"
 
-#: ../../setup_application/database_settings.rst:231
-#: ../../setup_application/database_settings.rst:233
-#: ../../setup_application/database_settings.rst:235
-#: ../../setup_application/database_settings.rst:237
-#: ../../setup_application/database_settings.rst:239
+#: ../../setup_application/database_settings.rst:242
+#: ../../setup_application/database_settings.rst:244
+#: ../../setup_application/database_settings.rst:246
+#: ../../setup_application/database_settings.rst:248
+#: ../../setup_application/database_settings.rst:250
 msgid "SQLite"
 msgstr "SQLite"
 
-#: ../../setup_application/database_settings.rst:231
-#: ../../setup_application/database_settings.rst:237
+#: ../../setup_application/database_settings.rst:242
+#: ../../setup_application/database_settings.rst:248
 msgid "< 500K"
 msgstr "< 500K"
 
-#: ../../setup_application/database_settings.rst:231
+#: ../../setup_application/database_settings.rst:242
 msgid "**Warning: WAL is mandatory.**"
 msgstr "**Waarschuwing: WAL is verplicht.**"
 
-#: ../../setup_application/database_settings.rst:232
-#: ../../setup_application/database_settings.rst:234
-#: ../../setup_application/database_settings.rst:236
-#: ../../setup_application/database_settings.rst:238
-#: ../../setup_application/database_settings.rst:240
+#: ../../setup_application/database_settings.rst:243
+#: ../../setup_application/database_settings.rst:245
+#: ../../setup_application/database_settings.rst:247
+#: ../../setup_application/database_settings.rst:249
+#: ../../setup_application/database_settings.rst:251
 msgid "MariaDB-Internal"
 msgstr "MariaDB-intern"
 
-#: ../../setup_application/database_settings.rst:232
-#: ../../setup_application/database_settings.rst:238
+#: ../../setup_application/database_settings.rst:243
+#: ../../setup_application/database_settings.rst:249
 msgid "> 500K"
 msgstr "> 500K"
 
-#: ../../setup_application/database_settings.rst:233
-#: ../../setup_application/database_settings.rst:234
-#: ../../setup_application/database_settings.rst:248
+#: ../../setup_application/database_settings.rst:244
+#: ../../setup_application/database_settings.rst:245
+#: ../../setup_application/database_settings.rst:259
 msgid "SSD"
 msgstr "SSD"
 
-#: ../../setup_application/database_settings.rst:233
-#: ../../setup_application/database_settings.rst:235
+#: ../../setup_application/database_settings.rst:244
+#: ../../setup_application/database_settings.rst:246
 msgid "WAL is optional."
 msgstr "WAL is optioneel."
 
-#: ../../setup_application/database_settings.rst:235
-#: ../../setup_application/database_settings.rst:236
+#: ../../setup_application/database_settings.rst:246
+#: ../../setup_application/database_settings.rst:247
 msgid "NVME"
 msgstr "NVME"
 
-#: ../../setup_application/database_settings.rst:237
-#: ../../setup_application/database_settings.rst:238
-#: ../../setup_application/database_settings.rst:254
+#: ../../setup_application/database_settings.rst:248
+#: ../../setup_application/database_settings.rst:249
+#: ../../setup_application/database_settings.rst:265
 msgid "Removable"
 msgstr "Verwijderbaar"
 
-#: ../../setup_application/database_settings.rst:237
+#: ../../setup_application/database_settings.rst:248
 msgid "**Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**"
 msgstr "**Waarschuwing: WAL verplicht. USB 3.1 is minimum met NVMe-station.**"
 
-#: ../../setup_application/database_settings.rst:238
+#: ../../setup_application/database_settings.rst:249
 msgid "**Warning: USB 3.1 minimum with NVMe drive.**"
 msgstr "**Waarschuwing: USB 3.1 is minimaal met NVMe-station.**"
 
-#: ../../setup_application/database_settings.rst:239
-#: ../../setup_application/database_settings.rst:240
-#: ../../setup_application/database_settings.rst:257
+#: ../../setup_application/database_settings.rst:250
+#: ../../setup_application/database_settings.rst:251
+#: ../../setup_application/database_settings.rst:268
 msgid "Network FS"
 msgstr "Netwerk-FS"
 
-#: ../../setup_application/database_settings.rst:239
+#: ../../setup_application/database_settings.rst:250
 msgid "**Prohibited: SQLite databases must be stored on local file system.**"
 msgstr ""
 "**Verboden: SQLite databases moeten opgeslagen worden op een lokaal "
 "bestandssysteem.**"
 
-#: ../../setup_application/database_settings.rst:240
+#: ../../setup_application/database_settings.rst:251
 msgid "**Prohibited: MariaDB databases must be stored on local file system.**"
 msgstr ""
 "**Verboden: MariaDB databases moeten opgeslagen worden op een lokaal "
 "bestandssysteem.**"
 
-#: ../../setup_application/database_settings.rst:241
-#: ../../setup_application/database_settings.rst:260
+#: ../../setup_application/database_settings.rst:252
+#: ../../setup_application/database_settings.rst:271
 msgid "Remote"
 msgstr "Op afstand"
 
-#: ../../setup_application/database_settings.rst:241
+#: ../../setup_application/database_settings.rst:252
 msgid "MariaDB-Server"
 msgstr "MariaDB-server"
 
-#: ../../setup_application/database_settings.rst:241
+#: ../../setup_application/database_settings.rst:252
 msgid "Gigabit Ethernet or higher is recommended."
 msgstr "Gigabit ethernet of hoger is aanbevolen."
 
-#: ../../setup_application/database_settings.rst:247
+#: ../../setup_application/database_settings.rst:258
 msgid "Hard Disk Drive."
 msgstr "Vaste schijf."
 
-#: ../../setup_application/database_settings.rst:250
+#: ../../setup_application/database_settings.rst:261
 msgid "Solid State Drive."
 msgstr "Solid State Drive."
 
-#: ../../setup_application/database_settings.rst:251
+#: ../../setup_application/database_settings.rst:262
 msgid "NVMe"
 msgstr "NVMe"
 
-#: ../../setup_application/database_settings.rst:253
+#: ../../setup_application/database_settings.rst:264
 msgid "Non-Volatile Memory."
 msgstr "Niet-vluchtig geheugen."
 
-#: ../../setup_application/database_settings.rst:256
+#: ../../setup_application/database_settings.rst:267
 msgid "External USB HDD/SSD/NVMe drive."
 msgstr "Externe USB HDD/SSD/NVMe station."
 
-#: ../../setup_application/database_settings.rst:259
+#: ../../setup_application/database_settings.rst:270
 msgid "Network File System mounted locally."
 msgstr "Netwerkbestandssysteem lokaal aangekoppeld."
 
-#: ../../setup_application/database_settings.rst:262
+#: ../../setup_application/database_settings.rst:273
 msgid "Network server as NAS (Network Attached Storage)."
 msgstr "Netwerkserver zoals NAS (Network Attached Storage)."
 
-#: ../../setup_application/database_settings.rst:263
+#: ../../setup_application/database_settings.rst:274
 msgid "WAL"
 msgstr "WAL"
 
-#: ../../setup_application/database_settings.rst:265
+#: ../../setup_application/database_settings.rst:276
 msgid "Write-Ahead Lock (SQLite database only)."
 msgstr "Write-Ahead Lock (alleen SQLite database)."
 
-#: ../../setup_application/database_settings.rst:269
+#: ../../setup_application/database_settings.rst:280
 msgid ""
 "Refer the :ref:`Digital Asset Management <storage_deterioration>` chapter "
 "for more details about media and data protection."
@@ -792,7 +808,7 @@ msgstr ""
 "Kijk in hoofdstuk :ref:`Digital Asset Management <storage_deterioration>` "
 "voor meer details over media en gegevensbescherming."
 
-#: ../../setup_application/database_settings.rst:271
+#: ../../setup_application/database_settings.rst:282
 msgid ""
 "Also refer to the :ref:`Collection Settings <collections_settings>` chapter "
 "for more details about how to configure your collections depending on your "
@@ -802,7 +818,7 @@ msgstr ""
 "<collections_settings>` voor meer details over hoe uw verzamelingen te "
 "configureren afhankelijk van uw opslagbeleid."
 
-#: ../../setup_application/database_settings.rst:275
+#: ../../setup_application/database_settings.rst:286
 msgid ""
 "If you share the same **Removable** media for host databases and/or "
 "collections between different computers, you must have the same kind of "
@@ -816,7 +832,7 @@ msgstr ""
 "(gebruik symbolische koppelingen om paden te vinden) en overal dezelfde "
 "versie van digiKam om conflicten met het schema van de database te vermijden."
 
-#: ../../setup_application/database_settings.rst:277
+#: ../../setup_application/database_settings.rst:288
 msgid ""
 "If you use a common **Remote** server to host *databases and collections*, "
 "you must use the same digiKam version everywhere to prevent conflicts with "
@@ -829,7 +845,7 @@ msgstr ""
 "Computers die verschillende exemplaren van digiKam uitvoeren kunnen niet "
 "tegelijk toegang hebben tot een gemeenschappelijke database en verzamelingen."
 
-#: ../../setup_application/database_settings.rst:279
+#: ../../setup_application/database_settings.rst:290
 msgid ""
 "If you use a common **Remote** server to host collections, with the "
 "databases stored on individual computers, then different versions of digiKam "
@@ -845,11 +861,11 @@ msgstr ""
 "voorzichtig zijn met tegelijk toegang tot metagegevens in bestanden als u "
 "deze optie uit de pagina **Opzetpagina voor metagegevens** hebt aangezet."
 
-#: ../../setup_application/database_settings.rst:284
+#: ../../setup_application/database_settings.rst:295
 msgid "Database Migration"
 msgstr "Migratie van database"
 
-#: ../../setup_application/database_settings.rst:286
+#: ../../setup_application/database_settings.rst:297
 msgid ""
 "digiKam comes up with an exclusive tool named **Database Migration**, that "
 "allows users to migrate their data. For example, the migration tool can help "
@@ -861,7 +877,7 @@ msgstr ""
 "migratiehulpmiddel kan u helpen om alle uw gegevens uit een SQLite-database "
 "te verplaatsen naar een MariaDB-database of vice versa."
 
-#: ../../setup_application/database_settings.rst:288
+#: ../../setup_application/database_settings.rst:299
 msgid ""
 "To migrate to another database, go to :menuselection:`Settings --> Database "
 "Migration...`. A dialog box appears:"
@@ -869,11 +885,11 @@ msgstr ""
 "Om te migreren naar een andere database, ga naar :menuselection:"
 "`Instellingen --> Migratie...`. Er zal een dialoogvenster verschijnen:"
 
-#: ../../setup_application/database_settings.rst:294
+#: ../../setup_application/database_settings.rst:305
 msgid "The digiKam Database Migration Tool"
 msgstr "He hulpmiddel Migratie van database van digiKam"
 
-#: ../../setup_application/database_settings.rst:296
+#: ../../setup_application/database_settings.rst:307
 msgid ""
 "Now choose the appropriate database types you want to convert to. Finally, "
 "click on **Migrate** button to convert the database from SQLite to MariaDB "
@@ -885,7 +901,7 @@ msgstr ""
 "vice versa) te converteren. Afhankelijk van de grootte van de database zal "
 "deze actie enige tijd duren."
 
-#: ../../setup_application/database_settings.rst:300
+#: ../../setup_application/database_settings.rst:311
 msgid ""
 "Only the digiKam **Core** database will be migrated by this conversion "
 "process. All of the other databases needs to be rebuilt using post-"
@@ -901,11 +917,11 @@ msgstr ""
 "vanaf niets moeten worden aangemaakt en de database **Gezicht** bevat de "
 "optie **De trainingsgegevens opnieuw bouwen** nodig."
 
-#: ../../setup_application/database_settings.rst:305
+#: ../../setup_application/database_settings.rst:316
 msgid "Database Backup Recommendation"
 msgstr "Aanbeveling voor backup van database"
 
-#: ../../setup_application/database_settings.rst:307
+#: ../../setup_application/database_settings.rst:318
 msgid ""
 "For security reasons, planning a database backup using crontab over the "
 "network can help against device failures. A NAS or an external drive can "
@@ -915,7 +931,7 @@ msgstr ""
 "database met crontab over het netwerk helpen tegen het falen van een "
 "apparaat. Een NAS of een externe schijf kan al reserve worden gebruikt."
 
-#: ../../setup_application/database_settings.rst:309
+#: ../../setup_application/database_settings.rst:320
 msgid ""
 "Each database can be renamed with a different, unique name. This allows "
 "users to backup only what is needed. For instance, renaming **Core** "
@@ -931,7 +947,7 @@ msgstr ""
 "**Gelijkenissen** en **Gezichtsherkenning** kunnen altijd vanaf niets "
 "opnieuw worden gegenereerd."
 
-#: ../../setup_application/database_settings.rst:311
+#: ../../setup_application/database_settings.rst:322
 msgid ""
 "The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will "
 "explain how to maintain the database contents and how to synchronize the "
@@ -942,11 +958,11 @@ msgstr ""
 "onderhouden is en hoe de verzamelingen te synchroniseren met informatie in "
 "de databases (en omgekeerd)."
 
-#: ../../setup_application/database_settings.rst:316
+#: ../../setup_application/database_settings.rst:327
 msgid "Database Statistics"
 msgstr "Database statistieken"
 
-#: ../../setup_application/database_settings.rst:318
+#: ../../setup_application/database_settings.rst:329
 msgid ""
 "digiKam provides a unique tool to show the statistics from your collections. "
 "It includes count of images, videos (including individual count by image "
@@ -959,7 +975,7 @@ msgstr ""
 "**Database-backend** (Sqlite of MariaDB) en het **Pad naar de database** "
 "(waar uw verzameling zich bevind)."
 
-#: ../../setup_application/database_settings.rst:320
+#: ../../setup_application/database_settings.rst:331
 msgid ""
 "You can view your statistics by going to :menuselection:`Help --> Database "
 "Statistics...`. A dialog box like this will appear:"
@@ -967,7 +983,7 @@ msgstr ""
 "U kunt uw statistieken bekijken door naar :menuselection:`Help --> "
 "Databasestatistieken` te gaan. De volgende dialoog zal verschijnen:"
 
-#: ../../setup_application/database_settings.rst:327
+#: ../../setup_application/database_settings.rst:338
 msgid "The digiKam Database Statistics Dialog"
 msgstr "De dialoog voor Databasestatistieken van digiKam"
 
