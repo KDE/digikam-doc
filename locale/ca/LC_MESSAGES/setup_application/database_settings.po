@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-26 02:19+0000\n"
-"PO-Revision-Date: 2026-09-20 12:53+0200\n"
+"PO-Revision-Date: 2026-09-26 14:47+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 26.08.1\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: ../../setup_application/database_settings.rst:-1
 msgid "digiKam Database Settings"
@@ -639,6 +639,7 @@ msgstr ""
 "el digiKam per a evitar problemes amb els valors habituals desats a les "
 "taules de la base de dades."
 
+# skip-rule: t-acc_obe
 #: ../../setup_application/database_settings.rst:225
 msgid ""
 "When you run a connection test with the **Check Connection** button, if you "
@@ -648,12 +649,22 @@ msgid ""
 "not a bug in digiKam: the MariaDB connector attempts to establish an SSL "
 "connection by default, and this option disables it."
 msgstr ""
+"Quan executeu una prova de connexió amb el botó **Comprova la connexió**, si "
+"rebeu un missatge d'error rellevant del TLS/SSL com **És necessari el SSL, "
+"però el servidor no l'admet**, proveu d'afegir `skip-ssl=true` a la "
+"**Configuració de la connexió** del diàleg de configuració de la base de "
+"dades MariaDB del digiKam. Aquest no és un error al digiKam: el connector "
+"MariaDB intenta establir una connexió SSL de manera predeterminada, i "
+"aquesta opció la desactiva."
 
 #: ../../setup_application/database_settings.rst:231
 msgid ""
 "Alternatively, on the server side, you can set the `use_ssl=false` option in "
 "the :file:`my.ini` or :file:`~/.my.cnf` configuration files."
 msgstr ""
+"Alternativament, a la banda del servidor, podeu definir l'opció "
+"`use_ssl=false` als fitxers de configuració :file:`my.ini` o :file:`~/.my."
+"cnf`."
 
 # skip-rule: common-settings
 #: ../../setup_application/database_settings.rst:235
