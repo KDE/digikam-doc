@@ -48,7 +48,7 @@ The `SQLite Browser <https://sqlitebrowser.org/>`_, is a high quality and easy t
 
 .. note::
 
-    For best performance, store the digiKam databases on the fastest hardware (such as SSD or NVMe) with plenty of free space. This is especially important for the thumbnails database. A remote file system such as NFS cannot be used here. For performance and technical reasons, SQLite cannot use media from the network.
+    For best performance, store the digiKam databases on the fastest hardware available (such as an SSD or NVMe drive) with plenty of free space. This is especially important for the thumbnails database. A remote file system such as NFS cannot be used here: for performance and technical reasons, SQLite cannot use network media. The SQLite databases should not be located on a USB drive, and the FAT32 file system must not be used.
 
 The SQLite database files can be found in the *collection* folder that you added to digiKam. (By default, if you add your “Pictures” collection, the database files will be present in the :file:`~/Pictures` folder).
 
