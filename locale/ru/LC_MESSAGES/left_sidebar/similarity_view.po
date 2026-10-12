@@ -1,0 +1,475 @@
+# Translation of docs_digikam_org_left_sidebar___similarity_view into Russian.
+# Copyright (C) Licensed under the terms of the <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">GNU Free Documentation License 1.2+</a> unless stated otherwise
+# This file is distributed under the same license as the Digikam Manual package.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: docs_digikam_org_left_sidebar___similarity_view\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-08 02:04+0000\n"
+"PO-Revision-Date: 2026-10-10 19:04+0200\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: ../../left_sidebar/similarity_view.rst:-1
+msgid "digiKam Main Window Similarity View"
+msgstr "Просмотр схожести в главном окне digiKam"
+
+#: ../../left_sidebar/similarity_view.rst:-1
+msgid ""
+"digiKam, documentation, user manual, photo management, open source, free, "
+"learn, easy, similarity, search, duplicates, sketch"
+msgstr ""
+"digiKam, документация, руководство пользователя, управление фотографиями, "
+"открытый исходный код, свободное ПО, изучение, просто, схожесть, поиск, "
+"дубликаты, набросок"
+
+#: ../../left_sidebar/similarity_view.rst:14
+msgid ":ref:`Similarity View <left_sidebar>`"
+msgstr ":ref:`Просмотр схожести <left_sidebar>`"
+
+#: ../../left_sidebar/similarity_view.rst:16
+msgid "Contents"
+msgstr "Содержание"
+
+#: ../../left_sidebar/similarity_view.rst:19
+msgid "Overview"
+msgstr "Обзор"
+
+#: ../../left_sidebar/similarity_view.rst:21
+msgid ""
+"If you have lost a picture because you can't remember its name or where you "
+"filed it, you might want to perform a *Similarity* search on your "
+"collections."
+msgstr ""
+"Если изображение потеряно, а его имя или папка, в которой оно находится, "
+"забыты, можно выполнить поиск *по схожести* в коллекциях."
+
+#: ../../left_sidebar/similarity_view.rst:23
+msgid ""
+"digiKam characterizes every image by a fingerprint (or signature), that is "
+"internally represented as a lengthy number. These fingerprints are computed "
+"in such a way that the less numerical difference there is between any two "
+"image fingerprints, the more the two images resemble each other. Comparison "
+"of these fingerprints thus make it possible to find similar images. This "
+"methodology is the core engine for three features in the Similarity View "
+"named find **Duplicates**, find similar **Image**, and find by **Sketch**."
+msgstr ""
+"digiKam характеризует каждое изображение контрольной строкой (или "
+"сигнатурой) — длинным числом во внутреннем представлении. Эти контрольные "
+"строки вычисляются так, что чем меньше числовая разница между строками любых "
+"двух изображений, тем больше эти изображения похожи друг на друга. Сравнение "
+"контрольных строк позволяет находить похожие изображения. Эта методика лежит "
+"в основе трёх функций просмотра схожести: поиска **дубликатов**, поиска "
+"похожих **изображений** и поиска по **наброску**."
+
+#: ../../left_sidebar/similarity_view.rst:27
+msgid ""
+"digiKam uses Wavelets/Haar algorithms based on the `Fast Multi-Resolution "
+"Image Querying publication <https://grail.cs.washington.edu/wp-content/"
+"uploads/2015/08/jacobs-1995.pdf>`_ to compute fingerprints for every image "
+"in the database. These calculations are done in the background."
+msgstr ""
+"digiKam использует алгоритмы вейвлетов/Хаара на основе публикации `Fast "
+"Multi-Resolution Image Querying <https://grail.cs.washington.edu/wp-content/"
+"uploads/2015/08/jacobs-1995.pdf>`_ для вычисления контрольных строк каждого "
+"изображения в базе данных. Эти вычисления выполняются в фоновом режиме."
+
+#: ../../left_sidebar/similarity_view.rst:32
+msgid "Find Duplicates"
+msgstr "Поиск дубликатов"
+
+#: ../../left_sidebar/similarity_view.rst:34
+msgid ""
+"Before you can have digiKam find duplicates, the fingerprints of the images "
+"within the collections have to be calculated. You can start that process "
+"with the button **Update Fingerprints** which initiates a total rebuild of "
+"the image fingerprint database. This may take hours if you have a large "
+"collection and slow storage devices. If you have already scanned your images "
+"for fingerprints, then you should skip this step."
+msgstr ""
+"Прежде чем digiKam сможет находить дубликаты, необходимо вычислить "
+"контрольные строки изображений в коллекциях. Запустить этот процесс можно "
+"кнопкой **Обновить контрольные строки**, которая инициирует полную "
+"перестройку базы данных контрольных строк изображений. Это может занять "
+"несколько часов, если коллекция большая, а устройства хранения медленные. "
+"Если контрольные строки изображений уже вычислены, этот шаг следует "
+"пропустить."
+
+#: ../../left_sidebar/similarity_view.rst:38
+msgid ""
+"You can also perform fingerprint operations using :menuselection:`Tools --> "
+"Maintenance` and select **Rebuild Finger-prints** option. You can optionally "
+"choose if you want to rebuild the entire database or only scan your database "
+"for changed or new items, which is the default behavior. Scanning for "
+"changed or new items is naturally the faster option."
+msgstr ""
+"Операции с контрольными строками можно также выполнять с помощью меню :"
+"menuselection:`Сервис --> Обслуживание`, выбрав параметр **Обновить "
+"контрольные строки**. Можно выбрать между перестройкой всей базы данных и "
+"поиском только изменённых или новых объектов, что является поведением по "
+"умолчанию. Поиск изменённых или новых объектов, естественно, выполняется "
+"быстрее."
+
+#: ../../left_sidebar/similarity_view.rst:40
+msgid ""
+"Once the fingerprints are calculated you can use **Find Duplicates**, but "
+"the calculation will take a long time since it has to compare every image "
+"with every other image. So it is often better to confine your search to "
+"certain **Albums** and/or **Tags**. The **All albums** and **All tags** "
+"check-boxes perform global searches in the database. Otherwise use the drop-"
+"down menu to specify which **Albums** and/or **Tags** to search."
+msgstr ""
+"После вычисления контрольных строк можно воспользоваться функцией **Найти "
+"дубликаты**, однако вычисление займёт много времени, поскольку придётся "
+"сравнить каждое изображение с каждым другим. Поэтому часто лучше ограничить "
+"поиск определёнными **альбомами** и (или) **метками**. Флажки **Все "
+"альбомы** и **Все метки** выполняют глобальный поиск по базе данных. В "
+"противном случае укажите в раскрывающемся меню, какие **альбомы** и (или) "
+"**метки** следует искать."
+
+#: ../../left_sidebar/similarity_view.rst:42
+msgid ""
+"The fundamental result of a **Find Duplicates** operation is a list of "
+"Reference images, which should be thought of as originals, and the number of "
+"images found that are duplicates of the reference image. A **Remove "
+"Duplicates** operation would then remove the duplicate images, without "
+"disturbing the reference images. But when digiKam identifies a group of "
+"duplicate images, how does it identify which is the reference image that "
+"should be maintained, and which are the duplicates?"
+msgstr ""
+"Основной результат операции **Найти дубликаты** — список эталонных "
+"изображений, которые следует считать оригиналами, и количество найденных "
+"изображений, являющихся дубликатами эталонного изображения. Операция "
+"**Удалить повторы** удаляет дубликаты изображений, не затрагивая эталонные "
+"изображения. Но когда digiKam определяет группу дубликатов изображений, как "
+"определяется, какое изображение является эталонным и должно быть сохранено, "
+"а какие — дубликатами?"
+
+#: ../../left_sidebar/similarity_view.rst:44
+msgid ""
+"The **Reference Image Selection Method** setting allows selection of how the "
+"reference image is determined."
+msgstr ""
+"Параметр **Метод выбора эталонного изображения** позволяет указать способ "
+"определения эталонного изображения."
+
+#: ../../left_sidebar/similarity_view.rst:46
+msgid ""
+"**Older or Larger** is the method used prior to version 8.1.0. The reference "
+"image is the duplicate that is older or larger than the others"
+msgstr ""
+"**Более старые или более крупные** — метод, применявшийся до версии 8.1.0. "
+"Эталонное изображение — это дубликат, который старше или больше остальных."
+
+#: ../../left_sidebar/similarity_view.rst:47
+msgid ""
+"**Prefer selected folder as reference** means that the reference image is "
+"chosen from the selected album or albums"
+msgstr ""
+"**Установить выбранный альбом в качестве эталонного** означает, что "
+"эталонное изображение выбирается из выбранного альбома или альбомов"
+
+#: ../../left_sidebar/similarity_view.rst:48
+msgid ""
+"**Prefer other than selected folder as reference** means that the reference "
+"image is chosen from an album that has not been selected"
+msgstr ""
+"**Установить любой другой альбом в качестве эталонного кроме выбранного** "
+"означает, что эталонное изображение выбирается из альбома, который не выбран"
+
+#: ../../left_sidebar/similarity_view.rst:49
+msgid ""
+"**Prefer Newer Creation Date** means that the reference image is the "
+"duplicate that has the newest creation date"
+msgstr ""
+"**По дате создания** означает, что эталонным изображением считается дубликат "
+"с самой новой датой создания."
+
+#: ../../left_sidebar/similarity_view.rst:50
+msgid ""
+"**Prefer Newer Modification Date**  means that the reference image is the "
+"duplicate that has the newest modification date"
+msgstr ""
+"**По дате изменения** означает, что в качестве эталонного изображения "
+"выбирается дубликат с самой новой датой изменения"
+
+#: ../../left_sidebar/similarity_view.rst:56
+msgid ""
+"Find Duplicates Tool Searching in Whole Albums Collection with the reference "
+"file not in the potential Duplicates folder. The results are displayed in "
+"Icon-View"
+msgstr ""
+"Инструмент поиска дубликатов выполняет поиск во всей коллекции альбомов, "
+"когда эталонный файл отсутствует в папке возможных дубликатов. Результаты "
+"показываются в области значков."
+
+#: ../../left_sidebar/similarity_view.rst:58
+msgid ""
+"The **Restrict to** setting limits the albums or tags used in the reference "
+"image selection. Possible options are listed below:"
+msgstr ""
+"Параметр **Ограничить поиск до** ограничивает альбомы или метки, "
+"используемые при выборе эталонного изображения. Возможные варианты "
+"перечислены ниже:"
+
+#: ../../left_sidebar/similarity_view.rst:60
+msgid ""
+"**One of** means that the reference images are either from the selected "
+"albums or have the selected tags."
+msgstr ""
+"**Один из вариантов** означает, что эталонные изображения либо взяты из "
+"выбранных альбомов, либо имеют выбранные метки."
+
+#: ../../left_sidebar/similarity_view.rst:61
+msgid ""
+"**Both** means that the reference images are from the selected albums and "
+"have the selected tags."
+msgstr ""
+"**Оба** — означает, что эталонные изображения взяты из выбранных альбомов и "
+"имеют выбранные метки."
+
+#: ../../left_sidebar/similarity_view.rst:62
+msgid ""
+"**Albums but not tags** means that reference images must be in the selected "
+"albums but not have the selected tags."
+msgstr ""
+"**Альбомы, но не метки** означает, что эталонные изображения должны "
+"находиться в выбранных альбомах, но не иметь выбранных меток."
+
+#: ../../left_sidebar/similarity_view.rst:63
+msgid ""
+"**Tags but not albums** means that reference images must have the selected "
+"tags but not be in the selected albums."
+msgstr ""
+"**Метки, но не альбомы** означает, что эталонные изображения должны иметь "
+"выбранные метки, но не входить в выбранные альбомы."
+
+#: ../../left_sidebar/similarity_view.rst:64
+msgid ""
+"**Only selected tab** means that only the selected tab applies to the "
+"reference image selection."
+msgstr ""
+"**Только выбранная вкладка** означает, что при выборе эталонного изображения "
+"учитывается только выбранная вкладка."
+
+#: ../../left_sidebar/similarity_view.rst:66
+msgid ""
+"With the **Similarity Range** you can narrow down or enlarge the search "
+"result. A similarity of 100 % provides exact matches. Lower values indicate "
+"decreasing similarity. Note that by lowering the upper threshold a little "
+"bit below 100 % you can keep things like exact copies, images from series "
+"shots, etc. out of the search results."
+msgstr ""
+"С помощью **Диапазона схожести** можно сузить или расширить результаты "
+"поиска. Схожесть 100 % обеспечивает точные совпадения. Меньшие значения "
+"означают уменьшение схожести. Обратите внимание: немного понизив верхний "
+"порог ниже 100 %, можно исключить из результатов поиска такие объекты, как "
+"точные копии, снимки из серийной съёмки и т. п."
+
+#: ../../left_sidebar/similarity_view.rst:68
+msgid ""
+"The **Restriction** setting can be used to further restrict searches with "
+"respect to the specified folder. Possible options are listed below:"
+msgstr ""
+"Параметр **Ограничение** позволяет дополнительно ограничить поиск "
+"относительно указанной папки. Возможные варианты перечислены ниже:"
+
+#: ../../left_sidebar/similarity_view.rst:70
+msgid "**None** means to search across all collections"
+msgstr "**Нет** означает, что поиск выполняется во всех коллекциях"
+
+#: ../../left_sidebar/similarity_view.rst:71
+msgid ""
+"**Restrict to reference album** means to only search in the selected album"
+msgstr ""
+"**Ограничить альбомом эталонного изображения** означает, что поиск ведётся "
+"только в выбранном альбоме"
+
+#: ../../left_sidebar/similarity_view.rst:72
+msgid ""
+"**Exclude reference album** means to search in all albums excluding the "
+"selected album"
+msgstr ""
+"**Исключить эталонный альбом** означает, что поиск выполняется во всех "
+"альбомах, кроме выбранного."
+
+#: ../../left_sidebar/similarity_view.rst:74
+msgid ""
+"The results of the search are displayed in the duplicate list-view near the "
+"top left sidebar. The first column shows the **Reference images** (Ref.) as "
+"a thumbnail for each single result. The **Items** column tells you how many "
+"images belong to each result including the **Reference image**. The last "
+"column shows the **Average similarity** which gives you an idea regarding "
+"the degree of similarity of each set of duplicate images. The reference "
+"image with its 100 % is not included in this average. Note that the results "
+"can be sorted by clicking on one of the column headers. **Reference dates** "
+"and **Reference albums** columns are the properties of the **Reference "
+"images**."
+msgstr ""
+"Результаты поиска показываются в списке дубликатов в верхней части левой "
+"боковой панели. В первом столбце показываются **эталонные изображения** "
+"(эт.) в виде миниатюры для каждого отдельного результата. Столбец "
+"**Объектов** показывает, сколько изображений относится к каждому результату, "
+"включая **эталонное изображение**. Последний столбец показывает **среднюю "
+"схожесть**, дающее представление о степени схожести каждого набора "
+"дубликатов изображений. Эталонное изображение со своими 100 % в расчёт "
+"среднего не входит. Обратите внимание, что результаты можно сортировать "
+"щелчком по заголовку одного из столбцов. Столбцы **Даты эталонов** и "
+"**Альбомы эталонов** — свойства **эталонных изображений**."
+
+#: ../../left_sidebar/similarity_view.rst:80
+msgid ""
+"Find Duplicates Tool Searching in Whole Tags Collection and Displaying "
+"Results in Table-View"
+msgstr ""
+"Инструмент поиска дубликатов выполняет поиск во всей коллекции меток и "
+"показывает результаты в режиме таблицы."
+
+#: ../../left_sidebar/similarity_view.rst:82
+msgid ""
+"Individual similarity values for each item can be obtained in the **Table-"
+"View** mode (**Table** button on the Main Toolbar). Click with the right "
+"mouse button over one of the column headers and select **Similarity** from "
+"**Item Properties** to display the similarity column. Clicking on the header "
+"of this column will sort results by similarity, grouped by the reference "
+"images. Clicking repeatedly on the header will toggle between ascending and "
+"descending order."
+msgstr ""
+"Отдельные значения схожести для каждого объекта можно получить в режиме "
+"**таблицы** (кнопка **Таблица** на основной панели инструментов). Чтобы "
+"показать столбец схожести, щёлкните правой кнопкой мыши по одному из "
+"заголовков столбцов и выберите **Схожесть** в разделе **Свойства объекта**. "
+"Щелчок по заголовку этого столбца сортирует результаты по схожести с "
+"группировкой по эталонным изображениям. Повторные щелчки по заголовку "
+"переключают сортировку по возрастанию и по убыванию."
+
+#: ../../left_sidebar/similarity_view.rst:84
+msgid ""
+"**Remove Duplicates** allows you to delete all duplicate images of the "
+"current selected item from the **Duplicates** list."
+msgstr ""
+"**Удалить повторы** позволяет удалить из списка **Дубликаты** все дубликаты "
+"изображений текущего выбранного объекта."
+
+#: ../../left_sidebar/similarity_view.rst:90
+msgid "Find Similar Image"
+msgstr "Поиск похожих изображений"
+
+#: ../../left_sidebar/similarity_view.rst:92
+msgid ""
+"This tool provides a drag and drop zone on the top-left where you can place "
+"any image to find similar images in the database. You can drag an image from "
+"anywhere, even from outside digiKam. You can also drag and hold an image "
+"from the album **Icon-View** over the **Similarity** search icon in the "
+"**Left Sidebar**. This will then open a dialog and you drop the image there. "
+"Finally, you can use **Find Similar...** entry from the context menu of a "
+"thumbnail in any other Icon-View."
+msgstr ""
+"В левом верхнем углу этого инструмента расположена область перетаскивания, "
+"куда можно поместить любое изображение, чтобы найти похожие изображения в "
+"базе данных. Изображение можно перетащить откуда угодно, даже из-за пределов "
+"digiKam. Кроме того, можно перетащить изображение из **области значков** "
+"альбома и задержать его над значком поиска по **схожести** на **левой "
+"боковой панели**. При этом откроется диалог, в который нужно поместить "
+"изображение. Наконец, можно воспользоваться пунктом **Найти похожие...** в "
+"контекстном меню миниатюры в любой другой области значков."
+
+#: ../../left_sidebar/similarity_view.rst:98
+msgid ""
+"Screencast of Drag and Drop item from Album Icon-View to Find Similar using "
+"Left Sidebar"
+msgstr ""
+"Видеозапись перетаскивания объекта из области значков альбома для поиска "
+"похожих изображений с помощью левой боковой панели"
+
+#: ../../left_sidebar/similarity_view.rst:100
+msgid ""
+"Like with **Find Duplicates**, you can restrict the search to a set of "
+"**Albums** or the whole collection. You can narrow down or enlarge the "
+"resulting selection with the **Similarity range** here as well."
+msgstr ""
+"Как и при использовании **Найти дубликаты**, можно ограничить поиск набором "
+"**альбомов** или всей коллекцией. Здесь также можно сузить или расширить "
+"полученную выборку с помощью **диапазона схожести**."
+
+#: ../../left_sidebar/similarity_view.rst:102
+msgid ""
+"The **Search in**, **Save**, and **Restore** previous searches features work "
+"the same as in the **Find Duplicates** tool."
+msgstr ""
+"Функции **Искать в**, **Сохранить** и **Восстановить** предыдущих поисков "
+"работают так же, как в инструменте **Найти дубликаты**."
+
+#: ../../left_sidebar/similarity_view.rst:104
+msgid ""
+"After performing **Searches** you might want to save the results. In the "
+"field below you can enter a name for the search, and press the **Save** "
+"button. In the **Searches** list below you will find your saved searches. "
+"Clicking on the title bar of that list toggles the sorting order between "
+"ascending and descending. At the bottom you will find an adaptive search "
+"field which can help you to find a particular search. To **Restore** a "
+"result, just click on one item from the list."
+msgstr ""
+"После выполнения **поисков** может потребоваться сохранить результаты. В "
+"поле ниже можно ввести название поиска и нажать кнопку **Сохранить**. В "
+"списке **Поисковые запросы** ниже перечислены сохранённые поиски. Щелчок по "
+"заголовку этого списка переключает порядок сортировки по возрастанию и "
+"убыванию. Внизу находится поле адаптивного поиска, которое помогает найти "
+"конкретный поиск. Чтобы **восстановить** результат, щёлкните по пункту "
+"списка."
+
+#: ../../left_sidebar/similarity_view.rst:111
+msgid "Searching Similar Items For a Single Image"
+msgstr "Поиск похожих объектов для одного изображения"
+
+#: ../../left_sidebar/similarity_view.rst:116
+msgid "Find by Sketch"
+msgstr "Поиск по наброску"
+
+#: ../../left_sidebar/similarity_view.rst:118
+msgid ""
+"This tool is a free-hand color sketching editor. You can draw a quick sketch "
+"and digiKam will find corresponding images. You will find the same means to "
+"save your search as in the **Image** tab."
+msgstr ""
+"Этот инструмент — редактор цветных набросков от руки. Нарисуйте быстрый "
+"набросок, и digiKam найдёт соответствующие изображения. Средства сохранения "
+"поиска те же, что и на вкладке **Изображение**."
+
+#: ../../left_sidebar/similarity_view.rst:120
+msgid ""
+"On the left hand side of digiKam, navigate to the tab **Sketch**. This view "
+"has a drawing area plus some settings below to set pencil and history tools. "
+"Choose a color that your image might contain, you can change the size of the "
+"pen which is on the scale of 1-10, and you can also choose the number of "
+"images that you want to be displayed during your fuzzy search, this can be "
+"set to a value between 1-50 items. As you sketch on the area you will see "
+"that the similarity search related images appears on the right hand side."
+msgstr ""
+"В левой части digiKam перейдите на вкладку **Набросок**. В этом "
+"представлении есть область рисования и расположенные ниже параметры для "
+"настройки инструментов карандаша и истории. Выберите цвет, который может "
+"присутствовать на изображении; можно изменить размер пера по шкале от 1 до "
+"10, а также задать количество изображений, показываемых при нечётком поиске, "
+"— значение от 1 до 50 объектов. Рисуя в области рисования, вы увидите, что "
+"справа появляются изображения, найденные поиском по схожести."
+
+#: ../../left_sidebar/similarity_view.rst:122
+msgid ""
+"The **Search in**, **Save**, and **Restore** previous searches features "
+"works the same as in the  **Find Duplicates** tool."
+msgstr ""
+"Функции **Искать в**, **Сохранить** и **Восстановить** предыдущих поисков "
+"работают так же, как в инструменте **Найти дубликаты**."
+
+#: ../../left_sidebar/similarity_view.rst:128
+msgid "Searching Items by Drawing a Sketch"
+msgstr "Поиск объектов с помощью наброска"

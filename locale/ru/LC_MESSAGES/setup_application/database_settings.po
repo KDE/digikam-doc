@@ -1,0 +1,982 @@
+# Translation of docs_digikam_org_setup_application___database_settings into Russian.
+# Copyright (C) Licensed under the terms of the <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">GNU Free Documentation License 1.2+</a> unless stated otherwise
+# This file is distributed under the same license as the Digikam Manual package.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: docs_digikam_org_setup_application___database_settings\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-26 02:19+0000\n"
+"PO-Revision-Date: 2026-10-10 19:04+0200\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: ../../setup_application/database_settings.rst:-1
+msgid "digiKam Database Settings"
+msgstr "Параметры базы данных digiKam"
+
+#: ../../setup_application/database_settings.rst:-1
+msgid ""
+"digiKam, documentation, user manual, photo management, open source, free, "
+"learn, easy, database, setup, mariadb, sqlite, migration, local, remote, "
+"server"
+msgstr ""
+"digiKam, документация, руководство пользователя, управление фотографиями, "
+"открытый исходный код, свободное ПО, обучение, простота, база данных, "
+"настройка, MariaDB, SQLite, миграция, локальный, удалённый, сервер"
+
+#: ../../setup_application/database_settings.rst:14
+msgid ":ref:`Database Settings <setup_application>`"
+msgstr ":ref:`Параметры базы данных <setup_application>`"
+
+#: ../../setup_application/database_settings.rst:16
+msgid "Contents"
+msgstr "Содержание"
+
+#: ../../setup_application/database_settings.rst:18
+msgid ""
+"The **Database** options for digiKam are set from :menuselection:`Settings --"
+"> Configure digiKam... --> Database page`."
+msgstr ""
+"Параметры раздела **База данных** в digiKam задаются в :menuselection:"
+"`Настройка --> Настроить digiKam... --> страница «База данных»`."
+
+#: ../../setup_application/database_settings.rst:22
+msgid ""
+"For an introduction to internal data storage, please refer to the :ref:"
+"`Database <database_intro>` section of the Getting Started chapter."
+msgstr ""
+"Введение во внутреннее хранилище данных приведено в разделе :ref:`База "
+"данных <database_intro>` главы «Начало работы»."
+
+#: ../../setup_application/database_settings.rst:29
+msgid "The SQLite Database"
+msgstr "База данных SQLite"
+
+#: ../../setup_application/database_settings.rst:31
+msgid ""
+"`SQLite <https://sqlite.org/>`_ is a relational database management system, "
+"written in the C programming library. SQLite is not directly comparable to "
+"client/server SQL database engines such as MariaDB or PostgreSQL. Rather, it "
+"is an SQL database engine that is embedded in an end program. SQLite reads "
+"and writes directly to ordinary disk files. SQLite is almost always the best "
+"solution for device-local storage with low write-concurrency and less than a "
+"terabyte of content. SQLite is fast and reliable and it requires no "
+"configuration or maintenance. It keeps things simple. SQLite \"just works\"."
+msgstr ""
+"`SQLite <https://sqlite.org/>`_ — реляционная система управления базами "
+"данных, написанная на языке программирования C. SQLite нельзя напрямую "
+"сравнивать с серверными СУБД, работающими по модели «клиент — сервер», "
+"такими как MariaDB или PostgreSQL. Скорее, это ядро базы данных SQL, "
+"встраиваемое в конечную программу. SQLite читает и записывает данные "
+"напрямую в обычные файлы на диске. SQLite почти всегда — лучшее решение для "
+"локального хранения данных на устройстве при низкой интенсивности "
+"параллельной записи и объёме менее терабайта. SQLite быстра и надёжна, не "
+"требует настройки и обслуживания. Всё остаётся простым. SQLite «просто "
+"работает»."
+
+#: ../../setup_application/database_settings.rst:33
+msgid ""
+"By default, digiKam uses SQLite as its back-end for storing important "
+"metadata and thumbnails. digiKam stores information into four SQLite files:"
+msgstr ""
+"По умолчанию digiKam использует SQLite в качестве серверной части для "
+"хранения важных метаданных и миниатюр. digiKam сохраняет информацию в "
+"четырёх файлах SQLite:"
+
+#: ../../setup_application/database_settings.rst:36
+msgid "Database"
+msgstr "Базы данных"
+
+#: ../../setup_application/database_settings.rst:36
+msgid "File-Name"
+msgstr "Имя файла"
+
+#: ../../setup_application/database_settings.rst:38
+msgid "**Core**"
+msgstr "**Основная**"
+
+#: ../../setup_application/database_settings.rst:38
+msgid ":file:`digikam4.db`"
+msgstr ":file:`digikam4.db`"
+
+#: ../../setup_application/database_settings.rst:39
+msgid "**Thumbs**"
+msgstr "**Миниатюры**"
+
+#: ../../setup_application/database_settings.rst:39
+msgid ":file:`thumbnails-digikam.db`"
+msgstr ":file:`thumbnails-digikam.db`"
+
+#: ../../setup_application/database_settings.rst:40
+msgid "**Similarity**"
+msgstr "**Схожесть**"
+
+#: ../../setup_application/database_settings.rst:40
+msgid ":file:`similarity.db`"
+msgstr ":file:`similarity.db`"
+
+#: ../../setup_application/database_settings.rst:41
+msgid "**Faces**"
+msgstr "**Лица**"
+
+#: ../../setup_application/database_settings.rst:41
+msgid ":file:`recognition.db`"
+msgstr ":file:`recognition.db`"
+
+#: ../../setup_application/database_settings.rst:44
+msgid ""
+"To keep your application running fast and smooth, you should periodically "
+"check and optimize your databases: select :menuselection:`Tools --> "
+"Maintenance...` and then **Perform Database Cleaning**. See the :ref:"
+"`Database Cleaning <maintenance_database>` section of the Maintenance Tools "
+"chapter for details."
+msgstr ""
+"Чтобы приложение работало быстро и стабильно, периодически проверяйте и "
+"оптимизируйте базы данных: выберите :menuselection:`Сервис --> "
+"Обслуживание...`, а затем **Выполнить очистку базы данных**. Подробности "
+"приведены в разделе :ref:`Очистка базы данных <maintenance_database>` главы "
+"«Инструменты обслуживания»."
+
+#: ../../setup_application/database_settings.rst:47
+msgid ""
+"The `SQLite Browser <https://sqlitebrowser.org/>`_, is a high quality and "
+"easy to use visual tool for managing database objects, that we highly "
+"recommend. For Ubuntu and its derivatives, it can be installed using `sudo "
+"apt install sqlitebrowser`. Then you can switch to the directory where the "
+"digiKam databases are stored in order to visualize the database contents."
+msgstr ""
+"`SQLite Browser <https://sqlitebrowser.org/>`_ — качественный и простой в "
+"использовании визуальный инструмент для управления объектами базы данных, "
+"который настоятельно рекомендуется. В Ubuntu и производных от неё "
+"дистрибутивах его можно установить командой `sudo apt install "
+"sqlitebrowser`. Затем можно перейти в папку, где хранятся базы данных "
+"digiKam, чтобы просмотреть содержимое базы данных."
+
+#: ../../setup_application/database_settings.rst:51
+msgid ""
+"For best performance, store the digiKam databases on the fastest hardware "
+"(such as SSD or NVMe) with plenty of free space. This is especially "
+"important for the thumbnails database. A remote file system such as NFS "
+"cannot be used here. For performance and technical reasons, SQLite cannot "
+"use media from the network."
+msgstr ""
+"Для максимальной производительности размещайте базы данных digiKam на самом "
+"быстром оборудовании (например, SSD или NVMe) с большим объёмом свободного "
+"места. Это особенно важно для базы данных миниатюр. Здесь нельзя "
+"использовать удалённую файловую систему, например NFS. Из соображений "
+"производительности и по техническим причинам SQLite не может использовать "
+"сетевые носители."
+
+#: ../../setup_application/database_settings.rst:53
+msgid ""
+"The SQLite database files can be found in the *collection* folder that you "
+"added to digiKam. (By default, if you add your “Pictures” collection, the "
+"database files will be present in the :file:`~/Pictures` folder)."
+msgstr ""
+"Файлы базы данных SQLite находятся в папке *коллекции*, добавленной в "
+"digiKam. (По умолчанию, если добавить коллекцию «Изображения», файлы базы "
+"данных будут находиться в папке :file:`~/Pictures`)."
+
+#: ../../setup_application/database_settings.rst:59
+msgid "The digiKam SQLite Configuration Page"
+msgstr "Страница настройки SQLite в digiKam"
+
+#: ../../setup_application/database_settings.rst:63
+msgid ""
+"The **WAL** SQLite mode is a very important option that we recommend you "
+"turn on with large databases to optimize transactions and improve "
+"performance."
+msgstr ""
+"Режим **WAL** SQLite — очень важный параметр, который рекомендуется включать "
+"при работе с большими базами данных, чтобы оптимизировать транзакции и "
+"повысить производительность."
+
+#: ../../setup_application/database_settings.rst:66
+msgid "The MariaDB Database"
+msgstr "База данных MariaDB"
+
+#: ../../setup_application/database_settings.rst:71
+msgid "MariaDB Versus SQLite"
+msgstr "Сравнение MariaDB и SQLite"
+
+#: ../../setup_application/database_settings.rst:73
+msgid ""
+"`MariaDB <https://en.wikipedia.org/wiki/MariaDB>`_ server is a community-"
+"developed fork of MySQL server. Started by core members of the original "
+"MySQL team, MariaDB actively works with outside developers to deliver the "
+"most featureful, stable, and sanely licensed open SQL server in the industry."
+msgstr ""
+"`MariaDB <https://en.wikipedia.org/wiki/MariaDB>`_ — разработанный "
+"сообществом форк сервера MySQL. Основанная ключевыми участниками "
+"первоначальной команды MySQL, MariaDB активно сотрудничает со сторонними "
+"разработчиками, чтобы выпустить самый функциональный, стабильный и разумно "
+"лицензируемый открытый сервер SQL в отрасли."
+
+#: ../../setup_application/database_settings.rst:75
+msgid "MariaDB use has overtaken MySQL for a few basic reasons:"
+msgstr "Использование MariaDB вытеснило MySQL по нескольким основным причинам:"
+
+#: ../../setup_application/database_settings.rst:77
+msgid "MariaDB development is more open and vibrant."
+msgstr "Разработка MariaDB более открыта и динамична."
+
+#: ../../setup_application/database_settings.rst:78
+msgid "More cutting edge features."
+msgstr "Дополнительные передовые возможности."
+
+#: ../../setup_application/database_settings.rst:79
+msgid "More storage engines."
+msgstr "Другие механизмы хранения."
+
+#: ../../setup_application/database_settings.rst:80
+msgid "Better performance."
+msgstr "Более высокая производительность."
+
+#: ../../setup_application/database_settings.rst:81
+msgid "Compatible and easy to migrate."
+msgstr "Совместимый и простой в переносе."
+
+#: ../../setup_application/database_settings.rst:84
+msgid ""
+"Starting with **digiKam 9.2.0**, **MySQL is no longer supported**. digiKam "
+"now exclusively supports **MariaDB** as its relational database management "
+"system for users who require a client-server database solution."
+msgstr ""
+"Начиная с **digiKam 9.2.0**, поддержка **MySQL** прекращена. Теперь digiKam "
+"поддерживает только **MariaDB** в качестве реляционной системы управления "
+"базами данных для пользователей, которым требуется решение с базой данных по "
+"модели «клиент — сервер»."
+
+#: ../../setup_application/database_settings.rst:86
+msgid ""
+"digiKam provides support for the popular MariaDB database engine. Of course, "
+"you might wonder why you’d want to switch to MariaDB when SQLite already "
+"does a good job of managing the data? MariaDB offers many advantages for "
+"storing digiKam data, especially when collections include **more than "
+"500,000 items**. With such large collections, SQLite can introduce latency "
+"which slows down the application."
+msgstr ""
+"digiKam поддерживает популярное ядро базы данных MariaDB. Возникает вопрос: "
+"зачем переходить на MariaDB, если SQLite уже хорошо справляется с "
+"управлением данными? MariaDB предоставляет множество преимуществ при "
+"хранении данных digiKam, особенно если коллекции содержат **более 500 000 "
+"объектов**. При таких больших коллекциях в SQLite возникают задержки, "
+"замедляющие работу приложения."
+
+#: ../../setup_application/database_settings.rst:90
+msgid ""
+"With **WAL** option enabled, SQLite can be easily used for more than 500,000 "
+"items, especially with an SSD or NVMe storage. It may even be faster than "
+"MariaDB and more stable. See `this page <https://www.sqlite.org/wal.html>`_ "
+"for technical details. Long-time digiKam users report managing more than 1M "
+"items without problems with this configuration."
+msgstr ""
+"При включённом параметре **WAL** SQLite можно без труда использовать для "
+"более чем 500 000 объектов, особенно на накопителе SSD или NVMe. Она может "
+"оказаться даже быстрее MariaDB и стабильнее. Технические подробности см. на "
+"`этой странице <https://www.sqlite.org/wal.html>`_. Пользователи digiKam, "
+"давно работающие с программой, сообщают, что при такой конфигурации без "
+"проблем управляют более чем миллионом объектов."
+
+#: ../../setup_application/database_settings.rst:94
+msgid ""
+"If you use a former MySQL database created with an older digiKam version, we "
+"highly recommend migrating to MariaDB. You can migrate to MariaDB following "
+"`this tutorial <https://mariadb.com/docs/server/server-management/install-"
+"and-upgrade-mariadb/migrating-to-mariadb/moving-from-mysql/mysql-to-mariadb-"
+"migration-the-master-guide>`_."
+msgstr ""
+"Если используется база данных MySQL, созданная в более старой версии "
+"digiKam, настоятельно рекомендуется перейти на MariaDB. Перейти на MariaDB "
+"можно по `этой инструкции <https://mariadb.com/docs/server/server-management/"
+"install-and-upgrade-mariadb/migrating-to-mariadb/moving-from-mysql/mysql-to-"
+"mariadb-migration-the-master-guide>`_."
+
+#: ../../setup_application/database_settings.rst:96
+msgid ""
+"Using MariaDB as digiKam’s database back-end allows you to store the data on "
+"local as well as remote servers. MariaDB Internal can be used to replace the "
+"local SQLite storage, and MariaDB Server can be used on media stored on a "
+"remote server. This way, you can use multiple digiKam installations (for "
+"instance, on your notebook and PC) to access and manage your photo "
+"collections. You can also use MariaDB tools to backup and analyze digiKam’s "
+"data."
+msgstr ""
+"Использование MariaDB в качестве серверной части базы данных digiKam "
+"позволяет хранить данные как на локальных, так и на удалённых серверах. "
+"Встроенная MariaDB позволяет заменить локальное хранилище SQLite, а Сервер "
+"MariaDB можно применять для носителей, размещённых на удалённом сервере. Так "
+"можно использовать несколько установок digiKam (например, на ноутбуке и ПК) "
+"для доступа к коллекциям фотографий и управления ими. Инструменты MariaDB "
+"также позволяют создавать резервные копии данных digiKam и анализировать их."
+
+#: ../../setup_application/database_settings.rst:98
+msgid ""
+"To switch from SQLite to MariaDB database, go to :menuselection:`Settings --"
+"> Configure digiKam...` and then under **Database** section, select a "
+"database from the drop down list."
+msgstr ""
+"Чтобы переключиться с базы данных SQLite на MariaDB, перейдите в :"
+"menuselection:`Настройка --> Настроить digiKam...`, а затем в разделе **База "
+"данных** выберите базу данных из раскрывающегося списка."
+
+#: ../../setup_application/database_settings.rst:100
+msgid ""
+"**MariaDB Internal**: This allows to run an internal database server on your "
+"system. digiKam uses Unix socket for the connection."
+msgstr ""
+"**Встроенная MariaDB**: позволяет запустить внутренний сервер базы данных в "
+"системе. Для подключения digiKam использует сокет Unix."
+
+#: ../../setup_application/database_settings.rst:102
+msgid ""
+"**MariaDB Server**: Use this if your data is on a remote server and you’re "
+"on a different machine trying to access the collection."
+msgstr ""
+"**Сервер MariaDB**: используйте этот вариант, если данные находятся на "
+"удалённом сервере, а доступ к коллекции выполняется с другого компьютера."
+
+#: ../../setup_application/database_settings.rst:107
+msgid "The MariaDB Internal Server"
+msgstr "Встроенный сервер MariaDB"
+
+#: ../../setup_application/database_settings.rst:109
+msgid ""
+"digiKam tends to slow down when using a large collection (size **greater "
+"than 500,000 items**) hosted on a hard drive (HDD - not an SSD or NVMe "
+"device) with the SQLite database. To avoid the delay and maintain "
+"efficiency, digiKam provides the option of using **MariaDB Internal**. To be "
+"clear, this isn’t an actual server, or a public network. Instead, it is a "
+"server that runs only while the application is running."
+msgstr ""
+"При использовании большой коллекции (размером **более 500 000 объектов**), "
+"размещённой на жёстком диске (HDD, а не SSD или NVMe), с базой данных SQLite "
+"digiKam начинает работать медленнее. Чтобы избежать задержек и сохранить "
+"эффективность, digiKam предоставляет возможность использования **встроенной "
+"MariaDB**. Это не настоящий сервер и не публичная сеть. Это сервер, "
+"работающий только во время работы приложения."
+
+#: ../../setup_application/database_settings.rst:111
+msgid ""
+"Internal server creates a separate database that can be accessed in Linux "
+"(only while application is running) using the command:"
+msgstr ""
+"Внутренний сервер создаёт отдельную базу данных, доступ к которой в Linux "
+"можно получить (только пока приложение запущено) с помощью команды:"
+
+#: ../../setup_application/database_settings.rst:117
+msgid ""
+"Or in windows the command (or using `HeidiSQL <https://en.wikipedia.org/wiki/"
+"HeidiSQL>`_ with the following settings):"
+msgstr ""
+"Или команда в Windows (или с помощью `HeidiSQL <https://en.wikipedia.org/"
+"wiki/HeidiSQL>`_ со следующими параметрами):"
+
+#: ../../setup_application/database_settings.rst:123
+msgid ""
+"The internal server uses three MariaDB Binary Tools: :file:"
+"`mariadb_install_db`, :file:`mariadbadmin`, and :file:`mariadbd`. You can "
+"configure their locations in the configuration dialog. digiKam will try to "
+"find these binaries automatically if they’re installed on your system."
+msgstr ""
+"Внутренний сервер использует три исполняемых файла MariaDB: :file:"
+"`mariadb_install_db`, :file:`mariadbadmin` и :file:`mariadbd`. Их "
+"расположение можно задать в диалоге настройки. Если эти исполняемые файлы "
+"установлены в системе, digiKam попытается найти их автоматически."
+
+#: ../../setup_application/database_settings.rst:129
+msgid "The digiKam MariaDB Internal Configuration Page"
+msgstr "Страница настройки встроенного сервера MariaDB в digiKam"
+
+#: ../../setup_application/database_settings.rst:134
+msgid "The MariaDB Remote Server"
+msgstr "Удалённый сервер MariaDB"
+
+#: ../../setup_application/database_settings.rst:136
+msgid ""
+"Obviously, access to a MariaDB server is required to use digiKam with a "
+"remote MariaDB. You can install MariaDB easily using `this link <https://www."
+"cherryservers.com/blog/how-to-install-and-start-using-mariadb-on-"
+"ubuntu-20-04>`_."
+msgstr ""
+"Очевидно, для использования digiKam с удалённым сервером MariaDB требуется "
+"доступ к серверу MariaDB. Установить MariaDB можно по `этой ссылке <https://"
+"www.cherryservers.com/blog/how-to-install-and-start-using-mariadb-on-"
+"ubuntu-20-04>`_."
+
+#: ../../setup_application/database_settings.rst:138
+msgid ""
+"Follow the instructions below, if you don’t have a dedicated user account "
+"and a digiKam database already set up. Run the commands in MariaDB server, "
+"after replacing *password* with the correct one."
+msgstr ""
+"Если отдельная учётная запись пользователя и база данных digiKam ещё не "
+"созданы, следуйте приведённым ниже инструкциям. Выполните команды на сервере "
+"MariaDB, заменив *password* на правильный пароль."
+
+#: ../../setup_application/database_settings.rst:142
+msgid ""
+"You can select any database name. (Here it is, *digikam*). Just remember to "
+"fill in the database name correctly in Core, Thumbs, Similarity, and Face "
+"database names from the dialog box shown below."
+msgstr ""
+"Имя базы данных может быть любым (здесь — *digikam*). Важно правильно "
+"указать имена основной базы данных, базы данных миниатюр, базы данных "
+"схожести и базы данных лиц в диалоге, показанном ниже."
+
+#: ../../setup_application/database_settings.rst:154
+msgid ""
+"If you have an enormous collection, it's recommended to start the MariaDB "
+"server with `mariadb --max_allowed_packet = 128M`"
+msgstr ""
+"Если коллекция очень большая, сервер MariaDB рекомендуется запускать "
+"командой `mariadb --max_allowed_packet = 128M`"
+
+#: ../../setup_application/database_settings.rst:158
+msgid ""
+"If you have problems with a MariaDB server on a Ubuntu based Linux system, "
+"execute this additional command in the MariaDB prompt to enable the creation "
+"of SQL triggers."
+msgstr ""
+"Если возникли проблемы с сервером MariaDB в системе Linux на основе Ubuntu, "
+"выполните в приглашении MariaDB следующую дополнительную команду, чтобы "
+"включить создание триггеров SQL."
+
+#: ../../setup_application/database_settings.rst:166
+msgid ""
+"If you want to run MariaDB server in a `docker <https://en.wikipedia.org/"
+"wiki/Docker_(software)>`_ image, you can set the necessary environment "
+"variables by opening a shell into the container using"
+msgstr ""
+"Если требуется запустить сервер MariaDB в образе `docker <https://en."
+"wikipedia.org/wiki/Docker_(software)>`_, можно задать необходимые переменные "
+"среды, открыв оболочку в контейнере с помощью"
+
+#: ../../setup_application/database_settings.rst:172
+msgid "and then set the variables required as needed, eg:"
+msgstr "а затем задайте нужные переменные, например:"
+
+#: ../../setup_application/database_settings.rst:183
+msgid ""
+"Restart the container and check to see if the variables have been set using"
+msgstr "Перезапустите контейнер и проверьте, заданы ли переменные, с помощью"
+
+#: ../../setup_application/database_settings.rst:189
+msgid ""
+"Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` "
+"and then under the **Database** section, select MariaDB Server from the drop "
+"down list."
+msgstr ""
+"Теперь в digiKam перейдите в :menuselection:`Настройка --> Настроить "
+"digiKam...`, а затем в разделе **База данных** выберите сервер MariaDB из "
+"раскрывающегося списка."
+
+#: ../../setup_application/database_settings.rst:195
+msgid "The digiKam Remote MariaDB Configuration Page"
+msgstr "Страница настройки удалённой конфигурации MariaDB в digiKam"
+
+#: ../../setup_application/database_settings.rst:197
+msgid ""
+"Enter the IP address of your MariaDB server in the **Host Name** field and "
+"specify the correct port in the **Host Port** field (the default port is "
+"3306)."
+msgstr ""
+"Введите IP-адрес сервера MariaDB в поле **Имя хоста** и укажите правильный "
+"порт в поле **Порт для подключения** (порт по умолчанию — 3306)."
+
+#: ../../setup_application/database_settings.rst:199
+msgid ""
+"Set the **Core Db Name** field to the name of the first database that is "
+"used to store photo metadata."
+msgstr ""
+"В поле **Имя главной БД** укажите имя первой базы данных, используемой для "
+"хранения метаданных фотографий."
+
+#: ../../setup_application/database_settings.rst:201
+msgid ""
+"Set the **Thumbs Db Name** field to the name of the second database that is "
+"used to store the wavelet-compressed thumbnails. The path to store the "
+"thumbnails data can be stored locally (in a SQLite database) to prevent huge "
+"data exchange between the server and the application computer. Storing the "
+"thumbnails in remote can decrease the application performances and introduce "
+"time latency with large collections. Changing this value (from the local "
+"drive to remote or vice versa) will trigger a full scan of the collection."
+msgstr ""
+"Задайте в поле **Имя БД миниатюр** имя второй базы данных, используемой для "
+"хранения миниатюр с вейвлет-сжатием. Путь для хранения данных миниатюр можно "
+"задать локально (в базе данных SQLite), чтобы избежать огромного обмена "
+"данными между сервером и компьютером приложения. Хранение миниатюр на "
+"удалённом сервере может снизить производительность приложения и привести к "
+"задержкам при больших коллекциях. Изменение этого значения (с локального "
+"диска на удалённый или наоборот) вызовет полное сканирование коллекции."
+
+#: ../../setup_application/database_settings.rst:203
+msgid ""
+"Set the **Similarity Db Name** field to the name of the third database that "
+"is used to store the similarity finger-prints produced by the fuzzy search "
+"engine."
+msgstr ""
+"Укажите в поле **Имя БД схожести** имя третьей базы данных, которая "
+"используется для хранения контрольных строк схожести, создаваемых механизмом "
+"нечёткого поиска."
+
+#: ../../setup_application/database_settings.rst:205
+msgid ""
+"Set the **Face Db Name** field to the name of the last database that is used "
+"to store the face histograms for facial recognition."
+msgstr ""
+"В поле **Имя БД лиц** укажите имя последней базы данных, в которой хранятся "
+"гистограммы лиц для распознавания лиц."
+
+#: ../../setup_application/database_settings.rst:207
+msgid ""
+"To safely connect to the remote server, enter your MariaDB identification "
+"using the **User** and **Password** fields."
+msgstr ""
+"Чтобы безопасно подключиться к удалённому серверу, введите учётные данные "
+"MariaDB в полях **Пользователь** и **Пароль**."
+
+#: ../../setup_application/database_settings.rst:209
+msgid ""
+"To check whether the database connection works properly, press the **Check "
+"Connection** button. If everything works as it’s supposed to, switch to the "
+"**Collections** sections, and add the directories containing your photos. "
+"Hit **OK**, and wait till digiKam populates the databases with data from "
+"your photos. This can take a while if you have a lot of items to register in "
+"the database."
+msgstr ""
+"Чтобы проверить, правильно ли работает подключение к базе данных, нажмите "
+"кнопку **Проверить соединение**. Если всё работает как надо, перейдите в "
+"раздел **Коллекции** и добавьте папки с фотографиями. Нажмите **ОК** и "
+"дождитесь, пока digiKam заполнит базы данных сведениями из фотографий. Это "
+"может занять некоторое время, если в базе данных требуется зарегистрировать "
+"много объектов."
+
+#: ../../setup_application/database_settings.rst:211
+msgid ""
+"There are some tips and recommendation to obtain the best results with a "
+"remote MariaDB database server."
+msgstr ""
+"Ниже приведены некоторые советы и рекомендации для получения наилучших "
+"результатов при работе с удалённым сервером базы данных MariaDB."
+
+#: ../../setup_application/database_settings.rst:213
+msgid ""
+"With a slow network, digiKam hangs a lot of the time, especially when the "
+"album contains many items **(>1,000)**. This issue depends on network "
+"performances. For example, the problem has been reproducible using Wifi "
+"connections. Switching to Ethernet to solve the problem."
+msgstr ""
+"При медленной сети digiKam часто зависает, особенно если альбом содержит "
+"много объектов **(>1 000)**. Возникновение этой проблемы зависит от "
+"производительности сети. Например, проблема воспроизводилась при подключении "
+"по Wi-Fi. Чтобы решить проблему, переключитесь на Ethernet."
+
+#: ../../setup_application/database_settings.rst:215
+msgid ""
+"Storing the thumbnail database on your local drive increases speed "
+"significantly, especially with large collections."
+msgstr ""
+"Хранение базы данных миниатюр на локальном диске значительно повышает "
+"скорость, особенно при больших коллекциях."
+
+#: ../../setup_application/database_settings.rst:217
+msgid ""
+"Also, if you have an enormous collection, you should start the MariaDB "
+"server with `mariadb --max_allowed_packet = 128M`. If you’re well acquainted "
+"with using MariaDB, you could also change your settings in :file:`my.ini` "
+"or :file:`~/.my.cnf` files."
+msgstr ""
+"Кроме того, если коллекция очень большая, сервер MariaDB рекомендуется "
+"запускать командой `mariadb --max_allowed_packet = 128M`. При наличии опыта "
+"работы с MariaDB можно также изменить параметры в файлах :file:`my.ini` или :"
+"file:`~/.my.cnf`."
+
+#: ../../setup_application/database_settings.rst:221
+msgid ""
+"The locale used in the MariaDB server must be the same as the locale from "
+"the computer used to run digiKam to prevent problems with the common values "
+"saved in the tables of the database."
+msgstr ""
+"Локаль на сервере MariaDB должна совпадать с локалью компьютера, на котором "
+"запущен digiKam, чтобы избежать проблем с общими значениями, сохраняемыми в "
+"таблицах базы данных."
+
+#: ../../setup_application/database_settings.rst:225
+msgid ""
+"When you run a connection test with the **Check Connection** button, if you "
+"receive a TLS/SSL relevant error message as **SSL is required, but the "
+"server does not support it**, try to add `skip-ssl=true` to the **Connection "
+"Settings** from the digiKam MariaDB database configuration dialog. This is "
+"not a bug in digiKam: the MariaDB connector attempts to establish an SSL "
+"connection by default, and this option disables it."
+msgstr ""
+"При выполнении проверки подключения с помощью кнопки **Проверить "
+"соединение**, если получено сообщение об ошибке, связанной с TLS/SSL, вида "
+"**SSL is required, but the server does not support it**, попробуйте добавить "
+"`skip-ssl=true` в **Параметры подключения** в диалоге настройки базы данных "
+"MariaDB digiKam. Это не ошибка digiKam: соединитель MariaDB по умолчанию "
+"пытается установить SSL-соединение, а этот параметр отключает его."
+
+#: ../../setup_application/database_settings.rst:231
+msgid ""
+"Alternatively, on the server side, you can set the `use_ssl=false` option in "
+"the :file:`my.ini` or :file:`~/.my.cnf` configuration files."
+msgstr ""
+"Кроме того, на стороне сервера можно задать параметр `use_ssl=false` в "
+"файлах конфигурации :file:`my.ini` или :file:`~/.my.cnf`."
+
+#: ../../setup_application/database_settings.rst:235
+msgid "Database Type Criteria"
+msgstr "Критерии типа базы данных"
+
+#: ../../setup_application/database_settings.rst:237
+msgid ""
+"See the summary below to choose the right database type depending on your "
+"use case."
+msgstr ""
+"Чтобы выбрать подходящий тип базы данных в зависимости от сценария "
+"использования, ознакомьтесь со сводкой ниже."
+
+#: ../../setup_application/database_settings.rst:240
+msgid "Storage"
+msgstr "Хранение"
+
+#: ../../setup_application/database_settings.rst:240
+msgid "Type"
+msgstr "Тип"
+
+#: ../../setup_application/database_settings.rst:240
+msgid "Items"
+msgstr "Объекты"
+
+#: ../../setup_application/database_settings.rst:240
+msgid "Remarks"
+msgstr "Примечания"
+
+#: ../../setup_application/database_settings.rst:242
+#: ../../setup_application/database_settings.rst:243
+#: ../../setup_application/database_settings.rst:256
+msgid "HDD"
+msgstr "Жёсткий диск"
+
+#: ../../setup_application/database_settings.rst:242
+#: ../../setup_application/database_settings.rst:244
+#: ../../setup_application/database_settings.rst:246
+#: ../../setup_application/database_settings.rst:248
+#: ../../setup_application/database_settings.rst:250
+msgid "SQLite"
+msgstr "SQLite"
+
+#: ../../setup_application/database_settings.rst:242
+#: ../../setup_application/database_settings.rst:248
+msgid "< 500K"
+msgstr "< 500K"
+
+#: ../../setup_application/database_settings.rst:242
+msgid "**Warning: WAL is mandatory.**"
+msgstr "**Внимание: WAL обязателен.**"
+
+#: ../../setup_application/database_settings.rst:243
+#: ../../setup_application/database_settings.rst:245
+#: ../../setup_application/database_settings.rst:247
+#: ../../setup_application/database_settings.rst:249
+#: ../../setup_application/database_settings.rst:251
+msgid "MariaDB-Internal"
+msgstr "MariaDB — внутренний"
+
+#: ../../setup_application/database_settings.rst:243
+#: ../../setup_application/database_settings.rst:249
+msgid "> 500K"
+msgstr "> 500K"
+
+#: ../../setup_application/database_settings.rst:244
+#: ../../setup_application/database_settings.rst:245
+#: ../../setup_application/database_settings.rst:259
+msgid "SSD"
+msgstr "SSD"
+
+#: ../../setup_application/database_settings.rst:244
+#: ../../setup_application/database_settings.rst:246
+msgid "WAL is optional."
+msgstr "Использование WAL необязательно."
+
+#: ../../setup_application/database_settings.rst:246
+#: ../../setup_application/database_settings.rst:247
+msgid "NVME"
+msgstr "NVMe"
+
+#: ../../setup_application/database_settings.rst:248
+#: ../../setup_application/database_settings.rst:249
+#: ../../setup_application/database_settings.rst:265
+msgid "Removable"
+msgstr "Сменный носитель"
+
+#: ../../setup_application/database_settings.rst:248
+msgid "**Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**"
+msgstr ""
+"**Внимание! Режим WAL обязателен. Требуется как минимум USB 3.1 и накопитель "
+"NVMe.**"
+
+#: ../../setup_application/database_settings.rst:249
+msgid "**Warning: USB 3.1 minimum with NVMe drive.**"
+msgstr ""
+"**Предупреждение: при использовании накопителя NVMe требуется как минимум "
+"USB 3.1.**"
+
+#: ../../setup_application/database_settings.rst:250
+#: ../../setup_application/database_settings.rst:251
+#: ../../setup_application/database_settings.rst:268
+msgid "Network FS"
+msgstr "Сетевая файловая система"
+
+#: ../../setup_application/database_settings.rst:250
+msgid "**Prohibited: SQLite databases must be stored on local file system.**"
+msgstr ""
+"**Запрещено: базы данных SQLite должны храниться в локальной файловой "
+"системе.**"
+
+#: ../../setup_application/database_settings.rst:251
+msgid "**Prohibited: MariaDB databases must be stored on local file system.**"
+msgstr ""
+"**Запрещено: базы данных MariaDB должны храниться в локальной файловой "
+"системе.**"
+
+#: ../../setup_application/database_settings.rst:252
+#: ../../setup_application/database_settings.rst:271
+msgid "Remote"
+msgstr "Удалённый"
+
+#: ../../setup_application/database_settings.rst:252
+msgid "MariaDB-Server"
+msgstr "Сервер MariaDB"
+
+#: ../../setup_application/database_settings.rst:252
+msgid "Gigabit Ethernet or higher is recommended."
+msgstr "Рекомендуется использовать Gigabit Ethernet или выше."
+
+#: ../../setup_application/database_settings.rst:258
+msgid "Hard Disk Drive."
+msgstr "Жёсткий диск."
+
+#: ../../setup_application/database_settings.rst:261
+msgid "Solid State Drive."
+msgstr "Твердотельный накопитель."
+
+#: ../../setup_application/database_settings.rst:262
+msgid "NVMe"
+msgstr "NVMe"
+
+#: ../../setup_application/database_settings.rst:264
+msgid "Non-Volatile Memory."
+msgstr "Энергонезависимая память."
+
+#: ../../setup_application/database_settings.rst:267
+msgid "External USB HDD/SSD/NVMe drive."
+msgstr "Внешний накопитель USB HDD/SSD/NVMe."
+
+#: ../../setup_application/database_settings.rst:270
+msgid "Network File System mounted locally."
+msgstr "Сетевая файловая система, подключённая локально."
+
+#: ../../setup_application/database_settings.rst:273
+msgid "Network server as NAS (Network Attached Storage)."
+msgstr "Сетевой сервер как NAS (сетевое хранилище данных)."
+
+#: ../../setup_application/database_settings.rst:274
+msgid "WAL"
+msgstr "WAL"
+
+#: ../../setup_application/database_settings.rst:276
+msgid "Write-Ahead Lock (SQLite database only)."
+msgstr "Блокировка с опережающей записью (только для базы данных SQLite)."
+
+#: ../../setup_application/database_settings.rst:280
+msgid ""
+"Refer the :ref:`Digital Asset Management <storage_deterioration>` chapter "
+"for more details about media and data protection."
+msgstr ""
+"Подробности о защите носителей и данных приведены в главе :ref:`Управление "
+"цифровыми ресурсами <storage_deterioration>`."
+
+#: ../../setup_application/database_settings.rst:282
+msgid ""
+"Also refer to the :ref:`Collection Settings <collections_settings>` chapter "
+"for more details about how to configure your collections depending on your "
+"storage policy."
+msgstr ""
+"Дополнительные сведения о настройке коллекций в зависимости от политики "
+"хранения приведены в главе :ref:`Параметры коллекций <collections_settings>`."
+
+#: ../../setup_application/database_settings.rst:286
+msgid ""
+"If you share the same **Removable** media for host databases and/or "
+"collections between different computers, you must have the same kind of "
+"operating system, the same mount paths everywhere (use symbolic links to "
+"resolve paths), and the same digiKam version everywhere to prevent conflicts "
+"with the database schema."
+msgstr ""
+"Если один и тот же **съёмный** носитель используется для размещения баз "
+"данных и (или) коллекций на разных компьютерах, необходимо, чтобы везде была "
+"одна и та же операционная система, одинаковые пути подключения (для "
+"разрешения путей используйте символические ссылки) и одна и та же версия "
+"digiKam — это позволит избежать конфликтов со схемой базы данных."
+
+#: ../../setup_application/database_settings.rst:288
+msgid ""
+"If you use a common **Remote** server to host *databases and collections*, "
+"you must use the same digiKam version everywhere to prevent conflicts with "
+"database schema. Computers running different instantiations of digiKam "
+"cannot access a common database and collection at the same time."
+msgstr ""
+"Если для размещения *баз данных и коллекций* используется общий "
+"**удалённый** сервер, необходимо везде применять одну и ту же версию "
+"digiKam, чтобы избежать конфликтов со схемой базы данных. Компьютеры с "
+"разными экземплярами digiKam не могут одновременно обращаться к общей базе "
+"данных и коллекции."
+
+#: ../../setup_application/database_settings.rst:290
+msgid ""
+"If you use a common **Remote** server to host collections, with the "
+"databases stored on individual computers, then different versions of digiKam "
+"can be used and digiKam sessions can run at the same time, accessing the "
+"common collections. But you'll need to take a care about concurrent accesses "
+"to file metadata, if you have turned this option on from the **Metadata "
+"Setup** page."
+msgstr ""
+"Если для размещения коллекций используется общий **удалённый** сервер, а "
+"базы данных хранятся на отдельных компьютерах, можно применять разные версии "
+"digiKam и одновременно запускать сеансы digiKam с доступом к общим "
+"коллекциям. Но если на странице **Метаданные** включён этот параметр, "
+"необходимо позаботиться об одновременном доступе к метаданным файлов."
+
+#: ../../setup_application/database_settings.rst:295
+msgid "Database Migration"
+msgstr "Преобразование базы данных"
+
+#: ../../setup_application/database_settings.rst:297
+msgid ""
+"digiKam comes up with an exclusive tool named **Database Migration**, that "
+"allows users to migrate their data. For example, the migration tool can help "
+"you move all your data from a SQLite database into a MariaDB database, or "
+"vice versa."
+msgstr ""
+"digiKam предлагает специальный инструмент **Преобразование базы данных**, "
+"позволяющий переносить данные. Например, этот инструмент помогает "
+"переместить все данные из базы данных SQLite в базу данных MariaDB или "
+"наоборот."
+
+#: ../../setup_application/database_settings.rst:299
+msgid ""
+"To migrate to another database, go to :menuselection:`Settings --> Database "
+"Migration...`. A dialog box appears:"
+msgstr ""
+"Чтобы перейти на другую базу данных, выберите :menuselection:`Настройка --> "
+"Преобразование базы данных...`. Появится диалог:"
+
+#: ../../setup_application/database_settings.rst:305
+msgid "The digiKam Database Migration Tool"
+msgstr "Инструмент преобразования базы данных digiKam"
+
+#: ../../setup_application/database_settings.rst:307
+msgid ""
+"Now choose the appropriate database types you want to convert to. Finally, "
+"click on **Migrate** button to convert the database from SQLite to MariaDB "
+"(or vice versa). Depending on the database size, this operation can take a "
+"while."
+msgstr ""
+"Теперь выберите подходящие типы баз данных, в которые требуется "
+"преобразовать. Затем нажмите кнопку **Перенести**, чтобы преобразовать базу "
+"данных из SQLite в MariaDB (или наоборот). В зависимости от размера базы "
+"данных эта операция может занять некоторое время."
+
+#: ../../setup_application/database_settings.rst:311
+msgid ""
+"Only the digiKam **Core** database will be migrated by this conversion "
+"process. All of the other databases needs to be rebuilt using post-"
+"processing with the :ref:`Maintenance Tools <maintenance_tools>`. The "
+"**Thumbs** and **Similarity** databases will need to be created from "
+"scratch, and the **Face** database includes the option **Rebuild the "
+"Training Data**."
+msgstr ""
+"В ходе этого процесса преобразования переносится только **основная** база "
+"данных digiKam. Все остальные базы данных необходимо перестроить с помощью "
+"постобработки в разделе :ref:`Инструменты обслуживания <maintenance_tools>`. "
+"Базы данных **Миниатюры** и **Схожесть** потребуется создать с нуля, а база "
+"данных **Лица** содержит параметр **Перестроить обучающие данные**."
+
+#: ../../setup_application/database_settings.rst:316
+msgid "Database Backup Recommendation"
+msgstr "Рекомендации по резервному копированию базы данных"
+
+#: ../../setup_application/database_settings.rst:318
+msgid ""
+"For security reasons, planning a database backup using crontab over the "
+"network can help against device failures. A NAS or an external drive can "
+"also be used for backup."
+msgstr ""
+"Из соображений безопасности планирование резервного копирования базы данных "
+"с помощью crontab по сети помогает защититься от отказов устройств. Для "
+"резервного копирования также можно использовать NAS или внешний накопитель."
+
+#: ../../setup_application/database_settings.rst:320
+msgid ""
+"Each database can be renamed with a different, unique name. This allows "
+"users to backup only what is needed. For instance, renaming **Core** "
+"database as *digiKam_Core*, allows you to backup only this database, which "
+"is the most important file. **Thumbnails**, **Similarity** and **Face "
+"Recognition** databases can always be regenerated from scratch."
+msgstr ""
+"Каждую базу данных можно переименовать, задав ей отдельное уникальное имя. "
+"Это позволяет создавать резервные копии только необходимых данных. Например, "
+"переименовав базу данных **Основная** в *digiKam_Core*, можно создавать "
+"резервную копию только этой базы данных — самого важного файла. Базы данных "
+"**Миниатюры**, **Схожесть** и **Распознавание лиц** всегда можно воссоздать "
+"с нуля."
+
+#: ../../setup_application/database_settings.rst:322
+msgid ""
+"The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will "
+"explain how to maintain the database contents and how to synchronize the "
+"collections with information in the databases (and vice versa)."
+msgstr ""
+"В главе о digiKam :ref:`Инструменты обслуживания <maintenance_tools>` "
+"объясняется, как поддерживать содержимое базы данных и синхронизировать "
+"коллекции со сведениями в базах данных (и наоборот)."
+
+#: ../../setup_application/database_settings.rst:327
+msgid "Database Statistics"
+msgstr "Статистика базы данных"
+
+#: ../../setup_application/database_settings.rst:329
+msgid ""
+"digiKam provides a unique tool to show the statistics from your collections. "
+"It includes count of images, videos (including individual count by image "
+"format), tags etc. this also includes the **Database Backend** (Sqlite or "
+"MariaDB) and the **Database Path** (where your collection is located)."
+msgstr ""
+"digiKam предоставляет уникальный инструмент для показа статистики по "
+"коллекциям. Он включает подсчёт изображений, видео (в том числе отдельно по "
+"формату изображения), меток и т. д. Также здесь указываются **механизм базы "
+"данных** (SQLite или MariaDB) и **путь к базе данных** (где расположена "
+"коллекция)."
+
+#: ../../setup_application/database_settings.rst:331
+msgid ""
+"You can view your statistics by going to :menuselection:`Help --> Database "
+"Statistics...`. A dialog box like this will appear:"
+msgstr ""
+"Чтобы просмотреть статистику, выберите :menuselection:`Справка --> "
+"Статистика базы данных...`. Появится такой диалог:"
+
+#: ../../setup_application/database_settings.rst:338
+msgid "The digiKam Database Statistics Dialog"
+msgstr "Диалог статистики базы данных digiKam"

@@ -1,0 +1,3613 @@
+# Translation of docs_digikam_org_image_editor___enhancement_tools into Russian.
+# Copyright (C) Licensed under the terms of the <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">GNU Free Documentation License 1.2+</a> unless stated otherwise
+# This file is distributed under the same license as the Digikam Manual package.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: docs_digikam_org_image_editor___enhancement_tools\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-08 02:04+0000\n"
+"PO-Revision-Date: 2026-10-10 19:04+0200\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: ../../image_editor/enhancement_tools.rst:-1
+msgid "digiKam Image Editor Enhancement Tools"
+msgstr "Инструменты улучшения редактора изображений digiKam"
+
+#: ../../image_editor/enhancement_tools.rst:-1
+msgid ""
+"digiKam, documentation, user manual, photo management, open source, free, "
+"learn, easy, image, editor, healing, clone, lens, distortion, sharpen, blur, "
+"red, eyes, local, contrast, noise, reduction, hot, pixels, restoration, "
+"vignetting"
+msgstr ""
+"digiKam, документация, руководство пользователя, управление фотографиями, "
+"открытый исходный код, свободное ПО, обучение, просто, изображение, "
+"редактор, восстановление, клонирование, объектив, дисторсия, повышение "
+"резкости, размытие, красные глаза, локальный контраст, шумоподавление, "
+"горячие пиксели, реставрация, виньетирование"
+
+#: ../../image_editor/enhancement_tools.rst:14
+msgid ":ref:`Enhancement Tools <image_editor>`"
+msgstr ":ref:`Инструменты улучшения <image_editor>`"
+
+#: ../../image_editor/enhancement_tools.rst:16
+msgid "Contents"
+msgstr "Содержание"
+
+#: ../../image_editor/enhancement_tools.rst:21
+msgid "Distortion"
+msgstr "Дисторсия"
+
+#: ../../image_editor/enhancement_tools.rst:23
+msgid ""
+"The digiKam **Distortion** tool corrects an image for common lens "
+"distortions."
+msgstr ""
+"Инструмент **Дисторсия** в digiKam исправляет распространённые искажения "
+"объектива на изображении."
+
+#: ../../image_editor/enhancement_tools.rst:25
+msgid ""
+"Barrel distortion is associated with wide angle, short focal length lenses. "
+"It causes the images to appear slightly spherical (curved outward) like a "
+"barrel. You can notice this when you have straight features close to the "
+"image's peripheral sides. Pincushion distortion is the opposite defect and "
+"is associated with telephoto, long focal length lenses or underwater images. "
+"The images appear pinched (bent inward) toward the center. Pincushion "
+"distortion is often less noticeable than barrel distortion but are equally "
+"visible near the edges. This tool can easily eliminate these distortions "
+"without much visible loss in quality."
+msgstr ""
+"Бочкообразная дисторсия свойственна широкоугольным короткофокусным "
+"объективам. Изображения при этом выглядят слегка сферическими (выпуклыми "
+"наружу), как бочка. Это заметно, когда прямые линии проходят близко к краям "
+"изображения. Подушкообразная дисторсия — противоположный дефект, "
+"свойственный длиннофокусным телеобъективам или подводным снимкам. "
+"Изображения выглядят сжатыми (вогнутыми внутрь) к центру. Подушкообразная "
+"дисторсия часто менее заметна, чем бочкообразная, но у краёв обе видны "
+"одинаково. Этот инструмент позволяет легко устранить эти искажения без "
+"заметной потери качества."
+
+#: ../../image_editor/enhancement_tools.rst:29
+msgid ""
+"This tool only treats geometrical distortions. Chromatic aberrations will "
+"not be corrected by this tool. The **Lens Auto Correction** tool corrects "
+"both distortions and chromatic aberrations."
+msgstr ""
+"Этот инструмент устраняет только геометрические искажения. Хроматические "
+"аберрации этим инструментом не исправляются. Инструмент **Автокоррекция "
+"объектива** исправляет как искажения, так и хроматические аберрации."
+
+#: ../../image_editor/enhancement_tools.rst:31
+msgid ""
+"The following figures explain the main types of geometrical distortions:"
+msgstr "На следующих рисунках показаны основные типы геометрических искажений:"
+
+#: ../../image_editor/enhancement_tools.rst:33
+msgid "(1): Pincushion distortion."
+msgstr "(1): Подушкообразная дисторсия."
+
+#: ../../image_editor/enhancement_tools.rst:35
+msgid "(2): No distortion."
+msgstr "(2): Без дисторсии."
+
+#: ../../image_editor/enhancement_tools.rst:37
+msgid "(3): Barrel distortion."
+msgstr "(3): Бочкообразная дисторсия."
+
+#: ../../image_editor/enhancement_tools.rst:43
+msgid "The Geometrical Distortion Types"
+msgstr "Типы геометрических искажений"
+
+#: ../../image_editor/enhancement_tools.rst:47
+msgid "The geometrical corrections use 4th-order polynomial coefficients:"
+msgstr ""
+"Геометрические коррекции используют полиномиальные коэффициенты 4-го порядка:"
+
+#: ../../image_editor/enhancement_tools.rst:49
+msgid ""
+"The 1st-order coefficient changes the size of the image. The tool calls this "
+"**Zoom**."
+msgstr ""
+"Коэффициент первого порядка изменяет размер изображения. В инструменте этот "
+"параметр называется **Масштаб**."
+
+#: ../../image_editor/enhancement_tools.rst:51
+msgid ""
+"The 2nd-order coefficient treats the main geometrical distortion of lenses "
+"and can correct the convex or concave shape of the image."
+msgstr ""
+"Коэффициент второго порядка учитывает основное геометрическое искажение "
+"объективов и позволяет исправить выпуклую или вогнутую форму изображения."
+
+#: ../../image_editor/enhancement_tools.rst:53
+msgid ""
+"The 3rd-order coefficient has a similar rounding effect but levels off "
+"towards the edges. This correction is not employed in the tool."
+msgstr ""
+"Коэффициент третьего порядка даёт аналогичный эффект округления, но к краям "
+"его влияние ослабевает. В этом инструменте такая коррекция не применяется."
+
+#: ../../image_editor/enhancement_tools.rst:55
+msgid ""
+"The 4th-order coefficient corrects the far edges inversely to the 2nd-order "
+"rounding. Combining it with the 2nd-order correction can almost completely "
+"eliminate the geometrical distortions."
+msgstr ""
+"Коэффициент 4-го порядка исправляет дальние края обратно пропорционально "
+"округлению 2-го порядка. Его сочетание с коррекцией 2-го порядка позволяет "
+"почти полностью устранить геометрические искажения."
+
+#: ../../image_editor/enhancement_tools.rst:61
+msgid "The Image Editor Lens Distortion Tool"
+msgstr "Инструмент дисторсии объектива редактора изображений"
+
+#: ../../image_editor/enhancement_tools.rst:63
+msgid "Four sliders let you set the distortion correction filter:"
+msgstr "Четыре ползунка позволяют задать фильтр коррекции дисторсии:"
+
+#: ../../image_editor/enhancement_tools.rst:65
+msgid ""
+"**Main**: this value controls the amount of 2nd-order distortion. Negative "
+"values correct barrel distortions, while positive values correct pincushion "
+"distortion."
+msgstr ""
+"**Общая**: это значение задаёт величину дисторсии второго порядка. "
+"Отрицательные значения исправляют бочкообразные искажения, а положительные — "
+"подушкообразные."
+
+#: ../../image_editor/enhancement_tools.rst:67
+msgid ""
+"**Edge**: this value controls the amount of 4th-order distortion. The Edge "
+"control has more effect at the edges of the image than at the center. For "
+"most lenses, the **Edge** parameter has the opposite sign of the **Main** "
+"parameter."
+msgstr ""
+"**На краях**: это значение управляет величиной искажения четвёртого порядка. "
+"Регулятор «На краях» сильнее влияет на края изображения, чем на его центр. У "
+"большинства объективов параметр **На краях** имеет знак, противоположный "
+"знаку параметра **Общая**."
+
+#: ../../image_editor/enhancement_tools.rst:69
+msgid ""
+"**Zoom**: this value rescales the overall image size (1st-order correction). "
+"Negative values zoom out of the image, while positive values zoom in."
+msgstr ""
+"**Масштаб**: этот параметр изменяет масштаб всего изображения (коррекция "
+"первого порядка). Отрицательные значения уменьшают изображение, а "
+"положительные — увеличивают."
+
+#: ../../image_editor/enhancement_tools.rst:71
+msgid ""
+"**Brighten**: this control adjusts the brightness in image corners "
+"(vignetting). Negative values decrease the brightness image corners, while "
+"positive values increase it."
+msgstr ""
+"**Увеличить яркость**: этот параметр регулирует яркость в углах изображения "
+"(виньетирование). Отрицательные значения уменьшают яркость в углах "
+"изображения, а положительные — увеличивают её."
+
+#: ../../image_editor/enhancement_tools.rst:73
+msgid ""
+"To help you to choose the best filter settings, the tool provides a "
+"thumbnail preview of the distortion correction applied to a crossed mesh "
+"pattern. The values you apply to your image will be saved and tool will "
+"default to the same values the next time it is called."
+msgstr ""
+"Для выбора оптимальных параметров фильтра инструмент показывает миниатюру "
+"предварительного просмотра коррекции дисторсии, применённой к шаблону в виде "
+"перекрёстной сетки. Применённые к изображению значения сохраняются, и при "
+"следующем вызове инструмент будет использовать их по умолчанию."
+
+#: ../../image_editor/enhancement_tools.rst:77
+msgid ""
+"The barrel-pincushion correction should be done before any crop or size "
+"changes (including perspective correction). In fact the Barrel-Pincushion "
+"corrections should be the very first step performed on the original image. "
+"If you crop the image and then use barrel correction the effect would be "
+"obviously wrong."
+msgstr ""
+"Коррекцию бочкообразной и подушкообразной дисторсии следует выполнять до "
+"обрезки и изменения размера (в том числе коррекции перспективы). На самом "
+"деле коррекция бочкообразной и подушкообразной дисторсии должна быть самым "
+"первым шагом при обработке исходного изображения. Если сначала обрезать "
+"изображение, а затем применить коррекцию бочкообразной дисторсии, результат "
+"будет явно неверным."
+
+#: ../../image_editor/enhancement_tools.rst:79
+msgid ""
+"To help you find the best correction, the tool provides a vertical and "
+"horizontal guide. Move the mouse cursor in the image preview to display the "
+"dashed lines guide. Move the cursor to an important place in the image like "
+"the level of the sea or the edge of a building and press the left mouse "
+"button to freeze the position of the dashed lines. Now, adjust the barrel/"
+"pincushion correction to align with the guide."
+msgstr ""
+"Чтобы вам было проще найти наилучшую коррекцию, инструмент показывает "
+"вертикальную и горизонтальную направляющие. Переместите курсор мыши в окне "
+"предварительного просмотра изображения, чтобы показались направляющие из "
+"штриховых линий. Переместите курсор в важное место изображения, например на "
+"уровень моря или на край здания, и нажмите левую кнопку мыши, чтобы "
+"зафиксировать положение штриховых линий. Теперь настройте коррекцию "
+"бочкообразной/подушкообразной дисторсии так, чтобы изображение совпало с "
+"направляющей."
+
+#: ../../image_editor/enhancement_tools.rst:81
+msgid ""
+"Applying pincushion corrections can produce a black border in the corners of "
+"the image. You will need to cut out the corners with a crop tool available "
+"in the Image Editor menu :menuselection:`Transform --> Crop` or via the zoom "
+"slider of this dialog."
+msgstr ""
+"Применение коррекции подушкообразной дисторсии может привести к появлению "
+"чёрной рамки в углах изображения. Углы потребуется обрезать инструментом "
+"обрезки, доступным в меню редактора изображений :menuselection:"
+"`Преобразование --> Кадрирование`, или с помощью ползунка масштабирования "
+"этого диалога."
+
+#: ../../image_editor/enhancement_tools.rst:83
+msgid ""
+"Barrel correction is enough for most images, however with some shots such as "
+"the front of buildings or paintings may also benefit from perspective "
+"correction to make all the angles 90 degrees. Note that when you hold your "
+"camera by hand you almost always introduce some kind of slight perspective "
+"distortion. See :ref:`Perspective Adjustment <transform_perspective>` for "
+"more information."
+msgstr ""
+"Коррекции бочкообразной дисторсии достаточно для большинства изображений, "
+"однако в некоторых случаях, например при съёмке фасадов зданий или картин, "
+"может также помочь коррекция перспективы, позволяющая сделать все углы "
+"прямыми (90 градусов). Следует учесть, что при съёмке с рук почти всегда "
+"возникает небольшая перспективная дисторсия. Дополнительные сведения см. в "
+"разделе :ref:`Регулировка перспективы <transform_perspective>`."
+
+#: ../../image_editor/enhancement_tools.rst:89
+msgid "Vignetting Correction"
+msgstr "Коррекция виньетирования"
+
+#: ../../image_editor/enhancement_tools.rst:92
+#: ../../image_editor/enhancement_tools.rst:203
+#: ../../image_editor/enhancement_tools.rst:261
+#: ../../image_editor/enhancement_tools.rst:1045
+msgid "Overview"
+msgstr "Обзор"
+
+#: ../../image_editor/enhancement_tools.rst:94
+msgid ""
+"The digiKam **Vignetting Correction** tool corrects image vignetting, which "
+"is the technical term for under-exposure in the corners."
+msgstr ""
+"Инструмент **Коррекция виньетирования** в digiKam исправляет виньетирование "
+"изображения — технический термин, обозначающий недостаточную экспозицию в "
+"углах."
+
+#: ../../image_editor/enhancement_tools.rst:96
+msgid ""
+"Wide angle lenses, especially those used in medium and large format "
+"photography, frequently do not uniformly illuminate the entire sensor plane. "
+"Instead, they *vignette* (shade) the edges and corners of the image, "
+"substantially reducing the light reaching the corners of the sensor. Some "
+"telephoto lenses may also suffer from vignetting."
+msgstr ""
+"Широкоугольные объективы, особенно применяемые в среднеформатной и "
+"крупноформатной фотографии, часто не обеспечивают равномерного освещения "
+"всей плоскости сенсора. Вместо этого они *виньетируют* (затеняют) края и "
+"углы изображения, существенно уменьшая количество света, достигающего углов "
+"сенсора. Виньетирование встречается и у некоторых телеобъективов."
+
+#: ../../image_editor/enhancement_tools.rst:98
+msgid ""
+"The traditional solution for vignetting is to attach a *center filter* to "
+"the lens. This is a neutral density filter with maximum density at the "
+"optical axis of the lens, clear at the periphery, with density varying "
+"inversely to the vignetting of the lens. A center filter has many "
+"advantages: not only does it automatically correct for full-frame images "
+"but, since it's fixed to the front of the lens, it also compensates for the "
+"off-center vignetting which occurs when camera movements are employed for "
+"perspective or plane of focus adjustment."
+msgstr ""
+"Традиционное решение проблемы виньетирования — установка *центрального "
+"фильтра* на объектив. Это нейтральный фильтр с максимальной плотностью на "
+"оптической оси объектива, прозрачный по периферии, причём плотность "
+"изменяется обратно пропорционально виньетированию объектива. Центральный "
+"фильтр имеет много преимуществ: он не только автоматически корректирует "
+"изображение по всему кадру, но, поскольку закреплён на передней части "
+"объектива, компенсирует и внеосевое виньетирование, возникающее при "
+"использовании подвижек камеры для коррекции перспективы или плоскости "
+"фокусировки."
+
+#: ../../image_editor/enhancement_tools.rst:100
+msgid ""
+"But there are disadvantages as well. Many center filters require a 1.5 or 2 "
+"f-stop filter factor adjustment, which may in turn necessitate a slow "
+"shutter speed, especially since wide angle lenses, even with center filters, "
+"are best used at apertures of f/16 or smaller. This combination may make the "
+"shutter speed slow enough that hand-holding the camera is impossible, and "
+"motion blur becomes a problem when photographing moving objects."
+msgstr ""
+"Но есть и недостатки. Многие центральные фильтры требуют поправки кратности "
+"фильтра на 1,5 или 2 ступени, что, в свою очередь, может потребовать длинной "
+"выдержки, тем более что широкоугольные объективы даже с центральными "
+"фильтрами лучше всего использовать при диафрагме f/16 или меньше. Из-за "
+"этого выдержка может оказаться настолько длинной, что съёмка с рук "
+"становится невозможной, а при съёмке движущихся объектов появляется "
+"смазывание."
+
+#: ../../image_editor/enhancement_tools.rst:102
+msgid ""
+"With the wide exposure range of present-day film and the color (or grey-"
+"scale) depth of digital cameras or film scanners, it is possible to simulate "
+"the effect of a center filter by applying an equivalent transform to a raw "
+"image taken without the filter."
+msgstr ""
+"Благодаря широкому диапазону экспозиции современной фотоплёнки и глубине "
+"цвета (или оттенков серого) цифровых камер и плёночных сканеров можно "
+"имитировать действие центрального фильтра, применив эквивалентное "
+"преобразование к снимку в формате RAW, сделанному без фильтра."
+
+#: ../../image_editor/enhancement_tools.rst:105
+msgid "Using the vignetting correction tool"
+msgstr "Использование инструмента коррекции виньетирования"
+
+#: ../../image_editor/enhancement_tools.rst:111
+msgid "The Vignetting Correction Types"
+msgstr "Типы коррекции виньетирования"
+
+#: ../../image_editor/enhancement_tools.rst:113
+msgid ""
+"Five sliders give you control over the vignetting correction filter, and "
+"three more over the target image exposure:"
+msgstr ""
+"Пять ползунков позволяют управлять фильтром коррекции виньетирования, а ещё "
+"три — экспозицией целевого изображения:"
+
+#: ../../image_editor/enhancement_tools.rst:115
+msgid ""
+"**Amount**: this option controls the degree of luminosity attenuation by the "
+"filter at its point of maximum attenuation. The default amount is 2.0, which "
+"corresponds to an optical filter with a 1 f-stop filter factor (equivalent "
+"to a factor of 2 reduction in luminosity). Increase the amount to compensate "
+"for a greater degree of vignetting; reduce it for less."
+msgstr ""
+"**Величина**: этот параметр управляет степенью ослабления светимости "
+"фильтром в точке максимального ослабления. По умолчанию величина равна 2.0, "
+"что соответствует оптическому фильтру с кратностью в одну ступень экспозиции "
+"(эквивалентно двукратному снижению светимости). Увеличьте величину для "
+"компенсации более сильного виньетирования; уменьшите её при меньшем "
+"виньетировании."
+
+#: ../../image_editor/enhancement_tools.rst:117
+msgid ""
+"**Feather**: this option determines the rate at which the filter intensity "
+"falls off from the point of maximum attenuation toward the edges, expressed "
+"as a power factor. The default of 1 yields a linear reduction in filter "
+"amount with distance from the center. Power factors greater than 1.0 cause a "
+"faster fall-off (for example, a power of 2 causes the amount to decrease as "
+"the square of the distance from the center) and causes the effect of the "
+"filter to be concentrated near the center. Powers less than 1 spread out the "
+"amount of the filter toward the edges; a power of 0.5 causes the amount to "
+"fall as the square root of the distance from the center."
+msgstr ""
+"**Растушёвка**: этот параметр определяет скорость убывания интенсивности "
+"фильтра от точки максимального ослабления к краям, выраженную через "
+"показатель степени. Значение по умолчанию, равное 1, даёт линейное "
+"уменьшение величины воздействия фильтра с расстоянием от центра. Показатели "
+"степени больше 1,0 приводят к более быстрому убыванию (например, при "
+"показателе степени 2 величина уменьшается пропорционально квадрату "
+"расстояния от центра), и эффект фильтра концентрируется ближе к центру. "
+"Показатели степени меньше 1 распределяют величину воздействия фильтра к "
+"краям; при показателе степени 0,5 величина уменьшается пропорционально "
+"квадратному корню из расстояния от центра."
+
+#: ../../image_editor/enhancement_tools.rst:119
+msgid ""
+"**Radius**: this option specifies the radius, as a multiple of the half "
+"diagonal measure of the image, at which the amount of the filter falls off "
+"to zero (or, in other words, becomes transparent). The default value of 1.0 "
+"specifies a filter which is transparent at its corners. A radius "
+"specification greater than 1 extends the effect of the center filter beyond "
+"the edges of the image, while a radius less than one limits the filter's "
+"action to a region smaller than the image. When compensating for vignetting "
+"by lenses used with large format and some medium format cameras, the default "
+"radius factor of 1 is rarely correct! These lenses often \"cover\" an image "
+"circle substantially larger than the film to permit camera movements "
+"relative to the lens to control perspective and focus, and consequently have "
+"a vignetting pattern which extends well beyond the edges of the film, "
+"requiring a radius setting greater than 1 to simulate a center filter "
+"covering the entire image circle."
+msgstr ""
+"**Радиус**: этот параметр задаёт радиус, кратный половине диагонали "
+"изображения, при котором действие фильтра спадает до нуля (иначе говоря, "
+"фильтр становится прозрачным). Значение по умолчанию 1,0 задаёт фильтр, "
+"прозрачный в углах. Радиус больше 1 распространяет действие центрального "
+"фильтра за края изображения, а радиус меньше 1 ограничивает действие фильтра "
+"областью, меньшей изображения. При компенсации виньетирования объективами "
+"крупноформатных и некоторых среднеформатных камер значение коэффициента "
+"радиуса по умолчанию, равное 1, редко бывает правильным! Такие объективы "
+"часто «покрывают» круг изображения, значительно превышающий плёнку, чтобы "
+"обеспечить подвижки камеры относительно объектива для управления "
+"перспективой и фокусировкой, и поэтому имеют картину виньетирования, "
+"выходящую далеко за края плёнки, что требует значения радиуса больше 1 для "
+"имитации центрального фильтра, покрывающего весь круг изображения."
+
+#: ../../image_editor/enhancement_tools.rst:121
+msgid ""
+"**X offset** and **Y offset** settings: these options move the center of the "
+"filter horizontally or vertically up to the border of the image by the "
+"specified percentage. A negative value for the X offset will shift the "
+"filter to the left while a positive value will shift it to the right. A "
+"negative value for the Y offset will move the filter up, and finally a "
+"positive value will move it down."
+msgstr ""
+"**Смещение по X** и **Смещение по Y**: эти параметры перемещают центр "
+"фильтра по горизонтали или по вертикали до границы изображения на указанный "
+"процент. Отрицательное значение смещения по X сдвигает фильтр влево, а "
+"положительное — вправо. Отрицательное значение смещения по Y перемещает "
+"фильтр вверх, а положительное — вниз."
+
+#: ../../image_editor/enhancement_tools.rst:123
+msgid ""
+"**Add Vignetting**: many photographs look flat because of a distracting "
+"background or another composition matter. While most of time you will want "
+"to remove vignetting, it is a fact that selective vignetting can improve the "
+"look of a photograph, drawing the eyes to the intended subject. As an artist "
+"you may choose this option. Ticking it will invert the filter, thus "
+"darkening the corners of a photograph."
+msgstr ""
+"**Добавить виньетирование**: многие фотографии выглядят плоскими из-за "
+"отвлекающего фона или иных композиционных причин. Хотя чаще всего "
+"виньетирование требуется удалять, избирательное виньетирование действительно "
+"может улучшить вид фотографии, привлекая взгляд к задуманному объекту "
+"съёмки. Художник может выбрать этот параметр. Установка флажка инвертирует "
+"фильтр, затемняя углы фотографии."
+
+#: ../../image_editor/enhancement_tools.rst:125
+msgid ""
+"The only way to be sure which settings of **Amount**, **Feather**, and "
+"**Radius** best compensate for the actual optical characteristics of a given "
+"lens is to expose a uniformly illuminated scene (for example, a grey card "
+"lit by diffuse light) and then measure any vignetting in the resulting image "
+"(for example with Adjust Level tool histogram position bar). Without such "
+"measurements, or specifications by the lens manufacturer giving the precise "
+"degree of vignetting at one or more working apertures, you may have to "
+"experiment with different settings to find those which work best for each of "
+"your lenses. To help you in this task, the tool dialog provides a thumbnail "
+"mask rendering applied to the image. Fortunately, the response of the human "
+"eye is logarithmic, not linear like most digital imaging sensors, so you "
+"needn't precisely compensate for the actual vignetting to create images "
+"which viewers will perceive as uniformly illuminated."
+msgstr ""
+"Единственный способ убедиться, какие значения **Величины**, **Растушёвки** и "
+"**Радиуса** лучше всего компенсируют реальные оптические характеристики "
+"конкретного объектива, — это снять равномерно освещённую сцену (например, "
+"серую карту при рассеянном свете) и затем измерить виньетирование на "
+"полученном изображении (например, с помощью полосы положения гистограммы "
+"инструмента «Регулировка уровней»). Без таких измерений или данных "
+"производителя объектива, указывающих точную степень виньетирования при одной "
+"или нескольких рабочих диафрагмах, возможно, придётся экспериментировать с "
+"разными параметрами, чтобы подобрать наилучшие для каждого объектива. В "
+"помощь при выполнении этой задачи диалог инструмента показывает миниатюру "
+"маски, применённой к изображению. К счастью, реакция человеческого глаза "
+"логарифмическая, а не линейная, как у большинства цифровых сенсоров, поэтому "
+"для создания изображений, которые зрители воспримут как равномерно "
+"освещённые, не требуется точно компенсировать фактическое виньетирование."
+
+#: ../../image_editor/enhancement_tools.rst:129
+msgid ""
+"If you need to re-adjust the exposure of the target image, use the Adjust "
+"Curve tool from Image Editor available under :menuselection:`Color --> "
+"Adjust Curve` menu entry."
+msgstr ""
+"Если требуется заново настроить экспозицию целевого изображения, "
+"воспользуйтесь инструментом «Регулировка кривой» редактора изображений, "
+"доступным в пункте меню :menuselection:`Цвет --> Регулировка кривой`."
+
+#: ../../image_editor/enhancement_tools.rst:132
+msgid "The vignetting correction tool in action"
+msgstr "Инструмент коррекции виньетирования в действии"
+
+#: ../../image_editor/enhancement_tools.rst:134
+msgid ""
+"This is an example of a vignetting correction applied to an image. The "
+"original image on the top shows vignetting in the corners, the corrected "
+"image on the bottom much less. The values used for this example are:"
+msgstr ""
+"Это пример коррекции виньетирования, применённой к изображению. На исходном "
+"изображении сверху виньетирование заметно в углах, на исправленном "
+"изображении снизу — значительно меньше. Значения, использованные в этом "
+"примере:"
+
+#: ../../image_editor/enhancement_tools.rst:136
+msgid "Density = 2.6."
+msgstr "Плотность = 2,6."
+
+#: ../../image_editor/enhancement_tools.rst:138
+msgid "Power = 0.9."
+msgstr "Степень = 0,9."
+
+#: ../../image_editor/enhancement_tools.rst:140
+msgid "Radius = 1.1."
+msgstr "Радиус = 1,1."
+
+#: ../../image_editor/enhancement_tools.rst:146
+msgid "The Image Editor Anti-Vignetting Tool"
+msgstr "Инструмент устранения виньетирования редактора изображений"
+
+#: ../../image_editor/enhancement_tools.rst:152
+msgid "Lens Auto-Correction"
+msgstr "Автокоррекция объектива"
+
+#: ../../image_editor/enhancement_tools.rst:154
+msgid ""
+"The digiKam **Lens Auto-Correction** tool can correct lens imperfections "
+"such as **Distortion**, **Chromatic aberration**, **Vignetting**, and "
+"**Geometry**, and do so automatically for hundreds of common lenses."
+msgstr ""
+"Инструмент **Автокоррекция объектива** digiKam позволяет исправлять дефекты "
+"объектива, такие как **Дисторсия**, **Хроматическая аберрация**, "
+"**Виньетирование** и **Геометрия**, причём автоматически для сотен "
+"распространённых объективов."
+
+#: ../../image_editor/enhancement_tools.rst:156
+msgid ""
+"No lens is optically perfect. Even the most expensive lenses have their own "
+"unique imperfections. This tool corrects for those imperfections."
+msgstr ""
+"Ни один объектив не является оптически идеальным. Даже у самых дорогих "
+"объективов есть свои уникальные недостатки. Этот инструмент исправляет эти "
+"недостатки."
+
+#: ../../image_editor/enhancement_tools.rst:162
+msgid "The Lens Auto-Correction Tool from the digiKam Image Editor"
+msgstr "Инструмент «Автокоррекция объектива» редактора изображений digiKam"
+
+#: ../../image_editor/enhancement_tools.rst:164
+msgid ""
+"The Lens Auto-Correction tool uses lens data from the `Lensfun library "
+"<https://lensfun.github.io/>`_, an up-to-date database of hundreds of lenses "
+"and their characteristics. The tool also uses the **Metadata** from the "
+"image to find-out which lens was used for a particular image."
+msgstr ""
+"Инструмент «Автокоррекция объектива» использует данные об объективах из "
+"`библиотеки Lensfun <https://lensfun.github.io/>`_ — актуальной базы данных, "
+"содержащей сотни объективов и их характеристики. Кроме того, инструмент "
+"использует **метаданные** изображения, чтобы определить, каким объективом "
+"был снят конкретный снимок."
+
+#: ../../image_editor/enhancement_tools.rst:166
+msgid ""
+"If the exact lens used to take the picture is available in the LensFun "
+"library, the tool will display **(exact match found)** in green. However if "
+"an exact match is not available, the tool will choose settings based on the "
+"closest match and display **(partial match found)** in orange. In this case, "
+"the user is allowed to select a different lens. If no match is found, the "
+"tool displays **(no match found)** in red."
+msgstr ""
+"Если объектив, которым сделана фотография, точно есть в библиотеке Lensfun, "
+"инструмент покажет **(точное совпадение)** зелёным цветом. Если же точного "
+"совпадения нет, инструмент выберет параметры по наиболее близкому совпадению "
+"и покажет **(частичное совпадение)** оранжевым цветом. В этом случае можно "
+"выбрать другой объектив. Если совпадений не найдено, инструмент покажет "
+"**(совпадений не найдено)** красным цветом."
+
+#: ../../image_editor/enhancement_tools.rst:172
+msgid "Metadata with Match in the LensFun Database"
+msgstr "Метаданные с совпадением в базе данных Lensfun"
+
+#: ../../image_editor/enhancement_tools.rst:178
+msgid "Metadata with a Partial Match in the LensFun Database"
+msgstr "Метаданные с частичным совпадением в базе данных Lensfun"
+
+#: ../../image_editor/enhancement_tools.rst:184
+msgid "Metadata with no Match in the LensFun Database"
+msgstr "Метаданные без совпадений в базе данных Lensfun"
+
+#: ../../image_editor/enhancement_tools.rst:186
+msgid ""
+"You can either enable or disable the helper **Grid** lines to visualize how "
+"the geometrical distortions are corrected on image."
+msgstr ""
+"Можно включать или отключать вспомогательную сетку (**Показывать сетку**), "
+"чтобы видеть, как исправляются геометрические искажения на изображении."
+
+#: ../../image_editor/enhancement_tools.rst:192
+msgid ""
+"The Lens Auto-Correction Tool Displaying the Helper Grid over the Canvas"
+msgstr ""
+"Инструмент «Автокоррекция объектива» с показом вспомогательной сетки поверх "
+"холста"
+
+#: ../../image_editor/enhancement_tools.rst:194
+msgid ""
+"Select the corrections you want to apply. The corrections are immediately "
+"displayed in the image preview area to the left. As for all tools, the "
+"preview area can be configured by clicking on the preview comparison style "
+"icons in the status bar. When you are satisfied with the result press **OK**."
+msgstr ""
+"Выберите коррекции, которые нужно применить. Коррекции сразу показываются в "
+"области предварительного просмотра изображения слева. Как и для всех "
+"инструментов, область предварительного просмотра настраивается щелчком по "
+"значкам стиля сравнения в строке состояния. Когда результат вас устроит, "
+"нажмите **ОК**."
+
+#: ../../image_editor/enhancement_tools.rst:200
+msgid "Hot Pixels"
+msgstr "«Горячие» пикселы"
+
+#: ../../image_editor/enhancement_tools.rst:205
+msgid ""
+"The digiKam **Hot Pixels** tool facilitates removing hot pixels from "
+"photographs taken with a digital camera."
+msgstr ""
+"Инструмент **«Горячие» пикселы** в digiKam позволяет удалять горячие пиксели "
+"со снимков, сделанных цифровой камерой."
+
+#: ../../image_editor/enhancement_tools.rst:207
+msgid ""
+"Most current digital cameras produce images with several brightly colored "
+"**Bad Pixels** when using slow shutter speeds. Night images can be ruined by "
+"these Bad Pixels. There are three different types of Bad Pixels:"
+msgstr ""
+"Большинство современных цифровых камер при съёмке с длинными выдержками дают "
+"снимки с несколькими ярко окрашенными **битыми пикселями**. Эти битые "
+"пиксели могут испортить ночные снимки. Существует три типа битых пикселей:"
+
+#: ../../image_editor/enhancement_tools.rst:209
+msgid ""
+"**Stuck pixels**: are pixels that always reads high or are always set to a "
+"maximum value on all exposures. This produces a bright pixel usually of red, "
+"blue or green color in the final image. A stuck pixel will occur regardless "
+"of shutter speed, aperture size or any other user settings. It will occur on "
+"a normal exposure and tends to be more obvious under bright conditions."
+msgstr ""
+"**Застрявшие пиксели**: это пиксели, которые при любой экспозиции всегда "
+"считываются как завышенные или всегда устанавливаются в максимальное "
+"значение. В результате на итоговом изображении появляется яркий пиксель, "
+"обычно красного, синего или зелёного цвета. Застрявший пиксель появляется "
+"независимо от выдержки, размера диафрагмы и любых других пользовательских "
+"параметров. Он возникает при обычной экспозиции и обычно более заметен в "
+"ярких условиях."
+
+#: ../../image_editor/enhancement_tools.rst:211
+msgid ""
+"**Dead pixels**: are pixels that read zero or are always off on all "
+"exposures. This state produces a black pixel in the final image. Similar to "
+"stuck pixel, a dead pixel will occur regardless of shutter speed, aperture "
+"size or any other user settings."
+msgstr ""
+"**Мёртвые пиксели**: это пиксели, которые считываются как нулевые или всегда "
+"отключены при всех экспозициях. В результате в итоговом изображении "
+"появляется чёрный пиксель. Как и застрявший пиксель, мёртвый пиксель "
+"проявляется независимо от выдержки, значения диафрагмы и любых других "
+"пользовательских параметров."
+
+#: ../../image_editor/enhancement_tools.rst:213
+msgid ""
+"**Hot pixels**: are pixels that read high (bright) on longer exposures as "
+"white, red, or green color. The longer the exposure time, the more visible "
+"hot pixels will become. These pixels will not be visible in bright "
+"conditions."
+msgstr ""
+"**Горячие пиксели**: это пиксели, которые при длительных выдержках "
+"считываются как яркие — белого, красного или зелёного цвета. Чем длиннее "
+"выдержка, тем заметнее становятся горячие пиксели. При ярком освещении эти "
+"пиксели не видны."
+
+#: ../../image_editor/enhancement_tools.rst:215
+msgid ""
+"Note that stuck or dead pixels will occur at the same location for all "
+"images. If the location of the stuck or dead pixel occurs at different "
+"locations, it may be a Hot Pixel."
+msgstr ""
+"Следует учесть, что застрявшие или мёртвые пиксели располагаются в одном и "
+"том же месте на всех изображениях. Если застрявший или мёртвый пиксель "
+"появляется в разных местах, возможно, это горячий пиксель."
+
+#: ../../image_editor/enhancement_tools.rst:217
+msgid ""
+"Stuck, dead or hot pixels are a problem in particular when shooting in high "
+"quality raw mode since many cameras have built-in hot pixel suppression "
+"applied automatically when JPEG compression is used (which is mostly the "
+"case)."
+msgstr ""
+"Застрявшие, мёртвые или горячие пиксели становятся проблемой особенно при "
+"съёмке в высококачественном режиме RAW, поскольку во многих камерах есть "
+"встроенное подавление горячих пикселей, автоматически применяемое при сжатии "
+"JPEG (а это происходит в большинстве случаев)."
+
+#: ../../image_editor/enhancement_tools.rst:219
+msgid ""
+"This tool can be used to fix the **Hot pixels** and **Stuck Pixels** on a "
+"photograph using a **Black Frame** subtraction method. digiKam does not have "
+"a manual editor for selecting Bad Pixels."
+msgstr ""
+"Этот инструмент позволяет исправить **горячие пиксели** и **застрявшие "
+"пиксели** на фотографии методом вычитания **темнового кадра**. В digiKam нет "
+"ручного редактора для выбора дефектных пикселей."
+
+#: ../../image_editor/enhancement_tools.rst:222
+msgid "Create the Black Frames"
+msgstr "Создание темновых кадров"
+
+#: ../../image_editor/enhancement_tools.rst:224
+msgid ""
+"The Black Frame subtraction method is the most accurate approach to the "
+"removal of \"Hot Pixels\" and \"Stuck Pixels\". First you have to create a "
+"\"Black Frame\" as a reference. This is easy to do. When you finish taking "
+"your long exposure shots, put a lens cap on the camera and take one \"dark\" "
+"image with the same exposure time as the prior images. This image will be "
+"all dark, but with close examination you will see that it has the Hot and "
+"Stuck Pixels (colored dots). These are positioned at the same places as on "
+"your previous shots."
+msgstr ""
+"Метод вычитания «темнового кадра» — наиболее точный способ удаления "
+"«горячих» и «застрявших» пикселей. Сначала необходимо создать «темновой "
+"кадр» в качестве эталона. Это несложно. Закончив съёмку с длинной выдержкой, "
+"закройте объектив крышкой и сделайте один «тёмный» кадр с той же выдержкой, "
+"что и предыдущие снимки. Этот кадр будет полностью тёмным, но при "
+"внимательном рассмотрении на нём можно заметить «горячие» и «застрявшие» "
+"пиксели (цветные точки). Они расположены в тех же местах, что и на "
+"предыдущих снимках."
+
+#: ../../image_editor/enhancement_tools.rst:226
+msgid ""
+"Load this file into the tool using the **Black Frame** button. The tool will "
+"process the image, automatically detecting the Hot and Stuck Pixels. They "
+"will be highlighted in the control panel preview areas."
+msgstr ""
+"Загрузите этот файл в инструмент с помощью кнопки **Темновой кадр**. "
+"Инструмент обработает изображение и автоматически обнаружит горячие и "
+"застрявшие пиксели. Они будут выделены в областях предварительного просмотра "
+"панели управления."
+
+#: ../../image_editor/enhancement_tools.rst:230
+msgid ""
+"If you use an old digital camera, it is important to re-shoot the Black "
+"Frame next time you are taking long exposure images to detect new Hot and "
+"Stuck Pixels on sensor defects."
+msgstr ""
+"При использовании старой цифровой камеры важно при следующей съёмке с "
+"длинной выдержкой переснять темновой кадр, чтобы обнаружить новые горячие и "
+"застрявшие пиксели, обусловленные дефектами матрицы."
+
+#: ../../image_editor/enhancement_tools.rst:233
+msgid "Using the Hot Pixels Tool"
+msgstr "Использование инструмента «Горячие» пикселы"
+
+#: ../../image_editor/enhancement_tools.rst:239
+msgid "The Image Editor Hot Pixels Tool"
+msgstr "Инструмент «Горячие» пикселы редактора изображений"
+
+#: ../../image_editor/enhancement_tools.rst:241
+msgid ""
+"At first, as explained in the previous section, you need to load a Black "
+"Frame corresponding to the image to correct. An automatic analysis of the "
+"Black Frame will run to find the bad pixels. Note that the tool will "
+"remember the previous Black Frame used in the last session, and that frame "
+"will be re-opened automatically in the next session."
+msgstr ""
+"Сначала, как описано в предыдущем разделе, необходимо загрузить темновой "
+"кадр, соответствующий корректируемому изображению. Для поиска дефектных "
+"пикселей будет выполнен автоматический анализ темнового кадра. Следует "
+"учесть, что инструмент запоминает темновой кадр, использованный в прошлом "
+"сеансе, и этот кадр будет автоматически открыт в следующем сеансе."
+
+#: ../../image_editor/enhancement_tools.rst:243
+msgid ""
+"The image panel and the original preview help you to pan within the image. "
+"The preview window shows the filter output using the current settings. Bad "
+"Pixels are highlighted in preview area."
+msgstr ""
+"Панель изображения и предварительный просмотр оригинала помогают "
+"перемещаться по изображению. В окне предварительного просмотра показывается "
+"результат работы фильтра с текущими параметрами. Битые пиксели выделяются в "
+"области предварительного просмотра."
+
+#: ../../image_editor/enhancement_tools.rst:245
+msgid ""
+"Select an area to see bad pixels in the preview and the filtered result "
+"using one of the preview comparison types that display the same image "
+"region. Choose the best **Filter** method to compute the values used to fill "
+"in the bad pixels or pixel blocks. The available filters are:"
+msgstr ""
+"Выберите область, чтобы увидеть битые пиксели в области предварительного "
+"просмотра и результат фильтрации, используя один из типов сравнения "
+"предварительного просмотра, показывающих одну и ту же область изображения. "
+"Для вычисления значений, используемых для заполнения битых пикселей или "
+"блоков пикселей, выберите оптимальный метод в списке **Фильтр**. Доступны "
+"следующие фильтры:"
+
+#: ../../image_editor/enhancement_tools.rst:247
+msgid ""
+"**Average**: the pixels adjacent to the pixel block are averaged. The "
+"resulting color is assigned to all pixels in the block. For 1-dimensional "
+"interpolation, this is done separately for one pixel-wide, horizontal or "
+"vertical stripes."
+msgstr ""
+"**Средний**: усредняются значения пикселей, соседних с блоком пикселей. "
+"Полученный цвет присваивается всем пикселям блока. При одномерной "
+"интерполяции это выполняется отдельно для горизонтальных или вертикальных "
+"полос шириной в один пиксель."
+
+#: ../../image_editor/enhancement_tools.rst:249
+msgid ""
+"**Linear**: the pixels which have a distance of 1 from the pixel block are "
+"used to calculate a bi-linear surface (2-dim), or a group of linear curves "
+"(1-dim), which is then used to assign interpolated colors to the pixels in "
+"the block."
+msgstr ""
+"**Линейный**: для вычисления билинейной поверхности (двумерной) или группы "
+"линейных кривых (одномерной) используются пиксели, отстоящие от блока "
+"пикселей на расстояние 1; затем с их помощью пикселям блока присваиваются "
+"интерполированные цвета."
+
+#: ../../image_editor/enhancement_tools.rst:251
+msgid ""
+"**Quadratic**: this is the default filtering method. The pixels which have a "
+"distance of 2 or less from the pixel block are used to calculate a bi-"
+"quadratic surface (2-dim), or a group of quadratic curves (1-dim), which is "
+"then used to assign interpolated colors to the pixels in the block."
+msgstr ""
+"**Квадратичный**: это метод фильтрации по умолчанию. Пиксели, удалённые от "
+"блока пикселей на расстояние 2 или менее, используются для вычисления "
+"биквадратичной поверхности (двумерной) или группы квадратичных кривых "
+"(одномерной), с помощью которых затем пикселям блока присваиваются "
+"интерполированные цвета."
+
+#: ../../image_editor/enhancement_tools.rst:253
+msgid ""
+"**Cubic**: the pixels which have a distance of 3 or less from the pixel "
+"block are used to calculate a bi-cubic surface (2-dim), or a group of cubic "
+"curves (1-dim), which is then used to assign interpolated colors to the "
+"pixels in the block."
+msgstr ""
+"**Кубический**: пиксели, находящиеся на расстоянии не более 3 от блока "
+"пикселей, используются для вычисления бикубической поверхности (двумерной) "
+"или группы кубических кривых (одномерной), с помощью которых затем пикселям "
+"блока присваиваются интерполированные цвета."
+
+#: ../../image_editor/enhancement_tools.rst:258
+msgid "Local Contrast"
+msgstr "Локальный контраст"
+
+#: ../../image_editor/enhancement_tools.rst:263
+msgid "The digiKam **Local Contrast** tool renders pseudo-HDR images."
+msgstr ""
+"Инструмент **Локальный контраст** в digiKam создаёт псевдо-HDR-изображения."
+
+#: ../../image_editor/enhancement_tools.rst:265
+msgid ""
+"There are multiple ways to render HDR images to improve photos containing "
+"under or overexposed areas. The usual approach is to take multiple shots "
+"with different exposures. digiKam's :ref:`Blend Stacked Images "
+"<expo_blending>` tool can then be used to combined the images into an HDR "
+"image. This works nicely but suffers from some limitation. For example, the "
+"approach only works with static subjects. But what if you want an HDR effect "
+"from a single image, including images taken of dynamic subjects?"
+msgstr ""
+"Существует несколько способов создания HDR-изображений для улучшения снимков "
+"с недоэкспонированными или переэкспонированными областями. Обычный подход — "
+"сделать несколько снимков с разной экспозицией. Затем с помощью инструмента "
+"digiKam :ref:`Объединить экспозиции изображений <expo_blending>` можно "
+"объединить изображения в HDR-изображение. Это хорошо работает, но имеет ряд "
+"ограничений. Например, такой подход применим только к неподвижным объектам. "
+"А что делать, если требуется HDR-эффект из одного изображения, в том числе "
+"для снимков движущихся объектов?"
+
+#: ../../image_editor/enhancement_tools.rst:267
+msgid ""
+"The **Local Contrast** tool uses a Low Dynamic Range `Tonemapping <https://"
+"en.wikipedia.org/wiki/Tone_mapping>`_ to improve the dynamic range of a "
+"photo by reducing its global contrast and increasing its local contrast. It "
+"does so by first generating a desaturated and blurred version of the photo. "
+"It then combines the RGB channels of the original photo with the desaturated "
+"blurred image using either a linear or power function. Sounds complicated? "
+"Don’t worry, the Local Contrast tool is rather straightforward to use, so "
+"you don’t have to understand all of its intricacies in order to achieve "
+"pleasing results."
+msgstr ""
+"Инструмент **Локальный контраст** использует тональную компрессию с низким "
+"динамическим диапазоном `Tonemapping <https://en.wikipedia.org/wiki/"
+"Tone_mapping>`_, чтобы улучшить динамический диапазон фотографии за счёт "
+"уменьшения общего контраста и увеличения локального. Для этого сначала "
+"создаётся обесцвеченная и размытая версия фотографии. Затем каналы RGB "
+"исходной фотографии объединяются с обесцвеченным размытым изображением с "
+"помощью линейной или степенной функции. Звучит сложно? Не стоит "
+"беспокоиться: инструмент «Локальный контраст» довольно прост в "
+"использовании, поэтому разбираться во всех его тонкостях не требуется, чтобы "
+"получить приятный результат."
+
+#: ../../image_editor/enhancement_tools.rst:273
+msgid "The Image Editor Local Contrast Tool"
+msgstr "Инструмент локального контраста редактора изображений"
+
+#: ../../image_editor/enhancement_tools.rst:276
+msgid "Using the Local Contrast Tool"
+msgstr "Использование инструмента локального контраста"
+
+#: ../../image_editor/enhancement_tools.rst:278
+msgid ""
+"Open the photo you want in the Image editor and choose :menuselection:"
+"`Enhance --> Local Contrast`."
+msgstr ""
+"Откройте нужную фотографию в редакторе изображений и выберите :menuselection:"
+"`Улучшить --> Локальный контраст`."
+
+#: ../../image_editor/enhancement_tools.rst:280
+msgid ""
+"The tool lets you apply up to four tonemapping operations called stages. "
+"Each **Stage** offers two parameters for you to tweak: **Power** and "
+"**Blur**."
+msgstr ""
+"Инструмент позволяет применить до четырёх операций тональной компрессии, "
+"называемых этапами. Каждый **Этап** содержит два настраиваемых параметра: "
+"**Степень** и **Размывание**."
+
+#: ../../image_editor/enhancement_tools.rst:282
+msgid ""
+"**Power**: This parameter allows you to specify the desaturation level. "
+"Higher values will result in more desaturation."
+msgstr ""
+"**Степень**: этот параметр позволяет задать уровень обесцвечивания. Чем выше "
+"значение, тем сильнее обесцвечивание."
+
+#: ../../image_editor/enhancement_tools.rst:284
+msgid ""
+"**Blur**: This parameter lets you adjust the affected areas on the photo. "
+"Higher values will affect larger areas."
+msgstr ""
+"**Размывание**: этот параметр позволяет регулировать затрагиваемые области "
+"на снимке. Более высокие значения затрагивают более крупные области."
+
+#: ../../image_editor/enhancement_tools.rst:286
+msgid ""
+"To preview the result, hit the **Try** button. Once you are satisfied with "
+"the result, press **OK** to apply the process to the photo."
+msgstr ""
+"Чтобы просмотреть результат, нажмите кнопку **Попробовать**. Когда результат "
+"вас устроит, нажмите **ОК**, чтобы применить обработку к фотографии."
+
+#: ../../image_editor/enhancement_tools.rst:289
+#: ../../image_editor/enhancement_tools.rst:1130
+msgid "Tips for Best Results"
+msgstr "Советы по получению наилучших результатов"
+
+#: ../../image_editor/enhancement_tools.rst:291
+msgid ""
+"**Start with Low Values**: Begin with low values for both Power and Blur, "
+"then gradually increase them to see the effect."
+msgstr ""
+"**Начните с малых значений**: установите малые значения для параметров "
+"«Степень» и «Размывание», затем постепенно увеличивайте их, чтобы увидеть "
+"эффект."
+
+#: ../../image_editor/enhancement_tools.rst:293
+msgid ""
+"**Use Multiple Stages**: Experiment with multiple stages to achieve more "
+"complex effects."
+msgstr ""
+"**Использование нескольких этапов**: чтобы получить более сложные эффекты, "
+"экспериментируйте с несколькими этапами."
+
+#: ../../image_editor/enhancement_tools.rst:295
+msgid ""
+"**Avoid Overprocessing**: Be careful not to overprocess your images, as this "
+"can lead to unnatural looking photos."
+msgstr ""
+"**Избегайте избыточной обработки**: не переусердствуйте с обработкой "
+"изображений, так как это приводит к неестественному виду снимков."
+
+#: ../../image_editor/enhancement_tools.rst:298
+#: ../../image_editor/enhancement_tools.rst:1114
+msgid "Parameters"
+msgstr "Параметры"
+
+#: ../../image_editor/enhancement_tools.rst:300
+msgid ""
+"**Function**: Specifies the type of function used for tonemapping. Options "
+"include **Power** function and **Linear** function."
+msgstr ""
+"**Функция**: задаёт тип функции, используемой для тонального отображения. "
+"Доступны функции **Степень** и **Линейная**."
+
+#: ../../image_editor/enhancement_tools.rst:302
+msgid ""
+"**High Saturation**: Controls the saturation of the image. Higher values "
+"result in more saturated colors."
+msgstr ""
+"**Насыщенность светлых участков**: регулирует насыщенность изображения. "
+"Более высокие значения дают более насыщенные цвета."
+
+#: ../../image_editor/enhancement_tools.rst:304
+msgid ""
+"**Low Saturation**: Controls the saturation of the image in areas where the "
+"brightness is increased. Lower values result in less saturation in these "
+"areas."
+msgstr ""
+"**Насыщенность тёмных участков**: этот параметр управляет насыщенностью "
+"изображения в областях с повышенной яркостью. Чем ниже значение, тем меньше "
+"насыщенность в этих областях."
+
+#: ../../image_editor/enhancement_tools.rst:306
+msgid ""
+"**Stretch Contrast**: If enabled, the filter will stretch the contrast of "
+"the image to improve the dynamic range."
+msgstr ""
+"**Растянуть контраст**: если включено, фильтр растягивает контраст "
+"изображения для улучшения динамического диапазона."
+
+#: ../../image_editor/enhancement_tools.rst:309
+#: ../../image_editor/enhancement_tools.rst:1165
+msgid "Examples"
+msgstr "Примеры"
+
+#: ../../image_editor/enhancement_tools.rst:311
+msgid ""
+"**Landscape Photos**: For landscape photos, try using a low Power value and "
+"a moderate Blur value to enhance the details in the sky and foreground."
+msgstr ""
+"**Пейзажные снимки**: для пейзажных снимков попробуйте задать малое значение "
+"параметра «Степень» и умеренное значение параметра «Размывание», чтобы "
+"повысить детализацию неба и переднего плана."
+
+#: ../../image_editor/enhancement_tools.rst:317
+msgid ""
+"Screencast of the Tool to expand the dynamic of a landscape photo taken with "
+"low a luminosity."
+msgstr ""
+"Видеозапись работы инструмента расширения динамического диапазона пейзажного "
+"снимка, сделанного при низкой освещённости."
+
+#: ../../image_editor/enhancement_tools.rst:319
+msgid ""
+"**Portrait Photos**: For portraits, use a higher Power value to bring out "
+"the details in the face while keeping the background soft."
+msgstr ""
+"**Портретные снимки**: используйте более высокое значение параметра "
+"«Степень», чтобы проявить детали лица, сохраняя фон мягким."
+
+#: ../../image_editor/enhancement_tools.rst:325
+msgid ""
+"Screencast of the Tool to Increase details of a Marmot head taken at the "
+"entrance to a cave."
+msgstr ""
+"Видеозапись работы инструмента, повышающего детализацию на снимке головы "
+"сурка, сделанном у входа в пещеру."
+
+#: ../../image_editor/enhancement_tools.rst:327
+msgid ""
+"While the Local Contrast tool may sound like an easy way to fix photos, you "
+"should use it with care: sometimes it can do more damage than good, "
+"producing unnatural looking photos."
+msgstr ""
+"Инструмент локального контраста может показаться простым способом "
+"исправления фотографий, но использовать его следует осторожно: иногда он "
+"приносит больше вреда, чем пользы, делая снимки неестественными."
+
+#: ../../image_editor/enhancement_tools.rst:330
+#: ../../image_editor/enhancement_tools.rst:1200
+msgid "See Also"
+msgstr "Смотрите также"
+
+#: ../../image_editor/enhancement_tools.rst:332
+msgid ":ref:`White Balance <color_wb>`"
+msgstr ":ref:`Баланс белого <color_wb>`"
+
+#: ../../image_editor/enhancement_tools.rst:333
+#: ../../image_editor/enhancement_tools.rst:1203
+msgid ":ref:`Sharpen (sharpen, unsharp mask, refocus) <enhance_sharpen>`"
+msgstr ""
+":ref:`Повышение резкости (резкость, маска нерезкости, перефокусировка) "
+"<enhance_sharpen>`"
+
+#: ../../image_editor/enhancement_tools.rst:338
+msgid "Noise Reduction"
+msgstr "Подавление шума"
+
+#: ../../image_editor/enhancement_tools.rst:340
+msgid ""
+"The digiKam **Noise Reduction** tool is a powerful tool for reducing image "
+"noise."
+msgstr ""
+"Инструмент **Шумоподавление** в digiKam — мощное средство уменьшения шума на "
+"изображении."
+
+#: ../../image_editor/enhancement_tools.rst:342
+msgid ""
+"This tool provides selectable image filters to remove specks or other "
+"artifacts caused by junk such as dust or hair on the lens. It also can be "
+"used to remove sensor noise from the camera that may be caused by high ISO "
+"settings, as well as the so-called Moiré Patterns on scanned images from "
+"books or magazines."
+msgstr ""
+"Этот инструмент предоставляет выбираемые фильтры изображения для удаления "
+"пятен и других артефактов, вызванных загрязнениями, например пылью или "
+"волосками на объективе. Его также можно использовать для удаления шума "
+"матрицы камеры, возникающего при высоких значениях ISO, а также так "
+"называемых муаровых узоров на отсканированных изображениях из книг или "
+"журналов."
+
+#: ../../image_editor/enhancement_tools.rst:344
+msgid ""
+"If you want more information about what causes digital camera sensor noise, "
+"please take a look at `this tutorial <https://www.cambridgeincolour.com/"
+"tutorials/image-noise.htm/>`_."
+msgstr ""
+"Дополнительные сведения о причинах возникновения шума матрицы цифровой "
+"камеры приведены в `этом руководстве <https://www.cambridgeincolour.com/"
+"tutorials/image-noise.htm/>`_."
+
+#: ../../image_editor/enhancement_tools.rst:350
+msgid "The Image Editor Noise Reduction Tool"
+msgstr "Инструмент шумоподавления редактора изображений"
+
+#: ../../image_editor/enhancement_tools.rst:352
+msgid ""
+"The above screenshot shows a typical scene taken with a digital camera using "
+"a high sensitivity ISO setting. It shows grainy noise which can be reduced "
+"successfully with this tool."
+msgstr ""
+"На приведённом выше снимке экрана показан типичный сюжет, снятый цифровой "
+"камерой при высокой чувствительности ISO. На нём виден зернистый шум, "
+"который успешно подавляется с помощью этого инструмента."
+
+#: ../../image_editor/enhancement_tools.rst:354
+msgid ""
+"Noise is most evident when zoomed in enough to see individual pixels. The re-"
+"sizeable image panel within the original preview helps you to pan within the "
+"image. Move the red rectangle around to select an area that will let you "
+"judge the optimal filter settings. Then switch to one of the preview "
+"comparison types that display the same image region, as illustrated in this "
+"screenshot."
+msgstr ""
+"Шум наиболее заметен при увеличении, достаточном для того, чтобы увидеть "
+"отдельные пиксели. Панель изображения с изменяемым размером в "
+"предварительном просмотре оригинала помогает перемещаться по изображению. "
+"Перемещайте красный прямоугольник, чтобы выбрать область, которая позволит "
+"оценить оптимальные параметры фильтра. Затем переключитесь на один из типов "
+"сравнения предварительного просмотра, показывающих одну и ту же область "
+"изображения, как показано на этом снимке экрана."
+
+#: ../../image_editor/enhancement_tools.rst:356
+msgid "The tool supports the following parameters:"
+msgstr "Инструмент поддерживает следующие параметры:"
+
+#: ../../image_editor/enhancement_tools.rst:358
+msgid ""
+"**Estimate Noise**: automatically computes all noise reduction settings "
+"based on an analysis of the noise contained in the image. It is a good idea "
+"to turn this option on, and check the result. If the degree of noise "
+"reduction is insufficient or the filter damages the image, turn off this "
+"option, and adjust the **Luminance**, **Chrominance Blue**, and "
+"**Chrominance Red** settings manually."
+msgstr ""
+"**Оценивать шум**: автоматически вычисляет все параметры подавления шума на "
+"основе анализа шума, содержащегося в изображении. Этот параметр "
+"рекомендуется включить и проверить результат. Если степень подавления шума "
+"недостаточна или фильтр повреждает изображение, отключите этот параметр и "
+"настройте вручную **Яркость**, **Синюю цветоразностную компоненту** и "
+"**Красную цветоразностную компоненту**."
+
+#: ../../image_editor/enhancement_tools.rst:360
+msgid ""
+"**Threshold**: use the slider for coarse adjustment, and the spin control "
+"for fine adjustment. The threshold is the value below which everything is "
+"considered noise. This value should be set so that edges and details are "
+"clearly visible and noise is smoothed out. These settings exist for the "
+"**Luminance**, **Chrominance Blue**, and **Chrominance Red** channels. "
+"Simply adjust it and hit the Try button to see the results. (This tool does "
+"not automatically update the preview window when making manual adjustments.) "
+"Adjustment must be made carefully, because the gap between noisy, smooth, "
+"and blur is very small. Adjust it as carefully as you would adjust the focus "
+"of a camera."
+msgstr ""
+"**Порог**: для грубой настройки используйте ползунок, для точной — поле со "
+"счётчиком. Порог — это значение, ниже которого всё считается шумом. Задавать "
+"это значение следует так, чтобы края и детали были чётко видны, а шум "
+"сглажен. Эти параметры предусмотрены для каналов **Яркость**, **Синяя "
+"цветоразностная компонента** и **Красная цветоразностная компонента**. "
+"Настройте порог и нажмите кнопку «Попробовать», чтобы увидеть результат. "
+"(Этот инструмент не обновляет автоматически окно предварительного просмотра "
+"при ручной настройке.) Настройку выполняйте осторожно, потому что разница "
+"между шумным, гладким и размытым изображением очень мала. Настраивайте порог "
+"так же тщательно, как фокус камеры."
+
+#: ../../image_editor/enhancement_tools.rst:362
+msgid ""
+"**Softness**: use the slider for coarse adjustment, and the spin control for "
+"fine adjustment. The softness adjusts the level of the thresholding (soft as "
+"opposed to hard thresholding). The higher the softness the more noise "
+"remains in the image. These settings exist for the **Luminance**, "
+"**Chrominance Blue**, and **Chrominance Red** channels. Simply adjust it and "
+"hit the Try button to see the results. As for the Threshold settings, "
+"adjustment must be made carefully, because the gap between noisy, smooth, "
+"and blur is very small. Adjust it as carefully as you would adjust the focus "
+"of a camera."
+msgstr ""
+"**Мягкость**: для грубой настройки используйте ползунок, а для точной — поле "
+"со счётчиком. Мягкость задаёт уровень пороговой обработки (мягкая в отличие "
+"от жёсткой). Чем выше мягкость, тем больше шума остаётся на изображении. Эти "
+"параметры доступны для каналов **Яркость**, **Синяя цветоразностная "
+"компонента** и **Красная цветоразностная компонента**. Настройте мягкость и "
+"нажмите кнопку «Попробовать», чтобы увидеть результат. Что касается "
+"параметров порога, настраивать их следует осторожно, поскольку разница между "
+"шумным, гладким и размытым изображением очень мала. Настраивайте так же "
+"осторожно, как фокусировку камеры."
+
+#: ../../image_editor/enhancement_tools.rst:364
+msgid ""
+"**Save As** and **Load**: these buttons are used to do just that. Any Noise "
+"Reduction parameters that you have set can be saved to the filesystem and "
+"loaded later."
+msgstr ""
+"**Сохранить как** и **Загрузить**: эти кнопки служат именно для этого. Любые "
+"заданные параметры шумоподавления можно сохранить в файловой системе и "
+"загрузить позже."
+
+#: ../../image_editor/enhancement_tools.rst:366
+msgid ""
+"**Try**: applies the current tool settings to the preview image. The preview "
+"does not automatically update when manual adjustments are made."
+msgstr ""
+"**Попробовать**: применяет текущие параметры инструмента к изображению "
+"предварительного просмотра. При ручной корректировке предварительный "
+"просмотр автоматически не обновляется."
+
+#: ../../image_editor/enhancement_tools.rst:368
+msgid "**Defaults**: this button resets all settings to default values."
+msgstr ""
+"**По умолчанию**: эта кнопка сбрасывает все параметры к значениям по "
+"умолчанию."
+
+#: ../../image_editor/enhancement_tools.rst:374
+msgid "Blur"
+msgstr "Размытие"
+
+#: ../../image_editor/enhancement_tools.rst:376
+msgid "The digiKam **Blur** tool is used to blur or soften an image."
+msgstr ""
+"Инструмент **Размытие** в digiKam используется для размытия или смягчения "
+"изображения."
+
+#: ../../image_editor/enhancement_tools.rst:378
+msgid ""
+"Sometimes an image is too sharp for your purposes. The solution is to blur "
+"it a bit: fortunately blurring an image is much easier than sharpening it. "
+"Select the **Blur Tool** with the :menuselection:`Enhance --> Blur` menu "
+"entry and experiment with the Smoothness level. The preview window shows the "
+"effect of the operation on your photograph."
+msgstr ""
+"Иногда изображение оказывается слишком резким для нужных целей. Решение — "
+"немного размыть его: к счастью, размыть изображение гораздо проще, чем "
+"повысить резкость. Выберите инструмент **Размытие** в пункте меню :"
+"menuselection:`Улучшить --> Размывание` и поэкспериментируйте со значением "
+"параметра «Размер матрицы». В окне предварительного просмотра показывается "
+"результат операции на фотографии."
+
+#: ../../image_editor/enhancement_tools.rst:384
+msgid "The Image Editor Blur Tool"
+msgstr "Инструмент размытия редактора изображений"
+
+#: ../../image_editor/enhancement_tools.rst:390
+msgid "Restoration"
+msgstr "Восстановление"
+
+#: ../../image_editor/enhancement_tools.rst:392
+msgid ""
+"The digiKam **Restoration** tool is an advanced tool for reducing artifacts "
+"in photographs."
+msgstr ""
+"Инструмент **Восстановление** в digiKam — мощное средство уменьшения "
+"артефактов на снимках."
+
+#: ../../image_editor/enhancement_tools.rst:394
+msgid ""
+"This fantastic restoration filter is a public domain tool developed to "
+"remove lots of unwanted stuff from your images. It is well adapted to deal "
+"with degraded images suffering from Gaussian noise, film grain, scratches or "
+"compression artifacts and local degradations usually encountered in digital "
+"(original or digitized) images. The smoothing used by the tool is applied "
+"along the image features, thus preserving the most meaningful image content."
+msgstr ""
+"Этот замечательный фильтр реставрации — инструмент в общественном достоянии, "
+"разработанный для удаления множества нежелательных элементов с изображений. "
+"Он хорошо подходит для обработки повреждённых изображений, страдающих от "
+"гауссова шума, зернистости плёнки, царапин или артефактов сжатия, а также "
+"локальных дефектов, обычно встречающихся на цифровых (исходных или "
+"оцифрованных) изображениях. Сглаживание, применяемое инструментом, "
+"выполняется вдоль контуров изображения, что позволяет сохранить наиболее "
+"значимое содержимое."
+
+#: ../../image_editor/enhancement_tools.rst:400
+msgid "The Image Editor Restoration Tool"
+msgstr "Инструмент восстановления редактора изображений"
+
+#: ../../image_editor/enhancement_tools.rst:402
+msgid ""
+"The tool comes with several presets as starting points and to simplify "
+"restoration. The preset settings available are listed below:"
+msgstr ""
+"Инструмент содержит несколько готовых наборов параметров, которые служат "
+"отправной точкой и упрощают реставрацию. Доступные наборы перечислены ниже:"
+
+#: ../../image_editor/enhancement_tools.rst:404
+msgid ""
+"**None**: Sets most common default filter settings not optimized for any "
+"particular purpose."
+msgstr ""
+"**Нет**: устанавливает наиболее общие параметры фильтра по умолчанию, не "
+"оптимизированные для какой-либо конкретной цели."
+
+#: ../../image_editor/enhancement_tools.rst:406
+msgid ""
+"**Reduce Uniform Noise**: Optimum settings for reducing image noise due to "
+"sensors."
+msgstr ""
+"**Уменьшить однородный шум**: оптимальные параметры для уменьшения шума "
+"изображения, вызванного матрицей."
+
+#: ../../image_editor/enhancement_tools.rst:408
+msgid ""
+"**Reduce JPEG Artifacts**: JPEG's compression is not perfect, in fact for "
+"some types of images it is far from it. As a lossy compression algorithm, "
+"there are some compression \"artifacts\" - slight defects showing in the "
+"decompressed image. This setting aims at reducing these artifacts."
+msgstr ""
+"**Уменьшить артефакты JPEG**: сжатие JPEG несовершенно, а для некоторых "
+"типов изображений — далеко от идеала. Будучи алгоритмом сжатия с потерями, "
+"оно порождает артефакты сжатия — небольшие дефекты, проявляющиеся на "
+"распакованном изображении. Этот параметр предназначен для уменьшения этих "
+"артефактов."
+
+#: ../../image_editor/enhancement_tools.rst:410
+msgid ""
+"**Reduce Texturing**: Optimized to remove artifacts from scanning, "
+"digitizing or Moire patterns."
+msgstr ""
+"**Уменьшить текстурирование**: оптимизировано для удаления артефактов "
+"сканирования, оцифровки или муаровых узоров."
+
+#: ../../image_editor/enhancement_tools.rst:412
+msgid ""
+"If you want to set filter parameters for finer adjustments, use the "
+"**General** and **Advanced Settings** tabs:"
+msgstr ""
+"Для более точной корректировки параметров фильтра используйте вкладки "
+"**Общие** и **Расширенные параметры**:"
+
+#: ../../image_editor/enhancement_tools.rst:418
+msgid "The Image Editor Restoration Tool Preset Settings"
+msgstr "Готовые параметры инструмента восстановления редактора изображений"
+
+#: ../../image_editor/enhancement_tools.rst:420
+msgid ""
+"**Detail Preservation** [0, 1]: this controls the preservation of features "
+"in the image. A low value forces an equal smoothing across the image, "
+"whereas bigger values preferably smooth the homogeneous regions, leaving "
+"sharper details. A value of 0.9 does a good job of preserving details so "
+"that no sharpening is required afterwards. Note that **Detail Preservation** "
+"setting must be always less than the **Anisotropy** setting."
+msgstr ""
+"**Сохранение деталей** [0, 1]: этот параметр управляет сохранением деталей "
+"изображения. Низкое значение приводит к равномерному сглаживанию всего "
+"изображения, а более высокие значения сглаживают преимущественно однородные "
+"области, оставляя более резкие детали. Значение 0,9 хорошо сохраняет детали, "
+"так что последующее повышение резкости не требуется. Обратите внимание, что "
+"значение параметра **Сохранение деталей** всегда должно быть меньше значения "
+"параметра **Анизотропия**."
+
+#: ../../image_editor/enhancement_tools.rst:422
+msgid ""
+"**Anisotropy alpha** [0, 1]: a low value smooths equally in all directions, "
+"whereas a value close to 1 smooths in one direction only. If you have film "
+"grain or CCD kind of noise a high value will result in wave-like pattern, "
+"whereas JPEG artifacts are suited for values close to 1."
+msgstr ""
+"**Альфа анизотропии** [0, 1]: низкое значение сглаживает одинаково во всех "
+"направлениях, а значение, близкое к 1, — только в одном направлении. При "
+"наличии зернистости плёнки или шума, характерного для ПЗС-матриц, высокое "
+"значение приведёт к волнообразному узору, тогда как для артефактов JPEG "
+"подходят значения, близкие к 1."
+
+#: ../../image_editor/enhancement_tools.rst:424
+msgid ""
+"**Smoothing** [0, 500]: this sets the maximum overall smoothing factor, "
+"while **Detail Preservation** defines the relative smoothing. Set this value "
+"based on the noise levels in the image."
+msgstr ""
+"**Размывание** [0, 500]: задаёт максимальный общий коэффициент сглаживания, "
+"а **Сохранение деталей** определяет относительное сглаживание. "
+"Устанавливайте это значение в зависимости от уровня шума на изображении."
+
+#: ../../image_editor/enhancement_tools.rst:426
+msgid ""
+"**Regularity** [0, 100]: this parameter is concerned with the uniformity of "
+"the smoothing. Imagine the smoothing process as a combing of the image. Then "
+"the Regularity would correspond to the size of the comb. The bigger this "
+"value, the more even the overall smoothing will be. This term is required "
+"when there is a lot of noise in the image, making it difficult to estimate "
+"the local features in the scene. Setting a Regularity value higher than 3 "
+"produces an interesting 'van Gogh' turbulence effect."
+msgstr ""
+"**Порядок** [0, 100]: этот параметр отвечает за однородность сглаживания. "
+"Представьте процесс сглаживания как прочёсывание изображения. Тогда этот "
+"параметр будет соответствовать размеру гребня. Чем больше это значение, тем "
+"равномернее будет общее сглаживание. Этот параметр необходим, когда на "
+"изображении много шума, из-за чего сложно оценить локальные особенности "
+"сцены. Значение выше 3 создаёт интересный эффект турбулентности «van Gogh»."
+
+#: ../../image_editor/enhancement_tools.rst:428
+msgid ""
+"**Filter Iterations**: number of times the blurring algorithm is applied. "
+"Usually 1 or 2 is sufficient."
+msgstr ""
+"**Проходов**: количество применений алгоритма размытия. Обычно достаточно 1 "
+"или 2."
+
+#: ../../image_editor/enhancement_tools.rst:434
+msgid "The Image Editor Restoration Tool Advanced Settings"
+msgstr ""
+"Дополнительные параметры инструмента восстановления редактора изображений"
+
+#: ../../image_editor/enhancement_tools.rst:436
+msgid ""
+"**Angular Step** [5, 90]: angular integration of the anisotropy alpha. If "
+"alpha is chosen small, the Angular Step should also be chosen small. But "
+"beware that small angles result in long runs! So choose a value as large as "
+"you can accept."
+msgstr ""
+"**Шаг по углу** [5, 90]: угловое интегрирование альфы анизотропии. Если "
+"альфа выбрана малой, шаг по углу также следует выбирать малым. Но учтите, "
+"что малые углы приводят к длительным вычислениям! Поэтому выбирайте значение "
+"настолько большим, насколько это допустимо."
+
+#: ../../image_editor/enhancement_tools.rst:438
+msgid ""
+"**Integral Step** [0.1, 10]: spatial integration step width in terms of "
+"pixels. Should remain less than 1 (sub-pixel smoothing) and never be higher "
+"than 2."
+msgstr ""
+"**Интегральный шаг** [0.1, 10]: ширина шага пространственного интегрирования "
+"в пикселях. Он должен оставаться меньше 1 (субпиксельное сглаживание) и "
+"никогда не превышать 2."
+
+#: ../../image_editor/enhancement_tools.rst:440
+msgid ""
+"**Use Linear Interpolation**: The gain in quality if you select this option "
+"is only marginal and you lose a factor of 2 in speed. Our recommendation is "
+"to leave it off."
+msgstr ""
+"**Использовать линейную интерполяцию**: прирост качества при выборе этого "
+"параметра незначителен, а быстродействие снижается вдвое. Рекомендуется "
+"оставлять этот параметр выключенным."
+
+#: ../../image_editor/enhancement_tools.rst:442
+msgid ""
+"**Save As** and **Load** buttons are used to do just that. Any Photograph "
+"Restoration filter settings that you have set can be saved to the files in a "
+"text file and reloaded later."
+msgstr ""
+"Кнопки **Сохранить как** и **Загрузить** служат именно для этого. Любые "
+"заданные параметры фильтра восстановления фотографий можно сохранить в "
+"текстовый файл и загрузить позже."
+
+#: ../../image_editor/enhancement_tools.rst:446
+msgid ""
+"Photograph restoration is comparatively fast given what it is doing, but it "
+"can take a long time to run and cause high CPU load. You may always abort "
+"computation by pressing the **Abort** button during preview rendering."
+msgstr ""
+"Восстановление фотографий выполняется сравнительно быстро, учитывая объём "
+"выполняемой работы, но может занимать много времени и создавать высокую "
+"нагрузку на процессор. Вычисление всегда можно прервать, нажав кнопку "
+"**Прервать** во время построения предварительного просмотра."
+
+#: ../../image_editor/enhancement_tools.rst:452
+msgid "Red Eye"
+msgstr "Подавление эффекта «красных глаз»"
+
+#: ../../image_editor/enhancement_tools.rst:454
+msgid ""
+"The digiKam **Red Eye** tool is a red eye removal tool. Red eyes are caused "
+"when a camera flash is used to take photographs of people. The red is the "
+"reflection from the back of the eye which can be seen because the pupil "
+"cannot react quickly enough to the flash. By the way, the red eye effect is "
+"less likely with a separate flash because of the different viewing angles of "
+"the flash and the lens. You can correct some of the worst effects of Red Eye "
+"by:"
+msgstr ""
+"Инструмент **Подавление эффекта «красных глаз»** в digiKam предназначен для "
+"устранения эффекта красных глаз. Красные глаза возникают при съёмке людей со "
+"вспышкой. Красный цвет — это отражение от глазного дна, которое становится "
+"видно, потому что зрачок не успевает среагировать на вспышку. Кстати, при "
+"использовании отдельной вспышки эффект красных глаз возникает реже из-за "
+"различия углов между вспышкой и объективом. Исправить некоторые из наиболее "
+"выраженных проявлений эффекта красных глаз можно так:"
+
+#: ../../image_editor/enhancement_tools.rst:456
+msgid "Select :menuselection:`Enhance --> Red Eye...`."
+msgstr ""
+"Выберите :menuselection:`Улучшить --> Удаление эффекта «красных глаз»...`."
+
+#: ../../image_editor/enhancement_tools.rst:458
+msgid ""
+"Set the preview mode to display the portion of the image with the eyes that "
+"need to be fixed."
+msgstr ""
+"Установите режим предварительного просмотра, чтобы показывать часть "
+"изображения с глазами, которые нужно исправить."
+
+#: ../../image_editor/enhancement_tools.rst:460
+msgid ""
+"A neural network engine parses the image contents to automatically localize "
+"eyes and the red pupils."
+msgstr ""
+"Механизм нейронной сети анализирует содержимое изображения для "
+"автоматического определения положения глаз и красных зрачков."
+
+#: ../../image_editor/enhancement_tools.rst:462
+msgid "The **Red Level** setting adjusts the amount of red eye removal."
+msgstr ""
+"Параметр **Уровень красного** регулирует степень устранения эффекта красных "
+"глаз."
+
+#: ../../image_editor/enhancement_tools.rst:468
+msgid "The Image Editor Red Eyes Removal"
+msgstr "Инструмент устранения эффекта красных глаз редактора изображений"
+
+#: ../../image_editor/enhancement_tools.rst:474
+msgid "Sharpen"
+msgstr "Увеличение резкости"
+
+#: ../../image_editor/enhancement_tools.rst:476
+msgid ""
+"The digiKam **Sharpen** tool provides three different tools for sharpening, "
+"each with unique advantages and disadvantages."
+msgstr ""
+"Инструмент **Увеличение резкости** digiKam предлагает три способа увеличения "
+"резкости, каждый из которых имеет свои преимущества и недостатки."
+
+#: ../../image_editor/enhancement_tools.rst:478
+msgid ""
+"**Simple Sharp** is a traditional sharpening tool that is very fast and "
+"easy, but that may produce grainy images, particularly in dark areas."
+msgstr ""
+"**Увеличение резкости** — традиционный способ: очень быстрый и простой, но "
+"может давать зернистые изображения, особенно в тёмных областях."
+
+#: ../../image_editor/enhancement_tools.rst:480
+msgid ""
+"**Unsharp Mask** works on the contrast of edges to make an image appear "
+"sharper, but it actually does not sharpen at all, but works by enhancing "
+"edges. It does a real good job at removing atmospheric haze. The algorithm "
+"was taken from the Gimp, and it is copyrighted by Winston Chang."
+msgstr ""
+"**Нерезкая маска** воздействует на контраст краёв, чтобы изображение "
+"казалось более резким, но на самом деле она вовсе не повышает резкость, а "
+"усиливает края. Она хорошо справляется с устранением атмосферной дымки. "
+"Алгоритм взят из GIMP, авторские права принадлежат Winston Chang."
+
+#: ../../image_editor/enhancement_tools.rst:482
+msgid ""
+"**Refocus** is probably the best of the three algorithms because it actually "
+"improves sharpness. It is a bit more involved in its application as it uses "
+"several adjustable parameters."
+msgstr ""
+"**Рефокусировка** — вероятно, лучший из трёх алгоритмов, поскольку она "
+"действительно повышает резкость. Применение её немного сложнее, так как "
+"требуется задать несколько настраиваемых параметров."
+
+#: ../../image_editor/enhancement_tools.rst:484
+msgid ""
+"Out-of-focus photographs, as well as most digitized images, benefit from "
+"some sharpness correction. This is partly due to the digitizing process that "
+"must chop up a continuous scene into pixels with finite size and spacing, so "
+"elements thinner than the sampling frequency will be averaged together. "
+"Thus, sharp borders are rendered a little blurred. The same phenomenon "
+"appears when printing color dots on paper. High-resolution cameras need even "
+"more sharpening on a regular basis than consumer cameras."
+msgstr ""
+"Несфокусированные фотографии, а также большинство оцифрованных изображений "
+"выигрывают от некоторой коррекции резкости. Отчасти это связано с процессом "
+"оцифровки, при котором непрерывная сцена разбивается на пиксели конечного "
+"размера, расположенные с определённым шагом, поэтому элементы мельче частоты "
+"дискретизации усредняются. Так чёткие границы получаются слегка размытыми. "
+"То же явление наблюдается при печати цветных точек на бумаге. Камерам с "
+"высоким разрешением требуется регулярное повышение резкости даже в большей "
+"степени, чем потребительским камерам."
+
+#: ../../image_editor/enhancement_tools.rst:486
+msgid ""
+"Whereas JPEG images have some camera-internal sharpening applied, RAW format "
+"images always need sharpening in their workflow."
+msgstr ""
+"В отличие от изображений JPEG, к которым камера уже применяет некоторое "
+"повышение резкости, изображения в формате RAW всегда требуют повышения "
+"резкости в процессе обработки."
+
+#: ../../image_editor/enhancement_tools.rst:488
+msgid ""
+"Some scanners apply a sharpen filter while scanning. It's usually worthwhile "
+"to disable automatic sharpening so that you keep control over your image."
+msgstr ""
+"Некоторые сканеры применяют фильтр повышения резкости во время сканирования. "
+"Обычно автоматическое повышение резкости лучше отключить, чтобы сохранить "
+"контроль над изображением."
+
+#: ../../image_editor/enhancement_tools.rst:491
+msgid "Adjusting Sharpness"
+msgstr "Настройка резкости"
+
+#: ../../image_editor/enhancement_tools.rst:493
+msgid ""
+"If the camera focus is not set perfectly or if the camera is moving when the "
+"image is taken the result is a blurred photograph. If there is a lot of "
+"blurring, you probably will not be able to do much about it with any "
+"technique. But you can often improve the image, if there is only a moderate "
+"amount of blurring. Many good SLR cameras apply less image processing to the "
+"images than simpler cameras (which tend to artificially increase the "
+"contrast to make the images look crisp). This kind of slight blur can be "
+"easily improved with tools."
+msgstr ""
+"Если фокусировка камеры выполнена неточно или камера движется в момент "
+"съёмки, снимок получается размытым. При сильном размытии исправить его каким-"
+"либо способом вряд ли удастся. Но если размытие умеренное, изображение часто "
+"удаётся улучшить. Многие хорошие зеркальные камеры обрабатывают изображения "
+"меньше, чем простые (которые обычно искусственно повышают контраст, чтобы "
+"изображения выглядели резкими). Такое лёгкое размытие легко исправить с "
+"помощью инструментов."
+
+#: ../../image_editor/enhancement_tools.rst:495
+msgid ""
+"In some situations, you may be able to get useful results by sharpening an "
+"photograph using the Sharpen tool by the :menuselection:`Enhance --> "
+"Sharpen` menu entry and the **Sharpen** option from **Method** setting."
+msgstr ""
+"В некоторых ситуациях полезный результат можно получить, повысив резкость "
+"фотографии с помощью инструмента «Увеличение резкости», выбрав пункт меню :"
+"menuselection:`Улучшить --> Резкость` и значение **Увеличение резкости** в "
+"списке **Метод**."
+
+#: ../../image_editor/enhancement_tools.rst:501
+msgid "The Image Editor Sharpen Tool"
+msgstr "Инструмент повышения резкости редактора изображений"
+
+#: ../../image_editor/enhancement_tools.rst:503
+msgid ""
+"You should be careful with this though, because the results may not look "
+"very natural. Sharpening increases the apparent sharpness of edges in the "
+"photograph, but also amplifies noise. Generally, the most useful technique "
+"for sharpening a fuzzy photograph is the Refocus tool. You can access it "
+"with the **Refocus** option from **Method** setting. Look at Refocus for "
+"more information and a comparison of all the sharpening techniques."
+msgstr ""
+"Однако следует соблюдать осторожность, поскольку результаты могут выглядеть "
+"не очень естественно. Повышение резкости увеличивает видимую резкость краёв "
+"на фотографии, но также усиливает шум. Как правило, наиболее полезным "
+"способом повышения резкости размытой фотографии является рефокусировка. "
+"Доступ к ней можно получить, выбрав значение **Рефокусировка** в списке "
+"**Метод**. Дополнительные сведения и сравнение всех способов повышения "
+"резкости приведены в разделе «Рефокусировка»."
+
+#: ../../image_editor/enhancement_tools.rst:506
+msgid "Reducing Graininess In a Photograph"
+msgstr "Уменьшение зернистости на снимке"
+
+#: ../../image_editor/enhancement_tools.rst:508
+msgid ""
+"When you take a photograph in low-light conditions or with a very fast "
+"exposure time, the camera does not get enough data to make good estimates of "
+"the true color at each pixel, and consequently the resulting photograph "
+"looks grainy. You can \"smooth out\" the graininess by blurring the image, "
+"but then you will also lose sharpness. Probably the best approach - if the "
+"graininess is not too bad - is to use the **Noise Reduction** tool, and you "
+"can access it by the :menuselection:`Enhance --> Noise Reduction` menu entry."
+msgstr ""
+"При съёмке в условиях низкой освещённости или с очень короткой выдержкой "
+"камера не получает достаточно данных для точной оценки истинного цвета "
+"каждого пикселя, и поэтому полученная фотография выглядит зернистой. "
+"Зернистость можно «сгладить», размыв изображение, но вместе с тем будет "
+"потеряна и резкость. Вероятно, наилучший подход — если зернистость не "
+"слишком сильна — воспользоваться инструментом **Шумоподавление**, доступным "
+"в пункте меню :menuselection:`Улучшить --> Шумоподавление`."
+
+#: ../../image_editor/enhancement_tools.rst:511
+msgid "Softening a Photograph"
+msgstr "Смягчение снимка"
+
+#: ../../image_editor/enhancement_tools.rst:513
+msgid ""
+"Sometimes you have the opposite problem: an image is too crisp. The solution "
+"is to blur it a bit: fortunately blurring an image is much easier than "
+"sharpening it. Select the **Blur Tool** with the :menuselection:`Enhance --> "
+"Blur` menu entry and experiment with the level. The preview window on the "
+"right of the dialog shows the effect of the operation on your photograph."
+msgstr ""
+"Иногда возникает обратная проблема: изображение слишком резкое. Решение — "
+"немного размыть его: к счастью, размыть изображение гораздо проще, чем "
+"повысить резкость. Выберите инструмент **Размытие** в пункте меню :"
+"menuselection:`Улучшить --> Размывание` и поэкспериментируйте с уровнем. В "
+"окне предварительного просмотра справа в диалоге показывается результат "
+"операции на фотографии."
+
+#: ../../image_editor/enhancement_tools.rst:516
+msgid "The Unsharp Mask Filter"
+msgstr "Фильтр «Нерезкая маска»"
+
+#: ../../image_editor/enhancement_tools.rst:520
+msgid ""
+"The **Unsharp Mask** filter is an excellent tool to remove haze from your "
+"photographs."
+msgstr ""
+"Фильтр **Нерезкая маска** — отличное средство для устранения дымки на "
+"снимках."
+
+#: ../../image_editor/enhancement_tools.rst:526
+msgid "The Image Editor Unsharpen Mask Tool"
+msgstr "Инструмент «Нерезкая маска» редактора изображений"
+
+#: ../../image_editor/enhancement_tools.rst:528
+#: ../../image_editor/enhancement_tools.rst:551
+msgid ""
+"The image panel and the original preview help you to pan within the image. "
+"The preview window shows the filter output using the current settings."
+msgstr ""
+"Панель изображения и предварительный просмотр оригинала помогают "
+"перемещаться по изображению. В окне предварительного просмотра показывается "
+"результат работы фильтра с текущими параметрами."
+
+#: ../../image_editor/enhancement_tools.rst:530
+msgid ""
+"There are two important parameters, **Radius** and **Amount**. The default "
+"values often work pretty well, so you should try them first. Increasing "
+"either the **Radius** or the **Amount** increases the strength of the "
+"effect. Don't get carried away, though: if you make the unsharp mask too "
+"strong, it will amplify noise in the image and create the impressions of "
+"ridges next to sharp edges."
+msgstr ""
+"Есть два важных параметра: **Радиус** и **Величина**. Значения по умолчанию "
+"часто дают довольно хороший результат, поэтому сначала стоит попробовать их. "
+"Увеличение **Радиуса** или **Величины** усиливает эффект. Однако не стоит "
+"увлекаться: если маска нерезкости окажется слишком сильной, она усилит шум "
+"на изображении и создаст впечатление гребней рядом с резкими краями."
+
+#: ../../image_editor/enhancement_tools.rst:532
+msgid ""
+"The **Radius** allows you to set how many pixels on either side of an edge "
+"that will be affected by sharpening. High resolution images allow higher "
+"radius. It is always best to sharpen an image at its final resolution."
+msgstr ""
+"**Радиус** позволяет задать, сколько пикселей с каждой стороны границы будет "
+"затронуто повышением резкости. Изображения с высоким разрешением допускают "
+"большее значение радиуса. Повышать резкость изображения всегда лучше при его "
+"итоговом разрешении."
+
+#: ../../image_editor/enhancement_tools.rst:534
+msgid ""
+"The **Amount** control is the percentage of the difference between the "
+"original and the blur image that is added back into the original. It allows "
+"you to set the strength of the sharpening."
+msgstr ""
+"Параметр **Величина** — это процент разницы между исходным и размытым "
+"изображением, добавляемый обратно к исходному изображению. Позволяет задать "
+"силу повышения резкости."
+
+#: ../../image_editor/enhancement_tools.rst:536
+msgid ""
+"The **Threshold** control is threshold measured as a fraction of the maximum "
+"RGB value that needs to be exceeded to apply the sharpening. It allows you "
+"to set the minimum difference in pixel values that indicates an edge where "
+"sharpening should be applied. That way, you can protect areas of smooth "
+"tonal transition from sharpening, and avoid creation of facial blemishes, or "
+"artifacts in the sky or water surfaces."
+msgstr ""
+"Параметр **Порог** — порог, измеряемый как доля от максимального значения "
+"RGB, которое необходимо превысить для применения повышения резкости. Он "
+"позволяет задать минимальную разницу значений пикселей, указывающую на край, "
+"где следует применять повышение резкости. Так можно защитить от повышения "
+"резкости области плавных тональных переходов и избежать появления дефектов "
+"на лицах или артефактов на небе и водных поверхностях."
+
+#: ../../image_editor/enhancement_tools.rst:539
+msgid "Refocus a Photograph"
+msgstr "Рефокусировка снимка"
+
+#: ../../image_editor/enhancement_tools.rst:541
+msgid ""
+"The Refocus tool uses a deconvolutional filter to refocus an image by "
+"enhancing sharpness. In plain language, this tool attempts to \"refocus\" an "
+"image by undoing the defocusing. This is better than just trying to sharpen "
+"a photograph. It employs a technique called Finite-Impulse-Response Wiener "
+"Filtering. While the traditional technique for sharpening images is to use "
+"unsharp masking, refocus generally produces better results. Start it from "
+"the :menuselection:`Enhance --> Sharpen` menu entry and the **Refocus** "
+"option."
+msgstr ""
+"Инструмент «Рефокусировка» использует деконволюционный фильтр для "
+"рефокусировки изображения путём повышения резкости. Проще говоря, этот "
+"инструмент пытается «перефокусировать» изображение, устранив расфокусировку. "
+"Это лучше, чем просто пытаться повысить резкость фотографии. В нём "
+"применяется метод, называемый фильтрацией Винера с конечной импульсной "
+"характеристикой. Хотя традиционный способ повышения резкости изображений — "
+"использование нерезкого маскирования, рефокусировка обычно даёт лучшие "
+"результаты. Запустите инструмент, выбрав пункт меню :menuselection:`Улучшить "
+"--> Резкость` и значение **Рефокусировка**."
+
+#: ../../image_editor/enhancement_tools.rst:543
+msgid ""
+"The Refocus technique works differently from **Unsharp Mask** and is also "
+"unlike the **Sharpen** Filter which both increase the contrast of the edges "
+"of an image. Refocus rather reverses the process by which the image got "
+"blurred by the circular aperture of the camera. This method gives you as "
+"much of the original \"in focus\" image as possible. Refocus uses a very "
+"powerful deconvolutional algorithm that will reclaim the data that has been "
+"mixed up. In mathematical terms, blurring is usually the result of a "
+"convolution, so a deconvolution will reverse the process. This is exactly "
+"what Refocus is doing. Furthermore, the FIR filter technique allows the tool "
+"to remove much of the noise and granularity that often gets accentuated in "
+"the sharpening process with other sharpening filters."
+msgstr ""
+"Метод рефокусировки работает иначе, чем **Нерезкая маска**, и отличается от "
+"фильтра **Увеличение резкости** — оба они повышают контраст краёв "
+"изображения. Рефокусировка, напротив, обращает процесс, из-за которого "
+"изображение было размыто круглой диафрагмой камеры. Этот метод позволяет в "
+"максимально возможной степени восстановить исходное «резкое» изображение. "
+"Рефокусировка использует очень мощный алгоритм деконволюции, возвращающий "
+"перемешанные данные. С математической точки зрения размытие обычно является "
+"результатом свёртки, поэтому деконволюция обращает этот процесс. Именно это "
+"и делает рефокусировка. Кроме того, метод FIR-фильтрации позволяет "
+"инструменту устранить большую часть шума и зернистости, которые часто "
+"усиливаются в ходе повышения резкости другими фильтрами."
+
+#: ../../image_editor/enhancement_tools.rst:549
+msgid "The Image Editor Refocus Tool"
+msgstr "Инструмент «Рефокусировка» редактора изображений"
+
+#: ../../image_editor/enhancement_tools.rst:553
+msgid ""
+"In most cases, image blurring by a camera can be modeled as convolution with "
+"a circular blur disc. But the refocus tool supports deblurring of two types "
+"of convolutional blurring:"
+msgstr ""
+"В большинстве случаев размытие изображения камерой можно описать как свёртку "
+"с круглым диском размытия. Однако инструмент рефокусировки поддерживает "
+"устранение двух типов свёрточного размытия:"
+
+#: ../../image_editor/enhancement_tools.rst:555
+msgid ""
+"The **Circular convolution**: this is the term used in this manual to "
+"describe the type of blurring that spreads each source point uniformly "
+"across a small disk with a fixed radius. (Not to be confused with the "
+"definition of circular convolution as used in time series analysis.)"
+msgstr ""
+"**Круговая свёртка**: этот термин используется в настоящем руководстве для "
+"описания типа размытия, при котором каждая точка источника равномерно "
+"распределяется по небольшому диску фиксированного радиуса. (Не путать с "
+"определением круговой свёртки, применяемым в анализе временных рядов.)"
+
+#: ../../image_editor/enhancement_tools.rst:557
+msgid ""
+"The **Gaussian convolution**: this one is blurring that is mathematically "
+"based on the normal distribution, with its bell-shaped curve. Image blurring "
+"of this type is normally associated with software blurring. From a "
+"theoretical point of view the mathematical justification for using the "
+"Gaussian convolution is that when you a apply a large number of independent "
+"random convolutions the results will always approach a Gaussian convolution."
+msgstr ""
+"**Гауссова свёртка**: это размытие, математически основанное на нормальном "
+"распределении с его колоколообразной кривой. Такое размытие изображения "
+"обычно связывают с программным размытием. С теоретической точки зрения "
+"математическое обоснование применения гауссовой свёртки состоит в том, что "
+"при применении большого числа независимых случайных свёрток результат всегда "
+"приближается к гауссовой свёртке."
+
+#: ../../image_editor/enhancement_tools.rst:559
+msgid ""
+"The refocus tool supports both the Circular and the Gaussian convolution "
+"plus mixtures of both."
+msgstr ""
+"Инструмент рефокусировки поддерживает как круговую, так и гауссову свёртку, "
+"а также их смеси."
+
+#: ../../image_editor/enhancement_tools.rst:561
+msgid ""
+"In practice, in most cases the Circular convolution works much better than "
+"the Gaussian convolution. The Gaussian convolution has a very long tail, so "
+"mathematically the result of the convolution also depends on source pixels "
+"at a large distance from the original source pixel. The FIR Wiener inverse "
+"of a Gaussian convolution in most cases is heavily influenced by source "
+"pixels at a large distance, and in most cases this produces undesirable "
+"results."
+msgstr ""
+"На практике в большинстве случаев круговая свёртка работает намного лучше, "
+"чем гауссова свёртка. Гауссова свёртка имеет очень длинный хвост, поэтому "
+"математически результат свёртки также зависит от исходных пикселей, "
+"находящихся на большом расстоянии от исходного пикселя. Обратное "
+"преобразование Винера с конечной импульсной характеристикой (FIR) для "
+"гауссовой свёртки в большинстве случаев в значительной степени зависит от "
+"исходных пикселей на большом расстоянии, и в большинстве случаев это даёт "
+"нежелательные результаты."
+
+#: ../../image_editor/enhancement_tools.rst:563
+msgid "The deconvolution filter plug-in has the following parameters:"
+msgstr "Модуль фильтра деконволюции имеет следующие параметры:"
+
+#: ../../image_editor/enhancement_tools.rst:565
+msgid ""
+"**Circular Sharpness**: This is the radius of the Circular convolution "
+"filter. It is the most important parameter for using the plug-in. With most "
+"images the default value of 1 should give good results. Select a higher "
+"value when your image is very blurred, but beware of producing halos."
+msgstr ""
+"**Круговая резкость**: это радиус фильтра круговой свёртки. Это самый важный "
+"параметр при использовании модуля. Для большинства изображений значение по "
+"умолчанию 1 даёт хороший результат. Выберите большее значение, если "
+"изображение сильно размыто, но остерегайтесь появления ореолов."
+
+#: ../../image_editor/enhancement_tools.rst:567
+msgid ""
+"**Correlation**: Increasing the Correlation may help reduce artifacts. The "
+"correlation can range from 0-1. Useful values are 0.5 and values close to 1, "
+"e.g. 0.95 and 0.99. Using a high value for the correlation will reduce the "
+"sharpening effect of the plug-in."
+msgstr ""
+"**Корреляция**: увеличение корреляции может помочь уменьшить артефакты. "
+"Корреляция может принимать значения от 0 до 1. Полезными значениями являются "
+"0,5 и значения, близкие к 1, например 0,95 и 0,99. Высокое значение "
+"корреляции снижает эффект повышения резкости модуля."
+
+#: ../../image_editor/enhancement_tools.rst:569
+msgid ""
+"**Noise filter**: Increasing the Noise filter parameter helps to reduce "
+"artifacts. The Noise can range from 0-1 but values higher than 0.1 are "
+"rarely helpful. When the Noise value is too low, e.g. 0 the image quality "
+"will be horrible. A useful value is 0.03. Using a high value for the Noise "
+"will even blur the image further."
+msgstr ""
+"**Подавление шумов**: увеличение значения этого параметра помогает уменьшить "
+"артефакты. Значение может находиться в диапазоне от 0 до 1, но значения выше "
+"0,1 редко бывают полезны. Если значение слишком мало, например 0, качество "
+"изображения будет ужасным. Полезное значение — 0,03. Высокое значение ещё "
+"сильнее размоет изображение."
+
+#: ../../image_editor/enhancement_tools.rst:571
+msgid ""
+"**Gaussian Sharpness**: This is the radius for the Gaussian convolution "
+"filter. Use this parameter when your blurring is Gaussian (mostly due to "
+"previous blur filtering). In most cases you should leave this parameter set "
+"to 0, because it causes nasty artifacts. When you use non-zero values you "
+"will probably also have to increase the Correlation and/or Noise filter "
+"parameters."
+msgstr ""
+"**Гауссово повышение резкости**: это радиус фильтра гауссовой свёртки. Этот "
+"параметр используется, когда размытие является гауссовым (как правило, из-за "
+"предыдущей фильтрации размытия). В большинстве случаев этот параметр следует "
+"оставить равным 0, поскольку он вызывает неприятные артефакты. При "
+"использовании ненулевых значений, вероятно, придётся также увеличить "
+"значения параметров «Корреляция» и/или «Подавление шумов»."
+
+#: ../../image_editor/enhancement_tools.rst:573
+msgid ""
+"**Matrix size**: This parameter determines the size of the transformation "
+"matrix. Increasing the Matrix Size may give better results, especially when "
+"you have chosen large values for Circular Sharpness or Gaussian Sharpness. "
+"Note that the plug-in will become very slow when you select large values for "
+"this parameter. In most cases you should select a value in the range 3-10."
+msgstr ""
+"**Размер матрицы**: этот параметр определяет размер матрицы преобразования. "
+"Увеличение размера матрицы может дать лучшие результаты, особенно если "
+"выбраны большие значения круговой резкости или гауссова повышения резкости. "
+"Обратите внимание, что при выборе больших значений этого параметра модуль "
+"будет работать очень медленно. В большинстве случаев следует выбирать "
+"значение в диапазоне от 3 до 10."
+
+#: ../../image_editor/enhancement_tools.rst:575
+msgid ""
+"**Save As** and **Load**: These buttons are used to do just that. Any "
+"Refocus parameters that you have set can be saved to a file and reloaded "
+"later."
+msgstr ""
+"**Сохранить как** и **Загрузить**: эти кнопки служат именно для этого. Любые "
+"заданные параметры рефокусировки можно сохранить в файл и загрузить позже."
+
+#: ../../image_editor/enhancement_tools.rst:577
+msgid "**Defaults**: This button resets all settings to default values."
+msgstr ""
+"**По умолчанию**: эта кнопка сбрасывает все параметры к значениям по "
+"умолчанию."
+
+#: ../../image_editor/enhancement_tools.rst:579
+msgid "Below, you can see few hints to help you work with the refocus tool:"
+msgstr ""
+"Ниже приведены несколько подсказок для работы с инструментом рефокусировки:"
+
+#: ../../image_editor/enhancement_tools.rst:581
+msgid ""
+"it is best to perform all cropping, color and intensity curve corrections on "
+"the image before using this plug-in."
+msgstr ""
+"Все операции обрезки, коррекции цвета и кривых интенсивности лучше выполнять "
+"над изображением до использования этого модуля."
+
+#: ../../image_editor/enhancement_tools.rst:583
+msgid ""
+"Otherwise use this plug-in before performing other operations on the image. "
+"The reason is that many operations on the image will leave boundaries that "
+"are not immediately visible but that will leave nasty artifacts after "
+"sharpening."
+msgstr ""
+"В противном случае используйте этот модуль до выполнения других операций с "
+"изображением. Причина в том, что многие операции с изображением оставляют "
+"границы, которые не видны сразу, но после повышения резкости оставят "
+"неприятные артефакты."
+
+#: ../../image_editor/enhancement_tools.rst:585
+msgid ""
+"When you are scanning images and compressing them, e.g. to JPEG, you should "
+"apply the plug-in to the uncompressed image."
+msgstr ""
+"При сканировании изображений и их сжатии, например в JPEG, модуль следует "
+"применять к несжатому изображению."
+
+#: ../../image_editor/enhancement_tools.rst:588
+msgid "Refocus Comparison with Other Techniques"
+msgstr "Сравнение рефокусировки с другими методами"
+
+#: ../../image_editor/enhancement_tools.rst:590
+msgid ""
+"it is worth comparing **Refocus** with **Simple Sharp** and **Unsharp Mask**."
+msgstr ""
+"Стоит сравнить **Рефокусировку** с **Увеличением резкости** и **Нерезкой "
+"маской**."
+
+#: ../../image_editor/enhancement_tools.rst:592
+msgid ""
+"All types of sharpening work by applying a small convolution matrix that "
+"increases the difference between a source pixel and its immediate neighbors. "
+"FIR Wiener filtering is a more general technique because it allows a much "
+"larger neighborhood and better parameterizations. Sharpening only works when "
+"your images are very slightly blurred. Furthermore, for high values of the "
+"sharpening parameter the results frequently looks \"noisy\". With FIR Wiener "
+"filtering this noise can be greatly reduced by selecting higher values for "
+"the **Correlation** and **Noise filter** parameters."
+msgstr ""
+"Все виды повышения резкости работают путём применения небольшой матрицы "
+"свёртки, которая увеличивает разницу между исходным пикселем и "
+"непосредственно соседними с ним пикселями. Фильтрация Винера с конечной "
+"импульсной характеристикой (FIR) — более общий метод, поскольку допускает "
+"гораздо большую окрестность и лучшую параметризацию. Повышение резкости "
+"работает только тогда, когда изображения размыты совсем незначительно. Кроме "
+"того, при высоких значениях параметра повышения резкости результаты часто "
+"выглядят «шумными». При FIR-фильтрации Винера этот шум можно значительно "
+"уменьшить, выбрав более высокие значения параметров **Корреляция** и "
+"**Подавление шумов**."
+
+#: ../../image_editor/enhancement_tools.rst:594
+msgid ""
+"Unsharp masking is another very popular image enhancement technique. From a "
+"mathematical point of view it is an ad hoc form of high-pass filter. The "
+"first step is to create a blurred copy of the source image. Then the "
+"difference between the source image and the blurred image is subtracted from "
+"the source image, hence the name unsharp masking. In fact, unsharp masking "
+"is more of a contrast enhancement on the important image features than a "
+"general approach to sharpening. It does not undo the blurring effects of "
+"diffraction caused by the camera's finite aperture, as refocus does."
+msgstr ""
+"Нерезкое маскирование — ещё один очень популярный метод улучшения "
+"изображений. С математической точки зрения это эмпирическая разновидность "
+"фильтра высоких частот. Первый шаг — создание размытой копии исходного "
+"изображения. Затем разность между исходным и размытым изображениями "
+"вычитается из исходного изображения — отсюда и название «нерезкое "
+"маскирование». Фактически нерезкое маскирование — это скорее повышение "
+"контраста важных деталей изображения, чем общий подход к повышению резкости. "
+"Оно не устраняет эффекты размытия из-за дифракции, вызванной конечной "
+"апертурой камеры, в отличие от рефокусировки."
+
+#: ../../image_editor/enhancement_tools.rst:596
+msgid ""
+"In general, unsharp masking produces better results than sharpening. This is "
+"probably caused by the fact that unsharp masking uses a larger neighborhood "
+"than sharpening."
+msgstr ""
+"Как правило, нерезкое маскирование даёт лучшие результаты, чем повышение "
+"резкости. Вероятно, это связано с тем, что при нерезком маскировании "
+"используется окрестность большего размера, чем при повышении резкости."
+
+#: ../../image_editor/enhancement_tools.rst:598
+msgid ""
+"From a theoretical point of view unsharp masking must always introduce "
+"artifacts. Even under optimal circumstances it can never completely undo the "
+"effect of blurring. But it has been proved that Wiener filtering is the "
+"optimal linear filter. In practice, the results of the FIR Wiener filter are "
+"always at least as good as those of unsharp masking. And the FIR Wiener "
+"filter is frequently better in restoring small details."
+msgstr ""
+"С теоретической точки зрения нерезкое маскирование всегда должно вносить "
+"артефакты. Даже в оптимальных условиях оно никогда не сможет полностью "
+"устранить эффект размытия. Но доказано, что фильтрация Винера — оптимальный "
+"линейный фильтр. На практике результаты фильтра Винера с конечной импульсной "
+"характеристикой (FIR) всегда по крайней мере не хуже, чем при нерезком "
+"маскировании. А фильтр Винера с конечной импульсной характеристикой часто "
+"лучше восстанавливает мелкие детали."
+
+#: ../../image_editor/enhancement_tools.rst:600
+msgid ""
+"Below, you can see a comparison of different filters applied to a small "
+"unfocused image:"
+msgstr ""
+"Ниже показано сравнение различных фильтров, применённых к небольшому "
+"несфокусированному изображению:"
+
+#: ../../image_editor/enhancement_tools.rst:607
+msgid ""
+"Original blurred color image to fix. This image have been taken with an "
+"analog still camera. The unfocusing result of an insufficient light for the "
+"auto-focus lens."
+msgstr ""
+"Исходное размытое цветное изображение для исправления. Этот снимок сделан "
+"аналоговым фотоаппаратом. Расфокусировка — результат недостатка света для "
+"автофокуса объектива."
+
+#: ../../image_editor/enhancement_tools.rst:616
+msgid "Fixed image using simple sharpening filter. Sharpness setting is 80."
+msgstr ""
+"Изображение исправлено с помощью простого фильтра повышения резкости. "
+"Параметр резкости — 80."
+
+#: ../../image_editor/enhancement_tools.rst:624
+msgid ""
+"Fixed image using unsharp mask filter. Settings are: Radius=50, Amount = 5, "
+"and Threshold=0."
+msgstr ""
+"Изображение, исправленное фильтром «Нерезкая маска». Параметры: Радиус=50, "
+"Величина=5, Порог=0."
+
+#: ../../image_editor/enhancement_tools.rst:632
+msgid ""
+"Fixed image using Refocus filter. Settings are: Circular Sharpness=1.3, "
+"Correlation=0.5, Noise Filter=0.020, Gaussian Sharpness=0 and Matrix Size=5."
+msgstr ""
+"Изображение исправлено с помощью фильтра «Рефокусировка». Параметры: "
+"круговая резкость=1.3, корреляция=0.5, подавление шумов=0.020, гауссово "
+"повышение резкости=0 и размер матрицы=5."
+
+#: ../../image_editor/enhancement_tools.rst:638
+msgid ""
+"For more information about sharpening methods used in digital imagery, you "
+"can find a technical comparison at `this url <http://www.optarc.co.uk/"
+"bialith//Research/BARclockblur.htm>`_."
+msgstr ""
+"Дополнительные сведения о методах повышения резкости, используемых в "
+"цифровой обработке изображений, приведены по `этому адресу <http://www."
+"optarc.co.uk/bialith//Research/BARclockblur.htm>`_."
+
+#: ../../image_editor/enhancement_tools.rst:644
+msgid "Healing Clone"
+msgstr "Восстанавливающее клонирование"
+
+#: ../../image_editor/enhancement_tools.rst:646
+msgid ""
+"The digiKam **Healing Clone** tool copies pixel colors from a specific "
+"portion of the image, and pastes them into another portion of the image "
+"using a brush, then applies smoothing. This helps fix artifacts in images, "
+"like unwanted spots on someone’s face that can be replaced with more clear "
+"skin from a nearby region of the face."
+msgstr ""
+"Инструмент **Восстанавливающее клонирование** в digiKam копирует цвета "
+"пикселей с определённого участка изображения и переносит их на другой его "
+"участок с помощью кисти, после чего применяет сглаживание. Это помогает "
+"устранить артефакты на изображениях, например нежелательные пятна на лице, "
+"которые можно заменить более чистой кожей с соседнего участка лица."
+
+#: ../../image_editor/enhancement_tools.rst:648
+msgid ""
+"The tool settings view on the right side provides a toolbar with 5 buttons. "
+"From left to right:"
+msgstr ""
+"В правой части окна параметров инструмента находится панель инструментов с 5 "
+"кнопками. Слева направо:"
+
+#: ../../image_editor/enhancement_tools.rst:650
+msgid "Select Source Point."
+msgstr "Выбирает исходную точку."
+
+#: ../../image_editor/enhancement_tools.rst:651
+msgid "Polygon Selection With Lasso."
+msgstr "Выделяет многоугольник с помощью лассо."
+
+#: ../../image_editor/enhancement_tools.rst:652
+msgid "Move Image."
+msgstr "Перемещает изображение."
+
+#: ../../image_editor/enhancement_tools.rst:653
+msgid "Undo clone operation."
+msgstr "Отменяет операцию клонирования."
+
+#: ../../image_editor/enhancement_tools.rst:654
+msgid "Redo clone operation."
+msgstr "Повторяет операцию клонирования."
+
+#: ../../image_editor/enhancement_tools.rst:656
+msgid ""
+"Below the toolbar, two sliders allow you to adjust the clone tool "
+"properties. The **Brush Radius** slider adjusts the size of the cloned area. "
+"A radius of 0 has no effect. Values of 1 and above set the brush radius that "
+"controls the size of the regions that are copied from the image."
+msgstr ""
+"Ниже панели инструментов два ползунка позволяют настроить свойства "
+"инструмента клонирования. Ползунок **Радиус кисти** задаёт размер "
+"клонируемой области. Радиус, равный 0, не даёт эффекта. Значения от 1 и выше "
+"задают радиус кисти, определяющий размер областей, копируемых с изображения."
+
+#: ../../image_editor/enhancement_tools.rst:658
+msgid ""
+"The **Radius Blur** slider controls the smoothing/mixing effect applied to "
+"the data cloned onto the canvas. A percent of 0 has no effect. Values above "
+"0 represents the radius of circle that is used to mix the source color that "
+"is mixed into the destination color. This mixing is applied radially i.e. "
+"the inner part of the brush radius is totally from the source and the "
+"percentage of source vs destination decreases linearly until the outer "
+"radius of the circle is 100% destination."
+msgstr ""
+"Ползунок **Процент радиального размытия** управляет эффектом сглаживания/"
+"смешивания, применяемым к клонированным на холст данным. Значение 0 % не "
+"даёт эффекта. Значения выше 0 задают радиус окружности, используемой для "
+"смешивания исходного цвета с цветом назначения. Смешивание выполняется "
+"радиально, то есть внутренняя часть радиуса кисти полностью берётся из "
+"источника, а доля источника по отношению к назначению линейно уменьшается, "
+"пока на внешней границе окружности не составит 100 % назначения."
+
+#: ../../image_editor/enhancement_tools.rst:664
+msgid "The Image Editor Healing Clone Tool to Remove Unwanted Artifacts"
+msgstr ""
+"Инструмент «Восстанавливающее клонирование» редактора изображений для "
+"удаления нежелательных артефактов"
+
+#: ../../image_editor/enhancement_tools.rst:666
+msgid ""
+"To select the source of image to clone, press **S**, or the **Source "
+"selection** button from the toolbar on the top of settings view. The cursor "
+"will change to a cross-hair symbol. Click on the location where you will "
+"start cloning from. The tool then switches to a circular brush. Move the "
+"brush to another location and click and drag to clone."
+msgstr ""
+"Чтобы выбрать источник изображения для клонирования, нажмите **S** или "
+"кнопку **Выбор источника** на панели инструментов в верхней части панели "
+"параметров. Курсор примет вид перекрестия. Щёлкните по месту, с которого "
+"начнётся клонирование. Затем инструмент переключается на круглую кисть. "
+"Переместите кисть в другое место, нажмите кнопку мыши и перетащите, чтобы "
+"клонировать."
+
+#: ../../image_editor/enhancement_tools.rst:673
+msgid ""
+"Screencast of Image Editor Healing Clone Fixing an Artifact with Spot Tool"
+msgstr ""
+"Видеозапись работы инструмента «Восстанавливающее клонирование» редактора "
+"изображений: исправление артефакта с помощью инструмента точечной коррекции"
+
+#: ../../image_editor/enhancement_tools.rst:675
+msgid ""
+"The tool also provide a **Lasso** and **Polygon** selector for the healing "
+"clone operations. You can either press :kbd:`L` or the **Lasso selector** "
+"button from the toolbar on the top of settings view. The cursor will change "
+"to a pen shape, and you can select discrete points as you like. The polygon "
+"edges will be drawn, you just need to press and move your mouse to complete "
+"the selection area. You don’t have to draw all the region at one time. The "
+"polygon will close itself if you press :kbd:`L` again. Pressing :kbd:`Esc` "
+"while in the process of drawing the lasso polygon will cancel the lasso "
+"operation."
+msgstr ""
+"Для операций восстанавливающего клонирования инструмент также предоставляет "
+"выбор **Лассо** и **Многоугольник**. Можно нажать :kbd:`L` или кнопку "
+"**Выбор лассо** на панели инструментов в верхней части окна параметров. "
+"Курсор примет форму пера, и можно выбирать отдельные точки по своему "
+"усмотрению. Границы многоугольника будут нарисованы; достаточно нажать "
+"кнопку мыши и перемещать указатель, чтобы завершить область выделения. "
+"Рисовать всю область сразу не нужно. Многоугольник замкнётся сам, если снова "
+"нажать :kbd:`L`. Нажатие :kbd:`Esc` в процессе рисования многоугольника "
+"лассо отменяет операцию лассо."
+
+#: ../../image_editor/enhancement_tools.rst:677
+msgid ""
+"Now the tool will only clone inside the selected region, cloning outside "
+"will be ignored, unless you press :kbd:`L` again or :kbd:`Esc` to deactivate "
+"the lasso mode. Once you do that, you can clone anywhere in the screen as "
+"usual.  Here is a screenshot of a lasso polygon selection, and a large "
+"portion of the image cloned inside this lasso portion. Of course pressing :"
+"kbd:`L` or :kbd:`Esc` again will remove the lasso boundary, keeping the "
+"cloned pixels in place, as expected."
+msgstr ""
+"Теперь инструмент клонирует только внутри выделенной области, а клонирование "
+"за её пределами игнорируется, если не нажать снова :kbd:`L` или :kbd:`Esc`, "
+"чтобы отключить режим лассо. После этого можно клонировать в любом месте "
+"экрана, как обычно.  Здесь показан снимок экрана с выделением "
+"многоугольником лассо и большой частью изображения, клонированной внутри "
+"этой области лассо. Разумеется, повторное нажатие :kbd:`L` или :kbd:`Esc` "
+"уберёт границу лассо, сохранив клонированные пиксели на месте, как и "
+"ожидалось."
+
+#: ../../image_editor/enhancement_tools.rst:684
+msgid "Screencast of Image Editor Healing Clone Fixing an Area Using Lasso"
+msgstr ""
+"Видеозапись работы инструмента «Восстанавливающее клонирование» редактора "
+"изображений: исправление области с помощью лассо"
+
+#: ../../image_editor/enhancement_tools.rst:686
+msgid ""
+"You can undo and redo using toolbar buttons from the toolbar on the top of "
+"settings view. Two keyboard shortcuts are assigned to the tool: :kbd:`Ctrl"
+"+Z` for undo and :kbd:`Ctrl+Shift+Z` for redo. You can undo and redo without "
+"limitation."
+msgstr ""
+"Отменять и повторять операции можно с помощью кнопок панели инструментов в "
+"верхней части окна параметров. Инструменту назначены две комбинации клавиш: :"
+"kbd:`Ctrl+Z` — отмена, :kbd:`Ctrl+Shift+Z` — повтор. Число отмен и повторов "
+"не ограничено."
+
+#: ../../image_editor/enhancement_tools.rst:692
+msgid "G'MIC-Qt Tool"
+msgstr "Инструмент G'MIC-Qt"
+
+#: ../../image_editor/enhancement_tools.rst:695
+#: ../../image_editor/enhancement_tools.rst:1052
+msgid "Features"
+msgstr "Возможности"
+
+#: ../../image_editor/enhancement_tools.rst:697
+msgid ""
+"G'MIC-Qt is 3rd-party image editing tool provided as a plug-in. It is named "
+"**G'MIC** for **GREYC’s Magic for Image Computing**, `an open-source image "
+"processing framework <https://gmic.eu/>`_. The full list of G'MIC features "
+"is long and cannot be detailed here as it comes with over 500 interesting "
+"functions to explore. It comes with filters for changing colors, creating "
+"patterns, adding artistic touches, repairing inconsistencies in pictures, "
+"rendering shapes, and much more. The plugin is highly customizable, with the "
+"ability to set favorites and even add your own filters."
+msgstr ""
+"G'MIC-Qt — сторонний инструмент редактирования изображений, поставляемый в "
+"виде модуля. Название **G'MIC** расшифровывается как **GREYC's Magic for "
+"Image Computing** — `открытая платформа обработки изображений <https://gmic."
+"eu/>`_. Полный список возможностей G'MIC велик, и привести его здесь "
+"невозможно, поскольку в него входит более 500 интересных функций. Он "
+"содержит фильтры для изменения цветов, создания узоров, добавления "
+"художественных штрихов, устранения несоответствий на изображениях, "
+"построения фигур и многого другого. Модуль легко настраивается: можно "
+"добавлять фильтры в избранное и даже создавать собственные."
+
+#: ../../image_editor/enhancement_tools.rst:699
+msgid ""
+"G'MIC-Qt is not included in the digiKam source code. Rather, it is a 3rd-"
+"party plugin included in binary distributions of digiKam, as the Windows, "
+"macOS, and Linux bundles. It can be started from the :menuselection:`Enhance "
+"--> G'MIC-Qt` menu entry or use the icons accessible from the Tools tab in "
+"the Right sidebar. G’MIC-Qt can be used like other filters, the main "
+"difference is that instead of opening a specific filter tab on the right "
+"sidebar, it opens up a window where you can pick through any of the pre-"
+"defined filters."
+msgstr ""
+"G'MIC-Qt не входит в исходный код digiKam. Скорее, это сторонний модуль, "
+"включаемый в двоичные сборки digiKam — пакеты для Windows, macOS и Linux. "
+"Запустить его можно из пункта меню :menuselection:`Улучшить --> G'MIC-Qt` "
+"или с помощью значков, доступных на вкладке «Инструменты» на правой боковой "
+"панели. G'MIC-Qt используется так же, как и другие фильтры; главное отличие "
+"в том, что вместо открытия вкладки определённого фильтра на правой боковой "
+"панели открывается окно, в котором можно выбрать любой из предустановленных "
+"фильтров."
+
+#: ../../image_editor/enhancement_tools.rst:705
+msgid "The Image Editor G'MIC-Qt Tool Running the Artistic/Bokeh Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Artistic/Bokeh"
+
+#: ../../image_editor/enhancement_tools.rst:708
+msgid "Filter Categories"
+msgstr "Категории фильтров"
+
+#: ../../image_editor/enhancement_tools.rst:710
+msgid "The categories of **Available filters** in the list are listed below:"
+msgstr "Категории в списке **Доступные фильтры** перечислены ниже:"
+
+#: ../../image_editor/enhancement_tools.rst:712
+msgid ""
+"**About**: these entries are not filters, but just show different "
+"information about G'MIC-Qt on the settings view. The **About/Download "
+"External Data** entry allows you to load new filter definitions from the "
+"internet."
+msgstr ""
+"**О программе**: эти пункты не являются фильтрами, а лишь показывают "
+"различную информацию о G'MIC-Qt на странице параметров. Пункт **О программе/"
+"Загрузка внешних данных** позволяет загрузить новые определения фильтров из "
+"Интернета."
+
+#: ../../image_editor/enhancement_tools.rst:714
+msgid ""
+"**Array and tiles**: this filter collection transforms photos into toys, "
+"puzzles, maps, and decorative shapes."
+msgstr ""
+"**Массив и мозаика (Array and tiles)**: этот набор фильтров превращает "
+"фотографии в игрушки, головоломки, карты и декоративные фигуры."
+
+#: ../../image_editor/enhancement_tools.rst:720
+msgid ""
+"The Image Editor G'MIC-Qt Tool Running the Array-and-Tiles/Puzzle Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Array-and-Tiles/"
+"Puzzle"
+
+#: ../../image_editor/enhancement_tools.rst:722
+msgid ""
+"**Artistic**: this filter collection applies a number of traditional effects "
+"that transform a photograph into a drawing or painting."
+msgstr ""
+"**Художественные (Artistic)**: этот набор фильтров применяет ряд "
+"традиционных эффектов, превращающих фотографию в рисунок или картину."
+
+#: ../../image_editor/enhancement_tools.rst:728
+msgid "The Image Editor G'MIC-Qt Tool Running the Artistic/Rodilius Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Artistic/Rodilius"
+
+#: ../../image_editor/enhancement_tools.rst:730
+msgid ""
+"**Black and White**: this filter collection is dedicated to processing "
+"images in gray-scale style, including converting to gray-scale, the inverse "
+"process of colorizing an image, reducing the color map, or simulating fusain "
+"drawing."
+msgstr ""
+"**Чёрно-белое (Black and White)**: этот набор фильтров предназначен для "
+"обработки изображений в оттенках серого, включая преобразование в оттенки "
+"серого, обратный процесс раскрашивания изображения, сокращение цветовой "
+"карты и имитацию рисования углём."
+
+#: ../../image_editor/enhancement_tools.rst:736
+msgid ""
+"The Image Editor G'MIC-Qt Tool Running the Black-and-White/Colorize Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Black-and-White/"
+"Colorize"
+
+#: ../../image_editor/enhancement_tools.rst:738
+msgid ""
+"**Colors**: this filter collection allows the user to define transformation "
+"functions operating in different color-spaces, apply LUTs, mix/adjust "
+"channels or correct tones by content analysis."
+msgstr ""
+"**Цвета (Colors)**: этот набор фильтров позволяет определять функции "
+"преобразования, работающие в различных цветовых пространствах, применять "
+"таблицы соответствия (LUT), смешивать и настраивать каналы или "
+"корректировать тона на основе анализа содержимого."
+
+#: ../../image_editor/enhancement_tools.rst:744
+msgid "The Image Editor G'MIC-Qt Tool Running the Colors/Mixer-Lab Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Colors/Mixer-Lab"
+
+#: ../../image_editor/enhancement_tools.rst:746
+msgid ""
+"**Contours**: this filter collection applies the pixel's neighborhood local "
+"transformations over the whole photo."
+msgstr ""
+"**Контуры (Contours)**: этот набор фильтров применяет локальные "
+"преобразования окрестности пикселя ко всей фотографии."
+
+#: ../../image_editor/enhancement_tools.rst:752
+msgid "The Image Editor G'MIC-Qt Tool Running the Contours/Super-Pixels Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Contours/Super-"
+"Pixels"
+
+#: ../../image_editor/enhancement_tools.rst:754
+msgid ""
+"**Deformations**: this filter collection applies physical distortions to the "
+"photo."
+msgstr ""
+"**Деформации (Deformations)**: этот набор фильтров применяет к фотографии "
+"физические искажения."
+
+#: ../../image_editor/enhancement_tools.rst:760
+msgid ""
+"The Image Editor G'MIC-Qt Tool Running the Deformations/Drop Water Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Deformations/Drop "
+"Water"
+
+#: ../../image_editor/enhancement_tools.rst:762
+msgid ""
+"**Degradations**: this filter collection reproduces photographic alterations "
+"such as blur, noise, grain, and lens aberrations."
+msgstr ""
+"**Ухудшения (Degradations)**: этот набор фильтров воспроизводит "
+"фотографические искажения, такие как размытие, шум, зернистость и аберрации "
+"объектива."
+
+#: ../../image_editor/enhancement_tools.rst:768
+msgid ""
+"The Image Editor G'MIC-Qt Tool Running the Degradations/Chromatic-"
+"Aberrations Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Degradations/"
+"Chromatic-Aberrations"
+
+#: ../../image_editor/enhancement_tools.rst:770
+msgid ""
+"**Details**: this filter collection enhances the details in your photos with "
+"an armada of multi-scale enhancement algorithms to bring out details and "
+"colors of different sizes in photos."
+msgstr ""
+"**Детали (Details)**: этот набор фильтров повышает детализацию фотографий с "
+"помощью множества многомасштабных алгоритмов улучшения, позволяющих проявить "
+"детали и цвета разных размеров на снимках."
+
+#: ../../image_editor/enhancement_tools.rst:776
+msgid "The Image Editor G'MIC-Qt Tool Running the Details/Mighty Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Details/Mighty"
+
+#: ../../image_editor/enhancement_tools.rst:778
+msgid ""
+"**Frames**: one other artistic filter collection dedicated to decorating "
+"your photo with ornaments."
+msgstr ""
+"**Рамки (Frames)**: ещё один набор художественных фильтров, предназначенный "
+"для украшения фотографии орнаментами."
+
+#: ../../image_editor/enhancement_tools.rst:784
+msgid "The Image Editor G'MIC-Qt Tool Running the Frames/Droste Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Frames/Droste"
+
+#: ../../image_editor/enhancement_tools.rst:786
+msgid ""
+"**Frequencies**: this filter collection is based on Fourier Transforms "
+"analysis."
+msgstr ""
+"**Частоты (Frequencies)**: этот набор фильтров основан на анализе "
+"преобразований Фурье."
+
+#: ../../image_editor/enhancement_tools.rst:792
+msgid "The Image Editor G'MIC-Qt Tool Running the Frequencies/Bandpass Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Frequencies/"
+"Bandpass"
+
+#: ../../image_editor/enhancement_tools.rst:794
+msgid ""
+"**Layers**: this filter collection works on layers or export contents to "
+"separate layers. As layers are not supported by Image Editor, usage of these "
+"filters is limited."
+msgstr ""
+"**Слои (Layers)**: этот набор фильтров работает со слоями или экспортирует "
+"содержимое в отдельные слои. Так как редактор изображений не поддерживает "
+"слои, применение этих фильтров ограничено."
+
+#: ../../image_editor/enhancement_tools.rst:800
+msgid ""
+"The Image Editor G'MIC-Qt Tool Running the Layers/Tiles-to-Layers Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Layers/Tiles-to-"
+"Layers"
+
+#: ../../image_editor/enhancement_tools.rst:802
+msgid ""
+"**Lights and Shadows**: this filter collection allows adjustment of under-"
+"exposed and over-exposed contents from a photo. It's also possible to patch "
+"the image with a supplemental source of light."
+msgstr ""
+"**Света и тени (Lights and Shadows)**: этот набор фильтров позволяет "
+"настроить недоэкспонированные и переэкспонированные области снимка. Кроме "
+"того, можно добавить в изображение дополнительный источник света."
+
+#: ../../image_editor/enhancement_tools.rst:808
+msgid ""
+"The Image Editor G'MIC-Qt Tool Running the Lights-and-Shadows/Pop-Shadows "
+"Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Lights-and-Shadows/"
+"Pop-Shadows"
+
+#: ../../image_editor/enhancement_tools.rst:810
+msgid ""
+"**Patterns**: this filter collection is a set of recursive image generation "
+"methods which can produce original and interesting geometric forms."
+msgstr ""
+"**Узоры (Patterns)**: этот набор фильтров — совокупность методов "
+"рекурсивного создания изображений, позволяющих получать оригинальные и "
+"интересные геометрические формы."
+
+#: ../../image_editor/enhancement_tools.rst:816
+msgid "The Image Editor G'MIC-Qt Tool Running the Patterns/Halftone Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Patterns/Halftone"
+
+#: ../../image_editor/enhancement_tools.rst:818
+msgid ""
+"**Renderings**: this filter collection superimposes artificially-generated "
+"forms based on mathematical solutions."
+msgstr ""
+"**Визуализации (Renderings)**: этот набор фильтров накладывает искусственно "
+"созданные формы, основанные на математических решениях."
+
+#: ../../image_editor/enhancement_tools.rst:824
+msgid "The Image Editor G'MIC-Qt Tool Running the Rendering/Lightning Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Rendering/Lightning"
+
+#: ../../image_editor/enhancement_tools.rst:826
+msgid ""
+"**Repair**: this filter collection includes advanced algorithms to help with "
+"image noise/glitch/objects/artifacts/compression removal. This kind of "
+"filter tries to fix very challenging problems that have occupied image-"
+"processing researchers for several generations."
+msgstr ""
+"**Восстановление (Repair)**: этот набор фильтров включает "
+"усовершенствованные алгоритмы для удаления шума, искажений, объектов, "
+"артефактов и следов сжатия. Фильтры этого типа предназначены для решения "
+"очень сложных задач, которые занимали исследователей в области обработки "
+"изображений на протяжении нескольких поколений."
+
+#: ../../image_editor/enhancement_tools.rst:832
+msgid ""
+"The Image Editor G'MIC-Qt Tool Running the Repair/Denoise Filter based on "
+"convolutional neural networks"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Repair/Denoise на "
+"основе свёрточных нейронных сетей"
+
+#: ../../image_editor/enhancement_tools.rst:834
+msgid "**Sequences**: this filters collection generates animation from photos."
+msgstr ""
+"**Последовательности (Sequences)**: этот набор фильтров создаёт анимацию из "
+"фотографий."
+
+#: ../../image_editor/enhancement_tools.rst:840
+msgid ""
+"The Image Editor G'MIC-Qt Tool Running the Sequences/3D_Image-Object Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Sequences/3D_Image-"
+"Object"
+
+#: ../../image_editor/enhancement_tools.rst:842
+msgid ""
+"**Silhouettes**: this filter collection superimposes forms such as animal "
+"finger-print, icons, nature shapes, etc."
+msgstr ""
+"**Силуэты (Silhouettes)**: этот набор фильтров накладывает формы, такие как "
+"отпечатки животных, значки, природные фигуры и т. д."
+
+#: ../../image_editor/enhancement_tools.rst:848
+msgid ""
+"The Image Editor G'MIC-Qt Tool Running the Silhouettes/Nature/Barnsley-Fern "
+"Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Silhouettes/Nature/"
+"Barnsley-Fern"
+
+#: ../../image_editor/enhancement_tools.rst:850
+msgid "**Stereoscopic 3D**: this filter collection renders photos in relief."
+msgstr ""
+"**Стереоскопическое 3D (Stereoscopic 3D)**: этот набор фильтров придаёт "
+"фотографиям рельефность."
+
+#: ../../image_editor/enhancement_tools.rst:856
+msgid ""
+"The Image Editor G'MIC-Qt Tool Running the Stereoscopic-3D/Stereo-Image "
+"Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Stereoscopic-3D/"
+"Stereo-Image"
+
+#: ../../image_editor/enhancement_tools.rst:858
+msgid ""
+"**Testing**: this filter collection groups all tools under development. Take "
+"care: these filters can be unstable and give weird effects."
+msgstr ""
+"**Тестирование (Testing)**: этот набор фильтров объединяет все инструменты, "
+"находящиеся в разработке. Учтите: эти фильтры могут работать нестабильно и "
+"давать странные эффекты."
+
+#: ../../image_editor/enhancement_tools.rst:860
+msgid ""
+"**Various**: this filters collection groups tools which cannot be "
+"categorized in others collections. A G'MIC code editor can be found to "
+"create and test new filters."
+msgstr ""
+"**Разное (Various)**: этот набор фильтров объединяет инструменты, которые "
+"нельзя отнести к другим наборам. Для создания и проверки новых фильтров "
+"предусмотрен редактор кода G'MIC."
+
+#: ../../image_editor/enhancement_tools.rst:866
+msgid "The Image Editor G'MIC-Qt Tool Running the Various/Custom-Code Filter"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: запуск фильтра Various/Custom-Code"
+
+#: ../../image_editor/enhancement_tools.rst:869
+msgid "Dialog Layout"
+msgstr "Компоновка диалога"
+
+#: ../../image_editor/enhancement_tools.rst:871
+msgid ""
+"The default layout of G'MIC-Qt is quite simple (this can be changed in the "
+"G'MIC-Qt **Settings** dialog). See below the description of each pane:"
+msgstr ""
+"Компоновка G'MIC-Qt по умолчанию довольно проста (её можно изменить в "
+"диалоге **Параметры** G'MIC-Qt). Ниже приведено описание каждой панели:"
+
+#: ../../image_editor/enhancement_tools.rst:873
+msgid ""
+"On the left, there is the preview. With some filters, the whole image is "
+"displayed, and with other filters it will be shown at a 100% crop detail, "
+"depending on the kind of effect to be activated."
+msgstr ""
+"Слева находится область предварительного просмотра. При использовании одних "
+"фильтров показывается всё изображение, при использовании других — фрагмент в "
+"масштабе 100 %, в зависимости от типа применяемого эффекта."
+
+#: ../../image_editor/enhancement_tools.rst:875
+msgid ""
+"In the middle, there is the useful search bar at the top, with a list of "
+"groups of effects below. Each group can be opened with a double click or by "
+"clicking the small arrow to the left of the name."
+msgstr ""
+"В середине вверху расположена удобная строка поиска, ниже — список групп "
+"эффектов. Каждую группу можно открыть двойным щелчком или щелчком по "
+"маленькой стрелке слева от названия."
+
+#: ../../image_editor/enhancement_tools.rst:877
+msgid ""
+"On the right would appear the settings of the selected filter, if we had "
+"selected one below. To confirm changes, there are the **Apply** and the "
+"**Ok** buttons. The **Cancel** button stops all current processing and "
+"returns to the Image Editor."
+msgstr ""
+"Справа показываются параметры выбранного фильтра, если он выбран в списке "
+"ниже. Для подтверждения изменений служат кнопки **Применить** и **ОК**. "
+"Кнопка **Отмена** останавливает текущую обработку и возвращает в редактор "
+"изображений."
+
+#: ../../image_editor/enhancement_tools.rst:879
+msgid ""
+"You can search a filter using their groups, but the fastest way to find them "
+"is to use the **Search** bar at the top of the list. If the filter "
+"categories look a bit daunting, it's possible to add the most used filters "
+"to a favorites list and to apply a color tag using the filters tree-view "
+"context menu. On the bottom, the **Add Fave** button allows appending an "
+"entry in the first section named **Faves** on the list."
+msgstr ""
+"Фильтр можно искать по группам, но быстрее всего найти его позволяет строка "
+"**Поиск** в верхней части списка. Если категории фильтров кажутся слишком "
+"сложными, можно добавить наиболее часто используемые фильтры в список "
+"избранного и применить цветовой ярлык с помощью контекстного меню дерева "
+"фильтров. В нижней части кнопка **Добавить в избранное** позволяет добавить "
+"запись в первый раздел списка — **Избранное**."
+
+#: ../../image_editor/enhancement_tools.rst:885
+msgid ""
+"The Image Editor G'MIC-Qt Tool Filters Tree-View and the Favorites Context "
+"Menu"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: дерево фильтров и контекстное "
+"меню «Избранное»"
+
+#: ../../image_editor/enhancement_tools.rst:887
+msgid "Some keywords to know in your filter searches:"
+msgstr ""
+"Некоторые ключевые слова (вводятся по-английски), которые полезно знать при "
+"поиске фильтров:"
+
+#: ../../image_editor/enhancement_tools.rst:889
+msgid "Frame: to add a border on your image."
+msgstr "Frame: добавить рамку к изображению."
+
+#: ../../image_editor/enhancement_tools.rst:890
+msgid "Blend: to merge images together."
+msgstr "Blend: объединить изображения."
+
+#: ../../image_editor/enhancement_tools.rst:891
+msgid "Sharp: to enhance details on your image."
+msgstr "Sharp: улучшить детализацию изображения."
+
+#: ../../image_editor/enhancement_tools.rst:892
+msgid "Upscale: to enlarge your image."
+msgstr "Upscale: увеличить размер изображения."
+
+#: ../../image_editor/enhancement_tools.rst:893
+msgid "Smooth: to cleanup your image."
+msgstr "Smooth: очистить изображение."
+
+#: ../../image_editor/enhancement_tools.rst:896
+msgid "Common Filter Behaviors"
+msgstr "Общие принципы работы фильтров"
+
+#: ../../image_editor/enhancement_tools.rst:898
+msgid "The following behaviors are supported by most of the G'MIC-Qt filters:"
+msgstr "Большинство фильтров G'MIC-Qt поддерживают следующие возможности:"
+
+#: ../../image_editor/enhancement_tools.rst:900
+msgid ""
+"When you render the filter on whole data from the Image Editor by pressing "
+"the **Apply** or **Ok** buttons, the processing time can be quite long, "
+"especially with many megapixel images. A **Progress Bar** on the bottom of "
+"the G'MIC-Qt dialog will indicate the computation progress."
+msgstr ""
+"При применении фильтра ко всем данным из редактора изображений нажатием "
+"кнопок **Применить** или **ОК** обработка может занять довольно много "
+"времени, особенно для изображений с большим числом мегапикселей. **Индикатор "
+"выполнения** в нижней части диалогового окна G'MIC-Qt будет показывать ход "
+"вычислений."
+
+#: ../../image_editor/enhancement_tools.rst:906
+msgid "The Image Editor G'MIC-Qt Tool Progress Bar"
+msgstr "Инструмент G'MIC-Qt редактора изображений: индикатор выполнения"
+
+#: ../../image_editor/enhancement_tools.rst:908
+msgid ""
+"If you previously select an area on the editor canvas before to launch G'MIC-"
+"Qt, filters will be applied on this region instead of the whole image."
+msgstr ""
+"Если перед запуском G'MIC-Qt предварительно выбрать область на холсте "
+"редактора, фильтры будут применены к этой области, а не ко всему изображению."
+
+#: ../../image_editor/enhancement_tools.rst:910
+msgid ""
+"If a filter has many parameter settings, some may not be visible; use the "
+"scroll bar to access more settings. Also, it's possible to enlarge the G'MIC-"
+"Qt dialog if necessary, or switch to **Fullscreen** with the button on the "
+"bottom."
+msgstr ""
+"Если у фильтра много параметров, часть из них может быть не видна; для "
+"доступа к остальным параметрам используйте полосу прокрутки. Кроме того, при "
+"необходимости можно увеличить диалоговое окно G'MIC-Qt или переключиться в "
+"**Полноэкранный режим** с помощью кнопки в нижней части."
+
+#: ../../image_editor/enhancement_tools.rst:912
+msgid ""
+"Depending on the filter, some parameters can require many iterations on the "
+"image which increases processing time. Adjust the settings carefully, as the "
+"times can increase exponentially before seeing any result."
+msgstr ""
+"В зависимости от фильтра некоторые параметры могут потребовать многократных "
+"итераций по изображению, что увеличивает время обработки. Настраивайте "
+"параметры осторожно: время может возрастать экспоненциально, прежде чем "
+"появится результат."
+
+#: ../../image_editor/enhancement_tools.rst:914
+msgid ""
+"The filter preview can be adjusted to compare the results before and after "
+"the effect. **Preview Type** settings are available in the parameters pane."
+msgstr ""
+"Предварительный просмотр фильтра можно настроить для сравнения результатов "
+"до и после применения эффекта. Параметры **Тип предварительного просмотра** "
+"доступны на панели параметров."
+
+#: ../../image_editor/enhancement_tools.rst:920
+msgid ""
+"The Image Editor G'MIC-Qt Tool Preview Type Settings From the Colors/Color-"
+"Blindness Filter"
+msgstr ""
+"Параметры типа предварительного просмотра фильтра «Colors/Color-Blindness» в "
+"инструменте G'MIC-Qt редактора изображений"
+
+#: ../../image_editor/enhancement_tools.rst:923
+msgid "Tool Configuration"
+msgstr "Настройка инструмента"
+
+#: ../../image_editor/enhancement_tools.rst:925
+msgid ""
+"The **Settings** button on the bottom left will show the G'MIC-Qt "
+"configuration dialog with three tabs:"
+msgstr ""
+"Кнопка **Параметры** в левом нижнем углу открывает диалог настройки G'MIC-Qt "
+"с тремя вкладками:"
+
+#: ../../image_editor/enhancement_tools.rst:927
+msgid ""
+"The **Interface** tab is used to customize the G'MIC-Qt interface, including "
+"the layout of the tool panes, the language to enable, the preview behavior, "
+"and the native dialog to use."
+msgstr ""
+"На вкладке **Интерфейс** настраивается интерфейс G'MIC-Qt: компоновка "
+"панелей инструментов, включаемый язык, поведение предварительного просмотра "
+"и используемый системный диалог."
+
+#: ../../image_editor/enhancement_tools.rst:933
+msgid "The Image Editor G'MIC-Qt Tool Settings/Interface Dialog Tab"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: вкладка «Интерфейс» диалога "
+"параметров"
+
+#: ../../image_editor/enhancement_tools.rst:935
+msgid ""
+"The **Filter sources** tab set up where to obtain filter updates and where "
+"to store them on your computer."
+msgstr ""
+"Вкладка **Источники фильтров** позволяет указать, откуда получать обновления "
+"фильтров и где хранить их на компьютере."
+
+#: ../../image_editor/enhancement_tools.rst:941
+msgid "The Image Editor G'MIC-Qt Tool Settings/Filter-Sources Dialog Tab"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: вкладка «Источники фильтров» "
+"диалога параметров"
+
+#: ../../image_editor/enhancement_tools.rst:943
+msgid ""
+"The cleverly-named **Other** tab adjusts other parameters, such as when to "
+"check for online updates, and the debug verbosity on the console which is "
+"useful for filter developers."
+msgstr ""
+"Вкладка с «оригинальным» названием **Другое** настраивает прочие параметры, "
+"например когда проверять обновления в Интернете, и уровень детализации "
+"отладочных сообщений в консоли, что полезно разработчикам фильтров."
+
+#: ../../image_editor/enhancement_tools.rst:949
+msgid "The Image Editor G'MIC-Qt Tool Settings/Other Dialog Tab"
+msgstr ""
+"Инструмент G'MIC-Qt редактора изображений: вкладка «Другое» диалога "
+"параметров"
+
+#: ../../image_editor/enhancement_tools.rst:951
+msgid ""
+"We suggest you explore all the available effects in G'MIC-Qt, as you can "
+"find interesting artistic solutions for your photo. See `this online review "
+"<https://jpfleury.github.io/gfo-demos/demos/fruits-400/index.html>`_ of all "
+"G'MIC-Qt filters for details."
+msgstr ""
+"Рекомендуется изучить все доступные эффекты G'MIC-Qt: можно найти интересные "
+"художественные решения для своей фотографии. Подробности приведены в `этом "
+"онлайн-обзоре <https://jpfleury.github.io/gfo-demos/demos/fruits-400/index."
+"html>`_ всех фильтров G'MIC-Qt."
+
+#: ../../image_editor/enhancement_tools.rst:956
+msgid "Layers Mode Tool"
+msgstr "Инструмент режима слоёв"
+
+#: ../../image_editor/enhancement_tools.rst:958
+msgid ""
+"The G'MIC-Qt tool is available to run over a stack of images to assemble "
+"items together for example. This tool version is available from the :"
+"menuselection:`Tools --> G'MIC-Qt (layers)` menu entry or use the icons "
+"accessible from the Tools tab in the Right sidebar."
+msgstr ""
+"Инструмент G'MIC-Qt позволяет обрабатывать стек изображений, например, для "
+"объединения элементов. Эта версия инструмента доступна из пункта меню :"
+"menuselection:`Сервис --> G'MIC-Qt (слои)` или с помощью значков, доступных "
+"на вкладке «Инструменты» на правой боковой панели."
+
+#: ../../image_editor/enhancement_tools.rst:962
+msgid ""
+"This tool do not process items one by one in batch. Please use the Batch "
+"Queue Manager :ref:`G'MIC Processor <bqm_gmictools>` instead."
+msgstr ""
+"Этот инструмент не обрабатывает элементы по одному в пакетном режиме. Вместо "
+"него используйте :ref:`Обработчик G'MIC <bqm_gmictools>` в окне «Управление "
+"очередями пакетной обработки»."
+
+#: ../../image_editor/enhancement_tools.rst:964
+msgid ""
+"Open files to process together in Image Editor and start the **G'MIC-Qt "
+"(layers)** tool."
+msgstr ""
+"Откройте файлы для совместной обработки в редакторе изображений и запустите "
+"инструмент **G'MIC-Qt (слои)**."
+
+#: ../../image_editor/enhancement_tools.rst:970
+msgid "The Image Editor G'MIC-Qt (layers) Tool Menu Entry"
+msgstr "Инструмент G'MIC-Qt (слои) редактора изображений: пункт меню"
+
+#: ../../image_editor/enhancement_tools.rst:972
+msgid ""
+"A wizard dialog appears where the first page introduce the G'MIC framework "
+"usage."
+msgstr ""
+"Появляется диалог мастера, первая страница которого знакомит с "
+"использованием платформы G'MIC."
+
+#: ../../image_editor/enhancement_tools.rst:978
+msgid "The Image Editor G'MIC-Qt (layers) Tool Introduction Page"
+msgstr "Инструмент G'MIC-Qt (слои) редактора изображений: страница введения"
+
+#: ../../image_editor/enhancement_tools.rst:980
+msgid ""
+"The second page allows you to customize the images corresponding to the "
+"**Input** layers. The first layer handled by the G'MIC filter is on the top "
+"of the list, the last one on the bottom."
+msgstr ""
+"Вторая страница позволяет настроить изображения, соответствующие слоям "
+"**Вход**. Первый слой, обрабатываемый фильтром G'MIC, расположен в верхней "
+"части списка, последний — в нижней."
+
+#: ../../image_editor/enhancement_tools.rst:986
+msgid "The Image Editor G'MIC-Qt (layers) Tool Input Settings Page"
+msgstr ""
+"Инструмент G'MIC-Qt (слои) редактора изображений: страница параметров ввода"
+
+#: ../../image_editor/enhancement_tools.rst:988
+msgid ""
+"The next page allows you to customize the place where the **Output** files "
+"generated by the G'MIC filter will be stored, the **File Name Template**, "
+"and the file **Image Format**. Depending on the filter selected, more than "
+"one file can be generated. In this case, an automatic index is appended to "
+"the template file name. The **JPEG** format always produces lossy compressed "
+"images in 8 bits color depth. On the other hand, choosing **PNG** or "
+"**TIFF** will support lossless compression in 16 bits color depth but files "
+"will be larger. These last options must be preferred if you work with RAW "
+"files."
+msgstr ""
+"На следующей странице можно настроить место сохранения файлов, создаваемых "
+"фильтром G'MIC (**Вывод**), **шаблон имени файла** и **формат изображения**. "
+"В зависимости от выбранного фильтра может быть создано несколько файлов. В "
+"этом случае к имени файла, заданному шаблоном, добавляется автоматический "
+"индекс. Формат **JPEG** всегда создаёт изображения со сжатием с потерями и "
+"глубиной цвета 8 бит. С другой стороны, выбор **PNG** или **TIFF** "
+"обеспечивает сжатие без потерь с глубиной цвета 16 бит, но файлы будут "
+"больше. Последние варианты предпочтительнее при работе с файлами RAW."
+
+#: ../../image_editor/enhancement_tools.rst:992
+msgid ""
+"If files with the same names already exist on the destination directory, "
+"they will be overridden."
+msgstr ""
+"Если в папке назначения уже есть файлы с такими же именами, они будут "
+"перезаписаны."
+
+#: ../../image_editor/enhancement_tools.rst:998
+msgid "The Image Editor G'MIC-Qt (layers) Tool Output Settings Page"
+msgstr ""
+"Инструмент G'MIC-Qt (слои) редактора изображений: страница параметров вывода"
+
+#: ../../image_editor/enhancement_tools.rst:1000
+msgid ""
+"The next page shows the G'MIC-Qt tool to select a filter working with "
+"layers. Not all G'MIC-Qt filters support this mode. In the example below, "
+"the **Montage** filter is used to compose a mosaic of selected images."
+msgstr ""
+"На следующей странице показан инструмент G'MIC-Qt для выбора фильтра, "
+"работающего со слоями. Не все фильтры G'MIC-Qt поддерживают этот режим. В "
+"приведённом ниже примере фильтр **Montage** используется для составления "
+"мозаики из выбранных изображений."
+
+#: ../../image_editor/enhancement_tools.rst:1006
+msgid ""
+"The Image Editor G'MIC-Qt Montage Tool Generating a Mosaic of Selected Images"
+msgstr ""
+"Фильтр Montage в инструменте G'MIC-Qt редактора изображений: создание "
+"мозаики из выбранных изображений"
+
+#: ../../image_editor/enhancement_tools.rst:1008
+msgid ""
+"Press **Next** button and the final post processing page will show the list "
+"of all tasks to complete the generated images stored in the target directory."
+msgstr ""
+"Нажмите кнопку **Далее** — на последней странице постобработки будет показан "
+"список всех задач для завершения созданных изображений, хранящихся в целевой "
+"папке."
+
+#: ../../image_editor/enhancement_tools.rst:1014
+msgid "The Image Editor G'MIC-Qt Layers Post Processing Dialog"
+msgstr "Инструмент G'MIC-Qt редактора изображений: диалог постобработки слоёв"
+
+#: ../../image_editor/enhancement_tools.rst:1016
+msgid ""
+"The target images can be visualized in image editor after closing the wizard "
+"dialog. Below you can see the **Montage** G'MIC filter result."
+msgstr ""
+"Целевые изображения показываются в редакторе изображений после закрытия "
+"диалога мастера. Ниже показан результат применения фильтра **Montage** G'MIC."
+
+#: ../../image_editor/enhancement_tools.rst:1022
+msgid "The Image Editor G'MIC-Qt Layers Post Processing Result"
+msgstr ""
+"Инструмент G'MIC-Qt (слои) редактора изображений: результат постобработки "
+"слоёв"
+
+#: ../../image_editor/enhancement_tools.rst:1026
+msgid ""
+"The G'MIC filter used in layer mode will load all necessary images in memory "
+"to be processed. Working on a large amount of files at the same time will "
+"consume a lot of RAM on your computer and can fail to achieve if your "
+"hardware have not enough free memory available."
+msgstr ""
+"Фильтр G'MIC, используемый в режиме слоёв, загружает в память все "
+"необходимые изображения для обработки. Одновременная обработка большого "
+"количества файлов потребляет много оперативной памяти и может не "
+"завершиться, если на компьютере недостаточно свободной памяти."
+
+#: ../../image_editor/enhancement_tools.rst:1030
+msgid ""
+"The **G'MIC-Qt (layers)** tool is also available by the same menu entry in "
+"**Album Icon-View** and **Light-Table**. For the first one, the stack can be "
+"prepared by selecting items from the icon-view. For the second one, the "
+"stack will correspond to the items placed in the Light-Table."
+msgstr ""
+"Инструмент **G'MIC-Qt (слои)** также доступен из того же пункта меню в "
+"**области значков альбома** и на **Световом столе**. В первом случае стек "
+"можно подготовить, выбрав элементы в области значков. Во втором случае стек "
+"будет соответствовать элементам, размещённым на световом столе."
+
+#: ../../image_editor/enhancement_tools.rst:1036
+msgid "The G'MIC-Qt Layers Tool Available from Album Icon-View"
+msgstr "Инструмент G'MIC-Qt (слои), доступный из области значков альбома"
+
+#: ../../image_editor/enhancement_tools.rst:1042
+msgid "Background Blur"
+msgstr "Размытие фона"
+
+#: ../../image_editor/enhancement_tools.rst:1047
+msgid ""
+"The Background Blur tool allows you to create a `depth-of-field effect "
+"<https://en.wikipedia.org/wiki/Depth_of_field>`_ by blurring the background "
+"of an image while keeping the subject sharp. This effect is particularly "
+"useful for portrait photography, product photography, or any situation where "
+"you want to emphasize the subject by reducing distractions in the background."
+msgstr ""
+"Инструмент «Размытие фона» позволяет создать `эффект глубины резкости "
+"<https://en.wikipedia.org/wiki/Depth_of_field>`_, размывая фон изображения и "
+"сохраняя резкость объекта съёмки. Этот эффект особенно полезен при "
+"портретной и предметной съёмке, а также в любых ситуациях, когда требуется "
+"подчеркнуть объект съёмки, уменьшив отвлекающие детали фона."
+
+#: ../../image_editor/enhancement_tools.rst:1049
+msgid ""
+"The tool uses a combination of `GrabCut Segmentation <https://en.wikipedia."
+"org/wiki/GrabCut>`_ and `Gaussian Blur <https://en.wikipedia.org/wiki/"
+"Gaussian_blur>`_ to create a professional-looking depth-of-field effect. You "
+"can control the intensity of the blur and the transition between the sharp "
+"subject and the blurred background."
+msgstr ""
+"Инструмент использует сочетание `сегментации GrabCut <https://en.wikipedia."
+"org/wiki/GrabCut>`_ и `размытия по Гауссу <https://en.wikipedia.org/wiki/"
+"Gaussian_blur>`_ для создания эффекта глубины резкости профессионального "
+"вида. Интенсивность размытия и переход между резким объектом и размытым "
+"фоном можно регулировать."
+
+#: ../../image_editor/enhancement_tools.rst:1054
+msgid "Interactive subject selection using a rectangular marquee."
+msgstr "Интерактивное выделение объекта с помощью прямоугольной рамки."
+
+#: ../../image_editor/enhancement_tools.rst:1055
+msgid ""
+"Adjustable blur radius for controlling the intensity of the background blur."
+msgstr "Настраиваемый радиус размытия, задающий интенсивность размытия фона."
+
+#: ../../image_editor/enhancement_tools.rst:1056
+msgid "Progressive blur transition for natural-looking results."
+msgstr "Постепенный переход размытия для естественного вида результата."
+
+#: ../../image_editor/enhancement_tools.rst:1057
+msgid ""
+"Adjustable number of segmentation iterations for better subject isolation "
+"accuracy."
+msgstr ""
+"Настраиваемое число итераций сегментации для повышения точности выделения "
+"объекта."
+
+#: ../../image_editor/enhancement_tools.rst:1058
+msgid "Real-time preview of the segmentation mask."
+msgstr "Предварительный просмотр маски сегментации в реальном времени."
+
+#: ../../image_editor/enhancement_tools.rst:1059
+msgid "Support for both 8-bit and 16-bit images."
+msgstr "Поддержка 8-битных и 16-битных изображений."
+
+#: ../../image_editor/enhancement_tools.rst:1060
+msgid "Non-destructive editing."
+msgstr "Неразрушающее редактирование."
+
+#: ../../image_editor/enhancement_tools.rst:1063
+msgid "Accessing the Tool"
+msgstr "Доступ к инструменту"
+
+#: ../../image_editor/enhancement_tools.rst:1065
+msgid "Open an image in the digiKam editor."
+msgstr "Откройте изображение в редакторе digiKam."
+
+#: ../../image_editor/enhancement_tools.rst:1067
+msgid "From the canvas, select a rectangle area around the subject."
+msgstr "На холсте выделите прямоугольную область вокруг объекта."
+
+#: ../../image_editor/enhancement_tools.rst:1069
+msgid "Select :menuselection:`Enhance --> Background Blur`."
+msgstr "Выберите :menuselection:`Улучшить --> Размытие фона`."
+
+#: ../../image_editor/enhancement_tools.rst:1071
+msgid "The tool interface will appear in the right sidebar."
+msgstr "Интерфейс инструмента появится на правой боковой панели."
+
+#: ../../image_editor/enhancement_tools.rst:1074
+msgid "Tool Interface"
+msgstr "Интерфейс инструмента"
+
+#: ../../image_editor/enhancement_tools.rst:1080
+msgid "Background Blur Interface"
+msgstr "Интерфейс размытия фона"
+
+#: ../../image_editor/enhancement_tools.rst:1082
+msgid "The Tool interface consists of:"
+msgstr "Интерфейс инструмента состоит из:"
+
+#: ../../image_editor/enhancement_tools.rst:1084
+msgid ""
+"**Selection Controls**: before launching the tool, use your mouse over the "
+"editor canvas to draw a rectangle around the subject you want to keep sharp. "
+"The selected area will be protected from blurring."
+msgstr ""
+"**Управление выделением**: перед запуском инструмента нарисуйте мышью на "
+"холсте редактора прямоугольник вокруг объекта, резкость которого требуется "
+"сохранить. Выделенная область не будет размыта."
+
+#: ../../image_editor/enhancement_tools.rst:1086
+msgid ""
+"**Blur Controls**: **Smoothness** controls the intensity of the background "
+"blur (1-100). **Progressive Transition** controls how gradually the blur "
+"transitions from subject to background (0-100). **Subject Isolation** "
+"controls the accuracy of the subject segmentation (1-20)."
+msgstr ""
+"**Параметры размытия**: **Размер матрицы** задаёт интенсивность размытия "
+"фона (1–100). **Прогрессивный переход** задаёт плавность перехода размытия "
+"от объекта к фону (0–100). **Изоляция объекта** задаёт точность сегментации "
+"объекта (1–20)."
+
+#: ../../image_editor/enhancement_tools.rst:1088
+msgid ""
+"**Subject Mask**: shows a real-time preview of the segmentation mask using a "
+"green overlay. It helps you verify that the subject is properly selected. "
+"This preview is zoomable using the mouse wheel or the buttons on the toolbar "
+"from the top-left corner, and allow to re-adjust the zone as desired."
+msgstr ""
+"**Маска объекта**: показывает предварительный просмотр маски сегментации в "
+"реальном времени с зелёным наложением. Это помогает проверить, что объект "
+"правильно выделен. Предварительный просмотр можно масштабировать колесом "
+"мыши или кнопками панели инструментов в левом верхнем углу; кроме того, "
+"можно заново подправить область по своему усмотрению."
+
+#: ../../image_editor/enhancement_tools.rst:1091
+msgid "Using the Tool"
+msgstr "Использование инструмента"
+
+#: ../../image_editor/enhancement_tools.rst:1093
+msgid ""
+"**Select the Subject**: click and drag to draw a rectangle around your "
+"subject. The tool will automatically create a segmentation mask."
+msgstr ""
+"**Выбор объекта**: щёлкните и перетащите, чтобы нарисовать прямоугольник "
+"вокруг объекта. Инструмент автоматически создаст маску сегментации."
+
+#: ../../image_editor/enhancement_tools.rst:1095
+msgid ""
+"**Adjust the Blur**: use the **Smoothness** slider to control the blur "
+"intensity. Higher values create a stronger blur effect. Typical values range "
+"from 5 to 20 for most images."
+msgstr ""
+"**Настройка размытия**: ползунок **Размер матрицы** управляет интенсивностью "
+"размытия. Более высокие значения создают более сильный эффект размытия. Для "
+"большинства изображений типичные значения — от 5 до 20."
+
+#: ../../image_editor/enhancement_tools.rst:1097
+msgid ""
+"**Adjust the Transition**: use the **Progressive Transition** slider to "
+"control how gradually the blur fades in. Lower values create a sharper "
+"transition between subject and background. Higher values create a more "
+"gradual transition."
+msgstr ""
+"**Настройка перехода**: ползунок **Прогрессивный переход** управляет "
+"плавностью появления размытия. Меньшие значения создают более резкий переход "
+"между объектом и фоном. Большие значения делают переход более плавным."
+
+#: ../../image_editor/enhancement_tools.rst:1099
+msgid ""
+"**Refine the Subject Isolation**: use the **Subject Isolation** slider to "
+"improve the accuracy of the subject detection and isolation. Higher values "
+"(10-20) work better for complex subjects like hair or fur. Lower values "
+"(1-5) are sufficient for simple subjects with clear edges."
+msgstr ""
+"**Уточнение изоляции объекта**: для повышения точности обнаружения и "
+"выделения объекта используйте ползунок **Изоляция объекта**. Более высокие "
+"значения (10–20) лучше подходят для сложных объектов, таких как волосы или "
+"мех. Меньших значений (1–5) достаточно для простых объектов с чёткими краями."
+
+#: ../../image_editor/enhancement_tools.rst:1101
+msgid ""
+"**Adjust the Subject Area**: use the mouse over the **Subject Mask** preview "
+"widget to zoom / pan the canvas and adjust the desired zone surrounding the "
+"subject."
+msgstr ""
+"**Настройка области объекта**: наведите указатель мыши на виджет "
+"предварительного просмотра **Маска объекта**, чтобы масштабировать и "
+"сдвигать холст и настроить нужную зону вокруг объекта."
+
+#: ../../image_editor/enhancement_tools.rst:1103
+msgid ""
+"**Preview the Result**: the green overlay shows which areas will remain "
+"sharp. Adjust your selection or parameters as needed."
+msgstr ""
+"**Предварительный просмотр результата**: зелёное наложение показывает, какие "
+"области останутся резкими. При необходимости измените выделение или "
+"параметры."
+
+#: ../../image_editor/enhancement_tools.rst:1105
+msgid ""
+"**Apply the Effect**: click **OK** to apply the effect to your image. Click "
+"**Cancel** to discard your changes."
+msgstr ""
+"**Применение эффекта**: нажмите **ОК**, чтобы применить эффект к "
+"изображению. Нажмите **Отмена**, чтобы отменить изменения."
+
+#: ../../image_editor/enhancement_tools.rst:1111
+msgid "The Mask View Allow to Edit the Rectangle Surrounding the Subject."
+msgstr "Редактирование прямоугольника вокруг объекта в режиме просмотра маски"
+
+#: ../../image_editor/enhancement_tools.rst:1120
+msgid "Parameter"
+msgstr "Параметр"
+
+#: ../../image_editor/enhancement_tools.rst:1121
+msgid "Description"
+msgstr "Описание"
+
+#: ../../image_editor/enhancement_tools.rst:1122
+msgid "Smoothness"
+msgstr "Размер матрицы"
+
+#: ../../image_editor/enhancement_tools.rst:1123
+msgid ""
+"Controls the strength of the background blur. Higher values create more "
+"pronounced blur effects."
+msgstr ""
+"Регулирует силу размытия фона. Более высокие значения создают более "
+"выраженный эффект размытия."
+
+#: ../../image_editor/enhancement_tools.rst:1124
+msgid "Progressive Transition"
+msgstr "Прогрессивный переход"
+
+#: ../../image_editor/enhancement_tools.rst:1125
+msgid ""
+"Controls how gradually the blur transitions from the subject to the "
+"background. Higher values create a more natural, gradual transition."
+msgstr ""
+"Задаёт плавность перехода размытия от объекта к фону. Более высокие значения "
+"создают более естественный, плавный переход."
+
+#: ../../image_editor/enhancement_tools.rst:1126
+msgid "Subject Isolation"
+msgstr "Изоляция объекта"
+
+#: ../../image_editor/enhancement_tools.rst:1127
+msgid ""
+"Controls the accuracy of the subject segmentation algorithm. Higher values "
+"provide better results for complex subjects but require more processing time."
+msgstr ""
+"Задаёт точность работы алгоритма сегментации объекта. Более высокие значения "
+"дают лучшие результаты для сложных объектов, но требуют больше времени на "
+"обработку."
+
+#: ../../image_editor/enhancement_tools.rst:1132
+msgid ""
+"**Subject Selection**: include a small margin around your subject in the "
+"selection. For complex subjects (like hair), use higher Iterations values "
+"(15-20). For simple subjects with clear edges, lower Iterations values "
+"(5-10) are sufficient."
+msgstr ""
+"**Выделение объекта**: включите в выделение небольшой отступ вокруг объекта. "
+"Для сложных объектов (например, волос) используйте более высокие значения "
+"параметра «Итерации» (15–20). Для простых объектов с чёткими краями "
+"достаточно меньших значений параметра «Итерации» (5–10)."
+
+#: ../../image_editor/enhancement_tools.rst:1134
+msgid ""
+"**Blur Settings**: start with a moderate **Smoothness** (around 10) and "
+"adjust as needed. Use higher **Progressive Transition** values (50-80) for "
+"more natural-looking results. For portraits, try to keep some sharpness in "
+"the edges of the subject."
+msgstr ""
+"**Параметры размытия**: начните с умеренного значения параметра **Размер "
+"матрицы** (около 10) и корректируйте по необходимости. Используйте более "
+"высокие значения параметра **Прогрессивный переход** (50–80) для более "
+"естественного вида результата. Для портретов старайтесь сохранять некоторую "
+"резкость по краям объекта."
+
+#: ../../image_editor/enhancement_tools.rst:1136
+msgid ""
+"**Image Types**: works best with images that have clear separation between "
+"subject and background. For busy backgrounds, use higher **Smoothness** "
+"values to create more separation. For portraits, position the selection to "
+"include all of the person's hair."
+msgstr ""
+"**Типы изображений**: лучше всего подходит для изображений с чётким "
+"разделением объекта и фона. Для сложных фонов используйте более высокие "
+"значения параметра **Размер матрицы**, чтобы усилить разделение. Для "
+"портретов располагайте выделение так, чтобы оно охватывало все волосы "
+"человека."
+
+#: ../../image_editor/enhancement_tools.rst:1138
+msgid ""
+"**Performance**: higher iteration values for the **Subject Isolation** "
+"require more processing time. For large images, you may need to be patient "
+"while the tool processes."
+msgstr ""
+"**Производительность**: более высокие значения итераций для параметра "
+"**Изоляция объекта** требуют больше времени обработки. Для больших "
+"изображений придётся подождать, пока инструмент завершит обработку."
+
+#: ../../image_editor/enhancement_tools.rst:1141
+msgid "Technical Details"
+msgstr "Технические подробности"
+
+#: ../../image_editor/enhancement_tools.rst:1143
+msgid "The Background Blur tool uses the following processing pipeline:"
+msgstr "Инструмент «Размытие фона» использует следующий конвейер обработки:"
+
+#: ../../image_editor/enhancement_tools.rst:1145
+msgid ""
+"**Subject Isolation**: uses OpenCV's GrabCut algorithm to separate the "
+"subject from the background. The number of iterations can be adjusted for "
+"better accuracy with complex subjects using the **Subject Isolation** "
+"parameter."
+msgstr ""
+"**Изоляция объекта**: использует алгоритм GrabCut из OpenCV для отделения "
+"объекта от фона. Число итераций настраивается для повышения точности при "
+"работе со сложными объектами с помощью параметра **Изоляция объекта**."
+
+#: ../../image_editor/enhancement_tools.rst:1147
+msgid ""
+"**Mask Refinement**: to smooth the segmentation mask, you can optionally "
+"dilates the mask to include more of the subject."
+msgstr ""
+"**Уточнение маски**: чтобы сгладить маску сегментации, можно дополнительно "
+"расширить маску, включив в неё больше частей объекта."
+
+#: ../../image_editor/enhancement_tools.rst:1149
+msgid ""
+"**Background Blurring**: applies Gaussian blur to the background while "
+"preserving the subject. Uses a distance transform to create smooth "
+"transitions between blurred and sharp areas. The blur effect is controlled "
+"by the **Smoothness** parameter."
+msgstr ""
+"**Размытие фона**: применяет гауссово размытие к фону, сохраняя резкость "
+"объекта съёмки. Использует преобразование расстояний для создания плавных "
+"переходов между размытыми и резкими областями. Эффект размытия регулируется "
+"параметром **Размер матрицы**."
+
+#: ../../image_editor/enhancement_tools.rst:1151
+msgid ""
+"**Progressive Blur**: creates a gradual transition from sharp to blurred "
+"areas. The transition effect is controlled by the **Progressive Transition** "
+"parameter."
+msgstr ""
+"**Прогрессивное размытие**: создаёт плавный переход от резких участков к "
+"размытым. Эффект перехода регулируется параметром **Прогрессивный переход**."
+
+#: ../../image_editor/enhancement_tools.rst:1154
+msgid "Limitations"
+msgstr "Ограничения"
+
+#: ../../image_editor/enhancement_tools.rst:1156
+msgid ""
+"The tool works best when there's a clear contrast between the subject and "
+"background."
+msgstr ""
+"Инструмент работает лучше всего при чётком контрасте между объектом и фоном."
+
+#: ../../image_editor/enhancement_tools.rst:1158
+msgid ""
+"Complex backgrounds with similar colors to the subject may require manual "
+"adjustments."
+msgstr ""
+"Сложный фон с цветами, близкими к цветам объекта, может потребовать ручной "
+"корректировки."
+
+#: ../../image_editor/enhancement_tools.rst:1160
+msgid ""
+"Very fine details (like individual hair strands) may not be perfectly "
+"preserved."
+msgstr ""
+"Очень мелкие детали (например, отдельные волоски) могут сохраниться не "
+"полностью."
+
+#: ../../image_editor/enhancement_tools.rst:1162
+msgid "The preview shows an approximation of the final result."
+msgstr ""
+"Предварительный просмотр показывает приблизительный конечный результат."
+
+#: ../../image_editor/enhancement_tools.rst:1171
+msgid ""
+"Screencast of the Tool to Increase the Depth-of-Field from an HEIF photo "
+"taken with an iphone 15 pro."
+msgstr ""
+"Видеозапись работы инструмента, увеличивающего глубину резкости, на "
+"фотографии HEIF, снятой на iPhone 15 Pro."
+
+#: ../../image_editor/enhancement_tools.rst:1177
+msgid "Screencast of the Tool processing a 16 bits color depth DNG image."
+msgstr ""
+"Видеозапись обработки инструментом изображения DNG с глубиной цвета 16 бит."
+
+#: ../../image_editor/enhancement_tools.rst:1180
+msgid "Advanced Usage"
+msgstr "Дополнительные возможности"
+
+#: ../../image_editor/enhancement_tools.rst:1182
+msgid "For more control over the effect:"
+msgstr "Для более точного управления эффектом:"
+
+#: ../../image_editor/enhancement_tools.rst:1184
+msgid ""
+"**Multiple Applications**: you can apply the tool multiple times with "
+"different settings. Use lower **Smoothness** values for subtle effects, "
+"higher values for dramatic effects."
+msgstr ""
+"**Многократное применение**: инструмент можно применять несколько раз с "
+"разными параметрами. Используйте меньшие значения параметра **Размер "
+"матрицы** для тонких эффектов, а большие — для выразительных."
+
+#: ../../image_editor/enhancement_tools.rst:1186
+msgid ""
+"**Combining with Other Tools**: use with the :ref:`Local Contrast "
+"<enhance_localcontrast>` tool to enhance the subject after blurring the "
+"background. Combine with the :ref:`Vignetting Correction "
+"<enhance_vignetting>` tool to further emphasize the subject."
+msgstr ""
+"**Совместное использование с другими инструментами**: применяйте вместе с "
+"инструментом :ref:`Локальный контраст <enhance_localcontrast>` для повышения "
+"выразительности объекта съёмки после размытия фона. Сочетайте с "
+"инструментом :ref:`Коррекция виньетирования <enhance_vignetting>` для "
+"дополнительного подчёркивания объекта съёмки."
+
+#: ../../image_editor/enhancement_tools.rst:1189
+msgid "Troubleshooting"
+msgstr "Устранение неполадок"
+
+#: ../../image_editor/enhancement_tools.rst:1191
+msgid ""
+"**Subject not properly detected**: try increasing the **Subject Isolation** "
+"value. Make sure your selection includes all of the subject. For complex "
+"subjects, you may need to manually adjust the selection."
+msgstr ""
+"**Объект обнаружен неправильно**: попробуйте увеличить значение параметра "
+"**Изоляция объекта**. Убедитесь, что выделение охватывает весь объект. Для "
+"сложных объектов выделение, возможно, придётся скорректировать вручную."
+
+#: ../../image_editor/enhancement_tools.rst:1193
+msgid ""
+"**Blur effect too strong/weak**: adjust the **Smoothness** parameter. For "
+"subtle effects, use lower values (3-8)."
+msgstr ""
+"**Эффект размытия слишком сильный или слабый**: настройте параметр **Размер "
+"матрицы**. Для малозаметных эффектов используйте меньшие значения (от 3 до "
+"8)."
+
+#: ../../image_editor/enhancement_tools.rst:1195
+msgid ""
+"**Unnatural transition**: increase the **Progressive Transition** value for "
+"smoother effect. Try adjusting your selection to better isolate the subject."
+msgstr ""
+"**Неестественный переход**: увеличьте значение параметра **Прогрессивный "
+"переход** для более плавного эффекта. Попробуйте скорректировать выделение, "
+"чтобы лучше отделить объект."
+
+#: ../../image_editor/enhancement_tools.rst:1197
+msgid ""
+"**Performance issues**: reduce the **Subject Isolation** value for faster "
+"processing. Note also that the tool consumes a lot of memory to work with "
+"large images."
+msgstr ""
+"**Проблемы с производительностью**: чтобы ускорить обработку, уменьшите "
+"значение параметра **Изоляция объекта**. Следует также учитывать, что при "
+"работе с большими изображениями инструмент потребляет много памяти."
+
+#: ../../image_editor/enhancement_tools.rst:1202
+msgid ":ref:`Local Contrast <enhance_localcontrast>`"
+msgstr ":ref:`Локальный контраст <enhance_localcontrast>`"
+
+#: ../../image_editor/enhancement_tools.rst:1204
+msgid ":ref:`Vignetting Correction <enhance_vignetting>`"
+msgstr ":ref:`Коррекция виньетирования <enhance_vignetting>`"

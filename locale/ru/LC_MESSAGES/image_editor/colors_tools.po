@@ -1,0 +1,1833 @@
+# Translation of docs_digikam_org_image_editor___colors_tools into Russian.
+# Copyright (C) Licensed under the terms of the <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">GNU Free Documentation License 1.2+</a> unless stated otherwise
+# This file is distributed under the same license as the Digikam Manual package.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: docs_digikam_org_image_editor___colors_tools\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-08 02:04+0000\n"
+"PO-Revision-Date: 2026-10-10 19:04+0200\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: ../../image_editor/colors_tools.rst:-1
+msgid "digiKam Image Editor Colors Tools"
+msgstr "Инструменты цвета в редакторе изображений digiKam"
+
+#: ../../image_editor/colors_tools.rst:-1
+msgid ""
+"digiKam, documentation, user manual, photo management, open source, free, "
+"learn, easy, image, editor, color, depth, space, correction, auto, black, "
+"white, filters, emulation, infrared, invert, negative, balance, curves, "
+"levels, hue, saturation, lightness, channel, mixer"
+msgstr ""
+"digiKam, документация, руководство пользователя, управление фотографиями, "
+"открытый исходный код, свободное ПО, обучение, просто, изображение, "
+"редактор, цвет, глубина, пространство, коррекция, автоматически, чёрный, "
+"белый, фильтры, эмуляция, инфракрасный, инверсия, негатив, баланс, кривые, "
+"уровни, тон, насыщенность, светлота, канал, микширование"
+
+#: ../../image_editor/colors_tools.rst:14
+msgid ":ref:`Color Tools <image_editor>`"
+msgstr ":ref:`Инструменты цвета <image_editor>`"
+
+#: ../../image_editor/colors_tools.rst:16
+msgid "Contents"
+msgstr "Содержание"
+
+#: ../../image_editor/colors_tools.rst:21
+msgid "Encoding Depth"
+msgstr "Глубина кодирования"
+
+#: ../../image_editor/colors_tools.rst:23
+msgid ""
+"The digiKam **Convert to 8 bits** and **Convert to 16 bits** tools allow you "
+"to change the encoding depth per color channel of the edited image. 8-bit "
+"encoding is the common JPEG format, 16-bit encoding is better suited for "
+"high quality images, but this format uses more storage space and calculation "
+"time. 16-bit encoding is currently available only with PNG, PGF, TIFF, and "
+"JPEG-2000 formats. There are no parameters to adjust for either of these "
+"tools, so no dialog appears."
+msgstr ""
+"Инструменты digiKam **Преобразовать в 8 бит** и **Преобразовать в 16 бит** "
+"позволяют изменить глубину кодирования каждого цветового канала "
+"редактируемого изображения. 8-битное кодирование — это обычный формат JPEG, "
+"16-битное кодирование лучше подходит для изображений высокого качества, но "
+"этот формат требует больше места для хранения и времени вычислений. 16-"
+"битное кодирование в настоящее время доступно только для форматов PNG, PGF, "
+"TIFF и JPEG-2000. Ни один из этих инструментов не имеет параметров для "
+"настройки, поэтому диалог не показывается."
+
+#: ../../image_editor/colors_tools.rst:27
+msgid ""
+"When you re-encoding an image from 8-bit to 16-bit, uniformly distributed "
+"noise is introduced to prevent histogram holes due to color range expansion."
+msgstr ""
+"При перекодировании изображения из 8-битного в 16-битное вносится равномерно "
+"распределённый шум, чтобы из-за расширения цветового диапазона не появлялись "
+"пустоты в гистограмме."
+
+#: ../../image_editor/colors_tools.rst:31
+msgid ""
+"HEIF, AVIF, JPX formats can encode as 8 bits or 12 bits. WEBP is limited to "
+"8 bits. These limitations may change in the future."
+msgstr ""
+"Форматы HEIF, AVIF и JPX позволяют кодировать с разрядностью 8 или 12 бит. "
+"Формат WEBP ограничен 8 битами. В будущем эти ограничения могут измениться."
+
+#: ../../image_editor/colors_tools.rst:36
+msgid "Color Space Converter"
+msgstr "Преобразование цветового пространства"
+
+#: ../../image_editor/colors_tools.rst:38
+msgid ""
+"The digiKam **Color Space Converter** tool allows you to convert an image "
+"from one color space to another. You can also use it to assign a color "
+"profile to an image. For detailed instructions on the use of color profiles, "
+"please refer to the :ref:`Color Management <color_management>` and :ref:"
+"`Color Management Settings <cm_settings>` sections of the manual."
+msgstr ""
+"Инструмент **преобразования цветового пространства** digiKam позволяет "
+"преобразовать изображение из одного цветового пространства в другое. Также с "
+"его помощью можно назначить изображению цветовой профиль. Подробные указания "
+"по использованию цветовых профилей приведены в разделах :ref:`Управление "
+"цветом <color_management>` и :ref:`Параметры управления цветом "
+"<cm_settings>` руководства."
+
+#: ../../image_editor/colors_tools.rst:44
+msgid "The Image Editor Color Space Converter Tool"
+msgstr "Инструмент преобразования цветового пространства редактора изображений"
+
+#: ../../image_editor/colors_tools.rst:49
+msgid "Color Auto-Correction"
+msgstr "Автокоррекция цвета"
+
+#: ../../image_editor/colors_tools.rst:51
+msgid ""
+"The digiKam **Color Auto-Correction** tool allows you to apply one of five "
+"automatic corrections that will in most cases improve an image. You may want "
+"to apply this tool before making more detailed manual adjustments."
+msgstr ""
+"Инструмент **автоматической коррекции цвета** digiKam позволяет применить "
+"одну из пяти автоматических коррекций, которые в большинстве случаев "
+"улучшают изображение. Этот инструмент рекомендуется применить до более "
+"детальной ручной настройки."
+
+#: ../../image_editor/colors_tools.rst:53
+msgid ""
+"The **Auto Levels**, **Normalize**, **Equalize**, **Stretch Contrast**, and "
+"**Auto Exposure** available from :menuselection:`Color --> Auto-Correction..."
+"` menu entry menu will attempt to work out the best color levels "
+"automatically. You will need to experiment with the effects of these "
+"functions to see what works best with your photograph."
+msgstr ""
+"Инструменты **Автоматические уровни**, **Нормализация**, **Выравнивание "
+"распределения цветов**, **Растяжение контрастности** и **Автоэкспозиция**, "
+"доступные в меню :menuselection:`Цвет --> Автокоррекция...`, попытаются "
+"автоматически подобрать оптимальные уровни цвета. Чтобы выяснить, что лучше "
+"подходит для конкретной фотографии, придётся поэкспериментировать с "
+"действием этих функций."
+
+#: ../../image_editor/colors_tools.rst:55
+msgid ""
+"**Auto Levels**: This option maximizes the tonal range in the Red, Green, "
+"and Blue channels. It searches the image shadow and highlight limit values "
+"and adjusts the Red, Green, and Blue channels to a full histogram range."
+msgstr ""
+"**Автоматические уровни**: этот параметр максимизирует тональный диапазон в "
+"красном, зелёном и синем каналах. Он ищет предельные значения теней и светов "
+"изображения и приводит красный, зелёный и синий каналы к полному диапазону "
+"гистограммы."
+
+#: ../../image_editor/colors_tools.rst:57
+msgid ""
+"**Normalize**: This option scales brightness values across the selected "
+"image so that the darkest point becomes black, and the brightest point "
+"becomes as bright as possible without altering its hue. This is often a "
+"\"magic fix\" for images that are dim or washed out."
+msgstr ""
+"**Нормализация**: этот параметр масштабирует значения яркости всего "
+"выбранного изображения так, чтобы самая тёмная точка стала чёрной, а самая "
+"светлая — настолько светлой, насколько возможно, без изменения тона. Это "
+"часто «волшебное исправление» для тусклых или выцветших изображений."
+
+#: ../../image_editor/colors_tools.rst:59
+msgid ""
+"**Equalize**: This option adjusts the brightness of colors across the "
+"selected image so that the histogram for the Value channel is as flat as "
+"possible, that is, so that each possible brightness value appears in about "
+"the same number of pixels as each other value. Sometimes Equalize works "
+"wonderfully at enhancing the contrast of an image. Other times it gives "
+"garbage. It is a very powerful operation, which can either work miracles on "
+"an image or ruin it."
+msgstr ""
+"**Выравнивание распределения цветов**: этот параметр изменяет яркость цветов "
+"на всём выбранном изображении так, чтобы гистограмма канала «Значение» была "
+"как можно более плоской, то есть чтобы каждое возможное значение яркости "
+"встречалось примерно в одинаковом числе пикселей. Иногда выравнивание "
+"отлично повышает контраст изображения. В других случаях получается мусор. "
+"Это очень мощная операция, способная либо сотворить с изображением чудо, "
+"либо испортить его."
+
+#: ../../image_editor/colors_tools.rst:61
+msgid ""
+"**Stretch Contrast**: This option enhances the contrast and brightness of "
+"the RGB values of an image by stretching the lowest and highest values to "
+"their fullest range, adjusting everything in between. This is noticeable "
+"only with washed-out images and can be a good fix-it tool for bad "
+"photographs."
+msgstr ""
+"**Растяжение контрастности**: этот параметр повышает контраст и яркость "
+"значений RGB изображения, растягивая наименьшее и наибольшее значения до "
+"полного диапазона и подстраивая все промежуточные значения. Заметно это "
+"только на блёклых изображениях, и такой приём хорошо подходит для "
+"исправления неудачных фотографий."
+
+#: ../../image_editor/colors_tools.rst:63
+msgid ""
+"**Auto Exposure**: This option enhances the contrast and brightness of the "
+"RGB values of an image to calculate optimal exposure and black level using "
+"image histogram properties."
+msgstr ""
+"**Автоэкспозиция**: этот параметр повышает контраст и яркость значений RGB "
+"изображения для расчёта оптимальной экспозиции и уровня чёрного с "
+"использованием свойств гистограммы изображения."
+
+#: ../../image_editor/colors_tools.rst:65
+msgid ""
+"The results of any adjustments you make will not be saved until you save "
+"your photograph."
+msgstr ""
+"Результаты любых изменений не сохранятся, пока не будет сохранена фотография."
+
+#: ../../image_editor/colors_tools.rst:71
+msgid "The Image Editor to Color Auto-Correction Tool"
+msgstr "Инструмент автокоррекции цвета редактора изображений"
+
+#: ../../image_editor/colors_tools.rst:74
+msgid "Black & White"
+msgstr "Обесцвечивание"
+
+#: ../../image_editor/colors_tools.rst:76
+msgid ""
+"The digiKam **Black & White** tool converts your color images to beautiful "
+"black & white. Black & white photography has always been fascinating because "
+"of its abstract nature. With the advent of digital photography, black & "
+"white has almost become a desktop activity, as color images can be easily "
+"converted on the computer into black & white. digiKam even provides a set of "
+"vintage film roll profiles to make your images look like monochrome film. "
+"This filter is also able to simulate traditional infrared film material."
+msgstr ""
+"Инструмент **Обесцвечивание** digiKam преобразует цветные изображения в "
+"красивые чёрно-белые. Чёрно-белая фотография всегда завораживала своей "
+"абстрактностью. С появлением цифровой фотографии чёрно-белое стало почти "
+"занятием за компьютером, поскольку цветные изображения легко преобразуются в "
+"чёрно-белые. digiKam даже предоставляет набор профилей старинной фотоплёнки, "
+"позволяющих придать изображениям вид монохромной плёнки. Этот фильтр также "
+"позволяет имитировать традиционные инфракрасные фотоматериалы."
+
+#: ../../image_editor/colors_tools.rst:81
+msgid "Legacy Film Emulation"
+msgstr "Имитация устаревшей плёнки"
+
+#: ../../image_editor/colors_tools.rst:83
+msgid ""
+"digiKam comes with a couple of black & white filters that you can apply to "
+"your photographs to achieve that classic black & white chemical toning from "
+"film photography. The controls come on four drop-down items: **Film**, "
+"**Lens Filters**, **Tone** and **Luminosity** as shown on the screenshot "
+"below. Film, filters and color toning can be applied independently of each "
+"other, which means they can be used in combination. The filters actually "
+"influence the RGB channel mixing, whereas the toning adds a uniform "
+"monochromatic tint to the black & white photograph. In the lightness tab you "
+"will find a tonal adjustment tool (like curve adjust), a contrast tool and "
+"an over-exposure indicator to improve the black & white rendering."
+msgstr ""
+"В digiKam есть несколько чёрно-белых фильтров, которые можно применить к "
+"фотографиям, чтобы получить классическое чёрно-белое химическое тонирование, "
+"характерное для плёночной фотографии. Управление выполняется с помощью "
+"четырёх раскрывающихся списков: **Плёнка**, **Светофильтр**, **Окрашивание** "
+"и **Яркость**, как показано на снимке экрана ниже. Плёнку, фильтры и "
+"тонирование цвета можно применять независимо друг от друга, то есть в "
+"сочетании. Фильтры влияют на микширование каналов RGB, тогда как тонирование "
+"добавляет чёрно-белой фотографии однородный монохромный оттенок. На вкладке "
+"яркости находятся инструмент тональной настройки (например, настройка "
+"кривых), инструмент контраста и индикатор переэкспонирования, улучшающие "
+"передачу чёрно-белого изображения."
+
+#: ../../image_editor/colors_tools.rst:89
+msgid "The Image Editor Black and White Tool"
+msgstr "Инструмент обесцвечивания редактора изображений"
+
+#: ../../image_editor/colors_tools.rst:91
+msgid ""
+"The **Film** setting allows you to emulate a number of famous black & white "
+"photographic films such as:"
+msgstr ""
+"Параметр **Плёнка** позволяет эмулировать ряд известных чёрно-белых "
+"фотоплёнок, таких как:"
+
+#: ../../image_editor/colors_tools.rst:93
+msgid "**Generic**."
+msgstr "**Обычный**."
+
+#: ../../image_editor/colors_tools.rst:94
+msgid "**Agfa**: 200X, Pan 25, Pan 100, Pan 400."
+msgstr "**Agfa**: 200X, Pan 25, Pan 100, Pan 400."
+
+#: ../../image_editor/colors_tools.rst:95
+msgid ""
+"**Ilford**: Delta 100, Delta 400, Delta 400 Pro 3200, FP4 Plus, HP5 Plus, "
+"PanF Plus, XP2 Super."
+msgstr ""
+"**Ilford**: Delta 100, Delta 400, Delta 400 Pro 3200, FP4 Plus, HP5 Plus, "
+"PanF Plus, XP2 Super."
+
+#: ../../image_editor/colors_tools.rst:96
+msgid "**Kodak**: Tmax 100, Tmax 400, TriX."
+msgstr "**Kodak**: Tmax 100, Tmax 400, TriX."
+
+#: ../../image_editor/colors_tools.rst:98
+msgid ""
+"With **Lens Filters** setting, the effect of a color filter placed in front "
+"of lens can be simulated:"
+msgstr ""
+"С помощью параметра **Светофильтр** можно имитировать эффект цветного "
+"фильтра, установленного перед объективом:"
+
+#: ../../image_editor/colors_tools.rst:100
+msgid "**No Lens Filter**: simulate black & white neutral film exposure."
+msgstr ""
+"**Без светофильтра**: имитирует экспозицию нейтральной чёрно-белой плёнки."
+
+#: ../../image_editor/colors_tools.rst:101
+msgid ""
+"**Green Filter**: simulates black & white film exposure with green lens "
+"filter. This will enhance all scenic images, and is especially suited for "
+"portraits taken against the sky (similar to 004 Cokin(tm) Green filter)."
+msgstr ""
+"**Зелёный фильтр**: имитирует экспонирование чёрно-белой плёнки с зелёным "
+"светофильтром. Это улучшает все пейзажные снимки и особенно подходит для "
+"портретов, снятых на фоне неба (аналогично зелёному светофильтру 004 "
+"Cokin(tm))."
+
+#: ../../image_editor/colors_tools.rst:102
+msgid ""
+"**Orange Filter**: simulates black & white film exposure with an orange lens "
+"filter. This will enhance landscapes, marine scenes and aerial photography "
+"(similar to 002 Cokin(tm) Orange filter)."
+msgstr ""
+"**Оранжевый фильтр**: имитирует экспозицию чёрно-белой плёнки через "
+"оранжевый светофильтр. Это подчеркнёт пейзажи, морские виды и аэрофотосъёмку "
+"(аналогично оранжевому светофильтру Cokin(tm) 002)."
+
+#: ../../image_editor/colors_tools.rst:103
+msgid ""
+"**Red Filter**: simulates black & white film exposure with red lens filter. "
+"Creates dramatic sky effects and can simulate moonlight scenes in daytime "
+"(similar to 003 Cokin(tm) Red filter)."
+msgstr ""
+"**Красный фильтр**: имитирует экспозицию чёрно-белой плёнки с красным "
+"светофильтром. Создаёт выразительные эффекты на небе и позволяет имитировать "
+"лунные пейзажи при дневном свете (аналогично красному фильтру 003 Cokin(tm))."
+
+#: ../../image_editor/colors_tools.rst:104
+msgid ""
+"**Yellow Filter**: simulates black & white film exposure with yellow lens "
+"filter. Provides most natural tonal correction, and improves contrast. Ideal "
+"for landscapes (similar to 001 Cokin(tm) Yellow filter)."
+msgstr ""
+"**Жёлтый фильтр**: имитирует экспозицию чёрно-белой плёнки с жёлтым "
+"светофильтром. Обеспечивает наиболее естественную коррекцию тона и повышает "
+"контраст. Идеален для пейзажей (аналогичен жёлтому светофильтру 001 "
+"Cokin(tm))."
+
+#: ../../image_editor/colors_tools.rst:106
+msgid "The **Tone** setting applies a color tint to the image:"
+msgstr "Параметр **Окрашивание** накладывает на изображение цветовой оттенок:"
+
+#: ../../image_editor/colors_tools.rst:108
+msgid ""
+"**Sepia Filter**: gives a warm highlight and mid-tone while adding a bit of "
+"coolness to the shadows - very similar to the process of bleaching a print "
+"and re-developing in a sepia toner (typical for your grandmother's "
+"photographs). Similar to 005 Cokin(tm) Sepia filter."
+msgstr ""
+"**Сепия**: придаёт тёплый оттенок светам и полутонам, одновременно добавляя "
+"немного холодности теням — очень похоже на процесс отбеливания отпечатка и "
+"повторного проявления в сепийном тонере (типично для бабушкиных фотографий). "
+"Аналогичен фильтру Sepia 005 Cokin(tm)."
+
+#: ../../image_editor/colors_tools.rst:109
+msgid "**Brown Filter**: similar to Sepia Tone filter, but less pronounced."
+msgstr "**Коричневый фильтр**: аналогичен фильтру «Сепия», но менее выражен."
+
+#: ../../image_editor/colors_tools.rst:110
+msgid ""
+"**Cold Filter**: start subtle and replicate printing on a cold tone black & "
+"white paper such as a bromide enlarging paper."
+msgstr ""
+"**Холодный фильтр**: начинает с едва заметного эффекта и воспроизводит "
+"печать на холодной чёрно-белой бумаге, например на бромосеребряной "
+"фотобумаге для увеличения."
+
+#: ../../image_editor/colors_tools.rst:111
+msgid ""
+"**Selenium Filter**: effect that replicates traditional selenium chemical "
+"toning done in the darkroom."
+msgstr ""
+"**Селеновый фильтр**: эффект, воспроизводящий традиционное химическое "
+"тонирование селеном, выполняемое в фотолаборатории."
+
+#: ../../image_editor/colors_tools.rst:112
+msgid ""
+"**Platinum Filter**: effect that replicates traditional platinum chemical "
+"toning done in the darkroom."
+msgstr ""
+"**Платиновый фильтр**: эффект, воспроизводящий традиционное химическое "
+"платиновое тонирование, выполняемое в фотолаборатории."
+
+#: ../../image_editor/colors_tools.rst:117
+msgid "Simulate Infrared Film"
+msgstr "Имитация инфракрасной плёнки"
+
+#: ../../image_editor/colors_tools.rst:119
+msgid ""
+"Simulating classical infrared film material (the effect is rendered in black "
+"and white) is an interesting alien-like effect that is even stronger and "
+"more dramatic than pure black and white conversion. It is like taking an "
+"image in black and white with a red filter on the camera lens. Areas which "
+"reflect little red light, e.g. the sky, will show as low density, dark "
+"areas. Areas which are excellent reflectors of red light, e.g. most green "
+"foliage, will be high density areas. And snow landscapes become really "
+"dramatic."
+msgstr ""
+"Имитация классических инфракрасных фотоматериалов (эффект передаётся в чёрно-"
+"белом виде) — интересный, неземной эффект, который даже сильнее и "
+"выразительнее простого преобразования в чёрно-белое. Это как съёмка в чёрно-"
+"белом с красным светофильтром на объективе. Области, слабо отражающие "
+"красный свет, например небо, будут выглядеть как тёмные участки низкой "
+"плотности. Области, хорошо отражающие красный свет, например большинство "
+"зелёной листвы, будут участками высокой плотности. А заснеженные пейзажи "
+"становятся по-настоящему выразительными."
+
+#: ../../image_editor/colors_tools.rst:125
+msgid "Using the Image Editor Black & White Tool to Emulate Infrared Films"
+msgstr ""
+"Использование инструмента обесцвечивания редактора изображений для имитации "
+"инфракрасных плёнок"
+
+#: ../../image_editor/colors_tools.rst:127
+msgid ""
+"The filter tries to reproduce the famous Ilford(tm) SFX and Kodak Tmax "
+"infrared film series. These films had a sensitivity range of 200-800 ISO:"
+msgstr ""
+"Фильтр пытается воспроизвести известные серии инфракрасных плёнок Ilford(tm) "
+"SFX и Kodak Tmax. Эти плёнки имели диапазон светочувствительности 200–800 "
+"ISO:"
+
+#: ../../image_editor/colors_tools.rst:129
+msgid "**Ilford**: SPX 200, SPX 400, SPX 800."
+msgstr "**Ilford**: SPX 200, SPX 400, SPX 800."
+
+#: ../../image_editor/colors_tools.rst:130
+msgid "**Kodak**: HIE."
+msgstr "**Kodak**: HIE."
+
+#: ../../image_editor/colors_tools.rst:134
+msgid ""
+"Because the filter mixes color channels to reproduce infrared film (with "
+"emphasis on the green channel), one cannot simulate the infrared effect from "
+"a Black & White original photograph -- the key color information is missing."
+msgstr ""
+"Поскольку фильтр смешивает цветовые каналы для воспроизведения инфракрасной "
+"плёнки (с акцентом на зелёный канал), имитировать инфракрасный эффект по "
+"исходному чёрно-белому снимку невозможно — ключевая цветовая информация "
+"отсутствует."
+
+#: ../../image_editor/colors_tools.rst:139
+msgid "Invert"
+msgstr "Инвертировать"
+
+#: ../../image_editor/colors_tools.rst:141
+msgid ""
+"The digiKam **Invert** tool, inverts an image as if it was a color negative. "
+"While digiKam is first and foremost an application for processing and "
+"organizing digital photos, it also features tools for working with `film "
+"negatives <https://en.wikipedia.org/wiki/Negative_(photography)>`_."
+msgstr ""
+"Инструмент **Инвертировать** digiKam инвертирует изображение, как если бы "
+"это был цветной негатив. Хотя digiKam — это прежде всего приложение для "
+"обработки и организации цифровых фотографий, в нём также есть инструменты "
+"для работы с `негативами фотоплёнки <https://en.wikipedia.org/wiki/"
+"Negative_(photography)>`_."
+
+#: ../../image_editor/colors_tools.rst:143
+msgid ""
+"Before you can process negatives in digiKam, you need to digitize them. If "
+"you don't have access to a film scanner or a lab that offers film scanning "
+"services, you can digitize film using a DSLR camera (there are plenty of "
+"tutorials on how to do this on the Web, such as `this one <https://petapixel."
+"com/2013/03/25/digitizing-your-film-using-your-dslr/>`_)."
+msgstr ""
+"Прежде чем обрабатывать негативы в digiKam, их нужно оцифровать. Если нет "
+"доступа к сканеру для плёнки или к лаборатории, предоставляющей услуги "
+"сканирования плёнки, плёнку можно оцифровать с помощью цифровой зеркальной "
+"камеры (в Интернете есть множество руководств о том, как это сделать, "
+"например `это руководство <https://petapixel.com/2013/03/25/digitizing-your-"
+"film-using-your-dslr/>`_)."
+
+#: ../../image_editor/colors_tools.rst:145
+msgid ""
+"When color film negatives are digitized, the colors will appear inverted "
+"compared to reality. This tool allows you to reverse the colors into their "
+"respective `complementary colors <https://en.wikipedia.org/wiki/"
+"Complementary_colors>`_. Complementary colors appear opposite each other on "
+"a color wheel: cyan as the opposite color of red, yellow as opposite color "
+"for blue, and magenta as the opposite color of green."
+msgstr ""
+"При оцифровке цветных плёночных негативов цвета выглядят инвертированными по "
+"сравнению с реальностью. Этот инструмент позволяет преобразовать цвета в "
+"соответствующие им `дополнительные цвета <https://en.wikipedia.org/wiki/"
+"Complementary_colors>`_. Дополнительные цвета располагаются друг напротив "
+"друга на цветовом круге: голубой — напротив красного, жёлтый — напротив "
+"синего, пурпурный — напротив зелёного."
+
+#: ../../image_editor/colors_tools.rst:147
+msgid ""
+"The **Invert** tool flips these colors, and inverts luminosity so dark areas "
+"become bright and bright areas become dark. This is basically the same "
+"process that occurs when light shines through a color negative to produce a "
+"positive print."
+msgstr ""
+"Инструмент **Инвертировать** обращает эти цвета и инвертирует светлоту, так "
+"что тёмные области становятся светлыми, а светлые — тёмными. По сути, это "
+"тот же процесс, что происходит, когда свет проходит сквозь цветной негатив, "
+"давая позитивный отпечаток."
+
+#: ../../image_editor/colors_tools.rst:149
+msgid ""
+"The simplest way to process a digitized negative in digiKam is to open the "
+"RAW file containing the film negative in the editor. Crop the original file "
+"and if necessary apply a lens correction. Choose :menuselection:`Color --> "
+"Invert` to transform the negative into a positive image. While the converted "
+"image is now positive, it most likely requires some additional tweaking. "
+"First of all, the converted image is likely to have a strong blue tint. The "
+"easiest way to remove it is to use digiKam’s **Auto-Correction** tool. "
+"Choose :menuselection:`Color --> Auto-Correction` and select one of the "
+"presets. In many cases, the **Auto Levels** or **Equalize** presets do a "
+"decent job of correcting the colors. If the colors still look slightly off, "
+"you can adjust them further using the :menuselection:`Colors --> Color "
+"Balance` tool."
+msgstr ""
+"Самый простой способ обработки оцифрованного негатива в digiKam — открыть в "
+"редакторе файл RAW, содержащий плёночный негатив. Обрежьте исходный файл и "
+"при необходимости примените коррекцию объектива. Выберите :menuselection:"
+"`Цвет --> Негатив`, чтобы преобразовать негатив в позитивное изображение. "
+"Хотя преобразованное изображение стало позитивным, скорее всего, потребуется "
+"дополнительная настройка. Прежде всего, у преобразованного изображения, "
+"вероятно, будет сильный синий оттенок. Проще всего устранить его с помощью "
+"инструмента **Автокоррекция цвета** digiKam. Воспользуйтесь :menuselection:"
+"`Цвет --> Автокоррекция` и выберите одну из предустановок. Во многих случаях "
+"предустановки **Автоматические уровни** или **Выравнивание распределения "
+"цветов** неплохо справляются с коррекцией цветов. Если цвета всё ещё "
+"выглядят не совсем верно, их можно дополнительно скорректировать с помощью "
+"инструмента :menuselection:`Цвет --> Баланс цвета`."
+
+#: ../../image_editor/colors_tools.rst:154
+msgid "Color Negative"
+msgstr "Цветной негатив"
+
+#: ../../image_editor/colors_tools.rst:160
+msgid "The Color Negative Tool"
+msgstr "Инструмент «Цветной негатив»"
+
+#: ../../image_editor/colors_tools.rst:162
+msgid ""
+"The digiKam **Color Negative** tool is an even more powerful tool "
+"specifically for processing color negatives. The Color Negative interface "
+"contains several handy features that can help you to convert the negative to "
+"a positive and tweak the resulting image. While the **Invert** tool uses a "
+"generic profile for converting negatives, the Color Negative interface "
+"offers profiles for many popular film types. So the first step is to select "
+"the appropriate profile. For better results, try also enabling the **Color "
+"Balance** option. If the film is not in the list, you can default to the "
+"**Neutral** profile."
+msgstr ""
+"Инструмент **Цветной негатив** digiKam обладает ещё большими возможностями и "
+"специально предназначен для обработки цветных негативов. Интерфейс «Цветной "
+"негатив» содержит несколько удобных функций, помогающих преобразовать "
+"негатив в позитив и скорректировать полученное изображение. В то время как "
+"инструмент **Инвертировать** использует обобщённый профиль для "
+"преобразования негативов, интерфейс «Цветной негатив» предлагает профили для "
+"многих популярных типов плёнки. Поэтому сначала нужно выбрать подходящий "
+"профиль. Для лучших результатов рекомендуется также включить параметр "
+"**Баланс цвета**. Если нужной плёнки нет в списке, можно использовать "
+"профиль **Нейтральный**."
+
+#: ../../image_editor/colors_tools.rst:164
+msgid ""
+"Although choosing the matching film profile may yield a better result, the "
+"converted image may still require some work. In most cases, you may need to "
+"adjust the white point to remove the remaining blue tint. You can do this "
+"either manually or automatically using the appropriate tools. Usually, the "
+"automatic white point adjustment does the job, but the resulting image may "
+"also need to be brightened up by adjusting the **Exposure** and the "
+"**Gamma** sliders."
+msgstr ""
+"Хотя выбор подходящего профиля плёнки может дать лучший результат, "
+"преобразованное изображение может потребовать дополнительной обработки. В "
+"большинстве случаев может понадобиться настроить белую точку, чтобы убрать "
+"оставшийся синий оттенок. Это можно сделать вручную или автоматически с "
+"помощью подходящих инструментов. Обычно автоматическая настройка белой точки "
+"справляется с задачей, но полученное изображение может также потребовать "
+"повышения яркости с помощью ползунков **Экспозиция** и **Гамма**."
+
+#: ../../image_editor/colors_tools.rst:169
+msgid "Color Balance"
+msgstr "Баланс цвета"
+
+#: ../../image_editor/colors_tools.rst:171
+msgid ""
+"The digiKam **Color Balance** tool allows you to adjust the individual color "
+"channels in an image. This tool can be used to correct for a color tint in "
+"an image. You can see any adjustments you make reflected in the preview "
+"image."
+msgstr ""
+"Инструмент **баланса цвета** digiKam позволяет настроить отдельные цветовые "
+"каналы изображения. Этот инструмент можно использовать для коррекции "
+"цветового оттенка изображения. Все вносимые изменения отражаются в окне "
+"предварительного просмотра."
+
+#: ../../image_editor/colors_tools.rst:177
+msgid "The Image Editor Color Balance Tool"
+msgstr "Инструмент цветового баланса редактора изображений"
+
+#: ../../image_editor/colors_tools.rst:179
+msgid ""
+"When you are happy with the results, press OK and the changes will take "
+"effect."
+msgstr "Если результаты устраивают, нажмите «ОК» — изменения вступят в силу."
+
+#: ../../image_editor/colors_tools.rst:185
+msgid "Curves Adjust"
+msgstr "Корректировка кривых"
+
+#: ../../image_editor/colors_tools.rst:187
+msgid ""
+"The digiKam **Curves Adjust** tool is used to apply non-linearly adjustments "
+"to luminosity and color channels."
+msgstr ""
+"Инструмент **Корректировка кривых** digiKam применяется для нелинейной "
+"коррекции каналов светлоты и цвета."
+
+#: ../../image_editor/colors_tools.rst:189
+msgid ""
+"The Curves Adjust tool is the most sophisticated tool available to adjust an "
+"image's tonality. Start by selecting :menuselection:`Color --> Curves "
+"Adjust...` from the Image Editor menu. The tool allows you to click and drag "
+"control points on a curve to create a smooth function that maps input "
+"brightness levels to output brightness levels. The Adjust Curves tool can "
+"replicate any effect you can achieve with **Brightness/Contrast/Gamma** or "
+"the **Adjust Levels** tool, though it is more powerful than either one of "
+"them. But this tool can do more for you -- it can also help you to improve "
+"the tonal quality of your photographs to reproduce very finely stepped gray "
+"scales. And do not forget that the better the photographs are (good "
+"exposure, lossless format, 24 or 32-bit depth) the more you can improve them."
+msgstr ""
+"Инструмент «Корректировка кривых» — самый совершенный инструмент для "
+"настройки тональности изображения. Начните с выбора пункта :menuselection:"
+"`Цвет --> Корректировка кривых...` в меню редактора изображений. Инструмент "
+"позволяет перетаскивать мышью опорные точки на кривой, создавая плавную "
+"функцию, которая сопоставляет уровни входной яркости с уровнями выходной "
+"яркости. Инструмент «Корректировка кривых» может воспроизвести любой эффект, "
+"достижимый с помощью **Яркость/контрастность/гамма** или инструмента "
+"**Изменение уровней**, хотя он мощнее любого из них. Но этот инструмент "
+"способен на большее — он также помогает улучшить тональное качество "
+"фотографий, чтобы воспроизвести очень плавные градации серого. И не "
+"забывайте: чем лучше фотографии (хорошая экспозиция, формат без потерь, 24- "
+"или 32-битная глубина), тем больше их можно улучшить."
+
+#: ../../image_editor/colors_tools.rst:191
+msgid ""
+"To learn more about the power of the Curves Adjust tool to improve your "
+"photographs, we recommend you read the article `Tonal quality and dynamic "
+"range in digital cameras <http://www.normankoren.com/digital_tonality."
+"html>`_ by Norman Koren. The section entitled \"Achieving ultimate tonal "
+"quality\" is particularly informative."
+msgstr ""
+"Чтобы узнать больше о возможностях инструмента корректировки кривых по "
+"улучшению фотографий, рекомендуется прочитать статью `Tonal quality and "
+"dynamic range in digital cameras <http://www.normankoren.com/"
+"digital_tonality.html>`_ (автор — Norman Koren). Особенно информативен "
+"раздел «Достижение предельного тонального качества»."
+
+#: ../../image_editor/colors_tools.rst:193
+msgid ""
+"The Curves Adjust tool remaps the intensity values of the specified channel "
+"based on an adjustable nonlinear curve. The tool displays two histograms: "
+"the histogram of the original image is shown on the bottom, and the "
+"histogram of the output image, after remapping, is shown on the top. The "
+"adjustable nonlinear curve used to remap the data is overplotted on the "
+"lower histogram as a blue curve with red control points."
+msgstr ""
+"Инструмент «Корректировка кривых» пересчитывает значения интенсивности "
+"указанного канала на основе настраиваемой нелинейной кривой. Инструмент "
+"показывает две гистограммы: гистограмма исходного изображения показывается "
+"внизу, а гистограмма выходного изображения после пересчёта — вверху. "
+"Настраиваемая нелинейная кривая, используемая для пересчёта данных, "
+"наносится поверх нижней гистограммы в виде синей кривой с красными "
+"контрольными точками."
+
+#: ../../image_editor/colors_tools.rst:195
+msgid ""
+"In **Curve smooth mode**, you change the curve's shape by adding or deleting "
+"control points from the curve, or by moving the control points, including "
+"the end points. Alternatively, you can draw the curve manually in **Curve "
+"free mode**. In either case, the effect of changing the curve is immediately "
+"displayed in the image preview area to the left and in the upper histogram "
+"displayed in the tool. As for all tools, the preview area can be configured "
+"by clicking on the preview comparison style icons in the status bar."
+msgstr ""
+"В **сглаженном режиме** форма кривой изменяется добавлением или удалением "
+"управляющих точек кривой либо перемещением управляющих точек, включая "
+"конечные. Кроме того, кривую можно нарисовать вручную в **ручном режиме**. В "
+"любом случае результат изменения кривой сразу показывается в области "
+"предварительного просмотра изображения слева и на верхней гистограмме, "
+"показываемой в инструменте. Как и для всех инструментов, область "
+"предварительного просмотра можно настроить, щёлкнув по значкам стиля "
+"сравнения предварительного просмотра в строке состояния."
+
+#: ../../image_editor/colors_tools.rst:201
+msgid "The Image Editor Curves Adjust Tool"
+msgstr "Инструмент корректировки кривых редактора изображений"
+
+#: ../../image_editor/colors_tools.rst:203
+#: ../../image_editor/colors_tools.rst:269
+msgid "There are series of controls contained within the tool."
+msgstr "Инструмент содержит ряд элементов управления."
+
+#: ../../image_editor/colors_tools.rst:205
+#: ../../image_editor/colors_tools.rst:271
+msgid ""
+"The **Channel** combo box selects the specific channel to be modified by the "
+"tool:"
+msgstr ""
+"Раскрывающийся список **Канал** позволяет выбрать конкретный канал, который "
+"будет изменён этим инструментом:"
+
+#: ../../image_editor/colors_tools.rst:207
+#: ../../image_editor/colors_tools.rst:273
+msgid "**Luminosity**: changes the intensity of all pixels."
+msgstr "**Яркость**: изменяет интенсивность всех пикселей."
+
+#: ../../image_editor/colors_tools.rst:209
+#: ../../image_editor/colors_tools.rst:275
+msgid "**Red**: changes the Red saturation of all pixels."
+msgstr "**Красный**: изменяет насыщенность красного всех пикселей."
+
+#: ../../image_editor/colors_tools.rst:211
+#: ../../image_editor/colors_tools.rst:277
+msgid "**Green**: changes the Green saturation of all pixels."
+msgstr "**Зелёный**: изменяет насыщенность зелёного для всех пикселей."
+
+#: ../../image_editor/colors_tools.rst:213
+#: ../../image_editor/colors_tools.rst:279
+msgid "**Blue**: changes the Blue saturation of all pixels."
+msgstr "**Синий**: изменяет насыщенность синего цвета всех пикселей."
+
+#: ../../image_editor/colors_tools.rst:215
+#: ../../image_editor/colors_tools.rst:281
+msgid "**Alpha**: changes the transparency of all pixels."
+msgstr "**Альфа**: изменяет прозрачность всех пикселей."
+
+#: ../../image_editor/colors_tools.rst:217
+#: ../../image_editor/colors_tools.rst:285
+msgid "Separate curves can be defined for each of these 5 channels."
+msgstr "Для каждого из этих 5 каналов задаются отдельные кривые."
+
+#: ../../image_editor/colors_tools.rst:219
+#: ../../image_editor/colors_tools.rst:287
+msgid ""
+"Next to this box are two icons to select **Linear** or **Logarithmic** "
+"**Histogram** displays. The linear mode is usually the most useful for "
+"images taken with a digital camera. However, a logarithmic histogram can be "
+"more useful for images containing substantial areas of constant color."
+msgstr ""
+"Рядом с этим полем находятся два значка для выбора **линейного** или "
+"**логарифмического** отображения **гистограммы**. Линейный режим обычно "
+"наиболее удобен для изображений, снятых цифровой камерой. Однако для "
+"изображений со значительными участками постоянного цвета логарифмическая "
+"гистограмма может оказаться полезнее."
+
+#: ../../image_editor/colors_tools.rst:221
+msgid ""
+"The **Main Curves Editing Area** contains the transfer curve overplotted on "
+"the histogram of the original image. The horizontal bar (x-axis) represents "
+"input values, typically ranging from 0 to 255. The vertical bar (y-axis) is "
+"a scale for the output values of the selected channel, with the same 0 to "
+"255 range. The control curve is overplotted, crossing the histogram "
+"diagonally. Each point of the curve represents an 'x' input value translated "
+"into a 'y' output level."
+msgstr ""
+"**Основная область редактирования кривых** содержит передаточную кривую, "
+"нанесённую поверх гистограммы исходного изображения. Горизонтальная полоса "
+"(ось x) представляет входные значения, обычно в диапазоне от 0 до 255. "
+"Вертикальная полоса (ось y) — это шкала выходных значений выбранного канала "
+"с тем же диапазоном от 0 до 255. Управляющая кривая нанесена поверх, "
+"пересекая гистограмму по диагонали. Каждая точка кривой представляет входное "
+"значение «x», преобразованное в выходной уровень «y»."
+
+#: ../../image_editor/colors_tools.rst:223
+msgid ""
+"If you click on the curve, a control point is created. You can move a "
+"control point to bend the curve. If you click outside the curve, a control "
+"point is also created, and the curve includes it automatically. Right "
+"clicking on a control point, deletes that point. The pointer's x/y position "
+"is permanently displayed in the lower right corner of the histogram."
+msgstr ""
+"Если щёлкнуть по кривой, создаётся контрольная точка. Чтобы изогнуть кривую, "
+"переместите контрольную точку. Если щёлкнуть вне кривой, контрольная точка "
+"также создаётся, и кривая включает её автоматически. Щелчок правой кнопкой "
+"мыши по контрольной точке удаляет эту точку. Положение указателя по осям x/y "
+"постоянно показывается в правом нижнем углу гистограммы."
+
+#: ../../image_editor/colors_tools.rst:225
+msgid ""
+"Curve **Type** for channel: The left two icons below the editing area "
+"determine whether the curve can be edited using **Curve free mode** or "
+"**Curve smooth mode**. Smooth mode constrains the curve type to a smooth "
+"line with tension and provides a realistic rendering. Free mode lets you "
+"draw your curve free-hand with the mouse. You can use this mode to scatter "
+"curve segments all over the grid, which can produce surprisingly interesting "
+"results."
+msgstr ""
+"**Тип** кривой для канала: два значка слева под областью редактирования "
+"определяют, можно ли редактировать кривую в **ручном режиме** или в "
+"**сглаженном режиме**. Сглаженный режим ограничивает тип кривой плавной "
+"линией с натяжением и обеспечивает реалистичное воспроизведение. Ручной "
+"режим позволяет рисовать кривую от руки мышью. Этот режим позволяет "
+"разбрасывать сегменты кривой по всей сетке, что может дать неожиданно "
+"интересные результаты."
+
+#: ../../image_editor/colors_tools.rst:227
+msgid ""
+"The three **Tone Color Picker** buttons will automatically create control "
+"points on the curve in all channels for shadow, middle, and highlight tones. "
+"Enable the color picker button that you want to use, and click on the "
+"original image preview area to produce control points on each of the Red, "
+"Green, Blue, and Luminosity control curves."
+msgstr ""
+"Три кнопки **Выбор цвета тона** автоматически создают опорные точки на "
+"кривой во всех каналах для теней, средних тонов и светов. Включите нужную "
+"кнопку выбора цвета и щёлкните по области предварительного просмотра "
+"исходного изображения, чтобы создать опорные точки на каждой из управляющих "
+"кривых — красной, зелёной, синей и светлоты."
+
+#: ../../image_editor/colors_tools.rst:229
+msgid ""
+"**Reset**: this button allows you to either reset all curve values for all "
+"channels, or just reset the curve for just the currently selected channel. "
+"Resetting a curve, deletes all control points from the curve, except for "
+"both end points."
+msgstr ""
+"**Сброс**: эта кнопка позволяет сбросить либо все значения кривой для всех "
+"каналов, либо только кривую для выбранного в данный момент канала. При "
+"сбросе кривой удаляются все контрольные точки кривой, кроме двух конечных."
+
+#: ../../image_editor/colors_tools.rst:231
+msgid ""
+"**Save As** and **Load**: these buttons are used to do just that. Any curves "
+"that you have set can be saved to a file and loaded later. Curves are saved "
+"in the Gimp Curves file format."
+msgstr ""
+"**Сохранить как** и **Загрузить**: эти кнопки служат именно для этого. Любые "
+"заданные кривые можно сохранить в файл и загрузить позже. Кривые сохраняются "
+"в формате файла кривых Gimp."
+
+#: ../../image_editor/colors_tools.rst:233
+msgid "**Defaults**: resets the entire tool to all default values."
+msgstr ""
+"**По умолчанию**: сбрасывает все параметры инструмента к значениям по "
+"умолчанию."
+
+#: ../../image_editor/colors_tools.rst:235
+msgid ""
+"The curves tool has several additional features that facilitate the "
+"positioning of points on the control curves."
+msgstr ""
+"Инструмент кривых содержит ряд дополнительных возможностей, упрощающих "
+"размещение точек на управляющих кривых."
+
+#: ../../image_editor/colors_tools.rst:237
+msgid ""
+"The original photo preview has a red marker on it. If you place this marker "
+"in a zone you want to modify, a corresponding line will be drawn on the "
+"curve grid indicating the original value. Create a point on that line and "
+"move it up or down to adjust it to your pleasing."
+msgstr ""
+"На предварительном просмотре исходной фотографии показывается красный "
+"маркер. Если поместить этот маркер в зону, которую требуется изменить, на "
+"сетке кривой будет проведена соответствующая линия, указывающая исходное "
+"значение. Создайте точку на этой линии и переместите её вверх или вниз, "
+"чтобы настроить по своему усмотрению."
+
+#: ../../image_editor/colors_tools.rst:239
+msgid ""
+"Clicking the mouse button in the original image preview area produces a "
+"vertical dotted bar in the graph area of the curves tool. The bar position "
+"corresponds to the pixel value the mouse cursor is over in the image window. "
+"Clicking and dragging the mouse button interactively updates the position of "
+"the vertical bar. In this way, it is possible to see where different pixel "
+"values in the image are located on the control curve and helps to discover "
+"the locations of shadow, midtone, and highlight pixels."
+msgstr ""
+"Щелчок кнопкой мыши в области предварительного просмотра исходного "
+"изображения создаёт вертикальную пунктирную полосу в области графика "
+"инструмента «Кривые». Положение полосы соответствует значению пикселя, над "
+"которым находится курсор мыши в окне изображения. При щелчке и "
+"перетаскивании кнопки мыши положение вертикальной полосы обновляется в "
+"интерактивном режиме. Так можно увидеть, где на управляющей кривой "
+"расположены различные значения пикселей изображения, а также определить "
+"расположение теней, средних тонов и светлых участков."
+
+#: ../../image_editor/colors_tools.rst:241
+msgid ""
+"To understand the power of the Curves Adjust tool, just play with the curves "
+"and watch the results. If you move a curve segment to the right, i.e. "
+"towards highlights in the image, you can see that these highlights are "
+"correspondingly shifted to darker output tones and that image pixels "
+"corresponding to this curve segment will get darker. With color channels, "
+"moving right will decrease saturation up to the point of reaching a "
+"complementary color. You can even solarize the image over part of its tonal "
+"range by drawing a curve that is inverted in some part."
+msgstr ""
+"Чтобы понять возможности инструмента «Корректировка кривых», достаточно "
+"поэкспериментировать с кривыми и понаблюдать за результатом. Если "
+"переместить сегмент кривой вправо, то есть в сторону светлых участков "
+"изображения, можно заметить, что эти светлые участки соответственно "
+"смещаются к более тёмным выходным тонам, а пиксели изображения, "
+"соответствующие этому сегменту кривой, становятся темнее. При работе с "
+"цветовыми каналами перемещение вправо снижает насыщенность вплоть до "
+"достижения дополнительного цвета. Можно даже соляризовать изображение на "
+"части его тонального диапазона, нарисовав кривую, инвертированную на "
+"некотором участке."
+
+#: ../../image_editor/colors_tools.rst:247
+msgid "Levels Adjust"
+msgstr "Изменение уровней"
+
+#: ../../image_editor/colors_tools.rst:249
+msgid ""
+"The digiKam **Levels Adjust** tool is used to manually adjust the histogram "
+"channels of an image. The Levels Adjust tool is situated in complexity and "
+"power between the more sophisticated Curves Adjust tool and the simpler "
+"**Brightness/Contrast/Gamma** tool. Although the dialog for this tool looks "
+"very complicated, only the three sliders in the **Input Levels** area just "
+"below the histogram are required for basic usage."
+msgstr ""
+"Инструмент **Изменение уровней** digiKam предназначен для ручной настройки "
+"каналов гистограммы изображения. По сложности и возможностям инструмент "
+"«Изменение уровней» занимает промежуточное положение между более совершенным "
+"инструментом «Корректировка кривых» и более простым инструментом **Яркость/"
+"контрастность/гамма**. Хотя диалог этого инструмента выглядит очень сложным, "
+"для базового использования достаточно лишь трёх ползунков в области "
+"**Входные уровни** непосредственно под гистограммой."
+
+#: ../../image_editor/colors_tools.rst:251
+msgid ""
+"The tool works by sequentially applying three remappings of the input data: "
+"a two-parameter linear remapping of the input data, a single parameter gamma "
+"correction, and a two-parameter linear remapping of the output data. These "
+"five parameters define a curve that is used to remap the input values for "
+"the selected channel into output values. The figure below illustrates how "
+"the two input parameters (input min and max), one gamma parameter, and two "
+"output parameters (output min and max) effect the remapping curve."
+msgstr ""
+"Инструмент работает, последовательно применяя три пересчёта входных данных: "
+"двухпараметрический линейный пересчёт входных данных, однопараметрическую "
+"гамма-коррекцию и двухпараметрический линейный пересчёт выходных данных. Эти "
+"пять параметров определяют кривую, используемую для пересчёта входных "
+"значений выбранного канала в выходные значения. На рисунке ниже показано, "
+"как на кривую пересчёта влияют два входных параметра (минимум и максимум "
+"входного значения), один параметр гаммы и два выходных параметра (минимум и "
+"максимум выходного значения)."
+
+#: ../../image_editor/colors_tools.rst:257
+msgid "Different Remapping Curves Achievable with the Levels Adjust Tool"
+msgstr ""
+"Различные кривые переназначения, достижимые с помощью инструмента изменения "
+"уровней"
+
+#: ../../image_editor/colors_tools.rst:259
+msgid ""
+"The left panel illustrates the impact of gamma on the remapping curve, when "
+"the min and max values for input and output are set to 0 and 255. The panel "
+"illustrates that the gamma parameter mainly impacts the mid tones in the "
+"image. The middle panel shows the impact of adjusting the input min and max "
+"values. The input values are often adjusted to center the histograms and "
+"increase contrast. And the right panel shows the impact of adjusting the "
+"output min and max values. The output parameters are used less frequently, "
+"but a smaller range of output values can be set to create a bleached image "
+"to use as a background for some other subject placed in the foreground."
+msgstr ""
+"Левая панель показывает влияние гаммы на кривую пересчёта, когда минимальное "
+"и максимальное значения для входа и выхода установлены в 0 и 255. Панель "
+"показывает, что параметр гаммы влияет главным образом на средние тона "
+"изображения. Средняя панель показывает влияние настройки минимального и "
+"максимального входных значений. Входные значения часто настраивают, чтобы "
+"центрировать гистограммы и повысить контраст. А правая панель показывает "
+"влияние настройки минимального и максимального выходных значений. Выходные "
+"параметры используются реже, но можно задать меньший диапазон выходных "
+"значений, чтобы создать выбеленное изображение и использовать его в качестве "
+"фона для другого объекта, размещённого на переднем плане."
+
+#: ../../image_editor/colors_tools.rst:261
+msgid ""
+"The tool displays two histograms: the histogram of the original image is "
+"shown on the bottom, and the histogram of the output image, after level "
+"adjustment, is shown on the top. There are five sliders below the histograms "
+"that can be clicked on and dragged to adjust the input, gamma, and output "
+"parameters. The target preview and histogram are updated dynamically based "
+"on the slider positions."
+msgstr ""
+"Инструмент показывает две гистограммы: гистограмма исходного изображения "
+"показывается внизу, а гистограмма выходного изображения после изменения "
+"уровней — вверху. Ниже гистограмм расположены пять ползунков, которые можно "
+"перетаскивать мышью для настройки входных параметров, гаммы и выходных "
+"параметров. Предварительный просмотр и гистограмма обновляются динамически в "
+"зависимости от положения ползунков."
+
+#: ../../image_editor/colors_tools.rst:267
+msgid "The Image Editor Levels Adjust Tool"
+msgstr "Инструмент изменения уровней редактора изображений"
+
+#: ../../image_editor/colors_tools.rst:283
+msgid "**Colors**: changes the saturation of all three color channels."
+msgstr "**Все цвета**: изменяет насыщенность всех трёх цветовых каналов."
+
+#: ../../image_editor/colors_tools.rst:289
+msgid ""
+"**Input Levels**: the top slider adjusts the two min/max parameters that "
+"specify the input remapping. Any input value equal to or below the min value "
+"set on the range slider are mapped to 0, any input value between the min and "
+"max values are linearly mapped to a range between 0 and 255, and any input "
+"value equal to or greater than the max value set on the range slider are "
+"mapped to 255. Thus the input slider controls are used to adjust the span of "
+"input values that are used to cover the full range from 0 to max intensity."
+msgstr ""
+"**Входные уровни**: верхний ползунок настраивает два параметра «мин/макс», "
+"задающих пересчёт входных значений. Любое входное значение, равное или "
+"меньшее минимального значения, установленного на ползунке диапазона, "
+"преобразуется в 0; любое входное значение между минимальным и максимальным "
+"значениями линейно преобразуется в диапазон от 0 до 255; а любое входное "
+"значение, равное или большее максимального значения, установленного на "
+"ползунке диапазона, преобразуется в 255. Таким образом, элементы управления "
+"ползунка входных значений служат для настройки диапазона входных значений, "
+"охватывающего весь диапазон от 0 до максимальной интенсивности."
+
+#: ../../image_editor/colors_tools.rst:291
+msgid ""
+"The min parameter can be adjusted by dragging the solid black triangle left "
+"or right along the color bar, dragging the mouse left or right over the left "
+"numeric text box, typing a number into the left numeric text box, or by "
+"clicking on the left up or down arrow buttons. The max parameter can be "
+"adjusted in the same manner using the white triangle and the right controls."
+msgstr ""
+"Параметр min можно настроить, перетаскивая сплошной чёрный треугольник влево "
+"или вправо по цветовой полосе, перетаскивая мышь влево или вправо по левому "
+"числовому полю, вводя число в левое числовое поле или щёлкая по "
+"расположенным слева кнопкам со стрелками вверх и вниз. Параметр max "
+"настраивается таким же образом с помощью белого треугольника и правых "
+"элементов управления."
+
+#: ../../image_editor/colors_tools.rst:297
+msgid "Slider Controls for the Levels Adjust Tool"
+msgstr "Элементы управления ползунками инструмента изменения уровней"
+
+#: ../../image_editor/colors_tools.rst:299
+msgid ""
+"**Gamma Slider**: the middle slider adjusts a single parameter that controls "
+"the nonlinear gamma correction."
+msgstr ""
+"**Ползунок гаммы**: средний ползунок изменяет единственный параметр, "
+"управляющий нелинейной гамма-коррекцией."
+
+#: ../../image_editor/colors_tools.rst:301
+msgid ""
+"**Output Levels**: the bottom slider adjusts the two min/max parameters that "
+"specify the output remapping. Any output value equal to or below the min "
+"value set on the range slider are mapped to 0, any output value between the "
+"min and max values are linearly mapped to a range between 0 and 255, and any "
+"output value equal to or greater than the max value set on the range slider "
+"are mapped to 255. Thus the output slider controls are used to adjust the "
+"span of output values. Unless you want to deliberately produce an image with "
+"limited dynamic range, the output levels are normally left at 0 and 255."
+msgstr ""
+"**Выходные уровни**: нижний ползунок настраивает два параметра «минимум/"
+"максимум», задающих переназначение выходных значений. Любое выходное "
+"значение, равное или меньшее минимального значения, установленного на "
+"ползунке диапазона, преобразуется в 0; любое выходное значение между "
+"минимальным и максимальным значениями линейно преобразуется в диапазон от 0 "
+"до 255; а любое выходное значение, равное или большее максимального "
+"значения, установленного на ползунке диапазона, преобразуется в 255. Таким "
+"образом, ползунки выходных уровней служат для настройки диапазона выходных "
+"значений. Если только не требуется намеренно получить изображение с "
+"ограниченным динамическим диапазоном, выходные уровни обычно оставляют "
+"равными 0 и 255."
+
+#: ../../image_editor/colors_tools.rst:303
+msgid "The Output Levels control operates just like the Input Levels control."
+msgstr ""
+"Элемент управления «Выходные уровни» работает так же, как элемент управления "
+"«Входные уровни»."
+
+#: ../../image_editor/colors_tools.rst:305
+msgid ""
+"**Color Picker**: these three buttons will automatically adjust input min, "
+"gamma, and input max settings for shadow, midtone and highlights. Enable the "
+"color picker button that you want to use, and click on the original image "
+"preview area to set the parameters."
+msgstr ""
+"**Выбор цвета**: эти три кнопки автоматически настраивают параметры входного "
+"минимума, гаммы и входного максимума для теней, средних тонов и светов. "
+"Включите нужную кнопку выбора цвета и щёлкните по области предварительного "
+"просмотра исходного изображения, чтобы задать параметры."
+
+#: ../../image_editor/colors_tools.rst:307
+msgid ""
+"**Adjust All Levels Automatically**: this button automatically sets the "
+"levels based on an analysis of the pixel intensities in the image."
+msgstr ""
+"**Автоматическая настройка всех уровней**: эта кнопка автоматически "
+"устанавливает уровни на основе анализа интенсивности пикселей изображения."
+
+#: ../../image_editor/colors_tools.rst:309
+msgid ""
+"**Reset**: this button resets all Input Levels and Output Levels values for "
+"the selected channel."
+msgstr ""
+"**Сброс**: эта кнопка сбрасывает все значения входных и выходных уровней для "
+"выбранного канала."
+
+#: ../../image_editor/colors_tools.rst:311
+msgid ""
+"**Save As** and **Load**: these buttons are used to do just that. Any Levels "
+"that you have set can be saved to the filesystem and loaded later. The used "
+"file format is compatible with **The Gimp** Levels format."
+msgstr ""
+"**Сохранить как** и **Загрузить**: эти кнопки служат именно для этого. Любые "
+"заданные уровни можно сохранить в файловой системе и загрузить позже. "
+"Используемый формат файла совместим с форматом уровней **The Gimp**."
+
+#: ../../image_editor/colors_tools.rst:313
+msgid ""
+"**Defaults**: resets all Input Levels and Output Levels values for all "
+"channels."
+msgstr ""
+"**По умолчанию**: сбрасывает значения входных и выходных уровней для всех "
+"каналов."
+
+#: ../../image_editor/colors_tools.rst:315
+msgid ""
+"The Adjust Levels tool has several features to facilitate the positioning "
+"input levels sliders. Clicking the mouse button in the original image "
+"preview area produces a vertical dotted bar in the graph area of the "
+"histogram. The bar position corresponds to the pixel value under the mouse "
+"cursor in the image window. Clicking and dragging the mouse button "
+"interactively updates the position of the vertical bar. In this way it is "
+"possible to see where different pixel values in the image are located on the "
+"input levels sliders, helping you to discover the locations of shadow, "
+"midtone, and highlight pixels."
+msgstr ""
+"Инструмент «Изменение уровней» имеет несколько возможностей, облегчающих "
+"установку ползунков входных уровней. Щелчок кнопкой мыши в области "
+"предварительного просмотра исходного изображения создаёт вертикальную "
+"пунктирную полосу в области графика гистограммы. Положение полосы "
+"соответствует значению пикселя, над которым находится курсор мыши в окне "
+"изображения. При щелчке и перетаскивании кнопки мыши положение вертикальной "
+"полосы обновляется в интерактивном режиме. Так можно увидеть, где на "
+"ползунках входных уровней расположены различные значения пикселей "
+"изображения, а также определить расположение теней, средних тонов и светлых "
+"участков."
+
+#: ../../image_editor/colors_tools.rst:317
+msgid ""
+"**Over Exposure Indicator** option checks all color channel to see if more "
+"than one channel in a pixel is over-exposed, and you will see the combined "
+"color resulting of channel level settings. This feature is available as an "
+"indicator in the target preview area and has no effect on final rendering."
+msgstr ""
+"Параметр **Индикатор переэкспонирования** проверяет все цветовые каналы, "
+"чтобы выяснить, переэкспонирован ли в пикселе более чем один канал, и "
+"показывает объединённый цвет, полученный в результате настроек уровней "
+"каналов. Эта функция доступна в виде индикатора в области предварительного "
+"просмотра и не влияет на итоговую передачу изображения."
+
+#: ../../image_editor/colors_tools.rst:323
+msgid "Brightness / Contrast / Gamma"
+msgstr "Яркость / контрастность / гамма"
+
+#: ../../image_editor/colors_tools.rst:325
+msgid ""
+"The digiKam **Brightness/Contrast/Gamma** tool is used for the correcting "
+"exposure in an image. It is the simplest tool for correcting exposure, but "
+"also the least powerful. Still, in many cases it does everything you need. "
+"This tool is often useful for images that are overexposed or underexposed; "
+"it is not useful for correcting color casts. The tool gives you three "
+"sliders to adjust **Brightness**, **Contrast** and **Gamma**. You can see "
+"any adjustments you make reflected in the preview image. When you are happy "
+"with the results, press **Ok** and they will take effect."
+msgstr ""
+"Инструмент **Яркость/контрастность/гамма** digiKam используется для "
+"коррекции экспозиции изображения. Это самый простой инструмент для коррекции "
+"экспозиции, но и наименее мощный. Тем не менее во многих случаях его "
+"возможностей достаточно. Этот инструмент часто полезен для "
+"переэкспонированных или недоэкспонированных изображений, но не подходит для "
+"коррекции цветовых оттенков. Инструмент предоставляет три ползунка для "
+"настройки **яркости**, **контраста** и **гаммы**. Все вносимые изменения "
+"отражаются в изображении предварительного просмотра. Если результат "
+"устраивает, нажмите **Ok** — изменения вступят в силу."
+
+#: ../../image_editor/colors_tools.rst:331
+msgid "The Image Editor Tool Correcting Exposure"
+msgstr "Инструмент коррекции экспозиции редактора изображений"
+
+#: ../../image_editor/colors_tools.rst:335
+msgid ""
+"Another important tool called **Levels Adjust** supports exposure correction "
+"and also enables you to save and load the level settings so they can be "
+"applied to multiple photographs. This can be useful if your camera or "
+"scanner often makes the same mistakes and so you regularly want to apply the "
+"same corrections. See the dedicated :ref:`Levels Adjust <color_levels>` "
+"section of the manual for more information. The **Curves Adjust** tool, "
+"described in the :ref:`Curves Adjust <color_curves>` section of the manual, "
+"provides an even more powerful way of correcting exposures."
+msgstr ""
+"Ещё один важный инструмент — **Изменение уровней** — поддерживает коррекцию "
+"экспозиции, а также позволяет сохранять и загружать параметры уровней, чтобы "
+"применять их к нескольким фотографиям. Это может пригодиться, если камера "
+"или сканер часто допускают одни и те же ошибки и требуется регулярно "
+"применять одни и те же коррекции. Дополнительные сведения см. в разделе "
+"руководства :ref:`Изменение уровней <color_levels>`. Инструмент "
+"**Корректировка кривых**, описанный в разделе :ref:`Корректировка кривых "
+"<color_curves>` руководства, предоставляет ещё более мощный способ коррекции "
+"экспозиции."
+
+#: ../../image_editor/colors_tools.rst:341
+msgid "Hue / Saturation / Lightness"
+msgstr "Тон / насыщенность / светлота"
+
+#: ../../image_editor/colors_tools.rst:343
+msgid ""
+"The digiKam **Hue / Saturation / Lightness** tool is used to adjust hue, "
+"saturation, vibrance, and lightness levels in the current image. (The tool "
+"should have been called *Hue / Saturation / Vibrance / Lightness*, but that "
+"seemed way too long!)"
+msgstr ""
+"Инструмент **Тон / Насыщенность / Светлота** digiKam предназначен для "
+"настройки тона, насыщенности, красочности и уровней светлоты текущего "
+"изображения. (Инструмент следовало бы назвать *Тон / Насыщенность / "
+"Красочность / Светлота*, но такое название слишком длинное!)"
+
+#: ../../image_editor/colors_tools.rst:345
+msgid "The tool settings are simple:"
+msgstr "Параметры инструмента просты:"
+
+#: ../../image_editor/colors_tools.rst:347
+msgid ""
+"A Hue / Saturation color map consisting of a shaded gray rectangle above a "
+"thin color bar. Click and drag on the shaded gray rectangle to set the "
+"**Hue** and **Saturation** values. These values are also reflected in the "
+"sliders below the map."
+msgstr ""
+"Цветовая карта тона и насыщенности представляет собой затенённый серый "
+"прямоугольник над тонкой цветовой полосой. Чтобы задать значения **тона** и "
+"**насыщенности**, щёлкните по затенённому серому прямоугольнику и перетащите "
+"мышь. Эти значения также отражаются на ползунках под картой."
+
+#: ../../image_editor/colors_tools.rst:349
+msgid ""
+"**Hue**: This slider selects a hue in the color circle (-180, 180) to adjust "
+"the colors in the image."
+msgstr ""
+"**Тон**: этот ползунок выбирает тон в цветовом круге (-180, 180) для "
+"настройки цветов изображения."
+
+#: ../../image_editor/colors_tools.rst:351
+msgid ""
+"**Saturation**: This slider adjusts the saturation (-100, 100) of the colors "
+"in the image. If your image is washed out (which can easily happen when you "
+"take images in bright light), increasing the saturation will probably make "
+"the image look better. In some cases, it is useful to adjust the lightness "
+"at the same time. When you take images in low light conditions, try reducing "
+"the saturation instead of increasing it."
+msgstr ""
+"**Насыщенность**: этот ползунок изменяет насыщенность цветов изображения в "
+"диапазоне от -100 до 100. Если изображение блёклое (что часто случается при "
+"съёмке в ярком свете), увеличение насыщенности, вероятно, улучшит его вид. В "
+"некоторых случаях полезно одновременно настроить светлоту. При съёмке в "
+"условиях слабого освещения лучше уменьшить насыщенность, а не увеличивать её."
+
+#: ../../image_editor/colors_tools.rst:353
+msgid ""
+"**Vibrance**: This slider adjusts the vibrance of the image. Vibrance "
+"selectively adjusts saturation, acting predominantly on less saturated "
+"colors to avoid clipping. This control is often used with skin tones."
+msgstr ""
+"**Красочность**: этот ползунок изменяет красочность изображения. Красочность "
+"избирательно изменяет насыщенность, действуя преимущественно на менее "
+"насыщенные цвета, чтобы избежать отсечения. Этот элемент управления часто "
+"используется при работе с тонами кожи."
+
+#: ../../image_editor/colors_tools.rst:355
+msgid ""
+"**Lightness**: This slider selects a luminosity value (-100, 100). Lightness "
+"changes in this tool only affect the selected color channel, unlike "
+"luminosity in the **Curves Adjust** and **Levels Adjust** tools which works "
+"on all color channels. If you change the Red lightness with this tool, only "
+"the red pixels will be changed."
+msgstr ""
+"**Светлота**: этот ползунок задаёт значение светлоты (от -100 до 100). "
+"Изменения светлоты в этом инструменте затрагивают только выбранный цветовой "
+"канал, в отличие от светлоты в инструментах **Корректировка кривых** и "
+"**Изменение уровней**, где она действует на все цветовые каналы. Если с "
+"помощью этого инструмента изменить светлоту красного канала, изменятся "
+"только красные пиксели."
+
+#: ../../image_editor/colors_tools.rst:357
+msgid ""
+"You can see any adjustments you make reflected in the preview image. When "
+"you are happy with the results, press **OK** to apply the changes."
+msgstr ""
+"Все вносимые изменения отражаются в окне предварительного просмотра. Если "
+"результаты устраивают, нажмите **ОК**, чтобы применить изменения."
+
+#: ../../image_editor/colors_tools.rst:363
+msgid "The Image Editor Tool Correcting Colors"
+msgstr "Инструмент коррекции цвета редактора изображений"
+
+#: ../../image_editor/colors_tools.rst:369
+msgid "Channel Mixer"
+msgstr "Микшер каналов"
+
+#: ../../image_editor/colors_tools.rst:371
+msgid ""
+"The digiKam **Channel Mixer** tool allows you to remix the color channels to "
+"improve or modify the color tonality within a photograph."
+msgstr ""
+"Инструмент **Микшер каналов** digiKam позволяет заново смешать цветовые "
+"каналы для улучшения или изменения цветовой тональности снимка."
+
+#: ../../image_editor/colors_tools.rst:377
+msgid "The Image Editor Channel Mixer Tool"
+msgstr "Инструмент микшера каналов редактора изображений"
+
+#: ../../image_editor/colors_tools.rst:379
+msgid ""
+"The **Channel** combo box selects which channel or channels to display in "
+"the histogram. The histogram gives a first hint of how to correct the "
+"channels based on their relative distribution and amplitude."
+msgstr ""
+"Раскрывающийся список **Канал** позволяет выбрать, какой канал или каналы "
+"показывать на гистограмме. Гистограмма даёт первую подсказку о том, как "
+"скорректировать каналы на основе их относительного распределения и амплитуды."
+
+#: ../../image_editor/colors_tools.rst:381
+msgid ""
+"the **Output Channel** combo box selects the primary color channel to be "
+"modified by the tool. You can modify more than one channel by selecting and "
+"modifying each output channel in turn."
+msgstr ""
+"раскрывающийся список **Выходной канал** позволяет выбрать основной цветовой "
+"канал, который будет изменён этим инструментом. Можно изменить несколько "
+"каналов, выбирая и изменяя по очереди каждый выходной канал."
+
+#: ../../image_editor/colors_tools.rst:383
+msgid ""
+"The **Red**, **Green** and **Blue** slider controls enable you to mix the "
+"channels. If you check **Preserve Luminosity** the image will retain its "
+"overall luminosity despite any changes you make to its color components."
+msgstr ""
+"Ползунки **Красный**, **Зелёный** и **Синий** позволяют смешивать каналы. "
+"Если установить флажок **Сохранять светлоту**, изображение сохранит общую "
+"светлоту независимо от изменений, вносимых в его цветовые составляющие."
+
+#: ../../image_editor/colors_tools.rst:385
+msgid ""
+"The **Monochrome** option converts the output into a Black & White image. "
+"This is a great tool for converting your photographs to Black & White. The "
+"Preserve Luminosity option is particularly useful when used with the "
+"**Monochrome** option. Try to reduce the green channel for Black & White "
+"portraits."
+msgstr ""
+"Параметр **Монохромный режим** преобразует результат в чёрно-белое "
+"изображение. Это отличный инструмент для преобразования фотографий в чёрно-"
+"белые. Параметр «Сохранять светлоту» особенно полезен при использовании "
+"вместе с параметром **Монохромный режим**. Для чёрно-белых портретов "
+"попробуйте уменьшить зелёный канал."
+
+#: ../../image_editor/colors_tools.rst:387
+msgid ""
+"The effects of color mixing are immediately displayed in the image preview "
+"area to the left and in the histogram displayed in the tool. As for all "
+"tools, the preview area can be configured by clicking on the preview "
+"comparison style icons in the status bar."
+msgstr ""
+"Результаты смешивания цветов сразу показываются в области предварительного "
+"просмотра изображения слева и на гистограмме, показываемой в инструменте. "
+"Как и для всех инструментов, область предварительного просмотра можно "
+"настроить, щёлкнув по значкам стиля сравнения предварительного просмотра в "
+"строке состояния."
+
+#: ../../image_editor/colors_tools.rst:389
+msgid ""
+"The target photo preview has a red marker available. If you place this "
+"marker somewhere in the image, a corresponding vertical bar will be drawn in "
+"the histogram indicating the color level value in the currently selected "
+"channel."
+msgstr ""
+"На предварительном просмотре целевой фотографии показывается красный маркер. "
+"Если поместить этот маркер в какое-либо место изображения, на гистограмме "
+"будет проведена соответствующая вертикальная полоса, указывающая значение "
+"уровня цвета в текущем выбранном канале."
+
+#: ../../image_editor/colors_tools.rst:393
+msgid ""
+"Sometimes, especially when doing **Monochrome** mixing, reducing one color "
+"channel may increase visible noise, which actually originates in the chroma "
+"noise. Chroma noise means that the little noise specs do not appear at the "
+"same location in all the color channels, but the noise patterns looks "
+"different in every channel. If that is the case you can improve the "
+"monochrome conversion by reducing the chroma noise first."
+msgstr ""
+"Иногда, особенно при микшировании с параметром **Монохромный режим**, "
+"уменьшение одного цветового канала может усилить видимый шум, который на "
+"самом деле обусловлен шумом цветности. Шум цветности означает, что мелкие "
+"шумовые точки появляются не в одном и том же месте во всех цветовых каналах, "
+"а рисунок шума в каждом канале выглядит по-разному. В этом случае можно "
+"улучшить преобразование в монохромное изображение, сначала уменьшив шум "
+"цветности."
+
+#: ../../image_editor/colors_tools.rst:395
+msgid ""
+"**Save As** and **Load** buttons are used to do just that. Any mixer "
+"settings that you have set can be saved to a file and reloaded later. The "
+"mixer settings are stored in the Gimp channel mixer file format."
+msgstr ""
+"**Сохранить как** и **Загрузить**: эти кнопки служат именно для этого. Любые "
+"заданные параметры микширования можно сохранить в файл и загрузить позже. "
+"Параметры микширования сохраняются в формате файла микшера каналов Gimp."
+
+#: ../../image_editor/colors_tools.rst:397
+msgid ""
+"**Over Exposure Indicator** option adds up the colors if more than one "
+"channel in a pixel is over-exposed, allowing you to see the combined color "
+"resulting from channel gain settings. The over exposure indicator only "
+"appears in the target preview area, it does not affect the final rendering."
+msgstr ""
+"Параметр **Индикатор переэкспонирования** суммирует цвета, если в пикселе "
+"переэкспонировано более одного канала, что позволяет увидеть суммарный цвет, "
+"получающийся в результате настроек усиления каналов. Индикатор "
+"переэкспонирования показывается только в области предварительного просмотра "
+"результата и не влияет на окончательный результат обработки."
+
+#: ../../image_editor/colors_tools.rst:399
+msgid ""
+"**Reset All** button resets all channel mixer settings to default values."
+msgstr ""
+"Кнопка **Сбросить все** сбрасывает все параметры микшера каналов к значениям "
+"по умолчанию."
+
+#: ../../image_editor/colors_tools.rst:405
+msgid "White Balance"
+msgstr "Баланс белого"
+
+#: ../../image_editor/colors_tools.rst:407
+msgid ""
+"The digiKam **White Balance** tool is used to adjust the white-balance of a "
+"photograph."
+msgstr ""
+"Инструмент **баланса белого** digiKam применяется для настройки баланса "
+"белого фотографии."
+
+#: ../../image_editor/colors_tools.rst:409
+msgid ""
+"Getting the correct white balance setting is a common challenge for digital "
+"still cameras. In the 'good old days' of film, the white balance "
+"compensation was done by the photolab. Nowadays the digital camera has to "
+"guess what is white and what is black. Most of the time, what the camera "
+"chooses as the white point, is not of the correct shade or hue. This tool "
+"makes it is easy to correct this problem. It provides a variety of "
+"parameters that can be adjusted to more accurately capture the right colors "
+"in your photographs."
+msgstr ""
+"Получение правильной настройки баланса белого — обычная проблема для "
+"цифровых фотоаппаратов. В «старые добрые времена» плёнки компенсацию баланса "
+"белого выполняла фотолаборатория. Сегодня цифровой фотоаппарат вынужден "
+"угадывать, что белое, а что чёрное. В большинстве случаев то, что "
+"фотоаппарат выбирает в качестве белой точки, имеет неверный оттенок или тон. "
+"Этот инструмент позволяет легко исправить эту проблему. Он предоставляет "
+"множество параметров, которые можно настроить для более точной передачи "
+"правильных цветов на фотографиях."
+
+#: ../../image_editor/colors_tools.rst:415
+msgid "The Image Editor White Balance Tool"
+msgstr "Инструмент баланса белого редактора изображений"
+
+#: ../../image_editor/colors_tools.rst:419
+msgid ""
+"White balance corrections applied to 8-bit images can often produce over "
+"exposed regions. This occurs even if the corrections depart too much from an "
+"original 16-bit image. So white balance corrections are best applied during "
+"the conversion of RAW data, when the margin for correction will be greater."
+msgstr ""
+"Коррекция баланса белого, применённая к 8-битным изображениям, часто "
+"приводит к появлению пересвеченных областей. Это происходит, даже если "
+"коррекция слишком сильно отклоняется от исходного 16-битного изображения. "
+"Поэтому коррекцию баланса белого лучше выполнять при преобразовании данных "
+"RAW, когда запас для коррекции будет больше."
+
+#: ../../image_editor/colors_tools.rst:421
+msgid ""
+"The effects of white balance corrections are immediately displayed in the "
+"image preview area to the left. As for all tools, the preview area can be "
+"configured by clicking on the preview comparison style icons in the status "
+"bar."
+msgstr ""
+"Результат коррекции баланса белого сразу показывается в области "
+"предварительного просмотра изображения слева. Как и для всех инструментов, "
+"область предварительного просмотра можно настроить, щёлкнув по значкам стиля "
+"сравнения предварительного просмотра в строке состояния."
+
+#: ../../image_editor/colors_tools.rst:423
+msgid ""
+"To the top right, the widget displays a histogram that is dynamically "
+"updated when changing the parameters. This histogram is very instructive as "
+"it shows that even in well exposed photos, most of the pixels have very "
+"small luminosity. With a button you can select to show either one of the 3 "
+"colors (or the sum of it which is called luminosity)."
+msgstr ""
+"Справа вверху виджет показывает гистограмму, которая динамически обновляется "
+"при изменении параметров. Эта гистограмма очень поучительна: она показывает, "
+"что даже на хорошо экспонированных фотографиях большинство пикселей имеют "
+"очень малую светлоту. С помощью кнопки можно выбрать отображение одного из 3 "
+"цветов (или их суммы, которая называется светлотой)."
+
+#: ../../image_editor/colors_tools.rst:425
+msgid "We describe the rest of the controls, from the bottom up."
+msgstr "Остальные элементы управления описаны далее, снизу вверх."
+
+#: ../../image_editor/colors_tools.rst:427
+msgid ""
+"With **Exposure Compensation** you can digitally change the exposure of the "
+"photo. Increasing the exposure may make the pixel noise more visible and "
+"saturate the highlights. Check the **Over exposure indicator** in the lower "
+"right status bar to check for saturation. The **Black Point** adjustment can "
+"be used to adjust the left side of the histogram. If your photograph looks "
+"foggy and the histogram has empty space on the left, you probably need to "
+"use this option. The **Exposure** and **Black Point** adjustments can be "
+"automatically estimated by pressing the **Auto Exposure Adjustments** "
+"button. This quite accurately sets the black point."
+msgstr ""
+"**Компенсация экспозиции** позволяет программно изменить экспозицию "
+"фотографии. Повышение экспозиции делает шум пикселей более заметным и "
+"приводит к пересвету светлых участков. Чтобы проверить наличие пересвета, "
+"используйте **индикатор переэкспонирования** в строке состояния в правом "
+"нижнем углу. Коррекция **чёрной точки** позволяет настроить левую часть "
+"гистограммы. Если фотография выглядит затуманенной, а в левой части "
+"гистограммы есть пустое пространство, скорее всего, потребуется "
+"воспользоваться этой возможностью. Коррекцию **экспозиции** и **чёрной "
+"точки** можно выполнить автоматически, нажав кнопку **Автоматическая "
+"регулировка экспозиции**. При этом чёрная точка устанавливается достаточно "
+"точно."
+
+#: ../../image_editor/colors_tools.rst:429
+msgid ""
+"The contrast of your output depends on the **Shadows**, **Saturation**, and "
+"**Gamma** parameters. The **Shadows** adjustment lets you enhance or "
+"diminish the shadow details in your photo."
+msgstr ""
+"Контраст выходного изображения зависит от параметров **Тени**, "
+"**Насыщенность** и **Гамма**. Настройка **Тени** позволяет усилить или "
+"ослабить детализацию теней на фотографии."
+
+#: ../../image_editor/colors_tools.rst:431
+msgid ""
+"Increasing the contrast of your photograph can have the side effect of "
+"reducing the apparent **Saturation** of the photo. Use a value larger than 1 "
+"to increase the saturation and a value of less than 1 to desaturate the "
+"photo. A value of 0 will give you a black and white photo. Don't be shy to "
+"bump up the saturation of your photos a little. The general rule is that for "
+"higher contrast (lower **Gamma**) you need to apply more **Saturation**."
+msgstr ""
+"Повышение контраста фотографии может иметь побочный эффект — снижение "
+"видимой **насыщенности** снимка. Чтобы увеличить насыщенность, задайте "
+"значение больше 1, а чтобы уменьшить — меньше 1. Значение 0 даст чёрно-белую "
+"фотографию. Насыщенность фотографий можно смело немного повышать. Общее "
+"правило: чем выше контраст (ниже **гамма**), тем больше **насыщенности** "
+"нужно добавить."
+
+#: ../../image_editor/colors_tools.rst:433
+msgid ""
+"The next set of options is the mainstay of White Balance settings that "
+"control the relative proportion of the three color channels. Here you can "
+"set the **Color Temperature**, making your image warmer (more red) or colder "
+"(more blue). Higher temperatures will result in a warmer tint. Setting the "
+"ratio between the three color channels requires two adjustments. Since the "
+"temperature adjustment mostly controls the ratio between the red and the "
+"blue channels, it is natural that the second adjustment will control the "
+"intensity of the **Green** channel."
+msgstr ""
+"Следующий набор параметров — основа настроек баланса белого, управляющих "
+"относительным соотношением трёх цветовых каналов. Здесь можно задать "
+"**цветовую температуру**, делая изображение теплее (больше красного) или "
+"холоднее (больше синего). Более высокие температуры дают более тёплый "
+"оттенок. Для установки соотношения между тремя цветовыми каналами требуются "
+"две настройки. Поскольку настройка температуры в основном управляет "
+"соотношением красного и синего каналов, естественно, что вторая настройка "
+"управляет интенсивностью **зелёного** канала."
+
+#: ../../image_editor/colors_tools.rst:435
+msgid ""
+"Instead of fiddling around with the above controls, you can simply use the "
+"**Temperature Tone Color Picker** button. Press on this button and click "
+"anywhere on the original preview image that should be white or gray to "
+"automatically set the **Temperature** and **Green** values."
+msgstr ""
+"Вместо того чтобы возиться с перечисленными выше элементами управления, "
+"можно просто воспользоваться кнопкой **Захват температуры цвета**. Нажмите "
+"эту кнопку и щёлкните по любому участку исходного изображения в области "
+"предварительного просмотра, который должен быть белым или серым, чтобы "
+"автоматически установить значения **Температура** и **Зелёный**."
+
+#: ../../image_editor/colors_tools.rst:437
+msgid ""
+"In addition you can set the White Balance using the preset list. These are "
+"the white color balance temperature presets available:"
+msgstr ""
+"Кроме того, баланс белого можно задать с помощью списка предустановок. "
+"Доступны следующие предустановки цветовой температуры баланса белого:"
+
+#: ../../image_editor/colors_tools.rst:440
+msgid "Color Temperature"
+msgstr "Цветовая температура"
+
+#: ../../image_editor/colors_tools.rst:440
+msgid "Description"
+msgstr "Описание"
+
+#: ../../image_editor/colors_tools.rst:440
+msgid "Kelvin"
+msgstr "Кельвин"
+
+#: ../../image_editor/colors_tools.rst:442
+msgid "**40W**"
+msgstr "**40 Вт**"
+
+#: ../../image_editor/colors_tools.rst:442
+msgid "40 Watt incandescent lamp."
+msgstr "Лампа накаливания 40 Вт."
+
+#: ../../image_editor/colors_tools.rst:442
+msgid "2680"
+msgstr "2680"
+
+#: ../../image_editor/colors_tools.rst:443
+msgid "**200W**"
+msgstr "**200 Вт**"
+
+#: ../../image_editor/colors_tools.rst:443
+msgid "200 Watt incandescent lamp, studio lights, photo floods."
+msgstr "Лампа накаливания 200 Вт, студийное освещение, фотопрожекторы."
+
+#: ../../image_editor/colors_tools.rst:443
+msgid "3000"
+msgstr "3000"
+
+#: ../../image_editor/colors_tools.rst:444
+msgid "**Sunrise**"
+msgstr "**Восход солнца**"
+
+#: ../../image_editor/colors_tools.rst:444
+msgid "Sunrise or sunset light."
+msgstr "Свет восхода или заката."
+
+#: ../../image_editor/colors_tools.rst:444
+msgid "3200"
+msgstr "3200"
+
+#: ../../image_editor/colors_tools.rst:445
+msgid "**Tungsten**"
+msgstr "**Лампа накаливания**"
+
+#: ../../image_editor/colors_tools.rst:445
+msgid "Tungsten lamp or light at 1 hour from dusk or dawn."
+msgstr ""
+"Лампа накаливания или освещение через час после заката или до рассвета."
+
+#: ../../image_editor/colors_tools.rst:445
+msgid "3400"
+msgstr "3400"
+
+#: ../../image_editor/colors_tools.rst:446
+msgid "**Neutral**"
+msgstr "**Естественный**"
+
+#: ../../image_editor/colors_tools.rst:446
+msgid "Neutral color temperature."
+msgstr "Нейтральная цветовая температура."
+
+#: ../../image_editor/colors_tools.rst:446
+msgid "4750"
+msgstr "4750"
+
+#: ../../image_editor/colors_tools.rst:447
+msgid "**Xenon**"
+msgstr "**Ксенон**"
+
+#: ../../image_editor/colors_tools.rst:447
+msgid "Xenon lamp or light arc."
+msgstr "Ксеноновая лампа или дуговой разряд."
+
+#: ../../image_editor/colors_tools.rst:447
+msgid "5000"
+msgstr "5000"
+
+#: ../../image_editor/colors_tools.rst:448
+msgid "**Sun**"
+msgstr "**Солнце**"
+
+#: ../../image_editor/colors_tools.rst:448
+msgid "Sunny daylight around noon."
+msgstr "Солнечный свет около полудня."
+
+#: ../../image_editor/colors_tools.rst:448
+msgid "5500"
+msgstr "5500"
+
+#: ../../image_editor/colors_tools.rst:449
+msgid "**Flash**"
+msgstr "**Вспышка**"
+
+#: ../../image_editor/colors_tools.rst:449
+msgid "Electronic photo flash."
+msgstr "Электронная фотовспышка."
+
+#: ../../image_editor/colors_tools.rst:449
+msgid "5600"
+msgstr "5600"
+
+#: ../../image_editor/colors_tools.rst:450
+msgid "**Sky**"
+msgstr "**Небо**"
+
+#: ../../image_editor/colors_tools.rst:450
+msgid "Overcast sky light."
+msgstr "Освещение при пасмурном небе."
+
+#: ../../image_editor/colors_tools.rst:450
+msgid "6500"
+msgstr "6500"
+
+#: ../../image_editor/colors_tools.rst:453
+msgid ""
+"**Color Temperature** is a simplified way to characterize the spectral "
+"properties of a light source. While in reality the color of light is "
+"determined by how much each point on the spectral curve contributes to its "
+"output, the result can still be summarized on a linear scale. This value is "
+"useful e.g. for determining the correct white balance in digital "
+"photography, and for specifying the right light source types in "
+"architectural lighting design. Note, however, that light sources of the same "
+"color (metamers) can vary widely in the quality of light emitted."
+msgstr ""
+"**Цветовая температура** — упрощённый способ описания спектральных свойств "
+"источника света. Хотя в действительности цвет света определяется тем, какой "
+"вклад вносит каждая точка спектральной кривой в его выходной сигнал, "
+"результат всё же можно свести к линейной шкале. Это значение полезно, "
+"например, для определения правильного баланса белого в цифровой фотографии и "
+"для указания подходящих типов источников света в архитектурном "
+"проектировании освещения. Следует, однако, учитывать, что источники света "
+"одного цвета (метамеры) могут сильно различаться по качеству излучаемого "
+"света."
+
+#: ../../image_editor/colors_tools.rst:455
+msgid ""
+"Low Color Temperature implies more yellow-red light while high color "
+"temperature implies more blue light. Daylight has a rather low color "
+"temperature near dawn, and a higher one during the day. Therefore it can be "
+"useful to install an electrical lighting system that can supply cooler light "
+"to supplement daylight when needed, and fill in with warmer light at night. "
+"This also correlates with human feelings towards the warm colors of light "
+"coming from candles or an open fireplace at night. Standard unit for color "
+"temperature is Kelvin (K)."
+msgstr ""
+"Низкая цветовая температура соответствует более жёлто-красному свету, а "
+"высокая — более синему. Вблизи рассвета дневной свет имеет довольно низкую "
+"цветовую температуру, а днём — более высокую. Поэтому может быть полезно "
+"установить систему электрического освещения, которая при необходимости "
+"подаёт более холодный свет в дополнение к дневному, а ночью — более тёплый. "
+"Это также согласуется с человеческим восприятием тёплых оттенков света от "
+"свечей или открытого камина ночью. Стандартная единица измерения цветовой "
+"температуры — кельвин (K)."
+
+#: ../../image_editor/colors_tools.rst:459
+msgid ""
+"Technically, the concept of color temperature comes from the blackbody "
+"spectrum, which is the spectrum of light emitted by a perfect thermal "
+"emitter. The blackbody spectrum is a good model for direct sunlight or "
+"moonlight when those bodies are high in the sky. It is also a good model for "
+"most incandescent bulbs, but a poor model for most other forms of man-made "
+"illumination."
+msgstr ""
+"Строго говоря, понятие цветовой температуры происходит из спектра абсолютно "
+"чёрного тела — спектра излучения идеального теплового излучателя. Спектр "
+"абсолютно чёрного тела служит хорошей моделью для прямого солнечного или "
+"лунного света, когда эти светила находятся высоко в небе. Он также хорошо "
+"подходит для большинства ламп накаливания, но плохо — для большинства других "
+"видов искусственного освещения."
+
+#: ../../image_editor/colors_tools.rst:461
+msgid ""
+"**Over Exposure Indicator** option adds up the colors if more than one "
+"channel in a pixel is over-exposed, allowing you to see the combined color "
+"resulting from white balance corrections. The over exposure indicator only "
+"appears in the target preview area, it does not affect the final rendering."
+msgstr ""
+"Параметр **Индикатор переэкспонирования** суммирует цвета, если в пикселе "
+"переэкспонировано более одного канала, что позволяет увидеть суммарный цвет, "
+"получающийся в результате коррекции баланса белого. Индикатор "
+"переэкспонирования показывается только в области предварительного просмотра "
+"результата и не влияет на окончательный результат обработки."
+
+#: ../../image_editor/colors_tools.rst:463
+msgid ""
+"**Save As** and **Load** buttons are used to do just that. Any White Color "
+"Balance settings that you have set can be saved to a text file and reloaded "
+"later."
+msgstr ""
+"**Сохранить как** и **Загрузить**: эти кнопки служат именно для этого. Любые "
+"заданные параметры баланса белого можно сохранить в текстовый файл и "
+"загрузить позже."
+
+#: ../../image_editor/colors_tools.rst:465
+msgid ""
+"**Reset All** button resets all filter settings to default values "
+"corresponding to Neutral White Balance color. Note that even the neutral "
+"setting may be quite different from your original photograph. So if you save "
+"an image after a resetting all settings, the white balance will likely be "
+"changed."
+msgstr ""
+"Кнопка **Сбросить все** сбрасывает все параметры фильтра к значениям по "
+"умолчанию, соответствующим нейтральному цвету баланса белого. Следует "
+"учесть, что даже нейтральный параметр может сильно отличаться от исходной "
+"фотографии. Поэтому если сохранить изображение после сброса всех параметров, "
+"баланс белого, скорее всего, изменится."

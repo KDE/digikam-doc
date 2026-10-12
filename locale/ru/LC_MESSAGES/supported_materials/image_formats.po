@@ -1,0 +1,642 @@
+# Translation of docs_digikam_org_supported_materials___image_formats into Russian.
+# Copyright (C) Licensed under the terms of the <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">GNU Free Documentation License 1.2+</a> unless stated otherwise
+# This file is distributed under the same license as the Digikam Manual package.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: docs_digikam_org_supported_materials___image_formats\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-08 02:04+0000\n"
+"PO-Revision-Date: 2026-10-10 19:04+0200\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: ../../supported_materials/image_formats.rst:-1
+msgid "Image File Formats Supported by digiKam"
+msgstr "Поддерживаемые digiKam форматы файлов изображений"
+
+#: ../../supported_materials/image_formats.rst:-1
+msgid ""
+"digiKam, documentation, user manual, photo management, open source, free, "
+"learn, easy, JPEG, PNG, TIFF, PGF, RAW"
+msgstr ""
+"digiKam, документация, руководство пользователя, управление фотографиями, "
+"открытый исходный код, свободное ПО, обучение, просто, JPEG, PNG, TIFF, PGF, "
+"RAW"
+
+#: ../../supported_materials/image_formats.rst:14
+msgid ":ref:`Image Files <supported_materials>`"
+msgstr ":ref:`Файлы изображений <supported_materials>`"
+
+#: ../../supported_materials/image_formats.rst:16
+msgid "Contents"
+msgstr "Содержание"
+
+#: ../../supported_materials/image_formats.rst:19
+msgid "Introduction"
+msgstr "Введение"
+
+#: ../../supported_materials/image_formats.rst:21
+msgid ""
+"digiKam relies on a number of libraries and support packages to load and "
+"save image formats. Which image formats are available will depend on the "
+"availability of these libraries on your system and, in some cases, on the "
+"way that those libraries have been compiled. On most distributions you will "
+"find that a wide range of image formats are viewable within digiKam."
+msgstr ""
+"digiKam использует ряд библиотек и вспомогательных пакетов для загрузки и "
+"сохранения изображений различных форматов. Доступность форматов изображений "
+"зависит от наличия этих библиотек в системе и, в некоторых случаях, от того, "
+"как эти библиотеки были собраны. В большинстве дистрибутивов в digiKam можно "
+"просматривать изображения широкого спектра форматов."
+
+#: ../../supported_materials/image_formats.rst:23
+msgid ""
+"This dependence on other libraries means that it is not possible to give a "
+"definitive list of all of the formats that will be available on your system. "
+"At the very least JPEG, PNG, and TIFF should be available."
+msgstr ""
+"Из-за зависимости от других библиотек невозможно составить окончательный "
+"список всех форматов, которые будут доступны в системе. Как минимум должны "
+"быть доступны JPEG, PNG и TIFF."
+
+#: ../../supported_materials/image_formats.rst:25
+msgid ""
+"digiKam only displays files that are in formats that it understands. It does "
+"this by looking at the file extension on the files and checking this against "
+"a predefined list. If the file extension is in the list and the appropriate "
+"library is installed, digiKam will show the file in the Image View. You can "
+"change the list of file extensions that digiKam will accept; see :ref:`this "
+"configuration section <mime_types_settings>` for more details."
+msgstr ""
+"digiKam показывает только файлы в понятных ему форматах. Для этого "
+"расширение файла проверяется по заранее заданному списку. Если расширение "
+"есть в списке и установлена требуемая библиотека, digiKam покажет файл в "
+"режиме просмотра изображений. Список расширений файлов, которые принимает "
+"digiKam, можно изменить; подробнее см. :ref:`этот раздел параметров "
+"<mime_types_settings>`."
+
+#: ../../supported_materials/image_formats.rst:27
+msgid ""
+"Almost all digital cameras store photographs in one of two formats: JPEG or "
+"RAW. Many cameras enable you to select which of these formats to use. "
+"digiKam supports both of these formats. A full description of these formats "
+"can be found `at the Wikipedia <https://en.wikipedia.org/wiki/"
+"Image_file_formats>`_."
+msgstr ""
+"Почти все цифровые камеры сохраняют снимки в одном из двух форматов: JPEG "
+"или RAW. Многие камеры позволяют выбрать, какой из этих форматов "
+"использовать. digiKam поддерживает оба формата. Полное описание этих "
+"форматов можно найти в `Википедии <https://en.wikipedia.org/wiki/"
+"Image_file_formats>`_."
+
+#: ../../supported_materials/image_formats.rst:30
+msgid "Still Image Compression"
+msgstr "Сжатие неподвижных изображений"
+
+#: ../../supported_materials/image_formats.rst:32
+msgid ""
+"Image compression is the application of data compression algorithms to "
+"digital images. Image compression reduces redundancy in the image data in "
+"order to be able to store or transmit data in an efficient form."
+msgstr ""
+"Сжатие изображений — это применение алгоритмов сжатия данных к цифровым "
+"изображениям. Сжатие изображений уменьшает избыточность данных изображения, "
+"чтобы можно было хранить или передавать данные в эффективной форме."
+
+#: ../../supported_materials/image_formats.rst:34
+msgid ""
+"Image compression can be lossy or lossless. Lossless compression methods, "
+"especially applied before transformations like cropping, resizing, and color "
+"corrections, are always preferred for archival purposes because they "
+"preserve the original data. In contrast, lossy compression methods introduce "
+"compression artifacts, especially when used at low bit rates. Lossy methods "
+"are suitable for natural images such as photos in applications where minor "
+"(sometimes imperceptible) loss of fidelity is acceptable to achieve a "
+"substantial reduction in file size. For example, lossy compression is good "
+"for publishing images on the Internet."
+msgstr ""
+"Сжатие изображений может быть с потерями или без потерь. Методы сжатия без "
+"потерь, особенно применяемые перед такими преобразованиями, как обрезка, "
+"изменение размера и коррекция цвета, всегда предпочтительны для архивного "
+"хранения, поскольку сохраняют исходные данные. Напротив, методы сжатия с "
+"потерями вносят артефакты сжатия, особенно при низкой скорости потока "
+"данных. Методы с потерями подходят для естественных изображений, например "
+"фотографий, в приложениях, где ради существенного уменьшения размера файла "
+"допустима незначительная (иногда незаметная) потеря точности. Например, "
+"сжатие с потерями хорошо подходит для публикации изображений в Интернете."
+
+#: ../../supported_materials/image_formats.rst:39
+msgid "JPEG"
+msgstr "JPEG"
+
+#: ../../supported_materials/image_formats.rst:41
+msgid ""
+"`Joint Photographic Experts Group <https://en.wikipedia.org/wiki/JPEG>`_ is "
+"a compressed format that trades some image quality for smaller file sizes. "
+"In fact, most cameras save their images in this format unless you specify "
+"otherwise. A JPEG image is stored using lossy compression, and you can vary "
+"the amount of compression. This allows you to choose between lower "
+"compression and higher image quality or greater compression and poorer "
+"quality. The only reason to choose higher compression is because it creates "
+"smaller files so you can store more images, making it easier to send them by "
+"e-mail or post them on the Web. Most cameras give you two or three choices "
+"equivalent to good, better, best, although the names vary."
+msgstr ""
+"`Joint Photographic Experts Group <https://en.wikipedia.org/wiki/JPEG>`_ — "
+"формат со сжатием, в котором ради меньшего размера файла частично жертвуют "
+"качеством изображения. На самом деле большинство фотоаппаратов сохраняют "
+"снимки в этом формате, если не задано иное. Изображение JPEG хранится со "
+"сжатием с потерями, причём степень сжатия можно изменять. Это позволяет "
+"выбирать между меньшим сжатием и более высоким качеством изображения либо "
+"большим сжатием и худшим качеством. Единственная причина выбирать более "
+"сильное сжатие — меньший размер файлов: так можно хранить больше "
+"изображений, а отправлять их по электронной почте или публиковать в "
+"Интернете становится проще. Большинство фотоаппаратов предлагают два или три "
+"варианта, соответствующих «хорошо», «лучше», «отлично», хотя названия могут "
+"различаться."
+
+#: ../../supported_materials/image_formats.rst:46
+msgid "JPEG 2000"
+msgstr "JPEG 2000"
+
+#: ../../supported_materials/image_formats.rst:48
+msgid ""
+"`JPEG 2000 <https://en.wikipedia.org/wiki/JPEG_2000>`_ is an improvement "
+"intended to replace the older JPEG standard that was introduced in 2000. It "
+"provides for the same compression ratio with better (smoother) results "
+"compared to JPEG. The 2000 version also supports lossless images, additional "
+"metadata tags, and 12-bit color depth."
+msgstr ""
+"`JPEG 2000 <https://en.wikipedia.org/wiki/JPEG_2000>`_ — усовершенствованный "
+"формат, призванный заменить более старый стандарт JPEG, представленный в "
+"2000 году. Он обеспечивает ту же степень сжатия при лучших (более плавных) "
+"результатах по сравнению с JPEG. Версия 2000 года также поддерживает "
+"изображения без потерь, дополнительные метки метаданных и 12-битную глубину "
+"цвета."
+
+#: ../../supported_materials/image_formats.rst:53
+msgid "TIFF"
+msgstr "TIFF"
+
+#: ../../supported_materials/image_formats.rst:55
+msgid ""
+"`Tagged Image File Format <https://en.wikipedia.org/wiki/TIFF>`_ has been "
+"widely accepted and widely supported as an image format. Commonly, TIFF may "
+"be stored by the camera in uncompressed form or using a lossless compression "
+"algorithm (Deflate). It maintains higher image quality but at the expense of "
+"much larger file sizes. Some cameras let you save your images in this "
+"format, and it is a popular format because of it is a lossless compression "
+"algorithm. The problem is that the format has been altered by so many people "
+"that there are now 50 or more flavors and not all are recognizable by most "
+"programs."
+msgstr ""
+"`Tagged Image File Format <https://en.wikipedia.org/wiki/TIFF>`_ получил "
+"широкое признание и широкую поддержку в качестве формата изображений. Обычно "
+"камера сохраняет TIFF в несжатом виде или с использованием алгоритма сжатия "
+"без потерь (Deflate). Он обеспечивает более высокое качество изображения, но "
+"за счёт значительно большего размера файлов. Некоторые камеры позволяют "
+"сохранять изображения в этом формате, и он популярен, поскольку использует "
+"алгоритм сжатия без потерь. Проблема в том, что формат был изменён столь "
+"многими людьми, что теперь существует 50 и более его разновидностей, и не "
+"все из них распознаются большинством программ."
+
+#: ../../supported_materials/image_formats.rst:60
+msgid "PNG"
+msgstr "PNG"
+
+#: ../../supported_materials/image_formats.rst:62
+msgid ""
+"`Portable Network Graphics <https://en.wikipedia.org/wiki/"
+"Portable_Network_Graphics>`_ is an image format that was developed in the "
+"1990's as a patent-free replacement for the older GIF image file format. It "
+"is a lossless format like TIFF but is much more compact, saving disk space. "
+"Although your camera is unlikely to support PNG, some people like to convert "
+"their photographs to PNG as soon as they get them on their computer. Unlike "
+"JPEG, PNG images do not lose quality every time you re-encode them after "
+"modification. digiKam fully supports PNG images and the Batch Queue Manager "
+"can convert a batch of images from any supported format to PNG (and other "
+"formats) in one step."
+msgstr ""
+"`Portable Network Graphics <https://en.wikipedia.org/wiki/"
+"Portable_Network_Graphics>`_ — формат изображений, разработанный в 1990-х "
+"годах как свободная от патентов замена более старому формату файлов "
+"изображений GIF. Это формат без потерь, как TIFF, но гораздо более "
+"компактный, что экономит место на диске. Хотя камеры обычно не поддерживают "
+"PNG, некоторые предпочитают преобразовывать свои снимки в PNG сразу после "
+"переноса на компьютер. В отличие от JPEG, изображения PNG не теряют качество "
+"при каждом повторном кодировании после изменения. digiKam полностью "
+"поддерживает изображения PNG, а модуль «Управление очередями пакетной "
+"обработки» позволяет преобразовать пакет изображений из любого "
+"поддерживаемого формата в PNG (и другие форматы) за один шаг."
+
+#: ../../supported_materials/image_formats.rst:64
+msgid ""
+"PNG is designed to work well in on-line viewing applications, such as the "
+"World Wide Web, so it is fully streamable with a progressive display option. "
+"Also, PNG can store gamma and chromaticity data for improved color matching "
+"on heterogeneous platforms. PNG supports bit depths of 8 and 16 bits / "
+"color / pixel. It's the perfect file format to archive your photographs."
+msgstr ""
+"PNG разработан для хорошей работы в приложениях для просмотра в Интернете, "
+"таких как Всемирная паутина, поэтому он полностью поддерживает потоковую "
+"передачу с параметром прогрессивного показа. Кроме того, PNG может хранить "
+"данные о гамме и цветности для улучшенной цветопередачи на разнородных "
+"платформах. PNG поддерживает глубину цвета 8 и 16 бит на цвет на пиксель. "
+"Это идеальный формат файлов для архивирования снимков."
+
+#: ../../supported_materials/image_formats.rst:69
+msgid "PGF"
+msgstr "PGF"
+
+#: ../../supported_materials/image_formats.rst:71
+msgid ""
+"`Progressive Graphics File <https://en.wikipedia.org/wiki/"
+"Progressive_Graphics_File>`_ is another not so well known, but open file "
+"image format. Wavelet-based, it allows lossless and lossy data compression. "
+"PGF compares well with JPEG 2000 but it was developed for speed (compression/"
+"decompression) rather than to be the best at compression ratio. At the same "
+"file size a PGF file looks significantly better than a JPEG file, while also "
+"remaining very good at progressive display. Thus it should be well-suited "
+"for photo archiving. **digiKam uses this format to store thumbnails in its "
+"internal database**."
+msgstr ""
+"`Progressive Graphics File <https://en.wikipedia.org/wiki/"
+"Progressive_Graphics_File>`_ — ещё один не столь широко известный, но "
+"открытый формат файлов изображений. Основанный на вейвлетах, он допускает "
+"сжатие данных как без потерь, так и с потерями. PGF хорошо выдерживает "
+"сравнение с JPEG 2000, но разрабатывался ради скорости (сжатия и "
+"распаковки), а не для достижения наилучшей степени сжатия. При одинаковом "
+"размере файла изображение PGF выглядит значительно лучше, чем JPEG, и при "
+"этом хорошо справляется с прогрессивным показом. Поэтому он должен хорошо "
+"подходить для архивирования фотографий. **digiKam использует этот формат для "
+"хранения миниатюр во внутренней базе данных**."
+
+#: ../../supported_materials/image_formats.rst:76
+msgid "WEBP"
+msgstr "WEBP"
+
+#: ../../supported_materials/image_formats.rst:78
+msgid ""
+"`Web Photo <https://en.wikipedia.org/wiki/WebP>`_ is an open image file "
+"format developed by Google intended as a replacement for JPEG, PNG, and GIF "
+"file formats for use on the Internet. It supports both lossy and lossless "
+"compression as well as animation and alpha transparency. It supports "
+"metadata, but color depth is limited to 8 bits. WebP was first announced by "
+"Google in 2010 and produces files that are smaller than JPEG files for "
+"comparable image quality."
+msgstr ""
+"`Web Photo <https://en.wikipedia.org/wiki/WebP>`_ — открытый формат файлов "
+"изображений, разработанный Google в качестве замены форматов JPEG, PNG и GIF "
+"для использования в Интернете. Поддерживает сжатие как с потерями, так и без "
+"потерь, а также анимацию и альфа-прозрачность. Поддерживает метаданные, но "
+"глубина цвета ограничена 8 битами. Google впервые представила WebP в 2010 "
+"году; этот формат создаёт файлы меньшего размера, чем JPEG, при сопоставимом "
+"качестве изображения."
+
+#: ../../supported_materials/image_formats.rst:83
+msgid "HEIF"
+msgstr "HEIF"
+
+#: ../../supported_materials/image_formats.rst:85
+msgid ""
+"`High Efficiency Image File Format <https://en.wikipedia.org/wiki/"
+"High_Efficiency_Image_File_Format>`_ is a container format introduced in "
+"2015 for storing individual digital images and image sequences. The standard "
+"covers multimedia files that can also include other media streams, such as "
+"timed text, audio and video. HEIF can store images encoded with multiple "
+"coding formats, for example both SDR and HDR images. HEVC is an image and "
+"video encoding format and the default image codec used with HEIF. HEIF files "
+"containing HEVC-encoded images are also known as HEIC files. Such files "
+"require less storage space than the equivalent quality JPEG. HEIF support 12-"
+"bit color depth and metadata. This format was adopted in 2017 to store "
+"images in Apple devices."
+msgstr ""
+"`High Efficiency Image File Format <https://en.wikipedia.org/wiki/"
+"High_Efficiency_Image_File_Format>`_ — это формат-контейнер, представленный "
+"в 2015 году для хранения отдельных цифровых изображений и "
+"последовательностей изображений. Стандарт охватывает мультимедийные файлы, "
+"которые могут также содержать другие медиапотоки, например "
+"синхронизированный текст, аудио и видео. HEIF позволяет хранить изображения, "
+"закодированные в различных форматах кодирования, например изображения как "
+"SDR, так и HDR. HEVC — это формат кодирования изображений и видео, а также "
+"кодек изображений, используемый по умолчанию в HEIF. Файлы HEIF, содержащие "
+"изображения, закодированные в HEVC, также известны как файлы HEIC. Такие "
+"файлы занимают меньше места, чем JPEG эквивалентного качества. HEIF "
+"поддерживает 12-битную глубину цвета и метаданные. Этот формат был принят в "
+"2017 году для хранения изображений на устройствах Apple."
+
+#: ../../supported_materials/image_formats.rst:90
+msgid "AVIF"
+msgstr "AVIF"
+
+#: ../../supported_materials/image_formats.rst:92
+msgid ""
+"`AV1 Image File Format <https://en.wikipedia.org/wiki/AVIF>`_ is an open, "
+"royalty-free image file format specification introduced in 2019 for storing "
+"images or image sequences compressed with AV1 in the HEIF container format. "
+"It competes with HEIC, which uses the same container format built upon the "
+"ISO base media file format (ISOBMFF) but uses HEVC for compression. AVIF "
+"showed better compression efficiency than JPEG as well as better detail "
+"preservation, fewer blocking artifacts and less color bleeding around hard "
+"edges in composites of natural images, text, and graphics. AVIF supports 12-"
+"bit color depth and metadata."
+msgstr ""
+"`AV1 Image File Format <https://en.wikipedia.org/wiki/AVIF>`_ — открытая "
+"спецификация формата файлов изображений, не требующая лицензионных "
+"отчислений, представленная в 2019 году для хранения изображений или "
+"последовательностей изображений, сжатых с помощью AV1, в контейнерном "
+"формате HEIF. Он конкурирует с HEIC, где используется тот же контейнерный "
+"формат на основе формата ISO base media file format (ISOBMFF), но для сжатия "
+"применяется HEVC. AVIF показал более высокую эффективность сжатия, чем JPEG, "
+"а также лучшее сохранение деталей, меньше блочных артефактов и меньше "
+"растекания цвета вокруг резких границ в композициях из естественных "
+"изображений, текста и графики. AVIF поддерживает 12-битную глубину цвета и "
+"метаданные."
+
+#: ../../supported_materials/image_formats.rst:97
+msgid "JXL"
+msgstr "JXL"
+
+#: ../../supported_materials/image_formats.rst:99
+msgid ""
+"`JPEG XL <https://en.wikipedia.org/wiki/JPEG_XL>`_ is a royalty-free raster-"
+"graphics file format that supports both lossy and lossless compression. It "
+"is designed to outperform existing raster formats and thus become their "
+"universal replacement."
+msgstr ""
+"`JPEG XL <https://en.wikipedia.org/wiki/JPEG_XL>`_ — формат файлов растровой "
+"графики, свободный от лицензионных отчислений, поддерживающий сжатие как с "
+"потерями, так и без потерь. Он призван превзойти существующие растровые "
+"форматы и тем самым стать их универсальной заменой."
+
+#: ../../supported_materials/image_formats.rst:101
+msgid ""
+"JPEG XL is particularly optimised for responsive Web environments, so that "
+"content renders well on a wide range of devices. Moreover, it includes "
+"several features that help transition from the legacy JPEG format. JPEG XL "
+"was introduced at the end of 2020. JPEG XL support 16-bit color depth and "
+"metadata."
+msgstr ""
+"JPEG XL особенно хорошо оптимизирован для адаптивных веб-сред, чтобы "
+"содержимое корректно выводилось на самых разных устройствах. Кроме того, он "
+"включает ряд возможностей, упрощающих переход от устаревшего формата JPEG. "
+"JPEG XL был представлен в конце 2020 года. JPEG XL поддерживает 16-битную "
+"глубину цвета и метаданные."
+
+#: ../../supported_materials/image_formats.rst:105
+msgid ""
+"Digital still image format support is provided by digiKam Loader Plugins. "
+"You can see a list of available plugins in the **Plugins/Image Loaders** "
+"section of the Setup or Preferences dialog."
+msgstr ""
+"Поддержка форматов цифровых изображений обеспечивается модулями загрузки "
+"digiKam. Список доступных модулей можно посмотреть в разделе **Модули/"
+"Загрузчики изображений** диалога настройки или параметров."
+
+#: ../../supported_materials/image_formats.rst:111
+msgid "The Image Loaders list from digiKam Setup or Preferences dialog"
+msgstr ""
+"Список загрузчиков изображений из диалога настройки или параметров digiKam"
+
+#: ../../supported_materials/image_formats.rst:116
+#: ../../supported_materials/image_formats.rst:136
+msgid "RAW"
+msgstr "RAW"
+
+#: ../../supported_materials/image_formats.rst:118
+msgid ""
+"Some, typically more expensive, cameras allow you to store images in RAW "
+"format. RAW format is not really an image standard at all. It is different "
+"for every make of camera. RAW format images contain all the data that is "
+"taken directly from the camera's image sensor before the software in the "
+"camera applies things like white balance, noise reduction, sharpening etc. "
+"Storing photographs in a camera's RAW format allows you to alter settings, "
+"such as white balance, after the photograph has been taken. Most "
+"professional photographers use RAW format, because it offers them maximum "
+"flexibility. The downside is that RAW image files can be very large indeed."
+msgstr ""
+"Некоторые, обычно более дорогие, фотоаппараты позволяют сохранять "
+"изображения в формате RAW. Формат RAW вообще не является стандартом "
+"изображений. Он различается для каждой марки фотоаппарата. Изображения в "
+"формате RAW содержат все данные, получаемые непосредственно с матрицы "
+"фотоаппарата, до того как ПО фотоаппарата применит такие операции, как "
+"баланс белого, шумоподавление, повышение резкости и т. д. Сохранение снимков "
+"в формате RAW фотоаппарата позволяет изменять параметры, например баланс "
+"белого, уже после съёмки. Большинство профессиональных фотографов используют "
+"формат RAW, поскольку он обеспечивает максимальную гибкость. Недостаток в "
+"том, что файлы изображений RAW могут быть очень большими."
+
+#: ../../supported_materials/image_formats.rst:120
+msgid ""
+"If you want to learn more about RAW image format visit the very helpful "
+"guides on the `Wikipedia <https://en.wikipedia.org/wiki/Raw_image_format>`_, "
+"and at `Cambridge in Colour <https://www.cambridgeincolour.com/tutorials/RAW-"
+"file-format.htm>`_. You can convert RAW format images into JPEG, PNG, or "
+"TIFF in digiKam using the :ref:`Image Editor <rawprocessing_workflow>` or "
+"the :ref:`Batch Queue Manager <raw_converter>`."
+msgstr ""
+"Дополнительные сведения о формате изображений RAW можно найти в полезных "
+"руководствах на сайтах `Wikipedia <https://en.wikipedia.org/wiki/"
+"Raw_image_format>`_ и `Cambridge in Colour <https://www.cambridgeincolour."
+"com/tutorials/RAW-file-format.htm>`_. В digiKam изображения формата RAW "
+"можно преобразовать в JPEG, PNG или TIFF с помощью :ref:`Редактора "
+"изображений <rawprocessing_workflow>` или :ref:`Управления очередями "
+"пакетной обработки <raw_converter>`."
+
+#: ../../supported_materials/image_formats.rst:122
+msgid ""
+"digiKam supports loading RAW image data from over **1000** RAW file formats, "
+"relying on the `Libraw library <https://www.libraw.org/>`_ which is included "
+"in the digiKam core. The table below shows a short list of camera RAW files "
+"supported by digiKam:"
+msgstr ""
+"digiKam поддерживает загрузку данных изображений RAW более чем из **1000** "
+"форматов файлов RAW, используя библиотеку `Libraw <https://www.libraw.org/"
+">`_, входящую в состав ядра digiKam. В таблице ниже приведён краткий список "
+"файлов RAW камер, поддерживаемых digiKam:"
+
+#: ../../supported_materials/image_formats.rst:125
+msgid "RAW File Format"
+msgstr "Формат файла RAW"
+
+#: ../../supported_materials/image_formats.rst:125
+msgid "Description"
+msgstr "Описание"
+
+#: ../../supported_materials/image_formats.rst:127
+msgid "CRW, CR2, CR3"
+msgstr "CRW, CR2, CR3"
+
+#: ../../supported_materials/image_formats.rst:127
+msgid "Canon digital camera RAW file formats"
+msgstr "Форматы файлов RAW цифровых камер Canon"
+
+#: ../../supported_materials/image_formats.rst:128
+msgid "NEF, NRW"
+msgstr "NEF, NRW"
+
+#: ../../supported_materials/image_formats.rst:128
+msgid "Nikon digital camera RAW file format"
+msgstr "Формат файлов RAW цифровых камер Nikon"
+
+#: ../../supported_materials/image_formats.rst:129
+msgid "ORF, ORI"
+msgstr "ORF, ORI"
+
+#: ../../supported_materials/image_formats.rst:129
+msgid "Olympus digital camera RAW file format"
+msgstr "Формат файлов RAW цифровых камер Olympus"
+
+#: ../../supported_materials/image_formats.rst:130
+msgid "RAF"
+msgstr "RAF"
+
+#: ../../supported_materials/image_formats.rst:130
+msgid "Fuji digital camera RAW file format"
+msgstr "Формат файлов RAW цифровых камер Fuji"
+
+#: ../../supported_materials/image_formats.rst:131
+msgid "RWL"
+msgstr "RWL"
+
+#: ../../supported_materials/image_formats.rst:131
+msgid "Leica camera RAW file format"
+msgstr "Формат файлов RAW камер Leica"
+
+#: ../../supported_materials/image_formats.rst:132
+msgid "PEF, PTX"
+msgstr "PEF, PTX"
+
+#: ../../supported_materials/image_formats.rst:132
+msgid "Pentax digital camera RAW file format"
+msgstr "Формат файлов RAW цифровых камер Pentax"
+
+#: ../../supported_materials/image_formats.rst:133
+msgid "X3F"
+msgstr "X3F"
+
+#: ../../supported_materials/image_formats.rst:133
+msgid "Sigma digital camera RAW file format"
+msgstr "Формат файлов RAW цифровых камер Sigma"
+
+#: ../../supported_materials/image_formats.rst:134
+msgid "DCR, KDC, DC2, K25"
+msgstr "DCR, KDC, DC2, K25"
+
+#: ../../supported_materials/image_formats.rst:134
+msgid "Kodak digital camera RAW file format"
+msgstr "Формат файлов RAW цифровых камер Kodak"
+
+#: ../../supported_materials/image_formats.rst:135
+msgid "SRF, SR2, ARW, MRW, MDC"
+msgstr "SRF, SR2, ARW, MRW, MDC"
+
+#: ../../supported_materials/image_formats.rst:135
+msgid "Sony/Minolta digital camera RAW file format"
+msgstr "Формат файлов RAW цифровых камер Sony/Minolta"
+
+#: ../../supported_materials/image_formats.rst:136
+msgid "Panasonic, Casio, Leica digital camera RAW file format"
+msgstr "Формат файлов RAW цифровых камер Panasonic, Casio, Leica"
+
+#: ../../supported_materials/image_formats.rst:137
+msgid "DNG (CS1, HDR)"
+msgstr "DNG (CS1, HDR)"
+
+#: ../../supported_materials/image_formats.rst:137
+msgid "Adobe RAW file format (Digital Negative), Apple ProRAW"
+msgstr "Формат файлов RAW Adobe (Digital Negative), Apple ProRAW"
+
+#: ../../supported_materials/image_formats.rst:138
+msgid "BAY"
+msgstr "BAY"
+
+#: ../../supported_materials/image_formats.rst:138
+msgid "Casio RAW (Bayer)"
+msgstr "Формат файлов RAW Casio (Bayer)"
+
+#: ../../supported_materials/image_formats.rst:139
+msgid "ERF"
+msgstr "ERF"
+
+#: ../../supported_materials/image_formats.rst:139
+msgid "Epson digital camera RAW file format"
+msgstr "Формат файлов RAW цифровых камер Epson"
+
+#: ../../supported_materials/image_formats.rst:140
+msgid "FFF, 3FR"
+msgstr "FFF, 3FR"
+
+#: ../../supported_materials/image_formats.rst:140
+msgid "Imacon/Hasselblad RAW format"
+msgstr "Формат RAW Imacon/Hasselblad"
+
+#: ../../supported_materials/image_formats.rst:141
+msgid "RW2"
+msgstr "RW2"
+
+#: ../../supported_materials/image_formats.rst:141
+msgid "Panasonic RAW file format"
+msgstr "Формат файлов RAW Panasonic"
+
+#: ../../supported_materials/image_formats.rst:142
+msgid "IIQ, CAP"
+msgstr "IIQ, CAP"
+
+#: ../../supported_materials/image_formats.rst:142
+msgid "Phase One digital camera Raw image format"
+msgstr "Формат файлов RAW цифровых камер Phase One"
+
+#: ../../supported_materials/image_formats.rst:143
+msgid "RDC"
+msgstr "RDC"
+
+#: ../../supported_materials/image_formats.rst:143
+msgid "Ricoh RAW format"
+msgstr "Формат RAW Ricoh"
+
+#: ../../supported_materials/image_formats.rst:146
+msgid ""
+"If you want to know if your camera RAW file is supported by digiKam, go to :"
+"menuselection:`Help --> Supported RAW Cameras` dialog for details."
+msgstr ""
+"Чтобы узнать, поддерживается ли файл RAW вашей камеры в digiKam, откройте "
+"диалог :menuselection:`Справка --> Поддерживаемые камеры для «цифровых "
+"негативов»`, где приведены подробные сведения."
+
+#: ../../supported_materials/image_formats.rst:152
+msgid "List of RAW Camera Formats Supported in digiKam"
+msgstr "Список форматов RAW камер, поддерживаемых в digiKam"
+
+#: ../../supported_materials/image_formats.rst:157
+msgid "Other Formats"
+msgstr "Другие форматы"
+
+#: ../../supported_materials/image_formats.rst:159
+msgid ""
+"digiKam relies on `ImageMagick <https://en.wikipedia.org/wiki/ImageMagick>`_ "
+"to support exotic still images when others modules fail to load a file. This "
+"is the case for FITS astro-photo, JBIG, PhotoCD, FLIF, BPG, etc."
+msgstr ""
+"digiKam использует `ImageMagick <https://en.wikipedia.org/wiki/"
+"ImageMagick>`_ для поддержки экзотических неподвижных изображений, когда "
+"другие модули не могут загрузить файл. Это относится к форматам FITS astro-"
+"photo, JBIG, PhotoCD, FLIF, BPG и т. д."
+
+#: ../../supported_materials/image_formats.rst:163
+msgid ""
+"We recommend you also read the chapter about the **file formats used for "
+"long time archiving**, from the :ref:`Digital Asset Management section "
+"<dam_fileformats>` of this manual."
+msgstr ""
+"Рекомендуется также прочитать главу о **форматах файлов, используемых для "
+"длительного архивирования**, в :ref:`разделе «Управление цифровыми ресурсами "
+"(DAM)» <dam_fileformats>` этого руководства."

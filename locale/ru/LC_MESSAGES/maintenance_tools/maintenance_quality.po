@@ -1,0 +1,166 @@
+# Translation of docs_digikam_org_maintenance_tools___maintenance_quality into Russian.
+# Copyright (C) Licensed under the terms of the <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">GNU Free Documentation License 1.2+</a> unless stated otherwise
+# This file is distributed under the same license as the Digikam Manual package.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: "
+"docs_digikam_org_maintenance_tools___maintenance_quality\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-08 02:04+0000\n"
+"PO-Revision-Date: 2026-10-10 19:04+0200\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: ../../maintenance_tools/maintenance_quality.rst:-1
+msgid "digiKam Maintenance Tool to Sort Image by Quality"
+msgstr "Инструмент обслуживания digiKam для сортировки изображений по качеству"
+
+#: ../../maintenance_tools/maintenance_quality.rst:-1
+msgid ""
+"digiKam, documentation, user manual, photo management, open source, free, "
+"learn, easy, quality, pick-label, deep-learning"
+msgstr ""
+"digiKam, документация, руководство пользователя, управление фотографиями, "
+"открытый исходный код, свободное ПО, обучение, простота, качество, ярлык "
+"отбора, глубокое обучение"
+
+#: ../../maintenance_tools/maintenance_quality.rst:14
+msgid ":ref:`Image Quality Scanner <maintenance_tools>`"
+msgstr ":ref:`Сканирование изображений по качеству <maintenance_tools>`"
+
+#: ../../maintenance_tools/maintenance_quality.rst:20
+msgid "The digiKam Maintenance Options for Image Quality Scanner"
+msgstr ""
+"Параметры обслуживания digiKam для сканирования изображений по качеству"
+
+#: ../../maintenance_tools/maintenance_quality.rst:22
+msgid ""
+"The **Image Quality Scanner** tool automatically assesses the **Quality** of "
+"each item and assigns a corresponding value to the **Pick Label** property "
+"in the database based on:"
+msgstr ""
+"Инструмент **Сканирование изображений по качеству** автоматически оценивает "
+"**качество** каждого объекта и присваивает соответствующее значение свойству "
+"**Ярлык отбора** в базе данных:"
+
+#: ../../maintenance_tools/maintenance_quality.rst:24
+msgid "The **Red** flag for **Rejected**."
+msgstr "**Красный** ярлык — **Отклонено**."
+
+#: ../../maintenance_tools/maintenance_quality.rst:26
+msgid "The **Yellow** flag for **Pending**."
+msgstr "**Жёлтый** ярлык — **В ожидании**."
+
+#: ../../maintenance_tools/maintenance_quality.rst:28
+msgid "The **Green** flag for **Accepted**."
+msgstr "**Зелёный** ярлык — **Одобрено**."
+
+#: ../../maintenance_tools/maintenance_quality.rst:30
+msgid ""
+"More information about the **Image Quality Scanner** can be found in the :"
+"ref:`Labels view <label_imagescan>`."
+msgstr ""
+"Дополнительные сведения о **сканировании изображений по качеству** приведены "
+"в разделе :ref:`Представление «Ярлыки» <label_imagescan>`."
+
+#: ../../maintenance_tools/maintenance_quality.rst:32
+msgid ""
+"The quality **score** to determine the **Pick Label** property can be "
+"evaluated in one of two ways: using four basic factors for each image "
+"(**Blur**, **Noise**, **Exposure**, and **Compression**), or using a **deep "
+"learning neural network engine**."
+msgstr ""
+"**Оценка** качества, определяющая свойство **Ярлык отбора**, может "
+"вычисляться одним из двух способов: по четырём базовым факторам для каждого "
+"изображения (**Размытие**, **Шум**, **Экспозиция** и **Сжатие**) либо с "
+"помощью **механизма нейронной сети глубокого обучения**."
+
+#: ../../maintenance_tools/maintenance_quality.rst:34
+msgid ""
+"The first approach helps to determine whether the basic factors have "
+"compromised image quality, however the output depends on fine-tuning made "
+"the user and it does not include any assessment of the aesthetic value of "
+"the image."
+msgstr ""
+"Первый подход помогает определить, не ухудшили ли основные факторы качество "
+"изображения, однако результат зависит от тонкой настройки, выполненной "
+"пользователем, и не включает оценку эстетической ценности изображения."
+
+#: ../../maintenance_tools/maintenance_quality.rst:36
+msgid ""
+"The second approach uses an artificial intelligence engine based on `this "
+"model <https://expertphotography.com/aesthetic-photography/>`_ to predict an "
+"aesthetic score. As deep-learning is an end-to-end solution, it doesn’t "
+"require hyper-parameter settings, which makes this approach far easier to "
+"use."
+msgstr ""
+"Второй подход использует механизм искусственного интеллекта на основе `этой "
+"модели <https://expertphotography.com/aesthetic-photography/>`_ для "
+"прогнозирования эстетической оценки. Поскольку глубокое обучение — сквозное "
+"решение, оно не требует настройки гиперпараметров, что делает этот подход "
+"гораздо проще в использовании."
+
+#: ../../maintenance_tools/maintenance_quality.rst:40
+msgid ""
+"Since quality assessment can be a time consuming process, it's a good idea "
+"to check Work on all processor cores and restrict the job to certain albums "
+"or tags."
+msgstr ""
+"Поскольку оценка качества может быть длительным процессом, рекомендуется "
+"установить флажок «Работать на всех ядрах процессора» и ограничить задание "
+"определёнными альбомами или метками."
+
+#: ../../maintenance_tools/maintenance_quality.rst:42
+msgid ""
+"The **Scan Mode** settings configure how the database information for the "
+"items from the selected collection will be processed. **All** resets all "
+"data and scans all items from scratch, **Non-assigned only** will scan "
+"images that have not previously been assigned **Pick Labels**."
+msgstr ""
+"Параметры **Режим сканирования** определяют, как будет обрабатываться "
+"информация базы данных об объектах из выбранной коллекции. **Все** "
+"сбрасывает все данные и сканирует все объекты заново, **Только не "
+"присвоенные** сканирует изображения, которым ранее не были присвоены "
+"**ярлыки отбора**."
+
+#: ../../maintenance_tools/maintenance_quality.rst:44
+msgid ""
+"While the image quality scanning process is underway, a progress indicator "
+"is displayed in the bottom right corner of the main window."
+msgstr ""
+"Пока выполняется сканирование изображений по качеству, в правом нижнем углу "
+"главного окна показывается индикатор выполнения."
+
+#: ../../maintenance_tools/maintenance_quality.rst:50
+msgid "The digiKam Image Quality Scanner Process Running in the Background"
+msgstr "Фоновый процесс сканирования изображений по качеству в digiKam"
+
+#: ../../maintenance_tools/maintenance_quality.rst:52
+msgid ""
+"The quality scanning results will appears in the :ref:`Labels view "
+"<labels_view>` from the right sidebar."
+msgstr ""
+"Результаты сканирования по качеству показываются в :ref:`представлении "
+"«Ярлыки» <labels_view>` на правой боковой панели."
+
+#: ../../maintenance_tools/maintenance_quality.rst:58
+msgid "The digiKam Pick Labels from Left Sidebar"
+msgstr "Ярлыки отбора digiKam на левой боковой панели"
+
+#: ../../maintenance_tools/maintenance_quality.rst:62
+msgid ""
+"To run properly, the process needs access to the deep-learning model that "
+"can be downloaded at the first run of digiKam. See the :ref:`Quick Start "
+"<quick_start>` section of this manual for details."
+msgstr ""
+"Для правильной работы процессу требуется доступ к модели глубокого обучения, "
+"которая загружается при первом запуске digiKam. Подробности приведены в "
+"разделе :ref:`Быстрый старт <quick_start>` этого руководства."
