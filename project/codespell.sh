@@ -10,9 +10,6 @@
 # To ignore false positive in source code uses inline comment:
 # https://github.com/codespell-project/codespell?tab=readme-ov-file#inline-ignore
 #
-# If '--nowebupdate' is passed as argument, static analyzer results are not pushed online at
-# https://files.kde.org/digikam/reports/ (default yes).
-#
 # SPDX-License-Identifier: BSD-3-Clause
 #
 
@@ -217,13 +214,6 @@ EOF
     sed -i "s|__DATE__|$date|g" $HTML_FILE
     sed -i "s|__VERSION__|$CODESPELL_VERSION|g" $HTML_FILE
     mv ./$HTML_FILE $REPORT_DIR
-
-    if [[ $1 != "--nowebupdate" ]] ; then
-
-        cd $ORIG_WD
-        updateOnlineReport "codespell" $REPORT_DIR $TITLE $(parseGitBranch)
-
-    fi
 
 fi
 
