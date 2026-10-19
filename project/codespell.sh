@@ -55,6 +55,7 @@ TOP_DIR="$(realpath ../)"
 
 # Print the skipped directories taken from the config file.
 
+echo "CodeSpell scan root dir   : $TOP_DIR"
 echo "CodeSpell exclude paths   : $CODESPELL_EXCLUDE_PATHS"
 echo "CodeSpell exclude files   : $CODESPELL_EXCLUDE_FILES"
 echo "CodeSpell ignore words    : $CODESPELL_IGNORE_WORDS"
