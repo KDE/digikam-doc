@@ -77,7 +77,6 @@ BEGIN_SCRIPT=$(date +"%s")
 
 }
 
-########################################################################
 # For time execution measurement : shutdown
 TerminateScript()
 {
@@ -88,3 +87,57 @@ echo "Elaspsed time for script execution : $(($difftimelps / 3600 )) hours $((($
 
 }
 
+########################################################################
+# ListFiles <root_dir> <exclude_paths_list> <exclude_files_list>
+# - exclude_paths_list : path patterns (glob) séparated by commas
+# - exclude_files_list : file names patterns (glob)  séparated by commas
+# Output : white-list of absolutes files paths, 1 per line.
+#
+# Usage:
+#
+# mapfile -t FILES < <(ListLiles /home/gilles/Devel/9.x "$EXCLUDE_PATHS" "$EXCLUDE_FILES")
+# echo "Files to scan: ${#FILES[@]}"
+#
+ListFiles()
+{
+    local root="$1"
+    local excl_paths="$2"
+    local excl_files="$3"
+
+    local -a prune_args=() name_args=()
+    local p
+
+    # cut as arrays the lists separated by comans 
+
+    local -a paths=()
+    [[ -n "$excl_paths" ]] && IFS=',' read -r -a paths <<< "$excl_paths"
+
+    local -a files=()
+    [[ -n "$excl_files" ]] && IFS=',' read -r -a files <<< "$excl_files"
+
+    # Cleanup directories: no need to descent in low level (-prune)
+
+    for p in "${paths[@]}"; do
+        [[ -n "$p" ]] && prune_args+=( -path "$p" -o )
+    done
+
+    local -a args=()
+
+    if (( ${#prune_args[@]} )); then
+        unset 'prune_args[${#prune_args[@]}-1]'    # drop the final -o
+        args+=( "${prune_args[@]}" -prune -o )
+    fi
+
+    args+=( -type f )
+
+    # Patterns filtering of file-names
+
+    for p in "${files[@]}"; do
+        [[ -n "$p" ]] && name_args+=( ! -name "$p" )
+    done
+    (( ${#name_args[@]} )) && args+=( "${name_args[@]}" )
+
+    args+=( -print )
+
+    find "$(realpath "$root")" "${args[@]}"
+}
