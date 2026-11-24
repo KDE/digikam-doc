@@ -194,6 +194,14 @@ The Edit Menu
 
 Beside the usual **Cut**, **Copy** and **Paste** the Edit Menu contains the following items:
 
+:menuselection:`Edit --> Copy Properties` :kbd:`Ctrl+Shift+C`
+
+    Copy the properties (rating, labels, tags, captions, date, template) of the selected image to the clipboard.
+
+:menuselection:`Edit --> Paste Properties` :kbd:`Ctrl+Shift+V`
+
+    Open the selective paste dialog to apply copied properties to the currently selected images.
+
 :menuselection:`Edit --> Select All` :kbd:`Ctrl+A`
 
     Select all images currently shown.

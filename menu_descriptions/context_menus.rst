@@ -50,6 +50,8 @@ Preview
     * :menuselection:`Batch Queue Manager --> Add to Existing Queue`
     * :menuselection:`Rotate --> Left`
     * :menuselection:`Rotate --> Right`
+    * :menuselection:`Copy Properties` (:kbd:`Ctrl+Shift+C`)
+    * :menuselection:`Paste Properties` (:kbd:`Ctrl+Shift+V`)
     * :menuselection:`Move to Trash`
     * :menuselection:`Assign Tag --> Recently Assigned Tags`
     * :menuselection:`Assign Tag --> Add New Tag`
@@ -130,6 +132,8 @@ Thumbnails
     * :menuselection:`Cut`
     * :menuselection:`Сору`
     * :menuselection:`Paste`
+    * :menuselection:`Copy Properties` (:kbd:`Ctrl+Shift+C`)
+    * :menuselection:`Paste Properties` (:kbd:`Ctrl+Shift+V`)
     * :menuselection:`Rename...`
     * :menuselection:`Move 2 Files to Trash`
     * :menuselection:`Image Quality Scan`
