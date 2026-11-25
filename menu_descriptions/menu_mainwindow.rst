@@ -198,6 +198,10 @@ Beside the usual **Cut**, **Copy** and **Paste** the Edit Menu contains the foll
 
     Copy the properties (rating, labels, tags, captions, date, template) of the selected image to the clipboard.
 
+:menuselection:`Edit --> Copy Properties as Text`
+
+    Copy the properties of the selected image as formatted plain text to the system clipboard, suitable for pasting into external text editors or notes.
+
 :menuselection:`Edit --> Paste Properties` :kbd:`Ctrl+Shift+V`
 
     Open the selective paste dialog to apply copied properties to the currently selected images.

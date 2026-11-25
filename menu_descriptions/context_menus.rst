@@ -51,6 +51,7 @@ Preview
     * :menuselection:`Rotate --> Left`
     * :menuselection:`Rotate --> Right`
     * :menuselection:`Copy Properties` (:kbd:`Ctrl+Shift+C`)
+    * :menuselection:`Copy Properties as Text`
     * :menuselection:`Paste Properties` (:kbd:`Ctrl+Shift+V`)
     * :menuselection:`Move to Trash`
     * :menuselection:`Assign Tag --> Recently Assigned Tags`
@@ -133,6 +134,7 @@ Thumbnails
     * :menuselection:`Сору`
     * :menuselection:`Paste`
     * :menuselection:`Copy Properties` (:kbd:`Ctrl+Shift+C`)
+    * :menuselection:`Copy Properties as Text`
     * :menuselection:`Paste Properties` (:kbd:`Ctrl+Shift+V`)
     * :menuselection:`Rename...`
     * :menuselection:`Move 2 Files to Trash`

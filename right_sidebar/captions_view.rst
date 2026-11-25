@@ -110,18 +110,20 @@ For more details about Templates, see the description of the :ref:`Template Sett
 Copy and Paste Properties
 -------------------------
 
-digiKam provides an easy and flexible way to copy properties (rating, color and pick labels, capture date and time, assigned tags, titles and captions, and metadata template) from one image and apply them to one or more other images.
+digiKam provides an easy and flexible way to copy properties (rating, color and pick labels, capture date and time, assigned tags, titles and captions, and metadata template) from one image and apply them to one or more other images, or to an entire album.
 
-There are three convenient ways to copy and paste item properties:
+Ways to Copy and Paste Item Properties:
 
 1. **Context Menu:** Right-click on an image in the thumbnail Icon-View or Preview mode and choose :menuselection:`Copy Properties` (or press :kbd:`Ctrl+Shift+C`). Then select one or more target images, right-click, and choose :menuselection:`Paste Properties` (or press :kbd:`Ctrl+Shift+V`).
 2. **Main Menu:** The actions are also available from the main application menu under :menuselection:`Edit --> Copy Properties` and :menuselection:`Edit --> Paste Properties`.
-3. **Drag and Drop:** In the thumbnail Icon-View, drag one or more source images and drop them onto a target image (or over a selection of target images). From the drop pop-up menu, select :menuselection:`Assign Properties Here...`.
+3. **Copy Properties as Text:** In addition to internal property copying, digiKam provides :menuselection:`Copy Properties as Text` (in the context menu and Edit menu). This action formats the item's properties into a human-readable list and copies it to the system clipboard as plain text, allowing you to paste it into external text editors (such as Kate), notes, or command-line scripts. Standard image file copy/paste across albums is fully preserved alongside this feature.
+4. **Drag and Drop to Items:** In the thumbnail Icon-View, drag one or more source images and drop them onto a target image (or over a selection of target images). From the drop pop-up menu, select :menuselection:`Assign Properties Here...`.
+5. **Drag and Drop to Album:** Drag a source image and drop it onto an album folder in the left sidebar album tree view. From the pop-up menu, select :menuselection:`Assign Properties to Album...`. digiKam opens the paste dialog clearly stating the target album name and the exact count of items that will be affected before you confirm. The assignment is then processed safely in the background.
 
 Selective Paste Dialog
 ~~~~~~~~~~~~~~~~~~~~~~
 
-When pasting properties or dropping items, digiKam presents the **Paste Properties** dialog allowing you to selectively choose which attributes to apply:
+When pasting properties or dropping items, digiKam presents the **Paste Properties** dialog. The dialog features a clear, checkable 3-column table showing each **Property**, the **Amount** of items to apply, and preview **Values**:
 
 * **Rating:** Apply the 0...5 star rating. If the source item is unrated, this option defaults to unchecked to prevent accidental clearing of existing ratings on target images.
 * **Color and Pick Labels:** Apply pick flags and color labels.
@@ -130,4 +132,11 @@ When pasting properties or dropping items, digiKam presents the **Paste Properti
 * **Titles and Captions:** Copy localized titles and captions, preserving authors, dates, and language annotations.
 * **Metadata Template:** Apply the metadata template.
 
-Only the selected properties are applied to the target images. Any unchecked attributes on the target images remain untouched. When the "Write metadata to files" option is enabled in digiKam settings, the changes are automatically synchronized with the file's embedded metadata and XMP sidecars.
+The dialog provides convenient selection controls:
+
+* :guilabel:`Select All`: Checks all available properties.
+* :guilabel:`Select None`: Unchecks all properties.
+* :guilabel:`Invert Selection`: Toggles the checked state of all properties.
+* :guilabel:`Help`: Opens the online documentation directly to this section.
+
+Only the selected properties are applied to the target images. Any unchecked attributes on the target images remain completely untouched. When the "Write metadata to files" option is enabled in digiKam settings, the changes are automatically synchronized with the file's embedded metadata and XMP sidecars.
