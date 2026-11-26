@@ -123,6 +123,12 @@ Ways to Copy and Paste Item Properties:
 Selective Paste Dialog
 ~~~~~~~~~~~~~~~~~~~~~~
 
+.. figure:: images/right_sidebar_paste_properties.webp
+    :alt:
+    :align: center
+
+    The Selective Paste Properties Dialog
+
 When pasting properties or dropping items, digiKam presents the **Paste Properties** dialog. The dialog features a clear, checkable 3-column table showing each **Property**, the **Amount** of items to apply, and preview **Values**:
 
 * **Rating:** Apply the 0...5 star rating. If the source item is unrated, this option defaults to unchecked to prevent accidental clearing of existing ratings on target images.
