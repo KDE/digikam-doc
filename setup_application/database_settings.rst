@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Database Settings
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, database, setup, mariadb, sqlite, migration, local, remote, server
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, database, setup, mariadb, sqlite, postgresql, migration, local, remote, server
 
 .. metadata-placeholder
 
@@ -231,6 +231,40 @@ There are some tips and recommendation to obtain the best results with a remote 
     Alternatively, on the server side, you can set the `use_ssl=false` option in the
     :file:`my.ini` or :file:`~/.my.cnf` configuration files.
 
+.. _postgresql_database:
+
+The PostgreSQL Database
+-----------------------
+
+.. index:: single: PostgreSQL
+
+Starting with **digiKam 9.3.0**, digiKam also supports `PostgreSQL <https://en.wikipedia.org/wiki/PostgreSQL>`_ (version **13 or newer**) as a client-server back-end, alongside SQLite and MariaDB. PostgreSQL is a good fit for large collections hosted on a dedicated server, and for setups where several digiKam installations share one database server.
+
+Unlike MariaDB, digiKam supports PostgreSQL as an external server only: there is no "internal" bundled PostgreSQL server mode. The server must be installed and reachable through the network (a local Unix socket or localhost TCP also works).
+
+digiKam stores its four logical databases (Core, Thumbs, Similarity, Face) on the server. They can be four separate physical databases, or one shared database with one PostgreSQL schema per logical database. digiKam creates missing schemas itself at connect time, so pre-creating them is optional.
+
+The PostgreSQL role used by digiKam needs the **CREATE** privilege on the database, plus normal read/write rights: digiKam uses this privilege to create schemas and the ``citext`` extension at connect time. On servers older than PostgreSQL 13, ``citext`` is not a trusted extension and a database administrator must run ``CREATE EXTENSION citext;`` once.
+
+Follow the instructions below if you do not have a dedicated role and database set up yet. Run the commands on the PostgreSQL server as an administrator, after replacing the values in angle brackets:
+
+.. code:: sql
+
+    CREATE USER digikam WITH PASSWORD 'password';
+    CREATE DATABASE digikam OWNER digikam;
+
+If you prefer one physical database per logical storage, repeat the ``CREATE DATABASE`` step for the thumbnails, similarity, and face databases. Otherwise, a single database is enough: digiKam keeps each logical database in its own schema.
+
+Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` and then under the **Database** section, select PostgreSQL Server from the drop down list.
+
+Enter the host name of your PostgreSQL server in the **Host Name** field and specify the correct port in the **Host Port** field (the default port is 5432).
+
+Set the database and schema names for the four logical databases in the expert settings. By default all four share one database named *digikam*, with schemas *digikam_core*, *digikam_thumbs*, *digikam_face*, and *digikam_similarity*.
+
+To check whether the database connection works properly, press the **Check Connection** button.
+
+To migrate an existing collection from SQLite or MariaDB to PostgreSQL, use the :ref:`Database Migration <database_migration>` tool: it copies the core, thumbnails, face, and similarity data to the PostgreSQL server, including the face training data.
+
 Database Type Criteria
 ----------------------
 
@@ -250,6 +284,7 @@ See the summary below to choose the right database type depending on your use ca
     Network FS     SQLite                      **Prohibited: SQLite databases must be stored on local file system.**
     Network FS     MariaDB-Internal            **Prohibited: MariaDB databases must be stored on local file system.**
     Remote         MariaDB-Server              Gigabit Ethernet or higher is recommended.
+    Remote         PostgreSQL-Server           Gigabit Ethernet or higher is recommended. PostgreSQL 13+ required.
     ============== ================ ========== ====================================================================================
 
 .. glossary::
@@ -294,7 +329,7 @@ See the summary below to choose the right database type depending on your use ca
 Database Migration
 ------------------
 
-digiKam comes up with an exclusive tool named **Database Migration**, that allows users to migrate their data. For example, the migration tool can help you move all your data from a SQLite database into a MariaDB database, or vice versa.
+digiKam comes up with an exclusive tool named **Database Migration**, that allows users to migrate their data. For example, the migration tool can help you move all your data from a SQLite database into a MariaDB database, or vice versa. Since digiKam 9.3.0, the tool can also migrate to and from PostgreSQL.
 
 To migrate to another database, go to :menuselection:`Settings --> Database Migration...`. A dialog box appears:
 
@@ -326,7 +361,7 @@ The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will expl
 Database Statistics
 -------------------
 
-digiKam provides a unique tool to show the statistics from your collections. It includes count of images, videos (including individual count by image format), tags etc. this also includes the **Database Backend** (Sqlite or MariaDB) and the **Database Path** (where your collection is located).
+digiKam provides a unique tool to show the statistics from your collections. It includes count of images, videos (including individual count by image format), tags etc. this also includes the **Database Backend** (Sqlite, MariaDB, or PostgreSQL) and the **Database Path** (where your collection is located).
 
 You can view your statistics by going to :menuselection:`Help --> Database Statistics...`. A dialog box like this will appear:
 
